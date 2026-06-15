@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daily Drop · AI Operations Accelerator</title>
+<meta name="description" content="Three things worth thinking about today — for operators, strategists, project managers, and admins navigating AI." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --paper:       #F2EFE7;
+    --paper-soft:  #EAE6DB;
+    --ink:         #1C1F25;
+    --ink-soft:    #4E5560;
+    --ink-faint:   #8A8F99;
+    --rule:        #D9D3C5;
+    --accent:      #B84B2C;
+    --accent-soft: #F0DACF;
+    --tag-bg:      #E5E0D3;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-soft); }
+  a:hover { border-bottom-color: var(--accent); }
+
+  /* ───────── Header / masthead ───────── */
+  .masthead {
+    border-bottom: 1px solid var(--rule);
+    padding: 22px 32px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .brand-mark {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background: var(--accent);
+    border-radius: 50%;
+    transform: translateY(-2px);
+  }
+  .brand-sub {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-left: 4px;
+  }
+
+  /* ───────── Filter bar ───────── */
+  .filters {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .today-btn {
+    background: var(--ink);
+    color: var(--paper);
+    border: 1px solid var(--ink);
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 7px 12px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .today-btn:hover { background: var(--accent); border-color: var(--accent); }
+
+  /* ───────── Calendar picker ───────── */
+  .cal-wrap { position: relative; }
+  .cal-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: transparent;
+    border: 1px solid var(--rule);
+    color: var(--ink);
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 7px 12px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .cal-trigger:hover { border-color: var(--ink); }
+  .cal-trigger[aria-expanded="true"] { border-color: var(--ink); background: var(--paper-soft); }
+  .cal-icon { flex-shrink: 0; }
+
+  .cal-popover {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 16px;
+    width: 280px;
+    box-shadow: 0 10px 30px -10px rgba(28, 31, 37, 0.18), 0 2px 6px -2px rgba(28, 31, 37, 0.08);
+    z-index: 50;
+  }
+  .cal-popover[hidden] { display: none; }
+
+  .cal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  .cal-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  .cal-nav {
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--ink);
+    font-size: 18px;
+    line-height: 1;
+    width: 26px;
+    height: 26px;
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cal-nav:hover { background: var(--paper-soft); border-color: var(--rule); }
+  .cal-nav:disabled { opacity: 0.3; cursor: not-allowed; }
+  .cal-nav:disabled:hover { background: transparent; border-color: transparent; }
+
+  .cal-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    margin-bottom: 6px;
+  }
+  .cal-weekdays span {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--ink-faint);
+    padding: 4px 0;
+  }
+  .cal-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+  }
+  .cal-day {
+    aspect-ratio: 1;
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--ink-faint);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 50%;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .cal-day.empty { visibility: hidden; }
+  .cal-day.has-drop {
+    color: var(--ink);
+    cursor: pointer;
+  }
+  .cal-day.has-drop::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .cal-day.has-drop:hover { background: var(--paper-soft); }
+  .cal-day.today {
+    border-color: var(--ink);
+    color: var(--ink);
+  }
+  .cal-day.selected {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+  .cal-day.selected::after { background: var(--accent-soft); }
+
+  /* ───────── Main column ───────── */
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 32px 96px;
+  }
+
+  /* Date hero */
+  .date-hero {
+    margin-bottom: 28px;
+  }
+  .date-weekday {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 14px;
+  }
+  .date-display {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(56px, 11vw, 96px);
+    line-height: 0.92;
+    letter-spacing: -0.035em;
+    color: var(--ink);
+    margin: 0;
+  }
+  .date-display em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--accent);
+  }
+
+  .intro {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    margin: 28px 0 0;
+    max-width: 540px;
+  }
+
+  /* ───────── Trend block ───────── */
+  .trend {
+    margin-top: 64px;
+    padding-top: 36px;
+    border-top: 1px solid var(--rule);
+  }
+  .trend-num {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 36px;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 18px;
+    display: block;
+  }
+  .trend-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.18;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+    margin: 0 0 18px;
+  }
+  .trend-body {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--ink);
+    margin: 0 0 28px;
+  }
+  .trend-body em {
+    background: var(--accent-soft);
+    padding: 1px 4px;
+    font-style: normal;
+    border-radius: 2px;
+  }
+
+  /* Role slants */
+  .slants {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 28px;
+    border-left: 2px solid var(--accent-soft);
+    padding-left: 18px;
+  }
+  .slants li {
+    margin-bottom: 10px;
+    font-size: 15.5px;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+  .slants li:last-child { margin-bottom: 0; }
+  .role {
+    font-family: 'Inter', sans-serif;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    background: var(--tag-bg);
+    padding: 2px 7px;
+    border-radius: 2px;
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: 2px;
+  }
+
+  /* Challenge */
+  .challenge {
+    background: var(--paper-soft);
+    border-radius: 4px;
+    padding: 20px 22px;
+    margin-top: 8px;
+  }
+  .challenge-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .challenge-label::before {
+    content: "→";
+    font-size: 16px;
+    line-height: 1;
+  }
+  .challenge-text {
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  /* ───────── Homework (personal prompt) ───────── */
+  .homework {
+    margin-top: 88px;
+    padding-top: 36px;
+    border-top: 1px solid var(--rule);
+  }
+  .homework-eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 14px;
+  }
+  .homework-title {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.22;
+    color: var(--ink);
+    margin: 0 0 16px;
+    letter-spacing: -0.01em;
+  }
+  .homework-body {
+    font-size: 16.5px;
+    line-height: 1.6;
+    color: var(--ink);
+    margin: 0;
+  }
+  .homework-prompt {
+    background: var(--paper-soft);
+    border-left: 2px solid var(--accent);
+    padding: 16px 20px;
+    margin-top: 18px;
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+
+  /* ───────── Empty state ───────── */
+  .empty {
+    text-align: center;
+    padding: 80px 20px;
+    color: var(--ink-soft);
+  }
+  .empty h2 {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 28px;
+    margin: 0 0 12px;
+    color: var(--ink);
+  }
+  .empty p { margin: 0 0 22px; font-size: 16px; }
+
+  /* ───────── Footer ───────── */
+  footer {
+    border-top: 1px solid var(--rule);
+    padding: 28px 32px 40px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--ink-faint);
+    letter-spacing: 0.04em;
+  }
+
+  /* ───────── Responsive ───────── */
+  @media (max-width: 640px) {
+    .masthead { padding: 18px 20px 14px; flex-direction: column; align-items: flex-start; }
+    .filters { width: 100%; }
+    .cal-popover { right: auto; left: 0; }
+    main { padding: 40px 22px 80px; }
+    .trend-title { font-size: 24px; }
+    .homework-title { font-size: 22px; }
+    .trend { margin-top: 48px; padding-top: 28px; }
+    .homework { margin-top: 64px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║                  HOW TO ADD A NEW DROP                        ║
+     ║  Scroll to the DROPS object below. Copy the most recent       ║
+     ║  entry, paste it above, change the date key (YYYY-MM-DD),     ║
+     ║  and edit the content. That's it — the filters update         ║
+     ║  automatically.                                               ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+
+<header class="masthead">
+  <div class="brand">
+    <span class="brand-mark"></span>
+    Daily Drop
+    <span class="brand-sub">AI Ops Accelerator</span>
+  </div>
+  <div class="filters" id="filters">
+    <div class="cal-wrap">
+      <button class="cal-trigger" id="cal-trigger" aria-haspopup="dialog" aria-expanded="false">
+        <svg class="cal-icon" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true">
+          <rect x="1.5" y="3" width="13" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.3"/>
+          <path d="M1.5 6.5h13" stroke="currentColor" stroke-width="1.3"/>
+          <path d="M5 1.5v3M11 1.5v3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+        </svg>
+        <span id="cal-trigger-label">Archive</span>
+      </button>
+      <div class="cal-popover" id="cal-popover" role="dialog" aria-label="Choose a date" hidden>
+        <div class="cal-header">
+          <button class="cal-nav" id="cal-prev" aria-label="Previous month">‹</button>
+          <div class="cal-title" id="cal-title"></div>
+          <button class="cal-nav" id="cal-next" aria-label="Next month">›</button>
+        </div>
+        <div class="cal-weekdays">
+          <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+        </div>
+        <div class="cal-grid" id="cal-grid"></div>
+      </div>
+    </div>
+    <button class="today-btn" id="today-btn">Today</button>
+  </div>
+</header>
+
+<main id="content"></main>
+
+<footer>
+  AI Operations Accelerator · Built for operators, strategists, PMs, and admins finding their footing with AI.
+</footer>
+
+<script>
+  /* ════════════════════════════════════════════════════════════════
+     DROPS DATA — edit this object to add new daily drops.
+     Key format: "YYYY-MM-DD"
+     ════════════════════════════════════════════════════════════════ */
+  const DROPS = {
+    "2026-06-14": {
+      intro: "Three things worth thinking about today — and one for you to try at home.",
+      trends: [
+        {
+          title: "The strategic memo is being rebuilt — fast",
+          body: "Microsoft's 2026 Work Trend Index just landed. <em>49% of Copilot conversations now support cognitive work</em> — analysis, problem-solving, strategic thinking — and 58% of AI users say they're producing work they couldn't have done a year ago. The work isn't disappearing. It's being promoted.",
+          slants: {
+            strategy:   "You're shifting from <em>writer</em> to <em>editor + pressure-tester</em>.",
+            operations: "Synthesis across systems is now a 30-min job, not a 3-day one.",
+            pm:         "Status reports get auto-drafted; framing the right questions is the new value-add.",
+            admin:      "Your judgment on tone, context, and 'what the exec actually meant' becomes the premium skill."
+          },
+          challenge: "Find one document you wrote last quarter. Using your company-approved AI tool, ask: <em>\"Argue against this from the perspective of a skeptical executive.\"</em> Share what surprised you in the group."
+        },
+        {
+          title: "The Transformation Paradox",
+          body: "Deloitte's 2026 enterprise report puts it plainly: <em>companies are layering AI onto legacy processes instead of redesigning work holistically</em>. The investment isn't compounding because the workflow underneath is still pre-AI.",
+          slants: {
+            strategy:   "The QBR was built for a pre-AI world. Rethink the inputs and outputs.",
+            operations: "Your SOPs probably encode 2019 assumptions.",
+            pm:         "\"Weekly check-ins\" exist because info moved slowly. Does it still?",
+            admin:      "Calendar-and-email triage workflows are ripe for a clean-slate redesign."
+          },
+          challenge: "Pick ONE recurring meeting or process you own. In one sentence: if AI were a teammate from minute one, what changes? Drop your answer in the group."
+        },
+        {
+          title: "AI fluency is the new literacy",
+          body: "Stanford HAI's 2026 AI Index: AI-related skills now appear in <em>2.5% of all U.S. job postings — a 297% increase over a decade</em>. This isn't \"learn to code.\" It's <em>learn to direct, evaluate, and trust-but-verify</em> AI output.",
+          slants: {
+            strategy:   "Prompting is problem-framing. The clearer your ask, the sharper your strategy.",
+            operations: "Knowing when AI is wrong saves more time than AI being right.",
+            pm:         "Agent orchestration is the next PM specialty.",
+            admin:      "You already know how things actually work here. AI doesn't."
+          },
+          challenge: "Write down your top 3 weekly recurring tasks. Next to each, mark: <em>AI could draft this / AI could review my work on this / Only I can do this.</em> Share your split."
+        }
+      ],
+      homework: {
+        title: "Brand new to AI? Start with something personal tonight.",
+        body: "The fastest way to lose the fear: use AI on something where there's no security policy and no judgment. Try one of these in your free tool of choice (ChatGPT, Claude, Gemini, or Perplexity all have free web versions):",
+        prompt: "\"I'm trying to [plan a weekend / write a tough message / figure out a recipe from what's in my fridge / understand a confusing bill]. Ask me 3 questions before you help, so your answer actually fits.\"<br><br>That last line — <em>ask me questions first</em> — is the single most useful prompting habit you'll ever learn."
+      }
+    }
+
+    /* ── Add new entries above this line. Example template:
+
+    ,"2026-06-15": {
+      intro: "…",
+      trends: [
+        { title: "…", body: "…", slants: { strategy: "…", operations: "…", pm: "…", admin: "…" }, challenge: "…" },
+        { title: "…", body: "…", slants: { strategy: "…", operations: "…", pm: "…", admin: "…" }, challenge: "…" },
+        { title: "…", body: "…", slants: { strategy: "…", operations: "…", pm: "…", admin: "…" }, challenge: "…" }
+      ],
+      homework: { title: "…", body: "…", prompt: "…" }
+    }
+    */
+  };
+
+  /* ════════════════════════════════════════════════════════════════
+     RENDERING + CALENDAR LOGIC (no need to edit below this line)
+     ════════════════════════════════════════════════════════════════ */
+
+  const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  const MONTHS_SHORT = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const WEEKDAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  const ROLE_LABELS = { strategy: 'Strategy', operations: 'Operations', pm: 'Project Mgmt', admin: 'Administrative' };
+
+  function parseDate(key) {
+    const [y, m, d] = key.split('-').map(Number);
+    return new Date(y, m - 1, d);
+  }
+  function toKey(d) {
+    return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+  }
+  function todayKey() { return toKey(new Date()); }
+
+  function formatDateHero(key) {
+    const d = parseDate(key);
+    return {
+      weekday: WEEKDAYS[d.getDay()],
+      monthDay: `${MONTHS[d.getMonth()]} ${d.getDate()}`,
+      year: d.getFullYear()
+    };
+  }
+  function formatTriggerLabel(key) {
+    const d = parseDate(key);
+    return `${MONTHS_SHORT[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+  }
+
+  function defaultKey() {
+    const today = todayKey();
+    const keys = Object.keys(DROPS).sort();
+    if (DROPS[today]) return today;
+    const past = keys.filter(k => k <= today);
+    if (past.length) return past[past.length - 1];
+    return keys[keys.length - 1];
+  }
+
+  // ───────── Calendar popover ─────────
+  let calCursor; // first-of-month Date for the month currently shown in the calendar
+
+  function renderCalendar() {
+    const grid = document.getElementById('cal-grid');
+    const title = document.getElementById('cal-title');
+    const year = calCursor.getFullYear();
+    const month = calCursor.getMonth();
+
+    title.textContent = `${MONTHS[month]} ${year}`;
+
+    // Sunday-first grid; pad with empty cells before day 1
+    const firstWeekday = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    const today = todayKey();
+
+    let html = '';
+    for (let i = 0; i < firstWeekday; i++) {
+      html += `<button class="cal-day empty" tabindex="-1" aria-hidden="true"></button>`;
+    }
+    for (let day = 1; day <= daysInMonth; day++) {
+      const key = `${year}-${String(month+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+      const has = DROPS[key] ? 'has-drop' : '';
+      const isToday = key === today ? 'today' : '';
+      const isSelected = key === currentKey ? 'selected' : '';
+      const cls = ['cal-day', has, isToday, isSelected].filter(Boolean).join(' ');
+      const disabled = has ? '' : 'disabled aria-disabled="true"';
+      html += `<button class="${cls}" data-key="${key}" ${disabled}>${day}</button>`;
+    }
+    grid.innerHTML = html;
+
+    // Wire up clickable days
+    grid.querySelectorAll('.cal-day.has-drop').forEach(btn => {
+      btn.addEventListener('click', () => {
+        setKey(btn.dataset.key);
+        closeCalendar();
+      });
+    });
+
+    // Disable prev/next when there's nothing in that direction
+    const allKeys = Object.keys(DROPS).sort();
+    if (allKeys.length) {
+      const earliest = parseDate(allKeys[0]);
+      const latest = parseDate(allKeys[allKeys.length - 1]);
+      document.getElementById('cal-prev').disabled =
+        (year < earliest.getFullYear()) ||
+        (year === earliest.getFullYear() && month <= earliest.getMonth());
+      document.getElementById('cal-next').disabled =
+        (year > latest.getFullYear()) ||
+        (year === latest.getFullYear() && month >= latest.getMonth());
+    }
+  }
+
+  function openCalendar() {
+    const popover = document.getElementById('cal-popover');
+    const trigger = document.getElementById('cal-trigger');
+    calCursor = new Date(parseDate(currentKey).getFullYear(), parseDate(currentKey).getMonth(), 1);
+    renderCalendar();
+    popover.hidden = false;
+    trigger.setAttribute('aria-expanded', 'true');
+    setTimeout(() => document.addEventListener('click', onOutsideClick), 0);
+  }
+  function closeCalendar() {
+    document.getElementById('cal-popover').hidden = true;
+    document.getElementById('cal-trigger').setAttribute('aria-expanded', 'false');
+    document.removeEventListener('click', onOutsideClick);
+  }
+  function onOutsideClick(e) {
+    if (!e.target.closest('#cal-popover') && !e.target.closest('#cal-trigger')) {
+      closeCalendar();
+    }
+  }
+
+  document.getElementById('cal-trigger').addEventListener('click', () => {
+    const isOpen = !document.getElementById('cal-popover').hidden;
+    isOpen ? closeCalendar() : openCalendar();
+  });
+  document.getElementById('cal-prev').addEventListener('click', () => {
+    calCursor = new Date(calCursor.getFullYear(), calCursor.getMonth() - 1, 1);
+    renderCalendar();
+  });
+  document.getElementById('cal-next').addEventListener('click', () => {
+    calCursor = new Date(calCursor.getFullYear(), calCursor.getMonth() + 1, 1);
+    renderCalendar();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !document.getElementById('cal-popover').hidden) closeCalendar();
+  });
+
+  // ───────── Drop rendering ─────────
+  function renderSlants(slants) {
+    return Object.entries(slants).map(([role, text]) =>
+      `<li><span class="role">${ROLE_LABELS[role] || role}</span>${text}</li>`
+    ).join('');
+  }
+
+  function renderTrend(t, i) {
+    const num = String(i + 1).padStart(2, '0');
+    return `
+      <section class="trend">
+        <span class="trend-num">${num}</span>
+        <h2 class="trend-title">${t.title}</h2>
+        <p class="trend-body">${t.body}</p>
+        <ul class="slants">${renderSlants(t.slants)}</ul>
+        <div class="challenge">
+          <div class="challenge-label">Try this with the community</div>
+          <p class="challenge-text">${t.challenge}</p>
+        </div>
+      </section>
+    `;
+  }
+
+  function renderDrop(key) {
+    const drop = DROPS[key];
+    const main = document.getElementById('content');
+
+    if (!drop) {
+      const recent = Object.keys(DROPS).sort().reverse()[0];
+      main.innerHTML = `
+        <div class="empty">
+          <h2>No drop for ${formatDateHero(key).monthDay}, ${formatDateHero(key).year}.</h2>
+          <p>Try the most recent one — <a href="#" id="goto-recent">${formatDateHero(recent).monthDay}, ${formatDateHero(recent).year}</a>.</p>
+        </div>
+      `;
+      document.getElementById('goto-recent').addEventListener('click', e => {
+        e.preventDefault();
+        setKey(recent);
+      });
+      return;
+    }
+
+    const dh = formatDateHero(key);
+    main.innerHTML = `
+      <div class="date-hero">
+        <div class="date-weekday">${dh.weekday}</div>
+        <h1 class="date-display">${dh.monthDay}<em>, ${dh.year}</em></h1>
+        <p class="intro">${drop.intro}</p>
+      </div>
+      ${drop.trends.map(renderTrend).join('')}
+      <section class="homework">
+        <div class="homework-eyebrow">Homework</div>
+        <h2 class="homework-title">${drop.homework.title}</h2>
+        <p class="homework-body">${drop.homework.body}</p>
+        <div class="homework-prompt">${drop.homework.prompt}</div>
+      </section>
+    `;
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }
+
+  let currentKey = defaultKey();
+
+  function setKey(key) {
+    currentKey = key;
+    document.getElementById('cal-trigger-label').textContent = formatTriggerLabel(key);
+    renderDrop(key);
+  }
+
+  document.getElementById('today-btn').addEventListener('click', () => {
+    const t = todayKey();
+    setKey(DROPS[t] ? t : defaultKey());
+  });
+
+  // Initial render
+  setKey(currentKey);
+</script>
+
+</body>
+</html>
