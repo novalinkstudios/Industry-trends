@@ -191,6 +191,149 @@ Note the trailing comma after `"2026-06-15"`'s closing brace.
 
 ---
 
+## 6a. Site Design System
+
+The site's visual identity matches the **AI Operations Accelerator** landing page (`why-join-aoa.netlify.app`). The routine **only touches the `DROPS` data object** — never modify the HTML structure, CSS, or JavaScript rendering logic below. This section is a reference so you understand the context your content renders into.
+
+### Color palette (CSS custom properties)
+
+```css
+:root {
+  --navy:    #0D2340;
+  --blue:    #00BCEB;
+  --gold:    #FBAB18;
+  --magenta: #E20074;
+  --white:   #FFFFFF;
+  --light:   #F0F6FA;
+  --muted:   #6B7A8D;
+  --text:    #0D2340;
+}
+```
+
+Derived aliases used throughout the page:
+
+| Alias | Maps to | Used for |
+|---|---|---|
+| `--paper` | `var(--light)` | Page background |
+| `--paper-soft` | `#E2ECF4` | Card/challenge backgrounds |
+| `--ink` | `var(--navy)` | Primary text |
+| `--ink-soft` | `var(--muted)` | Secondary text |
+| `--ink-faint` | `#94A3B4` | Tertiary text, labels |
+| `--accent` | `var(--blue)` | Links, highlights, chevrons |
+| `--accent-soft` | `#D6F3FC` | `<em>` highlight background |
+| `--tag-bg` | `#DDE6EE` | Role slant badges |
+| `--rule` | `#D0DAE4` | Borders, dividers |
+
+### Fonts
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+```
+
+| Usage | Font family |
+|---|---|
+| Body text, labels, UI | `'DM Sans', sans-serif` |
+| Headings, date display, hero title, trend titles, homework title | `'DM Serif Display', serif` |
+
+### Hero section
+
+The page opens with an AOA-branded hero matching the landing page:
+
+```css
+/* ── HERO ── */
+.hero{background:var(--navy);color:var(--white);padding:56px 64px 48px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-120px;right:-80px;width:480px;height:480px;background:radial-gradient(circle,rgba(0,188,235,0.14) 0%,transparent 70%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-60px;left:30%;width:300px;height:300px;background:radial-gradient(circle,rgba(251,171,24,0.07) 0%,transparent 70%);pointer-events:none}
+.hero-top{display:flex;align-items:flex-start;justify-content:space-between;gap:32px;position:relative;z-index:1}
+.hero-left{flex:1}
+.hero-eyebrow{font-size:10px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:16px}
+.hero-title{font-family:'DM Serif Display',serif;font-size:52px;line-height:1.08;margin-bottom:12px}
+.hero-title em{font-style:italic;color:var(--blue)}
+.hero-tagline{font-size:18px;font-weight:400;color:var(--white);margin-bottom:10px;font-style:italic;font-family:'DM Serif Display',serif}
+.hero-sub{font-size:13.5px;font-weight:300;color:rgba(255,255,255,0.55);max-width:520px;line-height:1.75;margin-bottom:0}
+.hero-badge{background:rgba(0,188,235,0.12);border:1px solid rgba(0,188,235,0.25);border-radius:8px;padding:20px 24px;flex-shrink:0;text-align:center;min-width:180px}
+.hero-badge-date{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.hero-badge-event{font-family:'DM Serif Display',serif;font-size:22px;color:var(--white);line-height:1.2;margin-bottom:4px}
+.hero-badge-sub{font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:1px;text-transform:uppercase}
+```
+
+Hero HTML structure:
+
+```html
+<section class="hero">
+  <div class="hero-top">
+    <div class="hero-left">
+      <div class="hero-eyebrow">AI Ops Accelerator · Daily Drop</div>
+      <h1 class="hero-title">Daily<br><em>Drop</em></h1>
+      <p class="hero-tagline">Come curious. Leave with something you can use on Monday.</p>
+      <p class="hero-sub">A short daily briefing for operators, strategists, project managers, and admins navigating AI — built by the AI Operations Accelerator community.</p>
+    </div>
+    <div class="hero-badge" id="hero-badge">
+      <div class="hero-badge-date" id="hero-badge-date"><!-- weekday, set by JS --></div>
+      <div class="hero-badge-event" id="hero-badge-event"><!-- month + day, set by JS --></div>
+      <div class="hero-badge-sub">Daily briefing</div>
+    </div>
+  </div>
+</section>
+```
+
+### Navigation bar
+
+Below the hero, a centered nav bar provides **Prev / Calendar / Today / Next** controls:
+
+```html
+<nav class="nav-bar">
+  <button class="nav-btn" id="prev-btn" aria-label="Previous drop">‹ Prev</button>
+  <!-- calendar picker here -->
+  <button class="today-btn" id="today-btn">Today</button>
+  <button class="nav-btn" id="next-btn" aria-label="Next drop">Next ›</button>
+</nav>
+```
+
+Prev/Next buttons auto-disable when there is no adjacent drop. The calendar popover lets users jump to any date with a published drop.
+
+### Collapsible sections
+
+Trends and the homework block render inside `<details>` elements — **collapsed by default** (no `open` attribute). Each section header has a **CSS-drawn chevron** in the accent color (`var(--accent)` / `--blue`) that rotates on expand:
+
+```css
+.trend summary::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 4px;
+  width: 10px;
+  height: 10px;
+  border-right: 2.5px solid var(--accent);
+  border-bottom: 2.5px solid var(--accent);
+  transform: rotate(45deg);           /* points down when collapsed */
+  transition: transform 0.25s ease;
+}
+.trend[open] summary::after {
+  transform: rotate(-135deg);          /* points up when expanded */
+}
+```
+
+The homework section uses the same chevron pattern. The `renderTrend()` and `renderDrop()` functions in `index.html` emit `<details class="trend">` (no `open`) and `<details class="homework">` (no `open`).
+
+### Section styles (AOA pattern)
+
+For reference, the AOA landing page uses these section classes (not currently used in the Daily Drop but available if the layout expands):
+
+```css
+.section{padding:48px 64px}
+.section-white{background:var(--white)}
+.section-light{background:var(--light)}
+.section-navy{background:var(--navy);color:var(--white)}
+.section-label{font-size:10px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+.section-label-light{color:rgba(255,255,255,0.45)}
+.section-title{font-family:'DM Serif Display',serif;font-size:32px;line-height:1.15;margin-bottom:6px}
+.section-title-white{color:var(--white)}
+.section-body{font-size:13.5px;font-weight:300;color:var(--muted);line-height:1.8}
+```
+
+---
+
 ## 7. Pre-commit Checklist
 
 Before committing, verify:
