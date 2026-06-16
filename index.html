@@ -293,16 +293,19 @@
   }
   .trend summary::-webkit-details-marker { display: none; }
   .trend summary::after {
-    content: "▾";
+    content: "";
     position: absolute;
-    top: 4px;
-    right: 0;
-    font-size: 16px;
-    color: var(--ink-faint);
-    transition: transform 0.2s ease;
+    top: 8px;
+    right: 4px;
+    width: 10px;
+    height: 10px;
+    border-right: 2.5px solid var(--accent);
+    border-bottom: 2.5px solid var(--accent);
+    transform: rotate(45deg);
+    transition: transform 0.25s ease;
   }
   .trend[open] summary::after {
-    transform: rotate(180deg);
+    transform: rotate(-135deg);
   }
   .trend-num {
     font-family: 'Fraunces', serif;
@@ -416,16 +419,19 @@
   }
   .homework summary::-webkit-details-marker { display: none; }
   .homework summary::after {
-    content: "▾";
+    content: "";
     position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 16px;
-    color: var(--ink-faint);
-    transition: transform 0.2s ease;
+    top: 4px;
+    right: 4px;
+    width: 10px;
+    height: 10px;
+    border-right: 2.5px solid var(--accent);
+    border-bottom: 2.5px solid var(--accent);
+    transform: rotate(45deg);
+    transition: transform 0.25s ease;
   }
   .homework[open] summary::after {
-    transform: rotate(180deg);
+    transform: rotate(-135deg);
   }
   .homework-eyebrow {
     font-family: 'Inter', sans-serif;
@@ -802,7 +808,7 @@
   function renderTrend(t, i) {
     const num = String(i + 1).padStart(2, '0');
     return `
-      <details class="trend" open>
+      <details class="trend">
         <summary>
           <span class="trend-num">${num}</span>
           <h2 class="trend-title">${t.title}</h2>
@@ -846,7 +852,7 @@
         <p class="intro">${drop.intro}</p>
       </div>
       ${drop.trends.map(renderTrend).join('')}
-      <details class="homework" open>
+      <details class="homework">
         <summary>
           <div class="homework-eyebrow">Homework</div>
           <h2 class="homework-title">${drop.homework.title}</h2>
