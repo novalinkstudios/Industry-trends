@@ -39,53 +39,103 @@
   a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-soft); }
   a:hover { border-bottom-color: var(--accent); }
 
-  /* ───────── Header / masthead ───────── */
-  .masthead {
-    border-bottom: 1px solid var(--rule);
-    padding: 22px 32px 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 16px;
-    flex-wrap: wrap;
+  /* ───────── Hero ───────── */
+  .hero {
+    background: var(--ink);
+    color: #FFFFFF;
+    padding: 56px 64px 48px;
+    position: relative;
+    overflow: hidden;
   }
-
-  .brand {
-    font-family: 'DM Serif Display', serif;
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -120px;
+    right: -80px;
+    width: 480px;
+    height: 480px;
+    background: radial-gradient(circle, rgba(0,188,235,0.14) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    left: 30%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(251,171,24,0.07) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-top {
+    position: relative;
+    z-index: 1;
+  }
+  .hero-eyebrow {
+    font-size: 10px;
     font-weight: 600;
-    font-size: 22px;
-    letter-spacing: -0.01em;
-    color: var(--ink);
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-  }
-  .brand-mark {
-    display: inline-block;
-    width: 9px;
-    height: 9px;
-    background: var(--accent);
-    border-radius: 50%;
-    transform: translateY(-2px);
-  }
-  .brand-sub {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.14em;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--ink-faint);
-    margin-left: 4px;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+  .hero-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 52px;
+    line-height: 1.08;
+    margin: 0 0 12px;
+  }
+  .hero-title em {
+    font-style: italic;
+    color: var(--accent);
+  }
+  .hero-tagline {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0 0 10px;
+    font-style: italic;
+    font-family: 'DM Serif Display', serif;
+  }
+  .hero-sub {
+    font-size: 13.5px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.55);
+    max-width: 520px;
+    line-height: 1.75;
+    margin: 0;
   }
 
-  /* ───────── Filter bar ───────── */
-  .filters {
+  /* ───────── Nav bar ───────── */
+  .nav-bar {
+    border-bottom: 1px solid var(--rule);
+    padding: 10px 32px;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 8px;
     flex-wrap: wrap;
-    position: relative;
+    background: var(--paper);
   }
+  .nav-btn {
+    background: transparent;
+    border: 1px solid var(--rule);
+    color: var(--ink);
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 7px 14px;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .nav-btn:hover { border-color: var(--ink); }
+  .nav-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+  .nav-btn:disabled:hover { border-color: var(--rule); }
   .today-btn {
     background: var(--ink);
     color: var(--paper);
@@ -501,8 +551,10 @@
 
   /* ───────── Responsive ───────── */
   @media (max-width: 640px) {
-    .masthead { padding: 18px 20px 14px; flex-direction: column; align-items: flex-start; }
-    .filters { width: 100%; }
+    .hero { padding: 36px 22px 32px; }
+    .hero-title { font-size: 36px; }
+    .hero-tagline { font-size: 16px; }
+    .nav-bar { padding: 10px 16px; gap: 6px; }
     .cal-popover { right: auto; left: 0; }
     main { padding: 40px 22px 80px; }
     .trend-title { font-size: 24px; }
@@ -522,37 +574,41 @@
      ║  automatically.                                               ║
      ╚══════════════════════════════════════════════════════════════╝ -->
 
-<header class="masthead">
-  <div class="brand">
-    <span class="brand-mark"></span>
-    Daily Drop
-    <span class="brand-sub">AI Ops Accelerator</span>
+<section class="hero">
+  <div class="hero-top">
+    <div class="hero-eyebrow">AI Ops Accelerator · Daily Drop</div>
+    <h1 class="hero-title">Daily<br><em>Drop</em></h1>
+    <p class="hero-tagline">Come curious. Leave with something you can use on Monday.</p>
+    <p class="hero-sub">A short daily briefing for operators, strategists, project managers, and admins navigating AI — built by the AI Operations Accelerator community.</p>
   </div>
-  <div class="filters" id="filters">
-    <div class="cal-wrap">
-      <button class="cal-trigger" id="cal-trigger" aria-haspopup="dialog" aria-expanded="false">
-        <svg class="cal-icon" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true">
-          <rect x="1.5" y="3" width="13" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.3"/>
-          <path d="M1.5 6.5h13" stroke="currentColor" stroke-width="1.3"/>
-          <path d="M5 1.5v3M11 1.5v3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-        </svg>
-        <span id="cal-trigger-label">Archive</span>
-      </button>
-      <div class="cal-popover" id="cal-popover" role="dialog" aria-label="Choose a date" hidden>
-        <div class="cal-header">
-          <button class="cal-nav" id="cal-prev" aria-label="Previous month">‹</button>
-          <div class="cal-title" id="cal-title"></div>
-          <button class="cal-nav" id="cal-next" aria-label="Next month">›</button>
-        </div>
-        <div class="cal-weekdays">
-          <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
-        </div>
-        <div class="cal-grid" id="cal-grid"></div>
+</section>
+
+<nav class="nav-bar">
+  <button class="nav-btn" id="prev-btn" aria-label="Previous drop">‹ Prev</button>
+  <div class="cal-wrap">
+    <button class="cal-trigger" id="cal-trigger" aria-haspopup="dialog" aria-expanded="false">
+      <svg class="cal-icon" width="13" height="13" viewBox="0 0 16 16" aria-hidden="true">
+        <rect x="1.5" y="3" width="13" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M1.5 6.5h13" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M5 1.5v3M11 1.5v3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+      </svg>
+      <span id="cal-trigger-label">Archive</span>
+    </button>
+    <div class="cal-popover" id="cal-popover" role="dialog" aria-label="Choose a date" hidden>
+      <div class="cal-header">
+        <button class="cal-nav" id="cal-prev" aria-label="Previous month">‹</button>
+        <div class="cal-title" id="cal-title"></div>
+        <button class="cal-nav" id="cal-next" aria-label="Next month">›</button>
       </div>
+      <div class="cal-weekdays">
+        <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+      </div>
+      <div class="cal-grid" id="cal-grid"></div>
     </div>
-    <button class="today-btn" id="today-btn">Today</button>
   </div>
-</header>
+  <button class="today-btn" id="today-btn">Today</button>
+  <button class="nav-btn" id="next-btn" aria-label="Next drop">Next ›</button>
+</nav>
 
 <main id="content"></main>
 
@@ -868,12 +924,34 @@
 
   let currentKey = defaultKey();
 
+  function getAdjacentKey(direction) {
+    const keys = Object.keys(DROPS).sort();
+    const idx = keys.indexOf(currentKey);
+    if (direction === 'prev') return idx > 0 ? keys[idx - 1] : null;
+    if (direction === 'next') return idx < keys.length - 1 ? keys[idx + 1] : null;
+    return null;
+  }
+
+  function updateNavButtons() {
+    document.getElementById('prev-btn').disabled = !getAdjacentKey('prev');
+    document.getElementById('next-btn').disabled = !getAdjacentKey('next');
+  }
+
   function setKey(key) {
     currentKey = key;
     document.getElementById('cal-trigger-label').textContent = formatTriggerLabel(key);
     renderDrop(key);
+    updateNavButtons();
   }
 
+  document.getElementById('prev-btn').addEventListener('click', () => {
+    const k = getAdjacentKey('prev');
+    if (k) setKey(k);
+  });
+  document.getElementById('next-btn').addEventListener('click', () => {
+    const k = getAdjacentKey('next');
+    if (k) setKey(k);
+  });
   document.getElementById('today-btn').addEventListener('click', () => {
     const t = todayKey();
     setKey(DROPS[t] ? t : defaultKey());
