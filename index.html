@@ -12,13 +12,21 @@
 
 <style>
   :root {
-    --paper:       #F0F6FA;
+    --navy:        #0D2340;
+    --blue:        #00BCEB;
+    --gold:        #FBAB18;
+    --magenta:     #E20074;
+    --white:       #FFFFFF;
+    --light:       #F0F6FA;
+    --muted:       #6B7A8D;
+    --text:        #0D2340;
+    --paper:       var(--light);
     --paper-soft:  #E2ECF4;
-    --ink:         #0D2340;
-    --ink-soft:    #6B7A8D;
+    --ink:         var(--navy);
+    --ink-soft:    var(--muted);
     --ink-faint:   #94A3B4;
     --rule:        #D0DAE4;
-    --accent:      #00BCEB;
+    --accent:      var(--blue);
     --accent-soft: #D6F3FC;
     --tag-bg:      #DDE6EE;
   }
@@ -39,72 +47,21 @@
   a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-soft); }
   a:hover { border-bottom-color: var(--accent); }
 
-  /* ───────── Hero ───────── */
-  .hero {
-    background: var(--ink);
-    color: #FFFFFF;
-    padding: 56px 64px 48px;
-    position: relative;
-    overflow: hidden;
-  }
-  .hero::before {
-    content: '';
-    position: absolute;
-    top: -120px;
-    right: -80px;
-    width: 480px;
-    height: 480px;
-    background: radial-gradient(circle, rgba(0,188,235,0.14) 0%, transparent 70%);
-    pointer-events: none;
-  }
-  .hero::after {
-    content: '';
-    position: absolute;
-    bottom: -60px;
-    left: 30%;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(251,171,24,0.07) 0%, transparent 70%);
-    pointer-events: none;
-  }
-  .hero-top {
-    position: relative;
-    z-index: 1;
-  }
-  .hero-eyebrow {
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 16px;
-  }
-  .hero-title {
-    font-family: 'DM Serif Display', serif;
-    font-size: 52px;
-    line-height: 1.08;
-    margin: 0 0 12px;
-  }
-  .hero-title em {
-    font-style: italic;
-    color: var(--accent);
-  }
-  .hero-tagline {
-    font-size: 18px;
-    font-weight: 400;
-    color: #FFFFFF;
-    margin: 0 0 10px;
-    font-style: italic;
-    font-family: 'DM Serif Display', serif;
-  }
-  .hero-sub {
-    font-size: 13.5px;
-    font-weight: 300;
-    color: rgba(255,255,255,0.55);
-    max-width: 520px;
-    line-height: 1.75;
-    margin: 0;
-  }
+  /* ── HERO ── */
+  .hero{background:var(--navy);color:var(--white);padding:56px 64px 48px;position:relative;overflow:hidden}
+  .hero::before{content:'';position:absolute;top:-120px;right:-80px;width:480px;height:480px;background:radial-gradient(circle,rgba(0,188,235,0.14) 0%,transparent 70%);pointer-events:none}
+  .hero::after{content:'';position:absolute;bottom:-60px;left:30%;width:300px;height:300px;background:radial-gradient(circle,rgba(251,171,24,0.07) 0%,transparent 70%);pointer-events:none}
+  .hero-top{display:flex;align-items:flex-start;justify-content:space-between;gap:32px;position:relative;z-index:1}
+  .hero-left{flex:1}
+  .hero-eyebrow{font-size:10px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:16px}
+  .hero-title{font-family:'DM Serif Display',serif;font-size:52px;line-height:1.08;margin-bottom:12px}
+  .hero-title em{font-style:italic;color:var(--blue)}
+  .hero-tagline{font-size:18px;font-weight:400;color:var(--white);margin-bottom:10px;font-style:italic;font-family:'DM Serif Display',serif}
+  .hero-sub{font-size:13.5px;font-weight:300;color:rgba(255,255,255,0.55);max-width:520px;line-height:1.75;margin-bottom:0}
+  .hero-badge{background:rgba(0,188,235,0.12);border:1px solid rgba(0,188,235,0.25);border-radius:8px;padding:20px 24px;flex-shrink:0;text-align:center;min-width:180px}
+  .hero-badge-date{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+  .hero-badge-event{font-family:'DM Serif Display',serif;font-size:22px;color:var(--white);line-height:1.2;margin-bottom:4px}
+  .hero-badge-sub{font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:1px;text-transform:uppercase}
 
   /* ───────── Nav bar ───────── */
   .nav-bar {
@@ -552,6 +509,8 @@
   /* ───────── Responsive ───────── */
   @media (max-width: 640px) {
     .hero { padding: 36px 22px 32px; }
+    .hero-top { flex-direction: column; }
+    .hero-badge { align-self: flex-start; }
     .hero-title { font-size: 36px; }
     .hero-tagline { font-size: 16px; }
     .nav-bar { padding: 10px 16px; gap: 6px; }
@@ -576,10 +535,17 @@
 
 <section class="hero">
   <div class="hero-top">
-    <div class="hero-eyebrow">AI Ops Accelerator · Daily Drop</div>
-    <h1 class="hero-title">Daily<br><em>Drop</em></h1>
-    <p class="hero-tagline">Come curious. Leave with something you can use on Monday.</p>
-    <p class="hero-sub">A short daily briefing for operators, strategists, project managers, and admins navigating AI — built by the AI Operations Accelerator community.</p>
+    <div class="hero-left">
+      <div class="hero-eyebrow">AI Ops Accelerator · Daily Drop</div>
+      <h1 class="hero-title">Daily<br><em>Drop</em></h1>
+      <p class="hero-tagline">Come curious. Leave with something you can use on Monday.</p>
+      <p class="hero-sub">A short daily briefing for operators, strategists, project managers, and admins navigating AI — built by the AI Operations Accelerator community.</p>
+    </div>
+    <div class="hero-badge" id="hero-badge">
+      <div class="hero-badge-date" id="hero-badge-date"></div>
+      <div class="hero-badge-event" id="hero-badge-event"></div>
+      <div class="hero-badge-sub">Daily briefing</div>
+    </div>
   </div>
 </section>
 
@@ -940,6 +906,9 @@
   function setKey(key) {
     currentKey = key;
     document.getElementById('cal-trigger-label').textContent = formatTriggerLabel(key);
+    const dh = formatDateHero(key);
+    document.getElementById('hero-badge-date').textContent = dh.weekday;
+    document.getElementById('hero-badge-event').textContent = `${dh.monthDay}`;
     renderDrop(key);
     updateNavButtons();
   }
