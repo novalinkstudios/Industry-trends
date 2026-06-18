@@ -836,6 +836,73 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-06-18": {
+      intro: "Thursday: AI budgets are getting real, and governance gaps are showing up fast. Three things worth your attention — and something low-stakes for tonight.",
+      trends: [
+        {
+          title: "The real AI bottleneck isn't the model — it's the data",
+          body: "Gartner surveyed 353 data and AI leaders and found that <em>organizations with successful AI initiatives invest up to 4× more in data quality, governance, and change management</em> than those with poor outcomes. Only 39% of tech leaders are confident their current AI investments will pay off financially. And 60% of AI projects are expected to be abandoned this year — not because the AI failed, but because the data wasn't ready.",
+          slants: {
+            strategy:   "If your AI roadmap doesn't have a data quality line item, it's a wish list. The 4× gap is real.",
+            operations: "Before you pilot another AI tool, audit the data feeding it. Clean inputs beat clever models every time.",
+            pm:         "Add 'data readiness' as a gate in your AI project plan. It's the step most teams skip — and most failures trace back to.",
+            admin:      "When someone says 'the AI isn't working,' the first question is often about the data, not the tool. You're closer to that data than you think."
+          },
+          challenge: {
+            steps: [
+              "Pick one report or dashboard your team relies on for decisions.",
+              "Open your company-approved AI tool and paste this prompt: <em>\"I rely on a [type of report] for [what decisions]. What are the most common data quality problems that would make AI unreliable for this kind of work? Give me a 5-point checklist I can use to audit it.\"</em>",
+              "Run through the checklist against your actual report. Note which items pass and which don't.",
+              "Share one data quality gap you discovered in the group — and whether it surprised you."
+            ]
+          }
+        },
+        {
+          title: "25% of AI budgets just got pushed to next year",
+          body: "Forrester's 2026 technology predictions flagged a hard correction: <em>enterprises will defer 25% of planned AI spend into 2027</em> as financial rigor catches up to vendor promises. Only 15% of AI decision-makers reported an EBITDA lift in the past 12 months, and fewer than one-third can tie AI's value to their organization's financial growth. The CFO is now the gatekeeper.",
+          slants: {
+            strategy:   "The AI business case just shifted from 'possibility' to 'proof.' If you can show measurable value on a small project, you'll survive the budget cut.",
+            operations: "Budget tightening means fewer new tools and more pressure to prove the ones you have. Document your wins now — you'll need them.",
+            pm:         "Expect AI project portfolios to shrink. The surviving projects will be the ones with clear ROI timelines, not the flashiest demos.",
+            admin:      "If AI tools at your company feel like they're stalling, it's not just you. Budgets are tightening, and proven use cases get priority."
+          },
+          challenge: {
+            steps: [
+              "Think of one AI tool or feature your team currently uses (or has been piloting).",
+              "Write down, in one sentence, the specific value it delivers. If you can't, that's the finding.",
+              "Open your company-approved AI tool and paste: <em>\"Help me write a 3-sentence business case for continuing to use [tool/feature] based on this value: [your sentence]. Make it specific enough for a finance review.\"</em>",
+              "Read the draft. Could it survive a CFO asking 'so what?'",
+              "Share your one-sentence value statement in the group — brevity is the test."
+            ]
+          }
+        },
+        {
+          title: "The binary governance trap is killing AI agents",
+          body: "Gartner's May 2026 research warned that <em>40% of enterprises will demote or decommission autonomous AI agents by 2027</em> because of governance gaps discovered only after production incidents. The root cause: organizations are treating agent governance as binary — either fully locked down or fully trusted. Over-restricting simple agents slows delivery; under-restricting autonomous ones creates real risk.",
+          slants: {
+            strategy:   "Agent governance is a strategy decision, not an IT checkbox. Define tiers of autonomy before your first production incident does it for you.",
+            operations: "The ops team that builds a clear escalation path — 'agent handles X, human reviews Y' — becomes the template everyone copies.",
+            pm:         "Scope every AI agent like a team member: clear authority, clear boundaries, clear escalation. Ambiguity is where incidents start.",
+            admin:      "If an AI agent can send on your behalf or access shared systems, someone should have defined exactly what it's allowed to do. If they haven't, flag it."
+          },
+          challenge: {
+            steps: [
+              "List any AI tools or agents at your workplace that can take actions — scheduling, sending, approving, editing — not just answer questions.",
+              "For each one, write down: <em>\"What can it do without asking a human first?\"</em>",
+              "If the answer is vague or you're not sure, that's the governance gap Gartner is warning about.",
+              "Open your AI tool and ask: <em>\"What's a simple 3-tier framework for governing AI agents based on their level of autonomy? Make it practical for a non-technical team.\"</em>",
+              "Share the most useful tier distinction you found in the group."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Tonight, let AI help you prepare for an awkward conversation.",
+        body: "Everyone's got one — a message to send, a boundary to set, a favor to ask, a topic to raise. No work context needed. Open a free tool (ChatGPT, Claude, Gemini, or Perplexity):",
+        prompt: "\"I need to [describe the conversation — ask a neighbor something, bring up a topic with a friend, negotiate with a contractor, talk to a family member about X]. Give me 3 different ways to open the conversation, ranked from most direct to most gentle. For each, tell me what tone it sets.\"<br><br>The <em>ranked with tone labels</em> trick helps you choose consciously instead of defaulting to whatever feels safest."
+      }
+    },
+
     "2026-06-17": {
       intro: "Wednesday: the gap between having AI and winning with AI keeps widening. Three things to think about — and a low-key experiment for tonight.",
       trends: [
