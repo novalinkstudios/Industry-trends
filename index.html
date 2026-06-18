@@ -381,17 +381,16 @@
     margin: 24px 0 0;
     max-width: 560px;
   }
-  .attribution {
-    font-family: 'DM Sans', sans-serif;
+  .footer-credit {
+    display: block;
+    margin-top: 12px;
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--muted);
-    opacity: 0.75;
-    margin: 18px 0 0;
+    color: rgba(255, 255, 255, 0.45);
   }
-  .attribution em {
+  .footer-credit em {
     font-style: normal;
     font-weight: 700;
     color: var(--blue);
@@ -844,6 +843,7 @@
 
 <footer>
   Cisco AI Ops Accelerator · An employee-led community for operators learning to work smarter with AI.
+  <span class="footer-credit">Curated daily by <em>Anjanette W</em></span>
 </footer>
 
 <script>
@@ -1674,7 +1674,6 @@
         <div class="date-weekday">${dh.weekday}</div>
         <h1 class="date-display">${dh.monthDay}<em>, ${dh.year}</em></h1>
         <p class="intro">${drop.intro}</p>
-        <p class="attribution">Curated daily by <em>Anjanette W</em></p>
       </div>
       ${drop.trends.map(renderTrend).join('')}
       <details class="homework">
