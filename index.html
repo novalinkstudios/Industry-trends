@@ -852,6 +852,73 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-06-23": {
+    intro: "Tuesday. AI is splitting the labor market into two lanes, most 'agents' on the market aren't what vendors claim, and the skill becoming hardest to find is thinking without AI at all. Three trends and one personal experiment.",
+    trends: [
+      {
+        title: "The labor market is splitting into two tracks — and salary data shows it",
+        body: "PwC's 2026 Global AI Jobs Barometer, released last week, analyzed over a billion job ads across 27 countries. The finding: AI is forking the market into <em>'professionalised' roles</em> — where AI handles routine work so human judgment gets elevated — and <em>'democratised' roles</em> — where AI makes the job doable by non-experts. Professionalised roles are seeing twice the job growth and <em>42% faster salary growth</em>. The premium isn't on using AI. It's on what you bring that AI can't.",
+        slants: {
+          strategy:   "Map your team's roles against this split — which ones are being professionalised (judgment elevated) vs. democratised (tasks simplified)? That's your workforce planning signal for the next two quarters.",
+          operations: "If your role is becoming easier for anyone to do with AI, double down on the institutional knowledge, cross-system pattern recognition, and judgment calls that no prompt can replace.",
+          pm:         "Entry-level roles exposed to AI are now 7x more likely to require senior-level human skills — factor that into hiring plans and onboarding design.",
+          admin:      "The roles growing fastest are the ones where human skills — empathy, context, judgment — become more valuable, not less. That's your lane."
+        },
+        challenge: {
+          steps: [
+            "List three core tasks in your current role — the things you spend the most time on each week.",
+            "Open your company-approved AI tool and paste: <em>\"Here are three tasks I do regularly: [list them]. For each one, tell me whether AI is more likely to 'professionalise' the task (making human expertise more valuable) or 'democratise' it (making it easier for anyone to do). Explain why in one sentence each.\"</em>",
+            "Read the response and identify which of your tasks lean toward the professionalised track.",
+            "Write down one skill you could sharpen this quarter to strengthen your position on that track.",
+            "Share your three-task split and your one skill focus in the community group."
+          ]
+        }
+      },
+      {
+        title: "Most 'AI agents' on the market aren't agents at all",
+        body: "Gartner predicts <em>over 40% of agentic AI projects will be canceled by the end of 2027</em> — driven by escalating costs, unclear business value, and hype-fueled deployment. A big part of the problem: 'agent washing.' Vendors are rebranding existing chatbots, RPA bots, and assistants as 'agents' without adding real autonomous capability. Gartner estimates <em>only about 130 of the thousands of agentic AI vendors</em> offer genuinely agentic technology.",
+        slants: {
+          strategy:   "Before greenlighting an 'AI agent' investment, ask the vendor: can it autonomously complete a multi-step task without human intervention at each step? If not, it's a chatbot with better marketing.",
+          operations: "The 40% cancellation rate means piloting small and proving value before scaling — treat every agent deployment as a hypothesis, not a rollout.",
+          pm:         "Add 'what happens when this fails mid-task?' to every agent evaluation. Real agents need error recovery and escalation paths, not just a polished demo.",
+          admin:      "If a new tool was sold to your team as an 'AI agent' but still needs you to click through every step, that's worth flagging — the label matters less than what it actually does."
+        },
+        challenge: {
+          steps: [
+            "Think of one AI tool your team uses or is evaluating that's been described as an 'agent.'",
+            "Open your company-approved AI tool and type: <em>\"A vendor describes their product as an 'AI agent.' Here's what it actually does: [describe the tool's real behavior]. Based on this, is it a true AI agent (autonomous, multi-step, error-recovering) or closer to an AI assistant or chatbot? Give me 3 questions I should ask the vendor to find out.\"</em>",
+            "Review the suggested questions and save them.",
+            "Use those questions in your next vendor conversation or tool review.",
+            "Share one 'agent washing' red flag you identified in the community group."
+          ]
+        }
+      },
+      {
+        title: "The skill becoming rarest: thinking without AI",
+        body: "Gartner's strategic predictions warn that <em>critical-thinking skills are atrophying from GenAI overuse</em>, and by the end of 2026, half of global organizations will require 'AI-free' skills assessments during hiring. At the same time, 75% of hiring processes will test for AI proficiency by 2027. The new bar isn't either/or — it's both: employers want people who can <em>use AI well and reason independently</em> when the screen is off.",
+        slants: {
+          strategy:   "If your team can't build a business case without AI drafting it first, that's a capability risk worth naming now — before a competitor or a client notices.",
+          operations: "Run one team exercise this month without AI: whiteboard a problem, debate options, decide. The muscle atrophies if you never use it.",
+          pm:         "When reviewing AI-generated deliverables, ask 'what's the argument against this?' before accepting. That single question is the critical-thinking rep.",
+          admin:      "Your ability to spot when something 'doesn't feel right' — even in polished AI output — is exactly the skill employers are starting to test for. Trust it."
+        },
+        challenge: {
+          steps: [
+            "Pick a task you recently completed with AI help — a draft, a summary, an analysis.",
+            "Set a timer for 10 minutes and redo just the core thinking behind it without any AI tool. Write your own argument, outline, or analysis in a plain doc.",
+            "Compare your unassisted version with the AI-assisted one. Where did AI add real value? Where did it just save typing?",
+            "Open your company-approved AI tool and ask: <em>\"Compare these two approaches to [describe the work]. Version A was written entirely by me. Version B was AI-assisted. Where is the human version stronger? Where is the AI version stronger? What does the gap tell me about where I should rely on AI and where I shouldn't?\"</em>",
+            "Share your biggest insight about the gap in the community group."
+          ]
+        }
+      }
+    ],
+    homework: {
+      title: "Let AI help you prepare for a conversation you've been putting off.",
+      body: "Got a tricky personal conversation coming up — asking a neighbor about noise, bringing up money with a friend, setting a boundary with family? AI makes a surprisingly good rehearsal partner. Try this in ChatGPT, Claude, or Gemini (all free):",
+      prompt: "\"I need to have a conversation with someone about [the topic — no real names needed]. I want to be honest but not harsh. Before you help me plan what to say, ask me 3 questions: what outcome I actually want, what I'm most afraid of saying, and what I think they're feeling.\"<br><br>That structure — <em>desired outcome, biggest fear, their perspective</em> — works for any hard conversation. Once you've answered the three questions, the script almost writes itself."
+    }
+  },
     "2026-06-22": {
     intro: "Monday. Most companies have AI agents in production now — so this week's real question isn't whether to deploy, it's whether anyone's actually steering them. Three things to think about, and a five-minute experiment to start the week.",
     trends: [
