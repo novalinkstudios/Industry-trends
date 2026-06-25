@@ -852,6 +852,74 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-06-25": {
+      intro: "Thursday. Three reports this week reveal a pattern: organizations aren't struggling with AI because the technology is too hard — they're struggling because the decisions around it are.",
+      trends: [
+        {
+          title: "Almost everyone is deploying AI — almost nobody is doing it well",
+          body: "McKinsey's State of Organizations 2026 — surveying <em>over 10,000 executives across 15 countries</em> — found that 88% of organizations are actively deploying AI. But only 1% describe their rollouts as mature. And 81% report no meaningful bottom-line impact. The problem isn't access — it's that most organizations are automating individual tasks without rethinking how the work actually flows.",
+          slants: {
+            strategy:   "If your AI portfolio is a list of pilots with no system-level redesign behind them, you're optimizing fragments — the ROI shows up when you change the workflow, not just the tool.",
+            operations: "The gap between 'deployed' and 'working' usually lives in handoffs — the moment AI output passes to a person or vice versa is where most value leaks out.",
+            pm:         "When scoping an AI initiative, add one question: what process changes will this require beyond the tool itself? If the answer is none, the project probably won't move the needle.",
+            admin:      "If AI is making individual tasks faster but your overall workday doesn't feel lighter, that's the system problem this research describes — not a you problem."
+          },
+          challenge: {
+            steps: [
+              "Think of one AI tool or feature your team uses regularly.",
+              "Open your company-approved AI tool and paste: <em>\"We use AI for [describe what it does]. Walk me through what happens before and after the AI step — who provides the input, who acts on the output, and where does the process slow down?\"</em>",
+              "Read the response and identify one handoff or step that hasn't been redesigned since the AI was added.",
+              "Write one sentence describing what that step would look like if it were built for AI-in-the-loop from the start.",
+              "Share your sentence in the community group — it might be the redesign someone else's team needs too."
+            ]
+          }
+        },
+        {
+          title: "The AI layoff boomerang is real — and expensive",
+          body: "Forrester's 2026 Future of Work report landed a stat that should give every planning team pause: <em>55% of employers now regret AI-driven layoffs</em>. Among those, 35.6% rehired more than half of the workers they cut — and one in three spent more on restaffing than they originally saved. Most cuts were based on AI capabilities that weren't production-ready.",
+          slants: {
+            strategy:   "Headcount cuts that front-run the technology look decisive in Q1 and expensive by Q3. Build your workforce plan around what AI can reliably do today, not what it demos well.",
+            operations: "If your team absorbed work from a cut that was supposed to be covered by AI, name it — hidden workload redistribution is how 'savings' turn into burnout.",
+            pm:         "When AI is proposed as a replacement for a role on your project, ask for the production evidence, not the pilot results. Pilots and production have very different failure rates.",
+            admin:      "If your role was restructured around AI capabilities that haven't fully landed, you're living this stat. Document what's still manual — that evidence matters when decisions get revisited."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool.",
+              "Paste this prompt: <em>\"I want to evaluate whether AI could realistically handle a specific task at work. The task is: [describe one task]. Ask me 5 questions to determine whether AI is truly ready to take this over — focus on edge cases, quality requirements, and what happens when it gets something wrong.\"</em>",
+              "Answer the five questions honestly.",
+              "Based on your answers, decide: is AI ready for this task, partially ready, or not ready?",
+              "Share your verdict and reasoning in the community group — help others calibrate their own expectations."
+            ]
+          }
+        },
+        {
+          title: "Three-quarters of AI strategies are written for the board, not the team",
+          body: "Writer's 2026 enterprise AI survey — covering <em>1,200 C-suite executives and 1,200 non-technical employees</em> — found that 75% of executives admit their company's AI strategy is \"more for show\" than actual internal guidance. Meanwhile, 48% call their organization's AI adoption a \"massive disappointment,\" and 79% face real challenges despite high investment. The strategy exists. It just isn't doing anything.",
+          slants: {
+            strategy:   "A strategy document nobody references in actual decisions is a press release. The test: can someone two levels down describe how AI changes their work this quarter?",
+            operations: "If your team's AI priorities shift every time a new tool gets demoed to leadership, the strategy isn't guiding decisions — excitement is.",
+            pm:         "The gap between the strategy deck and the project plan is where AI initiatives stall. If you can't trace your project's goals back to a documented organizational priority, flag it.",
+            admin:      "If nobody has explained how AI is supposed to change your specific work, that's not because it doesn't affect you — it's because the strategy hasn't been translated into action yet. Ask."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool.",
+              "Paste this prompt: <em>\"I work in [your role] at a large organization. Our company has an AI strategy, but I'm not sure how it applies to my day-to-day work. Help me write 3 questions I could ask my manager to understand how the strategy actually affects our team — make them respectful but direct.\"</em>",
+              "Read the three questions and pick the one you'd actually feel comfortable asking.",
+              "Save it for your next 1:1 or team meeting.",
+              "Share the question you picked in the community group — and why it felt like the right one to start with."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Let AI help you sort out a decision you've been sitting on.",
+        body: "Everyone has a decision they keep putting off — not because it's hard, but because there are too many options or not enough clarity. Tonight, hand it to AI. The technique: give it your constraints and ask it to think out loud with you. Try it in ChatGPT, Claude, Gemini, or Perplexity (all free):",
+        prompt: "\"I'm trying to decide between [option A] and [option B] — it could be anything: a purchase, a trip, a schedule change, a conversation I need to have. Before you give advice, ask me 3 questions about what matters most to me in this decision. Then lay out the trade-offs in a simple table and tell me which one you'd pick if you were me, and why.\"<br><br>The technique: <em>asking AI to surface your own priorities before it advises</em> turns a generic recommendation into one that actually fits your life."
+      }
+    },
+
     "2026-06-24": {
       intro: "Wednesday. Three data points this week tell the same story: organizations are buying AI faster than they're preparing people to use it. Here's where the gap is showing — and one thing to try at home tonight.",
       trends: [
