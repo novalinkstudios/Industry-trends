@@ -852,6 +852,72 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-06-26": {
+      intro: "Friday. One report reshapes what 'entry-level' means, another reveals that most AI agent vendors aren't what they claim, and a three-minute habit makes you sharper at catching AI mistakes.",
+      trends: [
+        {
+          title: "Entry-level jobs now expect senior-level judgment",
+          body: "PwC's 2026 Global AI Jobs Barometer analyzed over a billion job ads across 27 countries and found that <em>AI-exposed entry-level roles are seven times more likely to require traditionally senior-level skills</em> like judgment, leadership, and stakeholder management. When AI handles the routine work that used to be the apprenticeship, what's left is the work that requires experience — except now it's expected from day one.",
+          slants: {
+            strategy:   "Workforce planning models that assume a pyramid of junior-to-senior are breaking down — rethink how you build capability when the bottom rungs look different.",
+            operations: "The junior analyst who once manually reconciled data now needs to know which reconciliation to trust and when to escalate — train for judgment, not just process.",
+            pm:         "Onboarding plans need to shift from teaching tools and templates to building decision-making muscle faster.",
+            admin:      "Your contextual knowledge — who to loop in, what the exec actually needs, when something feels off — is exactly the 'senior skill' AI can't replicate."
+          },
+          challenge: {
+            steps: [
+              "Think of the last task you delegated to a junior colleague or new hire. Write down what made it 'junior-level' work.",
+              "Open your company-approved AI tool and paste this prompt: <em>\"I'm going to describe a task. Tell me which parts could be handled by AI and which parts require human judgment, context, or relationship skills. Here's the task: [paste your description].\"</em>",
+              "Look at the split. The 'human judgment' parts are now your real entry-level training curriculum.",
+              "Share one insight from your split in the community group — what surprised you about where the judgment lives?"
+            ]
+          }
+        },
+        {
+          title: "Only about 130 AI agent vendors are real — the rest are relabeled chatbots",
+          body: "Gartner's 2026 Hype Cycle flagged a pattern it calls <em>\"agent washing\"</em> — vendors rebranding existing chatbots, RPA tools, and virtual assistants as AI agents without adding real autonomous capabilities. Of the thousands of vendors claiming agentic AI, Gartner estimates only about 130 deliver genuine agent functionality.",
+          slants: {
+            strategy:   "Before approving an 'AI agent' investment, ask the vendor what the agent can do without a human in the loop — if the answer is 'nothing new,' it's a rebrand.",
+            operations: "The ops team evaluating these tools should test for autonomy: can it handle exceptions, adjust to new data, and complete multi-step tasks on its own?",
+            pm:         "Vendor selection criteria need a new column: does this agent actually act, or does it just respond when asked?",
+            admin:      "If the 'AI agent' your team adopted still needs you to copy-paste between systems, it's the old tool with a new name."
+          },
+          challenge: {
+            steps: [
+              "Pick one AI tool your organization currently uses or is evaluating.",
+              "Open a blank note and answer three questions about it: (1) Can it take multi-step action without being prompted at each step? (2) Can it handle exceptions or unexpected inputs on its own? (3) Does it do something new, or does it do what the previous version did with a chat interface on top?",
+              "If you answered 'no' to two or more, you've likely spotted an agent-washed product. Note what it actually is — a chatbot, an assistant, or an automation script with a new label.",
+              "Share your finding in the group. No vendor names needed — just describe what you found."
+            ]
+          }
+        },
+        {
+          title: "A three-minute habit makes you measurably better at catching AI mistakes",
+          body: "A randomized trial published in MIT Sloan Management Review found that a <em>three-minute critical thinking protocol improved AI-related decision quality by nearly 8 percentage points</em>. The method is simple: form your own judgment before consulting AI, then cross-check critical outputs against an independent source.",
+          slants: {
+            strategy:   "Strategic recommendations that start with 'AI says' skip the most important step — having a position before you ask.",
+            operations: "For ops decisions with real downstream consequences, the three-minute pause between AI output and action is where errors get caught.",
+            pm:         "Build the verify step into your team's AI-assisted workflows — not as bureaucracy, but as a two-line checklist.",
+            admin:      "When AI drafts a sensitive email or summary, reading it once with fresh eyes before sending catches what the model missed about tone and context."
+          },
+          challenge: {
+            steps: [
+              "Pick a decision or task you'd normally hand to AI this afternoon — a summary, a recommendation, a draft.",
+              "Before opening your AI tool, spend 90 seconds writing your own rough answer. Just bullet points. This is the 'Think First' step.",
+              "Now run the same task through your company-approved AI tool.",
+              "Compare the two. Where they disagree, check one external source — a colleague, a document, a data point. This is the 'Verify Always' step.",
+              "Note whether the comparison changed your final answer. Share what you found in the group — did thinking first change what you noticed in the AI's output?"
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "This weekend, let AI help you make a decision you've been overthinking.",
+        body: "We all have one — the purchase you keep researching, the plan you keep redrafting, the choice you keep putting off. Use the 'Think First' technique from today's drop. Try this in ChatGPT, Claude, Gemini, or Perplexity (all free):",
+        prompt: "\"I need to decide [your decision]. Before you help, here's what I'm currently leaning toward and why: [your rough thinking]. Now give me three considerations I haven't thought of, ranked by how much they'd change my decision.\"<br><br>Writing your position first — before the AI weighs in — keeps you in the driver's seat. That's the whole technique."
+      }
+    },
+
     "2026-06-25": {
       intro: "Thursday. Three reports this week reveal a pattern: organizations aren't struggling with AI because the technology is too hard — they're struggling because the decisions around it are.",
       trends: [
