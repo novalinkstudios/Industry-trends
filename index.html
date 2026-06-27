@@ -852,6 +852,73 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+  "2026-06-27": {
+      intro: "The AI landscape is fragmenting \u2014 in who builds the tools, who uses them, and who regulates them. This edition covers the first real crack in one platform's dominance, a custom chip bet that could reshape AI economics, and a state-level regulation rewrite that signals where US AI governance is headed.",
+      trends: [
+        {
+          title: "The One-App AI Era Is Over",
+          body: "ChatGPT's share of the global AI assistant market has fallen to 46.4% as of May 2026 \u2014 the first time it has dipped below 50% \u2014 while rival platforms have surged to 27.7% and 10.3% respectively. Users are increasingly switching between AI assistants for different tasks, with brand trust and values alignment driving platform choices alongside features. <em>Sensor Tower's State of AI 2026 report, as reported by TechCrunch on June 16, 2026: AI app spending is on pace to hit $4.2 billion in H1 2026, nearly double H1 2025's $1.83 billion.</em>",
+          slants: {
+            strategy: "A fragmenting AI market means your organization's AI strategy should no longer be single-vendor \u2014 evaluate which assistant best fits each use case rather than defaulting to one.",
+            operations: "With users routinely switching between AI tools, standardize internal guidelines for which platforms are approved for which tasks to avoid data sprawl and inconsistent outputs.",
+            pm: "Recognize that your team members may already be using multiple AI assistants \u2014 create a lightweight comparison framework so people pick the best tool for each project need.",
+            admin: "If your team's subscriptions are spread across multiple AI platforms, now is the time to audit who's paying for what and consolidate where possible to control costs."
+          },
+          challenge: {
+            steps: [
+              "Step 1: Pick a task you do regularly \u2014 summarizing notes, drafting emails, or researching a topic.",
+              "Step 2: Paste the same prompt into your primary AI tool: <em>\"Summarize the following meeting notes into 5 bullet points with action items and owners clearly labeled: [paste notes]\"</em>",
+              "Step 3: Run the identical prompt in a second AI assistant you haven't tried before and compare the outputs side by side.",
+              "Step 4: Ask your primary tool to evaluate the difference: <em>\"Here are two AI-generated summaries of the same meeting notes. Compare them for clarity, completeness, and actionability. Which is stronger and why?\"</em>",
+              "Step 5: Note which tool performed better for this specific task and save your findings for future reference."
+            ]
+          }
+        },
+        {
+          title: "The Race to Own the AI Cost Stack",
+          body: "A first-ever custom AI inference chip was unveiled this week, designed from scratch in nine months and targeting a 50% reduction in the cost of serving AI responses to users. The chip is purpose-built for inference \u2014 the everyday process of generating AI outputs \u2014 rather than training, addressing the single largest operational expense for AI providers at scale. <em>Build Fast with AI and Unrot, June 26, 2026: The chip maker spent approximately $14 billion serving its chatbot on third-party hardware in 2025, making inference cost reduction a profitability-defining lever.</em>",
+          slants: {
+            strategy: "Falling inference costs mean AI-powered features will get cheaper to run \u2014 start planning which processes could become AI-enabled once per-query costs drop significantly.",
+            operations: "Lower AI serving costs will eventually translate to lower API prices for enterprise customers \u2014 track pricing changes quarterly so you can expand AI usage as costs decline.",
+            pm: "As the economics of AI improve, scope previously cost-prohibitive AI features into your product and process roadmaps for 2027-2028 planning.",
+            admin: "This won't change your tools tomorrow, but it signals that AI subscriptions and API costs are likely heading down \u2014 a useful data point for next year's budget planning."
+          },
+          challenge: {
+            steps: [
+              "Step 1: Open your company-approved AI tool and think about one process that feels too expensive or slow to automate with AI today.",
+              "Step 2: Describe it to your AI tool: <em>\"I want to use AI to [describe process], but I'm concerned about cost and scale. Break down the factors that determine the cost of running AI on this task, and estimate whether it's more cost-effective to use AI or keep the current manual process.\"</em>",
+              "Step 3: Review the output and identify the biggest cost driver the AI highlights.",
+              "Step 4: Ask a follow-up: <em>\"If the cost of AI inference dropped by 50% over the next 18 months, how would that change your recommendation? Rewrite the cost-benefit analysis with that assumption.\"</em>",
+              "Step 5: Save the revised analysis \u2014 it may become relevant sooner than you think."
+            ]
+          }
+        },
+        {
+          title: "Colorado Rewrites the AI Regulation Playbook",
+          body: "Colorado's landmark AI Act \u2014 originally the most comprehensive state-level AI regulation in the US \u2014 has been repealed and replaced with a narrower transparency-focused framework just weeks before its June 30 enforcement deadline. The revised law drops mandatory bias audits, impact assessments, and the duty-of-care framework, replacing them with disclosure requirements when automated tools influence consequential decisions like hiring or lending. <em>Littler Mendelson, May 15, 2026: The governor signed the amendment less than two months before the original law was due to take effect, ending a nail-biting period for employers.</em>",
+          slants: {
+            strategy: "The pivot from prescriptive AI rules to transparency-focused regulation signals the likely direction of US AI governance \u2014 invest in disclosure and documentation capabilities now.",
+            operations: "Even though the harshest requirements were dropped, the new law still requires 30-day adverse-outcome notices when AI influences consequential decisions \u2014 audit your workflows for any automated decision-making touching hiring, lending, or similar areas.",
+            pm: "If your projects involve AI-driven decisions that affect people \u2014 screening candidates, scoring applications, routing cases \u2014 make sure your process documentation captures what role AI plays and how humans review outputs.",
+            admin: "Start building a simple log of which AI tools your team uses for any decisions that affect employees or customers \u2014 the trend toward transparency requirements is only growing, even if the strictest rules got scaled back."
+          },
+          challenge: {
+            steps: [
+              "Step 1: Open your AI tool and think about any process in your work that uses AI to help make decisions about people (hiring screens, performance reviews, customer approvals, etc.).",
+              "Step 2: Describe it to your AI tool: <em>\"We use AI to help with [describe process]. Draft a short plain-language disclosure statement (under 100 words) that explains to the affected person: what decision is being made, what role AI plays in it, and how they can request a human review.\"</em>",
+              "Step 3: Read the draft disclosure and note whether it actually makes sense to a non-technical person.",
+              "Step 4: Refine it: <em>\"Rewrite this disclosure at an 8th-grade reading level. Remove any jargon. Add one sentence explaining what data the AI uses to make its recommendation.\"</em>",
+              "Step 5: Save the final version \u2014 even if you don't need it today, transparency statements are becoming a baseline expectation."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Plan Your Perfect Lazy Weekend",
+        body: "You've earned a break. Use AI to plan a weekend that's entirely about what you enjoy \u2014 no work, no obligations, just good food, good vibes, and maybe a new experience.",
+        prompt: "I live in [your city/area] and have a free weekend coming up. I enjoy [list 2-3 things you like: cooking, hiking, live music, reading, trying new restaurants, etc.]. My budget is around $[amount]. Plan a relaxing but fun weekend itinerary for me \u2014 include one meal I should cook at home with a simple recipe, one outing or activity I might not have tried before, and one low-key evening plan. Keep it realistic and enjoyable, not packed."
+      }
+    },
   "2026-06-26": {
     intro: "Friday. This week's biggest AI moves are all about infrastructure catching up to ambition — a new chip, a new agent inside your existing tools, and new data confirming the time savings are real. The question now is what you do with them.",
     trends: [
