@@ -852,6 +852,73 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+  "2026-06-27": {
+      intro: "Happy Friday, NovaLink Studios \u2014 the AI industry just dropped a custom chip, accused a rival of industrial-scale theft, and rewrote a landmark regulation all in the same week. Here are three stories reshaping how your team should think about infrastructure costs, IP security, and compliance heading into H2 2026.",
+      trends: [
+        {
+          title: "OpenAI and Broadcom Unveil Jalape\u00f1o \u2014 OpenAI's First Custom Inference Chip Targeting 50% Cost Reduction",
+          body: "On June 25, OpenAI and Broadcom revealed Jalape\u00f1o, OpenAI's first custom AI inference chip, designed and built in just nine months using OpenAI's own models to accelerate chip design. The chip targets a 50% reduction in LLM serving costs \u2014 a profitability-defining lever given that OpenAI spent roughly $14 billion on inference in 2025 <em>Build Fast with AI, June 26 2026</em>. Production ramp is expected in 2027 with full deployment at 10-gigawatt scale through 2029 alongside Microsoft <em>unrot.co, June 26 2026</em>.",
+          slants: {
+            strategy: "Vertical integration of AI inference signals that vendor lock-in to Nvidia GPUs is weakening. Revisit your 2027 infrastructure forecasts \u2014 token pricing from OpenAI-powered products could drop materially as Jalape\u00f1o scales.",
+            operations: "Monitor API pricing announcements from OpenAI over the next 12 months. If inference costs fall 50%, renegotiate your AI tooling contracts before renewals lock in today's rates.",
+            pm: "Cheaper inference unlocks use cases previously killed by cost-per-query math. Re-score any AI features your team shelved for margin reasons \u2014 the unit economics may flip by mid-2027.",
+            admin: "No immediate action, but flag this for budget planning. If your org uses OpenAI APIs at scale, finance should model a scenario where token costs halve by 2028."
+          },
+          challenge: {
+            steps: [
+              "Step 1: Pull your team's last 3 months of AI API invoices and calculate total inference spend.",
+              "Step 2: Paste into your AI assistant: <em>\"Here is our monthly AI API spend for the last quarter: [paste data]. Model a scenario where inference costs drop 50% over 18 months. What new AI features or workflows become cost-viable for a mid-size studio, and what's the projected annual savings?\"</em>",
+              "Step 3: Review the output and identify the top 2 features or workflows that were previously too expensive to justify.",
+              "Step 4: Ask: <em>\"Draft a one-page internal memo proposing we pilot [top feature] in Q1 2027, including estimated cost, expected ROI, and key risks tied to vendor chip roadmap uncertainty.\"</em>",
+              "Step 5: Share your memo draft and savings projection in the NovaLink community channel."
+            ]
+          }
+        },
+        {
+          title: "Anthropic Accuses Alibaba of Running Largest Known AI Distillation Attack \u2014 28.8 Million Claude Exchanges",
+          body: "Anthropic sent a letter to US Senators Tim Scott and Elizabeth Warren accusing Alibaba's Qwen lab of orchestrating 28.8 million fraudulent Claude exchanges across 25,000 fake accounts between April and June 2026, targeting agentic reasoning and coding capabilities <em>unrot.co, June 26 2026</em>. This nearly doubles a previous campaign by DeepSeek and others that generated 16 million exchanges earlier in 2026 <em>Build Fast with AI, June 26 2026</em>. For enterprise teams, the distillation threat means a weaker model can inherit frontier capabilities without the governance and safety controls of the original system.",
+          slants: {
+            strategy: "Distillation attacks are now an IP and competitive intelligence issue, not just a model-safety concern. Evaluate whether your proprietary data flowing through third-party AI APIs could be harvested similarly.",
+            operations: "Audit how your team accesses AI APIs. Implement rate limiting, anomaly detection, and account verification on any AI-powered services you expose \u2014 internally or externally.",
+            pm: "If your product roadmap depends on a specific AI model's unique capabilities, understand that those capabilities may be replicated by competitors via distillation. Build defensibility through proprietary data and workflow integration, not model access alone.",
+            admin: "Review your AI vendor agreements for clauses covering data usage, model training on inputs, and IP indemnification. Flag gaps to legal before next renewal cycle."
+          },
+          challenge: {
+            steps: [
+              "Step 1: List every AI API or model your organization sends proprietary data to, including internal tools and third-party integrations.",
+              "Step 2: Paste into your AI assistant: <em>\"We use the following AI services and send them these types of data: [paste list]. Assess our exposure to distillation-style attacks or data harvesting. Which integrations carry the highest IP risk, and what contractual or technical safeguards should we implement?\"</em>",
+              "Step 3: Cross-reference the AI's recommendations against your current vendor contracts and internal security policies.",
+              "Step 4: Ask: <em>\"Create a risk matrix scoring each of our AI integrations on data sensitivity, contract protection, and technical safeguard maturity. Include a recommended priority order for remediation.\"</em>",
+              "Step 5: Share your risk matrix and top finding in the NovaLink community channel."
+            ]
+          }
+        },
+        {
+          title: "Colorado Rewrites Its Landmark AI Law \u2014 Original Act's June 30 Deadline Replaced by Narrower Framework Effective January 2027",
+          body: "Governor Polis signed SB 26-189 on May 14, repealing the original Colorado AI Act and replacing it with a disclosure-focused framework around automated decision-making technology (ADMT) that takes effect January 1, 2027 <em>Hunton Privacy Blog, May 22 2026</em>. The rewrite eliminates the duty-of-care, risk management programs, and impact assessment requirements of the original law in favor of consumer notice, post-adverse-outcome explanations, and human review rights <em>Littler, May 15 2026</em>. Meanwhile, the EU AI Act's high-risk transparency obligations become fully applicable on August 2, 2026, creating a widening compliance gap between US and EU approaches <em>Apptad, June 2026</em>.",
+          slants: {
+            strategy: "The US is diverging from the EU's risk-based AI governance model toward disclosure-based regulation. If you operate in both markets, plan for two distinct compliance postures rather than one harmonized framework.",
+            operations: "The compliance sprint is real but the deadline shifted. Use the runway to January 2027 to build ADMT disclosure workflows, adverse-outcome notice templates, and human review processes \u2014 not to delay preparation.",
+            pm: "Any product feature that uses AI to influence consequential decisions (hiring, lending, insurance) now needs a disclosure layer and a human-review pathway baked into the UX, not bolted on after launch.",
+            admin: "Start a compliance tracker for AI regulation across Colorado (Jan 2027), the EU AI Act (Aug 2026), and any state laws relevant to your operations. Coordinate with legal on the attorney general's forthcoming rulemaking."
+          },
+          challenge: {
+            steps: [
+              "Step 1: Inventory every internal or client-facing tool at NovaLink that uses AI to influence decisions about people \u2014 hiring screens, performance scoring, content moderation, client recommendations.",
+              "Step 2: Paste into your AI assistant: <em>\"Here are the AI-driven decision tools we use: [paste list]. For each, assess whether it would qualify as 'covered ADMT' under Colorado SB 26-189 and whether it triggers obligations under the EU AI Act's high-risk categories. Summarize the disclosure, notice, and human-review requirements for each applicable framework.\"</em>",
+              "Step 3: Build a simple compliance calendar with key dates: EU AI Act Aug 2, 2026; Colorado ADMT Jan 1, 2027; and any sector-specific deadlines.",
+              "Step 4: Ask: <em>\"Draft a template post-adverse-outcome consumer notice that meets both Colorado SB 26-189 requirements and EU AI Act transparency obligations for a [describe your use case] system. Include placeholders for system description, data inputs, and human review contact.\"</em>",
+              "Step 5: Share your compliance calendar and draft notice template in the NovaLink community channel."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Build Your AI Vendor Risk Snapshot",
+        body: "This week's stories share a common thread: the infrastructure, security, and regulatory ground beneath your AI stack is shifting fast. Your weekend assignment is to create a single-page AI Vendor Risk Snapshot that maps every AI service your team uses against three dimensions \u2014 cost exposure (will inference price changes impact you?), IP exposure (could your data be harvested or distilled?), and compliance exposure (do you meet disclosure requirements in every jurisdiction you operate in?). Bring it to Monday's standup.",
+        prompt: "I need to create a one-page AI Vendor Risk Snapshot for my team. We use the following AI tools and services: [list them]. For each, score our exposure on three dimensions: (1) Cost Risk \u2014 how sensitive is our spending to inference price changes from this vendor? (2) IP Risk \u2014 what proprietary data do we send this vendor and what contractual protections exist? (3) Compliance Risk \u2014 does our use of this tool trigger obligations under Colorado SB 26-189, the EU AI Act, or other AI regulations? Present the results as a table with a red/yellow/green rating for each dimension and a prioritized action list for Monday."
+      }
+    },
   "2026-06-26": {
     intro: "Friday. This week's biggest AI moves are all about infrastructure catching up to ambition — a new chip, a new agent inside your existing tools, and new data confirming the time savings are real. The question now is what you do with them.",
     trends: [
