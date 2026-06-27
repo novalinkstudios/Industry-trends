@@ -124,17 +124,25 @@ def inject_html(entry):
 
 
 def main():
+    drops = load_drops()
     with open(INDEX_PATH, encoding="utf-8") as f:
         html = f.read()
-    if f'"{TODAY}"' in html:
+
+    # Skip only if both drops.json AND index.html already have today
+    if TODAY in drops and f'"{TODAY}"' in html:
         print(f"{TODAY} already published.")
         sys.exit(0)
-    print(f"Generating {TODAY}...")
-    entry = generate()
-    # Save to drops.json so the-daily-drop can fetch this content
-    drops = load_drops()
-    drops[TODAY] = entry
-    save_drops(drops)
+
+    # Generate if we don't have the entry in drops.json yet
+    if TODAY not in drops:
+        print(f"Generating {TODAY}...")
+        entry = generate()
+        drops[TODAY] = entry
+        save_drops(drops)
+    else:
+        # drops.json has it but HTML is missing — just re-inject
+        entry = drops[TODAY]
+
     inject_html(entry)
     print("Done.")
 
