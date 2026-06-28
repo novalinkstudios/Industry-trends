@@ -852,6 +852,70 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+  "2026-06-28": {
+      intro: "Sunday. Three data points this week challenge the AI productivity story — not to slow you down, but to sharpen where you invest your time and attention.",
+      trends: [
+        {
+          title: "Your AI time savings have a hidden tax",
+          body: "Glean's 2026 Work AI Index surveyed 6,000 digital workers across the US, UK, and Australia and found a striking gap: workers say AI saves them <em>11 hours a week — but they spend 6.4 of those hours \"botsitting\"</em>: feeding context, checking outputs, debugging mistakes, and re-running prompts. Worse, 69% of AI users admit to shipping work they haven't fully reviewed or couldn't confidently defend. The time savings are real, but the net gain is much smaller than the headline — and the quality risk is growing.",
+          slants: {
+            strategy:   "If your team reports big AI time savings, ask what they're doing with the oversight hours — that's where the real efficiency opportunity lives.",
+            operations: "The 6.4-hour botsitting number means your team's AI workflows need better guardrails, not more AI — reduce the review loop and the net savings jump.",
+            pm:         "Factor botsitting time into your project estimates when AI is involved — the raw \"time saved\" number overstates the actual gain.",
+            admin:      "If you're spending more time checking AI's work than it saves you, narrow the scope — use AI for drafts you can verify quickly, not complex tasks that need deep review."
+          },
+          challenge: {
+            steps: [
+              "Think about the last three times you used AI for a work task. For each one, estimate how long the AI part took versus how long you spent reviewing, editing, or re-prompting.",
+              "Open your company-approved AI tool and paste: <em>\"I spend a lot of time reviewing and fixing AI outputs. Give me 3 specific techniques to reduce the time I spend checking AI's work without sacrificing quality. Focus on prompting strategies, not tool features.\"</em>",
+              "Pick one technique and try it on your next AI-assisted task.",
+              "Share your before-and-after review time in the community group — let's figure out what actually cuts the botsitting."
+            ]
+          }
+        },
+        {
+          title: "Most AI training is designed for the wrong kind of skill",
+          body: "DataCamp and YouGov surveyed 500+ enterprise leaders and found a paradox: <em>82% of organizations now offer AI training, yet 59% still report an AI skills gap</em>. Only 35% have a mature, organization-wide upskilling program. The problem isn't access to training — it's that most programs were designed for stable, specialized skills. AI literacy is cross-functional and evolving fast, and generic courses don't build the applied judgment people actually need. Organizations with structured, role-specific programs see nearly double the AI ROI.",
+          slants: {
+            strategy:   "If your AI training program is a library of on-demand courses, you're checking a box, not building capability — structured, applied learning is the 2x ROI lever.",
+            operations: "The most effective AI training happens in the workflow, not in a separate learning portal — pair new skills with real tasks your team already does.",
+            pm:         "If your team completed AI training but still can't apply it, the training format is the gap — push for hands-on, task-specific practice over general courses.",
+            admin:      "If you took an AI course and still feel unsure, that's a training design problem, not a you problem — seek out practice on real tasks, not more videos."
+          },
+          challenge: {
+            steps: [
+              "Think about any AI training you've completed — a course, a webinar, a self-study module. Write down one specific thing you learned that you actually use at work today.",
+              "If you can't name one, that's the gap the research describes. Open your company-approved AI tool and paste: <em>\"I work in [your role]. Give me one specific AI technique I could practice in the next 15 minutes using a task I do regularly — not a tutorial, but a real task with a real prompt I can try right now.\"</em>",
+              "Try it. Notice whether this 15-minute applied exercise teaches you more than a longer course did.",
+              "Share what you practiced and whether it stuck in the community group — applied beats theoretical every time."
+            ]
+          }
+        },
+        {
+          title: "The real AI adoption rate is lower than the headlines say",
+          body: "The Federal Reserve's April 2026 analysis of Census Bureau data found that <em>only about 18–20% of U.S. firms have actually adopted AI in their business operations</em> — while vendor surveys routinely report 78–91%. The gap is definitional: vendor surveys often count any employee using a chatbot as enterprise adoption, while the Census measures structured organizational use. Neither number is wrong, but the difference matters: the urgency to build AI skills is real, but the panic that everyone else is already miles ahead is mostly noise.",
+          slants: {
+            strategy:   "Vendor adoption stats create a false sense of urgency that leads to rushed, unfocused AI investments — the Fed's numbers give you room to be deliberate and strategic.",
+            operations: "A 20% structured-adoption rate means most organizations are still figuring this out — your expertise in designing how AI actually gets used is still rare and valuable.",
+            pm:         "When a stakeholder says \"everyone else is already doing this with AI,\" the Census data says otherwise — use it to push back on panic-driven timelines and scope realistic plans.",
+            admin:      "If you feel behind on AI, the data says the vast majority of organizations are in the same position — you have more runway than the headlines suggest."
+          },
+          challenge: {
+            steps: [
+              "The next time you see an AI adoption statistic — \"91% of companies use AI!\" — pause before reacting.",
+              "Open your company-approved AI tool and paste: <em>\"When I see a statistic like '91% of companies use AI,' what 3 critical-thinking questions should I ask to understand what it actually means? Teach me to read AI adoption stats like an analyst, not a headline reader.\"</em>",
+              "Apply those questions to one AI headline or vendor pitch you encounter this week.",
+              "Share the most useful question in the community group — media literacy around AI stats is a skill worth building together."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Find your next great read, watch, or listen.",
+        body: "Instead of scrolling for 20 minutes and picking nothing, let AI be your personal recommender. The technique here is taste-profile prompting — you describe what you actually like and dislike, and AI matches to your taste rather than what's trending. Try it in ChatGPT, Claude, Gemini, or Perplexity (all free):",
+        prompt: "\"I'm looking for a new [book / TV show / podcast / movie]. Here's what I've loved recently: [name 2-3 things you genuinely enjoyed]. Here's what I don't like: [name 1-2 things you bounced off of]. Based on my specific taste — not just what's popular — give me 3 recommendations ranked by how confident you are I'll like them. For each one, tell me in one sentence why it fits me specifically.\"<br><br>The <em>tell me why it fits me specifically</em> part is what separates a generic list from a real recommendation. If the reasoning doesn't match your taste, the pick probably won't either."
+      }
+    },
   "2026-06-27": {
       intro: "The AI landscape is fragmenting \u2014 in who builds the tools, who uses them, and who regulates them. This edition covers the first real crack in one platform's dominance, a custom chip bet that could reshape AI economics, and a state-level regulation rewrite that signals where US AI governance is headed.",
       trends: [
