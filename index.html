@@ -852,6 +852,72 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+  "2026-06-29": {
+      intro: "Monday reset. Three patterns from the latest research — why most AI investments stall before they pay off, which role is quietly absorbing all the pressure, and a governance blind spot hiding in plain sight.",
+      trends: [
+        {
+          title: "Most AI pilots never graduate — and the blocker isn't technology",
+          body: "Harvard Business Review and Deloitte's latest data tell the same story: <em>74% of leaders want to grow revenue through AI, but only 20% are actually doing it</em> — a 54-point gap. Deloitte's 2026 State of AI in the Enterprise report adds that just 25% of companies have moved 40% or more of their AI pilots into production. The bottleneck is organizational — legacy processes, unclear ownership, and workflows designed before AI existed.",
+          slants: {
+            strategy:   "Your AI strategy is only as strong as the operating model underneath it. If the org chart hasn't changed, the strategy probably hasn't landed.",
+            operations: "Map which processes still run on pre-AI assumptions. Those are your highest-leverage redesign targets.",
+            pm:         "If your AI pilot has been 'almost ready' for two quarters, the blocker is probably governance or process ownership — not the model.",
+            admin:      "You see the real workflows. When leadership asks why AI isn't scaling, you likely already know which handoffs and approval chains are the bottleneck."
+          },
+          challenge: {
+            steps: [
+              "Think of one AI pilot or tool your team has tried in the past six months.",
+              "Open a note and write down: what's the one process or approval that slowed it from becoming a daily habit?",
+              "Open your company-approved AI tool and paste this prompt: <em>\"I'm trying to move an AI pilot into daily use at work. The biggest friction point is [your answer above]. Give me three concrete steps to reduce that friction, assuming I'm not in charge of IT or procurement.\"</em>",
+              "Read the suggestions and pick the one you could actually do this week.",
+              "Share in the group: what was your friction point, and which suggestion felt most doable?"
+            ]
+          }
+        },
+        {
+          title: "AI adoption is quietly overloading middle managers",
+          body: "A Harvard Business Review study published last week found that <em>middle managers are absorbing the hardest parts of AI adoption — validating outputs, coaching teams, catching errors — while delivery pressure stays the same or increases</em>. Senior leaders see strategic potential. Frontline workers get productivity gains. The middle layer gets squeezed.",
+          slants: {
+            strategy:   "If your transformation plan doesn't include manager support structures, it has a single point of failure in the middle.",
+            operations: "Your managers are already doing AI quality control informally. Make that work visible before it burns them out.",
+            pm:         "Every AI tool you roll out adds a validation step someone has to own. If that someone is always the PM, flag it.",
+            admin:      "You're likely already the person people ask when AI output 'looks wrong.' That judgment is real work — name it."
+          },
+          challenge: {
+            steps: [
+              "Think about the last time you or your manager had to check, fix, or redo something an AI tool produced.",
+              "Open a note and answer: <em>\"How much time did that take, and was it visible to anyone above me?\"</em>",
+              "If it wasn't visible, jot down one way you could make that effort countable — a Slack message, a line item in a status update, a time log.",
+              "Share one sentence in the group about what AI validation work looks like in your role."
+            ]
+          }
+        },
+        {
+          title: "60% of executives use AI for decisions — 5% say they manage it well",
+          body: "Deloitte's 2026 Global Human Capital Trends survey of more than 9,000 leaders across 89 countries found that <em>60% of executives now regularly use AI to support decisions, but only 5% say they manage that process well</em>. Meanwhile, 42% of workers say their organizations aren't evaluating AI's impact on people at all.",
+          slants: {
+            strategy:   "Decision quality is now partly a systems design problem. If you're not designing how AI feeds into your decisions, you're defaulting to whatever the tool suggests.",
+            operations: "When AI shapes a decision and it goes wrong, the audit trail matters. Build the habit of documenting which inputs came from AI.",
+            pm:         "Scope decisions, risk assessments, resource calls — if AI is informing these, your governance framework needs to say so explicitly.",
+            admin:      "You often execute decisions made above you. Knowing which ones were AI-informed helps you ask better clarifying questions."
+          },
+          challenge: {
+            steps: [
+              "Think of one decision you or your team made recently where AI contributed — a recommendation, a draft, a summary that shaped the call.",
+              "Write down: <em>\"The AI helped with [what], and the human decided [what].\"</em>",
+              "Ask yourself: if that decision were questioned next quarter, could you explain the AI's role clearly?",
+              "Share your one-liner in the group — and whether the answer to that last question surprised you."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Tonight, let AI help you think through a money question.",
+        body: "Pick something financial that's been nagging you — a subscription you keep meaning to cancel, a bill you don't fully understand, or a savings goal you haven't started. Open your free AI tool of choice (ChatGPT, Claude, Gemini, or Perplexity) and try this:",
+        prompt: "\"I want to understand [this financial thing] better. Before you give me advice, ask me 3 questions about my situation so your answer actually fits my life.\"<br><br>That pattern — <em>ask me questions first</em> — works for any topic. Tonight you're practicing it on something low-stakes so it's automatic when the stakes are higher."
+      }
+    },
+
   "2026-06-28": {
       intro: "The AI landscape is fracturing in real time \u2014 market share is splitting, regulation is shape-shifting, and autonomous agents are moving from demos to daily workflows. Today's three stories all point to the same truth: the era of defaulting to a single AI tool, a single compliance plan, or a single way of working is officially over.",
       trends: [
