@@ -852,6 +852,71 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+  "2026-06-30": {
+      intro: "Three stories that all point in the same direction: AI success isn't about the technology — it's about how you prepare your people, redesign your work, and know when humans are irreplaceable.",
+      trends: [
+        {
+          title: "Most companies are confusing AI access with AI readiness",
+          body: "Gartner's 2026 Global Labor Market Survey of 12,004 employees across 40 countries found what they call the <em>\"Enablement Illusion\"</em> — leaders are mistaking basic AI tool access for real workforce readiness. Only 27% of executives have a comprehensive AI strategy, and just 20% believe their workforce is truly AI-ready. The finding that matters most: employees who feel genuinely positive about AI are <em>3.4 times more likely to be highly productive</em>. Confidence, not software licenses, is the bottleneck.",
+          slants: {
+            strategy:   "If your AI strategy is 'we gave everyone Copilot,' that's not a strategy — it's a procurement decision. Map the gap between access and actual confident use.",
+            operations: "Run a quick pulse check: how many people on your team have used an AI tool in the last 30 days for real work? The answer will tell you more than any adoption dashboard.",
+            pm:         "Project plans that list 'AI training' as a single checkbox are part of the illusion. Break it into tool-specific, role-specific enablement milestones.",
+            admin:      "You're often the first to hear when people are confused by new tools. That informal feedback is gold — surface it to leadership as a signal of what's working and what's not."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool.",
+              "Paste this prompt: <em>\"I'm a [your role] on a team of [size]. We have access to [list your AI tools]. Create a 5-question anonymous survey I could send to my team to measure the gap between AI tool access and actual confident usage. Include questions about frequency of use, comfort level, and what's holding people back.\"</em>",
+              "Review the survey questions and adjust any that don't fit your team's context.",
+              "Send the survey to your team this week — even informally over chat or email.",
+              "Share one surprising finding in the group."
+            ]
+          }
+        },
+        {
+          title: "Companies are automating broken processes — and wondering why it's not working",
+          body: "Deloitte's 2026 Tech Trends report puts it bluntly: most agentic AI projects aren't failing because the technology is bad — they're failing because <em>organizations are automating workflows designed for humans instead of rethinking the work itself</em>. Only 11% of organizations have AI agents in production. Gartner estimates 40% of agentic projects will fail by 2027 for exactly this reason: bolting AI onto pre-AI processes doesn't compound.",
+          slants: {
+            strategy:   "Before approving any AI automation initiative, ask: 'Was this process designed for a world with AI, or are we bolting AI onto a 2019 workflow?'",
+            operations: "Your SOPs are the problem, not the tools. Pick one process and rebuild it from scratch assuming AI is a team member from day one.",
+            pm:         "If a process takes 12 steps manually and your AI version also takes 12 steps, you haven't improved — you've added a vendor bill.",
+            admin:      "Think about the forms, approvals, and routing you manage. Which ones exist because information used to move slowly? That's where redesign starts."
+          },
+          challenge: {
+            steps: [
+              "Pick one recurring workflow you own — a report, an approval chain, a weekly summary.",
+              "Open your AI tool and paste: <em>\"Here's a process I run every [week/month]: [describe the steps briefly]. If you were designing this process from scratch — assuming AI could draft, summarize, route, and flag exceptions — what would it look like? Give me a before-and-after comparison in a simple table.\"</em>",
+              "Compare the two versions and identify the step where the biggest time savings would come from.",
+              "Share your before-and-after table in the group and note which step surprised you most."
+            ]
+          }
+        },
+        {
+          title: "The companies that cut staff for AI are starting to hire them back",
+          body: "Gartner predicts that by 2027, <em>half of all companies that reduced headcount because of AI will rehire for similar roles</em> — often under new titles like 'Solution Consultant' or 'Trusted Advisor.' The reason is straightforward: AI handles volume, but it can't match human judgment, empathy, or context in complex interactions. Only 20% of customer service leaders had actually cut staff due to AI — most reductions were driven by broader economic conditions, not automation.",
+          slants: {
+            strategy:   "Budget for hybrid human-AI teams, not full replacement. The long-term headcount story is 'different roles,' not 'fewer people.'",
+            operations: "If your team lost headcount to AI-driven cuts, document where quality or satisfaction dropped. That data is your strongest case for reinvestment.",
+            pm:         "Staff AI transitions as phased pilots, not cliff-edge handovers. The organizations that moved too fast are the ones scrambling to rehire.",
+            admin:      "Your role is evolving, not disappearing. The skills that make you effective — context, judgment, knowing how things actually work — are exactly what AI can't replicate."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool.",
+              "Paste this prompt: <em>\"I'm a [your role]. List the top 5 tasks in my job that require human judgment, empathy, or institutional knowledge that AI currently can't replicate. For each, explain why a human is still better. Then list 3 tasks AI could handle so I can focus more on those high-value activities.\"</em>",
+              "Read the output and highlight the task where your human advantage is strongest.",
+              "Share your 'human advantage' list in the group — what's the one thing only you can do?"
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Let AI help you prep for a conversation you've been putting off.",
+        body: "We all have one — a chat with a friend, a family boundary, a tricky request. Tonight, let AI help you think it through before you have it. Open ChatGPT, Claude, Gemini, or Perplexity (all free on the web) and try this:",
+        prompt: "\"I need to have a conversation with [someone — e.g., my neighbor, my landlord, a family member] about [topic]. I want to be direct but kind. Before you draft anything, ask me 5 questions so you understand the full situation. Then give me 3 different ways I could open the conversation, ranked from most gentle to most direct.\"<br><br>That structure — <em>ask me questions first, then give me options</em> — works for any situation where you need to think before you speak."
+      }
+    },
   "2026-06-29": {
       intro: "AI regulation, AI bundling, and AI theft all hit inflection points this week \u2014 and each one changes how your team will use, buy, or govern these tools by year's end. Here's what matters, what it means for your role, and what to try right now.",
       trends: [
