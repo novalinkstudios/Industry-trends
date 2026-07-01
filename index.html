@@ -852,6 +852,72 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+  "2026-07-01": {
+      intro: "Happy July. The second half of the year starts with a question most teams haven't honestly answered yet: are you actually using AI well, or just using it more? Three new data points suggest the gap between adoption and impact is wider than it looks.",
+      trends: [
+        {
+          title: "AI is saving you five hours a week — and most of it's being wasted",
+          body: "A Gartner survey of 210 sales leaders found that AI tools save sellers an average of <em>4.8 hours per week</em> — but 72% of organizations aren't reinvesting that time into higher-value work <em>(Gartner, May 2026)</em>. The kicker: teams that do reinvest are 2.2x more likely to exceed growth goals and 3.1x more likely to hit lead conversion targets. The problem isn't the tool. It's what happens after the tool finishes.",
+          slants: {
+            strategy:   "If your team is saving time with AI but can't point to where that time went, you have an efficiency gain with no strategic payoff. Map the saved hours to specific high-impact activities — that's where ROI lives.",
+            operations: "The 4.8-hour figure is real, but without a deliberate plan for redeploying that time, it quietly disappears into email, meetings, and low-priority tasks. Build a weekly \"recovered time\" checkpoint.",
+            pm:         "This is a scope question for every AI-enabled project: define not just what the tool automates, but what the team does with the freed capacity. Without that second step, the business case is half-built.",
+            admin:      "Track it simply: if AI drafts your emails or summarizes your meetings, what did you do with the 30 minutes you got back? Even a personal log builds the case for expanding AI use on your team."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool.",
+              "Paste this prompt: <em>\"I spend roughly [X] hours per week on [list 3–4 tasks you already use AI for — e.g., drafting emails, summarizing meetings, researching topics]. For each task, estimate how many minutes AI saves me per week. Then suggest one specific, high-value activity I could do with that recovered time that would most benefit my team or career.\"</em>",
+              "Look at the total time saved and the suggested reinvestment. Pick one you'll actually try this week.",
+              "At the end of the week, note whether you followed through — and share what happened in the group."
+            ]
+          }
+        },
+        {
+          title: "The biggest AI bottleneck isn't technology — it's talent",
+          body: "Deloitte's 2026 State of AI in the Enterprise report breaks readiness into four dimensions: technical infrastructure (43%), data management (40%), governance (30%), and talent — dead last at <em>just 20%</em> <em>(Deloitte, 2026)</em>. Companies expanded AI tool access by roughly 50% in a single year, but workforce skills didn't follow. The tools are ready. The people strategy isn't.",
+          slants: {
+            strategy:   "If your AI roadmap assumes people will figure it out as they go, Deloitte's data says otherwise. Pair every tool rollout with a specific skill-building plan — or watch adoption stall.",
+            operations: "You can't close a 20% talent readiness gap with a lunch-and-learn. Identify the 2–3 AI skills your ops team actually needs — prompt design, output validation, workflow integration — and invest in those specifically.",
+            pm:         "When planning an AI-enabled project, add \"team readiness\" as a real workstream, not an afterthought. Deloitte's data suggests most teams aren't ready to use the tools they've already been given.",
+            admin:      "You're probably learning AI faster than your organization expects. Document what you're figuring out — your practical notes become institutional knowledge that closes the gap for everyone around you."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool.",
+              "Paste this prompt: <em>\"I work in [your role/function]. Rate my likely AI readiness across four dimensions: technical skills, data literacy, governance awareness, and practical tool experience. For each, suggest one specific action I could take this month to move from beginner to intermediate. Be honest — I want a realistic self-assessment, not flattery.\"</em>",
+              "Read the assessment and circle the dimension where you scored lowest.",
+              "Pick the one action item for your weakest area and block 30 minutes this week to do it.",
+              "Share your weakest dimension and your plan in the group — odds are, others have the same gap."
+            ]
+          }
+        },
+        {
+          title: "Top-performing companies are building AI skills in-house, not buying them",
+          body: "McKinsey's State of Organizations 2026 surveyed over 10,000 executives and found that <em>nearly half of top performers are increasing insourcing</em> of strategic tech expertise, compared with just 37% of other organizations <em>(McKinsey, 2026)</em>. The logic: outsourcing builds capacity, but insourcing builds capability. Meanwhile, two-thirds of the skills organizations will need within five years don't exist in their workforce today.",
+          slants: {
+            strategy:   "The build-vs-buy question for AI talent has an answer from the data: the companies pulling ahead are building. If your AI capability lives entirely in vendor contracts and consultants, you're renting expertise your competitors are owning.",
+            operations: "Insourcing doesn't mean hiring a data science team overnight. It means developing the people you already have — your ops staff who understand the workflows are best positioned to make AI actually work in them.",
+            pm:         "When two-thirds of needed skills are new, workforce planning can't be annual. Build rolling quarterly skill assessments into your project retrospectives — the gap shifts faster than a yearly review can track.",
+            admin:      "This trend is an opportunity. You already understand how your organization actually works — the processes, the workarounds, the unwritten rules. That institutional knowledge is exactly what AI can't replace and consultants can't bring."
+          },
+          challenge: {
+            steps: [
+              "Grab a blank document or open a notes app.",
+              "List three skills you use every day that you learned on the job — not in school or a certification program.",
+              "Next to each, write whether AI could <em>assist</em> that skill, <em>replace</em> it, or <em>amplify</em> it. Be honest with yourself.",
+              "Now ask your AI tool: <em>\"Based on these three skills — [list them] — what's one adjacent AI-related skill I could learn in under 5 hours that would make me more valuable in my current role? Suggest a free resource to start.\"</em>",
+              "Share the skill and the resource in the group. Crowdsource a team learning list."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Let AI help you decode something you've been ignoring.",
+        body: "We all have that one document sitting in a drawer or an inbox — an insurance policy, a lease clause, a benefits statement — that we've been meaning to actually read. Tonight's the night. Open your free AI tool of choice (ChatGPT, Claude, Gemini, or Perplexity):",
+        prompt: "\"I'm going to paste a [document type — e.g., insurance policy summary, lease renewal, benefits statement]. Explain it to me like I'm smart but not an expert in this field. Highlight the three things that matter most to me personally, flag anything that looks unusual or worth questioning, and tell me one question I should ask before signing or renewing.\"<br><br>That framing — <em>explain, highlight, flag, suggest a question</em> — turns AI into a personal advisor for any dense document you've been putting off."
+      }
+    },
   "2026-06-30": {
       intro: "Today marks the final day of what many are calling the most consequential month in AI history \u2014 and the themes are unmistakable: frontier models are getting more powerful, access is getting more political, and regulation is finally getting real. Here are three stories that define what comes next for your team.",
       trends: [
