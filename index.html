@@ -852,6 +852,71 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+  "2026-07-02": {
+      intro: "AI isn't just changing tools — it's reshaping which careers grow, which managers matter, and what 'entry-level' even means. Three data-backed shifts worth sitting with today.",
+      trends: [
+        {
+          title: "AI is splitting careers into two tracks — and one pays a lot more",
+          body: "PwC's 2026 Global AI Jobs Barometer identifies a two-track labor market forming around AI. <em>'Professionalized' roles — where AI handles routine work so humans focus on judgment — are growing twice as fast and seeing 42% faster salary growth</em> than 'democratized' roles, where AI makes the job easier for non-experts to perform. The wage premium for workers with AI skills has climbed to 62%.",
+          slants: {
+            strategy:   "Map your team's roles against these two tracks. Where judgment and expertise are the value-add, invest in those people — they're the ones competitors will try to hire away.",
+            operations: "If AI is automating the routine parts of your workflows, the remaining work is harder, not easier. Staff and train accordingly.",
+            pm:         "Project roles heavy on coordination and status-tracking are on the 'democratized' track. Roles heavy on risk judgment and stakeholder negotiation are on the other.",
+            admin:      "Your institutional knowledge — who to call, what the exec actually needs, how things really work here — is exactly the judgment that keeps a role on the professionalized track."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool.",
+              "Paste this prompt: <em>\"I work in [your role]. Break my daily responsibilities into two lists: tasks that require human judgment, contextual knowledge, or relationship skills, and tasks that could be done by someone with less experience if they had AI assistance. Be specific and honest.\"</em>",
+              "Review the split. Count how many hours per week fall into each column.",
+              "Ask this follow-up: <em>\"Based on this split, what one skill should I invest in over the next 6 months to make my role harder to democratize?\"</em>",
+              "Share your judgment-vs-routine split and your one skill investment in the group."
+            ]
+          }
+        },
+        {
+          title: "Your manager matters more than your AI tool",
+          body: "Gallup's 2026 State of the Global Workplace report found that <em>employees whose managers actively support AI use are 8.7 times more likely to say AI has transformed their work</em>. But fewer than one in three employees in AI-implementing organizations say their manager provides that support — and manager engagement itself has dropped to 22%, down from 31% three years ago.",
+          slants: {
+            strategy:   "AI adoption is a management development problem, not a technology deployment problem. Budget for manager enablement before you budget for another tool license.",
+            operations: "If your ops managers aren't using AI themselves, their teams won't either. Model the behavior before mandating it.",
+            pm:         "You're often the de facto AI champion on a project team. That puts you in the 'active support' role whether you signed up for it or not — lean into it.",
+            admin:      "You see which managers are engaged and which are checked out. That visibility makes you a valuable voice in any AI rollout planning conversation."
+          },
+          challenge: {
+            steps: [
+              "Think of one team or project where AI adoption has stalled or feels forced.",
+              "Open your AI tool and paste this prompt: <em>\"I manage a team of [size] people in [function]. Most of them aren't using AI regularly yet. Draft a 5-minute script I can use in our next team meeting to: acknowledge the awkwardness, share one way I've personally used AI this week, and invite each person to try one specific thing before our next meeting. Keep it casual, not corporate.\"</em>",
+              "Read the script and edit it until it sounds like you — not like a training module.",
+              "Use it at your next team meeting and share how it landed with the group."
+            ]
+          }
+        },
+        {
+          title: "The entry-level job is being rewritten from the inside",
+          body: "PwC's AI Jobs Barometer reveals that <em>AI-exposed entry-level roles are now 7 times more likely to demand traditionally senior skills</em> — leadership, judgment, stakeholder management — than comparable roles with low AI exposure. The IMF reports that AI is compressing the traditional career ladder: when a junior hire can produce senior-looking outputs on day one, the value shifts from drafting to verifying.",
+          slants: {
+            strategy:   "Your talent pipeline assumptions are outdated. Junior analysts now need judgment skills that used to take five years to develop. Rethink onboarding timelines.",
+            operations: "Junior ops staff can produce polished outputs with AI assistance. The risk: they can't yet spot when those outputs are wrong. Build verification checkpoints into the workflow.",
+            pm:         "If your junior PMs use AI to draft plans and status reports, their growth comes from learning to pressure-test AI output — not from the drafting itself.",
+            admin:      "Mentoring newer team members now includes teaching them when NOT to trust AI output. Your experience with how things actually work is the curriculum they need most."
+          },
+          challenge: {
+            steps: [
+              "Identify one junior team member or think of the most recent person you onboarded.",
+              "Open your AI tool and paste this prompt: <em>\"A new hire in [role] can now use AI to draft reports, summarize meetings, and answer routine questions on day one. What 5 skills should their manager focus on developing that AI can't shortcut? Rank them by how quickly each becomes critical in the first year.\"</em>",
+              "Compare the AI's list to what your actual onboarding program covers.",
+              "Pick one gap and sketch a 30-day plan to address it. Share your gap and your plan in the group."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Let AI help you prepare for a conversation you've been putting off.",
+        body: "We all have one — a tough talk with a family member, a tricky request to a neighbor, a long-overdue check-in with an old friend. Tonight, use a free AI tool (ChatGPT, Claude, Gemini, or Perplexity) to think it through before you have it.",
+        prompt: "\"I need to have a conversation with [person/relationship] about [topic]. I want to be honest but kind. Ask me 5 questions about the situation first, then help me plan: what to open with, what to avoid saying, and how to respond if they get defensive. Give me actual sentences I could use, not just advice.\"<br><br>The technique here — <em>ask me questions first</em> — forces the AI to understand your situation before it starts giving answers. Try it on any problem where context matters."
+      }
+    },
   "2026-07-01": {
       intro: "Today the price of AI meets the price of not paying attention \u2014 from exploding token budgets to hidden contract clauses to a landmark state AI law just signed into being. All three stories share a theme: the operational details you ignore now become the strategic crises you manage later.",
       trends: [
