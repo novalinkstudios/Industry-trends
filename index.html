@@ -77,6 +77,66 @@
     margin: 0 auto;
   }
   .hero-left { max-width: 760px; }
+
+  /* Logo */
+  .hero-logo-wrap { margin-bottom: 28px; }
+  .hero-logo {
+    height: 72px;
+    width: auto;
+    display: block;
+    opacity: 0.92;
+  }
+
+  /* Drop name */
+  .hero-drop-name {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(34px, 6vw, 52px);
+    font-weight: 700;
+    line-height: 1.05;
+    color: var(--white);
+    margin-bottom: 12px;
+    margin-top: 4px;
+    letter-spacing: -0.02em;
+  }
+
+  /* Scrolling ticker */
+  .ticker-wrap {
+    background: var(--navy);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    overflow: hidden;
+    padding: 12px 0;
+    width: 100%;
+  }
+  .ticker {
+    display: flex;
+    width: max-content;
+    animation: ticker-scroll 32s linear infinite;
+  }
+  .ticker-inner {
+    display: flex;
+    gap: 0;
+    white-space: nowrap;
+  }
+  .ticker span {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.72);
+    padding: 0 24px;
+  }
+  .ticker span::after {
+    content: '·';
+    margin-left: 24px;
+    color: var(--blue);
+  }
+  .ticker span:last-child::after { content: ''; }
+  @keyframes ticker-scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
   .hero-eyebrow {
     font-size: 11px;
     font-weight: 600;
@@ -385,15 +445,10 @@
     display: block;
     margin-top: 12px;
     font-size: 11px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.45);
-  }
-  .footer-credit em {
-    font-style: normal;
-    font-weight: 700;
-    color: var(--blue);
+    color: rgba(255, 255, 255, 0.28);
   }
 
   /* Trend block (collapsible) */
@@ -798,13 +853,28 @@
 <section class="hero">
   <div class="hero-top">
     <div class="hero-left">
+      <div class="hero-logo-wrap">
+        <img src="aoa-logo.png" alt="AOA: AI Ops Accelerator" class="hero-logo">
+      </div>
       <div class="hero-eyebrow">Cisco Employee Community · AI Ops Accelerator</div>
-      <h1 class="hero-title">AI Ops<br><em>Accelerator</em></h1>
+      <p class="hero-drop-name">The Daily Drop</p>
       <p class="hero-tagline">Come curious. Leave with something you can use on Monday.</p>
       <p class="hero-sub">AOA is Cisco's employee-led community where Ops teams share AI tools, use cases, and best practices to work smarter and deliver measurable impact.</p>
     </div>
   </div>
 </section>
+
+<!-- ══ TICKER ══ -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker">
+    <div class="ticker-inner">
+      <span>Everyone welcome</span><span>Operations</span><span>Project Management</span><span>Strategy &amp; Planning</span><span>Finance</span><span>IT</span><span>HR</span><span>Sales</span><span>Marketing</span><span>Engineering</span><span>Customer Success</span><span>Legal</span><span>Supply Chain</span>
+    </div>
+    <div class="ticker-inner" aria-hidden="true">
+      <span>Everyone welcome</span><span>Operations</span><span>Project Management</span><span>Strategy &amp; Planning</span><span>Finance</span><span>IT</span><span>HR</span><span>Sales</span><span>Marketing</span><span>Engineering</span><span>Customer Success</span><span>Legal</span><span>Supply Chain</span>
+    </div>
+  </div>
+</div>
 
 <!-- ══ STICKY CONTROLS ══ -->
 <nav class="navbar" aria-label="Daily Drop controls">
@@ -843,7 +913,7 @@
 
 <footer>
   Cisco AI Ops Accelerator · An employee-led community for operators learning to work smarter with AI.
-  <span class="footer-credit">Curated daily by <em>Anjanette W</em></span>
+  <span class="footer-credit">Curated daily</span>
 </footer>
 
 <script>
@@ -1186,140 +1256,8 @@
         body: "Summer's here and you deserve a weekend that recharges you. Let AI help you design a two-day plan tailored to your actual interests \u2014 not a generic travel blog listicle.",
         prompt: "I have a free weekend coming up and I want to make the most of it without overplanning. Here's what I enjoy: [list 2-3 hobbies or interests, e.g., cooking, hiking, reading thrillers]. I live near [your city or region]. My budget is about $[amount]. I want a mix of one adventure activity, one relaxing activity, and one meal I cook from scratch that I've never tried before. Build me a two-day itinerary with specific suggestions, a simple grocery list for the meal, and one wildcard surprise idea I wouldn't think of on my own."
       }
-    },  "2026-06-29": {
-    intro: "Sunday. The week ended with AI moving deeper into infrastructure — chips, protocols, and workplace measurement. Three ways the foundation under your tools got stronger.",
-    trends: [
-      {
-        title: "Claude Could Get 30% Faster — And That Changes Your Budget",
-        body: "Anthropic is in early talks with Microsoft to run Claude inference on the Maia 200 — Microsoft's custom AI chip built specifically for responding to prompts in real time. The Maia 200 delivers <em>over 30% better tokens per dollar than the current hardware in Microsoft's fleet</em> (Microsoft/CNBC, May 2026). For any team paying for Claude or other AI APIs today, better hardware economics at the infrastructure level translates directly into lower costs and faster responses over the next 12–18 months.",
-        slants: {
-          strategy: "Declining inference costs mean AI use cases that felt expensive to scale in 2025 become viable business investments in 2026 — this is the moment to revisit shelved proposals with a fresh cost model.",
-          operations: "Faster, cheaper AI responses directly affect automation workflows that depend on real-time AI calls — if latency has been a blocker, re-evaluate those use cases now.",
-          pm: "Lower AI infrastructure costs shift the ROI math on AI-enhanced projects — build cost assumptions that reflect the downward trajectory, not today's prices.",
-          admin: "This is the kind of development worth flagging to leadership: the tools you already use are getting significantly more capable and cost-effective without you changing anything."
-        },
-        challenge: {
-          steps: [
-            "Open your company-approved AI tool.",
-            "Paste: <em>\"Explain AI inference in plain English — what does it mean, why does the cost of inference matter to a company that uses AI tools, and what happens to those tools when inference gets 30% cheaper?\"</em>",
-            "Note one specific workflow in your role that would benefit from faster or cheaper AI responses.",
-            "Ask a follow-up: <em>\"If AI API costs dropped 30% in the next year, what are 3 things a small business or department team should reconsider building or automating that they might have ruled out as too expensive?\"</em>",
-            "Share one reconsideration from your list in your team's AI channel."
-          ]
-        }
-      },
-      {
-        title: "Autonomous AI Agents Are No Longer Experimental — They're at Work",
-        body: "The defining shift of 2026 isn't a new model — it's where AI models are showing up: doing multi-step work without waiting to be asked for each step. Agentic AI has moved from pilots to production, handling tasks across legal, finance, coding, admin support, and operations. <em>Enterprise deployments of agentic AI systems grew dramatically in early 2026, with companies reporting that tasks taking weeks now complete in hours or minutes</em> (Kersai / InfoWorld, 2026). The competitive gap between companies using agents and those just prompting is widening every quarter.",
-        slants: {
-          strategy: "Agentic AI isn't a feature — it's a fundamentally different capability model. Organizations that define which processes should be agent-driven now will have a structural advantage over those that decide reactively.",
-          operations: "The processes most suited for agentic AI are the ones with clear steps, repetitive decisions, and multiple tools involved — which describes most of what an ops function handles daily.",
-          pm: "Agents can monitor projects, surface blockers, draft updates, and coordinate across systems without waiting for you to ask. The PMs learning to design agent handoffs now are building skills that will define the role in three years.",
-          admin: "The shift to agentic AI means the highest-value admin work becomes the judgment and relationship layer — knowing when to intervene, who to escalate to, and what context the agent missed."
-        },
-        challenge: {
-          steps: [
-            "Open your company-approved AI tool.",
-            "Paste: <em>\"What is agentic AI, and how is it different from just using a chatbot? Give me 3 examples of what an AI agent might do autonomously in a typical office environment — no technical background required.\"</em>",
-            "Pick the example most relevant to your current role.",
-            "Ask a follow-up: <em>\"Walk me through what a week in my role might look like if an AI agent handled all the repetitive coordination and follow-up tasks — I work in [your role or department]. What would I spend my time on instead?\"</em>",
-            "Share what surprised you most about the AI agent scenario in your team's discussion space."
-          ]
-        }
-      },
-      {
-        title: "AI Adoption at Work Is Now Measurable — And the Data Is Revealing",
-        body: "ActivTrak, winner of the 2026 AI Breakthrough Award for Behavioral AI Solution of the Year, processes workforce behavioral data to show leaders exactly how AI adoption is affecting productivity, capacity, and utilization across their teams. The platform collects <em>11 million terabytes of work activity data per month, giving organizations unprecedented real-time visibility into where AI is working and where it isn't</em> (ActivTrak, 2026). For the first time, AI ROI isn't just a calculation — it's a live measurement.",
-        slants: {
-          strategy: "The ability to measure AI adoption in real time transforms AI investment from a leap of faith to a managed initiative — leaders who instrument AI rollouts now will outperform those who rely on surveys and anecdotes.",
-          operations: "Behavioral data closes the loop on AI implementation: instead of guessing which workflows benefited, you can see exactly where time shifted and where capacity opened up.",
-          pm: "Real-time AI adoption data changes how you report project AI benefits — instead of estimated time savings, you can point to measured productivity shifts, which is a much stronger case for continued investment.",
-          admin: "Knowing that AI adoption is being measured isn't a threat — it's an opportunity. Being visibly ahead of the curve in your own AI usage is now more visible and more valued than it's ever been."
-        },
-        challenge: {
-          steps: [
-            "Open your company-approved AI tool.",
-            "Paste: <em>\"How would a company measure whether its employees are actually adopting AI tools effectively — not just using them, but getting real value? Give me 5 specific things they might track, with a plain-English explanation of each.\"</em>",
-            "Pick the one measurement that would be most telling for your own team or department.",
-            "Ask a follow-up: <em>\"What's the difference between measuring AI activity and measuring AI value? Give me an example of a team that looks busy with AI but isn't getting real results — and what they should change.\"</em>",
-            "Reflect privately: what would your own AI usage metrics look like this week?"
-          ]
-        }
-      }
-    ],
-    homework: {
-      title: "Plan your week with an AI chief of staff",
-      body: "Sunday is the perfect time to try AI as a thinking partner for the week ahead. This technique is called structured output prompting — you ask AI to organize your thinking into a specific format, which helps you spot gaps and priorities you'd otherwise miss.",
-      prompt: "Act as my chief of staff helping me plan a high-impact week. I'll tell you what's on my plate: [paste your week's commitments, meetings, and to-dos here]. Please give me: (1) a prioritized view of the week with your recommended focus areas, (2) one thing I should protect time for that I might otherwise skip, (3) one thing I should consider delegating or deferring, and (4) a one-sentence intention I can use to stay focused all week."
-    }
-  },
-  "2026-06-28": {
-    intro: "Saturday. Three stories worth knowing heading into the week — a major enterprise AI deployment, a design tool that just got a lot more powerful, and the protocol quietly connecting the AI tools your company already uses.",
-    trends: [
-      {
-        title: "HP Cut a One-Month Security Fix to One Day Using AI",
-        body: "HP Inc. announced a strategic partnership with OpenAI on June 28, deploying the Frontier platform across customer service, device insights, employee productivity, and software development. The results from the pilot are striking: <em>HP Security teams used OpenAI to resolve software vulnerabilities that would have taken a full month without AI — compressing that timeline to a single day and eliminating approximately 82 hours of weekly security work</em> (OpenAI/HP, June 2026). This is what enterprise AI ROI looks like when it's real.",
-        slants: {
-          strategy: "HP's deployment across four distinct functions — customer experience, device intelligence, productivity, and dev — is a useful model for enterprise AI rollouts: start with the highest-friction workflows in each function, not with a single top-down tool.",
-          operations: "82 hours of eliminated weekly work is a concrete ops benchmark. The question isn't whether AI can do this in your environment — it's which workflow would show a comparable result fastest.",
-          pm: "HP's February-to-June pilot-to-partnership timeline is a useful reference for scoping AI adoption projects. A four-month evaluated rollout with measurable outcomes is a realistic and defensible project plan.",
-          admin: "One of HP's first Frontier deployments is employee productivity — meaning AI is actively being used to help people like you work better. Ask your IT or ops team what tools in your stack are getting similar upgrades."
-        },
-        challenge: {
-          steps: [
-            "Open your company-approved AI tool.",
-            "Paste: <em>\"I want to find the workflow in my job that is most like HP's security vulnerability fix — something repetitive, time-consuming, and rules-based that AI could dramatically speed up. My role is [describe your role]. Give me 3 candidates with an estimated time savings for each.\"</em>",
-            "Pick the one with the highest potential impact.",
-            "Ask a follow-up: <em>\"For the workflow I picked, walk me through how I would start an AI pilot this month — what would I test first, how would I measure success, and what would a realistic 30-day experiment look like?\"</em>",
-            "Share one workflow candidate in your team's AI channel."
-          ]
-        }
-      },
-      {
-        title: "Figma Just Gave Designers a Built-In Animation Studio",
-        body: "At Config 2026, Figma launched Motion — a full animation mode built directly into the Figma canvas, available in open beta on all plans. Designers switch a frame into Motion mode, get a timeline alongside their layers, and use AI to generate complex animations on demand. <em>Figma Motion exports finished animations to CSS, JSON, React, MP4, GIF, WebM, and animated SVG — and Dev Mode makes every timing value and easing curve directly copyable by developers</em> (Figma, June 2026). The workflow handoff between design and development just got significantly cleaner.",
-        slants: {
-          strategy: "Figma Motion closes the gap between designed intent and built output — organizations investing in design systems now have a path to animated components that stay consistent across products and teams without a separate animation tool.",
-          operations: "If your team coordinates between designers and developers, Figma Motion changes the handoff: developers get exact animation specs in code-ready formats, which means fewer review cycles and faster shipping.",
-          pm: "Animation work that previously required a specialist tool and a separate round of dev interpretation now lives in the same file as the design. Scope your future UI projects accordingly — animation is no longer the expensive phase.",
-          admin: "If you produce decks, reports, or presentations, AI-powered animation tools like Figma Motion point to where presentation design is heading — soon, asking AI to animate your slides will be as simple as asking it to resize them."
-        },
-        challenge: {
-          steps: [
-            "Open your company-approved AI tool.",
-            "Paste: <em>\"Explain what Figma Motion is and why it matters for a non-designer who works with design or marketing teams. What should I know about how it changes the process of going from a design concept to something that moves on screen?\"</em>",
-            "Note one type of content your team produces that could benefit from smoother motion or animation.",
-            "Ask a follow-up: <em>\"What are 3 ways that AI-powered animation tools — even simple ones — are changing the expectations around marketing materials, app interfaces, and presentations in 2026?\"</em>",
-            "Share one takeaway with a colleague who works in marketing or design."
-          ]
-        }
-      },
-      {
-        title: "The Open Standard Connecting Your AI Tools Has 97 Million Monthly Downloads",
-        body: "The Model Context Protocol (MCP) — an open standard that lets AI tools connect to external apps, data sources, and other AI agents — has reached 97 million monthly SDK downloads, 9,400+ public servers, and native support from Anthropic, OpenAI, Google DeepMind, and Microsoft. <em>MCP and Google's Agent-to-Agent Protocol (A2A) are now both Linux Foundation projects with a joint interoperability effort underway</em> (Zylos Research / WorkOS, June 2026). The plumbing connecting tomorrow's AI ecosystem is being built right now — and it's open.",
-        slants: {
-          strategy: "Open interoperability standards mean your organization's AI tools won't be locked into one vendor's ecosystem — the strategic bet is on workflows and data architecture, not on picking the one AI platform that wins.",
-          operations: "MCP is what allows AI tools to actually pull data from your CRM, update your project management system, and query your databases without manual copy-paste. If your ops stack isn't connected today, this is the infrastructure making it possible soon.",
-          pm: "Understanding that MCP exists — and that it's the reason AI tools are starting to work together across platforms — gives you credibility when stakeholders ask why AI workflows are becoming more integrated. It's not magic; it's an open protocol.",
-          admin: "The practical implication: AI assistants are increasingly able to check your calendar, pull from shared documents, and update systems all in one step. That's MCP in action — and it's why AI feels like it's finally starting to remember context."
-        },
-        challenge: {
-          steps: [
-            "Open your company-approved AI tool.",
-            "Paste: <em>\"What is the Model Context Protocol (MCP) in plain English? Why does it matter that major AI companies all support the same open standard, and what does this mean for someone who uses AI tools at work but isn't a developer?\"</em>",
-            "Write down one thing you want your AI tool to be able to do that it can't quite do yet because of data access limits.",
-            "Ask a follow-up: <em>\"If AI tools could connect seamlessly to all the apps I use at work — email, calendar, project tracker, CRM, documents — what are 3 specific tasks that would become dramatically easier? Give me concrete examples for someone in [your role].\"</em>",
-            "Share your \"can't do yet\" wish-list item in the community group."
-          ]
-        }
-      }
-    ],
-    homework: {
-      title: "Have AI plan your Sunday errands",
-      body: "Try giving AI a real logistics problem — a stack of weekend tasks — and see how well it can organize and sequence them for you. This is a technique called constraint-based planning: you give AI your constraints (time, location, priorities) and let it optimize the route.",
-      prompt: "Act as my personal logistics assistant. I need to get through the following tasks today: [list your errands or to-dos]. My constraints are: [available time, location, any must-dos vs. nice-to-haves]. Please give me: (1) a recommended order that minimizes backtracking or wasted time, (2) an estimated time for each task, (3) one task I should probably skip or defer if I'm short on time, and (4) a buffer recommendation so I don't feel rushed."
-    }
-  },  "2026-06-27": {
+    },
+  "2026-06-27": {
       intro: "The AI landscape is fragmenting \u2014 in who builds the tools, who uses them, and who regulates them. This edition covers the first real crack in one platform's dominance, a custom chip bet that could reshape AI economics, and a state-level regulation rewrite that signals where US AI governance is headed.",
       trends: [
         {
@@ -2006,4 +1944,820 @@
             steps: [
               "Open your company-approved AI tool.",
               "Think of one process your team currently uses AI to speed up — drafting, summarizing, formatting, anything.",
-              "Paste this prompt: <em>\"We currently use AI to do [task] faster. What's a completely new capability or output AI could enable for this team — something we're 
+              "Paste this prompt: <em>\"We currently use AI to do [task] faster. What's a completely new capability or output AI could enable for this team — something we're not doing at all today?\"</em>",
+              "Read the suggestions. Pick the one that feels most realistic.",
+              "Share your best 'new capability' idea in the group — growth ideas beat efficiency ideas."
+            ]
+          }
+        },
+        {
+          title: "60% of executives use AI to decide — 5% manage it well",
+          body: "Deloitte's 2026 Global Human Capital Trends survey of 9,000+ leaders across 89 countries found something uncomfortable: <em>60% of executives now regularly use AI to support decisions, but only 5% say they manage that process well</em>. Only 6% report meaningful progress redesigning work for human-AI collaboration. The tool arrived; the governance didn't.",
+          slants: {
+            strategy:   "Your leadership is almost certainly using AI for decisions already. The question is whether anyone's defined when to trust it and when not to.",
+            operations: "If AI is shaping decisions upstream but your processes don't account for that, your inputs changed without your knowledge.",
+            pm:         "Decision logs just got more important. If AI influenced a go/no-go call, that should be traceable.",
+            admin:      "When an executive's thinking was shaped by AI, the context you provide — what AI didn't see — becomes more critical, not less."
+          },
+          challenge: {
+            steps: [
+              "Think of one decision you or your team made recently where AI played any role — even just generating options or summarizing data.",
+              "Write down: what did AI contribute, and what did a human add on top?",
+              "Open your company-approved AI tool and paste: <em>\"Here's how we made a recent decision: [describe it briefly, no confidential details]. What's the biggest risk of relying on AI at the step where we used it? What safeguard would you add?\"</em>",
+              "Decide whether the suggested safeguard is worth adopting.",
+              "Share one decision-making safeguard you'd recommend in the group."
+            ]
+          }
+        },
+        {
+          title: "The proficiency multiplier",
+          body: "Gartner's 1Q26 Global Labor Market Survey of 12,004 employees across 40 countries found that AI-proficient workers are <em>2× as productive, 2.3× more likely to deliver high-quality work, and 3.2× more likely to drive process improvements</em>. But only 17% of employees qualify as \"AI Champions\" — while 56% remain resisters. The gap isn't access. It's practice.",
+          slants: {
+            strategy:   "Proficiency compounds. A 2× productivity edge today becomes a career-defining gap in two years. Invest the reps now.",
+            operations: "The 3.2× process improvement number is the one that matters most for ops. The people fixing workflows are the ones using AI to find what's broken.",
+            pm:         "If your team has a few AI Champions and mostly resisters, velocity is capped by the resisters. Make proficiency a team goal, not an individual one.",
+            admin:      "You don't need to be a power user overnight. Moving from 'never' to 'sometimes' is where the biggest quality jump happens."
+          },
+          challenge: {
+            steps: [
+              "Honestly assess yourself: are you an AI Champion (use it regularly, feel positive), an occasional user, or a resister?",
+              "Pick one task you did today without AI — an email, a summary, a plan.",
+              "Redo it with your company-approved AI tool. Time both versions.",
+              "Note not just speed but quality: did AI catch something you missed, or did you catch something AI got wrong?",
+              "Share your self-assessment and one observation from the comparison in the group."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Tonight, let AI help you explain something you already know.",
+        body: "The fastest way to build AI confidence: use it on a topic where you're the expert. You'll learn to direct, correct, and refine — with zero stakes. Open any free tool (ChatGPT, Claude, Gemini, or Perplexity):",
+        prompt: "\"I know a lot about [something personal you're genuinely good at — cooking, a sport, a craft, a subject]. Help me explain it to someone who's brand new. Ask me 3 questions about my audience first, then draft a short explanation I can review and edit.\"<br><br>The <em>ask questions first, then draft</em> pattern works everywhere. Tonight you'll see why editing AI is more useful than writing from scratch."
+      }
+    },
+
+    "2026-06-16": {
+      intro: "Tuesday: what separates the orgs winning with AI from the ones still pitching it. Plus something small for you to try tonight.",
+      trends: [
+        {
+          title: "The 25% gap",
+          body: "Hackett Group's 2026 Enterprise Key Issues Study found that the organizations getting transformational AI results — <em>25%+ improvements across customer experience, employee experience, and productivity</em> — aren't the ones deploying the most tools. They're the ones reimagining their operating model. The lever is structural, not technological.",
+          slants: {
+            strategy:   "If your AI roadmap is a tool list, you're losing to orgs whose AI roadmap is an operating-model redesign.",
+            operations: "The most underrated AI question right now: <em>\"Which of our standard processes deserve to exist at all?\"</em>",
+            pm:         "Project portfolios are still designed around human cadence. The next wave reshapes the portfolio itself, not just the projects in it.",
+            admin:      "If you've been told to 'make existing workflows faster,' push back. The question is whether the workflow should look the same at all."
+          },
+          challenge: {
+            steps: [
+              "Pick a single workflow you own end-to-end (intake to delivery).",
+              "On paper or in a doc, draw it as 5–7 steps from start to finish.",
+              "For each step, mark one of three labels: <em>\"Required for value,\"</em> <em>\"Habit, not value,\"</em> or <em>\"Worth questioning.\"</em>",
+              "Look at the 'Habit' and 'Worth questioning' labels — that's your AI-redesign opportunity list.",
+              "Share your most surprising 'Habit, not value' step in the group."
+            ]
+          }
+        },
+        {
+          title: "The 'strategy theater' gap",
+          body: "Writer's 2026 enterprise survey landed a hard finding: <em>75% of executives admit their company's AI strategy is \"more for show\" than actual guidance</em>, with 39% lacking any formal revenue plan tied to AI. There's a vacuum at the strategy layer — and operators who can connect strategy to measurable outcomes just became more valuable.",
+          slants: {
+            strategy:   "If you're in strategy and your AI deck is real, you're rarer than you think. Lean into outcome metrics, not capability lists.",
+            operations: "When leadership's strategy is unclear, ops becomes the de facto translator. Document the gap, then propose the bridge.",
+            pm:         "'Connect strategy to delivery' has always been a PM superpower. AI just made it 10× more visible.",
+            admin:      "If you can summarize what's actually being asked (vs. what's being announced), that clarity is a leadership skill in disguise."
+          },
+          challenge: {
+            steps: [
+              "Find your company's most recent AI announcement or strategy doc that's safe to share with an AI tool.",
+              "Open your company-approved AI tool.",
+              "Paste in the doc and add this prompt: <em>\"Pull out every specific, measurable outcome promised here. If there are none, say so.\"</em>",
+              "Look at the list. Notice the ratio of concrete outcomes to aspirational language.",
+              "Share one observation in the group — was the strategy specific, or mostly directional?"
+            ]
+          }
+        },
+        {
+          title: "Knowing which AI mode to use is the new skill",
+          body: "Microsoft's 2026 Copilot update introduced <em>\"Quick Response\" and \"Think Deeper\" modes</em> — two different reasoning depths for two different kinds of questions. The skill isn't using the tool; it's knowing which mode for which question. Expect every major AI tool to follow this pattern.",
+          slants: {
+            strategy:   "Quick Response for status, Think Deeper for trade-off decisions. Mixing them up wastes either time or quality.",
+            operations: "Most ops questions are quick lookups; a few are real analysis. Match the mode to the task and your team's output improves.",
+            pm:         "Use Quick Response for stand-up summaries. Use Think Deeper for risk assessment and dependency mapping.",
+            admin:      "Drafting an email? Quick. Resolving a calendar conflict that affects three execs? Deeper. Trust the difference."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool that offers different reasoning modes (Copilot, Gemini, Claude, ChatGPT all have variations).",
+              "Pick the SAME work question and ask it twice — once in fast mode, once in slow/deep mode.",
+              "Compare the answers. Was the slower one actually better, or just longer?",
+              "Decide your own rule of thumb: <em>\"For [type of question], I'll use [mode].\"</em>",
+              "Share your rule of thumb in the group — we'll learn from each other's defaults."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Use AI to win an argument with yourself tonight.",
+        body: "Most of us have one small decision we've been putting off — a purchase, a route change, a routine swap. Tonight, let AI play both sides.",
+        prompt: "\"I'm trying to decide whether to [the thing]. Steelman the case for doing it. Then steelman the case against. Don't give me a recommendation — I'll decide.\"<br><br>The trick is <em>asking for both sides, no recommendation</em>. You'll think more clearly than if you'd asked for advice."
+      }
+    },
+
+    "2026-06-15": {
+      intro: "Welcome to a fresh week. Three things to think about — and one small thing to try tonight.",
+      trends: [
+        {
+          title: "Using AI more, feeling less sure about it",
+          body: "ManpowerGroup's 2026 Global Talent Barometer caught something unexpected: <em>regular AI usage jumped 13 points to 45% of workers, while confidence in using technology fell 18 points</em>. The gap between doing it and feeling good about it is real — and it's exactly why peer communities like this one exist.",
+          slants: {
+            strategy:   "Confidence comes from frameworks. Pick one decision lens and apply it to AI's output, not the other way around.",
+            operations: "If you're using AI but quietly second-guessing every output, you're in the majority. Compare notes with someone before redoing the work.",
+            pm:         "Your team likely feels this too. Make AI use a normal topic in retros — not a separate AI-only conversation.",
+            admin:      "Trust your judgment. AI doesn't know context the way you do, and 'this doesn't sound right' is almost always worth flagging."
+          },
+          challenge: {
+            steps: [
+              "Open any AI tool you've used recently (work-approved or personal).",
+              "Find one piece of AI output from the last week that left you a little unsure.",
+              "Paste it back into the AI with this prompt: <em>\"Critique this. What might be wrong, missing, or weaker than it sounds?\"</em>",
+              "Read the self-critique. Notice how it changes your confidence in the original.",
+              "Share what you found in the group — was the self-critique useful or hand-wavy?"
+            ]
+          }
+        },
+        {
+          title: "Assistants are becoming agents",
+          body: "<em>McKinsey found 62% of organizations are already experimenting with agentic AI</em>, and Gartner expects 40% of enterprise applications to feature embedded task-specific agents by 2026 — up from under 5% in 2025. The shift: from \"answer my question\" to \"run this multi-step task and report back.\"",
+          slants: {
+            strategy:   "If your strategy assumes humans coordinate every step, it's already aging. Plan for agents that own short workflows.",
+            operations: "The new ops bottleneck won't be doing the work — it'll be defining the work clearly enough for an agent to run it.",
+            pm:         "Directing agents is a project management skill. You already manage humans who need clear briefs and check-ins. Same muscle.",
+            admin:      "Routine scheduling, reminders, follow-ups — agents handle these first. Your value moves to context and judgment calls."
+          },
+          challenge: {
+            steps: [
+              "Pick one task you do every week that has clear steps — booking a meeting, summarizing a thread, formatting a doc.",
+              "Open your company-approved AI tool.",
+              "Write out the steps in plain English, as if briefing a new teammate. Be specific about inputs and what 'done' looks like.",
+              "Paste your brief in and ask: <em>\"If you were an agent doing this task, what would you need from me that I haven't given you?\"</em>",
+              "Share one gap you discovered in the group — that's your starter playbook for working with agents."
+            ]
+          }
+        },
+        {
+          title: "New AI roles, no coding required",
+          body: "A wave of new positions is opening up around agent orchestration, AI governance, and human-AI workflow design. The encouraging part for operators: <em>many of these roles value process thinking, communication, governance, and strategic skills as much as coding ability</em>. Your operations background is more relevant than you think.",
+          slants: {
+            strategy:   "Whoever defines how AI fits into the strategic planning cycle owns a new center of gravity. That can be you.",
+            operations: "Workflow design is operations work — just with a new collaborator (the agent) in the workflow.",
+            pm:         "Multi-agent coordination is project management with non-human teammates. Same coordination logic, broader toolkit.",
+            admin:      "You already manage information flow, scheduling, and exec needs. Agent governance is a natural extension."
+          },
+          challenge: {
+            steps: [
+              "Open a doc or note.",
+              "Write down one part of your current job that you genuinely enjoy — the thinking part, not the typing part.",
+              "Open an AI tool and ask: <em>\"What's an emerging 2026 role that builds on someone who is good at [that thing]?\"</em>",
+              "Read the response with curiosity, not pressure. Note one role title that intrigues you.",
+              "Share the role with the group — let's see what shows up across the community."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Tonight, ask AI for help with one thing on your personal to-do list.",
+        body: "Monday-night habit-builder: pick something small from your personal list and let AI take a swing. The point isn't the answer — it's noticing how it feels to ask.",
+        prompt: "\"Here's something I'm trying to figure out: [name it — a gift idea, a tough text, a recipe, a budget question]. Ask me 2 questions to understand my situation, then give me 3 options ranked by [whatever matters most].\"<br><br>The <em>ranked-by</em> trick is the move. Make AI commit to an opinion, not just list possibilities."
+      }
+    },
+
+    "2026-06-14": {
+      intro: "Three things worth thinking about today — and one for you to try at home.",
+      trends: [
+        {
+          title: "The strategic memo is being rebuilt — fast",
+          body: "Microsoft's 2026 Work Trend Index just landed. <em>49% of Copilot conversations now support cognitive work</em> — analysis, problem-solving, strategic thinking — and 58% of AI users say they're producing work they couldn't have done a year ago. The work isn't disappearing. It's being promoted.",
+          slants: {
+            strategy:   "You're shifting from <em>writer</em> to <em>editor + pressure-tester</em>.",
+            operations: "Synthesis across systems is now a 30-min job, not a 3-day one.",
+            pm:         "Status reports get auto-drafted; framing the right questions is the new value-add.",
+            admin:      "Your judgment on tone, context, and 'what the exec actually meant' becomes the premium skill."
+          },
+          challenge: {
+            steps: [
+              "Pick a document you wrote last quarter — a recommendation, memo, or proposal. Make sure it doesn't contain confidential client or customer information.",
+              "Open your company-approved AI tool (Copilot, Gemini Enterprise, Claude for Work — whatever's blessed at your company).",
+              "Paste the document in, then add this prompt: <em>\"Argue against this from the perspective of a skeptical executive. Be specific about the weakest assumptions.\"</em>",
+              "Read the response carefully and identify one point you hadn't considered before.",
+              "Share that insight in the group — what surprised you most?"
+            ]
+          }
+        },
+        {
+          title: "The Transformation Paradox",
+          body: "Deloitte's 2026 enterprise report puts it plainly: <em>companies are layering AI onto legacy processes instead of redesigning work holistically</em>. The investment isn't compounding because the workflow underneath is still pre-AI.",
+          slants: {
+            strategy:   "The QBR was built for a pre-AI world. Rethink the inputs and outputs.",
+            operations: "Your SOPs probably encode 2019 assumptions.",
+            pm:         "\"Weekly check-ins\" exist because info moved slowly. Does it still?",
+            admin:      "Calendar-and-email triage workflows are ripe for a clean-slate redesign."
+          },
+          challenge: {
+            steps: [
+              "Pick ONE recurring meeting or process you own — the QBR, a weekly check-in, a status report.",
+              "Open a notes app or grab a piece of paper.",
+              "Write at the top: <em>\"If AI were a teammate from minute one, this would [...]\"</em>",
+              "Finish the sentence. Don't overthink it — the first instinct is usually the most honest one.",
+              "Share your one-sentence answer in the group."
+            ]
+          }
+        },
+        {
+          title: "AI fluency is the new literacy",
+          body: "Stanford HAI's 2026 AI Index: AI-related skills now appear in <em>2.5% of all U.S. job postings — a 297% increase over a decade</em>. This isn't \"learn to code.\" It's <em>learn to direct, evaluate, and trust-but-verify</em> AI output.",
+          slants: {
+            strategy:   "Prompting is problem-framing. The clearer your ask, the sharper your strategy.",
+            operations: "Knowing when AI is wrong saves more time than AI being right.",
+            pm:         "Agent orchestration is the next PM specialty.",
+            admin:      "You already know how things actually work here. AI doesn't."
+          },
+          challenge: {
+            steps: [
+              "Open a blank document or note.",
+              "List your top 3 weekly recurring tasks — the things you do every week without fail.",
+              "Next to each task, write one of three labels: <em>\"AI could draft this\"</em>, <em>\"AI could review my work on this\"</em>, or <em>\"Only I can do this.\"</em>",
+              "Look at your split. Pick one task you didn't realize AI could help with.",
+              "Share your split in the group, and call out that one surprise task."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Brand new to AI? Start with something personal tonight.",
+        body: "The fastest way to lose the fear: use AI on something where there's no security policy and no judgment. Try one of these in your free tool of choice (ChatGPT, Claude, Gemini, or Perplexity all have free web versions):",
+        prompt: "\"I'm trying to [plan a weekend / write a tough message / figure out a recipe from what's in my fridge / understand a confusing bill]. Ask me 3 questions before you help, so your answer actually fits.\"<br><br>That last line — <em>ask me questions first</em> — is the single most useful prompting habit you'll ever learn."
+      }
+    },
+
+    "2026-06-13": {
+      intro: "Saturday's drop is lighter on purpose. Three angles on how AI can teach you something this weekend — no work allowed.",
+      trends: [
+        {
+          title: "AI tutors got weirdly good in 2026",
+          body: "One of AI's most underrated uses this year — quietly bigger than enterprise pilots in many people's daily lives — is <em>personalized tutoring</em>. Patient, infinite, judgment-free explainers for whatever you've been meaning to learn. The barrier was never finding an explanation; it was finding one that matched your level.",
+          slants: {
+            strategy:   "Learning to learn faster is a leadership skill. AI tutoring is the cheapest way to compound it.",
+            operations: "Pick one process at your company you don't fully understand. Ask AI to explain it from scratch.",
+            pm:         "Quietly studying a domain through AI before a project lands is the new prep work. Free and invisible.",
+            admin:      "If you've ever felt 'I should know this by now,' AI is the no-judgment teacher you deserved years ago."
+          },
+          challenge: {
+            steps: [
+              "Pick one thing you've quietly been meaning to understand — a finance concept, a piece of tech, a historical event, anything.",
+              "Open a free AI tool (ChatGPT, Claude, Gemini, Perplexity).",
+              "Use this prompt: <em>\"Teach me [topic] like I'm a curious adult with no background. Use a metaphor I'd recognize from everyday life. Then ask me one question to check if I got it.\"</em>",
+              "Answer the check-in question honestly.",
+              "Share what you learned in the group — and whether the metaphor actually helped."
+            ]
+          }
+        },
+        {
+          title: "Reading AI critically is the real skill",
+          body: "Plenty of people can ask AI questions. The smaller, more valuable group can <em>spot when the answer is wrong</em>. That muscle isn't built by using AI more — it's built by deliberately challenging it.",
+          slants: {
+            strategy:   "Skeptical readers of AI output make better strategic decisions. Train the muscle in low-stakes settings.",
+            operations: "The first answer is rarely the best one. Make 'ask twice with different framing' a habit.",
+            pm:         "Verification beats generation. The job is increasingly to check what AI claims, not to ask it more things.",
+            admin:      "You already double-check exec emails before they go. Same instinct, new collaborator."
+          },
+          challenge: {
+            steps: [
+              "Pick a topic you actually know well — a hobby, a former job, a specialty.",
+              "Open AI and ask: <em>\"Give me 5 facts about [your area of expertise].\"</em>",
+              "Read carefully. Find at least one fact that's wrong, misleading, or oversimplified.",
+              "Reply: <em>\"Fact #X is wrong because [your correction]. What else might you have gotten wrong?\"</em>",
+              "Share in the group what AI got wrong about something you know."
+            ]
+          }
+        },
+        {
+          title: "Hobby AI is the easiest practice ground",
+          body: "There's a pattern across communities like this one: members who use AI on something they genuinely love — a recipe, a fantasy league, a garden, a creative project — build prompting skill faster than members who only use it at work. The reason: <em>they don't tolerate bad answers when it's something they care about</em>.",
+          slants: {
+            strategy:   "Your weekend AI practice sharpens your weekday judgment. Don't treat them as separate.",
+            operations: "The instincts you develop fighting AI on a personal project transfer directly to fighting it on a work problem.",
+            pm:         "Project-managing a fun side project with AI teaches scope creep faster than any pro training.",
+            admin:      "Using AI on something personal builds the taste that work AI doesn't earn from you."
+          },
+          challenge: {
+            steps: [
+              "Pick one hobby, interest, or personal project you'd love to spend an hour on this weekend.",
+              "Open a free AI tool.",
+              "Ask: <em>\"Help me get one hour of meaningful progress on [thing] this weekend. Ask me 3 questions first, then give me a 3-step plan.\"</em>",
+              "Do at least one of the steps.",
+              "Share what you actually did in the group — even if it's tiny."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Teach AI something this weekend.",
+        body: "Flip the script. AI usually teaches you. Tonight, teach it. The act of explaining clarifies your own thinking — that's the real win.",
+        prompt: "\"I want to teach you something I know well: [topic]. I'll explain it in my own words. After I do, ask me 2 questions that would help you understand it better.\"<br><br>The <em>'ask me questions to deepen your understanding'</em> framing turns AI into a curious student. Surprisingly clarifying."
+      }
+    },
+
+    "2026-06-12": {
+      intro: "Friday: the gap between feeling more productive and your org becoming more productive. Three things to think about — and a weekend mindset for tonight.",
+      trends: [
+        {
+          title: "5× faster individually, 29% ROI organizationally",
+          body: "Writer's 2026 enterprise survey put a sharp number on the AI productivity paradox: <em>individual productivity gains of 5×, but only 29% of organizations see significant ROI from generative AI</em>. The gap isn't capability — it's that personal gains aren't compounding into shipped outcomes.",
+          slants: {
+            strategy:   "Don't celebrate individual AI gains as org wins. The work is in the handoffs between people, not the work itself.",
+            operations: "Look for places where someone's AI-assisted output bottlenecks on someone else's old process. That's where the leak is.",
+            pm:         "If devs ship 2× faster but reviews and QA didn't scale, throughput didn't move. Find the new bottleneck.",
+            admin:      "When AI lets one person do twice as much, the system isn't faster — it just looks faster until it hits the next gate."
+          },
+          challenge: {
+            steps: [
+              "Think of one workflow at your job that involves more than one person — a proposal, a sign-off, a content review.",
+              "On paper, list the steps and who owns each one.",
+              "Next to each step, mark: <em>\"This person uses AI here,\"</em> <em>\"They don't,\"</em> or <em>\"Not sure.\"</em>",
+              "Look at the pattern. Where does an AI-fast step hand off to a non-AI step? That's the bottleneck.",
+              "Share the bottleneck you spotted in the group — without naming names."
+            ]
+          }
+        },
+        {
+          title: "Synthesis is the new senior skill",
+          body: "As more team members produce AI-drafted work, the new bottleneck becomes <em>synthesizing across multiple AI outputs</em> into a single coherent direction. Anyone can generate; few can synthesize. The synthesis skill is what separates the AI-savvy operator from the AI-flooded one.",
+          slants: {
+            strategy:   "Synthesis across multiple analysts' AI-assisted briefs is the new senior-strategist skill. Practice it deliberately.",
+            operations: "When three people send you AI-drafted summaries, your job is to find the contradictions, not to paste them together.",
+            pm:         "Two AI-generated status updates that say the same thing differently are a warning sign, not redundancy. Look for what's missing.",
+            admin:      "You see drafts before anyone else. Spot the assumptions repeated across them — that's where the team's blind spot is."
+          },
+          challenge: {
+            steps: [
+              "Find two AI-generated outputs you have access to — both yours, or one yours and one from a colleague (with permission, no confidential data).",
+              "Open your company-approved AI tool.",
+              "Paste both in and add: <em>\"What do these two outputs agree on, what do they disagree on, and what does neither one address?\"</em>",
+              "Read the response carefully. The 'neither one addresses' part is usually the gold.",
+              "Share one blind spot you found in the group."
+            ]
+          }
+        },
+        {
+          title: "The 11.5% productivity bump nobody's bragging about",
+          body: "Buried in ManpowerGroup's 2026 data: enterprises reported an average <em>11.5% increase in net productivity over the past 12 months</em>, partly from AI and partly from broader efficiency work. Real, modest, hard-won. Not the 10× headlines — but compounding year over year, this is what changes how companies actually run.",
+          slants: {
+            strategy:   "Plan for compounding, not breakthroughs. 11% per year is over 50% in five — and it's exactly where good operators add value.",
+            operations: "Steady process improvements are back in fashion. Pair each AI experiment with a measurable old-school KPI.",
+            pm:         "Velocity charts should track sustained gains, not spikes. A 10% rolling improvement is the win.",
+            admin:      "Small efficiencies you find — better templates, smarter folders, AI-assisted scheduling — add up faster than they look."
+          },
+          challenge: {
+            steps: [
+              "Write down three things you do this week that take noticeably less time than they did a year ago.",
+              "For each, note what changed (tool, habit, skill, team).",
+              "Pick the one with the biggest gain.",
+              "Open your AI tool and ask: <em>\"Here's something I do faster now: [describe]. What's the next improvement I could make to compound the gain?\"</em>",
+              "Share your top time-saver — and the next improvement AI suggested — in the group."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "End-of-week mindset reset.",
+        body: "Fridays are good for closing tabs — literal and mental. Tonight, use AI to help you actually finish your week.",
+        prompt: "\"I'm trying to end this week feeling like I closed it well. Ask me 3 questions to help me decide what's worth carrying into next week and what I should let go of.\"<br><br>The trick is making AI a <em>reflection prompt</em>, not an answer machine. The 'let go' question is the one that matters."
+      }
+    },
+
+    "2026-06-11": {
+      intro: "Thursday's drop: the most expensive AI subscription is the one nobody uses. Three things to think about — plus something small for tonight.",
+      trends: [
+        {
+          title: "Half of you have AI access. Most of you aren't using it.",
+          body: "Deloitte's January 2026 enterprise report flagged something blunt: <em>under 60% of employees with access to AI tools actually use those tools in their daily workflows</em> — nearly the same as last year. The takeaway: licenses don't create habits. People do.",
+          slants: {
+            strategy:   "Your AI ROI calculations probably assume usage you're not getting. Audit actual adoption before you defend the spend.",
+            operations: "Find one tool your team has access to but doesn't open. Pick the friction point — login, integration, training — and fix that one.",
+            pm:         "Use sprints to make AI usage explicit: 'This week, try X tool for stand-ups.' Habit beats capability.",
+            admin:      "If you've got AI access through your role and aren't using it, you're not alone. Pick the smallest possible first try."
+          },
+          challenge: {
+            steps: [
+              "List every AI tool you currently have access to through work — even free ones. (Copilot? Gemini at Workspace? An enterprise Claude account?)",
+              "Mark each: <em>\"Use weekly,\"</em> <em>\"Use rarely,\"</em> or <em>\"Don't use.\"</em>",
+              "Pick one from the 'Don't use' list and open it now.",
+              "Ask it one real question you would normally Google or ask a colleague.",
+              "Share which tool surprised you most in the group — good or bad."
+            ]
+          }
+        },
+        {
+          title: "Hours saved are real — but unevenly distributed",
+          body: "Recent enterprise studies converge on a number: <em>employees who use AI well save 2–3 hours per day</em> on routine activities. The catch: the gains skew heavily toward people who've crossed the 'I actually trust this' threshold. Trust is the throttle.",
+          slants: {
+            strategy:   "Your AI ROI model is missing a variable: time-to-trust. Plan for it explicitly.",
+            operations: "Track time saved on a single workflow for two weeks. You'll find your real ROI faster than any vendor case study.",
+            pm:         "Time savings on individual tasks don't always show up in team velocity. The bottleneck moves — find where.",
+            admin:      "If you're saving 30 minutes a day, that's 2.5 hours a week. Don't fill it with more tasks — use some for learning."
+          },
+          challenge: {
+            steps: [
+              "Pick one daily task that takes 15+ minutes (drafting an email, summarizing a doc, formatting notes).",
+              "Time yourself doing it the old way today.",
+              "Tomorrow, do the same task with AI as the first draft, then edit.",
+              "Time it again. Note the actual difference, and the quality difference.",
+              "Share your before/after in the group — let's see which tasks are worth the swap."
+            ]
+          }
+        },
+        {
+          title: "The Chief AI Officer is officially a thing",
+          body: "<em>61% of enterprises now have a Chief AI Officer or equivalent role</em>, per recent enterprise surveys. That signals something: AI strategy moved out of IT pilots and into the boardroom. Companies with dedicated AI leadership are more likely to see measurable productivity gains.",
+          slants: {
+            strategy:   "If your org has a CAIO, find them. If it doesn't, identify who's filling that gap unofficially — it's often someone in ops or strategy.",
+            operations: "AI governance is going to land on someone in your org. Volunteer before it's volunteered for you.",
+            pm:         "AI program management is becoming its own specialty. If you like coordinating across functions, this is your lane.",
+            admin:      "Whoever owns AI at your company needs an org-savvy partner. Admins frequently end up in that role."
+          },
+          challenge: {
+            steps: [
+              "Search your company's intranet or internal news for 'AI strategy' or 'AI governance.'",
+              "Find the name of the person leading it (CAIO, VP of AI, or de facto owner).",
+              "Open your company-approved AI tool and ask: <em>\"Help me draft a 3-sentence intro email to a [their role] explaining one thing I've learned about AI in my role and one thing I'd like to learn from them.\"</em>",
+              "Save the draft. Don't send it yet — sit with it.",
+              "Share whether you found a clear AI leader in your org, or if it's still ambiguous."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Use AI to plan a tiny weekend win.",
+        body: "It's almost Friday. Pick one small thing you want to feel good about by Sunday night — finishing a book, organizing a drawer, calling a friend, trying a new recipe — and let AI help you plan it.",
+        prompt: "\"I want to [the small thing] this weekend. Help me figure out the smallest version that still counts. Ask me 2 questions about what would make it actually happen.\"<br><br>The <em>smallest version that still counts</em> framing kills perfectionism. Try it on bigger things later."
+      }
+    }
+
+    /* ── Add new entries above this line. Example template:
+
+    ,"2026-06-15": {
+      intro: "…",
+      trends: [
+        {
+          title: "…",
+          body: "…",
+          slants: { strategy: "…", operations: "…", pm: "…", admin: "…" },
+          challenge: { steps: ["…", "…", "…", "…"] }
+        },
+        { title: "…", body: "…", slants: { strategy: "…", operations: "…", pm: "…", admin: "…" }, challenge: { steps: ["…","…","…","…"] } },
+        { title: "…", body: "…", slants: { strategy: "…", operations: "…", pm: "…", admin: "…" }, challenge: { steps: ["…","…","…","…"] } }
+      ],
+      homework: { title: "…", body: "…", prompt: "…" }
+    }
+    */
+  };
+
+  /* ════════════════════════════════════════════════════════════════
+     RENDERING + CALENDAR LOGIC (no need to edit below this line)
+     ════════════════════════════════════════════════════════════════ */
+
+  const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  const MONTHS_SHORT = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const WEEKDAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  const ROLE_LABELS = { strategy: 'Strategy', operations: 'Operations', pm: 'Project Mgmt', admin: 'Administrative' };
+
+  function parseDate(key) {
+    const [y, m, d] = key.split('-').map(Number);
+    return new Date(y, m - 1, d);
+  }
+  function toKey(d) {
+    return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+  }
+  function todayKey() { return toKey(new Date()); }
+
+  function formatDateHero(key) {
+    const d = parseDate(key);
+    return {
+      weekday: WEEKDAYS[d.getDay()],
+      monthDay: `${MONTHS[d.getMonth()]} ${d.getDate()}`,
+      year: d.getFullYear()
+    };
+  }
+  function formatTriggerLabel(key) {
+    const d = parseDate(key);
+    return `${MONTHS_SHORT[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+  }
+
+  function defaultKey() {
+    const today = todayKey();
+    const keys = Object.keys(DROPS).sort();
+    if (DROPS[today]) return today;
+    const past = keys.filter(k => k <= today);
+    if (past.length) return past[past.length - 1];
+    return keys[keys.length - 1];
+  }
+
+  // ───────── Calendar popover ─────────
+  let calCursor; // first-of-month Date for the month currently shown in the calendar
+
+  function renderCalendar() {
+    const grid = document.getElementById('cal-grid');
+    const title = document.getElementById('cal-title');
+    const year = calCursor.getFullYear();
+    const month = calCursor.getMonth();
+
+    title.textContent = `${MONTHS[month]} ${year}`;
+
+    // Sunday-first grid; pad with empty cells before day 1
+    const firstWeekday = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    const today = todayKey();
+
+    let html = '';
+    for (let i = 0; i < firstWeekday; i++) {
+      html += `<button class="cal-day empty" tabindex="-1" aria-hidden="true"></button>`;
+    }
+    for (let day = 1; day <= daysInMonth; day++) {
+      const key = `${year}-${String(month+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+      const has = DROPS[key] ? 'has-drop' : '';
+      const isToday = key === today ? 'today' : '';
+      const isSelected = key === currentKey ? 'selected' : '';
+      const cls = ['cal-day', has, isToday, isSelected].filter(Boolean).join(' ');
+      const disabled = has ? '' : 'disabled aria-disabled="true"';
+      html += `<button class="${cls}" data-key="${key}" ${disabled}>${day}</button>`;
+    }
+    grid.innerHTML = html;
+
+    // Wire up clickable days
+    grid.querySelectorAll('.cal-day.has-drop').forEach(btn => {
+      btn.addEventListener('click', () => {
+        setKey(btn.dataset.key);
+        closeCalendar();
+      });
+    });
+
+    // Disable prev/next when there's nothing in that direction
+    const allKeys = Object.keys(DROPS).sort();
+    if (allKeys.length) {
+      const earliest = parseDate(allKeys[0]);
+      const latest = parseDate(allKeys[allKeys.length - 1]);
+      document.getElementById('cal-prev').disabled =
+        (year < earliest.getFullYear()) ||
+        (year === earliest.getFullYear() && month <= earliest.getMonth());
+      document.getElementById('cal-next').disabled =
+        (year > latest.getFullYear()) ||
+        (year === latest.getFullYear() && month >= latest.getMonth());
+    }
+  }
+
+  function openCalendar() {
+    const popover = document.getElementById('cal-popover');
+    const trigger = document.getElementById('cal-trigger');
+    calCursor = new Date(parseDate(currentKey).getFullYear(), parseDate(currentKey).getMonth(), 1);
+    renderCalendar();
+    popover.hidden = false;
+    trigger.setAttribute('aria-expanded', 'true');
+    setTimeout(() => document.addEventListener('click', onOutsideClick), 0);
+  }
+  function closeCalendar() {
+    document.getElementById('cal-popover').hidden = true;
+    document.getElementById('cal-trigger').setAttribute('aria-expanded', 'false');
+    document.removeEventListener('click', onOutsideClick);
+  }
+  function onOutsideClick(e) {
+    if (!e.target.closest('#cal-popover') && !e.target.closest('#cal-trigger')) {
+      closeCalendar();
+    }
+  }
+
+  document.getElementById('cal-trigger').addEventListener('click', () => {
+    const isOpen = !document.getElementById('cal-popover').hidden;
+    isOpen ? closeCalendar() : openCalendar();
+  });
+  document.getElementById('cal-prev').addEventListener('click', () => {
+    calCursor = new Date(calCursor.getFullYear(), calCursor.getMonth() - 1, 1);
+    renderCalendar();
+  });
+  document.getElementById('cal-next').addEventListener('click', () => {
+    calCursor = new Date(calCursor.getFullYear(), calCursor.getMonth() + 1, 1);
+    renderCalendar();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !document.getElementById('cal-popover').hidden) closeCalendar();
+
+    // Arrow-key navigation between drops (only when not in an input and calendar is closed)
+    const calOpen = !document.getElementById('cal-popover').hidden;
+    const inField = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName || '');
+    if (calOpen || inField) return;
+
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+      const allKeys = Object.keys(DROPS).sort();
+      const idx = allKeys.indexOf(currentKey);
+      if (idx === -1) return;
+      const target = e.key === 'ArrowLeft' ? allKeys[idx - 1] : allKeys[idx + 1];
+      if (target) {
+        e.preventDefault();
+        setKey(target);
+      }
+    }
+  });
+
+  // ───────── Drop rendering ─────────
+  function renderSlants(slants) {
+    return Object.entries(slants).map(([role, text]) =>
+      `<li><span class="role">${ROLE_LABELS[role] || role}</span>${text}</li>`
+    ).join('');
+  }
+
+  function renderChallenge(c) {
+    // Supports two shapes: a plain string (legacy) or { steps: [...] } (preferred)
+    if (typeof c === 'string') {
+      return `<p class="challenge-text">${c}</p>`;
+    }
+    if (c && Array.isArray(c.steps)) {
+      return `<ol class="challenge-steps">${c.steps.map(s => `<li>${s}</li>`).join('')}</ol>`;
+    }
+    return '';
+  }
+
+  function renderTrend(t, i) {
+    const num = String(i + 1).padStart(2, '0');
+    return `
+      <details class="trend">
+        <summary class="trend-summary">
+          <div class="trend-summary-text">
+            <span class="trend-num">${num}</span>
+            <h2 class="trend-title">${t.title}</h2>
+          </div>
+          <span class="chevron" aria-hidden="true">❯</span>
+        </summary>
+        <div class="trend-body-wrap">
+          <p class="trend-body">${t.body}</p>
+          <ul class="slants">${renderSlants(t.slants)}</ul>
+          <div class="challenge">
+            <div class="challenge-label">Try this with the community</div>
+            ${renderChallenge(t.challenge)}
+          </div>
+        </div>
+      </details>
+    `;
+  }
+
+  function renderDropNavTop(key) {
+    const allKeys = Object.keys(DROPS).sort();
+    const idx = allKeys.indexOf(key);
+    const prev = idx > 0 ? allKeys[idx - 1] : null;
+    const next = idx >= 0 && idx < allKeys.length - 1 ? allKeys[idx + 1] : null;
+
+    const fmt = k => {
+      const d = parseDate(k);
+      return `${WEEKDAYS[d.getDay()]}, ${MONTHS[d.getMonth()]} ${d.getDate()}`;
+    };
+
+    return `
+      <nav class="drop-nav-top" aria-label="Drop navigation (top)">
+        <button class="drop-nav-btn prev" data-target="${prev || ''}" ${prev ? '' : 'disabled'} aria-label="${prev ? 'Previous: ' + fmt(prev) : 'No previous drop'}">
+          <span class="arrow">←</span><span>${prev ? fmt(prev) : 'No earlier drops'}</span>
+        </button>
+        <button class="drop-nav-btn next" data-target="${next || ''}" ${next ? '' : 'disabled'} aria-label="${next ? 'Next: ' + fmt(next) : 'No next drop'}">
+          <span>${next ? fmt(next) : 'Latest drop'}</span><span class="arrow">→</span>
+        </button>
+      </nav>
+    `;
+  }
+
+  function renderDropNav(key) {
+    const allKeys = Object.keys(DROPS).sort();
+    const idx = allKeys.indexOf(key);
+    const prev = idx > 0 ? allKeys[idx - 1] : null;
+    const next = idx >= 0 && idx < allKeys.length - 1 ? allKeys[idx + 1] : null;
+
+    const fmt = k => {
+      const d = parseDate(k);
+      return `${WEEKDAYS[d.getDay()]}, ${MONTHS[d.getMonth()]} ${d.getDate()}`;
+    };
+
+    return `
+      <nav class="drop-nav" aria-label="Drop navigation">
+        <button class="drop-nav-btn prev" data-target="${prev || ''}" ${prev ? '' : 'disabled'} aria-label="${prev ? 'Previous drop: ' + fmt(prev) : 'No previous drop'}">
+          <span class="drop-nav-label">← Previous</span>
+          <span class="drop-nav-date">${prev ? fmt(prev) : '—'}</span>
+        </button>
+        <button class="drop-nav-btn next" data-target="${next || ''}" ${next ? '' : 'disabled'} aria-label="${next ? 'Next drop: ' + fmt(next) : 'No next drop'}">
+          <span class="drop-nav-label">Next →</span>
+          <span class="drop-nav-date">${next ? fmt(next) : '—'}</span>
+        </button>
+      </nav>
+    `;
+  }
+
+  function renderDrop(key) {
+    const drop = DROPS[key];
+    const main = document.getElementById('content');
+
+    if (!drop) {
+      const recent = Object.keys(DROPS).sort().reverse()[0];
+      main.innerHTML = `
+        <div class="empty">
+          <h2>No drop for ${formatDateHero(key).monthDay}, ${formatDateHero(key).year}.</h2>
+          <p>Try the most recent one — <a href="#" id="goto-recent">${formatDateHero(recent).monthDay}, ${formatDateHero(recent).year}</a>.</p>
+        </div>
+      `;
+      document.getElementById('goto-recent').addEventListener('click', e => {
+        e.preventDefault();
+        setKey(recent);
+      });
+      return;
+    }
+
+    const dh = formatDateHero(key);
+    main.innerHTML = `
+      ${renderDropNavTop(key)}
+      <div class="date-hero">
+        <div class="date-weekday">${dh.weekday}</div>
+        <h1 class="date-display">${dh.monthDay}<em>, ${dh.year}</em></h1>
+        <p class="intro">${drop.intro}</p>
+      </div>
+      ${drop.trends.map(renderTrend).join('')}
+      <details class="homework">
+        <summary class="homework-summary">
+          <div class="homework-summary-text">
+            <span class="homework-eyebrow">Homework</span>
+            <h2 class="homework-title">${drop.homework.title}</h2>
+          </div>
+          <span class="chevron" aria-hidden="true">❯</span>
+        </summary>
+        <div class="homework-body-wrap">
+          <p class="homework-body">${drop.homework.body}</p>
+          <div class="homework-prompt">${drop.homework.prompt}</div>
+        </div>
+      </details>
+      ${renderDropNav(key)}
+    `;
+
+    // Wire up the prev/next buttons
+    main.querySelectorAll('.drop-nav-btn[data-target]').forEach(btn => {
+      if (btn.disabled) return;
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.target;
+        if (target) setKey(target);
+      });
+    });
+
+    // Scroll to top of navbar (skip the hero) on drop change, after the initial render
+    if (hasNavigated) {
+      document.querySelector('.navbar').scrollIntoView({ behavior: 'instant', block: 'start' });
+    }
+    hasNavigated = true;
+  }
+
+  let hasNavigated = false;
+
+  function updateStepperState(key) {
+    const allKeys = Object.keys(DROPS).sort();
+    const idx = allKeys.indexOf(key);
+    const hasPrev = idx > 0;
+    const hasNext = idx >= 0 && idx < allKeys.length - 1;
+    const prevBtn = document.getElementById('step-prev');
+    const nextBtn = document.getElementById('step-next');
+    if (prevBtn) prevBtn.disabled = !hasPrev;
+    if (nextBtn) nextBtn.disabled = !hasNext;
+  }
+
+  document.getElementById('step-prev').addEventListener('click', () => {
+    const allKeys = Object.keys(DROPS).sort();
+    const idx = allKeys.indexOf(currentKey);
+    if (idx > 0) setKey(allKeys[idx - 1]);
+  });
+  document.getElementById('step-next').addEventListener('click', () => {
+    const allKeys = Object.keys(DROPS).sort();
+    const idx = allKeys.indexOf(currentKey);
+    if (idx >= 0 && idx < allKeys.length - 1) setKey(allKeys[idx + 1]);
+  });
+
+  let currentKey = defaultKey();
+
+  function setKey(key) {
+    currentKey = key;
+    document.getElementById('cal-trigger-label').textContent = formatTriggerLabel(key);
+    updateStepperState(key);
+    renderDrop(key);
+  }
+
+  document.getElementById('today-btn').addEventListener('click', () => {
+    const t = todayKey();
+    setKey(DROPS[t] ? t : defaultKey());
+  });
+
+  // Initial render
+  setKey(currentKey);
+</script>
+
+</body>
+</html>
