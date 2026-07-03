@@ -922,6 +922,73 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+  "2026-07-03": {
+      intro: "Three signals from three different research teams, all pointing the same direction: the organizations pulling ahead on AI aren't the ones with the most tools — they're the ones redesigning work, scoping projects honestly, and investing in their people.",
+      trends: [
+        {
+          title: "Your job is being reshaped — and that's not the same as being replaced",
+          body: "BCG's fourth annual AI at Work report, surveying 11,749 workers across 14 markets, found that <em>50 to 55 percent of jobs will be meaningfully reshaped by AI within three years</em> — but only 10 to 15 percent are projected to be fully displaced (BCG, June 3, 2026). Meanwhile, 74% of frontline workers now use AI daily, and 42% of regular users say it saves them a full workday per week. The gap: most companies are layering AI onto existing roles instead of redesigning the work itself.",
+          slants: {
+            strategy:   "Your planning cycle assumes stable role definitions. If half the roles in your org reshape in three years, your workforce plan needs to account for what those roles become — not just whether they exist.",
+            operations: "The 42% saving a full day per week are your early signal. Find out where that reclaimed time is going — is it being reinvested in higher-value work, or just absorbed?",
+            pm:         "When half the tasks in a role change, your project staffing assumptions change too. Revisit resource plans with a \"what can AI handle now?\" lens before the next planning cycle.",
+            admin:      "You're already adapting — 74% of frontline workers use AI daily. The question is whether your organization is capturing what you've learned and sharing it across teams."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool and paste this prompt: <em>\"List the five tasks I spend the most time on each week. For each, suggest whether AI could draft it, review it, or whether only a human can do it. Format as a table.\"</em>",
+              "Review the table and identify the one task where AI's suggestion surprises you most.",
+              "Ask a follow-up: <em>\"For the task you said AI could draft, write me a sample prompt I could use to get a solid first draft in under 5 minutes.\"</em>",
+              "Try that prompt on a real, non-confidential version of the task before end of day.",
+              "Share what happened — did it work? What would you change? — in the group."
+            ]
+          }
+        },
+        {
+          title: "Most AI projects aren't failing — they're stalling",
+          body: "Gartner surveyed 782 infrastructure and operations leaders and found that <em>only 28% of AI projects fully succeed and meet ROI expectations</em>, while 20% fail outright and the rest deliver partial results (Gartner, April 7, 2026). The top culprit isn't bad technology — it's scope. 57% of leaders who experienced a failure said their teams expected too much, too fast. Another 38% pointed to skill gaps and poor data quality as direct causes.",
+          slants: {
+            strategy:   "The ROI story on AI is muddier than the hype suggests. Before approving the next AI initiative, ask: what's the minimum viable scope that proves value in 90 days?",
+            operations: "\"Self-healing infrastructure\" and \"auto-remediation\" top the list of failed AI use cases. Start with monitoring and alerting — where AI augments judgment — before handing it the keys.",
+            pm:         "Scope creep kills AI projects faster than technical debt. Define the success metric before kickoff, and protect it from \"while we're at it\" additions.",
+            admin:      "If your team is being asked to support an AI rollout, push for training before launch — 38% of failures trace back to skill gaps. The tool is only as good as the team using it."
+          },
+          challenge: {
+            steps: [
+              "Think of one AI initiative your team has tried or is considering — anything from a chatbot to an automated report.",
+              "Open your AI tool and paste: <em>\"I'm evaluating an AI project at work. Help me pressure-test it. Ask me 5 questions about scope, timeline, data readiness, team skills, and success metrics — then tell me where the biggest risk is based on my answers.\"</em>",
+              "Answer the five questions honestly — no need to share confidential details, just the general shape.",
+              "Read the risk assessment and note the one gap you hadn't planned for.",
+              "Share your top takeaway in the group — what risk did you almost miss?"
+            ]
+          }
+        },
+        {
+          title: "The \"enablement illusion\" — access isn't the same as readiness",
+          body: "Gartner's Global Labor Market Survey of 12,004 employees across 40 countries revealed a gap most leaders aren't seeing: <em>only 27% of executives have a comprehensive AI strategy, and just 20% believe their workforce is truly AI-ready</em> (Gartner, May 13, 2026). Organizations are confusing tool access with real capability — what Gartner calls the \"enablement illusion.\" The cost: by 2027, half of enterprises without a people-centric AI strategy will lose their top AI talent to competitors who invest in genuine enablement.",
+          slants: {
+            strategy:   "Access metrics like \"X% of staff have AI licenses\" tell you almost nothing. Measure whether people can use AI on the specific problems that matter to your business — capability, not seats.",
+            operations: "If your ops team got AI tools six months ago but no structured training, you're in the illusion zone. A focused two-hour workshop on your three most common use cases is worth more than an enterprise license.",
+            pm:         "Your most AI-capable project managers will leave for organizations that take their growth seriously. If your org's AI strategy is \"here's the login,\" that's a retention risk.",
+            admin:      "You don't need a certification — you need practice. Ask for dedicated time to experiment with AI on real, non-confidential tasks. That protected time is the difference between access and readiness."
+          },
+          challenge: {
+            steps: [
+              "Rate your own AI readiness honestly: 1 (never used an AI tool) to 5 (use AI daily and could teach others).",
+              "Open your AI tool and paste: <em>\"I'm at level [your number] in AI readiness. Give me three specific things I can do in the next two weeks to move up one level. Make them practical — no courses over 30 minutes, no tools that cost money.\"</em>",
+              "Pick the one action that feels most doable and put it on your calendar for next week.",
+              "Share your level and your chosen next step in the group — you'll be surprised how many people are at the same place."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Let AI settle your next 'what should we watch?' standoff.",
+        body: "The next time your household can't agree on a movie or show, hand the decision to AI. It's a low-stakes way to practice a technique that works just as well at work: giving AI competing constraints so it finds the overlap instead of overwhelming you with options.",
+        prompt: "\"My household has [number] people. Person 1 likes [genre], Person 2 likes [genre], and we've already seen [recent show]. Find us 3 options that split the difference — something everyone can live with. For each, tell us why it fits and where to stream it. Rank them by 'most likely to avoid an argument.'\"<br><br>The technique here — <em>giving AI competing constraints</em> — is one of the most useful prompting habits you can build. Try it next time you need to balance multiple stakeholders at work."
+      }
+    },
+
   "2026-07-02": {
       intro: "AI got cheaper, scarier, and more regulated \u2014 all in the same week. Today's three stories share a thread: the tools are moving faster than the rules, and the organizations that adjust their playbooks now will be the ones still standing when the dust settles.",
       trends: [
