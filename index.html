@@ -922,6 +922,73 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+  "2026-07-05": {
+      intro: "Three stories that share a thread: AI isn't replacing people as fast as the headlines promised — but the gap between using AI and using it well is where the real action is.",
+      trends: [
+        {
+          title: "The AI layoff boomerang is here — and it's louder than expected",
+          body: "Forrester predicted it: <em>over half of layoffs attributed to AI would be quietly reversed</em> (Forrester, 2026 Workforce Predictions). Now the receipts are arriving. A recent survey found that 55% of employers who cut roles for AI already regret the decision, and 32% of hiring managers have refilled positions they eliminated (CNBC, July 2026). Klarna's CEO publicly admitted the company \"went too far\" after replacing 700 customer service roles with AI — satisfaction dropped, complaints rose, and they're rebuilding a hybrid team.",
+          slants: {
+            strategy:   "The lesson isn't 'don't automate.' It's 'don't automate before you've redesigned the work.' Companies that cut headcount without rethinking workflows are paying twice.",
+            operations: "If your team lost roles to AI and quality or response times are slipping, you have the data to make the case for targeted rehiring — track the metrics now.",
+            pm:         "Every AI deployment plan should include a rollback trigger — a measurable threshold where you'd bring humans back in. If you don't define it upfront, you discover it the hard way.",
+            admin:      "Your institutional knowledge — how things actually work, what the systems don't capture — is exactly what AI couldn't replace at Klarna. That expertise has a market price again."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool.",
+              "Paste this prompt: <em>\"I manage or participate in a process where AI handles [describe the task — e.g., drafting responses, summarizing data, triaging requests]. Create a simple 5-item quality scorecard I can track weekly to catch early signs of output quality slipping — things like error rates, rework requests, missed context, or customer complaints.\"</em>",
+              "Review the scorecard. Pick the one metric you're not currently tracking but should be.",
+              "Share your chosen metric in the group — what's the one signal you'd want to catch before it becomes a problem?"
+            ]
+          }
+        },
+        {
+          title: "AI saves employees a full workday per week — but nobody told them what to do with it",
+          body: "BCG's 2026 global workforce study found that <em>74% of frontline employees now use AI regularly and save roughly one workday per week</em> — but here's the catch: <em>66% received limited or no guidance on how to reinvest that time</em> (BCG, June 2026). Without direction, the saved time evaporates into busywork or gets absorbed by the organization invisibly. The companies seeing real returns are the ones that pair AI tools with clear expectations about what people should do with the hours they get back.",
+          slants: {
+            strategy:   "A day per week is 20% of capacity — multiplied across a team, that's headcount-equivalent value. But only if someone decides what that time is for. Make that decision before the savings disappear.",
+            operations: "If your team adopted AI tools but hasn't seen productivity gains, the problem might not be the tools. Ask: does anyone know what they're supposed to do with the time they're saving?",
+            pm:         "Build 'time reinvestment' into your AI rollout plans. For every process you automate, define what the freed-up hours go toward — higher-value work, not just more of the same.",
+            admin:      "Track the time you're saving with AI this week, even informally. When you can show your manager 'I saved 4 hours on X,' you also get to propose what you'd do with those 4 hours instead."
+          },
+          challenge: {
+            steps: [
+              "List three tasks where AI already saves you time — even 15 minutes counts.",
+              "For each task, estimate how many minutes per week you save.",
+              "Open your company-approved AI tool and paste this prompt: <em>\"I save approximately [total minutes] per week using AI on these tasks: [list them]. Suggest 3 ways I could reinvest that time into higher-value work in my role as a [your role]. Be specific — not 'think strategically' but concrete activities I could start this week.\"</em>",
+              "Pick one suggestion and try it this week.",
+              "Share your time-save total and your reinvestment plan in the group — what are you doing with the hours AI gave back?"
+            ]
+          }
+        },
+        {
+          title: "The biggest AI adoption multiplier isn't the tool — it's the manager",
+          body: "Gallup's Q1 2026 data reveals a striking finding: <em>employees whose managers actively support their AI use are 8.7 times more likely to say AI has transformed their work</em> (Gallup, 2026). Meanwhile, a Bright Horizons/Harris Poll survey of 2,000+ workers found that <em>when employers provide AI training, adoption jumps from 25% to 76%</em> — yet 42% of employees say they're expected to figure out AI entirely on their own.",
+          slants: {
+            strategy:   "AI strategy without a people strategy is shelf-ware. The 8.7x multiplier means your managers are either your biggest AI asset or your biggest bottleneck — and most haven't been equipped for either role.",
+            operations: "You don't need a formal training program to start. Ask your team what AI tasks they've tried, what worked, and what confused them. That conversation alone puts you ahead of the 42% getting no support.",
+            pm:         "Add a 'manager enablement' line item to every AI project plan. If the project deploys tools but doesn't equip managers to support their teams in using them, adoption will stall at 25%.",
+            admin:      "If no one at work has shown you how to use AI on your actual tasks, that's a failure of support — not ability. Ask a colleague who uses AI well to walk you through their top use case. Peer learning is the fastest shortcut."
+          },
+          challenge: {
+            steps: [
+              "Think about who on your team or in your circle is most comfortable with AI. Ask them to spend 10 minutes showing you their single most useful AI workflow.",
+              "Try that workflow yourself on one of your own tasks this week.",
+              "Open your company-approved AI tool and paste this prompt: <em>\"I just learned a new AI workflow for [describe what you learned]. Now help me adapt it for [a different task I do regularly]. Walk me through it step by step, assuming I'm still learning.\"</em>",
+              "Note what worked and what felt confusing.",
+              "Share your experience in the group — what did you learn from watching someone else use AI, and what would you teach a teammate in return?"
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Let AI help you write a message you've been putting off.",
+        body: "Everyone has one — a text, an email, a note you've been avoiding because the tone feels hard to get right. Tonight, let AI help you draft it. Open any free tool (ChatGPT, Claude, Gemini, or Perplexity):",
+        prompt: "\"I need to write a [text/email/message] to [a friend, a family member, a neighbor]. The situation is [describe it briefly]. I want to sound [warm but honest / firm but kind / supportive but clear — pick one]. Before you draft anything, ask me 3 questions so you understand the relationship and what I actually want to say.\"<br><br>That structure — <em>telling the AI your desired tone and asking it to interview you first</em> — works for any tricky message. The AI doesn't know your life, but it's good at finding the right words once you tell it what you're going for."
+      }
+    },
+
   "2026-07-04": {
       intro: "The data is catching up to the hype — three major reports paint a clearer picture of what AI is actually doing to work, workers, and the organizations trying to keep up.",
       trends: [
