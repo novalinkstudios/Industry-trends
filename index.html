@@ -922,6 +922,71 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+  "2026-07-06": {
+      intro: "Monday reset. Three data points from the past few weeks that share a thread: organizations are spending more on AI, moving faster, and measuring less — and the cracks are starting to show.",
+      trends: [
+        {
+          title: "AI adoption is splitting companies from the inside",
+          body: "Writer's 2026 enterprise survey of 2,400 knowledge workers found something most internal comms aren't saying out loud: <em>54% of C-suite executives say AI adoption is tearing their company apart</em>, a sharp increase from last year (Writer/Workplace Intelligence, 2026). The rift isn't just about tools — 56% say AI has created genuine power struggles and organizational friction. Meanwhile, 92% of executives are cultivating a new class of \"AI elite\" employees, and <em>60% plan to lay off those who can't or won't adopt AI</em>.",
+          slants: {
+            strategy:   "The divide between AI-forward and AI-reluctant employees is becoming a strategic risk — not just a training gap, but an organizational fault line you need to design around.",
+            operations: "If your team is splitting into AI-users and non-users, the inconsistency will show up in process quality before it shows up in performance reviews.",
+            pm:         "Watch for quiet friction on mixed teams — the person doing everything manually and the one moving twice as fast with AI are both frustrated, for different reasons.",
+            admin:      "You see across every team you support — you're in a unique position to spot who's thriving with AI and who's quietly struggling before it becomes a bigger problem."
+          },
+          challenge: {
+            steps: [
+              "Think about a team or group you work with regularly. Mentally note who uses AI tools often and who avoids them.",
+              "Open your company-approved AI tool and paste this prompt: <em>\"I work in a team where some people use AI daily and others avoid it entirely. Give me three low-pressure conversation starters I could use to surface concerns without making anyone feel singled out.\"</em>",
+              "Pick the conversation starter that feels most natural to you and note why.",
+              "Share it in the group — and say whether you'd actually use it this week."
+            ]
+          }
+        },
+        {
+          title: "AI spending keeps climbing — but almost nobody can prove it's working",
+          body: "Bain's latest research found that <em>90% of companies whose AI investments underdelivered still plan to increase their budgets</em>, even though 40% of those tracking costs saw savings under 10% — well below expectations (Bain, 2026). BCG's AI Radar 2026 confirms the pattern: companies plan to double AI spending from 0.8% to 1.7% of revenue this year. The uncomfortable truth from Deloitte: <em>only 29% of executives say they can measure AI ROI with confidence</em>. The spending is real. The accountability isn't.",
+          slants: {
+            strategy:   "If your planning team can't connect AI spend to a measurable outcome, you're building next year's budget on assumptions — and boards are starting to notice.",
+            operations: "You own the processes AI is supposed to improve — capture a before-and-after baseline now, before someone asks you to prove value you can't yet show.",
+            pm:         "The project that can demonstrate \"we reduced X by Y after deploying AI\" will get the next round of funding. The one that can't, won't.",
+            admin:      "If you track team metrics, time-to-completion data, or process throughput, that data is suddenly very valuable — you may be sitting on the ROI proof no one else can find."
+          },
+          challenge: {
+            steps: [
+              "Pick one task you've used AI to help with in the past month.",
+              "Estimate how long it took before AI and how long it takes now. Be honest — include time spent reviewing, editing, or fixing AI output.",
+              "Write the comparison down: <em>\"Before AI: ~[X] minutes. With AI: ~[Y] minutes including review. Net change: [Z].\"</em>",
+              "Ask yourself: would this hold up if someone asked you to prove it?",
+              "Share your comparison in the group — the honest ones are the most useful."
+            ]
+          }
+        },
+        {
+          title: "Most companies couldn't pass an AI audit — and the ones that can are pulling ahead",
+          body: "Grant Thornton's 2026 AI Impact Survey of 950 business leaders coined a term worth remembering: the <em>\"AI proof gap.\"</em> 78% of executives say they lack confidence they could pass an independent AI governance audit within 90 days. The finding that makes it strategic, not just legal: companies that have closed that gap — fully integrating AI with proper governance — are <em>nearly four times more likely to report revenue growth</em> than those still piloting (58% vs. 15%).",
+          slants: {
+            strategy:   "Governance isn't the thing that slows AI down — it's the thing that lets you scale it. The data now backs that up with a 4x revenue difference.",
+            operations: "If someone asked \"who approved this AI-assisted decision and how was it validated?\" today, could your team answer? That question is coming.",
+            pm:         "Add one line to your project plans: \"AI governance checkpoint.\" It's a small addition now that prevents a much larger audit scramble later.",
+            admin:      "You often manage the documentation trail — knowing what AI tools are in use, who's using them, and for what gives you real leverage as governance expectations tighten."
+          },
+          challenge: {
+            steps: [
+              "Think about a process or decision at work where AI plays a role — even a small one.",
+              "Ask yourself three questions: Who chose to use AI here? Who reviews the output? Is there a record of either?",
+              "Open a note and write down your answers. If any answer is \"nobody\" or \"nowhere,\" <em>that's</em> the proof gap.",
+              "Share one observation in the group — no need to name the process, just the pattern you noticed."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Let AI help you decode a confusing bill or statement.",
+        body: "Utility bill, insurance explanation, bank fee breakdown — pick one of those documents that makes your eyes glaze over. Open any free AI tool (ChatGPT, Claude, Gemini, or Perplexity) and try this:",
+        prompt: "\"Here's a [type of document]. Explain each line item in plain English, flag anything that looks unusual, and tell me the one question I should call and ask about. Use bullet points.\"<br><br>This teaches a technique called <em>structured output framing</em> — when you tell AI exactly how to organize its answer, you get something you can actually use."
+      }
+    },
   "2026-07-05": {
       intro: "Today's stories are all about who's actually doing the adapting when AI hits an org chart \u2014 the managers left holding the validation work, the agents you can now hand a whole task to instead of a single question, and the hard data on whether AI is really cutting headcount.",
       trends: [
