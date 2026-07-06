@@ -2613,4 +2613,418 @@
             strategy:   "Your AI ROI calculations probably assume usage you're not getting. Audit actual adoption before you defend the spend.",
             operations: "Find one tool your team has access to but doesn't open. Pick the friction point — login, integration, training — and fix that one.",
             pm:         "Use sprints to make AI usage explicit: 'This week, try X tool for stand-ups.' Habit beats capability.",
-            admin:      "If you've got AI access thro
+            admin:      "If you've got AI access through your role and aren't using it, you're not alone. Pick the smallest possible first try."
+          },
+          challenge: {
+            steps: [
+              "List every AI tool you currently have access to through work — even free ones. (Copilot? Gemini at Workspace? An enterprise Claude account?)",
+              "Mark each: <em>\"Use weekly,\"</em> <em>\"Use rarely,\"</em> or <em>\"Don't use.\"</em>",
+              "Pick one from the 'Don't use' list and open it now.",
+              "Ask it one real question you would normally Google or ask a colleague.",
+              "Share which tool surprised you most in the group — good or bad."
+            ]
+          }
+        },
+        {
+          title: "Hours saved are real — but unevenly distributed",
+          body: "Recent enterprise studies converge on a number: <em>employees who use AI well save 2–3 hours per day</em> on routine activities. The catch: the gains skew heavily toward people who've crossed the 'I actually trust this' threshold. Trust is the throttle.",
+          slants: {
+            strategy:   "Your AI ROI model is missing a variable: time-to-trust. Plan for it explicitly.",
+            operations: "Track time saved on a single workflow for two weeks. You'll find your real ROI faster than any vendor case study.",
+            pm:         "Time savings on individual tasks don't always show up in team velocity. The bottleneck moves — find where.",
+            admin:      "If you're saving 30 minutes a day, that's 2.5 hours a week. Don't fill it with more tasks — use some for learning."
+          },
+          challenge: {
+            steps: [
+              "Pick one daily task that takes 15+ minutes (drafting an email, summarizing a doc, formatting notes).",
+              "Time yourself doing it the old way today.",
+              "Tomorrow, do the same task with AI as the first draft, then edit.",
+              "Time it again. Note the actual difference, and the quality difference.",
+              "Share your before/after in the group — let's see which tasks are worth the swap."
+            ]
+          }
+        },
+        {
+          title: "The Chief AI Officer is officially a thing",
+          body: "<em>61% of enterprises now have a Chief AI Officer or equivalent role</em>, per recent enterprise surveys. That signals something: AI strategy moved out of IT pilots and into the boardroom. Companies with dedicated AI leadership are more likely to see measurable productivity gains.",
+          slants: {
+            strategy:   "If your org has a CAIO, find them. If it doesn't, identify who's filling that gap unofficially — it's often someone in ops or strategy.",
+            operations: "AI governance is going to land on someone in your org. Volunteer before it's volunteered for you.",
+            pm:         "AI program management is becoming its own specialty. If you like coordinating across functions, this is your lane.",
+            admin:      "Whoever owns AI at your company needs an org-savvy partner. Admins frequently end up in that role."
+          },
+          challenge: {
+            steps: [
+              "Search your company's intranet or internal news for 'AI strategy' or 'AI governance.'",
+              "Find the name of the person leading it (CAIO, VP of AI, or de facto owner).",
+              "Open your company-approved AI tool and ask: <em>\"Help me draft a 3-sentence intro email to a [their role] explaining one thing I've learned about AI in my role and one thing I'd like to learn from them.\"</em>",
+              "Save the draft. Don't send it yet — sit with it.",
+              "Share whether you found a clear AI leader in your org, or if it's still ambiguous."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Use AI to plan a tiny weekend win.",
+        body: "It's almost Friday. Pick one small thing you want to feel good about by Sunday night — finishing a book, organizing a drawer, calling a friend, trying a new recipe — and let AI help you plan it.",
+        prompt: "\"I want to [the small thing] this weekend. Help me figure out the smallest version that still counts. Ask me 2 questions about what would make it actually happen.\"<br><br>The <em>smallest version that still counts</em> framing kills perfectionism. Try it on bigger things later."
+      }
+    }
+
+    /* ── Add new entries above this line. Example template:
+
+    ,"2026-06-15": {
+      intro: "…",
+      trends: [
+        {
+          title: "…",
+          body: "…",
+          slants: { strategy: "…", operations: "…", pm: "…", admin: "…" },
+          challenge: { steps: ["…", "…", "…", "…"] }
+        },
+        { title: "…", body: "…", slants: { strategy: "…", operations: "…", pm: "…", admin: "…" }, challenge: { steps: ["…","…","…","…"] } },
+        { title: "…", body: "…", slants: { strategy: "…", operations: "…", pm: "…", admin: "…" }, challenge: { steps: ["…","…","…","…"] } }
+      ],
+      homework: { title: "…", body: "…", prompt: "…" }
+    }
+    */
+  };
+
+  /* ════════════════════════════════════════════════════════════════
+     RENDERING + CALENDAR LOGIC (no need to edit below this line)
+     ════════════════════════════════════════════════════════════════ */
+
+  const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  const MONTHS_SHORT = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const WEEKDAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  const ROLE_LABELS = { strategy: 'Strategy', operations: 'Operations', pm: 'Project Mgmt', admin: 'Administrative' };
+
+  function parseDate(key) {
+    const [y, m, d] = key.split('-').map(Number);
+    return new Date(y, m - 1, d);
+  }
+  function toKey(d) {
+    return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+  }
+  function todayKey() { return toKey(new Date()); }
+
+  function formatDateHero(key) {
+    const d = parseDate(key);
+    return {
+      weekday: WEEKDAYS[d.getDay()],
+      monthDay: `${MONTHS[d.getMonth()]} ${d.getDate()}`,
+      year: d.getFullYear()
+    };
+  }
+  function formatTriggerLabel(key) {
+    const d = parseDate(key);
+    return `${MONTHS_SHORT[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+  }
+
+  function defaultKey() {
+    const today = todayKey();
+    const keys = Object.keys(DROPS).sort();
+    if (DROPS[today]) return today;
+    const past = keys.filter(k => k <= today);
+    if (past.length) return past[past.length - 1];
+    return keys[keys.length - 1];
+  }
+
+  // ───────── Calendar popover ─────────
+  let calCursor; // first-of-month Date for the month currently shown in the calendar
+
+  function renderCalendar() {
+    const grid = document.getElementById('cal-grid');
+    const title = document.getElementById('cal-title');
+    const year = calCursor.getFullYear();
+    const month = calCursor.getMonth();
+
+    title.textContent = `${MONTHS[month]} ${year}`;
+
+    // Sunday-first grid; pad with empty cells before day 1
+    const firstWeekday = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    const today = todayKey();
+
+    let html = '';
+    for (let i = 0; i < firstWeekday; i++) {
+      html += `<button class="cal-day empty" tabindex="-1" aria-hidden="true"></button>`;
+    }
+    for (let day = 1; day <= daysInMonth; day++) {
+      const key = `${year}-${String(month+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+      const has = DROPS[key] ? 'has-drop' : '';
+      const isToday = key === today ? 'today' : '';
+      const isSelected = key === currentKey ? 'selected' : '';
+      const cls = ['cal-day', has, isToday, isSelected].filter(Boolean).join(' ');
+      const disabled = has ? '' : 'disabled aria-disabled="true"';
+      html += `<button class="${cls}" data-key="${key}" ${disabled}>${day}</button>`;
+    }
+    grid.innerHTML = html;
+
+    // Wire up clickable days
+    grid.querySelectorAll('.cal-day.has-drop').forEach(btn => {
+      btn.addEventListener('click', () => {
+        setKey(btn.dataset.key);
+        closeCalendar();
+      });
+    });
+
+    // Disable prev/next when there's nothing in that direction
+    const allKeys = Object.keys(DROPS).sort();
+    if (allKeys.length) {
+      const earliest = parseDate(allKeys[0]);
+      const latest = parseDate(allKeys[allKeys.length - 1]);
+      document.getElementById('cal-prev').disabled =
+        (year < earliest.getFullYear()) ||
+        (year === earliest.getFullYear() && month <= earliest.getMonth());
+      document.getElementById('cal-next').disabled =
+        (year > latest.getFullYear()) ||
+        (year === latest.getFullYear() && month >= latest.getMonth());
+    }
+  }
+
+  function openCalendar() {
+    const popover = document.getElementById('cal-popover');
+    const trigger = document.getElementById('cal-trigger');
+    calCursor = new Date(parseDate(currentKey).getFullYear(), parseDate(currentKey).getMonth(), 1);
+    renderCalendar();
+    popover.hidden = false;
+    trigger.setAttribute('aria-expanded', 'true');
+    setTimeout(() => document.addEventListener('click', onOutsideClick), 0);
+  }
+  function closeCalendar() {
+    document.getElementById('cal-popover').hidden = true;
+    document.getElementById('cal-trigger').setAttribute('aria-expanded', 'false');
+    document.removeEventListener('click', onOutsideClick);
+  }
+  function onOutsideClick(e) {
+    if (!e.target.closest('#cal-popover') && !e.target.closest('#cal-trigger')) {
+      closeCalendar();
+    }
+  }
+
+  document.getElementById('cal-trigger').addEventListener('click', () => {
+    const isOpen = !document.getElementById('cal-popover').hidden;
+    isOpen ? closeCalendar() : openCalendar();
+  });
+  document.getElementById('cal-prev').addEventListener('click', () => {
+    calCursor = new Date(calCursor.getFullYear(), calCursor.getMonth() - 1, 1);
+    renderCalendar();
+  });
+  document.getElementById('cal-next').addEventListener('click', () => {
+    calCursor = new Date(calCursor.getFullYear(), calCursor.getMonth() + 1, 1);
+    renderCalendar();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !document.getElementById('cal-popover').hidden) closeCalendar();
+
+    // Arrow-key navigation between drops (only when not in an input and calendar is closed)
+    const calOpen = !document.getElementById('cal-popover').hidden;
+    const inField = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName || '');
+    if (calOpen || inField) return;
+
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+      const allKeys = Object.keys(DROPS).sort();
+      const idx = allKeys.indexOf(currentKey);
+      if (idx === -1) return;
+      const target = e.key === 'ArrowLeft' ? allKeys[idx - 1] : allKeys[idx + 1];
+      if (target) {
+        e.preventDefault();
+        setKey(target);
+      }
+    }
+  });
+
+  // ───────── Drop rendering ─────────
+  function renderSlants(slants) {
+    return Object.entries(slants).map(([role, text]) =>
+      `<li><span class="role">${ROLE_LABELS[role] || role}</span>${text}</li>`
+    ).join('');
+  }
+
+  function renderChallenge(c) {
+    // Supports two shapes: a plain string (legacy) or { steps: [...] } (preferred)
+    if (typeof c === 'string') {
+      return `<p class="challenge-text">${c}</p>`;
+    }
+    if (c && Array.isArray(c.steps)) {
+      return `<ol class="challenge-steps">${c.steps.map(s => `<li>${s}</li>`).join('')}</ol>`;
+    }
+    return '';
+  }
+
+  function renderTrend(t, i) {
+    const num = String(i + 1).padStart(2, '0');
+    return `
+      <details class="trend">
+        <summary class="trend-summary">
+          <div class="trend-summary-text">
+            <span class="trend-num">${num}</span>
+            <h2 class="trend-title">${t.title}</h2>
+          </div>
+          <span class="chevron" aria-hidden="true">❯</span>
+        </summary>
+        <div class="trend-body-wrap">
+          <p class="trend-body">${t.body}</p>
+          <ul class="slants">${renderSlants(t.slants)}</ul>
+          <div class="challenge">
+            <div class="challenge-label">Try this with the community</div>
+            ${renderChallenge(t.challenge)}
+          </div>
+        </div>
+      </details>
+    `;
+  }
+
+  function renderDropNavTop(key) {
+    const allKeys = Object.keys(DROPS).sort();
+    const idx = allKeys.indexOf(key);
+    const prev = idx > 0 ? allKeys[idx - 1] : null;
+    const next = idx >= 0 && idx < allKeys.length - 1 ? allKeys[idx + 1] : null;
+
+    const fmt = k => {
+      const d = parseDate(k);
+      return `${WEEKDAYS[d.getDay()]}, ${MONTHS[d.getMonth()]} ${d.getDate()}`;
+    };
+
+    return `
+      <nav class="drop-nav-top" aria-label="Drop navigation (top)">
+        <button class="drop-nav-btn prev" data-target="${prev || ''}" ${prev ? '' : 'disabled'} aria-label="${prev ? 'Previous: ' + fmt(prev) : 'No previous drop'}">
+          <span class="arrow">←</span><span>${prev ? fmt(prev) : 'No earlier drops'}</span>
+        </button>
+        <button class="drop-nav-btn next" data-target="${next || ''}" ${next ? '' : 'disabled'} aria-label="${next ? 'Next: ' + fmt(next) : 'No next drop'}">
+          <span>${next ? fmt(next) : 'Latest drop'}</span><span class="arrow">→</span>
+        </button>
+      </nav>
+    `;
+  }
+
+  function renderDropNav(key) {
+    const allKeys = Object.keys(DROPS).sort();
+    const idx = allKeys.indexOf(key);
+    const prev = idx > 0 ? allKeys[idx - 1] : null;
+    const next = idx >= 0 && idx < allKeys.length - 1 ? allKeys[idx + 1] : null;
+
+    const fmt = k => {
+      const d = parseDate(k);
+      return `${WEEKDAYS[d.getDay()]}, ${MONTHS[d.getMonth()]} ${d.getDate()}`;
+    };
+
+    return `
+      <nav class="drop-nav" aria-label="Drop navigation">
+        <button class="drop-nav-btn prev" data-target="${prev || ''}" ${prev ? '' : 'disabled'} aria-label="${prev ? 'Previous drop: ' + fmt(prev) : 'No previous drop'}">
+          <span class="drop-nav-label">← Previous</span>
+          <span class="drop-nav-date">${prev ? fmt(prev) : '—'}</span>
+        </button>
+        <button class="drop-nav-btn next" data-target="${next || ''}" ${next ? '' : 'disabled'} aria-label="${next ? 'Next drop: ' + fmt(next) : 'No next drop'}">
+          <span class="drop-nav-label">Next →</span>
+          <span class="drop-nav-date">${next ? fmt(next) : '—'}</span>
+        </button>
+      </nav>
+    `;
+  }
+
+  function renderDrop(key) {
+    const drop = DROPS[key];
+    const main = document.getElementById('content');
+
+    if (!drop) {
+      const recent = Object.keys(DROPS).sort().reverse()[0];
+      main.innerHTML = `
+        <div class="empty">
+          <h2>No drop for ${formatDateHero(key).monthDay}, ${formatDateHero(key).year}.</h2>
+          <p>Try the most recent one — <a href="#" id="goto-recent">${formatDateHero(recent).monthDay}, ${formatDateHero(recent).year}</a>.</p>
+        </div>
+      `;
+      document.getElementById('goto-recent').addEventListener('click', e => {
+        e.preventDefault();
+        setKey(recent);
+      });
+      return;
+    }
+
+    const dh = formatDateHero(key);
+    main.innerHTML = `
+      ${renderDropNavTop(key)}
+      <div class="date-hero">
+        <div class="date-weekday">${dh.weekday}</div>
+        <h1 class="date-display">${dh.monthDay}<em>, ${dh.year}</em></h1>
+        <p class="intro">${drop.intro}</p>
+      </div>
+      ${drop.trends.map(renderTrend).join('')}
+      <details class="homework">
+        <summary class="homework-summary">
+          <div class="homework-summary-text">
+            <span class="homework-eyebrow">Homework</span>
+            <h2 class="homework-title">${drop.homework.title}</h2>
+          </div>
+          <span class="chevron" aria-hidden="true">❯</span>
+        </summary>
+        <div class="homework-body-wrap">
+          <p class="homework-body">${drop.homework.body}</p>
+          <div class="homework-prompt">${drop.homework.prompt}</div>
+        </div>
+      </details>
+      ${renderDropNav(key)}
+    `;
+
+    // Wire up the prev/next buttons
+    main.querySelectorAll('.drop-nav-btn[data-target]').forEach(btn => {
+      if (btn.disabled) return;
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.target;
+        if (target) setKey(target);
+      });
+    });
+
+    // Scroll to top of navbar (skip the hero) on drop change, after the initial render
+    if (hasNavigated) {
+      document.querySelector('.navbar').scrollIntoView({ behavior: 'instant', block: 'start' });
+    }
+    hasNavigated = true;
+  }
+
+  let hasNavigated = false;
+
+  function updateStepperState(key) {
+    const allKeys = Object.keys(DROPS).sort();
+    const idx = allKeys.indexOf(key);
+    const hasPrev = idx > 0;
+    const hasNext = idx >= 0 && idx < allKeys.length - 1;
+    const prevBtn = document.getElementById('step-prev');
+    const nextBtn = document.getElementById('step-next');
+    if (prevBtn) prevBtn.disabled = !hasPrev;
+    if (nextBtn) nextBtn.disabled = !hasNext;
+  }
+
+  document.getElementById('step-prev').addEventListener('click', () => {
+    const allKeys = Object.keys(DROPS).sort();
+    const idx = allKeys.indexOf(currentKey);
+    if (idx > 0) setKey(allKeys[idx - 1]);
+  });
+  document.getElementById('step-next').addEventListener('click', () => {
+    const allKeys = Object.keys(DROPS).sort();
+    const idx = allKeys.indexOf(currentKey);
+    if (idx >= 0 && idx < allKeys.length - 1) setKey(allKeys[idx + 1]);
+  });
+
+  let currentKey = defaultKey();
+
+  function setKey(key) {
+    currentKey = key;
+    document.getElementById('cal-trigger-label').textContent = formatTriggerLabel(key);
+    updateStepperState(key);
+    renderDrop(key);
+  }
+
+  document.getElementById('today-btn').addEventListener('click', () => {
+    const t = todayKey();
+    setKey(DROPS[t] ? t : defaultKey());
+  });
+
+  // Initial render
+  setKey(currentKey);
+</script>
+
+</body>
+</html>
