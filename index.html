@@ -922,6 +922,72 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+"2026-07-10": {
+    intro: "Friday. Three stories to carry into the weekend — about the hidden biases in your AI's advice, why most AI projects fail for reasons that have nothing to do with technology, and the quiet skill that separates people who use AI from people who get real value from it.",
+    trends: [
+      {
+        title: "Your AI gives everyone the same strategic advice — and nobody notices",
+        body: "Harvard Business Review published research in March testing seven leading AI models across 15,000 strategy simulations. The result: a phenomenon the researchers call <em>'trendslop'</em> — when asked to choose between competing strategic approaches, the models clustered around the same trendy recommendations regardless of context. Even when researchers changed industries, company sizes, and constraints, the AI kept recommending the same buzzword-heavy playbooks. The advice sounds confident. It's just not specific to you.",
+        slants: {
+          strategy:   "If your AI-generated strategy document could apply to any company in any industry, it's trendslop. The value isn't in the generation — it's in the pressure-testing.",
+          operations: "Generic AI recommendations for process improvement miss the constraints that make your operations unique. Always feed it your actual bottlenecks, not a textbook description.",
+          pm:         "When AI suggests a project approach, ask yourself: would this same advice work for a completely different project? If yes, it's too generic to act on without heavy tailoring.",
+          admin:      "The more specific you are in your prompts — names, dates, constraints, history — the less likely AI is to hand you something generic. Context is the antidote to trendslop."
+        },
+        challenge: {
+          steps: [
+            "Open your company-approved AI tool and paste this prompt: <em>\"I need strategic advice on [describe a real challenge you're working on — a process that's too slow, a decision you're stuck on, a project that's stalling]. Give me your recommendation.\"</em>",
+            "Read the response. Then ask this follow-up: <em>\"Now argue against your own recommendation. What are the three strongest reasons this advice might be wrong for my specific situation?\"</em>",
+            "Compare the two responses. Which one gave you more useful insight — the recommendation or the counterargument?",
+            "Share what you found in the group — did the AI's self-critique surface something the original advice missed?"
+          ]
+        }
+      },
+      {
+        title: "80% of enterprise AI projects fail — and the fix isn't better technology",
+        body: "RAND Corporation's meta-analysis of 65+ enterprise AI initiatives and Gartner's April 2026 survey of 782 I&O managers converge on the same conclusion: <em>more than 80% of enterprise AI projects fail to deliver promised business value</em>. Only 28% of AI infrastructure projects deliver the return that was expected. The root cause isn't the models or the tools — it's change management. Teams expected AI to automate complex tasks without redesigning the work around it.",
+        slants: {
+          strategy:   "The next strategy deck that proposes an AI initiative should spend as much time on workflow redesign and change management as it does on technology selection.",
+          operations: "If your team bolted AI onto an existing process and it didn't stick, that's not an AI failure — it's a design failure. The process needs to change, not just the tools inside it.",
+          pm:         "Build change management into every AI project plan from day one — training, workflow redesign, feedback loops. The projects that skip this step are the ones in the 80%.",
+          admin:      "When a new AI tool doesn't seem to help, the issue is often that nobody redesigned the steps around it. You're in a good position to spot where the old process and the new tool conflict."
+        },
+        challenge: {
+          steps: [
+            "Think of one AI tool or feature your team has tried in the last six months. Did it stick? Be honest.",
+            "Open your AI tool and paste this prompt: <em>\"We tried using AI for [describe the task], but adoption was [low / uneven / abandoned]. Walk me through a 5-step diagnostic: what might have gone wrong with the rollout, the workflow design, the training, the expectations, or the feedback loop? Be specific and practical.\"</em>",
+            "Review the diagnostic. Identify the one factor that rings most true for your situation.",
+            "Share your diagnosis in the group — patterns across teams tell us more than any single case."
+          ]
+        }
+      },
+      {
+        title: "The new edge isn't using AI — it's teaching AI how you think",
+        body: "A June 2026 Harvard Business Review article argues that the real bottleneck for AI value has shifted. It's no longer access, skills, or even organizational readiness — it's <em>whether you can make your decision-making process explicit</em>. Many critical judgments about risk, exceptions, quality, and tradeoffs exist as tacit knowledge inside experienced employees. Organizations that translate that knowledge into structured guidance create what the authors call 'judgment infrastructure' — and it scales. Everyone else gets generic output.",
+        slants: {
+          strategy:   "Your strategic value increasingly lives in the judgment calls you make — the ones that aren't written down anywhere. Making them explicit doesn't replace you. It amplifies you.",
+          operations: "Every time you make an exception, apply a rule of thumb, or escalate based on instinct, that's tacit knowledge. Documenting it — even roughly — makes AI dramatically more useful for your team.",
+          pm:         "The project managers who get the best AI output are the ones who can articulate their decision criteria upfront. 'Use your judgment' is a human instruction. AI needs the criteria spelled out.",
+          admin:      "You already have deep tacit knowledge — the unwritten rules of how things actually work, who to loop in, when to escalate. That knowledge is exactly what makes AI more useful when you share it."
+        },
+        challenge: {
+          steps: [
+            "Pick one recurring decision you make at work — an approval, a prioritization, a judgment call about quality or urgency.",
+            "Open your AI tool and try this prompt: <em>\"I'm going to teach you how I make a specific decision. The decision is: [describe it]. Interview me about my decision-making process — ask me 5 questions about what factors I weigh, what exceptions I make, and what rules of thumb I use. After my answers, summarize my decision framework in a simple checklist.\"</em>",
+            "Answer the five questions as honestly as you can — include the shortcuts and instincts, not just the official process.",
+            "Review the checklist the AI produces. Is it accurate? What did it miss? What did it capture that you'd never written down before?",
+            "Share one insight from the exercise in the group — what piece of your tacit knowledge surprised you when you saw it written out?"
+          ]
+        }
+      }
+    ],
+    homework: {
+      title: "This weekend, let AI interview you about a skill you take for granted.",
+      body: "You're better at something than you realize — cooking, navigating family dynamics, organizing a trip, fixing things around the house. Use any free AI tool (ChatGPT, Claude, Gemini, or Perplexity) to surface what you actually know:",
+      prompt: "\"I'm really good at [your skill — e.g., meal planning on a budget, defusing arguments, packing for trips]. Interview me about HOW I do it. Ask me 5 questions about my process, then write up my approach as a step-by-step guide that someone else could follow.\"<br><br>The technique here — <em>getting AI to interview you instead of instruct you</em> — flips the usual dynamic. You're the expert. AI is the writer. That's a prompting pattern worth practicing."
+    }
+  },
+
 "2026-07-09": {
     intro: "Thursday. Three stories today about the same uncomfortable truth: most organizations are confusing AI access with AI readiness — and the people who see the difference are pulling ahead.",
     trends: [
