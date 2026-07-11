@@ -528,7 +528,7 @@
     font-weight: 500;
   }
 
-  /* Role slants */
+  .source-btn { display: inline-flex; align-items: center; gap: 4px; margin-left: 8px; padding: 2px 8px; font-size: 12px; font-family: inherit; color: var(--muted); background: transparent; border: 1px solid currentColor; border-radius: 12px; cursor: pointer; text-decoration: none; vertical-align: middle; transition: color 0.15s; white-space: nowrap; }
   .slants {
     list-style: none;
     padding: 0;
@@ -3190,7 +3190,7 @@
           <span class="chevron" aria-hidden="true">❯</span>
         </summary>
         <div class="trend-body-wrap">
-          <p class="trend-body">${t.body}</p>
+          <p class="trend-body">${t.body}${t.source_url ? ` <a class="Role slants" href="${t.source_url}" target="_blank" rel="noopener">Source ↗</a>` : ''}</p>
           <ul class="slants">${renderSlants(t.slants)}</ul>
           <div class="challenge">
             <div class="challenge-label">Try this with the community</div>
