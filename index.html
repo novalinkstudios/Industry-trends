@@ -922,6 +922,71 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+"2026-07-11": {
+    intro: "Saturday. Three stories to sit with this weekend — about the changing shape of organizations, a coming correction for AI agent hype, and the surprising disconnect between the people who buy AI tools and the people who use them.",
+    trends: [
+      {
+        title: "AI is flattening the org chart — and redefining what managers actually do",
+        body: "Gartner predicts that by the end of 2026, <em>20% of organizations will use AI to flatten their structure, eliminating more than half of current middle management positions</em>. Companies like Shopify and Klarna have already started. But this isn't a story about managers disappearing — it's about which management tasks survive. Coordination, status-tracking, and report consolidation are being automated. Coaching, cross-functional judgment, and decision-making under ambiguity are not.",
+        slants: {
+          strategy:   "The strategic planning role gets more valuable in a flatter org — not less. Fewer management layers mean fewer filters between strategy and execution.",
+          operations: "If your day is mostly coordination and reporting, that's the part AI automates first. If it's mostly judgment calls and exception handling, you're on the side that gains leverage.",
+          pm:         "In flatter organizations, project managers become the connective tissue. Fewer middle managers means more cross-functional coordination falls to you — and that's a skill AI can't replicate.",
+          admin:      "As management layers thin, your relationship with senior leaders gets more direct. The institutional knowledge you carry — who to call, how things really work — becomes harder to replace, not easier."
+        },
+        challenge: {
+          steps: [
+            "Open a notes app and list the five tasks that take up most of your work week.",
+            "Next to each task, write one of three labels: <em>\"coordination\"</em> (scheduling, status tracking, routing information), <em>\"judgment\"</em> (decisions, exceptions, evaluations), or <em>\"relationship\"</em> (coaching, negotiating, persuading).",
+            "Look at your split. If most of your time is in coordination, open your AI tool and ask: <em>\"I spend most of my work time on coordination tasks like [list them]. Which of these could be partially automated, and what would I do with the freed-up time?\"</em>",
+            "Share your coordination-judgment-relationship split in the group — the patterns across roles are eye-opening."
+          ]
+        }
+      },
+      {
+        title: "Nearly half of AI agent projects will be scrapped before they deliver",
+        body: "Gartner predicts that <em>more than 40% of agentic AI projects will be canceled by the end of 2027</em> — due to escalating costs, unclear business value, or inadequate risk controls. Analyst Anushree Verma put it plainly: most agentic AI projects right now are <em>early-stage experiments driven by hype and often misapplied</em>. The projects that survive will be the ones that started with a specific, measurable problem — not a vendor demo.",
+        slants: {
+          strategy:   "Before greenlighting an AI agent initiative, ask one question: what specific decision or workflow does this improve, and how will we measure it? If the answer is vague, the project is already at risk.",
+          operations: "The AI agent projects most likely to survive are the ones solving real operational pain — invoice matching, exception routing, pattern detection — not the ones chasing broad 'automation.'",
+          pm:         "When an AI agent project lands on your plate, treat 'define the success metric' as a non-negotiable first milestone. Projects without a clear baseline are the ones that get canceled.",
+          admin:      "If someone pitches an AI agent to automate part of your workflow, the best question you can ask is: what specific problem does this solve, and how will we know it's working? That question saves months."
+        },
+        challenge: {
+          steps: [
+            "Think of one AI tool or automation your team has tried — or been pitched — in the past six months.",
+            "Open your company-approved AI tool and paste this prompt: <em>\"We're evaluating an AI project to [describe it]. Play the role of a skeptical CFO. Ask me five tough questions about this project's expected ROI, measurable outcomes, risk controls, and what happens if it fails. Be direct.\"</em>",
+            "Answer the five questions honestly. Which one was hardest to answer?",
+            "Share the hardest question — and whether it changed your view of the project — in the group."
+          ]
+        }
+      },
+      {
+        title: "The people buying AI and the people using it don't agree on what's working",
+        body: "Grant Thornton's 2026 AI Impact Survey of 950 business leaders uncovered a striking internal disconnect: <em>39% of CIOs and CTOs say their workforce is fully ready to adopt AI — but only 7% of COOs agree</em>. Overall, just 12% of leaders say their workforce is truly ready. The technology buyers see the capabilities. The operations leaders see the workflows. They're looking at the same organization and reaching opposite conclusions.",
+        slants: {
+          strategy:   "This CIO-COO gap signals that AI strategy is being set without enough input from the people who run the business day to day. Strategy that doesn't account for operational reality doesn't stick.",
+          operations: "You're living in the COO's 7%. The tools are deployed, but the workflows haven't changed. That gap between 'installed' and 'useful' is where your voice matters most.",
+          pm:         "When an AI rollout stalls, the diagnosis usually starts with the technology. This data says start with the stakeholders instead — are the people who bought the tool and the people who use it even aligned on what success looks like?",
+          admin:      "If an AI tool feels clunky or unhelpful in your daily work, that's not a you problem — it's a design problem. The 7% vs. 39% gap says the people who chose the tool didn't fully understand how the work actually gets done."
+        },
+        challenge: {
+          steps: [
+            "Pick one AI tool your organization has deployed — a copilot, chatbot, automation, or analytics feature.",
+            "Rate it yourself from 1 to 5 on two questions: <em>\"How ready is this tool for my work?\"</em> and <em>\"How ready is my work for this tool?\"</em>",
+            "If the two scores are different, open your AI tool and ask: <em>\"I rated an AI tool at work [X]/5 for tool readiness and [Y]/5 for workflow readiness. What's the most common reason for that gap, and what's one practical step to close it?\"</em>",
+            "Share your two scores and the AI's diagnosis in the group — comparing across roles shows where the real friction lives."
+          ]
+        }
+      }
+    ],
+    homework: {
+      title: "This weekend, let AI help you make a decision you've been going back and forth on.",
+      body: "Not a life-altering decision — something mid-stakes. Which trip to take. Whether to sign up for that class. What to do about the neighbor's fence. Use any free AI tool (ChatGPT, Claude, Gemini, or Perplexity) and try this:",
+      prompt: "\"I'm trying to decide between [option A] and [option B]. Before you give me advice, ask me five questions about what matters most to me in this decision. Then score each option against my own criteria and tell me which one wins — and by how much.\"<br><br>The technique here — <em>making the AI surface your criteria before it advises</em> — prevents generic advice. It works for work decisions too, but start with something personal where the stakes are low and the learning is real."
+    }
+  },
+
 "2026-07-10": {
     intro: "Friday. Three stories to carry into the weekend — about the hidden biases in your AI's advice, why most AI projects fail for reasons that have nothing to do with technology, and the quiet skill that separates people who use AI from people who get real value from it.",
     trends: [
