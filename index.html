@@ -637,6 +637,33 @@
     font-weight: 500;
   }
 
+  .trend-source {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 18px;
+    padding: 6px 14px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: var(--muted);
+    background: var(--light);
+    border: 1px solid var(--rule-strong);
+    border-radius: 6px;
+    text-decoration: none;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .trend-source:hover {
+    color: var(--blue);
+    border-color: var(--blue);
+    border-bottom: 1px solid var(--blue);
+  }
+  .trend-source::after {
+    content: '↗';
+    font-size: 11px;
+  }
+
   /* Homework (collapsible) */
   .homework {
     margin-top: 64px;
@@ -927,6 +954,7 @@
     trends: [
       {
         title: "The labor market is splitting into two tracks — and only one is accelerating",
+        source_url: "https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-jobs-barometer.html",
         body: "PwC's 2026 Global AI Jobs Barometer, released last week, analyzed over one billion job ads across 27 countries. The finding: AI is creating a <em>two-track labor market</em>. 'Professionalised' roles — where AI handles routine work so humans focus on judgment and expertise — are growing at twice the rate of 'democratised' roles, where AI makes the job easier for non-experts to perform. The professionalised track also shows <em>42% faster wage growth</em>. The dividing line isn't technical skill. It's whether your role is moving toward deeper judgment or toward broader accessibility.",
         slants: {
           strategy:   "Strategy roles sit squarely on the professionalised track — AI handles the data pull, you handle the interpretation. That split is now showing up in pay.",
@@ -945,6 +973,7 @@
       },
       {
         title: "AI adoption's hidden cost: the middle manager squeeze",
+        source_url: "https://hbr.org/2026/06/ai-adoption-is-overloading-your-middle-managers",
         body: "Harvard Business Review reported in June that AI adoption is quietly overloading middle managers. Executives use AI to expand scope and accelerate strategy. Junior staff use it for drafting and research. But managers in between are absorbing new duties — <em>validating AI outputs, coaching teams on AI skills, spotting errors</em> — on top of unchanged delivery targets and without formal support. A Harvard Business School study found that <em>60% of a typical manager's week was already administrative coordination</em>. AI promised to shrink that. Instead, it added a new layer.",
         slants: {
           strategy:   "If your strategy depends on AI adoption, the bottleneck isn't the technology or the junior staff — it's the middle layer being asked to make it all work without a revised mandate.",
@@ -963,6 +992,7 @@
       },
       {
         title: "Letting AI do the thinking is quietly eroding your confidence in your own",
+        source_url: "https://www.apa.org/news/press/releases/2026/04/overreliance-ai-undermine-confidence",
         body: "Research published by the American Psychological Association in April found that relying on AI for work tasks <em>reduces confidence in independent reasoning and perceived ownership of ideas</em>. In a study of 1,923 workers completing simulated planning, analysis, and strategy tasks, 58% agreed that AI \"did most of the thinking.\" Those who passively accepted AI suggestions reported the steepest drops in self-efficacy. The fix wasn't less AI — it was <em>actively modifying or challenging AI output</em>, which preserved both confidence and sense of authorship.",
         slants: {
           strategy:   "If you're accepting AI's strategic framing without pushing back, you're not saving time — you're outsourcing the judgment that makes your role valuable.",
@@ -3450,12 +3480,13 @@
           <span class="chevron" aria-hidden="true">❯</span>
         </summary>
         <div class="trend-body-wrap">
-          <p class="trend-body">${t.body}${t.source_url ? ` <a class="Role slants" href="${t.source_url}" target="_blank" rel="noopener">Source ↗</a>` : ''}</p>
+          <p class="trend-body">${t.body}</p>
           <ul class="slants">${renderSlants(t.slants)}</ul>
           <div class="challenge">
             <div class="challenge-label">Try this with the community</div>
             ${renderChallenge(t.challenge)}
           </div>
+          ${t.source_url ? `<a class="trend-source" href="${t.source_url}" target="_blank" rel="noopener">Source</a>` : ''}
         </div>
       </details>
     `;

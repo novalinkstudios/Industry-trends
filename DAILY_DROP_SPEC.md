@@ -55,6 +55,7 @@ Each daily entry is a JavaScript object keyed by ISO date (`"YYYY-MM-DD"`) insid
   trends: [
     {
       title: "Trend headline — short and editorial",
+      source_url: "https://example.com/the-source-article",
       body: "1–3 sentences. Use <em>...</em> to highlight a key phrase or statistic.",
       slants: {
         strategy:   "One line — how this lands for a strategy/planning person.",
@@ -86,6 +87,7 @@ Each daily entry is a JavaScript object keyed by ISO date (`"YYYY-MM-DD"`) insid
 - Exactly **3 trends** per day.
 - Every trend must have all **4 role slants** (`strategy`, `operations`, `pm`, `admin`).
 - Every trend must have **one challenge** in the `{ steps: [...] }` shape.
+- Every trend must have a **`source_url`** — the URL of the primary source cited in the trend body. This renders as a "Source" button at the bottom of the trend card, opening in a new window.
 - Every drop must have **one homework block**.
 
 </details>
@@ -212,6 +214,7 @@ const DROPS = {
     trends: [
       {
         title: "Example trend title",
+        source_url: "https://example.com/source-article",
         body: "Example body with <em>a highlighted phrase</em> for emphasis.",
         slants: {
           strategy:   "Strategy slant line.",
@@ -262,6 +265,7 @@ Before committing, verify:
 - [ ] Exactly 3 trends.
 - [ ] Every trend has all 4 role slants and 1 challenge.
 - [ ] Every challenge has 3–6 concrete steps and ends with a sharing action.
+- [ ] Every trend has a `source_url` pointing to the primary source.
 - [ ] Every stat or claim has a real source you could link to (URL captured for the PR body).
 - [ ] No banned hype words (see §4).
 - [ ] Challenges are security-safe (no proprietary data instructions).
@@ -363,6 +367,7 @@ This is the seed entry already in the file. Use it as a reference for tone, leng
   trends: [
     {
       title: "The strategic memo is being rebuilt — fast",
+      source_url: "https://www.microsoft.com/en-us/worklab/work-trend-index/2026",
       body: "Microsoft's 2026 Work Trend Index just landed. <em>49% of Copilot conversations now support cognitive work</em> — analysis, problem-solving, strategic thinking — and 58% of AI users say they're producing work they couldn't have done a year ago. The work isn't disappearing. It's being promoted.",
       slants: {
         strategy:   "You're shifting from <em>writer</em> to <em>editor + pressure-tester</em>.",
@@ -526,6 +531,168 @@ The host `index.html` uses Cisco’s brand system. The routine does NOT need to 
 - Calendar trigger label: shows the currently selected date (e.g., “Jun 14, 2026”)
 - Empty-state prev/next at top: “No earlier drops” / “Latest drop” (warmer than dashes)
 - Today button: short, action-only — never “Go to Today”
+
+</details>
+
+-----
+
+<details>
+<summary>❯&nbsp;&nbsp;<strong>14. Homework Category Rotation (100 categories)</strong></summary>
+
+<br>
+
+### Rule
+
+**Do not repeat the same category within 250 days.** Track which categories have been used and when. Each category below includes 2–3 example prompt angles — vary the specific prompt each time the category comes back into rotation. When all 100 have been used, restart from the least recently used.
+
+### Categories
+
+**Personal Life & Logistics (1–15)**
+
+| # | Category | Example prompt angles |
+|---|----------|----------------------|
+| 1 | Trip/travel planning | Weekend getaway, day trip, bucket-list destination research |
+| 2 | Meal planning from what's on hand | Fridge inventory dinner, leftover transformation, pantry-only meals |
+| 3 | Home maintenance troubleshooting | Diagnose an appliance issue, fix a running toilet, patch a wall |
+| 4 | Personal budgeting | Build a monthly budget, track spending categories, find savings |
+| 5 | Moving/relocation planning | Neighborhood comparison, moving timeline, packing strategy |
+| 6 | Event planning | Birthday party, reunion, holiday gathering, potluck coordination |
+| 7 | Home organization | Closet declutter plan, garage organization, digital + physical filing |
+| 8 | Car decisions | Maintenance schedule, purchase comparison, insurance shopping |
+| 9 | Subscription/recurring cost audit | Identify what to cancel, compare alternatives, negotiate renewals |
+| 10 | Emergency preparedness | Build a go-bag list, family communication plan, insurance review |
+| 11 | Apartment/house hunting | Compare two listings, generate questions for a landlord, red flag checklist |
+| 12 | Wardrobe/closet audit | Capsule wardrobe plan, seasonal rotation, outfit planning |
+| 13 | Commute optimization | Route comparison, podcast/audiobook queue, productive transit time |
+| 14 | Seasonal home prep | Winterizing, spring cleaning checklist, storm prep |
+| 15 | Daily routine redesign | Morning routine, evening wind-down, weekend structure |
+
+**Health & Wellness (16–30)**
+
+| # | Category | Example prompt angles |
+|---|----------|----------------------|
+| 16 | Workout plan design | Beginner plan, 3-day/week schedule, bodyweight-only routine |
+| 17 | Understanding lab results | Blood work, cholesterol panel, vitamin levels |
+| 18 | Sleep improvement | Bedtime routine, sleep hygiene audit, wind-down sequence |
+| 19 | Meal prep for health goals | High-protein week, low-sodium menu, anti-inflammatory meals |
+| 20 | Stress management | Identify triggers, build a toolkit, 5-minute reset techniques |
+| 21 | Walking/running plan | Couch-to-5K, step goal strategy, route planning |
+| 22 | Ergonomic workspace setup | Desk audit, posture check, eye strain reduction |
+| 23 | Hydration/nutrition tracking | Daily targets, meal timing, snack swaps |
+| 24 | Meditation/mindfulness | Beginner practice, breathing techniques, gratitude journaling |
+| 25 | Understanding a health condition | Research a diagnosis, generate doctor questions, treatment comparison |
+| 26 | Stretching/mobility routine | Morning stretch, desk break sequence, recovery day plan |
+| 27 | Dental/vision/preventive care | Appointment prep, questions for the provider, insurance maximization |
+| 28 | Mental health check-in | Weekly reflection prompts, mood patterns, when to seek support |
+| 29 | First aid refresher | Kit inventory, skill review, household safety audit |
+| 30 | Healthy habit stacking | Pair new habits with existing ones, 30-day challenge design |
+
+**Relationships & Communication (31–45)**
+
+| # | Category | Example prompt angles |
+|---|----------|----------------------|
+| 31 | Drafting a tough personal message | Saying no, delivering bad news, following up on something awkward |
+| 32 | Rehearsing a difficult conversation | Role-play both sides, anticipate objections, find the opening line |
+| 33 | Writing a heartfelt letter or card | Thank-you note, congratulations, sympathy, encouragement |
+| 34 | Planning a meaningful date or outing | Anniversary, reconnection, budget-friendly surprise |
+| 35 | Reconnecting with an old friend | Icebreaker message, shared memory prompt, no-pressure invitation |
+| 36 | Setting a personal boundary | Script the language, practice delivery, plan for pushback |
+| 37 | Writing a toast or speech | Wedding, birthday, retirement, team celebration |
+| 38 | Resolving a neighbor/roommate issue | Noise, shared space, cost-splitting, polite escalation |
+| 39 | Expressing gratitude | Specific thank-you, public acknowledgment draft, gratitude inventory |
+| 40 | Navigating family dynamics | Holiday logistics, caregiving decisions, diffusing old conflicts |
+| 41 | Apologizing well | Structure an honest apology, avoid common mistakes, follow up |
+| 42 | Asking for help | Framing the ask, choosing who, making it easy to say yes |
+| 43 | Giving personal feedback | To a friend, a partner, a family member — honestly and kindly |
+| 44 | Supporting someone going through a hard time | What to say, what not to say, practical offers |
+| 45 | Teaching something you know to someone else | Explain your expertise, break it into steps, check understanding |
+
+**Learning & Curiosity (46–60)**
+
+| # | Category | Example prompt angles |
+|---|----------|----------------------|
+| 46 | Understanding a complex topic from scratch | Economics, climate, law, medicine — pick one you've always wondered about |
+| 47 | Language learning practice | Conversational phrases, travel basics, daily 5-minute habit |
+| 48 | Book/reading list curation | By mood, by goal, by genre — with rationale for each pick |
+| 49 | Exploring a historical period or event | Deep dive, "what really happened," connecting it to today |
+| 50 | Understanding a scientific concept | Quantum basics, how vaccines work, why the sky is blue — ELI5 |
+| 51 | Learning about a different culture | Food, customs, holidays, etiquette for travel or conversation |
+| 52 | Photography basics | Composition rules, phone camera tips, editing a specific shot |
+| 53 | Understanding economic/political concepts | Inflation, tariffs, electoral systems — neutral explainer |
+| 54 | Exploring philosophy or ethics | Trolley problem variants, stoicism basics, applied ethics in daily life |
+| 55 | Music appreciation | Genre history, ear training, building a playlist by era |
+| 56 | Learning to read a chart or data viz | Interpreting a graph, spotting misleading data, basic statistics |
+| 57 | Understanding how something is made | A product, a building, a dish — the process from raw to finished |
+| 58 | Current events deep dive | Pick one headline, get the full context and competing perspectives |
+| 59 | Exploring a career or skill you're curious about | What does a [job] actually do? What would month one look like? |
+| 60 | Fact-checking something you've always believed | Urban legends, common misconceptions, "is this actually true?" |
+
+**Creative & Fun (61–75)**
+
+| # | Category | Example prompt angles |
+|---|----------|----------------------|
+| 61 | Writing a short story or poem | Flash fiction, limerick, personal narrative, fan fiction premise |
+| 62 | Creating a trivia game for friends/family | Custom categories, difficulty tiers, themed rounds |
+| 63 | Designing a themed movie/TV marathon | By mood, by decade, by actor, hidden gems in a genre |
+| 64 | Building a custom playlist | Workout, dinner party, road trip, focus — with AI curation logic |
+| 65 | Planning a themed dinner party | Country cuisine night, decade theme, mystery dinner |
+| 66 | Writing a family newsletter or update | Seasonal recap, milestone announcements, humorous spin |
+| 67 | Creating a personal challenge | 30-day drawing, photo-a-day, gratitude jar, learn one new thing daily |
+| 68 | Brainstorming a side project or hobby | What fits your schedule, budget, and interests? |
+| 69 | Designing a scavenger hunt | For kids, for friends, for a date, for a neighborhood walk |
+| 70 | Building a "bucket list" with structure | Categorized, prioritized, with first steps for the top 3 |
+| 71 | Writing humor | Roast jokes for a friend, comedic rewrite of a boring story, puns |
+| 72 | Creating a custom crossword or puzzle | Themed clues, personal inside jokes, printable format |
+| 73 | Reimagining your space | What would this room look like in a different style? Mood board prompts |
+| 74 | Planning a game night | Game selection by group size, rule summaries, snack pairings |
+| 75 | Collaborative storytelling | Start a story, let AI continue, then take it somewhere unexpected |
+
+**Food & Cooking (76–85)**
+
+| # | Category | Example prompt angles |
+|---|----------|----------------------|
+| 76 | Cuisine exploration | Pick a country, build a 3-course menu, learn one technique |
+| 77 | Baking something new | Bread, pastry, cookies — with technique focus and substitution tips |
+| 78 | Cocktail/mocktail creation | By flavor profile, by occasion, by what's in the liquor cabinet |
+| 79 | Meal prep for the week | Batch cooking strategy, variety within a budget, container plan |
+| 80 | Understanding food labels | Decode a nutrition panel, compare two products, spot marketing tricks |
+| 81 | Coffee or tea appreciation | Brewing methods, flavor profiles, tasting notes, gear on a budget |
+| 82 | Recreating a restaurant dish at home | Reverse-engineer a favorite, find the technique, simplify |
+| 83 | Cooking for dietary restrictions | Allergen-free, vegan swap, low-FODMAP — without sacrificing flavor |
+| 84 | Fermentation/preservation project | Pickles, sourdough starter, jam — beginner walkthrough |
+| 85 | Planning a potluck contribution | Crowd-pleaser that travels well, dietary-inclusive, make-ahead |
+
+**Home & Garden (86–92)**
+
+| # | Category | Example prompt angles |
+|---|----------|----------------------|
+| 86 | Container garden planning | Herbs, vegetables, flowers — by sunlight, space, and season |
+| 87 | DIY home repair walkthrough | Patch drywall, fix a squeaky door, replace a faucet |
+| 88 | Room redesign on a budget | Rearrange what you have, one new piece, paint color strategy |
+| 89 | Energy efficiency audit | Lower the electric bill, seal drafts, upgrade lighting |
+| 90 | Pet care optimization | Routine, enrichment, vet prep questions, behavior troubleshooting |
+| 91 | Lawn/yard seasonal plan | Month-by-month care, low-maintenance alternatives, curb appeal |
+| 92 | Painting a room | Color selection psychology, prep steps, common mistakes to avoid |
+
+**Personal Finance (93–100)**
+
+| # | Category | Example prompt angles |
+|---|----------|----------------------|
+| 93 | Savings plan for a specific goal | Vacation fund, down payment, big purchase — reverse-engineer the timeline |
+| 94 | Understanding investment basics | Index funds, compound interest, risk tolerance — plain language |
+| 95 | Comparing two major purchases | Appliances, electronics, cars — build a weighted decision matrix |
+| 96 | Debt payoff strategy | Snowball vs. avalanche, visualization, milestone rewards |
+| 97 | Negotiating a recurring bill | Cable, insurance, rent — script the call, anticipate counter-offers |
+| 98 | Tax preparation checklist | Deductions to look for, documents to gather, timeline |
+| 99 | Understanding retirement basics | 401k, IRA, employer match — what to do first |
+| 100 | Decoding a confusing bill or statement | Medical bill, utility bill, insurance EOB — line by line |
+
+### Usage notes
+
+- **Variety across the week**: Don't cluster similar categories in the same week (e.g., three food categories in a row). Aim for thematic diversity across any 5-day span.
+- **Seasonal awareness**: Prefer seasonally relevant categories when applicable (e.g., "Seasonal home prep" in October, "Trip planning" before summer/holidays).
+- **Progressive technique teaching**: Each homework prompt should teach a prompting technique by doing — e.g., "ask me questions first," "give me options ranked by [criterion]," "argue against your own recommendation." Don't repeat the same technique within 14 days.
+- **Free tools only**: Always recommend ChatGPT, Claude, Gemini, or Perplexity (web versions).
 
 </details>
 
