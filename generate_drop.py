@@ -153,6 +153,7 @@ Return ONLY valid JSON, no markdown, no code fences:
     {{
       "title": "Sentence-case editorial headline",
       "body": "1-3 sentences. Highlight one key stat or phrase in <em>...</em>. Cite the source inline.",
+      "source_url": "Direct URL to the primary source article (real, working URL from your web search — e.g. https://www.mckinsey.com/... or https://hbr.org/...). Leave blank string if no direct URL available.",
       "slants": {{
         "strategy": "One sentence — genuinely specific to strategy/planning roles.",
         "operations": "One sentence — genuinely specific to ops roles.",
@@ -195,8 +196,12 @@ def to_js(d, e):
     lines = [f'"{d}": {{', f'    intro: {json.dumps(e["intro"])},', '    trends: [']
     for i, t in enumerate(e.get("trends", [])):
         c = "," if i < len(e["trends"]) - 1 else ""
+        src = t.get("source_url", "")
         lines += ['      {', f'        title: {json.dumps(t["title"])},',
                   f'        body: {json.dumps(t["body"])},']
+        if src:
+            lines.append(f'        source_url: {json.dumps(src)},')
+
         if "slants" in t:
             lines.append('        slants: {')
             sk = list(t["slants"].items())
