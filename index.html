@@ -949,6 +949,74 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+"2026-07-17": {
+    intro: "Friday. Three to close the week — about why your AI training didn't stick, why the 'AI agent' promises haven't landed yet, and how governance is quietly deciding which AI projects survive.",
+    trends: [
+      {
+        title: "82% of companies trained their people on AI — and 59% still have a skills gap",
+        source_url: "https://www.datacamp.com/blog/the-ai-skills-gap-in-2026-why-most-ai-training-isn-t-translating-to-workforce-capability",
+        body: "DataCamp and YouGov surveyed over 500 enterprise leaders across the US and UK. The finding: <em>82% of organizations now offer some form of AI training, but 59% still report a meaningful skills gap</em>. The problem isn't that companies skipped training — it's that the training doesn't connect to real work. Only 35% have a mature, organization-wide program. The rest are running fragmented, optional sessions that teach tool features instead of workflows. Organizations with mature programs report <em>double the ROI on AI investments</em> — 42% vs. 21%.",
+        slants: {
+          strategy:   "If your team sat through AI training and still isn't using AI, the training was probably built around the tool — not around the decisions your team actually makes.",
+          operations: "Ops teams need AI training mapped to specific recurring tasks — not generic prompt tutorials. If nobody showed you how AI fits into your Monday morning, the training missed.",
+          pm:         "You're often the one translating tools into workflows. If your team was trained on AI but isn't using it, the gap isn't knowledge — it's a missing bridge between the tool and the project.",
+          admin:      "If AI training felt abstract or irrelevant to your actual day, you're in the majority. The problem isn't you — it's training that wasn't designed for your role."
+        },
+        challenge: {
+          steps: [
+            "Think about the last AI training you received — a workshop, a video series, a company-wide session. Write down one concrete thing it taught you to do.",
+            "Now think about your actual work this week. Open your company-approved AI tool and try: <em>\"I work in [your role] and my biggest recurring task is [describe it]. Walk me through using AI for this specific task — step by step, in language that matches how I actually describe my work.\"</em>",
+            "Compare the AI's walkthrough to what your training covered. Is there a gap between what you were taught and what you actually need?",
+            "Share the gap in the group — what's the one thing AI training should have covered for your role but didn't?"
+          ]
+        }
+      },
+      {
+        title: "88% of AI agent pilots never make it to production — and the blockers aren't technical",
+        source_url: "https://www.forrester.com/blogs/the-state-of-agentic-ai-in-2026-companies-are-chasing-few-are-catching/",
+        body: "Forrester and Anaconda's 2026 research found that <em>88% of enterprise AI agent pilots never graduate to production</em>. The top blockers aren't computing power or model quality — they're organizational: evaluation gaps (64%), governance friction (57%), and unclear success criteria (41%). Agents deployed without automated evaluation had a <em>47% rollback rate</em> over the past year. Those with proper evaluation: 9%. The technology works. The scoping and ownership don't.",
+        slants: {
+          strategy:   "If your organization launched an AI agent pilot and it stalled, the failure probably wasn't the vendor's technology — it was the absence of clear goals and someone accountable for measuring them.",
+          operations: "Ops knows what 'production-ready' means — someone owns it when it breaks. Most agent pilots die because nobody assigned that ownership before launch.",
+          pm:         "A pilot without success criteria is just an experiment that never ends. If you're managing an AI agent initiative, define what 'done' looks like before the demo.",
+          admin:      "When an AI agent pilot quietly disappears from your workflow, it usually wasn't because the tech failed — it's because nobody decided what success would look like."
+        },
+        challenge: {
+          steps: [
+            "Think about an AI tool or pilot your organization has tried in the past year. Did it stick — or quietly fade away?",
+            "Open your company-approved AI tool and try this prompt: <em>\"My team tried using AI for [describe the pilot or tool]. It [worked / didn't stick]. Help me write 3 clear success criteria we should have defined before we started — measurable outcomes that would tell us whether this was worth continuing.\"</em>",
+            "Read the criteria. Would your pilot have been evaluated differently if these had been in place from day one?",
+            "Share one success criterion you wish you'd had in the group — it might save someone else's next pilot."
+          ]
+        }
+      },
+      {
+        title: "Companies are governing all their AI the same way — and it's backfiring in both directions",
+        source_url: "https://www.gartner.com/en/newsroom/press-releases/2026-05-26-gartner-says-applying-uniform-governance-across-ai-agents-will-lead-to-enterprise-ai-agent-failure",
+        body: "Gartner's May 2026 research warns that applying uniform governance across all AI agents leads to enterprise failure. Their prediction: <em>by 2027, 40% of enterprises will demote or decommission autonomous AI agents</em> due to governance gaps discovered only after incidents occur. The problem is binary thinking — organizations either lock everything down or trust everything equally. Over-restricting simple tools slows delivery and pushes people toward unauthorized alternatives. Under-restricting complex agents creates real risk. Gartner's recommendation: a tiered approach where governance matches each tool's actual autonomy level.",
+        slants: {
+          strategy:   "If every AI tool at your company goes through the same approval process — from a summarization assistant to an autonomous workflow agent — the bottleneck is the governance model, not the technology.",
+          operations: "Over-governed AI tools drive shadow usage. If your team found an unsanctioned workaround because the approved tool was too locked down, that's a governance design problem — not a compliance failure.",
+          pm:         "Different AI tools in your project need different oversight levels. A tool that drafts meeting notes needs less governance than one that sends automated emails on behalf of the team.",
+          admin:      "If you've seen colleagues quietly using personal AI tools because the company-approved one is too restricted, you're watching shadow AI happen in real time. The fix isn't stricter rules — it's smarter ones."
+        },
+        challenge: {
+          steps: [
+            "List the AI tools you interact with at work — company-approved or otherwise. Include anything from a chatbot to a summarizer to a scheduling assistant.",
+            "For each one, ask yourself: does it just read and summarize, or does it take actions — sending emails, updating records, making decisions?",
+            "Open your company-approved AI tool and try: <em>\"I use these AI tools at work: [list them with a one-line description of each]. Classify each one by autonomy level: 'observe only' (reads data), 'advises' (makes recommendations I review), 'acts with my approval' (takes action when I confirm), or 'acts alone' (runs independently). Then suggest what level of oversight each one deserves.\"</em>",
+            "Share your classification in the group — you might be surprised how much autonomy some of your tools already have."
+          ]
+        }
+      }
+    ],
+    homework: {
+      title: "This weekend, let AI help you plan a game night that actually fits your group.",
+      body: "The best game nights aren't random — they're matched to who's actually coming. Try this in any free AI tool (ChatGPT, Claude, Gemini, or Perplexity):",
+      prompt: "\"I'm planning a game night for [number] people. Here's who's coming: [describe them — ages, energy levels, competitive vs. chill, any preferences you know about]. Recommend 3 games that would work for this specific group, ranked by how likely everyone would actually enjoy them. For each, tell me what I need and how long it takes.\"<br><br>The technique — <em>describing the people involved so AI can personalize its recommendations</em> — works for any group decision: team dinners, family trips, gift ideas. The more specific you are about who, the better the what."
+    }
+  },
+
 "2026-07-16": {
     intro: "Thursday. Three data points this week that share a thread: the organizations pulling ahead on AI aren't doing more — they're thinking differently about what AI is for.",
     trends: [
