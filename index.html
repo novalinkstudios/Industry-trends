@@ -968,6 +968,77 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+"2026-07-18": {
+      intro: "Saturday. Three data stories this week — from a Fed research paper, a 443-million-hour workforce study, and a cultural pattern spreading quietly through teams — all pointing at gaps between what AI promises and what it's actually doing.",
+      trends: [
+        {
+          title: "Companies feel more productive than they measurably are",
+          source_url: "https://www.atlantafed.org/research-and-data/publications/working-papers/2026/03/25/04-artificial-intelligence-productivity-and-the-workforce-evidence-from-corporate-executives",
+          body: "A Federal Reserve Bank of Atlanta working paper surveyed nearly 750 corporate executives on AI's productivity impact. The finding: <em>perceived productivity gains consistently outstrip measured productivity gains</em>. Companies report feeling faster, but the revenue numbers haven't caught up. The researchers call it a delay in revenue realization — feeling productive and being measurably productive are running on different timelines. One bright spot: the real gains that do show up aren't coming from cost-cutting. They're coming through <em>innovation and demand channels</em> — new revenue, not cheaper labor.",
+          slants: {
+            strategy:   "If your AI business case relies on productivity metrics that haven't moved yet, reframe the story around new revenue enabled — that's where the measured signal actually lives.",
+            operations: "The gap between 'my team feels faster' and 'our output metrics improved' isn't a failure — it's a measurement lag. Track both, and be patient with the numbers.",
+            pm:         "When leadership asks 'is AI working?' and your team says yes but the KPIs say not yet — you're living the paradox. Frame it as an investment with a longer payback window.",
+            admin:      "If AI makes your day feel smoother but your output numbers haven't changed, that's normal. The measured gains lag the felt ones — it doesn't mean you're doing it wrong."
+          },
+          challenge: {
+            steps: [
+              "Pick one workflow where AI has made your work feel faster or easier over the past month.",
+              "Write down your honest answer: has the measurable output (documents shipped, decisions made, turnaround time) actually improved — or does it just feel better?",
+              "Open your company-approved AI tool and try: <em>\"I use AI to help with [your workflow]. Help me identify one metric I could track for 2 weeks to see whether my output has actually improved — not just my experience of doing the work.\"</em>",
+              "Pick one metric from the response and commit to tracking it for the next two weeks.",
+              "Share in the group: what's the gap between how productive AI makes you feel vs. what you can actually measure?"
+            ]
+          }
+        },
+        {
+          title: "AI is making every type of work grow — not shrink",
+          source_url: "https://www.activtrak.com/blog/443-million-hours-data-ai-adoption-impact/",
+          body: "ActivTrak's Productivity Lab analyzed <em>443 million hours of behavioral work data</em> across 163,638 employees and 1,111 companies. The finding defies the 'AI saves you time' narrative: among workers tracked 180 days before and after AI adoption, <em>every measured work category increased</em>. Email activity rose 104%. Chat and messaging jumped 145%. Weekend work climbed over 40%. The researchers found a narrow sweet spot — workers spending 7–10% of their work hours in AI tools are most productive — but only 3% of users currently hit that range.",
+          slants: {
+            strategy:   "The 'AI saves time' story needs an asterisk. If your team adopted AI and workloads grew, the tool is amplifying output expectations — not reducing effort. Factor that into capacity planning.",
+            operations: "More messages, more email, more collaboration hours after AI adoption means the system is generating more work, not less. Look for where AI is creating new tasks rather than absorbing old ones.",
+            pm:         "If your team's velocity looks higher but their hours grew too, the productivity gain is partly illusion. Watch for scope creep disguised as efficiency.",
+            admin:      "If you feel busier since AI arrived — more messages, more drafts, more requests — it's not just you. The data says everyone's volume went up. Protect your boundaries deliberately."
+          },
+          challenge: {
+            steps: [
+              "Estimate how much time you spent last week on email, messaging, and meetings. Does it feel like more or less than six months ago?",
+              "Open your company-approved AI tool and ask: <em>\"I suspect AI tools have increased my communication workload rather than decreased it. Help me identify the top 3 places where AI might be generating new work for me — more drafts to review, more messages to respond to, faster turnarounds expected.\"</em>",
+              "Read the output and mark which ones ring true for your actual week.",
+              "Pick one and set a boundary: a message you could stop sending, a turnaround expectation you could reset, or a channel you could check less often.",
+              "Share in the group: where is AI adding to your workload rather than lightening it?"
+            ]
+          }
+        },
+        {
+          title: "AI-polished work is eroding team trust — quietly",
+          source_url: "https://hbr.org/2026/01/why-people-create-ai-workslop-and-how-to-stop-it",
+          body: "Researchers at BetterUp Labs and Stanford coined a term for AI-generated work that looks polished but lacks substance: <em>workslop</em>. In their survey of 1,150 workers, 41% had received it in the past month. The fallout: <em>42% said they trusted the sender less afterward</em>, and each incident took an average of one hour and 56 minutes to untangle. A June 2026 HBR follow-up found the damage compounds — when AI errors pass unchecked between teams, the organization's collective knowledge base starts to decay. Quality control on AI output isn't optional polish. It's trust infrastructure.",
+          slants: {
+            strategy:   "If your team is shipping AI-drafted strategy docs without heavy editing, you're trading short-term speed for long-term credibility. One sloppy deliverable can reset how leadership views your judgment.",
+            operations: "Ops teams downstream catch the errors that AI-polished work hides. If you're spending more time verifying other people's output, that's a process cost the organization isn't accounting for.",
+            pm:         "When a project artifact looks great but the thinking underneath is shallow, it surfaces later as rework. Build a 'did a human pressure-test this?' checkpoint into deliverable reviews.",
+            admin:      "You're often the last eyes before something goes out. If an AI-drafted document feels off — too smooth, weirdly generic — trust that instinct. Your quality filter is more valuable than ever."
+          },
+          challenge: {
+            steps: [
+              "Think about the last piece of work you received from someone else that felt suspiciously polished — perfectly formatted, confidently written, but somehow hollow.",
+              "Open your company-approved AI tool and ask: <em>\"What are 3 signs that a document or email was AI-generated without much human editing? Give me a quick checklist I can use to spot low-effort AI output.\"</em>",
+              "Read the checklist. Think about whether you've seen those signs in your inbox or shared drives recently.",
+              "Now flip it: look at your own recent AI-assisted work. Would it pass your new checklist — or did something go out that could have used another pass?",
+              "Share in the group: what's your best tell for spotting workslop — and what do you do when you catch it?"
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "This weekend, let AI help you find a side project that actually fits your life.",
+        body: "Everyone has something they'd love to try — a hobby, a creative project, a skill — but 'I don't have time' or 'I wouldn't know where to start' keeps it parked. Try this in any free tool (ChatGPT, Claude, Gemini, or Perplexity):",
+        prompt: "\"I want to start a side project or pick up a new hobby but I'm not sure what. Before suggesting anything, ask me about my schedule, my energy levels after work, and what I enjoyed doing as a kid. Then give me three options: the safe one, the bold one, and the weird one — and explain why each fits my life right now.\"<br><br>The technique — <em>asking for options at different risk levels</em> — forces AI to give you genuinely different ideas instead of three variations on the same safe answer. Try it on any decision where you feel stuck between 'practical' and 'interesting.'"
+      }
+    },
+
 "2026-07-17": {
       intro: "Today's stories all point to the same shift: AI is maturing from a technology question into a management one \u2014 how you pay for it, how you feed it, and which human skills it makes more valuable, not less.",
       trends: [
