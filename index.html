@@ -968,6 +968,73 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+"2026-07-19": {
+      intro: "Sunday reading — three patterns hiding in this month's research, and one low-stakes experiment to try tonight.",
+      trends: [
+        {
+          title: "The coming wave of canceled AI projects is a management problem, not a tech one",
+          source_url: "https://www.forbes.com/sites/robertszczerba/2026/07/07/why-40-of-agentic-ai-projects-may-be-canceled-by-2027/",
+          body: "Gartner predicts <em>over 40% of agentic AI projects will be canceled by the end of 2027</em>. A Forbes analysis this month unpacks why: the failures aren't about model quality. They're about companies launching agents without a success metric, without access to the right data, and without a plan for what happens when things go sideways. The coming cancellation wave is a management problem wearing a technology costume.",
+          slants: {
+            strategy: "If you're building the business case for an AI initiative, define the kill criteria up front — not just the launch criteria.",
+            operations: "Before an agent touches a live workflow, map who's accountable when it makes a bad call at 2 a.m.",
+            pm: "Add a governance checkpoint to your AI project timeline — the teams that skip it are the ones Gartner is talking about.",
+            admin: "When a new AI tool lands on your team, ask what happens if it gives a wrong answer. If nobody knows, that's a red flag worth raising."
+          },
+          challenge: {
+            steps: [
+              "Think of one AI tool or automation your team has recently adopted (or is considering).",
+              "Open your company-approved AI tool and prompt: <em>\"Help me write three questions I should ask before we scale this AI tool: one about how we measure success, one about who's accountable when it's wrong, and one about what data it needs access to.\"</em>",
+              "Read the questions and pick the one your team hasn't answered yet.",
+              "Raise that question at your next relevant meeting — or share it in the group and see if others have the same gap."
+            ]
+          }
+        },
+        {
+          title: "Nearly half of companies are stuck in an AI training loop they don't recognize",
+          source_url: "https://www.comptia.org/en-us/resources/research/workforce-and-learning-trends-2026/",
+          body: "CompTIA's 2026 Workforce and Learning Trends report names a pattern most organizations don't see in themselves: <em>46% of companies are delaying AI training because adoption is early — while adoption stays early precisely because nobody's been trained</em>. Meanwhile, employer job listings requiring AI skills have more than doubled year-over-year. The market is moving; these companies are standing still and calling it caution.",
+          slants: {
+            strategy: "If your AI roadmap waits for 'maturity' before investing in people, you're building the delay into the plan.",
+            operations: "The ops team that can't use AI tools fluently will always look like it's not ready for AI projects — even when the real gap is training, not technology.",
+            pm: "When a project stalls because the team isn't ready for AI, ask whether anyone budgeted for making them ready.",
+            admin: "Don't wait for a formal training program to appear. The people learning now — on their own — are the ones who'll be asked to teach everyone else later."
+          },
+          challenge: {
+            steps: [
+              "Ask yourself honestly: has your organization provided structured AI training for your role, or has it mostly been figure-it-out-yourself?",
+              "Open your company-approved AI tool and prompt: <em>\"I work in [your role]. Give me a 3-week self-directed AI learning plan — one small skill per week — that I could do in 15 minutes a day without needing anyone's permission.\"</em>",
+              "Read the plan. Pick just the first week's skill and try it tomorrow.",
+              "Share in the group what came up — and whether your company is in that 46% that's waiting."
+            ]
+          }
+        },
+        {
+          title: "The biggest slice of AI's value comes from rethinking people, not picking better models",
+          source_url: "https://www.bcg.com/publications/2026/ai-transformation-is-a-workforce-transformation",
+          body: "BCG's 2026 research on AI transformation puts a number on something most organizations get backwards: <em>roughly 70% of AI's value comes from rethinking the people component</em> — roles, workflows, skills — while only about 10% comes from the algorithms themselves. Yet 72% of workers say the skills expected of them have already shifted, and only 36% feel they've been adequately upskilled.",
+          slants: {
+            strategy: "Your AI strategy is a workforce strategy. If the people section is an afterthought, you're optimizing the 10% and ignoring the 70%.",
+            operations: "The process redesign that follows an AI deployment matters more than the deployment itself — that's where most of the value lives.",
+            pm: "Staff your AI projects with change management capacity, not just technical capacity. The hard part isn't configuration.",
+            admin: "You're living the 72% — the job has already shifted. If training hasn't caught up, you're filling the gap on your own time, and that's worth naming."
+          },
+          challenge: {
+            steps: [
+              "Pick one task that's changed for you since AI tools arrived — something you do differently now than you did a year ago.",
+              "Open your company-approved AI tool and prompt: <em>\"I used to [describe old way]. Now I [describe new way]. What skill am I building by doing it this way — and what skill might I be losing?\"</em>",
+              "Read the response and sit with it honestly. Is there a skill you're quietly letting atrophy?",
+              "Share your answer in the group — you'll likely find others seeing the same pattern."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Sunday night: let AI help you find a side project that actually fits your life.",
+        body: "Everyone has something they've been meaning to try — a hobby, a creative project, a skill. The gap is usually not motivation; it's finding the version that fits your actual schedule and energy. Use any free tool (ChatGPT, Claude, Gemini, or Perplexity):",
+        prompt: "\"I have about [X hours] of free time per week and my energy level after work is usually [high/medium/low]. I'm curious about [2-3 interests]. Give me 5 side project ideas ranked by how realistic they are for someone with my constraints — and for each one, tell me what the first 15-minute step would be.\"<br><br>The technique here — <em>ranked by a specific criterion</em> — forces the AI to prioritize instead of just listing. Try it on any decision where you're drowning in options."
+      }
+    },
 "2026-07-18": {
       intro: "Today's drop is about where AI decisions actually get made: which workflows leadership funds, which tools employees quietly reach for anyway, and which skills your team needs to protect on purpose.",
       trends: [
