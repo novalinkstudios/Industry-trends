@@ -968,6 +968,74 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+"2026-07-20": {
+      intro: "A Monday reset: what the skills gap is actually costing, why most AI training misses the mark, and the policy problem hiding in plain sight.",
+      trends: [
+        {
+          title: "The AI skills gap isn't a hiring problem — it's a $5.5 trillion drag on the economy",
+          source_url: "https://www.ciodive.com/news/tech-talent-skills-gaps-cost-trillions-idc/716523/",
+          body: "IDC estimates that AI and digital skills shortages will cost the global economy <em>up to $5.5 trillion in 2026</em> — not in vague lost potential, but in concrete damage: delayed transformations, quality problems, and missed revenue. Over 90% of enterprises face critical shortages, and nearly two-thirds report that the gap has already pushed back their digital transformation timelines by an average of 10 months.",
+          slants: {
+            strategy:   "When your AI roadmap says '12 months to value,' add 10 for the skills bottleneck nobody budgeted for.",
+            operations: "Those delays aren't theoretical — they're the gap between 'we bought the tool' and 'someone can actually run it.'",
+            pm:         "Skills readiness belongs on the RAID log right next to budget and timeline — it's the risk that quietly kills AI projects.",
+            admin:      "If you've been self-teaching AI on your own time, you're ahead of most. That capability has real value — name it."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool.",
+              "Paste this prompt: <em>\"I work in [your role]. List three AI-adjacent skills that would make me most valuable over the next 12 months — not coding skills, but judgment and workflow skills. For each one, suggest one free resource I could start with this week.\"</em>",
+              "Pick the skill that surprises you most and bookmark the resource.",
+              "Share your top pick in the group — and whether the AI's suggestion matched what you expected."
+            ]
+          }
+        },
+        {
+          title: "85% of employees say their AI training doesn't help them do their actual jobs",
+          source_url: "https://www.forbes.com/sites/garydrenik/2026/06/30/ai-literacy-leads-learning-agendas-but-training-falls-short/",
+          body: "Docebo's 2026 AI Readiness Gap report found that <em>85% of employees say the AI training they receive doesn't help them in their actual role</em>. The reasons are structural: 78% say training happens in systems completely disconnected from the tools where they work, and 56% are so buried in pre-AI manual tasks they can't find time to learn at all.",
+          slants: {
+            strategy:   "If your team's AI training isn't tied to specific workflows, you're producing certificates — not capability.",
+            operations: "Ten minutes applying AI to a real task teaches more than an hour of courseware. Push for practice over modules.",
+            pm:         "Before adding 'AI training' to the project plan, ask: training on what, specifically, and will they use it this week?",
+            admin:      "If your training felt useless, it probably was. The fix isn't more hours — it's training that starts from your actual tasks."
+          },
+          challenge: {
+            steps: [
+              "Think of one task you did last week that took longer than it should have.",
+              "Open your company-approved AI tool and try this: <em>\"I spent [time] on [describe the task] last week. Show me how I could use AI to cut that time in half — step by step, using tools I likely already have access to.\"</em>",
+              "Try the first step right now — even a quick five-minute test counts.",
+              "Share what you tried in the group — and whether it actually helped."
+            ]
+          }
+        },
+        {
+          title: "Nearly half of workers say their company's AI policy is blocking them from learning",
+          source_url: "https://www.shrm.org/topics-tools/research/navigating-ai-in-the-workplace/full-report",
+          body: "SHRM's 2026 workplace survey of nearly 6,000 U.S. workers found that <em>46% feel their organization's AI policies block them from experimenting with new tools</em>. Among companies that do have policies, only 25% of HR professionals consider them clear and future-proof — and 54% say their rules are too restrictive, written around specific tools that are already evolving past what the policy covers.",
+          slants: {
+            strategy:   "A policy that blocks experimentation doesn't reduce risk — it pushes AI use underground where you can't see it.",
+            operations: "If your team is quietly using AI around the policy, the policy is the vulnerability — not the tool.",
+            pm:         "When kicking off an AI-involved project, check whether the policy even covers what you're planning. There's a good chance it doesn't.",
+            admin:      "You're often the first to notice when a policy doesn't match how people actually work. That observation is worth raising."
+          },
+          challenge: {
+            steps: [
+              "Find your organization's AI use policy — or confirm that one doesn't exist yet (that's a finding too).",
+              "Summarize the key rules in a few bullet points, then open your company-approved AI tool and try: <em>\"Here are the key points of my company's AI use policy: [paste your summary]. What's missing, what's too vague to follow, and what might already be outdated? Give me three specific suggestions.\"</em>",
+              "Pick the suggestion that felt most obvious and write it down.",
+              "Share your takeaway in the group — especially if the answer was 'we don't have one.'"
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Let AI build you a reading list tonight — but make it earn every pick.",
+        body: "Forget browsing bestseller lists or Amazon recommendations. Use any free AI tool (ChatGPT, Claude, Gemini, or Perplexity) to get a reading list that actually fits you — and learn a prompting trick along the way.",
+        prompt: "\"I'm looking for my next great read. I recently enjoyed [name a book or two you liked]. I'm in the mood for something [describe the vibe — e.g., thought-provoking, escapist, funny, short]. Don't give me 10 options — give me exactly 3. For each one, tell me in one sentence why it fits what I just told you, not just why it's a good book. Then pick the single best one to start with and tell me why.\"<br><br>The technique here — <em>constraining the output and demanding personalized reasoning</em> — stops AI from giving you a generic list. It works for any recommendation: restaurants, podcasts, movies, gifts."
+      }
+    },
+
 "2026-07-19": {
       intro: "Today's throughline: as agentic AI moves from pitch deck to production, the winners are the ones who can tell real capability from relabeled automation, spot where agents are quietly touching routine buying decisions, and close the training gap before confidence collapses.",
       trends: [
