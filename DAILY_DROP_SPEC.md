@@ -9,11 +9,11 @@
 
 <br>
 
-The Daily Drop is a short editorial briefing for Cisco employees in **traditional operations, strategy & planning, project management, and administrative roles** who are AI-curious but cautious. The community goal is to **remove the fear of AI** and help members use AI to advance — not be replaced by it.
+The Daily Drop is a short editorial briefing for Cisco employees in **traditional operations, strategy & planning, project management, administrative, and leadership roles** who are AI-curious but cautious. The community goal is to **remove the fear of AI** and help members use AI to advance — not be replaced by it.
 
 Every drop must leave the reader feeling **more capable, less afraid, and slightly more equipped** than when they opened the page.
 
-**Audience weighting (most → least):** Strategy & Planning → Operations → Project Management → Administrative.
+**Audience weighting (most → least):** Strategy & Planning → Operations → Project Management → Administrative → Leaders.
 
 </details>
 
@@ -61,7 +61,8 @@ Each daily entry is a JavaScript object keyed by ISO date (`"YYYY-MM-DD"`) insid
         strategy:   "One line — how this lands for a strategy/planning person.",
         operations: "One line — how this lands for an ops person.",
         pm:         "One line — how this lands for a project manager.",
-        admin:      "One line — how this lands for an administrative pro."
+        admin:      "One line — how this lands for an administrative pro.",
+        leaders:    "One line — how this lands for a leader/executive."
       },
       challenge: {
         steps: [
@@ -85,7 +86,7 @@ Each daily entry is a JavaScript object keyed by ISO date (`"YYYY-MM-DD"`) insid
 **Hard requirements:**
 
 - Exactly **3 trends** per day.
-- Every trend must have all **4 role slants** (`strategy`, `operations`, `pm`, `admin`).
+- Every trend must have all **5 role slants** (`strategy`, `operations`, `pm`, `admin`, `leaders`).
 - Every trend must have **one challenge** in the `{ steps: [...] }` shape.
 - Every trend must have a **`source_url`** — the URL of the primary source cited in the trend body. This renders as a "Source" button at the bottom of the trend card, opening in a new window.
 - Every drop must have **one homework block**.
@@ -111,14 +112,14 @@ Each daily entry is a JavaScript object keyed by ISO date (`"YYYY-MM-DD"`) insid
 ### Trend selection
 
 - The three trends should **cover different angles** — e.g., one strategic shift, one workflow/tooling shift, one skills/cultural shift. Don’t run three “new AI tool launched” trends in one day.
-- Lean into trends that **most strongly affect strategy & planning roles** (the primary audience), then ops, then PM, then admin.
+- Lean into trends that **most strongly affect strategy & planning roles** (the primary audience), then ops, then PM, then admin, then leaders.
 - Prefer trends from the **last 2–4 weeks**. Avoid recycling stories the community has likely seen.
 - **Every stat or claim must come from a real, citable source.** If you can’t link it, don’t quote it. Never fabricate numbers.
 
 ### Role slants
 
 - **One sentence each.** Don’t pad.
-- Slants should be **genuinely different** for each role — if the same line could apply to all four, the trend’s framing is too generic and needs reworking.
+- Slants should be **genuinely different** for each role — if the same line could apply to all five, the trend’s framing is too generic and needs reworking.
 - If a trend honestly does not have a meaningful angle for one of the roles, write the most truthful version possible — don’t manufacture relevance.
 
 ### Challenges
@@ -220,7 +221,8 @@ const DROPS = {
           strategy:   "Strategy slant line.",
           operations: "Operations slant line.",
           pm:         "PM slant line.",
-          admin:      "Admin slant line."
+          admin:      "Admin slant line.",
+          leaders:    "Leaders slant line."
         },
         challenge: {
           steps: [
@@ -263,7 +265,7 @@ Before committing, verify:
 - [ ] The JSON-like object structure is valid JavaScript (no missing commas, no unescaped quotes, no trailing commas before `}`).
 - [ ] Date key is `"YYYY-MM-DD"` and matches today’s date in **Eastern Time**.
 - [ ] Exactly 3 trends.
-- [ ] Every trend has all 4 role slants and 1 challenge.
+- [ ] Every trend has all 5 role slants and 1 challenge.
 - [ ] Every challenge has 3–6 concrete steps and ends with a sharing action.
 - [ ] Every trend has a `source_url` pointing to the primary source.
 - [ ] Every stat or claim has a real source you could link to (URL captured for the PR body).
@@ -339,7 +341,7 @@ Example: `Daily Drop: Sunday, June 15`
 ### Pre-commit checklist
 - [x] Valid JS object structure
 - [x] Date matches today (ET)
-- [x] 3 trends, 4 role slants each
+- [x] 3 trends, 5 role slants each
 - [x] Each challenge is 3–6 concrete steps ending with a share action
 - [x] Every claim sourced
 - [x] No banned hype words
@@ -373,7 +375,8 @@ This is the seed entry already in the file. Use it as a reference for tone, leng
         strategy:   "You're shifting from <em>writer</em> to <em>editor + pressure-tester</em>.",
         operations: "Synthesis across systems is now a 30-min job, not a 3-day one.",
         pm:         "Status reports get auto-drafted; framing the right questions is the new value-add.",
-        admin:      "Your judgment on tone, context, and 'what the exec actually meant' becomes the premium skill."
+        admin:      "Your judgment on tone, context, and 'what the exec actually meant' becomes the premium skill.",
+        leaders:    "The memos landing on your desk were shaped by AI. Knowing how changes what you ask about them."
       },
       challenge: {
         steps: [
@@ -392,7 +395,8 @@ This is the seed entry already in the file. Use it as a reference for tone, leng
         strategy:   "The QBR was built for a pre-AI world. Rethink the inputs and outputs.",
         operations: "Your SOPs probably encode 2019 assumptions.",
         pm:         "\"Weekly check-ins\" exist because info moved slowly. Does it still?",
-        admin:      "Calendar-and-email triage workflows are ripe for a clean-slate redesign."
+        admin:      "Calendar-and-email triage workflows are ripe for a clean-slate redesign.",
+        leaders:    "If your org is layering AI onto old processes, the ROI gap is a leadership problem — not a technology one."
       },
       challenge: {
         steps: [
@@ -411,7 +415,8 @@ This is the seed entry already in the file. Use it as a reference for tone, leng
         strategy:   "Prompting is problem-framing. The clearer your ask, the sharper your strategy.",
         operations: "Knowing when AI is wrong saves more time than AI being right.",
         pm:         "Agent orchestration is the next PM specialty.",
-        admin:      "You already know how things actually work here. AI doesn't."
+        admin:      "You already know how things actually work here. AI doesn't.",
+        leaders:    "AI fluency on your team starts with you visibly using it — and visibly questioning it."
       },
       challenge: {
         steps: [
