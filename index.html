@@ -968,6 +968,75 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+"2026-07-21": {
+      intro: "Three things for your Tuesday: a $234 billion shift in enterprise software, a governance gap hiding in your org's decisions, and the environmental cost of AI that nobody's budgeting for.",
+      trends: [
+        {
+          title: "Your enterprise software stack is about to look very different",
+          source_url: "https://www.gartner.com/en/newsroom/press-releases/2026-07-01-gartner-says-us-dollars-234-billion-in-enterprise-application-software-spend-is-at-risk-from-agentic-artificial-intelligence",
+          body: "Gartner estimates that <em>$234 billion in enterprise software spending — roughly 20% of all SaaS — is exposed to \"agentic arbitrage\" by 2030</em>. The shift: AI agents complete tasks across multiple systems directly, bypassing the traditional app interfaces your team logs into every day. Gartner's George Brocklehurst calls it less an apocalypse and more a metamorphosis — SaaS won't vanish, but the link between how many people use a tool and how much value that tool delivers is breaking.",
+          slants: {
+            strategy:   "Your vendor strategy is a strategic plan now, not a procurement exercise. Map which tools deliver outcomes and which ones just deliver screens.",
+            operations: "Watch for the workflows where an agent already handles what used to require three separate logins. That's your preview of where the stack consolidates.",
+            pm:         "Tool sprawl isn't just an annoyance anymore — it's a cost structure that agentic AI is compressing. Know which tools your projects actually depend on.",
+            admin:      "The tools you manage access and licenses for will shift faster than the policies around them. Stay close to IT conversations about consolidation."
+          },
+          challenge: {
+            steps: [
+              "List every software tool you log into during a typical work week — CRM, project tracker, email, docs, dashboards, everything.",
+              "Open your company-approved AI tool and paste the list with this prompt: <em>\"For each tool on this list, tell me whether an AI agent could realistically handle the task I use it for — without me opening the app. Mark each as: 'agent could handle,' 'agent could draft,' or 'still needs me.'\"</em>",
+              "Look at how many tools landed in the first two categories. That's your preview of where things are heading.",
+              "Share your split in the group — and whether the number surprised you."
+            ]
+          }
+        },
+        {
+          title: "60% of executives use AI for decisions — almost none of them govern it",
+          source_url: "https://www.deloitte.com/us/en/insights/topics/talent/human-capital-trends/2026/decision-making-with-ai.html",
+          body: "Deloitte's 2026 Global Human Capital Trends survey of over 9,000 leaders across 89 countries found that <em>60% of executives now regularly use AI to support their decisions — but only 5% say they manage that use well</em>. That's a 55-point gap between adoption and governance. Meanwhile, 42% of workers say their organizations aren't even evaluating AI's impact on people. The decisions are already being shaped by AI. The question is whether anyone is watching how.",
+          slants: {
+            strategy:   "If your leadership team is using AI to inform strategic calls without a governance framework, the risk isn't hypothetical — it's in last quarter's decisions.",
+            operations: "AI-influenced decisions are flowing through your processes right now, whether documented or not. Build the audit trail before someone asks for it.",
+            pm:         "When AI shapes project decisions — scope, timelines, resource allocation — and there's no review process, you're flying with invisible inputs.",
+            admin:      "You're often the first person who notices when a decision doesn't match what the team discussed. That instinct is governance in practice — trust it."
+          },
+          challenge: {
+            steps: [
+              "Think of one decision made at your organization in the last month where AI played a role — even informally, like an AI-drafted analysis or a summary that shaped a call.",
+              "Open your company-approved AI tool and try: <em>\"I want to build a simple checklist for reviewing AI-assisted decisions before they go final. Ask me 3 questions about the types of decisions my team makes, then give me a 5-item review checklist tailored to my answers.\"</em>",
+              "Answer the three questions honestly.",
+              "Read the checklist. Is there one item your team is consistently skipping?",
+              "Share the most useful checklist item in the group — governance gets better when people compare notes."
+            ]
+          }
+        },
+        {
+          title: "The UN just put a number on AI's hidden environmental bill",
+          source_url: "https://news.un.org/en/story/2026/06/1167658",
+          body: "A June report from the United Nations University quantified what most AI conversations skip entirely: the environmental cost. By 2030, <em>AI infrastructure's water footprint could reach 9.3 trillion litres — enough to meet the world's drinking water needs for roughly 1.6 years</em>. Add a land footprint exceeding 14,500 square kilometers and up to 2.5 million tonnes of e-waste annually. These aren't reasons to stop using AI. They're variables your planning should include.",
+          slants: {
+            strategy:   "When your leadership gets asked about AI's environmental footprint at the next ESG review, you want the numbers ready — not an awkward silence.",
+            operations: "Every AI workflow you scale has water and energy implications. Factoring that into capacity planning now puts you ahead of the reporting curve.",
+            pm:         "A one-line sustainability note in your next AI project proposal takes 30 seconds and future-proofs the business case.",
+            admin:      "You don't need to run carbon calculations — but knowing these costs exist helps you add context when someone asks about trade-offs."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool.",
+              "Ask: <em>\"My team uses AI for [describe your most common AI use case — drafting, analysis, scheduling, summarizing]. Give me a plain-language estimate of the environmental cost of that usage at our current scale — energy, water, and carbon. Then suggest one practical step we could take to reduce it without losing value.\"</em>",
+              "Read the estimate. Even if the numbers are rough, the awareness is the point.",
+              "Share the most surprising number in the group — and whether it changed how you think about when to use AI versus when not to."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Tonight, let AI audit your subscriptions — you might be surprised what's still running.",
+        body: "Most of us are paying for at least one thing we forgot about. Use any free AI tool (ChatGPT, Claude, Gemini, or Perplexity) to sort through the pile:",
+        prompt: "\"Here are all the subscriptions and recurring charges I can think of: [list everything — streaming, apps, gym, insurance, memberships, software, anything that auto-renews]. Sort them into three buckets: 'use weekly,' 'use occasionally,' and 'haven't touched in a month or more.' Then calculate my total monthly spend in each bucket and estimate what I'd save in a year if I cut the 'haven't touched' list entirely.\"<br><br>The technique — <em>asking AI to categorize, calculate, and rank</em> — turns any messy list into something you can act on. Works for expenses, priorities, vendors, anything."
+      }
+    },
+
 "2026-07-20": {
       intro: "A Monday reset: what the skills gap is actually costing, why most AI training misses the mark, and the policy problem hiding in plain sight.",
       trends: [
