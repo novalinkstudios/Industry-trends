@@ -968,6 +968,77 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-07-22": {
+      intro: "Three for your Wednesday — about the time AI gives back that nobody knows what to do with, the cultural cost of moving too fast, and a skill shift that plays to your strengths.",
+      trends: [
+        {
+          title: "AI is saving workers a full day per week — and nobody said what to do with it",
+          source_url: "https://www.bcg.com/publications/2026/ai-at-work-why-strategy-matters-more-than-tools",
+          body: "BCG's fourth annual AI at Work survey of nearly 12,000 workers across 14 markets found that <em>42% of regular AI users are saving roughly eight hours a week — a full workday</em>. But 66% say they've received limited or no guidance on what to do with that time, and more than half aren't reinvesting it into higher-value work. The productivity win is real. The question nobody answered is: productivity for what?",
+          slants: {
+            strategy:   "If your team is saving a day a week and nobody has redirected that time toward strategic priorities, you're generating slack — not leverage.",
+            operations: "The hours AI frees up get absorbed by existing busyness unless someone deliberately reassigns them. That someone is usually ops.",
+            pm:         "When AI compresses a three-day task into one, your project timeline should change — but so should what your team does on days two and three.",
+            admin:      "If AI is saving you hours and you're filling them with more of the same, pause. The most valuable use of found time is learning something new.",
+            leaders:    "Your teams are saving a day a week and nobody told them what to do with it. That's not a win — it's a wasted investment until you redirect the capacity."
+          },
+          challenge: {
+            steps: [
+              "Estimate how many hours AI saved you last week — even rough guesses count. Include drafting, summarizing, research, formatting, anything.",
+              "Open your company-approved AI tool and paste this prompt: <em>\"I saved approximately [X] hours last week by using AI for [list the tasks]. Suggest three concrete ways I could reinvest that time into higher-value work for my role as a [your role]. Be specific — don't say 'think strategically,' tell me what to do on Monday morning.\"</em>",
+              "Pick the suggestion that feels most realistic and block 30 minutes for it this week.",
+              "Share your hours-saved estimate and your reinvestment plan in the group — the patterns across roles are where the real insight is."
+            ]
+          }
+        },
+        {
+          title: "Your organization is building up cultural debt — and AI is the interest rate",
+          source_url: "https://www.deloitte.com/us/en/insights/topics/talent/human-capital-trends.html",
+          body: "Deloitte's 2026 Global Human Capital Trends report puts a name on something many teams feel but can't articulate: cultural debt. It's what accumulates when organizations scale AI without updating the trust, norms, and accountability structures around it. <em>65% of organizations say their culture needs significant change because of AI, but only 5% are making real progress</em>. Meanwhile, 45% spend little to no time thinking about AI's impact on people at all.",
+          slants: {
+            strategy:   "Cultural debt compounds like financial debt — ignore it long enough and the cost of fixing it exceeds the original AI investment.",
+            operations: "When AI changes who makes decisions and how fast, but nobody updates the norms around those decisions, the confusion isn't a morale issue — it's an operations issue.",
+            pm:         "If your project team doesn't have shared norms for when to use AI, when to override it, and who owns the output, you're accumulating cultural debt in real time.",
+            admin:      "You feel cultural debt before leadership names it — in unclear expectations, shifting responsibilities, and the quiet stress of figuring out new rules nobody wrote down.",
+            leaders:    "Every AI tool you deploy without updating team norms adds to a tab your organization will pay later — in turnover, mistrust, or a failed rollout nobody saw coming."
+          },
+          challenge: {
+            steps: [
+              "Think about one thing that changed in your team's daily work because of AI — a new tool, a shifted responsibility, a decision that moves faster now.",
+              "Ask yourself honestly: did anyone explicitly discuss how that change affects trust, accountability, or how your team works together? Or did it just happen?",
+              "Open your company-approved AI tool and try: <em>\"My team recently started using AI for [describe the change]. Nobody formally discussed how this changes our norms — who's accountable for AI output quality, when to override it, or how to raise concerns. Draft three team agreements we should make to prevent cultural debt from building up.\"</em>",
+              "Pick the agreement your team needs most and share it in the group — or bring it up at your next team meeting."
+            ]
+          }
+        },
+        {
+          title: "The most valuable AI skill just shifted — and it's one you already have",
+          source_url: "https://www.forbes.com/sites/bernardmarr/2026/01/20/why-prompt-engineering-isnt-the-most-valuable-ai-skill-in-2026/",
+          body: "Prompt engineering job postings <em>dropped 40% in a single year</em>. Not because prompting stopped mattering — but because models got good enough at plain language that the bottleneck moved. The skill that matters most now isn't crafting clever prompts. It's knowing when AI is wrong, what context it's missing, and when to override its recommendation. For non-technical professionals, that's the good news: the most valuable AI skill in 2026 is judgment — and you've been building it your entire career.",
+          slants: {
+            strategy:   "The strategist who spots when an AI-generated analysis misses political context or institutional history is more valuable than the one who writes the cleverest prompt.",
+            operations: "You already know which process exceptions the manual doesn't cover. That operational judgment is exactly what makes your AI output better than a generic one.",
+            pm:         "The PM who reads an AI-generated project plan and immediately catches the missing dependency has a skill no prompt template can replace.",
+            admin:      "Stop worrying about whether you're prompting correctly. If you can read AI output and tell when something's off, you already have the skill that matters most.",
+            leaders:    "The next hire who impresses you won't be the one who writes the best prompt — it'll be the one who catches what the AI missed. Evaluate for judgment, not tool fluency."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool and ask it to help with a task you know well — a process you run, a document type you review, a recommendation you make regularly.",
+              "Read the output without accepting it. Mark every place where the AI got something wrong, missed important context, or oversimplified.",
+              "Ask this follow-up: <em>\"Here's what you got wrong or missed: [list your corrections]. What context would you have needed from me to get these right the first time?\"</em>",
+              "Share your corrections in the group — every mistake you catch is proof of the skill that matters most."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Tonight, try to recreate that restaurant dish you can never stop ordering.",
+        body: "Everyone has one — the pad thai, the perfect burger, the pasta you always get at that one place. Pick a free AI tool (ChatGPT, Claude, Gemini, or Perplexity) and reverse-engineer it at home:",
+        prompt: "\"Act as an experienced home cooking instructor. I want to recreate [name the dish and the restaurant or cuisine style] at home with grocery-store ingredients. Walk me through it step by step — not a recipe dump, but the way you'd coach someone standing next to you in the kitchen. Tell me which step most home cooks get wrong, and why.\"<br><br>The technique — <em>assigning AI a specific role</em> — changes the depth and format of the answer. 'Act as a cooking instructor' gets you teaching-style tips. 'Act as a nutritionist' would get you ingredient swaps. Try both on the same dish and notice how the output shifts."
+      }
+    },
+
 "2026-07-21": {
       intro: "Three things for your Tuesday: a $234 billion shift in enterprise software, a governance gap hiding in your org's decisions, and the environmental cost of AI that nobody's budgeting for.",
       trends: [
