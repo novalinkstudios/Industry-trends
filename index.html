@@ -968,6 +968,78 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-07-23": {
+      intro: "Thursday's three: a stat that should make every strategy leader squirm, a prediction that values the skill you're afraid AI will replace, and a gap that explains why your org's AI pilots never graduate.",
+      trends: [
+        {
+          title: "Three out of four enterprise AI strategies exist on paper only — and the C-suite knows it",
+          source_url: "https://writer.com/blog/enterprise-ai-adoption-2026/",
+          body: "Writer's 2026 enterprise AI survey of 2,400 global employees and leaders landed a blunt finding: <em>75% of executives say their company's AI strategy is more for show than for actual internal guidance</em>. Meanwhile, 54% of the C-suite admit AI adoption is tearing their company apart, and 39% don't even have a formal plan to drive revenue from AI tools. The strategy document exists. The strategy doesn't.",
+          slants: {
+            strategy:   "If you wrote the strategy deck, reread it honestly. Does anyone outside the leadership team reference it when making a real decision?",
+            operations: "A strategy that never reaches the workflow level isn't a strategy — it's a press release. You'll know it's real when it changes how you spend Tuesday.",
+            pm:         "Check whether your project prioritization references the AI strategy anywhere. If it doesn't, the strategy isn't doing its job.",
+            admin:      "When leadership announces an AI strategy but nothing changes in your daily tools or processes, trust what you see — not the memo.",
+            leaders:    "Your team can tell the difference between a strategy and a slide deck. If 75% of your peers admit theirs is for show, ask whether yours passes the same test."
+          },
+          challenge: {
+            steps: [
+              "Find your company's AI strategy — on the intranet, in an all-hands deck, wherever it lives. If you can't find it in under five minutes, that's your first data point.",
+              "Open your company-approved AI tool and describe the strategy's key goals (without pasting confidential documents), then add: <em>\"Based on these goals, list three specific things I should be doing differently on Monday morning. If the goals are too vague to generate specific actions, say so.\"</em>",
+              "Read the output. If AI can't find concrete actions in your strategy, neither can anyone else at your company.",
+              "Share what you found in the group — is your org's strategy actionable, or aspirational?"
+            ]
+          }
+        },
+        {
+          title: "The skill AI can't replace is the one companies are about to start testing for",
+          source_url: "https://www.gartner.com/en/newsroom/press-releases/2025-10-21-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2026-and-beyond",
+          body: "Gartner's strategic predictions warn that critical-thinking atrophy from heavy AI use will push <em>50% of organizations to require \"AI-free\" skills assessments by end of 2026</em> — tests where candidates prove they can reason, analyze, and solve problems without AI in the room. The implication: the ability to think independently is getting scarcer, and companies are starting to pay a premium for it.",
+          slants: {
+            strategy:   "Your strategic judgment is becoming a testable, measurable asset — not just a soft skill on a performance review.",
+            operations: "The ops person who can diagnose a process breakdown without running it through AI first has a skill that's getting scarcer and more valuable by the quarter.",
+            pm:         "If you can scope a project, spot risks, and estimate timelines from experience — not just from a prompt — that ability is about to be explicitly valued.",
+            admin:      "Every time you catch an error, remember a detail, or notice something AI missed, you're exercising the exact skill companies are learning they can't afford to lose.",
+            leaders:    "You need both: people who work brilliantly with AI and people who can function without it. Start assessing for both before the talent market prices you out."
+          },
+          challenge: {
+            steps: [
+              "Pick a task you normally do with AI — drafting a summary, analyzing data, building a plan, writing talking points.",
+              "Do it once without AI. Set a timer and note where you feel uncertain or slow.",
+              "Now do the same task with your company-approved AI tool. Compare the two outputs honestly — where did your unassisted version hold up, and where did it fall short?",
+              "Ask your AI tool: <em>\"I just compared doing [task] with and without AI. The areas where I struggled without AI were [list them]. Suggest one 10-minute daily exercise to keep those thinking skills sharp while still using AI for efficiency.\"</em>",
+              "Share your strongest unassisted skill in the group — you probably underestimate it."
+            ]
+          }
+        },
+        {
+          title: "Two-thirds of enterprises tried AI agents — fewer than one in ten got them to stick",
+          source_url: "https://www.forbes.com/sites/josipamajic/2026/03/22/10-of-enterprise-functions-use-ai-agents-mckinsey-finds/",
+          body: "McKinsey's latest State of AI research shows that <em>nearly two-thirds of enterprises have experimented with AI agents, but fewer than 10% have scaled them beyond pilots</em>. The pattern repeats: a proof-of-concept works, leadership gets excited, and the project stalls at the handoff between \"demo\" and \"daily work.\" Eight in ten companies point to data quality and architecture as the wall they hit.",
+          slants: {
+            strategy:   "The pilot-to-production gap is a strategy problem, not a tech problem. If your agent POC can't connect to real data in real systems, the demo was a dead end.",
+            operations: "You already know which systems have messy data — those are the same systems where AI agents will fail first. Fix the data and the agents follow.",
+            pm:         "Scope the production rollout before the pilot starts. \"Pilot complete\" is not \"project complete\" — it's barely the midpoint.",
+            admin:      "When an AI agent pilot lands on your desk, ask the question nobody else will: does this connect to the systems I actually use, or does it need me to re-enter everything?",
+            leaders:    "If 90% of agent pilots stall at scaling, your next executive review shouldn't ask whether the pilot worked. It should ask for the production plan and who owns it."
+          },
+          challenge: {
+            steps: [
+              "Think of one process at your organization that was automated or AI-powered in a pilot but never made it to full daily use. If you haven't seen one directly, ask a colleague — most teams have at least one.",
+              "List the top three reasons it stalled — data quality, integration, buy-in, training, budget, or something else.",
+              "Open your company-approved AI tool and try: <em>\"An AI pilot at my company stalled because of [your top reason]. Give me three concrete actions — not principles — that other organizations have used to get past this specific barrier.\"</em>",
+              "Share the barrier and the most practical suggestion in the group — someone else has almost certainly hit the same wall."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Tonight, turn your vague bucket list into something you'd actually do.",
+        body: "Most people's bucket lists are wish piles — no structure, no priority, no first step. Use any free AI tool (ChatGPT, Claude, Gemini, or Perplexity) to give yours some bones:",
+        prompt: "\"I want to build a real bucket list — not a random wish list. Ask me 5 questions about my values, my constraints (time, money, energy), and what I want the next 5 years to feel like. Then organize my answers into three tiers: 'this year,' 'next 2–3 years,' and 'someday.' For the top item in each tier, give me the single smallest step I could take this week.\"<br><br>The technique here — <em>telling AI what structure you want in the output</em> — is one of the most transferable prompting skills. Instead of accepting a raw list, you asked for tiers, criteria, and next actions. Works just as well on project backlogs, career goals, or even dinner options."
+      }
+    },
+
     "2026-07-22": {
       intro: "Three for your Wednesday — about the time AI gives back that nobody knows what to do with, the cultural cost of moving too fast, and a skill shift that plays to your strengths.",
       trends: [
