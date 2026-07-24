@@ -968,6 +968,74 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-07-24": {
+      intro: "Friday's three: who really owns AI decisions now, why the training gap is the real bottleneck, and the trust deficit that's stalling the next wave.",
+      trends: [
+        {
+          title: "The CEO just became your company's chief AI officer — whether anyone planned for it or not",
+          source_url: "https://www.bcg.com/publications/2026/as-ai-investments-surge-ceos-take-the-lead",
+          body: "BCG's AI Radar 2026, surveying 2,360 executives across 16 markets, found that <em>72% of CEOs are now the primary AI decision-maker in their organization — double from last year</em>. Half say their job stability depends on getting AI strategy right. AI budgets are jumping from 0.8% to 1.7% of revenue. The question for everyone below the C-suite: if the CEO is personally driving AI decisions, what's your role in that conversation?",
+          slants: {
+            strategy:   "Your strategy team just shifted from leading AI direction to translating and operationalizing the CEO's AI bets. That's a different job.",
+            operations: "When the CEO is driving AI decisions from the top, your ground-level feedback on what actually works becomes the most important signal in the loop.",
+            pm:         "AI projects now have the CEO's name on them — which means higher visibility, faster timelines, and less room for quiet course-corrections.",
+            admin:      "Executive-led AI decisions move fast. The person who tracks the commitments, flags the conflicts, and keeps the follow-through honest is more valuable than ever."
+          },
+          challenge: {
+            steps: [
+              "Think about the last AI-related decision that affected your team. Who made it — a team lead, a department head, or someone in the C-suite?",
+              "Open your company-approved AI tool and try this prompt: <em>\"I work in [your role] at a large company. The CEO is now personally leading AI decisions. List three specific ways I can contribute useful ground-level insight to that top-down decision process — focus on what someone in my role sees that the C-suite doesn't.\"</em>",
+              "Read the suggestions and pick one you could realistically act on this month.",
+              "Share your pick in the group — and whether the AI's suggestions actually matched your experience."
+            ]
+          }
+        },
+        {
+          title: "Only 16% of employees are AI-ready — and the training gap hasn't budged in a year",
+          source_url: "https://www.forrester.com/blogs/your-employees-arent-ready-for-ai-and-its-a-problem",
+          body: "Forrester's updated AIQ research delivers a sobering finding: <em>only 16% of employees score high on AI readiness</em>, measuring understanding, hard skills, confidence, and ethics awareness. Despite the massive rollout of tools like Copilot, Gemini, and ChatGPT Enterprise, that number has barely moved year-over-year. The bottleneck isn't the tools — it's that only 51% of organizations offer AI training for non-technical staff, and <em>just 23% teach prompt engineering</em>.",
+          slants: {
+            strategy:   "If your organization invested in AI tools but not AI training, the ROI shortfall isn't a technology problem — it's a learning strategy failure.",
+            operations: "You're being asked to use tools you were never formally trained on. That's not a personal gap — it's an organizational one worth naming.",
+            pm:         "Every AI rollout project should have a training workstream with the same priority as the technical deployment. Most don't.",
+            admin:      "You're in the 84% through no fault of your own — the training simply hasn't reached your role yet. That changes when you start building skills on your own terms."
+          },
+          challenge: {
+            steps: [
+              "Rate yourself honestly on Forrester's four AIQ dimensions: understanding (do you know what AI can and can't do?), skills (can you prompt effectively?), confidence (do you trust yourself to use AI well?), and ethics (do you know the risks?).",
+              "Identify your weakest dimension, then open your company-approved AI tool and try: <em>\"I rated myself weakest on [your weakest dimension] when it comes to using AI at work. Give me a 15-minute learning plan I can do today — no jargon, no courses to buy, just concrete actions.\"</em>",
+              "Do the plan. It's 15 minutes.",
+              "Share which dimension surprised you most — and whether the 15-minute plan actually helped — in the group."
+            ]
+          }
+        },
+        {
+          title: "Nine out of ten leaders say AI is vital — but fewer than one in three trust their org to govern it",
+          source_url: "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/tech-forward/state-of-ai-trust-in-2026-shifting-to-the-agentic-era",
+          body: "McKinsey's 2026 AI Trust Maturity Survey of roughly 500 organizations surfaces a sharp gap between belief and readiness: <em>90% of leaders say AI is vital, but only 30% have reached maturity level 3 or higher in strategy, governance, and agentic AI controls</em>. Nearly two-thirds cite security and risk concerns as the top barrier to scaling — ahead of regulatory uncertainty or technical limitations.",
+          slants: {
+            strategy:   "The trust gap is the strategy gap. If governance isn't mature, the boldest AI roadmap in the world stalls at the compliance review.",
+            operations: "Security and risk concerns are the number-one barrier — and ops teams are the ones who'll build the guardrails that let AI agents move from pilot to production.",
+            pm:         "Add governance readiness to your AI project scoping checklist. If it's not assessed up front, it'll be the reason the project pauses at month three.",
+            admin:      "When leadership is excited about AI but cautious about risk, the person who documents processes, tracks approvals, and maintains audit trails is sitting on a critical skill set."
+          },
+          challenge: {
+            steps: [
+              "Think of one AI tool or feature your organization uses or is considering. Ask yourself: do you know who approved it, what data it can access, and what the rules are for using it?",
+              "Open your company-approved AI tool and try: <em>\"I want to understand AI governance at a practical level. Explain in plain language: what does 'AI governance maturity' mean for someone in a [your role] role? Give me three signs that my organization is governance-ready — and three signs it isn't.\"</em>",
+              "Compare the AI's signs against what you've actually seen at your organization.",
+              "Share one observation in the group — does your org lean more toward governance-ready or still figuring it out?"
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Tonight, let AI be your personal DJ — but make it work for the gig.",
+        body: "Friday evening calls for the right soundtrack. Use any free AI tool (ChatGPT, Claude, Gemini, or Perplexity) and try giving it a specific role to play:",
+        prompt: "\"You are a music curator who's been building playlists for 20 years. I need a playlist for [your occasion — dinner with friends, solo wind-down, Saturday morning cleaning, a long drive]. The vibe should start at [mood A] and gradually shift to [mood B] over about 90 minutes. Give me 12–15 songs with a one-line reason for each pick and why it belongs at that point in the sequence.\"<br><br>The technique here — <em>giving AI a specific role and expertise level</em> — produces sharper, more opinionated results than a generic ask. Works for any domain: \"You are a financial planner,\" \"You are a home organizer,\" \"You are a nutritionist with 15 years of experience.\""
+      }
+    },
+
     "2026-07-23": {
       intro: "Thursday's three: a stat that should make every strategy leader squirm, a prediction that values the skill you're afraid AI will replace, and a gap that explains why your org's AI pilots never graduate.",
       trends: [
