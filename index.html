@@ -969,73 +969,77 @@
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
     "2026-07-25": {
-      intro: "Today's three threads all point the same direction: the money, the org chart, and the adoption curve are all quietly being redrawn around who actually uses AI well, not just who has access to it.",
+      intro: "Saturday's three: why deploying AI and preparing for it are moving in opposite directions, the agent wave that's outrunning its own guardrails, and the reason most AI learning isn't sticking.",
       trends: [
         {
-          title: "Companies are shopping around for cheaper AI, and switching fast",
-          body: "A growing number of enterprise customers are cutting spending on OpenAI and Anthropic, switching to cheaper AI alternatives and demanding clearer returns on investment. One founder described moving <em>100% of his company's traffic</em> from Claude to a cheaper open-weight model to save millions within months, calling it \"a matter of survival for the business\" (QZ, July 2026).",
-          source_url: "https://qz.com/enterprise-ai-spending-openai-anthropic-roi-pullback-062626",
+          title: "AI is in 57% of enterprise core processes — and workforce readiness just dropped",
+          source_url: "https://www.kyndryl.com/us/en/about-us/news/2026/06/ai-adoption-workforce-readiness",
+          body: "Kyndryl's 2026 People Readiness Report found <em>AI is now embedded in 57% of core business processes — up from 35% last year</em>. But confidence in the workforce has moved the wrong direction: only 23% of leaders say their people are ready, down six points from 2025. Just 32% have hit even one of their top two AI goals. The 9% seeing real results — Kyndryl calls them \"Pacesetters\" — did one thing differently: they redesigned roles around AI instead of layering AI onto old ones.",
           slants: {
-            strategy: "Treat your AI vendor list like any other supplier risk: single-vendor dependency is now a real line item in planning conversations, not a hypothetical.",
-            operations: "Before you build a process around one AI tool, ask what breaks if your team switches vendors next quarter, because that switch is happening faster than it used to.",
-            pm: "Bake a vendor-contingency line into project plans that depend on AI tooling, the same way you'd plan around a key supplier delay.",
-            admin: "If your company-approved AI tool changes this year, expect a short adjustment period, not a crisis; the underlying skills you're building transfer across tools."
+            strategy:   "The gap between deploying AI and preparing your team for it is a strategy problem, not a technology problem.",
+            operations: "Processes built for pre-AI workflows won't deliver AI-level results — readiness means redesign, not just tool access.",
+            pm:         "If your project plan assumes the team can use AI effectively, check that assumption — 77% of leaders say their people aren't there yet.",
+            admin:      "The Pacesetters didn't wait for a training program — they started by redefining what each role actually does now.",
+            leaders:    "Your AI investment is outrunning your people investment. The 9% seeing returns didn't buy more tools — they redesigned how their teams work."
           },
           challenge: {
             steps: [
-              "Pick one recurring task where you already lean on AI at work.",
-              "Ask your company-approved AI tool: <em>\"List the three biggest cost or reliability risks of depending on a single AI vendor for [describe the task], and one question I should ask my IT or procurement team about it.\"</em>",
-              "Read the response and pick the one risk that surprised you most.",
-              "Share that risk in the group and see if anyone else has heard something different from their team."
+              "Think about one core process your team runs that now involves AI — even if it's just a Copilot suggestion or an AI-assisted draft.",
+              "Open your company-approved AI tool and try this prompt: <em>\"I work in [your role]. We recently added AI to [describe the process]. But we haven't changed the role or the workflow around it. Suggest three specific ways we could redesign this workflow so AI handles what it's best at and people focus on what they're best at.\"</em>",
+              "Read the suggestions. Pick the one that would actually save time without creating confusion.",
+              "Share your before-and-after sketch in the group — even a rough one helps others see the pattern."
             ]
           }
         },
         {
-          title: "The entry-level ladder just lost a rung",
-          body: "A new hiring managers report finds that <em>48% would rather invest in AI tools than hire and train a recent college graduate</em>, and 45% of companies have already restructured so one senior worker plus AI covers work that used to take several entry-level hires (ResumeTemplates.com, July 2026).",
-          source_url: "https://www.prnewswire.com/news-releases/class-of-2026-college-graduate-hiring-report-302828328.html",
+          title: "AI agents are scaling faster than the rules for using them",
+          source_url: "https://www.deloitte.com/us/en/insights/topics/emerging-technologies/ai-agents-scaling-faster.html",
+          body: "Deloitte's 2026 State of AI in the Enterprise report finds <em>74% of companies expect to be using AI agents by 2027</em>. But only 21% have mature governance in place. The gap is practical, not theoretical: the question is no longer \"Is the model accurate?\" but <em>\"Who's accountable when the system acts on its own?\"</em> Companies that treat governance as a blocker will stall. The ones treating it as infrastructure will scale.",
           slants: {
-            strategy: "Workforce planning models built around a steady pipeline of junior hires need a second scenario: senior-plus-AI staffing, sooner than most roadmaps assume.",
-            operations: "Onboarding and training programs designed for a wave of new grads each year may need to shrink and shift toward teaching a smaller group to direct AI well.",
-            pm: "With fewer junior team members to delegate to, expect to lean on AI for first-draft work yourself, and build review time into schedules accordingly.",
-            admin: "Routine, high-volume admin tasks are the first candidates for this shift, so the judgment calls you make around scheduling, prioritization, and communication become your most visible value."
+            strategy:   "Governance isn't what slows agent adoption — it's what makes it safe enough to trust at scale.",
+            operations: "If an agent makes a process decision and it goes wrong, your team needs a clear escalation path before that moment, not after.",
+            pm:         "Agent rollouts need the same change management as any system migration — scope, roles, and fallback plans.",
+            admin:      "When AI agents start handling approvals and routing, the person who understands the actual process becomes the quality check.",
+            leaders:    "If 79% of your peers haven't scaled agent governance yet, getting yours right early is a genuine competitive advantage — not a compliance chore."
           },
           challenge: {
             steps: [
-              "Think of one task on your team that's typically handed to a junior person or new hire.",
-              "Ask your company-approved AI tool: <em>\"Given this type of task [describe it in general terms], list two ways AI could help a senior employee handle it directly, and two risks of removing the entry-level step entirely.\"</em>",
-              "Read the output and flag one idea that feels genuinely useful versus one that feels risky.",
-              "Share your one useful idea and one risk in the group."
+              "List one decision or approval in your workflow that's routine and repeated — something that follows the same logic every time.",
+              "Open your company-approved AI tool and ask: <em>\"I'm thinking about whether an AI agent could handle [describe the decision]. Walk me through: what would need to be true for this to work safely? Who should be accountable if the agent gets it wrong? What's the simplest guardrail to start with?\"</em>",
+              "Compare the AI's answer to how your organization currently handles this decision. Notice the gaps.",
+              "Share your example in the group — what's one routine decision in your work that's ripe for an agent, and what guardrail would you need first?"
             ]
           }
         },
         {
-          title: "Having the AI tool doesn't mean people are using it, managers do",
-          body: "New Gallup data shows organizational AI adoption jumped to <em>47% of U.S. employees, up from 41% the prior quarter</em>, but the same report notes that having AI tools at work doesn't guarantee use. Adoption depends on manager support, workflow fit and whether workers see value in the tools, and workers who rarely use AI appear more vulnerable to job loss (Gallup, July 2026).",
-          source_url: "https://www.gallup.com/workplace/712736/organizational-adoption-jumps-six-points.aspx",
+          title: "80% of workers use AI monthly — but most learned it from social media",
+          source_url: "https://www.prnewswire.com/news-releases/survey-of-business-and-tech-leaders-reveals-persistent-gap-between-corporate-ai-adoption-and-workforce-readiness-302830296.html",
+          body: "CompTIA's inaugural AI Skills Tracker, surveying over 1,000 leaders in June 2026, found a sharp disconnect: <em>80% of professionals use AI tools at least monthly, but only 29% say they have high familiarity</em> with the technology. More than six in ten are learning AI through social media and informal channels — disconnected from corporate policies and with no way to validate what they know. More than half say business activities account for 20% or less of their total AI use.",
           slants: {
-            strategy: "Adoption strategy isn't just a rollout plan; it's a manager-enablement plan, since that's the lever that actually moves usage.",
-            operations: "If a workflow doesn't obviously fit AI, people won't force it in, so redesign the process around the tool rather than bolting the tool onto the old process.",
-            pm: "Actively endorsing AI use on your project, not just permitting it, is what turns access into real usage on your team.",
-            admin: "If your manager hasn't said anything about using AI for your daily tasks, that silence is likely the biggest reason you haven't started, so it's worth asking directly."
+            strategy:   "If your team's AI skills are invisible to you — learned informally, unevenly, and undocumented — you can't plan around them.",
+            operations: "Self-taught AI skills built from YouTube tutorials may not follow your data handling policies. That's a risk worth surfacing.",
+            pm:         "Skill gaps you can't see are risks you can't scope. A quick baseline check before your next AI-dependent project saves surprises later.",
+            admin:      "Your self-taught AI skills are real and valuable — the next step is connecting them to what your organization actually needs.",
+            leaders:    "Your workforce is learning AI on their own terms, not yours. If 60% of that learning is happening on social media, your training program isn't competing — it's invisible."
           },
           challenge: {
             steps: [
-              "Pick one task you have access to AI for but haven't tried yet.",
-              "Ask your company-approved AI tool: <em>\"Explain like I'm new: walk me through exactly how you'd approach [describe the task], step by step, so I can decide if this actually helps.\"</em>",
-              "Try one of the suggested steps on real, non-confidential work.",
-              "Share in the group whether the walkthrough changed your mind about using AI for that task."
+              "Reflect honestly: where did you learn most of what you know about AI? A company training? A YouTube video? A friend's tip? Just scrolling?",
+              "Open your company-approved AI tool and try: <em>\"I've mostly learned about AI from [where you learned]. Based on that, what's likely missing from my knowledge? Give me the three most important things a professional in [your role] should understand about AI that informal sources usually skip.\"</em>",
+              "Read the gaps it identifies. Pick one that resonates and spend 10 minutes learning about it — using the AI itself as the teacher.",
+              "Share in the group: where did you learn AI, and what was the biggest gap you didn't know you had?"
             ]
           }
         }
       ],
       homework: {
-        title: "Let AI plan your weekend before you waste a Saturday scrolling",
-        body: "Pick a free tool, ChatGPT, Claude, Gemini, or Perplexity, and hand over a real decision you'd normally agonize over, like planning a low-key weekend or a trip.",
-        prompt: "Ask me five questions about my mood, budget, and energy level before you suggest anything. Then give me three ranked weekend plan options with the trade-offs of each."
+        title: "Saturday evening experiment: let AI play bartender with whatever you've got.",
+        body: "No bar cart required — this works with a fridge, a pantry, and some creativity. Pick a free AI tool (ChatGPT, Claude, Gemini, or Perplexity) and try this:",
+        prompt: "\"I want to make a drink tonight but I don't want to buy anything. Here's what I have: [list whatever's in your fridge and pantry — juice, soda, sparkling water, tea, fruit, herbs, spirits if you have them, anything]. Give me three drink recipes at three levels: one dead-simple (2 ingredients, under a minute), one a little more involved (3–4 ingredients, worth the effort), and one ambitious (something that would genuinely impress a guest). For each, tell me why the combination works.\"<br><br>The technique here — <em>asking for options at three difficulty levels</em> — is one of the most useful prompting patterns you can build. It works for any decision: meal planning, project approaches, workout routines. Instead of one suggestion you may or may not use, you get a range you can actually choose from."
       }
     },
-  "2026-07-24": {
+
+    "2026-07-24": {
       intro: "Friday's three: who really owns AI decisions now, why the training gap is the real bottleneck, and the trust deficit that's stalling the next wave.",
       trends: [
         {
