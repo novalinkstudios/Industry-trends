@@ -968,6 +968,73 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-07-27": {
+      intro: "Monday reset. Three things worth carrying into this week — about the returns most companies aren't seeing, the trust they're losing one polished email at a time, and the bottleneck that moved when nobody was looking.",
+      trends: [
+        {
+          title: "More than half of CEOs still can't point to a dollar from AI",
+          source_url: "https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-global-ceo-survey.html",
+          body: "PwC's 2026 Global CEO Survey — 4,454 chief executives across 95 countries — found that <em>56% of CEOs report zero measurable revenue or cost benefits from their AI investments</em>. Only 12% have unlocked both. Those 12% are two to three times more likely to have embedded AI across the enterprise, not just bolted it onto a few teams. The divide isn't between companies that use AI and companies that don't. It's between companies that changed how they work and companies that bought a tool.",
+          slants: {
+            strategy:   "If your organization can't measure AI's return yet, the next budget conversation gets harder. Start connecting AI projects to specific, measurable outcomes now — before someone else asks the question.",
+            operations: "The 12% seeing returns embedded AI into how they actually operate, not as a sidecar. That integration work is where your value lives.",
+            pm:         "AI projects that can't show ROI lose funding. Build measurement into your project plan from day one — not as a post-mortem exercise.",
+            admin:      "If AI is saving you real time, document it. 'This used to take 3 hours, now it takes 45 minutes' is exactly the data leadership needs to justify the investment."
+          },
+          challenge: {
+            steps: [
+              "Think of one task or workflow where AI has clearly saved your team time in the last month.",
+              "Open your company-approved AI tool and add this prompt: <em>\"Help me estimate the ROI of using AI for [describe the task]. Ask me what it cost in time before, what it costs now, and how often we do it — then calculate the annual value in hours saved.\"</em>",
+              "Look at the number. Even a rough estimate puts you ahead of most teams, who have no number at all.",
+              "Share your estimate in the group — the patterns across roles are where the real insight shows up."
+            ]
+          }
+        },
+        {
+          title: "Your AI-polished emails might be costing you trust",
+          source_url: "https://www.marshall.usc.edu/news/ai-assisted-emails-may-put-trustworthiness-at-risk-in-workplace-communications",
+          body: "A study of 1,100 professionals by researchers at the University of Florida and USC found a paradox in AI-assisted workplace communication: the more AI polishes your message, the less sincere you sound. <em>Only 40–52% of employees viewed managers as sincere when their emails were heavily AI-assisted, compared to 83% when minimal AI was used.</em> Grammar fixes are fine — employees accept that level of help. But when AI shapes the substance of a message, especially praise, feedback, or motivation, people notice. And they trust the sender less for it.",
+          slants: {
+            strategy:   "Your communications set the tone for the team. AI can help you draft faster, but the messages that build trust — recognition, hard feedback, vision-setting — need your voice.",
+            operations: "When you're delivering a tough operational call or relaying feedback, the extra minute of writing it yourself buys more credibility than a perfectly structured AI draft.",
+            pm:         "Status updates and project reports are fair game for AI help. But when you're motivating a tired team or delivering hard news, your own words land differently.",
+            admin:      "If a message from leadership feels oddly generic or overly polished, trust that instinct. And when you write messages that matter — thank-yous, difficult ones — keep them in your voice."
+          },
+          challenge: {
+            steps: [
+              "Find one message you sent recently where you used AI to help draft it — or pick one you'd typically reach for AI to write.",
+              "Open your company-approved AI tool and try: <em>\"Here's a message I wrote with AI help: [paste it]. Rewrite it in a warmer, more personal tone — as if I were speaking directly to this person over coffee. Keep it short and make it sound like a real human, not a template.\"</em>",
+              "Compare the two versions. Notice what the polished version gained in structure and what it lost in warmth.",
+              "Share your observation in the group — when does AI help your communication, and when does it flatten it?"
+            ]
+          }
+        },
+        {
+          title: "AI moved the bottleneck — from producing the work to reviewing it",
+          source_url: "https://www.thoughtworks.com/en-us/insights/blog/generative-ai/paradox-acceleration-overcoming-ai-decision-fatigue-bottlenecks",
+          body: "Thoughtworks is tracking a pattern across their enterprise clients they call the paradox of acceleration: <em>AI speeds up production, but the review, approval, and validation systems downstream weren't built for the new volume</em>. Teams produce more drafts, more options, more analysis — then spend longer auditing, comparing, and choosing than they ever spent creating from scratch. The work didn't disappear. It moved from the hands to the judgment layer.",
+          slants: {
+            strategy:   "If AI is speeding up your team's output but decisions still move at the same pace, the bottleneck shifted — and so should your attention.",
+            operations: "The approval process that worked at human speed can't absorb AI speed. Redesign how your team validates work before the queue backs up.",
+            pm:         "When AI compresses the build phase, the review phase becomes the critical path. Faster production doesn't mean faster delivery unless you adjust the whole timeline.",
+            admin:      "If you're spending more time checking AI output than you used to spend creating it yourself, you're not imagining things. The work moved — it just moved to you."
+          },
+          challenge: {
+            steps: [
+              "Think of one task where AI now produces the first draft for you — a report, a set of talking points, an analysis.",
+              "Estimate honestly: how much time do you spend reviewing, editing, and validating that AI output before it's ready to use?",
+              "Open your company-approved AI tool and try: <em>\"I use AI to draft [describe the task], but I spend about [X minutes] reviewing and editing each time. Give me three specific ways to reduce my review time without lowering quality — focus on how I write the initial request.\"</em>",
+              "Try the most practical suggestion this week and share the result in the group — this is one of those problems that gets better when people compare notes."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Your electric bill just arrived higher than expected — let AI figure out why.",
+        body: "Summer bills have a way of surprising you. Instead of just paying it and moving on, use any free AI tool (ChatGPT, Claude, Gemini, or Perplexity) to understand where the money is actually going:",
+        prompt: "\"Here's what I know about my home and energy use: [describe your home — type, approximate size, AC habits, number of people, any known energy hogs like an old fridge or a home office running all day]. Give me the 5 most likely reasons my summer electric bill is high, ranked from most expensive to least. For each one, explain why it costs what it does — not just 'use less AC,' but what's actually happening and how much it's probably adding. Then tell me the single cheapest fix I could do this week.\"<br><br>The technique — <em>asking AI to explain its reasoning, not just give you recommendations</em> — is one of the simplest upgrades to any prompt. 'Lower your thermostat' is generic advice. 'Your AC cycles more often because...' is knowledge you can act on. Try adding 'explain why' to your next AI request and watch the quality jump."
+      }
+    },
     "2026-07-26": {
       intro: "Sunday. A quieter day to look at the bigger picture — who's gaining ground in the AI economy, who's quietly shouldering the load, and what the tools saving your time are costing in return.",
       trends: [
