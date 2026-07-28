@@ -968,6 +968,73 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-07-28": {
+      intro: "Tuesday's three share a thread: what matters most in an AI era — at the career level, the skill level, and the team level — keeps pointing back to human judgment.",
+      trends: [
+        {
+          title: "The job market is splitting into two tracks — and judgment is the divider",
+          source_url: "https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-jobs-barometer.html",
+          body: "PwC's 2026 Global AI Jobs Barometer analyzed over a billion job ads across six continents and found the labor market splitting into two distinct paths. <em>\"Professionalised\" roles — where AI handles routine work so human judgment takes center stage — are seeing twice the job growth and 42% faster salary increases</em> than \"democratised\" roles where AI simplifies tasks for non-experts. The new tasks added to AI-exposed roles are 2.5 times more likely to require skills like empathy, judgment, and creativity.",
+          slants: {
+            strategy:   "Map which positions on your team sit on which track — the ones built around judgment calls are your most defensible investments.",
+            operations: "If your role involves coordinating across systems and making calls on exceptions, that context is what AI can't replicate.",
+            pm:         "Scope, trade-offs, and stakeholder alignment are judgment-heavy work — those skills are gaining value, not losing it.",
+            admin:      "Your ability to read a room, know what the exec actually meant, and route things correctly is exactly the human judgment earning a premium."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool.",
+              "Try this prompt: <em>\"I work as a [your role]. PwC found the job market is splitting into roles where AI amplifies human judgment and roles where AI simplifies the task for anyone. Which track is my role on? List three parts of my job that are judgment-heavy and three that are routine.\"</em>",
+              "Read the split. Does it match how you actually spend your time?",
+              "Share your split in the group — which category surprised you?"
+            ]
+          }
+        },
+        {
+          title: "Half of organizations will soon test whether you can think without AI",
+          source_url: "https://www.gartner.com/en/newsroom/press-releases/2025-10-21-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2026-and-beyond",
+          body: "Gartner predicts that through 2026, <em>50% of organizations will require \"AI-free\" skills assessments</em> — evaluations where candidates and employees prove they can reason without AI assistance. The concern: professionals who delegate analysis to AI daily are showing reduced capacity for independent reasoning when those tools become unavailable. The counter-signal is encouraging — Coursera's 2026 Job Skills Report found <em>Critical Thinking enrollments surged 185% among GenAI learners</em>, suggesting the sharpest AI users already see independent thinking as the skill to protect.",
+          slants: {
+            strategy:   "Build \"reasoning without AI\" into your team's development plan now, before it shows up in your next performance review framework.",
+            operations: "If your team can't troubleshoot a process failure without reaching for AI first, that's a single point of failure worth addressing.",
+            pm:         "A team that can't evaluate AI output critically will ship polished work with hidden flaws — that's worse than slow work.",
+            admin:      "Your years of hands-on experience are a thinking baseline that newer hires may not have. That institutional memory matters more now, not less."
+          },
+          challenge: {
+            steps: [
+              "Think of one task you've started relying on AI for regularly — summarizing, drafting, analyzing, anything.",
+              "Open your company-approved AI tool and ask: <em>\"I use AI most often for [describe the task]. If I relied on you for this every single time, what specific thinking skill would I risk losing? Be honest.\"</em>",
+              "Read the answer. Does it name something you've already noticed getting rustier?",
+              "Share one thinking skill you're going to keep exercising manually — and why — in the group."
+            ]
+          }
+        },
+        {
+          title: "AI is making individuals faster and teams more fragmented",
+          source_url: "https://www.atlassian.com/blog/state-of-teams-2026",
+          body: "Atlassian's State of Teams 2026, surveying over 12,000 knowledge workers and 173 Fortune 1000 executives, found a paradox: <em>85% of knowledge workers now use AI, but only 29% have embedded it into their team workflows</em>. The result is what Atlassian calls a \"fragmentation tax\" — 75% of employees observe duplicated work across their organization, and <em>only 4% of companies report seeing actual AI ROI</em>. Individual speed without team coordination isn't productivity. It's expensive chaos.",
+          slants: {
+            strategy:   "The next AI conversation in your org should be less about individual tools and more about how teams stay aligned when everyone is producing faster.",
+            operations: "If three people on your team are using AI to build the same analysis independently, the duplication is costing more than the speed saves.",
+            pm:         "Individual AI productivity without shared visibility creates scope creep, duplicated deliverables, and misaligned priorities — classic PM problems at AI speed.",
+            admin:      "You often see what's being duplicated before anyone else does. Flagging overlapping work early is a coordination skill that gets more valuable as AI speeds everything up."
+          },
+          challenge: {
+            steps: [
+              "Think about a recent project where multiple people on your team used AI for related tasks — drafting, analyzing, summarizing.",
+              "Open your company-approved AI tool and ask: <em>\"My team of [size] recently worked on [describe project]. Each person used AI individually. What are three ways duplicated effort might have crept in, and how could we coordinate AI use as a team next time?\"</em>",
+              "Read the suggestions. Pick the one that would have saved the most time.",
+              "Share your coordination idea in the group — this problem gets easier when teams compare notes."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Tonight, let AI reverse-engineer a savings goal you've been putting off.",
+        body: "Pick something you've been meaning to save for — a trip, a new laptop, a holiday fund, whatever's been sitting in the back of your mind — and try this in ChatGPT, Claude, Gemini, or Perplexity. The technique: instead of asking for generic advice, give AI a specific number and a deadline and let it work backward.",
+        prompt: "\"I want to save [amount] for [goal] by [date]. I currently set aside about [amount/month]. Work backward from my deadline: tell me exactly how much I need each month, whether I'm on track, and give me three concrete ways to close the gap if I'm short — ranked from easiest change to biggest impact.\"<br><br>The technique here — <em>giving AI a specific target and a deadline, then asking it to work backward</em> — turns vague goals into real plans. It works for anything: fitness milestones, career goals, home projects. Deadlines get plans. Wishes get platitudes."
+      }
+    },
     "2026-07-27": {
       intro: "Monday reset. Three things worth carrying into this week — about the returns most companies aren't seeing, the trust they're losing one polished email at a time, and the bottleneck that moved when nobody was looking.",
       trends: [
