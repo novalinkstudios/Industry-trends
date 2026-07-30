@@ -968,6 +968,79 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-07-30": {
+      intro: "Thursday. This week's throughline is momentum: AI is widening what any one person can do, while the money and tooling race to keep pace — every signal an opening you can step into.",
+      trends: [
+        {
+          title: "Your role just got bigger, in the best way",
+          source_url: "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work/",
+          body: "AI is quietly widening what one person can take on. A new OpenAI study of more than 800,000 workplace ChatGPT messages found that <em>43.5% of job-specific AI requests involve tasks that traditionally belong to a different role (OpenAI)</em> — designers running analysis, marketers drafting code, support staff shaping policy. The skills next to yours are suddenly within reach.",
+          slants: {
+            strategy: "The advantage now belongs to people who stretch across boundaries, so map where your team's adjacent skills overlap and encourage the crossover before your competitors formalize it.",
+            leaders: "Your team can suddenly reach into work that used to require a specialist, so your edge is deciding which cross-role moves to encourage and pairing people to learn faster together.",
+            operations: "You can now own more of a workflow end to end instead of waiting on a handoff, turning what used to be a queue into something you finish yourself.",
+            pm: "Reaching confidently into design, analysis, or copy means fewer dependencies to chase and more of the project you can move forward single-handedly, expanding your influence.",
+            admin: "The adjacent skills you pick up — a quick analysis, a polished draft, a sharp summary — make you visibly more valuable across every team you support."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool and name one task you usually hand off to a specialist, like a data cut or a design tweak.",
+              "Paste this prompt: <em>\"I want to try doing this myself with your help: [describe the task]. Walk me through it step by step and produce a first version I can refine.\"</em>",
+              "Review what it produces and note the one part that felt genuinely new to you.",
+              "Paste this follow-up: <em>\"Explain the reasoning behind that step so I can do it confidently on my own next time, and give me a short checklist.\"</em>",
+              "Share with the group one skill you reached into this week that used to feel outside your lane."
+            ]
+          }
+        },
+        {
+          title: "The engine behind your AI tools just scaled up",
+          source_url: "https://www.cnbc.com/2026/07/28/meta-blackrock-partner-on-14-billion-el-paso-data-center.html",
+          body: "The infrastructure powering everyday AI is expanding fast. Meta and BlackRock just formed a venture to build a <em>$14 billion, 1-gigawatt AI data center campus in El Paso, set to come online in 2028 (CNBC)</em>. Translation: the assistants you already rely on are on track to get faster, cheaper, and more capable, with the raw capacity to back it up.",
+          slants: {
+            strategy: "Capacity at this scale means AI costs keep falling, so plan now for what becomes affordable to automate next year rather than budgeting only for today's prices.",
+            leaders: "Cheaper, more capable AI is coming whether or not you plan for it, so the leaders who sketch out what their team will do with that headroom get to shape the upside first.",
+            operations: "As compute gets cheaper, the tasks too slow or costly to automate today open up, so keep a running list of what you'd hand off the moment it becomes practical.",
+            pm: "More capacity means the AI features baked into your tools keep improving mid-project, so revisit what's newly possible before you scope your next plan.",
+            admin: "The tools you use daily will keep getting quicker and smarter on the same subscription, quietly compounding the time you save every week."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool and pick one task you skipped automating before because it felt too slow or clunky.",
+              "Paste this prompt: <em>\"Here is a task I do regularly: [describe it]. Show me the fastest way to do it with you today, start to finish.\"</em>",
+              "Run through the steps it suggests and time how long the task now takes.",
+              "Paste this follow-up: <em>\"Now turn this into a repeatable routine I can reuse each time, with the exact prompts to paste.\"</em>",
+              "Share the reusable routine with your group so someone else can reclaim the same time."
+            ]
+          }
+        },
+        {
+          title: "AI teammates are showing up inside your software",
+          source_url: "https://www.digitalapplied.com/blog/ai-agent-adoption-2026-enterprise-data-points",
+          body: "You won't have to go hunting for AI — it's arriving inside the apps you already open. <em>80% of enterprise applications shipped or updated in early 2026 now embed at least one AI agent, up from 33% in 2024 (Digital Applied)</em>. Every tool on your screen is quietly gaining a capable teammate, no new login required.",
+          slants: {
+            strategy: "When agents ship as a standard feature of software you already own, the win goes to leaders who inventory those built-in capabilities and put them to work before the next budget cycle.",
+            leaders: "You can expand what AI does for your team using tools you've already paid for, so make it a habit to ask what new agent features each app added this quarter.",
+            operations: "Agents living inside your existing apps mean automation without a migration, so try the built-in helper on your most repetitive task this week.",
+            pm: "Embedded agents can take on status nudges, summaries, and follow-ups, freeing you to run more threads at once without dropping any of them.",
+            admin: "The software you already navigate better than anyone is gaining assistants you can master first, making you the go-to person when the rest of the team catches up."
+          },
+          challenge: {
+            steps: [
+              "Pick one app you use daily and open your company-approved AI tool alongside it.",
+              "Paste this prompt: <em>\"I use [name the app] every day for [task]. What AI or agent features does it likely have now, and how would I start using them?\"</em>",
+              "Explore the app's menus and settings to find the built-in AI feature it points you to.",
+              "Paste this follow-up: <em>\"Give me three specific ways to use that built-in feature to save time on my weekly work, with an example for each.\"</em>",
+              "Share with the group which hidden feature you found and what it now does for you."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Plan a weekend outing without the back-and-forth",
+        body: "This one practices structured output — telling the AI the exact format you want back so you get a usable answer instead of a wall of text. When you specify the columns, order, and detail up front, the response comes ready to act on:",
+        prompt: "\"Plan a relaxed one-day outing for me. Return it as a simple hour-by-hour schedule with three columns: time, activity, and a one-line why. Keep it to a single day and assume a budget-friendly pace. Here are the details: [paste your city, who's coming, and what you enjoy here].\"<br><br>The technique — <em>specifying the exact format you want back</em> — turns a vague answer into something you can act on immediately. Try adding \"return it as a table with these columns\" to your next request and watch how much more usable the response gets."
+      }
+    },
     "2026-07-29": {
       intro: "Today's stories all point to the same shift: AI is redrawing the org chart, exposing the gap between deploying a tool and actually getting value from it, and turning the job search itself into an AI-versus-AI contest.",
       trends: [

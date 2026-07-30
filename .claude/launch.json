@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "industry-trends",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8761"],
+      "port": 8761
+    }
+  ]
+}
