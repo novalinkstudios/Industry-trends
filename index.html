@@ -968,6 +968,79 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-07-30": {
+      intro: "Three stories today about the messy middle of AI adoption — the tools are live, but the playbooks for governing, securing, and learning them are still catching up.",
+      trends: [
+        {
+          title: "One-size-fits-all AI governance is setting companies up to fail",
+          source_url: "https://www.gartner.com/en/newsroom/press-releases/2026-05-26-gartner-says-applying-uniform-governance-across-ai-agents-will-lead-to-enterprise-ai-agent-failure",
+          body: "Gartner predicts that by 2027, <em>40% of enterprises will demote or decommission autonomous AI agents</em> because governance gaps surfaced only after production incidents. The root cause: treating every agent the same. Over-restrict a simple chatbot and teams build workarounds; under-restrict an autonomous agent and you get a security incident. Gartner recommends proportional governance — classifying agents by autonomy level and matching controls to each tier.",
+          slants: {
+            strategy:   "If your AI governance policy is a single document that covers every use case, it's already outdated — push for a tiered framework before agents hit production.",
+            leaders:    "The 40% demote-or-decommission prediction is a leadership problem, not a tech problem. Proportional governance starts with you defining what each tool is allowed to do on its own.",
+            operations: "Ops teams usually inherit the access-control headache. Push for clear autonomy tiers now so you're not firefighting after a production incident.",
+            pm:         "Add a governance tier field to your AI project tracker — it forces the conversation about trust boundaries before launch, not after.",
+            admin:      "When someone asks you to set up access for a new AI tool, asking what it can do without human approval surfaces the governance gap no one else thought to raise."
+          },
+          challenge: {
+            steps: [
+              "List two or three AI tools your team uses today — even simple ones like a chatbot, a summarizer, or a copilot.",
+              "For each tool, write down what it can do without a human approving: can it send messages? Access shared data? Make changes to a document?",
+              "Open your company-approved AI tool and try this prompt: <em>\"I have three AI tools with different levels of autonomy. Help me create a simple governance tier — Low, Medium, High — based on what each tool can do without human approval.\"</em>",
+              "Review the tiers and adjust based on what you know about your team's actual policies.",
+              "Share your draft tier in the group — it's a useful starting point for anyone managing AI tools."
+            ]
+          }
+        },
+        {
+          title: "Shadow AI just became the third most common insider risk — and banning it won't help",
+          source_url: "https://www.techtimes.com/articles/318438/20260615/shadow-ai-cybersecurity-risk-spikes-45-workers-use-unsanctioned-tools.htm",
+          body: "Shadow AI detections rose fourfold in one year. <em>45% of employees now use unsanctioned AI tools on corporate devices</em>, making it the third most common non-malicious insider action in Verizon's 2026 Data Breach Investigations Report. The reason is straightforward: in most organizations, no approved alternative matches the speed of the free ones. Employees aren't being reckless — they're solving real problems with whatever works fastest.",
+          slants: {
+            strategy:   "Shadow AI is a demand signal, not just a risk — track what employees are using unauthorized tools for and you'll find the gaps in your approved stack.",
+            leaders:    "Banning tools your team already relies on creates compliance theater. The faster move is closing the gap between what's sanctioned and what people actually need.",
+            operations: "Every shadow AI workaround is a process bottleneck your team solved on their own. Document those workarounds before locking them down.",
+            pm:         "If your project team is quietly using an unapproved tool to move faster, that's a requirements gap worth naming in your next sprint.",
+            admin:      "You're often the first to notice when someone starts using a new tool — that early signal is more valuable to IT than any quarterly audit."
+          },
+          challenge: {
+            steps: [
+              "Think about the last time you used an AI tool at work — even something quick like rephrasing an email or summarizing a long thread.",
+              "Write down: was it the company-approved tool, or something else? If something else, why?",
+              "Open your company-approved AI tool and try this prompt: <em>\"List the top five things office workers use AI for every day. Then ask me, one at a time, whether my company's approved tools cover each one.\"</em>",
+              "Note any gaps where the approved tool doesn't cover a real need.",
+              "Share one gap you found in the group — it helps the whole community advocate for better tools, not more rules."
+            ]
+          }
+        },
+        {
+          title: "The AI skills gap is real — but it closes faster than most people expect",
+          source_url: "https://www.prnewswire.com/news-releases/only-13-of-enterprise-employees-possess-the-critical-skills-to-understand-and-work-with-ai-agents-workera-report-finds-302777709.html",
+          body: "Workera's 2026 AI Skills Benchmark, based on over 88,000 assessments, found that <em>only 13% of employees are proficient in agentic AI skills before any training</em> — the lowest score across all 14 AI capabilities measured. But after targeted upskilling, 81% of employees reach proficiency in responsible AI practices. The gap isn't about aptitude. It's about exposure — and structured training closes it fast.",
+          slants: {
+            strategy:   "The bottleneck isn't talent — it's training design. A structured upskilling program delivers more AI-ready staff than any hiring spree.",
+            leaders:    "The 13%-to-81% jump is your business case for training investment. Show this data the next time someone proposes hiring over developing the team you already have.",
+            operations: "Your team already has the operational judgment; they just need structured exposure to AI tools to pair it with the right skills.",
+            pm:         "Build an AI skills baseline into your project kickoff — knowing where your team starts helps you set realistic timelines for AI-assisted work.",
+            admin:      "You don't need to become a technologist. Targeted training on the tools you already touch closes the gap faster than you'd expect."
+          },
+          challenge: {
+            steps: [
+              "Rate your own comfort with AI tools on a scale of 1 to 5, where 1 is 'never used one' and 5 is 'use them daily with confidence.'",
+              "Pick one AI skill you've been curious about — prompting, summarizing long documents, generating first drafts, or comparing options.",
+              "Open your company-approved AI tool and try this prompt: <em>\"I'm a [your role] and I rate my AI comfort at [your number] out of 5. Give me one 10-minute exercise I can do right now to move up one level.\"</em>",
+              "Do the exercise. Time yourself — it really is 10 minutes.",
+              "Share your before-and-after comfort rating in the group and what exercise you tried."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Tonight, write a note you've been meaning to send.",
+        body: "We all have someone we've been meaning to thank, congratulate, or check in on. AI is surprisingly good at helping you find the right words — especially when you give it options to compare. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
+        prompt: "\"I want to write a short, heartfelt note to [person — a friend, parent, mentor, old colleague]. The occasion is [thank-you / congratulations / just checking in / encouragement]. Write three versions: one warm and casual, one sincere and slightly formal, and one short and punchy. Then tell me which one you'd send and why.\"<br><br>Comparing three versions side by side teaches you something no single draft can: <em>how tone changes meaning</em>. That's a skill that transfers directly to any writing you do."
+      }
+    },
     "2026-07-29": {
       intro: "Today's stories all point to the same shift: AI is redrawing the org chart, exposing the gap between deploying a tool and actually getting value from it, and turning the job search itself into an AI-versus-AI contest.",
       trends: [
