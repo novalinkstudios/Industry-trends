@@ -968,6 +968,80 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-07-31": {
+      intro: "Friday. Three patterns worth sitting with this weekend: the most AI-fluent workers are the most connected to their teams, the wage premium for AI skills keeps climbing, and most people using AI still don't feel ready.",
+      trends: [
+        {
+          title: "The heaviest AI users at work are also the most connected to their teams",
+          source_url: "https://www.gensler.com/press-releases/global-workplace-survey-2026",
+          body: "A survey of 16,400 office workers across 16 countries found something worth knowing: <em>AI power users spend less time working alone and report stronger team relationships than their peers</em> (Gensler, 2026). They devote 12% of their workweek to learning versus 8% for everyone else, and they report more meaningful friendships at work. AI isn't isolating people — it's freeing up time for the human parts.",
+          slants: {
+            strategy:   "If your planning team worries AI will erode collaboration, this data says the opposite — the people using it most are also investing the most in their teams.",
+            leaders:    "Encouraging AI adoption isn't a tradeoff against team culture — the data says the two actually grow together.",
+            operations: "The time AI saves on routine work isn't vanishing — power users are reinvesting it in learning and cross-team connection.",
+            pm:         "The team members who are strongest with AI are also spending more time learning and socializing — that's your bench for leading cross-functional work.",
+            admin:      "Using AI consistently doesn't mean working in a silo — it means having more room for the relationships that make your role essential."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool and pick one repetitive task you did this week — a status update, a summary, a scheduling thread.",
+              "Use this prompt: <em>\"Help me draft [describe the task] in half the time I usually spend on it. Keep it concise and ready to send.\"</em>",
+              "Time yourself and note how many minutes you saved compared to doing it from scratch.",
+              "Use that saved time today for one human interaction you've been putting off — a check-in, a quick coffee chat, a follow-up.",
+              "Share in the group what you reclaimed time for and whether the AI-drafted version was good enough to send."
+            ]
+          }
+        },
+        {
+          title: "AI skills now carry a 62% wage premium — and entry-level jobs are feeling it most",
+          source_url: "https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-jobs-barometer.html",
+          body: "PwC's 2026 Global AI Jobs Barometer analyzed over a billion job ads across 27 countries. The finding: <em>the average wage premium for AI skills has climbed to 62%, and entry-level roles in AI-exposed fields are now 7 times more likely to require traditionally senior-level skills like judgment and leadership</em>. The bar isn't rising for specialists alone — it's rising for everyone.",
+          slants: {
+            strategy:   "A 62% wage premium tells you where the market values investment — build AI fluency into your team's development plans now, not after the next reorg.",
+            leaders:    "The premium rewards judgment and leadership wrapped around AI, not just technical skill — exactly the combination you can model for your team.",
+            operations: "Entry-level roles now expect the kind of judgment you've built over years — your experience is becoming more valuable, not less, if you pair it with AI fluency.",
+            pm:         "If your junior team members are being asked for judgment-level skills at hire, make sure your own skill set is growing at least as fast.",
+            admin:      "The same report shows human skills like judgment and context are driving the premium — the things you do every day are worth more, not less."
+          },
+          challenge: {
+            steps: [
+              "Open a blank document or note and list the three skills you rely on most in your current role.",
+              "Open your company-approved AI tool and paste this prompt: <em>\"Here are three skills I use daily: [list them]. For each one, tell me how AI changes the way this skill is valued in the job market — is it more valuable, less valuable, or different? Be specific.\"</em>",
+              "Read the response and mark one skill where AI makes your existing experience more valuable.",
+              "Paste this follow-up: <em>\"For the skill you said is more valuable, give me one concrete way to demonstrate it in my current role this month.\"</em>",
+              "Share your top skill and the one action you're taking with the group."
+            ]
+          }
+        },
+        {
+          title: "86% of employees use AI at work — only 24% feel ready for it",
+          source_url: "https://www.skillsoft.com/press-releases/skillsoft-workforce-readiness-report-ai-edition",
+          body: "Skillsoft's 2026 Workforce Readiness Report found the gap everyone senses but nobody names: <em>86% of employees now use AI tools at work, but only 24% feel fully equipped to use them well</em>. Meanwhile, 77% of leaders believe they've set their teams up for success — a 53-point gap between what leadership sees and what employees experience.",
+          slants: {
+            strategy:   "That 53-point perception gap is a planning problem — if leadership thinks readiness is handled, no one is budgeting for the enablement work that actually closes it.",
+            leaders:    "Your team may be using AI without telling you they're struggling — close the gap by asking how confident they feel, not just whether they've logged in.",
+            operations: "Only 11% of employees get formal skills assessments, which means most ops teams are flying blind on who can actually use the tools they've been given.",
+            pm:         "Adoption metrics don't capture confidence. Add a 'how comfortable are you with this tool?' check to your next project retro.",
+            admin:      "If you feel like you're figuring out AI on your own, you're in the 76% majority. The gap is real, and naming it is the first step."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool and think about one AI feature you use regularly but don't feel fully confident with.",
+              "Paste this prompt: <em>\"I use [name the tool or feature] but I'm not fully confident with it yet. Give me a 10-minute tutorial: what it does, the three most useful things I can do with it, and one common mistake to avoid.\"</em>",
+              "Try the most useful thing it suggests right now — run through it once with a non-sensitive task.",
+              "Paste this follow-up: <em>\"Now give me a one-page cheat sheet I can keep open while I work — the key commands, shortcuts, or prompts I'll use most often.\"</em>",
+              "Share your cheat sheet with the group — odds are someone else uses the same tool and wants the same help."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Build yourself a Friday night playlist — and teach AI your taste along the way.",
+        body: "Most playlist generators give you generic results because you give them generic input. Tonight, try a technique that fixes that: seed examples. Instead of saying 'make me a playlist,' hand AI specific songs you love and let it find the thread. Use any free AI tool (ChatGPT, Claude, Gemini, or Perplexity):",
+        prompt: "\"Here are five songs I keep coming back to: [list them with artist names]. Figure out what connects them — not just genre, but mood, tempo, and energy. Then build me a 15-song playlist that fits the same pattern but introduces me to artists I haven't heard. For each pick, tell me in one line why it fits.\"<br><br>The technique — <em>giving AI concrete examples instead of abstract descriptions</em> — works for more than music. Try it next time you need recommendations for books, restaurants, or even project approaches. The more specific your seeds, the sharper the output."
+      }
+    },
+
     "2026-07-30": {
       intro: "Thursday. This week's throughline is momentum: AI is widening what any one person can do, while the money and tooling race to keep pace — every signal an opening you can step into.",
       trends: [
