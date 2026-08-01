@@ -968,6 +968,77 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-08-01": {
+      intro: "Saturday. Three data points that share a through line: the organizations and individuals pulling ahead with AI aren't the ones with the best tools — they're the ones with the clearest thinking.",
+      trends: [
+        {
+          title: "AI is in 57% of core processes now — only 9% of companies are seeing real results",
+          source_url: "https://www.kyndryl.com/us/en/about-us/news/2026/06/ai-adoption-workforce-readiness",
+          body: "Kyndryl's 2026 People Readiness Report surveyed over 2,000 leaders worldwide: <em>57% say AI is embedded in core business processes, up from 35% a year ago — but only 11% have achieved both of their top AI goals</em>. The 9% that are hitting their marks, dubbed \"Pacesetters,\" share one thing: they redesigned roles around AI instead of bolting AI onto unchanged jobs. The tool isn't the bottleneck. The job description is.",
+          slants: {
+            strategy:   "If your strategy deck says \"deploy AI\" but your org chart still looks like 2023, start there — the Pacesetters rewired roles first, tools second.",
+            leaders:    "The 9% succeeding aren't spending more on AI. They're spending differently — on change management and role redesign, not just licenses.",
+            operations: "Bolting AI onto an unchanged workflow saves time in the wrong places. The ops teams winning are rethinking which steps exist at all.",
+            pm:         "If your project plan has an \"AI implementation\" phase but no \"role redesign\" phase, the Kyndryl data says you're in the 91%.",
+            admin:      "The finding that matters for you: organizations that redesigned roles saw 1.5x more revenue growth. Your role is changing — make sure you're shaping how."
+          },
+          challenge: {
+            steps: [
+              "Pick one recurring task in your role that you do mostly the same way every time — a report, a review, a coordination sequence.",
+              "Open your company-approved AI tool and paste this: <em>\"I currently do [describe the task and its steps]. If AI could handle any part of this, which steps should change, which should disappear, and what new steps should I add to make the output better? Don't just speed up my current process — redesign it.\"</em>",
+              "Read the response and identify one step you'd never thought to eliminate.",
+              "Share in the group: what's one part of your workflow that AI didn't just speed up — it made unnecessary?"
+            ]
+          }
+        },
+        {
+          title: "A field experiment proved it: AI helps top performers and hurts the rest",
+          source_url: "https://sloanreview.mit.edu/article/how-ai-helps-the-best-and-hurts-the-rest/",
+          body: "Researchers gave hundreds of small business owners access to an AI adviser and tracked what happened. The result: <em>AI boosted revenue by 15% for high performers — but caused a nearly 10% decline for those already struggling</em>. The difference wasn't the tool. It was whether the person had the judgment to tell good AI advice from bad. The encouraging part: judgment is a skill, not a talent. It's built by doing.",
+          slants: {
+            strategy:   "AI amplifies whatever's already there — strong analysis gets sharper, weak assumptions get louder. Pressure-test your inputs before you trust the output.",
+            leaders:    "This is your case for investing in critical thinking alongside AI tools — one without the other doesn't just underperform, it can backfire.",
+            operations: "Your experience filtering bad information has always been valuable. With AI, it's worth 25 percentage points of performance difference.",
+            pm:         "When your team uses AI to draft a plan or estimate, the value isn't the draft — it's whether anyone pushed back on it before it shipped.",
+            admin:      "If you've ever caught an error because something \"didn't look right,\" that instinct is exactly the skill this study says matters most."
+          },
+          challenge: {
+            steps: [
+              "Pick a question you'd normally research yourself — a vendor comparison, a process decision, a recommendation for your team.",
+              "Ask your company-approved AI tool to answer it, then paste this follow-up: <em>\"Now argue against your own recommendation. What are the strongest reasons this advice could be wrong?\"</em>",
+              "Read both responses. Identify one assumption in the original answer that the counter-argument exposed.",
+              "Share in the group: what did AI get wrong on the first pass — and how did you catch it?"
+            ]
+          }
+        },
+        {
+          title: "The fastest-growing enterprise skill isn't an AI tool — it's decision-making",
+          source_url: "https://about.udemy.com/press-releases/2026-global-learning-skills-trends-report/",
+          body: "Udemy's 2026 learning data from 17,000+ enterprise customers tells a story most people wouldn't guess: <em>decision-making skill consumption grew 38% year over year, and critical thinking grew 37% — outpacing any single AI tool</em>. Adaptive skills overall are up 25%. The market isn't just demanding AI fluency. It's demanding the human skills that make AI fluency worth having.",
+          slants: {
+            strategy:   "The market is pricing decision-making above tool mastery. Build that into your team's development plan — AI courses alone don't close the gap.",
+            leaders:    "If your L&D budget is 100% AI tools and 0% judgment skills, this data says you're investing in the denominator, not the multiplier.",
+            operations: "The ops skills that feel invisible — knowing which data to trust, which exceptions matter, when to escalate — are exactly what's growing fastest in market value.",
+            pm:         "Frameworks for making decisions under uncertainty are growing faster than any project tool. Invest in your own judgment, not just your toolkit.",
+            admin:      "Every time you use context and judgment to prioritize, route, or flag something, you're exercising the skill the market values most right now."
+          },
+          challenge: {
+            steps: [
+              "Think of a decision you made this week — even a small one, like how to prioritize competing requests or which meeting to reschedule.",
+              "Open your company-approved AI tool and paste: <em>\"Here's a decision I made: [describe it and what you chose]. Walk me through a structured decision framework I could have used. Then tell me: would the framework have changed my answer?\"</em>",
+              "Read the response and note whether the framework surfaced something your instinct missed — or confirmed your gut was right.",
+              "Share in the group: one decision framework the AI introduced you to, and whether you'll use it again."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Tonight, let AI build you a workout plan that actually fits your life.",
+        body: "Generic fitness plans fail because they ignore your constraints — your schedule, your space, your body, your motivation style. Tonight, try constraint-based prompting: give AI every limitation upfront and let it design around them. Use any free tool (ChatGPT, Claude, Gemini, or Perplexity):",
+        prompt: "\"I want to start a simple workout routine, but here are my real constraints: I have [X minutes] on [which days], I work out at [home/gym/park], I [have/don't have] equipment, and my biggest barrier is [energy/motivation/time/soreness/not knowing what to do]. Build me a realistic weekly plan that fits all of these — not a dream scenario. For each day, give me the exercises, reps, and rest times. Keep it under 30 minutes per session.\"<br><br>The technique — <em>listing your constraints before asking for a plan</em> — works for any kind of advice. The more specific your limits, the more useful the output. Try it next time you need a budget, a meal plan, or a project timeline."
+      }
+    },
+
     "2026-07-31": {
       intro: "Friday. Three patterns worth sitting with this weekend: the most AI-fluent workers are the most connected to their teams, the wage premium for AI skills keeps climbing, and most people using AI still don't feel ready.",
       trends: [
