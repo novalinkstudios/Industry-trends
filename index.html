@@ -968,6 +968,76 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-08-02": {
+      intro: "Sunday. Three signals heading into next week: AI anxiety just showed up in the data, learners are outpacing their employers, and access without readiness is the gap most companies haven't closed.",
+      trends: [
+        {
+          title: "Employee wellbeing just dropped below pandemic levels — and AI anxiety is a driver most leaders aren't seeing",
+          source_url: "https://www.mercer.com/insights/people-strategy/future-of-work/global-talent-trends/",
+          body: "Mercer's Global Talent Trends 2026, surveying nearly 12,000 executives, HR leaders, and employees worldwide, found a number that should stop every strategy leader cold: <em>only 44% of employees report they are thriving at work — down from 66% in 2024, and below pandemic-era levels</em>. A significant driver is what Mercer calls \"FOBO\" — fear of becoming obsolete. Employee concern about AI-related job loss jumped from 28% to 40% in two years. And the disconnect runs deep: <em>62% of employees say their leaders underestimate AI's emotional impact, yet only 19% of HR leaders factor that into their digital rollout plans</em>.",
+          slants: {
+            strategy:   "If your AI roadmap doesn't have a line item for what this does to people's confidence, you're planning for deployment but not for adoption.",
+            operations: "A team running on anxiety doesn't troubleshoot well, doesn't adopt new tools well, and doesn't flag problems early. Name the concern before it names itself.",
+            pm:         "Project adoption metrics miss the emotional layer entirely. Add a 'how confident are you with this tool?' check to your next retro — the honest answers will tell you more than login counts.",
+            admin:      "If you're feeling uneasy about AI, you're in the majority — 40% of the workforce shares that concern. Naming it is the first step to moving past it."
+          },
+          challenge: {
+            steps: [
+              "Think about your team's most recent AI tool rollout. Did anyone ask how people felt about it — not whether they logged in, but how they felt?",
+              "Open your company-approved AI tool and paste this prompt: <em>\"I manage a team that recently adopted new AI tools. Draft five specific, non-generic questions I could ask in a quick pulse check to understand how my team feels about AI — not just whether they're using it, but whether they're anxious, confident, or somewhere in between.\"</em>",
+              "Read the questions and pick the two that feel most honest and useful for your team.",
+              "Ask those two questions this week — in a 1:1, a team chat, or an anonymous form.",
+              "Share in the group what you learned. The answers will likely surprise you."
+            ]
+          }
+        },
+        {
+          title: "AI learners are surging at 14 enrollments per minute — and they're teaching themselves the hard skills too",
+          source_url: "https://www.coursera.org/skills-reports/job-skills",
+          body: "Coursera's 2026 Job Skills Report, drawn from over 6 million enterprise learners across nearly 7,000 organizations, shows AI learning isn't slowing down — it's accelerating. <em>GenAI enrollments rose 234% year-over-year, hitting 14 enrollments per minute — the most in-demand skill in Coursera's history</em>. But the surprise is what people are learning alongside it: <em>Critical Thinking enrollments surged 185% among GenAI learners</em>, suggesting the sharpest AI adopters already know that using the tool well means thinking well without it.",
+          slants: {
+            strategy:   "The demand signal is clear — people want to learn. If your org isn't offering structured AI learning paths, your most motivated people are building their own anyway.",
+            operations: "Ops teams that pair AI fluency with critical thinking will outperform those that just automate — because someone still has to catch what the automation misses.",
+            pm:         "When 234% more people are actively building AI skills, the talent bench for AI-enhanced projects is deeper than you think. Look for it.",
+            admin:      "If you've been learning AI on your own time, you're part of the fastest-growing skill movement in Coursera's history. That initiative is worth naming on your resume."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool and think of one skill you use daily that still feels manual — summarizing, analyzing, formatting, scheduling.",
+              "Paste this prompt: <em>\"I want to get better at using AI for [describe the skill]. Give me a 15-minute learning plan: what to try first, one technique to practice, and one common mistake to avoid. Keep it practical.\"</em>",
+              "Try the technique it suggests on a real, non-confidential task right now.",
+              "Paste this follow-up: <em>\"Now give me a short checklist I can use to critically evaluate the output — what should I look for before I trust it?\"</em>",
+              "Share your 15-minute learning plan with the group — someone else wants to learn the same thing."
+            ]
+          }
+        },
+        {
+          title: "Access to AI doubled in a year — readiness didn't follow",
+          source_url: "https://www.deloitte.com/global/en/issues/generative-ai/state-of-ai-in-enterprise.html",
+          body: "Deloitte's eighth annual State of AI in the Enterprise, surveying 3,235 senior leaders across 24 countries, shows a lopsided expansion: <em>workforce access to AI grew by 50% in a single year, reaching roughly 60% of workers equipped with sanctioned tools</em>. But the readiness scores tell a different story. <em>Talent readiness sits at just 20%, governance at 30%, and only one in four organizations has moved even 40% of its AI pilots into production</em>. Companies got the tools into people's hands. They didn't get the training, the guardrails, or the redesigned workflows into place alongside them.",
+          slants: {
+            strategy:   "Access without enablement is an unfunded promise. If your team has tools but no training plan, close that gap before the next budget review asks what the tools actually delivered.",
+            operations: "You're likely sitting on AI tools right now that nobody walked you through. Closing your own readiness gap — even informally — puts you ahead of most of the organization.",
+            pm:         "Add 'team AI readiness' as a real project dependency. A tool nobody knows how to use well is a risk, not an asset.",
+            admin:      "If you feel like you were handed a new tool with no instructions, you're in the majority. Ask for the training — or find it yourself and become the person who helps others."
+          },
+          challenge: {
+            steps: [
+              "List the AI tools your team currently has access to — including any built into apps like Copilot, Gemini, or embedded assistants.",
+              "For each tool, honestly rate your team's readiness on a 1–5 scale: 1 means 'we have it but nobody uses it,' 5 means 'we use it daily and trust the output.'",
+              "Open your company-approved AI tool and paste: <em>\"My team has access to these AI tools: [list them] with these readiness levels: [list your ratings]. For the lowest-rated tool, give me a 3-step onboarding plan I could run in a single team meeting.\"</em>",
+              "Pick the most practical suggestion and block 30 minutes on your calendar to try it.",
+              "Share your readiness ratings and your onboarding plan with the group — this is a problem that gets easier when teams compare notes."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Build a reading list that actually fits your life right now.",
+        body: "Sunday night is a good time to queue up something worth reading. But most book recommendations are generic because the request is generic. Tonight, try a technique that fixes that: tell AI to rank its picks by a criterion that matters to you. Use any free AI tool (ChatGPT, Claude, Gemini, or Perplexity):",
+        prompt: "\"I want to read more but I have about [X] minutes a day. Here's what I'm in the mood for: [describe it — e.g., 'something that changes how I think about work,' 'a novel I can't put down,' 'nonfiction that's practical, not preachy']. Give me 5 book recommendations, ranked by which one I'll actually finish given my time and mood. For each, tell me in one sentence why it fits and roughly how long it takes to read at my pace.\"<br><br>The technique — <em>asking AI to rank by a criterion that matters to you</em> — works far better than a plain 'recommend me books.' Try adding 'ranked by [what matters most to me]' to any recommendation request and you'll get answers shaped to your real life, not someone else's list."
+      }
+    },
     "2026-08-01": {
       intro: "Today's stories are about three different kinds of accounting: what your AI spend actually buys you, what AI quietly takes off your plate, and what you owe your future leaders if you skip the entry-level rungs on the way there.",
       trends: [
