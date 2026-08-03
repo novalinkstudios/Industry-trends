@@ -31,8 +31,9 @@ The routine runs once per day on Anthropic’s cloud (no local machine required)
 1. **Research** today’s three trends using web search (see §5 for sources).
 1. **Draft** the day’s entry following the structure in §3 and the voice rules in §4.
 1. **Insert** the new entry into `index.html` per §6.
+1. **Sync `drops.json`** — run `python generate_drop.py --sync` so downstream consumers stay current.
 1. **Validate** the file per §7.
-1. **Commit** on a new branch: `claude/daily-drop-YYYY-MM-DD`
+1. **Commit** on a new branch: `claude/daily-drop-YYYY-MM-DD` (commit both `index.html` and `drops.json`).
 1. **Open a Pull Request** following the format in §9.
 1. **Exit.** A human reviews and merges the PR. Netlify/Vercel auto-deploys on merge.
 
