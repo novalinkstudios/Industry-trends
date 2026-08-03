@@ -968,6 +968,79 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-08-03": {
+      intro: "Monday. Three things that landed over the weekend: most AI budgets are funding the wrong side of the equation, the biggest barrier to adoption turns out to be the most fixable, and a transparency law just went live.",
+      trends: [
+        {
+          title: "Ninety-three cents of every AI dollar is going to the wrong side of the ledger",
+          source_url: "https://www.deloitte.com/us/en/insights/topics/talent/human-capital-trends.html",
+          body: "Deloitte's 2026 Global Human Capital Trends, surveying more than 9,000 business and HR leaders across 89 countries, found a lopsided bet: <em>93% of AI investment is going to technology, and just 7% to people</em>. The result is predictable — <em>organizations taking a technology-first approach are 1.6x more likely to miss their AI return targets</em>. The tools are getting funded. The humans who use them aren't.",
+          slants: {
+            strategy:   "If your AI budget doesn't include training, workflow redesign, and change support, you're building a car and skipping driving lessons.",
+            leaders:    "The 93/7 split is a leadership decision, not a market condition. Redirecting even 15% of your AI spend toward enablement is the highest-leverage move most orgs haven't made.",
+            operations: "If you're running on tools that arrived without onboarding or documentation, that's not your gap to own — it's a budget allocation problem upstream.",
+            pm:         "When scoping an AI rollout, budget explicitly for training and adoption — projects that assume people will figure it out are the ones that stall after launch.",
+            admin:      "If the tools feel overwhelming, it's because the investment in helping you learn them hasn't caught up to the investment in buying them. Ask for the training."
+          },
+          challenge: {
+            steps: [
+              "List every AI tool your team has access to right now — including anything built into existing apps like Copilot, Gemini, or embedded assistants.",
+              "For each one, note whether you received formal training, an informal walkthrough, or nothing at all.",
+              "Open your company-approved AI tool and paste: <em>\"Here are the AI tools my team can access and the training we received for each: [paste your list]. For the tool with the least training, give me a 3-step self-guided onboarding plan I could complete in under 30 minutes.\"</em>",
+              "Try the plan this week on one real, non-confidential task and note what you learned.",
+              "Share your training-gap list and onboarding plan in the group — others on your team are likely in the same spot."
+            ]
+          }
+        },
+        {
+          title: "The top reason teams aren't using AI isn't fear — it's not knowing what it does",
+          source_url: "https://www.shrm.org/topics-tools/research/state-of-ai-hr-2026/full-report",
+          body: "SHRM's 2026 State of AI in HR report, surveying 1,908 HR professionals, found that <em>67% of organizations not using AI cite lack of awareness of its capabilities as the top barrier</em> — ahead of privacy concerns, budget, and employee resistance. Meanwhile, <em>92% of CHROs say they expect more AI in their organizations</em>. Leadership wants it. The front line doesn't know what it does. That gap is wide, and it's not a technology problem.",
+          slants: {
+            strategy:   "If your team isn't adopting AI, the first question isn't 'which tool?' — it's 'does anyone know what's possible?' A use-case demo closes more of the gap than a rollout plan.",
+            leaders:    "Non-adoption usually isn't resistance — it's a blank stare. A 20-minute session showing what AI actually does with real tasks closes more ground than another license purchase.",
+            operations: "Ops teams sit on repetitive, structured work that AI handles well — but if nobody connected those dots for you, the tools sit unused. Ask for a walkthrough.",
+            pm:         "Before adding AI to a project plan, run a quick awareness check with the team. If most people can't name one thing the tool does, training comes before implementation.",
+            admin:      "If you've been unsure where to start with AI, you're in the largest group — 67% of teams feel the same way. One small, familiar task is enough to close the gap."
+          },
+          challenge: {
+            steps: [
+              "Think of one repetitive task you do every week — formatting a document, compiling notes, summarizing emails, organizing a schedule.",
+              "Open your company-approved AI tool and describe that task in plain language.",
+              "Add this prompt: <em>\"I do this task every week: [describe it in detail]. Show me step by step how I could use AI to do the first draft. Assume I've never tried this before.\"</em>",
+              "Try the workflow on a real, non-confidential version of the task and note how long it takes versus doing it manually.",
+              "Share what you tried and whether it worked in the group — one working example teaches faster than any training deck."
+            ]
+          }
+        },
+        {
+          title: "AI transparency rules just went from guidance to enforceable law",
+          source_url: "https://commission.europa.eu/news-and-media/news/safer-and-more-transparent-ai-2026-08-02_en",
+          body: "As of yesterday, the EU AI Act's Article 50 transparency obligations are enforceable across Europe. Organizations using AI must now <em>disclose when people are interacting with an AI system, label AI-generated content, and identify deepfakes</em> — with penalties up to <em>EUR 15 million or 3% of global annual turnover</em>. The high-risk rules were pushed to late 2027, but the transparency baseline is live now. If your company operates globally, this is a current compliance requirement, not a future one.",
+          slants: {
+            strategy:   "If your planning process produces AI-drafted content for external stakeholders, audit whether it meets the new disclosure requirements before someone else asks.",
+            leaders:    "This is a governance moment: make sure your teams know what needs to be labeled and disclosed. A clear policy update now prevents a compliance scramble later.",
+            operations: "Any automated workflow generating customer-facing text, images, or communications in EU markets now carries a transparency requirement. Check your outputs.",
+            pm:         "Add AI transparency compliance as a checklist item on any project delivering AI-generated content to external audiences — it's a legal requirement now, not a best practice.",
+            admin:      "If you use AI to draft emails, presentations, or documents that reach people outside your company, find out whether your organization's disclosure policy covers it."
+          },
+          challenge: {
+            steps: [
+              "Think about the last piece of content you helped create using AI — a draft, a summary, a set of talking points, a report.",
+              "Ask yourself: if the recipient asked, would it be clear that AI was involved in creating it?",
+              "Open your company-approved AI tool and paste: <em>\"Our team uses AI to help draft [type of content — e.g., summaries, reports, customer communications]. Write a short, practical disclosure statement we could add to AI-assisted content, and a one-paragraph internal guide explaining when disclosure is needed.\"</em>",
+              "Share the draft with your team lead or compliance contact and ask whether your organization already has a standard for this.",
+              "Post what you learned in the group — transparency standards are something every team benefits from getting right together."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Redesign your morning — without the 5am-cold-shower advice.",
+        body: "Most routine-improvement tips assume unlimited willpower and zero real-life constraints. Tonight, try a prompting technique that fixes that: tell AI what won't work for you before asking what might. Use ChatGPT, Claude, Gemini, or Perplexity:",
+        prompt: "\"I want to redesign my [morning / evening / weekend] routine, but here's what won't work for me: [list 3-4 real constraints — e.g., 'I'm not a morning person,' 'I have about 20 minutes before the house gets chaotic,' 'I hate rigid schedules']. Given those constraints, suggest 3 small, realistic changes I could try this week, ranked by how little willpower they require.\"<br><br>The technique — <em>telling AI what to eliminate before asking what to add</em> — is called negative-constraint prompting. It cuts through generic advice and builds around your actual life. Try adding 'here's what won't work' to any recommendation request and the answers get sharper fast."
+      }
+    },
     "2026-08-02": {
       intro: "Sunday. Three signals heading into next week: AI anxiety just showed up in the data, learners are outpacing their employers, and access without readiness is the gap most companies haven't closed.",
       trends: [
