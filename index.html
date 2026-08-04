@@ -968,6 +968,79 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-08-04": {
+      intro: "Tuesday. Three patterns worth noticing: the hidden cost of using AI on everything, what your team's tool choices are telling you, and the one question that separates useful AI from noise.",
+      trends: [
+        {
+          title: "The teams getting real value from AI are using it on fewer things, not more",
+          source_url: "https://www.gartner.com/en/newsroom/press-releases/2026-01-12-gartner-identifies-the-top-future-of-work-trends-for-chros-in-2026",
+          body: "Gartner's 2026 Future of Work Trends report found that the highest-performing teams aren't the ones using AI on everything — they're the ones being selective. When AI is applied broadly without quality checks, the result is what Gartner calls <em>workslop</em>: output that looks polished but needs fixing downstream. <em>40% of workers encountered it in a single month, with each case taking nearly two hours to sort out.</em> The teams pulling ahead are the ones choosing where AI adds real value — and skipping the rest.",
+          slants: {
+            strategy:   "The question isn't 'can AI do this?' — it's 'does the output need to be right on the first pass?' Treat quality gates as a planning input, not an afterthought.",
+            leaders:    "If your team is spending hours cleaning up AI output, the tool is creating work, not saving it. Ask where quality actually matters and protect those tasks from autopilot.",
+            operations: "Every AI draft that needs two hours of repair is a net loss. Keep a short list of tasks where AI's first pass is genuinely good enough — and use it there.",
+            pm:         "Add a quality-check step to any workflow where AI generates deliverables. The time saved on drafting disappears if nobody reviews before sending.",
+            admin:      "If you've been fixing AI-generated documents that landed on your desk half-done, you're not imagining the extra work. Name it and push back."
+          },
+          challenge: {
+            steps: [
+              "Think of one task where you or a teammate recently used AI to produce a deliverable — a draft, a summary, a report, a presentation.",
+              "Honestly assess: did the output go straight to its audience, or did someone have to rework it? Estimate how long the rework took.",
+              "Open your company-approved AI tool and paste: <em>\"Here is a task I regularly use AI for: [describe it]. What are the three most common quality problems AI output has for this kind of work, and how can I check for each one in under five minutes?\"</em>",
+              "Try the quality-check routine on your next AI-generated draft and note whether it catches anything.",
+              "Share your quick-check routine in the group — others are dealing with the same cleanup problem and will save time from your approach."
+            ]
+          }
+        },
+        {
+          title: "Your team already found their own AI tools — and that's a signal worth reading",
+          source_url: "https://www.gartner.com/en/newsroom/press-releases/2026-05-13-gartner-predicts-by-2027-50-percent-of-enterprises-without-a-people-centric-ai-strategy-will-lose-their-top-ai-talent",
+          body: "Gartner's 2026 Global Labor Market Survey, covering 12,004 employees across 40 countries, surfaced a number that should start a conversation: <em>88% of employees with access to enterprise AI tools are also using personal AI tools for business tasks</em>. These hybrid users are <em>1.7 times more likely to report significant time savings</em>. But 73% of the most productive AI users are managers and executives — individual contributors, the people doing the most automatable work, are the least supported.",
+          slants: {
+            strategy:   "If 88% of your workforce is supplementing enterprise AI with personal tools, that's a product-experience signal about your current tooling — not an employee behavior problem.",
+            leaders:    "Your team isn't going rogue — they're working around a gap. Ask what they're using and why. You'll learn more about your AI strategy's blind spots than any usage dashboard will show you.",
+            operations: "The people closest to the repetitive work are the ones finding their own tools. That's useful intelligence — capture what they've figured out and share it across the team.",
+            pm:         "If project team members are using personal AI tools to get work done faster, the risk isn't the tools — it's not knowing what data is flowing through them. A quick inventory closes that gap.",
+            admin:      "If you've found a personal AI tool that handles a task better than the approved one, you're not doing something wrong. Share what you've found with your team lead — it might improve the toolkit for everyone."
+          },
+          challenge: {
+            steps: [
+              "List the AI tools you currently use for work — both the ones your company provides and any personal ones you've tried on your own.",
+              "For each personal tool, note what it does that the enterprise tool doesn't — or doesn't do well enough.",
+              "Open your company-approved AI tool and paste: <em>\"I've been using [name the personal tool] for [task] because [reason the enterprise tool fell short]. What features or prompt techniques should I try in my enterprise AI tool to get the same result without using a personal tool?\"</em>",
+              "Try the suggestion on a real, non-confidential task and see if it closes the gap.",
+              "Share what you learned in the group — the pattern of what's missing from enterprise tools is useful for everyone, and your workaround might help someone else."
+            ]
+          }
+        },
+        {
+          title: "The best AI use cases aren't the fast ones — they're the painful ones",
+          source_url: "https://www.gartner.com/en/articles/future-of-work-trends",
+          body: "A finding from the same Gartner report that flips the usual productivity narrative: <em>optimizing individual employees' use of AI tools, on its own, does not lead to growth or cost reduction</em>. What does work is applying AI selectively to the tasks that create the most friction — the ones that drain energy, require excessive coordination, or demand tedious formatting with no judgment involved. Gartner's recommendation: <em>effort, not time saved, is the most reliable indicator of where AI should reshape work</em>.",
+          slants: {
+            strategy:   "Audit your team's work by effort, not hours. The tasks that drain the most energy for the least strategic value are where AI delivers the most meaningful return.",
+            leaders:    "Ask your team one question this week: 'What's the most draining part of your regular work?' The answer is where AI should go first — not the tasks that are merely slow.",
+            operations: "The biggest wins aren't shaving five minutes off an email. They're eliminating the 90-minute formatting exercise nobody wants to do.",
+            pm:         "When prioritizing AI use cases for a project, rank candidates by effort required, not time consumed. The tasks people avoid are the ones with the best adoption potential.",
+            admin:      "Think about the task you dread most each week. That's your best candidate for AI — not because it's the longest, but because it takes the most out of you."
+          },
+          challenge: {
+            steps: [
+              "Open a blank note and list your five most effort-intensive tasks from this past week — not the longest ones, but the most draining.",
+              "Rank them from most to least draining. Be honest about which ones you avoid or procrastinate on.",
+              "Pick the top one and open your company-approved AI tool. Paste: <em>\"This is a task I find very draining: [describe it in detail, without confidential info]. Show me how to use AI to handle the most tedious part of it, step by step. Focus on the piece that takes the most effort, not just the piece that takes the most time.\"</em>",
+              "Try the approach on a real, non-confidential version of the task this week.",
+              "Share your top effort-drainer and how you tackled it in the group — the most draining tasks tend to be the same across roles, and your solution will save someone else real energy."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Practice the conversation you've been putting off.",
+        body: "Everyone has one — a conversation you keep delaying because you're not sure how to start, what they'll say, or how you'll handle it. Tonight, try something that makes AI surprisingly useful: have it play the other person. Use any free AI tool (ChatGPT, Claude, Gemini, or Perplexity):",
+        prompt: "\"I need to have a conversation with [someone — a family member, friend, neighbor, partner] about [topic]. I'm nervous because [what worries you about it]. Play their role and respond the way they realistically would. I'll say my opening line and you react — then coach me on what landed well and what I could say differently.\"<br><br>The technique — <em>having AI simulate the other person's responses</em> — lets you rehearse without the stakes. You hear how your words might land, spot the weak points in your approach, and walk into the real conversation calmer. Try it on anything you've been avoiding — the practice round takes the edge off."
+      }
+    },
     "2026-08-03": {
       intro: "Monday. Three things that landed over the weekend: a big opportunity hiding inside AI budgets, the most fixable barrier to adoption, and a transparency milestone that just went live.",
       trends: [
