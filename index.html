@@ -968,6 +968,80 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-08-06": {
+      intro: "Thursday. Three signals worth your attention: the skills AI changes most aren't the ones people expect, most AI agent projects won't survive to 2028, and the biggest operational redesign in a decade is being planned from the top — by people who need what you know.",
+      trends: [
+        {
+          title: "The skills AI changes most aren't the ones you'd expect",
+          source_url: "https://www.mckinsey.com/mgi/media-center/human-skills-will-matter-more-than-ever-in-the-age-of-ai",
+          body: "McKinsey Global Institute mapped roughly 10,500 skills by how much automation reshapes them. The skills facing the highest exposure? Technical execution — SQL, invoice processing, quality checks. The ones facing the lowest? <em>Leadership, coaching, negotiation, and empathy</em>. And more than 70% of skills employers seek today are used in both automatable and non-automatable work. The skills aren't disappearing — <em>how you apply them is what's changing</em>. Problem-solving becomes problem-framing, and the gap that matters next is knowing where human judgment belongs.",
+          slants: {
+            strategy:   "If your team's development plan focuses on tools, add a track for judgment — framing the right question is becoming more valuable than running the analysis.",
+            leaders:    "The skills your team built over years — coaching, negotiating, reading a room — are exactly the ones AI can't replicate. Name that value and invest in it.",
+            operations: "Your deep knowledge of how processes actually work is what makes you the right person to decide where AI fits and where it doesn't.",
+            pm:         "The shift from problem-solving to problem-framing is your wheelhouse — scoping, prioritizing, and asking the right questions is what PMs already do.",
+            admin:      "The judgment calls you make every day — tone, timing, context, what the executive actually needs — are in the lowest-exposure category. That's your edge."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool and pick one skill you use daily — summarizing, scheduling, reviewing, analyzing, coordinating.",
+              "Paste this prompt: <em>\"Here is a skill I use regularly at work: [describe it]. How is AI changing how this skill is applied — not whether it's needed, but how the best practitioners use it differently now? Give me one specific way the skill is shifting and one example of what 'upgraded' looks like.\"</em>",
+              "Read the response and compare it to your own experience — does the shift it describes match what you're already seeing?",
+              "Paste this follow-up: <em>\"Now give me a 2-step exercise I can do this week to practice the upgraded version of this skill, using AI as a tool rather than a replacement.\"</em>",
+              "Share your skill shift with the group — what's changing about how you apply it, and what stayed the same?"
+            ]
+          }
+        },
+        {
+          title: "Most AI agent projects won't survive to 2028 — and the reason isn't the technology",
+          source_url: "https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027",
+          body: "Gartner surveyed more than 3,400 organizations investing in agentic AI and predicts that <em>over 40% of those projects will be canceled by the end of 2027</em>. The cause isn't technical failure — it's escalating costs, unclear business value, and inadequate governance. Most current projects are early-stage experiments <em>deployed without clear success criteria, cost controls, or a plan for what happens when something goes wrong</em>. The projects that survive will be the ones where someone asked the hard questions before the deployment started.",
+          slants: {
+            strategy:   "Before your next AI initiative kicks off, define what success looks like in measurable terms — the projects that fail are the ones that never set a target.",
+            leaders:    "The most valuable thing you can do for an AI pilot right now isn't championing it — it's asking what happens if costs double or the output is wrong.",
+            operations: "If you're running an AI pilot, build in a 90-day checkpoint with clear criteria: is this saving time, reducing errors, or creating new work? No checkpoint, no continuation.",
+            pm:         "Treat agentic AI like any other project risk — scope it, budget it, and define rollback criteria before launch. The projects that skip this step are the ones getting canceled.",
+            admin:      "If an AI tool in your workflow isn't clearly saving time after the first month, flag it. Early feedback from the people doing the work is what keeps pilots from becoming expensive failures."
+          },
+          challenge: {
+            steps: [
+              "Think about an AI tool or feature your team adopted in the last six months. Has anyone measured whether it's delivering real value?",
+              "Open your company-approved AI tool and paste: <em>\"My team adopted [name the tool or feature] for [describe the task]. We haven't formally measured its impact. Help me design a simple 3-question evaluation: one question about time saved, one about output quality, and one about whether it created any new work or problems. Keep it something I could answer in 5 minutes.\"</em>",
+              "Answer the three questions honestly based on your own experience with the tool.",
+              "Paste the results back and ask: <em>\"Based on these answers, should we double down on this tool, adjust how we use it, or consider dropping it? Give me a one-sentence recommendation.\"</em>",
+              "Share your evaluation with the group — the honest assessments help everyone make better decisions about which tools earn their keep."
+            ]
+          }
+        },
+        {
+          title: "Your CEO is planning an operational overhaul — and it needs what you know",
+          source_url: "https://www.gartner.com/en/newsroom/press-releases/2026-04-23-gartner-survey-reveals-80-percent-of-ceos-say-artificial-intelligence-will-force-operational-capability-overhauls",
+          body: "Gartner surveyed 469 CEOs and found that <em>80% expect AI to force significant operational capability overhauls</em>. Today, 54% say their automation is limited to specific tasks. By 2028, <em>only 13% expect to stay at that level</em> — the rest are planning to move toward AI-assisted decision-making or fully autonomous operations. This isn't a future prediction. It's a redesign being scoped right now, and the people who understand how the current operation actually works — not how it looks on a slide — are the ones whose input matters most.",
+          slants: {
+            strategy:   "An operational overhaul designed without input from the people who run the current operation will fail on contact with reality. Get their perspective into the planning room early.",
+            leaders:    "Your CEO is planning this overhaul whether your team's perspective is in the room or not. The move is to get it there — your operational knowledge is the design input nobody else has.",
+            operations: "You know where the workarounds live, where the handoffs break, and where the process on paper doesn't match the process in practice. That knowledge is the starting point for any serious redesign.",
+            pm:         "Operational overhauls are multi-quarter programs. If yours hasn't started scoping yet, the planning window is now — and PM skills are what keep these from stalling at the whiteboard.",
+            admin:      "The workflows you manage are about to be redesigned. The people who document how things actually work — not how they're supposed to work — will shape what comes next."
+          },
+          challenge: {
+            steps: [
+              "Pick one operational process you're involved in — approvals, reporting, scheduling, procurement, onboarding — anything that follows a repeatable pattern.",
+              "Open your company-approved AI tool and paste: <em>\"Here's an operational process I'm part of: [describe it in detail, without confidential info]. Map out the current workflow step by step, then identify which steps could be enhanced by AI and which ones require human judgment. Be specific about why each judgment step needs a person.\"</em>",
+              "Compare the AI's map to how the process actually works in practice. Note where it's accurate and where it misses the informal steps, workarounds, or judgment calls only an insider would know.",
+              "Paste this follow-up: <em>\"Here's what your map missed: [list the informal steps or workarounds]. Redraft the workflow including these realities. Which steps are the best candidates for AI now, and which ones need a human even more than before?\"</em>",
+              "Share your process map with the group — the gap between how a process is designed and how it actually works is where the most valuable redesign insights live."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Recreate that restaurant dish you can't stop thinking about.",
+        body: "Everyone has one — the meal you had somewhere that you keep remembering months later. Tonight, instead of searching for a recipe name, try describing what you experienced and let AI reverse-engineer it. Use any free AI tool (ChatGPT, Claude, Gemini, or Perplexity):",
+        prompt: "\"I had a dish at a restaurant that I want to recreate at home. Here's what I remember: [describe everything — the flavor, texture, temperature, what it looked like, any ingredients you could identify, and how it made you feel]. I'm a [beginner/intermediate/experienced] cook with [list your kitchen equipment]. Reverse-engineer a recipe that gets as close as possible, and flag the one step that's most likely to make or break the result.\"<br><br>The technique — <em>describing the outcome you want instead of specifying the method</em> — works far beyond cooking. Next time you need AI to help with anything creative, describe what the finished product should feel like, not just what it should contain. The more sensory and specific your description, the closer AI gets to what you actually want."
+      }
+    },
+
     "2026-07-31": {
       intro: "Friday. Three patterns worth sitting with this weekend: the most AI-fluent workers are the most connected to their teams, the wage premium for AI skills keeps climbing, and most people using AI still don't feel ready.",
       trends: [
