@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json, os, re, sys
+import json, os, re, subprocess, sys
 from datetime import date
 import anthropic
 
@@ -21,7 +21,7 @@ and administrative roles at a large enterprise. They are AI-curious but
 sometimes apprehensive. Your job is to make them feel MORE CAPABLE, LESS AFRAID,
 and slightly more equipped than when they opened the page.
 
-Audience weighting (most → least): Strategy & Planning → Operations → Project Management → Administrative.
+Audience weighting (most → least): Strategy & Planning → Leaders → Operations → Project Management → Administrative.
 
 ## Voice
 
@@ -43,7 +43,9 @@ Audience weighting (most → least): Strategy & Planning → Operations → Proj
 ## Role slants
 
 - One sentence each. Don't pad.
-- Slants must be genuinely different for each role — if the same line could apply to all four, rework the trend framing.
+- Five slants per trend: strategy, leaders, operations, pm, admin.
+- The leaders slant targets people managers and senior managers — frame around what they can do with positional influence.
+- Slants must be genuinely different for each role — if the same line could apply to all five, rework the trend framing.
 
 ## Challenges
 
@@ -66,11 +68,44 @@ Audience weighting (most → least): Strategy & Planning → Operations → Proj
 - Do NOT reference the day of the week anywhere (no "Happy Friday", "this Monday")."""
 
 
+def _extract_drops_from_html():
+    """Parse the DROPS object out of index.html using Node (JS source → JSON)."""
+    script_dir = os.path.dirname(os.path.abspath(__file__)) or "."
+    result = subprocess.run(
+        ["node", "-e",
+         "const fs=require('fs');"
+         "const html=fs.readFileSync('index.html','utf8');"
+         "const m=html.match(/const DROPS = (\\{[\\s\\S]*?\\});/);"
+         "if(m){process.stdout.write(JSON.stringify(eval('('+m[1]+')'),null,2));}"],
+        capture_output=True, text=True, cwd=script_dir,
+    )
+    if result.returncode != 0 or not result.stdout.strip():
+        return None
+    return json.loads(result.stdout)
+
+
 def load_drops():
+    """Load drops from index.html (source of truth), falling back to drops.json."""
+    drops = _extract_drops_from_html()
+    if drops is not None:
+        return drops
     if not os.path.exists(DROPS_PATH):
         return {}
     with open(DROPS_PATH, encoding="utf-8-sig") as f:
         return json.load(f)
+
+
+def sync_drops_json():
+    """Write drops.json from the DROPS object in index.html."""
+    drops = _extract_drops_from_html()
+    if drops is None:
+        print("sync: could not extract DROPS from index.html")
+        return False
+    with open(DROPS_PATH, "w", encoding="utf-8") as f:
+        json.dump(drops, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+    print(f"drops.json synced ({len(drops)} entries).")
+    return True
 
 
 def save_drops(drops):
@@ -100,7 +135,7 @@ def validate(entry):
         if not t.get("body"):
             errors.append(f"Trend {i}: missing body")
         slants = t.get("slants", {})
-        for role in ("strategy", "operations", "pm", "admin"):
+        for role in ("strategy", "leaders", "operations", "pm", "admin"):
             if not slants.get(role):
                 errors.append(f"Trend {i}: missing slant '{role}'")
         ch = t.get("challenge", {})
@@ -142,7 +177,7 @@ IMPORTANT — Do NOT repeat these recent topics. Choose genuinely different stor
 Use web search to find 3 real, diverse AI trends from the past 2-4 weeks.
 Each trend needs a different angle — e.g., one strategic shift, one workflow/tooling change, one skills/cultural shift. Do NOT pick three "new AI tool launched" stories.
 {dedup_block}
-For each trend provide: a sentence-case editorial headline, 1-3 sentence body with one highlighted stat in <em>, four genuinely different role slants (strategy/operations/pm/admin — one sentence each), and a challenge with 3-6 concrete steps ending with a sharing action. Wrap exact prompt text in <em>"..."</em>.
+For each trend provide: a sentence-case editorial headline, 1-3 sentence body with one highlighted stat in <em>, five genuinely different role slants (strategy/leaders/operations/pm/admin — one sentence each), and a challenge with 3-6 concrete steps ending with a sharing action. Wrap exact prompt text in <em>"..."</em>.
 
 Add a homework section — personal, fun, not work-related. Include a prompting technique the reader learns by doing.
 
@@ -156,6 +191,7 @@ Return ONLY valid JSON, no markdown, no code fences:
       "source_url": "Direct URL to the primary source article (real, working URL from your web search — e.g. https://www.mckinsey.com/... or https://hbr.org/...). Leave blank string if no direct URL available.",
       "slants": {{
         "strategy": "One sentence — genuinely specific to strategy/planning roles.",
+        "leaders": "One sentence — genuinely specific to people managers and senior leaders.",
         "operations": "One sentence — genuinely specific to ops roles.",
         "pm": "One sentence — genuinely specific to project managers.",
         "admin": "One sentence — genuinely specific to admin professionals."
@@ -248,12 +284,17 @@ def inject_html(entry):
 
 
 def main():
+    if "--sync" in sys.argv:
+        ok = sync_drops_json()
+        sys.exit(0 if ok else 1)
+
     drops = load_drops()
     with open(INDEX_PATH, encoding="utf-8") as f:
         html = f.read()
 
     if TODAY in drops and f'"{TODAY}"' in html:
         print(f"{TODAY} already published.")
+        sync_drops_json()
         sys.exit(0)
 
     if TODAY not in drops:
@@ -274,6 +315,7 @@ def main():
         entry = drops[TODAY]
 
     inject_html(entry)
+    sync_drops_json()
     print("Done.")
 
 
