@@ -1,24 +1,24 @@
 {
   "2026-08-07": {
-    "intro": "Friday. Three patterns to carry into the weekend: AI proficiency is about to show up in your next job interview, the biggest productivity drain at work already has a fix, and the institutional knowledge in your head is worth more than you think.",
+    "intro": "Friday. Three patterns to carry into the weekend: how to spot the candidates who actually know how to work with AI, the biggest productivity drain at work already has a fix, and the institutional knowledge in your head is worth more than you think.",
     "trends": [
       {
-        "title": "Your next job interview will test your AI skills — and your ability to think without it",
+        "title": "Hiring is about to test for two things at once — and you need to know what to look for",
         "source_url": "https://www.gartner.com/en/newsroom/press-releases/2025-10-21-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2026-and-beyond",
-        "body": "Gartner's strategic predictions paint a dual picture of where hiring is headed. By 2027, <em>75% of hiring processes will include formal testing for AI proficiency</em> — not just for technical roles, but across marketing, finance, operations, and HR. But here's the twist: in the same timeframe, <em>50% of organizations will also require \"AI-free\" assessments</em> to verify that candidates can think, reason, and solve problems independently. The career move isn't picking one — it's building both muscles.",
+        "body": "Gartner's strategic predictions paint a dual picture of where hiring is headed. By 2027, <em>75% of hiring processes will include formal testing for AI proficiency</em> — not just for technical roles, but across marketing, finance, operations, and HR. But here's the twist: in the same timeframe, <em>50% of organizations will also require \"AI-free\" assessments</em> to verify that candidates can think, reason, and solve problems without AI assistance. If you're involved in hiring, you now need to evaluate for both — and the candidates who can do both are the ones worth fighting for.",
         "slants": {
-          "strategy": "Start documenting where your team uses AI effectively — those use cases are becoming portfolio-worthy evidence of proficiency.",
-          "leaders": "The dual-skills expectation is coming for your teams too. Build space for both: AI-assisted work and independent problem-solving practice.",
-          "operations": "Your troubleshooting instincts and process knowledge are \"AI-free\" skills that are about to get formally valued. They've always been there — now they'll be tested for.",
-          "pm": "Scoping, prioritizing, and making trade-offs under uncertainty are classic AI-free skills. The fact that you do them daily puts you ahead of the curve.",
-          "admin": "The judgment calls you make every day — reading tone, knowing the right person to loop in, navigating ambiguity — are exactly the skills \"AI-free\" assessments are designed to measure."
+          "strategy": "Build both checks into your hiring criteria now. The candidates who can use AI effectively and reason independently are the ones who'll strengthen your team's strategic capacity.",
+          "leaders": "When you're interviewing, ask candidates to walk through a problem twice — once describing how they'd use AI, and once describing how they'd solve it without it. The contrast tells you more than either answer alone.",
+          "operations": "The best ops hires will be the ones who know when to lean on AI and when to trust their own troubleshooting instincts. Test for both in your interview process.",
+          "pm": "When evaluating candidates, look for people who can use AI to accelerate their work but can also scope, prioritize, and make trade-offs on their own. That combination is becoming the bar.",
+          "admin": "If you're part of the hiring process — screening resumes, scheduling interviews, sitting on panels — knowing what AI proficiency looks like in practice helps you spot the strongest candidates."
         },
         "challenge": {
           "steps": [
-            "Pick one task you do regularly at work and complete it twice: once using your company-approved AI tool, and once without any AI assistance at all.",
-            "After both versions, compare the output honestly. Paste this into your AI tool: <em>\"I completed the same task two ways — with AI and without. Here's what each version looked like: [describe both]. What are the strengths of each approach, and what does the comparison tell me about where AI adds value versus where my own judgment is stronger?\"</em>",
-            "Note which version was better — and why. The answer is usually that the best result combines both.",
-            "Share your comparison in the group — the patterns of where AI helps and where it doesn't are surprisingly consistent across roles."
+            "Think about the last person you interviewed or helped evaluate for a role on your team. Did the process test for any AI-related skills?",
+            "Open your company-approved AI tool and paste: <em>\"I'm involved in hiring for [describe the role or team]. Help me design two short interview questions: one that tests whether a candidate can use AI effectively for this type of work, and one that tests whether they can think critically and solve problems without AI. Each question should take 5 minutes to answer and reveal genuine skill, not rehearsed buzzwords.\"</em>",
+            "Review the questions and adjust them based on what you know about the role — the AI gives you a starting structure, but your context makes it real.",
+            "Share your two-question approach in the group — building a library of AI-aware interview questions helps everyone hire stronger."
           ]
         }
       },
