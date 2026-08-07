@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
@@ -968,6 +968,79 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-08-07": {
+      intro: "Friday. This week's theme is reach: your AI is moving from advice to action, getting cheaper to run, and settling into everyday work — each shift a lever you can pull today.",
+      trends: [
+        {
+          title: "Your AI can now do the work, not just suggest it",
+          source_url: "https://www.usecarly.com/blog/claude-for-microsoft-365/",
+          body: "Your assistant is graduating from giving advice to taking action right inside the apps you already use. Claude's Microsoft 365 connector has moved from read-only to read/write, so it can now draft and send email, create calendar invites, and build files in OneDrive and SharePoint — <em>available across every Claude plan from Free through Enterprise (Anthropic)</em>. The busywork between deciding and doing is quietly disappearing.",
+          slants: {
+            strategy: "When AI can execute inside your core tools, the advantage shifts to leaders who redesign workflows around action rather than approval — decide now which routine tasks you'll let it own end to end.",
+            leaders: "Your team can hand off the click-work between intent and done, so your edge is choosing which actions to delegate first and setting the guardrails that let people move faster with confidence.",
+            operations: "An assistant that sends the email, books the meeting, and updates the file turns your longest multi-step routines into a quick review-and-approve, giving you back real hours each week.",
+            pm: "When AI handles the follow-up messages, invites, and status files itself, you carry fewer manual threads and can run more of the project in parallel without dropping a detail.",
+            admin: "The scheduling, drafting, and file-wrangling you do all day can now run with a single instruction, freeing you for the judgment and relationships that make your support irreplaceable."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool and pick one small action you take daily, like sending a recurring update or booking a check-in.",
+              "Paste this prompt: <em>\"I want to hand off this routine action to you: [describe it]. Ask me for anything you need, then draft it exactly as it should go out so I can approve it.\"</em>",
+              "Review the draft and confirm it matches how you'd have done it yourself before sending.",
+              "Paste this follow-up: <em>\"Turn this into a reusable instruction I can give you each time, listing exactly what you'll need from me to complete it.\"</em>",
+              "Share with the group one action you've started delegating and how much clicking it saved you."
+            ]
+          }
+        },
+        {
+          title: "The AI you rely on just got far cheaper to run",
+          source_url: "https://venturebeat.com/technology/googles-gemini-3-6-flash-model-cuts-ai-agent-token-costs-by-up-to-65-on-long-horizon-engineering-tasks-and-3-5-pro-is-on-the-way",
+          body: "The economics of AI keep bending in your favor. Google's new Gemini 3.6 Flash <em>cuts AI agent token costs by up to 65% on long, multi-step tasks while scoring higher on every benchmark (VentureBeat)</em>. Cheaper and smarter at once means the assistants baked into your tools can take on bigger jobs without a bigger bill — more capability heading your way on the plan you already have.",
+          slants: {
+            strategy: "Every drop in AI cost expands what's affordable to automate, so plan for what becomes practical next quarter instead of budgeting only for today's prices — the leaders who look ahead claim the upside first.",
+            leaders: "Falling costs mean more of your team's tedious work becomes worth automating, so keep a running list of tasks that were 'too expensive' before and revisit it as prices fall.",
+            operations: "As the price of running AI drops, the slow or bulky tasks you set aside become fair game, so flag the ones you'd automate the moment it's cost-effective — that moment is arriving fast.",
+            pm: "Cheaper, stronger models mean the AI inside your project tools keeps leveling up mid-flight, so revisit what's newly possible before you scope your next plan.",
+            admin: "The tools you use every day get quietly more capable on the same subscription, compounding the time you save without a single new purchase."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool and name one task you once decided was too big or fiddly to hand off.",
+              "Paste this prompt: <em>\"Here's a task I've avoided automating because it felt too involved: [describe it]. Show me the most efficient way to do it with you now, start to finish.\"</em>",
+              "Run through the approach it suggests and note where it handled complexity you expected to struggle with.",
+              "Paste this follow-up: <em>\"Package this into a repeatable routine with the exact prompts to paste each time, optimized to use as few back-and-forth steps as possible.\"</em>",
+              "Share the routine with your group so someone else can reclaim the same effort."
+            ]
+          }
+        },
+        {
+          title: "AI is now everyday — and the runway is wide open",
+          source_url: "https://www.publicissapient.com/company/news/ai-adoption-enterprise-readiness-report-2026",
+          body: "AI has quietly become a normal part of the workday, and that's great news for anyone ready to lead. A 2026 global enterprise report found that <em>73% of organizations now use AI regularly, yet only 10% say it's truly core to how they operate (Publicis Sapient)</em>. That gap is your opening: the people who turn everyday AI use into real, embedded workflows are about to become the most valuable ones in the building.",
+          slants: {
+            strategy: "Widespread use but shallow integration means the competitive edge is still unclaimed — leaders who move AI from occasional help to the backbone of a workflow define the standard everyone else follows.",
+            leaders: "Most teams use AI casually; few have made it core, so pick one workflow to fully rebuild around AI and you'll set the example your organization learns from.",
+            operations: "The gap between 'using AI' and 'built on AI' is exactly where you shine — redesign one recurring process around it end to end and you turn a personal habit into a team capability.",
+            pm: "Being the person who bakes AI into how a project actually runs — not just as a side tool — expands your influence and makes your process the one others want to copy.",
+            admin: "Turning your daily AI habits into repeatable playbooks others can follow makes you visibly the person who moved the team from dabbling to doing."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool and choose one recurring workflow you own, like weekly reporting or intake triage.",
+              "Paste this prompt: <em>\"Help me redesign this recurring workflow so AI is built into every step, not just used occasionally: [describe the workflow]. Map it out stage by stage.\"</em>",
+              "Pick the single stage from that map where embedding AI would save the most time and set it up this week.",
+              "Paste this follow-up: <em>\"Write a short playbook for this workflow that a teammate could follow to run it the same way I do, including the prompts.\"</em>",
+              "Share your playbook with the group so one everyday habit becomes a shared standard."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Get honest feedback on a personal decision",
+        body: "This one practices role prompting — telling the AI to take on a specific expert persona so its answer comes with the depth and perspective of that role. Assigning a clear role sharpens the advice far more than a generic question does.",
+        prompt: "Act as an experienced financial planner who is candid but kind. Walk me through the trade-offs of my decision, ask me any clarifying questions first, and end with a clear recommendation and why. Here's the decision: [paste your situation here]"
+      }
+    },
     "2026-07-30": {
       intro: "Thursday. This week's throughline is momentum: AI is widening what any one person can do, while the money and tooling race to keep pace — every signal an opening you can step into.",
       trends: [
