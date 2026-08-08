@@ -1,4 +1,76 @@
 {
+  "2026-08-08": {
+    "intro": "Saturday. Three patterns hiding in plain sight: where your AI budget is actually going, how AI is shaping customer decisions before your sales team picks up the phone, and a quiet accountability gap forming between employees and the AI they're asked to stand behind.",
+    "trends": [
+      {
+        "title": "Most of your AI spending is solving the wrong problem",
+        "source_url": "https://www.gartner.com/en/newsroom/press-releases/2026-07-20-gartner-survey-shows-45-percent-of-cfos-say-their-ai-investments-lean-towwards-productivity-while-20-percent-say-these-investments-lean-towards-decision-quality",
+        "body": "A Gartner survey of 204 finance leaders reveals a misalignment that explains a lot of AI frustration: <em>45% of CFOs say their AI investments lean toward productivity, while only 20% lean toward decision quality</em>. The gap matters because organizations investing in AI that changes decisions — not just speeds up tasks — are more than twice as likely to report significant value (Gartner, July 2026).",
+        "slants": {
+          "strategy": "If your AI portfolio is concentrated on making things faster, you're optimizing a curve that flattens. The compounding value comes from AI that changes which decisions get made and how.",
+          "leaders": "Ask your team a simple question: 'Which of our AI projects changes a decision, not just a task?' If nobody can name one, your investment mix needs rebalancing.",
+          "operations": "Productivity AI hits a ceiling once a workflow is automated. The next step is feeding those efficiency gains into better business decisions upstream.",
+          "pm": "When prioritizing AI initiatives, weight decision-quality outcomes higher than time-saved metrics. The projects that change decisions deliver more durable value than the ones that speed up tasks.",
+          "admin": "The admin tasks most likely to grow in value are the ones that involve judgment and context — the decision-quality layer, not the speed layer."
+        },
+        "challenge": {
+          "steps": [
+            "List the AI tools or features you use (or your team uses) at work this week. Next to each, write whether it primarily saves time or improves a decision.",
+            "Open your company-approved AI tool and paste: <em>\"I work in [your role]. Here are the AI tools and features I use: [list them]. For each one, help me identify whether it's primarily saving time (productivity) or improving a decision (decision quality). Then suggest one way I could shift one productivity use toward a decision-quality use.\"</em>",
+            "Review the suggestion. Does it point to a decision in your workflow that could be sharper, not just faster?",
+            "Share your productivity-vs-decision split in the group — the pattern across roles is usually eye-opening."
+          ]
+        }
+      },
+      {
+        "title": "AI is describing your business to customers before you get the chance",
+        "source_url": "https://hbr.org/2026/07/ai-is-changing-how-customers-choose-your-business",
+        "body": "Harvard Business Review profiles three companies that discovered AI tools were shaping customer perceptions before any human conversation happened. A manufacturer improved sales by screening AI-generated inquiries; a hotel learned to monitor how AI described its property; a software company replaced periodic reviews with continuous monitoring of AI-generated market perceptions. The vendor shortlist is narrowing — <em>average B2B shortlists have shrunk from 3.2 to roughly 2.5 as AI pre-filters options</em> before a sales team even gets a pitch (HBR, July 2026).",
+        "slants": {
+          "strategy": "AI is a new channel you can't control but can influence. If you're not auditing how ChatGPT, Perplexity, and Copilot describe your products, you're invisible in a growing share of buying decisions.",
+          "leaders": "Ask someone on your team to query three AI tools about your company's product or service. What comes back is what your next customer sees first — and it's worth knowing before they do.",
+          "operations": "Your public-facing content now serves two audiences: humans and AI. Structured, clear, factual content performs better in both channels.",
+          "pm": "If your project involves any customer-facing deliverable, add a step: 'How would an AI tool summarize this?' The answer shapes perception before your launch does.",
+          "admin": "If you maintain public-facing content — websites, directories, FAQs — know that AI tools are pulling from it to answer customer questions. Accuracy and clarity matter more than ever."
+        },
+        "challenge": {
+          "steps": [
+            "Pick a product, service, or team you work with that has a public presence.",
+            "Open a free AI tool (ChatGPT, Claude, Gemini, or Perplexity) and ask: <em>\"What can you tell me about [your company/product/service]? What are its strengths and weaknesses compared to alternatives?\"</em>",
+            "Read the response carefully. Is it accurate? Is anything outdated, missing, or misleading? Note the gaps.",
+            "Now ask a follow-up: <em>\"Where are you getting this information? What sources are you drawing from?\"</em>",
+            "Share what you found in the group — the gap between what AI says about your organization and what's actually true is usually surprising."
+          ]
+        }
+      },
+      {
+        "title": "Your team is defending AI decisions they don't fully understand",
+        "source_url": "https://hbr.org/2026/07/when-employees-are-held-accountable-for-ai-generated-decisions",
+        "body": "A multi-year field study across banking, recruitment, and biotech found that when AI is embedded in core decisions, <em>frontline workers quietly mask, reinterpret, and substitute their own explanations for AI outputs</em> to preserve professional credibility. At one bank, loan officers cited common expert reasons for AI-driven rejections even when those weren't the model's actual reasoning — and customers noticed. The one organization that avoided this built an interpretive layer: access to underlying data, developer feedback loops, and shared language around the model's logic (HBR, July 2026).",
+        "slants": {
+          "strategy": "If your strategy depends on AI-driven decisions at the front line, the interpretive layer between model and customer is a strategic requirement — not a training afterthought.",
+          "leaders": "Employees won't raise their hand to say 'I don't understand the AI's decision' if they feel they're expected to own it. Create space for that honesty before it costs you a customer.",
+          "operations": "Process design must include how employees explain AI outputs, not just how they receive them. If the explanation step isn't designed, employees will improvise — and that becomes unmanaged risk.",
+          "pm": "When scoping AI deployments, budget for the last mile: documentation, feedback loops, and training that let the people delivering AI decisions actually understand them.",
+          "admin": "You're often the person between the system and the person asking 'why did this happen?' Making that interpretive role visible — and supported — is valuable."
+        },
+        "challenge": {
+          "steps": [
+            "Think about a decision or recommendation at work that's influenced by AI or an automated system — it could be a report, a score, a suggestion, or an approval.",
+            "Ask yourself honestly: could you explain to a colleague or customer exactly why the system produced that output? Not what it said — but why.",
+            "Open your company-approved AI tool and paste: <em>\"I work in [your role] and we use AI or automated systems for [describe the decision]. Help me write three plain-language questions I should be able to answer about any AI-generated decision before I communicate it to someone else. Focus on questions that build genuine understanding, not just talking points.\"</em>",
+            "Try answering those three questions for a recent AI-assisted decision. Note where you're confident and where you're guessing.",
+            "Share your three questions in the group — building a shared explainability checklist helps everyone communicate AI decisions more honestly."
+          ]
+        }
+      }
+    ],
+    "homework": {
+      "title": "Pick a cuisine you've never cooked and let AI walk you through the first dish.",
+      "body": "You don't need to be a cook to try this — you just need a kitchen and some curiosity. Open any free AI tool (ChatGPT, Claude, Gemini, or Perplexity):",
+      "prompt": "\"I want to try cooking [a cuisine you've always been curious about — Thai, Ethiopian, Japanese, Peruvian, whatever draws you]. I'm a [beginner/decent/confident] cook. I have about an hour and a regular grocery store nearby. Recommend one dish that's a good entry point, explain why it's a good first dish for this cuisine, and give me a step-by-step recipe with exactly what I need to buy. If any ingredient might be hard to find, suggest a substitute.\"<br><br>The technique — <em>giving your skill level and constraints upfront</em> — stops AI from recommending something impressive but impractical. It works any time you're asking for advice in unfamiliar territory."
+    }
+  },
   "2026-08-07": {
     "intro": "Friday. Three patterns to carry into the weekend: how to spot the candidates who actually know how to work with AI, the biggest productivity drain at work already has a fix, and the institutional knowledge in your head is worth more than you think.",
     "trends": [
