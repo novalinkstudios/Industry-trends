@@ -1,4 +1,74 @@
 {
+  "2026-08-11": {
+    "intro": "Tuesday. Three patterns shaping the week: a third of the workforce hasn't touched AI yet and the gap is getting harder to close, critical thinking just became the fastest-growing skill in every professional field, and the AI earnings premium is real — but only for those who bring judgment to the table.",
+    "trends": [
+      {
+        "title": "A third of workers haven't started with AI — and the window is narrowing",
+        "source_url": "https://www.shrm.org/topics-tools/research/navigating-ai-in-the-workplace/full-report",
+        "body": "SHRM surveyed 5,875 U.S. workers for its 2026 Navigating AI in the Workplace report and found a split most organizations haven't addressed: <em>34% of workers don't use AI tools at all — not for work, not for personal tasks, not anywhere</em>. Among those who do use AI, only 15% describe their experience as advanced or expert-level. The most requested fix? Training. <em>51% of workers said enhanced training is the single most important thing their organization could do</em> to improve AI outcomes. The gap isn't shrinking on its own.",
+        "slants": {
+          "strategy": "If a third of your workforce hasn't started with AI, your adoption rate isn't what your dashboard says it is. The real number includes the people who haven't logged in.",
+          "leaders": "The 34% who haven't started aren't resistant — most are waiting for permission, guidance, or a reason that connects to their actual work. That's a leadership gap, not a skills gap.",
+          "operations": "When a third of the team isn't using the same tools, every handoff becomes a translation exercise. Consistent adoption matters more than peak performance by a few.",
+          "pm": "If your project assumes everyone on the team can use AI, check that assumption. A third of the workforce says they haven't started — and they may be on your project.",
+          "admin": "If you haven't started with AI yet, you're in a larger group than you think — and the best time to begin is now, before the gap widens. One small task this week is enough."
+        },
+        "challenge": {
+          "steps": [
+            "Think about your immediate team — the 5–10 people you work with most closely. Estimate how many are actively using AI tools, how many have tried once or twice, and how many haven't started at all.",
+            "Open your company-approved AI tool and paste: <em>\"I want to help a colleague who hasn't started using AI yet. They work in [describe their role] and their biggest daily task is [describe it]. Write a short, encouraging message I can share with them that explains one specific way AI could help with that task — keep it practical, no jargon, and no pressure. Include one example prompt they could try in their first 5 minutes.\"</em>",
+            "Read the message. Would you actually send it? Edit it until it sounds like you, not like a training manual.",
+            "Send it — or share your approach in the group. The best way to close the adoption gap is one conversation at a time."
+          ]
+        }
+      },
+      {
+        "title": "Critical thinking is the fastest-growing professional skill — in every field",
+        "source_url": "https://blog.coursera.org/introducing-courseras-job-skills-report-2026-the-most-critical-skills-the-worlds-learners-need-this-year/",
+        "body": "Coursera's 2026 Job Skills Report, drawn from nearly six million enterprise learners, surfaced something the AI hype cycle missed: <em>critical thinking enrollments grew by triple digits in every professional cohort</em> — 168% for data professionals, 185% for GenAI learners, 101% for software, 91% for IT. Demand for debugging, data quality, and responsible AI is surging alongside it. The pattern is clear: as AI handles more execution, <em>the ability to evaluate, question, and validate what AI produces is becoming the skill that separates adequate from excellent</em>.",
+        "slants": {
+          "strategy": "The highest-value AI skill isn't prompting — it's knowing when the output is wrong. Build critical evaluation into every AI-related training investment.",
+          "leaders": "When your team uses AI, the risk isn't that they'll use it poorly — it's that they'll trust it too quickly. Encourage the habit of questioning output before acting on it.",
+          "operations": "Every AI output that enters a workflow needs a quality check. The people who can spot what's off — missing context, bad assumptions, outdated data — are your reliability layer.",
+          "pm": "When AI drafts your project plan, risk assessment, or stakeholder update, the value you add is asking: what did it miss? What doesn't match what I know? That skill is growing fastest.",
+          "admin": "The next time AI drafts something for you — an email, a summary, a schedule — read it as an editor, not a recipient. The habit of checking before sending is becoming a professional differentiator."
+        },
+        "challenge": {
+          "steps": [
+            "Pick one task you did this week where AI produced a draft, summary, or recommendation that you accepted and used.",
+            "Open your company-approved AI tool and paste the original output back in, then add: <em>\"I used this AI-generated [document/summary/recommendation] without changes. Now act as a critical reviewer: what assumptions did you make that I should have questioned? What context might be missing? What's the weakest part of this output?\"</em>",
+            "Read the critique. Did it catch something you missed — or confirm that the output was solid?",
+            "Try this review-your-own-work prompt once this week. Share what you caught in the group — the most useful catches tend to be the ones nobody expected."
+          ]
+        }
+      },
+      {
+        "title": "AI pays more — but only when you add judgment",
+        "source_url": "https://www.upwork.com/research/research-future-workforce-index-2026",
+        "body": "Upwork's 2026 Future Workforce Index studied 2,400 knowledge workers and found a stark earnings split. Workers using AI earn <em>34% more per hour</em> on average — but the premium isn't evenly distributed. Complex, judgment-intensive AI work saw earnings rise <em>45% year over year</em>. Meanwhile, simpler AI-assisted creative work grew 90% in volume but per-contract earnings fell 13%. The pattern: when AI makes a task easy enough for anyone to do, the market pays less for it. When you combine AI with domain expertise and judgment, the market pays more.",
+        "slants": {
+          "strategy": "The AI premium goes to judgment, not usage. If your team is using AI to do the same work faster, you're on the flattening side of the curve. The premium is in using AI to do harder work better.",
+          "leaders": "The most valuable people on your team aren't the ones who use AI the most — they're the ones who combine it with judgment the AI doesn't have. Reward the thinking, not the tool usage.",
+          "operations": "Speed alone doesn't hold its value when everyone has the same tools. What holds value is knowing what to do with the output — the context, the edge cases, the 'this doesn't look right' instinct.",
+          "pm": "AI can generate a project plan in seconds. The PM premium is knowing which parts to trust, which to adjust, and which to throw out. That judgment is where the earnings gap lives.",
+          "admin": "If AI makes a task easier, more people will start doing it. The skills that stay valuable are the ones AI can't replicate: context, relationships, and knowing what actually matters to the people you support."
+        },
+        "challenge": {
+          "steps": [
+            "Think about one task you use AI for regularly. Ask yourself honestly: does this task require your specific judgment and context, or could someone with the same AI tool produce a similar result?",
+            "Open your company-approved AI tool and paste: <em>\"I regularly use AI to help with [describe the task]. Help me identify what makes my version of this work valuable beyond what the AI produces — what judgment, context, or expertise do I bring that the tool doesn't? Then suggest one way I could lean further into that judgment-intensive part of the work.\"</em>",
+            "Review the response. Does it point to a part of your work where you're adding real value — or does it reveal a task where the value is shifting?",
+            "Share your judgment audit in the group — the pattern of where human expertise adds the most value is often different from where people expect."
+          ]
+        }
+      }
+    ],
+    "homework": {
+      "title": "Pick one thing you're saving for — and let AI reverse-engineer the plan.",
+      "body": "Everyone has something they're putting off because the math feels overwhelming: a vacation, a home project, a big purchase, an emergency fund that doesn't exist yet. Tonight, try a technique that makes the planning feel manageable. Open any free AI tool (ChatGPT, Claude, Gemini, or Perplexity):",
+      "prompt": "\"I want to save $[amount] for [what it's for] by [date or timeframe]. Here's what I know about my situation: I earn roughly $[income range], my biggest expenses are [list a few], and I've tried saving before but [describe what usually happens — 'I forget,' 'unexpected costs eat it,' 'I never know where to start']. Reverse-engineer a realistic savings plan for me — not an ideal one, a realistic one. Break it into weekly or monthly amounts, suggest where the money could come from, and give me one specific action to take this week to start.\"<br><br>The technique — <em>giving AI a specific target and asking it to work backward from the goal</em> — is one of the most useful prompting habits you can build. It works for any planning task: 'I need to be ready for X by Y — what does the path look like?' produces sharper, more actionable answers than 'help me plan for X.'"
+    }
+  },
   "2026-08-10": {
     "intro": "Monday. Three patterns to carry into the week: the AI economy is splitting into two tracks that pay very differently, companies handed out AI tools without redesigning the work around them, and the path from junior to senior is being rewritten right now.",
     "trends": [
