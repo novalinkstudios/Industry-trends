@@ -968,6 +968,76 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-08-11": {
+      intro: "Tuesday. This week the tools keep stepping up for you: agents handing back real hours, an assistant that follows you across every Office app, and one that runs your browser errands. The momentum is yours.",
+      trends: [
+        {
+          title: "Your AI agents are handing back real hours",
+          source_url: "https://www.uctoday.com/productivity-automation/ai-productivity-reports-2026/",
+          body: "The clearest win from AI right now is time landing back on your calendar. Knowledge workers running production AI agents are recovering <em>a median 6.4 hours per week per seat (McKinsey Global AI Survey 2026 and Slack Workforce Index)</em>, with senior practitioners saving even more. Those reclaimed hours are yours to aim at the work that actually moves things forward.",
+          slants: {
+            strategy: "Hours saved compound into an edge only when you point them somewhere on purpose — decide now where your team's freed-up time should turn into bigger wins.",
+            operations: "That reclaimed time is exactly the room you need for the process improvements you keep postponing, so claim it for one fix this week.",
+            pm: "A few hours back each week is space to get ahead of risks and stakeholders instead of reacting, widening how much of a project you can shape.",
+            admin: "The routine work your agents absorb is your opening to step into the visible, higher-value tasks that raise your profile across the org."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool and list the three most repetitive tasks that eat your week.",
+              "Paste this prompt: <em>\"Here are three repetitive tasks I do every week: [list them]. For each, show me exactly how I could hand it to an AI agent and what I'd need to check before trusting the result.\"</em>",
+              "Pick the single task the AI flagged as easiest to hand off and run it that way today.",
+              "Paste this follow-up: <em>\"Now turn this into a simple weekly routine so this task runs the same way every time, and tell me roughly how many minutes I should expect to save.\"</em>",
+              "Share with the group the one task you'd most like to hand off and how much time it's costing you now."
+            ]
+          }
+        },
+        {
+          title: "One AI that follows you across every Office app",
+          source_url: "https://www.uctoday.com/productivity-automation/anthropic-expands-claude-microsoft-365-integration-for-all-user-plans/",
+          body: "Working across Word, Excel, Outlook, and PowerPoint just got smoother. Anthropic's Claude for Microsoft 365 reached general availability as <em>the first non-Microsoft AI model to ship as a native add-in across the full Office suite (UC Today)</em>, and it carries your context from one app to the next instead of resetting. That means less re-explaining and more of your tools picking up right where you left off.",
+          slants: {
+            strategy: "An assistant that holds context across your whole toolset lowers the cost of complex, cross-app work — the teams that build fluency here move faster on everything.",
+            operations: "Context that carries from Outlook to Excel to PowerPoint means fewer handoffs and less rekeying, so pick one multi-app workflow to run start to finish with it this week.",
+            pm: "One assistant that remembers the thread across apps lets you keep more of a project's moving parts connected without stitching them together yourself.",
+            admin: "Being the person who can drive an assistant across the whole Office suite makes you the go-to who turns scattered requests into finished work fast."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool and pick one task that normally forces you to jump between two or more Office apps.",
+              "Paste this prompt: <em>\"I need to move information between [app A] and [app B] to finish this task: [describe it]. Walk me through doing it in one connected flow instead of copying back and forth.\"</em>",
+              "Run that flow on a real task today and note where the copying and re-explaining disappeared.",
+              "Paste this follow-up: <em>\"Turn this into a repeatable checklist I can follow every time I do this cross-app task.\"</em>",
+              "Share your checklist with the group so others can streamline the same app-to-app juggling."
+            ]
+          }
+        },
+        {
+          title: "An AI that runs your web errands for you",
+          source_url: "https://www.engadget.com/2229209/gemini-spark-now-has-chrome-web-browsing-capabliities/",
+          body: "Routine web chores are becoming something you can simply delegate. Google's Gemini Spark can now operate your actual Chrome browser to handle tasks like researching flights and scheduling viewings, rolling out in the US starting <em>August 3, 2026, with sensitive steps like payments still handed back to you for approval (Engadget)</em>. The busywork of clicking through tabs is turning into something you hand off and check.",
+          slants: {
+            strategy: "As agents start doing real work in the browser, the advantage goes to teams that figure out early which routine web tasks are safe to delegate, so start mapping them now.",
+            operations: "An agent that can navigate the web for you can take on the tab-heavy research and form-filling that clogs your day, so line up one recurring web task to hand off.",
+            pm: "Delegating web legwork frees your attention for coordination and judgment rather than manual lookups, expanding what you can keep moving at once.",
+            admin: "Handing routine booking and research to an agent that checks with you before anything sensitive lets you cover more ground while staying firmly in control."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool and pick one routine web task you do often, like gathering options or filling a standard form.",
+              "Paste this prompt: <em>\"Here's a repetitive web task I do: [describe it]. Break it into clear steps and tell me which ones an AI agent could safely handle and which I should keep for myself.\"</em>",
+              "Run the task using that step-by-step breakdown and note which parts you'd happily hand off entirely.",
+              "Paste this follow-up: <em>\"Write me a short, safe delegation checklist for this task, including the exact points where I should review before anything is finalized.\"</em>",
+              "Share your delegation checklist with the group so everyone can offload their own web busywork with confidence."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Plan your dream day trip without the overwhelm",
+        body: "This one practices structured output — asking AI to hand back an answer in a specific, ready-to-use format instead of a wall of text. When you tell it exactly how you want the information laid out, you get something you can act on right away.",
+        prompt: "Act as a local guide. Build me a relaxed day-trip plan as a simple table with columns for Time, Stop, What to Do, and Estimated Cost, with a little breathing room between stops. Here are the details: [paste your destination, date, and budget here]."
+      }
+    },
     "2026-08-10": {
       "intro": "Monday. This week the theme is orchestration — enterprise agents are going mainstream, one dashboard can now run them all, and adoption just hit record highs. The tools are lining up behind you.",
       "trends": [
@@ -1042,224 +1112,736 @@
       }
     },
     "2026-08-09": {
-  "intro": "Sunday. This week's momentum comes down to leverage — powerful AI is cheaper than ever, specialized agents are arriving for your field, and the hours you save are yours to reinvest. You're holding more advantage than you realize.",
-  "trends": [
-    {
-      "title": "AI is handing you back a full workday",
-      "source_url": "https://www.bcg.com/press/3june2026-ai-reshaping-jobs-faster-than-companies-reshaping-work",
-      "body": "The biggest story in AI right now isn't a new model — it's the time already landing in your calendar. BCG's 2026 Global AI at Work survey found that <em>42% of regular AI users now save at least eight hours a week, a full workday, and adoption among frontline employees has climbed to 74% (BCG)</em>. The opportunity is deciding, on purpose, what that reclaimed day goes toward.",
-      "slants": {
-        "strategy": "The teams that pull ahead won't be the ones that save the most time but the ones that redirect it best — decide now where your team's reclaimed hours create the most value.",
-        "leaders": "Your people are already winning back a day a week, so the leadership move is simple: point that time at the high-judgment work only your team can do.",
-        "operations": "Those saved hours are the space you've wanted for the process improvements you keep deferring — pick one to finally tackle with the time AI is giving back.",
-        "pm": "A full day returned each week means room to get ahead of risks and stakeholders instead of chasing them, expanding how much of the project you can shape.",
-        "admin": "The time AI frees from routine tasks is your opening to take on the visible, higher-value work that gets you noticed across every team you support."
-      },
-      "challenge": {
-        "steps": [
-          "Open your company-approved AI tool and list the three recurring tasks that eat the most of your week.",
-          "Paste this prompt: <em>\"Here are three tasks I do every week: [list them]. For each, show me how to hand off or speed up the biggest chunk using you, starting with the one that saves the most time.\"</em>",
-          "Put the top suggestion into practice on today's version of that task and note how long it actually saved you.",
-          "Paste this follow-up: <em>\"Now help me use the time I just saved — suggest one higher-value task I could take on this week and how to get started.\"</em>",
-          "Share with the group the task you handed off and what you're doing with the reclaimed time."
-        ]
-      }
-    },
-    {
-      "title": "Specialized AI teammates are arriving for your field",
-      "source_url": "https://aifunding.me/insights/ai-agent-funding-july-2026",
-      "body": "AI is moving from a general helper to specialist teammates built for specific kinds of work. Investors poured <em>$1.8 billion into AI agent startups across a dozen deals in July alone, with the money flowing to agents built for legal, healthcare, and finance workflows (AI Funding)</em>. That means purpose-built assistants for the exact work you do are landing in your tools faster than ever.",
-      "slants": {
-        "strategy": "Vertical agents tuned to your industry are becoming a real edge, so start scouting which parts of your workflow a specialist assistant could own — early adopters set the pace.",
-        "leaders": "Purpose-built agents for your function are maturing fast; get your team experimenting now so you're fluent when they become standard, not scrambling to catch up.",
-        "operations": "An agent designed for your specific process can carry more of the routine load than a general tool, so watch for one that fits your workflow and pilot it early.",
-        "pm": "Specialized agents can take on the domain-heavy coordination that used to demand your constant attention, freeing you to steer more projects at once.",
-        "admin": "As assistants built for exactly your kind of work arrive, being the first to master one turns you into the person who makes the whole team faster."
-      },
-      "challenge": {
-        "steps": [
-          "Open your company-approved AI tool and name the single most specialized, expertise-heavy task in your week.",
-          "Paste this prompt: <em>\"I handle this specialized task regularly: [describe it]. Act as an expert assistant for it and walk me through how you'd help me do it faster and better.\"</em>",
-          "Try its approach on a real version of the task and keep the parts that clearly raised your quality or speed.",
-          "Paste this follow-up: <em>\"Turn this into a specialist checklist I can reuse every time, with the exact prompts and what to watch out for.\"</em>",
-          "Share your specialist workflow with the group so others in your field can build on it."
-        ]
-      }
-    },
-    {
-      "title": "Powerful AI just got dramatically cheaper to use",
-      "source_url": "https://www.aiapps.com/blog/ai-news-august-breakthroughs-launches-trends-cant-miss/",
-      "body": "The most capable AI is becoming almost free to run, which means more of it shows up in the tools you already pay for. OpenAI <em>cut its latest model's pricing by 80% to about $0.20 per million input tokens, while ChatGPT crossed roughly one billion weekly users (AIapps)</em>. Cheaper, more widespread AI means the assistants inside your apps can take on bigger jobs at no extra cost to you.",
-      "slants": {
-        "strategy": "Every price drop widens what's worth automating, so keep a live list of tasks that were 'too expensive' to hand off and revisit it — the economics are moving your way fast.",
-        "leaders": "Falling costs make more of your team's tedious work worth offloading, so encourage people to retry the ideas they shelved when AI felt too pricey.",
-        "operations": "The bulky, low-value tasks you set aside are becoming fair game as costs fall, so flag the ones you'd automate the moment it's affordable — that moment is basically here.",
-        "pm": "Cheaper, stronger AI baked into your project tools keeps leveling up on the same plan, so revisit what's newly possible before scoping your next phase.",
-        "admin": "The tools you use daily quietly get more capable on the same subscription, compounding the time you save without a single new purchase."
-      },
-      "challenge": {
-        "steps": [
-          "Open your company-approved AI tool and name one task you once decided wasn't worth automating.",
-          "Paste this prompt: <em>\"Here's a task I skipped automating because it felt too small or too costly to bother: [describe it]. Show me the fastest way to do it with you now, end to end.\"</em>",
-          "Run through its approach on a live version of the task and note the effort it just removed.",
-          "Paste this follow-up: <em>\"Package this into a quick repeatable routine with the exact prompts to paste each time.\"</em>",
-          "Share the routine with your group so someone else can reclaim the same effort."
-        ]
-      }
-    }
-  ],
-  "homework": {
-    "title": "Get expert-level help planning a home project",
-    "body": "This one practices role prompting — telling the AI who to be before you ask your question, so its answer draws on the right expertise. Assigning it a specific role sharpens the advice far more than a generic ask.",
-    "prompt": "Act as an experienced general contractor. Walk me through how to plan and budget this home project step by step, and flag the mistakes beginners usually make: [paste your project here]"
-  }
-},
-    "2026-08-08": {
-  "intro": "Saturday. This week's throughline is advantage: your AI skills are worth more, your everyday tools do more, and the ground under them is solid — three reasons you're further ahead than you think.",
-  "trends": [
-    {
-      "title": "Your AI skills are now worth a real raise",
-      "source_url": "https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-jobs-barometer.html",
-      "body": "The market is putting a price on knowing how to work with AI, and it's climbing fast. PwC's 2026 Global AI Jobs Barometer, drawn from over a billion job ads, found that <em>workers with AI skills now earn a 62% wage premium, up from 56% a year ago, while AI-skilled roles grow nearly eight times faster than the overall job market (PwC)</em>. Every hour you spend getting fluent is compounding in your favor.",
-      "slants": {
-        "strategy": "AI fluency is becoming the clearest marker of a high-value team, so make skill-building a visible priority now and you'll attract and keep the people who define your edge.",
-        "leaders": "The people on your team who lean into AI are becoming your most valuable talent, so spotlight and reward that growth before the market prices them away from you.",
-        "operations": "Every AI skill you add makes more of your workflow yours to own and raises your worth doing it — pick one capability to deepen this month.",
-        "pm": "Fluency with AI tools lets you steer more of the project directly and makes you the person leadership leans on, widening your influence with every skill you gain.",
-        "admin": "Becoming the go-to person for getting things done with AI turns quiet daily support into visible, well-rewarded expertise across every team you touch."
-      },
-      "challenge": {
-        "steps": [
-          "Open your company-approved AI tool and name one AI skill you'd like to be known for, like data summaries, drafting, or research.",
-          "Paste this prompt: <em>\"I want to get genuinely skilled at [name the skill] using you. Build me a two-week practice plan with a small daily exercise I can do in ten minutes.\"</em>",
-          "Do today's exercise from the plan and save the result somewhere you can track your progress.",
-          "Paste this follow-up: <em>\"Review what I just produced and tell me one specific thing to improve next time, plus a slightly harder version to try tomorrow.\"</em>",
-          "Share with the group the skill you're building and invite someone to practice alongside you."
-        ]
-      }
-    },
-    {
-      "title": "Turning raw data into clean reports just got automatic",
-      "source_url": "https://techcommunity.microsoft.com/blog/microsoft365copilotblog/what%e2%80%99s-new-in-microsoft-365-copilot--july-2026/4538332",
-      "body": "The reporting grind is getting a serious upgrade this month. Microsoft's August rollout lets Copilot in Excel <em>ground its analysis in governed Power BI data while respecting existing row-level security, and a new design skill turns raw spreadsheets into clean, readable reports on request (Microsoft)</em>. The hours you spend formatting and cross-checking numbers are becoming a single instruction.",
-      "slants": {
-        "strategy": "When trusted analysis and polished reporting take minutes instead of days, your advantage becomes how fast your team turns data into decisions — build the habit of asking for insight on demand.",
-        "leaders": "Your team can now pull governed, trustworthy analysis without waiting on a specialist, so redirect the freed-up hours toward the judgment calls only people can make.",
-        "operations": "The formatting, cross-checking, and cleanup that eat your reporting time can now run on a single request, turning a day of work into a quick review.",
-        "pm": "Pulling reliable status data and clean summaries yourself means fewer dependencies and faster updates, so you keep the project moving without waiting on the analytics queue.",
-        "admin": "Producing a polished, board-ready report from messy numbers in minutes makes you visibly the person who makes information clear and decisions easy."
-      },
-      "challenge": {
-        "steps": [
-          "Open your company-approved AI tool and pick one report or spreadsheet you build or clean up regularly.",
-          "Paste this prompt: <em>\"Here is some raw data I usually format by hand: [paste or describe it]. Turn it into a clean, readable summary and tell me the top three things worth noticing.\"</em>",
-          "Compare its version to how you'd normally present it and keep the parts that are clearer than yours.",
-          "Paste this follow-up: <em>\"Give me a reusable set of instructions so I can get this same clean format every time, and note exactly what to paste in.\"</em>",
-          "Share your new reporting shortcut with the group so the whole team saves the same time."
-        ]
-      }
-    },
-    {
-      "title": "The AI you already use is the safe long-term bet",
-      "source_url": "https://www.gartner.com/en/newsroom/press-releases/2026-08-04-gartner-predicts-enterprise-ai-workloads-at-scale-will-not-run-on-quantum-hardware-through-2028",
-      "body": "Good news for anyone worried they're betting on the wrong horse: the tools you use today are the foundation for years to come. Gartner projects that <em>classical accelerated AI will dominate every production benchmark through 2028, with exotic quantum approaches staying in the lab for the rest of the decade (Gartner)</em>. The skills and workflows you build now aren't going obsolete — they're what the future runs on.",
-      "slants": {
-        "strategy": "With the underlying technology stable for years, the real differentiator is execution, not waiting for the next breakthrough — invest confidently in the AI capabilities your team uses today.",
-        "leaders": "You can commit to building AI habits on your team without fear they'll be outdated next quarter, so go all-in on the tools already in your hands.",
-        "operations": "The workflows you design around today's AI will keep paying off for years, so it's worth the effort to build them well now.",
-        "pm": "The AI features in your project tools rest on a stable foundation, so the processes you standardize today will still be current well into the future.",
-        "admin": "The AI fluency you're building is a durable asset, not a passing trend, so every playbook you create keeps earning its keep for years."
-      },
-      "challenge": {
-        "steps": [
-          "Open your company-approved AI tool and pick one workflow you've been meaning to build out properly but kept postponing.",
-          "Paste this prompt: <em>\"Help me design a solid, repeatable version of this workflow I can rely on long term: [describe it]. Map each step and where you fit in.\"</em>",
-          "Set up the first step from that map today, knowing it's built on tools that will still be here in two years.",
-          "Paste this follow-up: <em>\"Turn this into a clear playbook a new teammate could follow, with the exact prompts and a short note on why each step matters.\"</em>",
-          "Share your playbook with the group as a foundation others can build on."
-        ]
-      }
-    }
-  ],
-  "homework": {
-    "title": "Plan a weekend get-together without the back-and-forth",
-    "body": "This one practices structured output — asking the AI to return its answer in a specific, organized format so it's instantly usable instead of a wall of text. Telling it exactly how you want the response shaped saves you the reformatting every time.",
-    "prompt": "Help me plan a small weekend gathering. Return your answer as a table with columns for Task, Who it's for, Timing, and Estimated cost, followed by a short shopping list. Here are the details: [paste your event idea here]"
-  }
-},
-    "2026-08-07": {
-      intro: "Friday. This week's theme is reach: your AI is moving from advice to action, getting cheaper to run, and settling into everyday work — each shift a lever you can pull today.",
+      intro: "Sunday. Three patterns to sit with before the week starts: the gap between using AI and actually being changed by it, a compliance deadline that just landed this month with most companies unprepared, and a clarity gap between the C-suite and the people who actually execute AI strategy.",
       trends: [
         {
-          title: "Your AI can now do the work, not just suggest it",
-          source_url: "https://www.usecarly.com/blog/claude-for-microsoft-365/",
-          body: "Your assistant is graduating from giving advice to taking action right inside the apps you already use. Claude's Microsoft 365 connector has moved from read-only to read/write, so it can now draft and send email, create calendar invites, and build files in OneDrive and SharePoint — <em>available across every Claude plan from Free through Enterprise (Anthropic)</em>. The busywork between deciding and doing is quietly disappearing.",
-          slants: {
-            strategy: "When AI can execute inside your core tools, the advantage shifts to leaders who redesign workflows around action rather than approval — decide now which routine tasks you'll let it own end to end.",
-            leaders: "Your team can hand off the click-work between intent and done, so your edge is choosing which actions to delegate first and setting the guardrails that let people move faster with confidence.",
-            operations: "An assistant that sends the email, books the meeting, and updates the file turns your longest multi-step routines into a quick review-and-approve, giving you back real hours each week.",
-            pm: "When AI handles the follow-up messages, invites, and status files itself, you carry fewer manual threads and can run more of the project in parallel without dropping a detail.",
-            admin: "The scheduling, drafting, and file-wrangling you do all day can now run with a single instruction, freeing you for the judgment and relationships that make your support irreplaceable."
-          },
-          challenge: {
-            steps: [
-              "Open your company-approved AI tool and pick one small action you take daily, like sending a recurring update or booking a check-in.",
-              "Paste this prompt: <em>\"I want to hand off this routine action to you: [describe it]. Ask me for anything you need, then draft it exactly as it should go out so I can approve it.\"</em>",
-              "Review the draft and confirm it matches how you'd have done it yourself before sending.",
-              "Paste this follow-up: <em>\"Turn this into a reusable instruction I can give you each time, listing exactly what you'll need from me to complete it.\"</em>",
-              "Share with the group one action you've started delegating and how much clicking it saved you."
-            ]
-          }
-        },
-        {
-          title: "The AI you rely on just got far cheaper to run",
-          source_url: "https://venturebeat.com/technology/googles-gemini-3-6-flash-model-cuts-ai-agent-token-costs-by-up-to-65-on-long-horizon-engineering-tasks-and-3-5-pro-is-on-the-way",
-          body: "The economics of AI keep bending in your favor. Google's new Gemini 3.6 Flash <em>cuts AI agent token costs by up to 65% on long, multi-step tasks while scoring higher on every benchmark (VentureBeat)</em>. Cheaper and smarter at once means the assistants baked into your tools can take on bigger jobs without a bigger bill — more capability heading your way on the plan you already have.",
-          slants: {
-            strategy: "Every drop in AI cost expands what's affordable to automate, so plan for what becomes practical next quarter instead of budgeting only for today's prices — the leaders who look ahead claim the upside first.",
-            leaders: "Falling costs mean more of your team's tedious work becomes worth automating, so keep a running list of tasks that were 'too expensive' before and revisit it as prices fall.",
-            operations: "As the price of running AI drops, the slow or bulky tasks you set aside become fair game, so flag the ones you'd automate the moment it's cost-effective — that moment is arriving fast.",
-            pm: "Cheaper, stronger models mean the AI inside your project tools keeps leveling up mid-flight, so revisit what's newly possible before you scope your next plan.",
-            admin: "The tools you use every day get quietly more capable on the same subscription, compounding the time you save without a single new purchase."
-          },
-          challenge: {
-            steps: [
-              "Open your company-approved AI tool and name one task you once decided was too big or fiddly to hand off.",
-              "Paste this prompt: <em>\"Here's a task I've avoided automating because it felt too involved: [describe it]. Show me the most efficient way to do it with you now, start to finish.\"</em>",
-              "Run through the approach it suggests and note where it handled complexity you expected to struggle with.",
-              "Paste this follow-up: <em>\"Package this into a repeatable routine with the exact prompts to paste each time, optimized to use as few back-and-forth steps as possible.\"</em>",
-              "Share the routine with your group so someone else can reclaim the same effort."
-            ]
-          }
-        },
-        {
-          title: "AI is now everyday — and the runway is wide open",
+          title: "Most companies have adopted AI — very few have actually changed",
           source_url: "https://www.publicissapient.com/company/news/ai-adoption-enterprise-readiness-report-2026",
-          body: "AI has quietly become a normal part of the workday, and that's great news for anyone ready to lead. A 2026 global enterprise report found that <em>73% of organizations now use AI regularly, yet only 10% say it's truly core to how they operate (Publicis Sapient)</em>. That gap is your opening: the people who turn everyday AI use into real, embedded workflows are about to become the most valuable ones in the building.",
+          body: "Publicis Sapient surveyed 1,550 AI decision-makers for its 2026 Global Enterprise AI Report and found a gap that explains a lot of AI frustration: <em>73% of enterprises say AI is used regularly across most business processes, but only 10% say it's core to how their business actually operates</em>. The disconnect isn't about tools — it's about operating models. 42% say their organizations aren't set up to capture AI's value, and 22% identify the way their organization operates as the primary barrier to AI success.",
           slants: {
-            strategy: "Widespread use but shallow integration means the competitive edge is still unclaimed — leaders who move AI from occasional help to the backbone of a workflow define the standard everyone else follows.",
-            leaders: "Most teams use AI casually; few have made it core, so pick one workflow to fully rebuild around AI and you'll set the example your organization learns from.",
-            operations: "The gap between 'using AI' and 'built on AI' is exactly where you shine — redesign one recurring process around it end to end and you turn a personal habit into a team capability.",
-            pm: "Being the person who bakes AI into how a project actually runs — not just as a side tool — expands your influence and makes your process the one others want to copy.",
-            admin: "Turning your daily AI habits into repeatable playbooks others can follow makes you visibly the person who moved the team from dabbling to doing."
+            strategy:   "The strategic question isn't 'are we using AI?' — it's 'has anything we do actually changed because of it?' Adoption without integration means you're paying for capability your operating model can't absorb.",
+            leaders:    "Ask your team: 'Name one workflow that's fundamentally different because of AI — not faster, different.' If the answer takes too long, you're in the 73%, not the 10%.",
+            operations: "If your AI tools are accelerating legacy workflows rather than replacing them, you're compounding efficiency on a process that may not need to exist in its current form.",
+            pm:         "Tag each AI initiative in your portfolio: 'bolt-on' (speeds up an existing process) vs. 'redesign' (changes the process itself). The ratio tells you where the value ceiling is.",
+            admin:      "If AI automates one step in your workflow but everything else stays the same, the process wasn't redesigned — it was patched. The real efficiency comes from rethinking the full flow."
           },
           challenge: {
             steps: [
-              "Open your company-approved AI tool and choose one recurring workflow you own, like weekly reporting or intake triage.",
-              "Paste this prompt: <em>\"Help me redesign this recurring workflow so AI is built into every step, not just used occasionally: [describe the workflow]. Map it out stage by stage.\"</em>",
-              "Pick the single stage from that map where embedding AI would save the most time and set it up this week.",
-              "Paste this follow-up: <em>\"Write a short playbook for this workflow that a teammate could follow to run it the same way I do, including the prompts.\"</em>",
-              "Share your playbook with the group so one everyday habit becomes a shared standard."
+              "Pick one process or workflow you manage or contribute to regularly — something you do every week.",
+              "Open your company-approved AI tool and paste: <em>\"I have a recurring workflow that goes like this: [describe the process — steps, tools, handoffs, approvals]. Right now, AI helps with [describe any AI involvement, or say 'none yet']. Tell me honestly: is AI bolted on to an old process, or has the process actually changed because of it? If it's a bolt-on, suggest one way the workflow itself could be redesigned with AI as a core part — not just a speed boost.\"</em>",
+              "Read the suggestion and ask yourself: would that redesigned workflow be better, or does the current process exist for a reason the AI doesn't see?",
+              "Share your bolt-on vs. redesign assessment in the group — the pattern across roles is usually revealing."
+            ]
+          }
+        },
+        {
+          title: "The biggest AI compliance deadline of the year just landed — and most companies weren't ready",
+          source_url: "https://labs.cloudsecurityalliance.org/research/csa-research-note-eu-ai-act-high-risk-compliance-deadline-20/",
+          body: "August 2, 2026 was the binding enforcement date for the EU AI Act's high-risk AI system obligations — and most companies missed it unprepared. The Cloud Security Alliance reports that <em>78% of enterprises had not taken meaningful steps toward compliance</em>, and over half lacked even a systematic inventory of AI systems in production. Fines can reach €35 million or 7% of global annual turnover. Whether or not your company operates in Europe, the governance patterns being set now are shaping AI accountability everywhere.",
+          slants: {
+            strategy:   "Regulatory compliance is downstream of good governance. If you don't know what AI systems you're running and what decisions they influence, the compliance gap is a symptom of a bigger strategic blind spot.",
+            leaders:    "Ask your team: 'Can we list every AI system we use and what decisions it affects?' If the answer involves spreadsheets and guesswork, that's the gap to close — regulation or not.",
+            operations: "Over half of enterprises lack a systematic AI inventory. If your ops team can't enumerate AI systems in production, that's risk management 101 — compliance deadline or not.",
+            pm:         "Compliance deadlines create clear requirements and hard dates — which makes them projects. If your organization hasn't scoped this one yet, the PM who steps up will be doing leadership a favor.",
+            admin:      "If you track systems, licenses, or vendor contracts, you may already know more about what AI tools are actually in use than the compliance team does. That knowledge has new value."
+          },
+          challenge: {
+            steps: [
+              "Think about the AI tools and automated systems you interact with at work — Copilot, chatbots, recommendation engines, scoring models, anything that uses AI or machine learning.",
+              "Make a quick list: tool name, what it does, and what decisions or outputs it influences.",
+              "Open your company-approved AI tool and paste: <em>\"I've listed the AI systems I interact with at work: [paste your list]. For each one, help me categorize it: does it make or influence decisions about people (hiring, performance, access), safety, or legal/financial outcomes? Those are the categories most likely to attract regulatory scrutiny under frameworks like the EU AI Act.\"</em>",
+              "Review the categorization. Were any systems in higher-risk categories than you expected?",
+              "Share your AI inventory and any surprises in the group — most teams discover tools they didn't realize counted as AI."
+            ]
+          }
+        },
+        {
+          title: "The AI clarity gap isn't between companies — it's between floors",
+          source_url: "https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-state-of-organizations",
+          body: "McKinsey's State of Organizations 2026 report exposes a gap that matters more than any technology choice: <em>56% of C-suite leaders are clear on their organization's must-win battles, but that clarity drops to 27% at middle management</em>. For AI strategy, this is the bottleneck. 88% of organizations are experimenting with AI, yet 81% report no meaningful bottom-line impact — and McKinsey's data suggests the fix isn't more technology, it's more clarity. Their recommendation: for every dollar spent on AI tools, invest five times as much in people.",
+          slants: {
+            strategy:   "Your AI strategy is only as strong as the layer that translates it into action. If middle management can't articulate the must-win battles, the tools you fund won't be aimed at the right problems.",
+            leaders:    "The clarity gap isn't a communication failure — it's a design failure. If your AI vision is clear at the top but fuzzy two levels down, the translation layer is missing, not the message.",
+            operations: "When the team running the process doesn't share the strategic clarity of the team funding it, AI investments solve the wrong problems — efficiently.",
+            pm:         "If the strategic priorities are unclear to the people scoping and executing AI projects, every deliverable is a best guess. Align before you build.",
+            admin:      "If you've ever wondered why a new tool was introduced but nobody explained what problem it's solving, you're seeing the clarity gap from the inside. You're not wrong to ask."
+          },
+          challenge: {
+            steps: [
+              "Think about your organization's top AI priority or initiative. Can you describe it in one sentence — not the tool, but the business problem it's solving?",
+              "Ask two colleagues at different levels in the organization the same question. Compare the answers.",
+              "Open your company-approved AI tool and paste: <em>\"I work in [your role] at a large organization. Our top AI initiative is [describe it as best you can]. Help me write a one-sentence version of this priority that would make sense to someone three levels below the person who funded it — no buzzwords, no acronyms, just what we're trying to change and why it matters.\"</em>",
+              "Share your one-sentence translation in the group — the variety of versions for the same priority is usually the most revealing finding."
             ]
           }
         }
       ],
       homework: {
-        title: "Get honest feedback on a personal decision",
-        body: "This one practices role prompting — telling the AI to take on a specific expert persona so its answer comes with the depth and perspective of that role. Assigning a clear role sharpens the advice far more than a generic question does.",
-        prompt: "Act as an experienced financial planner who is candid but kind. Walk me through the trade-offs of my decision, ask me any clarifying questions first, and end with a clear recommendation and why. Here's the decision: [paste your situation here]"
+        title: "Pick a topic you've always nodded along to — and actually learn it in 10 minutes.",
+        body: "Everyone has one: a concept you smile and nod through in conversations but couldn't explain to someone else. How interest rates actually work, what a tariff does, how your retirement account grows, what blockchain is for. Tonight, try a technique that makes AI an unusually good teacher. Use any free AI tool (ChatGPT, Claude, Gemini, or Perplexity):",
+        prompt: "\"Explain [your topic] to me at three levels of depth. Level 1: explain it like I'm hearing about it for the first time — use an everyday analogy and keep it to 2-3 sentences. Level 2: now add the key details someone would need to have an informed conversation about it. Level 3: go deeper — what do people who actually work with this concept understand that casual observers miss?\"<br><br>The technique — <em>asking for layered depth instead of a single explanation</em> — lets you stop at whatever level feels right and go deeper only when you're ready. It works for anything: a medical term your doctor used, a financial concept in the news, a technology you keep seeing in headlines. You control the depth; the AI provides the ladder."
       }
     },
+
+    "2026-08-08": {
+      intro: "Saturday. Three patterns hiding in plain sight: where your AI budget is actually going, how AI is shaping customer decisions before your sales team picks up the phone, and a quiet accountability gap forming between employees and the AI they're asked to stand behind.",
+      trends: [
+        {
+          title: "Speed is the easy AI win — the harder one is worth twice as much",
+          source_url: "https://www.gartner.com/en/newsroom/press-releases/2026-07-20-gartner-survey-shows-45-percent-of-cfos-say-their-ai-investments-lean-towwards-productivity-while-20-percent-say-these-investments-lean-towards-decision-quality",
+          body: "A Gartner survey of 204 finance leaders reveals a misalignment that explains a lot of AI frustration: <em>45% of CFOs say their AI investments lean toward productivity, while only 20% lean toward decision quality</em>. The gap matters because organizations investing in AI that changes decisions — not just speeds up tasks — are more than twice as likely to report significant value (Gartner, July 2026).",
+          slants: {
+            strategy:   "If your AI portfolio is concentrated on making things faster, you're optimizing a curve that flattens. The compounding value comes from AI that changes which decisions get made and how.",
+            leaders:    "Ask your team a simple question: 'Which of our AI projects changes a decision, not just a task?' If nobody can name one, your investment mix needs rebalancing.",
+            operations: "Productivity AI hits a ceiling once a workflow is automated. The next step is feeding those efficiency gains into better business decisions upstream.",
+            pm:         "When prioritizing AI initiatives, weight decision-quality outcomes higher than time-saved metrics. The projects that change decisions deliver more durable value than the ones that speed up tasks.",
+            admin:      "The admin tasks most likely to grow in value are the ones that involve judgment and context — the decision-quality layer, not the speed layer."
+          },
+          challenge: {
+            steps: [
+              "List the AI tools or features you use (or your team uses) at work this week. Next to each, write whether it primarily saves time or improves a decision.",
+              "Open your company-approved AI tool and paste: <em>\"I work in [your role]. Here are the AI tools and features I use: [list them]. For each one, help me identify whether it's primarily saving time (productivity) or improving a decision (decision quality). Then suggest one way I could shift one productivity use toward a decision-quality use.\"</em>",
+              "Review the suggestion. Does it point to a decision in your workflow that could be sharper, not just faster?",
+              "Share your productivity-vs-decision split in the group — the pattern across roles is usually eye-opening."
+            ]
+          }
+        },
+        {
+          title: "AI is describing your business to customers before you get the chance",
+          source_url: "https://hbr.org/2026/07/ai-is-changing-how-customers-choose-your-business",
+          body: "Harvard Business Review profiles three companies that discovered AI tools were shaping customer perceptions before any human conversation happened. A manufacturer improved sales by screening AI-generated inquiries; a hotel learned to monitor how AI described its property; a software company replaced periodic reviews with continuous monitoring of AI-generated market perceptions. The vendor shortlist is narrowing — <em>average B2B shortlists have shrunk from 3.2 to roughly 2.5 as AI pre-filters options</em> before a sales team even gets a pitch (HBR, July 2026).",
+          slants: {
+            strategy:   "AI is a new channel you can't control but can influence. If you're not auditing how ChatGPT, Perplexity, and Copilot describe your products, you're invisible in a growing share of buying decisions.",
+            leaders:    "Ask someone on your team to query three AI tools about your company's product or service. What comes back is what your next customer sees first — and it's worth knowing before they do.",
+            operations: "Your public-facing content now serves two audiences: humans and AI. Structured, clear, factual content performs better in both channels.",
+            pm:         "If your project involves any customer-facing deliverable, add a step: 'How would an AI tool summarize this?' The answer shapes perception before your launch does.",
+            admin:      "If you maintain public-facing content — websites, directories, FAQs — know that AI tools are pulling from it to answer customer questions. Accuracy and clarity matter more than ever."
+          },
+          challenge: {
+            steps: [
+              "Pick a product, service, or team you work with that has a public presence.",
+              "Open a free AI tool (ChatGPT, Claude, Gemini, or Perplexity) and ask: <em>\"What can you tell me about [your company/product/service]? What are its strengths and weaknesses compared to alternatives?\"</em>",
+              "Read the response carefully. Is it accurate? Is anything outdated, missing, or misleading? Note the gaps.",
+              "Now ask a follow-up: <em>\"Where are you getting this information? What sources are you drawing from?\"</em>",
+              "Share what you found in the group — the gap between what AI says about your organization and what's actually true is usually surprising."
+            ]
+          }
+        },
+        {
+          title: "Ask your team to explain an AI decision — the pause tells you everything",
+          source_url: "https://hbr.org/2026/07/when-employees-are-held-accountable-for-ai-generated-decisions",
+          body: "A multi-year field study across banking, recruitment, and biotech found that when AI is embedded in core decisions, <em>frontline workers quietly mask, reinterpret, and substitute their own explanations for AI outputs</em> to preserve professional credibility. At one bank, loan officers cited common expert reasons for AI-driven rejections even when those weren't the model's actual reasoning — and customers noticed. The one organization that avoided this built an interpretive layer: access to underlying data, developer feedback loops, and shared language around the model's logic (HBR, July 2026).",
+          slants: {
+            strategy:   "If your strategy depends on AI-driven decisions at the front line, the interpretive layer between model and customer is a strategic requirement — not a training afterthought.",
+            leaders:    "Employees won't raise their hand to say 'I don't understand the AI's decision' if they feel they're expected to own it. Create space for that honesty before it costs you a customer.",
+            operations: "Process design must include how employees explain AI outputs, not just how they receive them. If the explanation step isn't designed, employees will improvise — and that becomes unmanaged risk.",
+            pm:         "When scoping AI deployments, budget for the last mile: documentation, feedback loops, and training that let the people delivering AI decisions actually understand them.",
+            admin:      "You're often the person between the system and the person asking 'why did this happen?' Making that interpretive role visible — and supported — is valuable."
+          },
+          challenge: {
+            steps: [
+              "Think about a decision or recommendation at work that's influenced by AI or an automated system — it could be a report, a score, a suggestion, or an approval.",
+              "Ask yourself honestly: could you explain to a colleague or customer exactly why the system produced that output? Not what it said — but why.",
+              "Open your company-approved AI tool and paste: <em>\"I work in [your role] and we use AI or automated systems for [describe the decision]. Help me write three plain-language questions I should be able to answer about any AI-generated decision before I communicate it to someone else. Focus on questions that build genuine understanding, not just talking points.\"</em>",
+              "Try answering those three questions for a recent AI-assisted decision. Note where you're confident and where you're guessing.",
+              "Share your three questions in the group — building a shared explainability checklist helps everyone communicate AI decisions more honestly."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Pick a cuisine you've never cooked and let AI walk you through the first dish.",
+        body: "You don't need to be a cook to try this — you just need a kitchen and some curiosity. Open any free AI tool (ChatGPT, Claude, Gemini, or Perplexity):",
+        prompt: "\"I want to try cooking [a cuisine you've always been curious about — Thai, Ethiopian, Japanese, Peruvian, whatever draws you]. I'm a [beginner/decent/confident] cook. I have about an hour and a regular grocery store nearby. Recommend one dish that's a good entry point, explain why it's a good first dish for this cuisine, and give me a step-by-step recipe with exactly what I need to buy. If any ingredient might be hard to find, suggest a substitute.\"<br><br>The technique — <em>giving your skill level and constraints upfront</em> — stops AI from recommending something impressive but impractical. It works any time you're asking for advice in unfamiliar territory."
+      }
+    },
+
+    "2026-08-07": {
+      intro: "Friday. Three patterns to carry into the weekend: how to spot the candidates who actually know how to work with AI, the biggest productivity drain at work already has a fix, and the institutional knowledge in your head is worth more than you think.",
+      trends: [
+        {
+          title: "Hiring is about to test for two things at once — and you need to know what to look for",
+          source_url: "https://www.gartner.com/en/newsroom/press-releases/2025-10-21-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2026-and-beyond",
+          body: "Gartner's strategic predictions paint a dual picture of where hiring is headed. By 2027, <em>75% of hiring processes will include formal testing for AI proficiency</em> — not just for technical roles, but across marketing, finance, operations, and HR. But here's the twist: in the same timeframe, <em>50% of organizations will also require \"AI-free\" assessments</em> to verify that candidates can think, reason, and solve problems without AI assistance. If you're involved in hiring, you now need to evaluate for both — and the candidates who can do both are the ones worth fighting for.",
+          slants: {
+            strategy:   "Build both checks into your hiring criteria now. The candidates who can use AI effectively and reason independently are the ones who'll strengthen your team's strategic capacity.",
+            leaders:    "When you're interviewing, ask candidates to walk through a problem twice — once describing how they'd use AI, and once describing how they'd solve it without it. The contrast tells you more than either answer alone.",
+            operations: "The best ops hires will be the ones who know when to lean on AI and when to trust their own troubleshooting instincts. Test for both in your interview process.",
+            pm:         "When evaluating candidates, look for people who can use AI to accelerate their work but can also scope, prioritize, and make trade-offs on their own. That combination is becoming the bar.",
+            admin:      "If you're part of the hiring process — screening resumes, scheduling interviews, sitting on panels — knowing what AI proficiency looks like in practice helps you spot the strongest candidates."
+          },
+          challenge: {
+            steps: [
+              "Think about the last person you interviewed or helped evaluate for a role on your team. Did the process test for any AI-related skills?",
+              "Open your company-approved AI tool and paste: <em>\"I'm involved in hiring for [describe the role or team]. Help me design two short interview questions: one that tests whether a candidate can use AI effectively for this type of work, and one that tests whether they can think critically and solve problems without AI. Each question should take 5 minutes to answer and reveal genuine skill, not rehearsed buzzwords.\"</em>",
+              "Review the questions and adjust them based on what you know about the role — the AI gives you a starting structure, but your context makes it real.",
+              "Share your two-question approach in the group — building a library of AI-aware interview questions helps everyone hire stronger."
+            ]
+          }
+        },
+        {
+          title: "Your meetings aren't unproductive — they're undocumented",
+          source_url: "https://metrigy.com/metrigy-releases-ai-for-business-success-2025-26-research-study/",
+          body: "Metrigy's AI for Business Success study of 1,100 companies found that <em>42% are planning to roll out AI meeting assistants in the next year</em>, and nearly 40% have already deployed them. The reason is hard to argue with: the average knowledge worker now spends over 21 hours a week in meetings, 71% of which senior managers call unproductive, and <em>nearly half of all action items discussed are never captured</em>. That's not a meeting problem — it's a systems problem. AI meeting assistants handle the capture layer so people can focus on the thinking layer.",
+          slants: {
+            strategy:   "If your strategy depends on meetings to align people, and half the action items vanish afterward, AI capture isn't a nice-to-have — it's a reliability upgrade for your operating rhythm.",
+            leaders:    "Ask your team a simple question: \"After our last three meetings, could you find every action item without digging through your notes?\" The answer tells you whether meeting capture is worth prioritizing.",
+            operations: "Every handoff that depends on someone remembering what was said in a meeting is a failure point. AI meeting tools turn verbal agreements into trackable commitments.",
+            pm:         "Half your project risks live in meeting notes nobody wrote down. AI meeting capture is the cheapest risk-reduction tool available right now.",
+            admin:      "If you've ever spent 30 minutes reconstructing what was decided in a meeting so you could act on it, you already know the problem. AI meeting tools solve exactly this."
+          },
+          challenge: {
+            steps: [
+              "Count your meetings from this past week. Estimate how many hours total — include the prep time and follow-up, not just the calendar blocks.",
+              "Pick one meeting from the week where something important was decided or assigned. Can you find the specific action items right now, without digging through notes or asking someone?",
+              "Open your company-approved AI tool and paste: <em>\"I spent approximately [X] hours in meetings this week. Here's a list of my recurring meetings and their purposes: [list them]. Help me identify which meetings could benefit most from AI-assisted note capture and action-item tracking, and which ones might not need to be meetings at all.\"</em>",
+              "Try the suggestion on one meeting next week — either add AI capture or convert the meeting to a different format.",
+              "Share your meeting audit results in the group — the total hours and the 'this didn't need to be a meeting' list tend to surprise people."
+            ]
+          }
+        },
+        {
+          title: "The knowledge in your head is worth trillions — and most companies aren't capturing it",
+          source_url: "https://www.deloitte.com/us/en/insights/topics/talent/knowledge-management-plan.html",
+          body: "A joint Deloitte and eGain report puts a number on what's being lost: <em>more than 30 million Americans will turn 65 in the next four years</em>, representing $6.9 to $9.6 trillion in institutional knowledge at risk. And <em>92% of organizations aren't effectively capturing it</em>. The knowledge that matters most — why a process was designed that way, which vendor workaround actually works, how to read the room in a client meeting — lives in people's heads, not in documentation. If you're one of those people, your expertise just became a strategic asset.",
+          slants: {
+            strategy:   "The institutional knowledge walking out your door isn't in your documentation — it's in the judgment calls, the workarounds, and the context nobody wrote down. Build a capture plan before the retirement wave hits your team.",
+            leaders:    "Identify the three people on your team whose departure would cause the most knowledge loss. Start structured knowledge capture with them this quarter — not as an exit task, but as a current one.",
+            operations: "The workarounds, tribal knowledge, and 'it works this way because of that one time' context you carry is irreplaceable. Documenting it now makes it durable — and makes you indispensable in a different way.",
+            pm:         "Every project has institutional context that isn't in the project plan — the stakeholder preferences, the historical decisions, the unofficial dependencies. Capturing it is a PM value-add that compounds over time.",
+            admin:      "You know things nobody else knows — how the approval chain actually works, who needs to be CC'd, which process on paper doesn't match reality. That knowledge is genuinely valuable. Start writing it down."
+          },
+          challenge: {
+            steps: [
+              "Think about one thing you know at work that isn't written down anywhere — a process quirk, a vendor relationship, a historical decision that still affects how things are done.",
+              "Open your company-approved AI tool and paste: <em>\"I have institutional knowledge about [describe the topic] that isn't documented anywhere. Interview me about it — ask me 5 specific questions to extract the most important details, the 'why' behind the decisions, and the context a new person would need to understand it. Then turn my answers into a short knowledge document someone else could use.\"</em>",
+              "Review the document and fill in anything the AI missed — especially the judgment calls and the reasons behind them.",
+              "Save the document somewhere your team can find it, and share your experience in the group — what did you know that you didn't realize was undocumented?"
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Plan a game night that actually fits your group — not just the internet's top 10.",
+        body: "Generic game recommendations assume you have a group of enthusiastic adults who all love the same things. Real life is messier: mixed ages, different energy levels, someone who hates competition, someone who gets bored easily. Tonight, try a technique that fixes that. Use any free AI tool (ChatGPT, Claude, Gemini, or Perplexity):",
+        prompt: "\"I want to plan a game night for [number] people. Here's who's coming: [describe the group — ages, personalities, what they enjoy, any landmines to avoid like 'my cousin hates trivia' or 'two people are super competitive']. Recommend 3 games we could play, in the order we should play them, with a one-line reason each one fits this specific group. Include one game none of us have probably tried before.\"<br><br>The technique — <em>describing the people, not just the activity</em> — works any time you ask AI for recommendations. 'Plan a dinner for 6' gets generic. 'Plan a dinner for 6 where two are vegetarian, one is adventurous, and the host hates cooking under pressure' gets useful."
+      }
+    },
+
+    "2026-08-06": {
+      intro: "Thursday. Three pieces of good news hiding in the data: the skills that matter most in an AI economy are the ones you already have, there's a clear pattern behind the AI projects that actually succeed, and the next big operational redesign at your company needs the people who know how things really work.",
+      trends: [
+        {
+          title: "Your best skills just became more valuable",
+          source_url: "https://www.mckinsey.com/mgi/media-center/human-skills-will-matter-more-than-ever-in-the-age-of-ai",
+          body: "McKinsey Global Institute mapped roughly 10,500 skills by how much automation reshapes them — and the results are encouraging. The skills with the lowest automation exposure? <em>Leadership, coaching, negotiation, and empathy</em>. The ones most affected are narrow technical tasks like SQL queries and invoice processing. More than 70% of skills employers seek today are used in both automatable and non-automatable work, which means <em>most skills aren't going away — they're being upgraded</em>. Problem-solving becomes problem-framing. Your experience gets more valuable, not less.",
+          slants: {
+            strategy:   "Your ability to frame the right question is becoming more valuable than running the analysis — that's a skill worth investing in across your team.",
+            leaders:    "The skills your team built over years — coaching, negotiating, reading a room — are the ones AI reinforces, not replaces. Name that value and build on it.",
+            operations: "Your deep knowledge of how processes actually work is what makes you the best person to shape where AI fits. That expertise is appreciating, not depreciating.",
+            pm:         "Problem-framing is your wheelhouse — scoping, prioritizing, and asking the right questions is what PMs already do. AI just makes that skill more central.",
+            admin:      "The judgment calls you make every day — tone, timing, context, what the executive actually needs — are in the most durable skill category. That's your strength."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool and pick one skill you use daily — summarizing, scheduling, reviewing, analyzing, coordinating.",
+              "Paste this prompt: <em>\"Here is a skill I use regularly at work: [describe it]. How is AI changing how this skill is applied — not whether it's needed, but how the best practitioners use it differently now? Give me one specific way the skill is shifting and one example of what 'upgraded' looks like.\"</em>",
+              "Read the response and compare it to your own experience — does the shift it describes match what you're already seeing?",
+              "Paste this follow-up: <em>\"Now give me a 2-step exercise I can do this week to practice the upgraded version of this skill, using AI as a tool rather than a replacement.\"</em>",
+              "Share your skill shift with the group — what's changing about how you apply it, and what stayed the same?"
+            ]
+          }
+        },
+        {
+          title: "Successful AI projects share one simple habit",
+          source_url: "https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027",
+          body: "Gartner surveyed more than 3,400 organizations investing in agentic AI and found a clear pattern: <em>the projects that succeed are the ones that start with defined goals, cost guardrails, and a governance plan</em>. Over 40% of agentic AI projects are expected to be cut by end of 2027 — not because the technology doesn't work, but because nobody set a clear target for what success looks like. The good news? <em>That's entirely within your control.</em> The teams that scope AI the way they'd scope any strategic initiative are the ones seeing real returns.",
+          slants: {
+            strategy:   "Define what success looks like in measurable terms before your next AI initiative kicks off — the clearest targets produce the strongest results.",
+            leaders:    "The most valuable thing you can do for an AI pilot right now is give it a clear mission — what does it need to deliver, by when, and how will you know it's working?",
+            operations: "Build in a 90-day checkpoint with clear criteria: is this saving time, reducing errors, or improving quality? A simple check-in keeps good projects on track.",
+            pm:         "Scope agentic AI the way you'd scope any project — goals, budget, timeline, and success criteria. That discipline is exactly why the best AI projects have a PM behind them.",
+            admin:      "Your feedback on whether an AI tool is actually saving time is one of the most valuable signals a pilot can get. Speak up — it helps the whole team invest wisely."
+          },
+          challenge: {
+            steps: [
+              "Think about an AI tool or feature your team adopted in the last six months. Has anyone measured whether it's delivering real value?",
+              "Open your company-approved AI tool and paste: <em>\"My team adopted [name the tool or feature] for [describe the task]. We haven't formally measured its impact. Help me design a simple 3-question evaluation: one question about time saved, one about output quality, and one about whether it created any new work or problems. Keep it something I could answer in 5 minutes.\"</em>",
+              "Answer the three questions honestly based on your own experience with the tool.",
+              "Paste the results back and ask: <em>\"Based on these answers, should we double down on this tool, adjust how we use it, or consider dropping it? Give me a one-sentence recommendation.\"</em>",
+              "Share your evaluation with the group — the honest assessments help everyone make better decisions about which tools earn their keep."
+            ]
+          }
+        },
+        {
+          title: "The next big redesign needs you in the room",
+          source_url: "https://www.gartner.com/en/newsroom/press-releases/2026-04-23-gartner-survey-reveals-80-percent-of-ceos-say-artificial-intelligence-will-force-operational-capability-overhauls",
+          body: "Gartner surveyed 469 CEOs and found that <em>80% are actively rethinking how their operations work in an AI-assisted world</em>. Today, 54% say automation only touches specific tasks. By 2028, most expect to expand into AI-assisted decision-making and smarter workflows. That means <em>how work gets done at your company is about to be redesigned</em> — and the people who understand how it actually works today, not just how it's drawn on a slide, are exactly who that redesign needs most.",
+          slants: {
+            strategy:   "The best operational redesigns start with the people who run the current operation. Get their perspective into the planning room early — it's the highest-value input you have.",
+            leaders:    "This is your team's moment to shape what comes next. The operational knowledge your people carry is the design input that makes the difference between a plan that works and one that doesn't.",
+            operations: "You know where the workarounds live, where the handoffs work, and where the process on paper doesn't match reality. That knowledge is your seat at the table — claim it.",
+            pm:         "Operational redesigns are multi-quarter programs, and PM skills are what keep them from stalling at the whiteboard. If scoping hasn't started, this is your opening.",
+            admin:      "The workflows you manage are being rethought. The people who can document how things actually work — not how they're supposed to — will have the most influence on what comes next."
+          },
+          challenge: {
+            steps: [
+              "Pick one operational process you're involved in — approvals, reporting, scheduling, procurement, onboarding — anything that follows a repeatable pattern.",
+              "Open your company-approved AI tool and paste: <em>\"Here's an operational process I'm part of: [describe it in detail, without confidential info]. Map out the current workflow step by step, then identify which steps could be enhanced by AI and which ones require human judgment. Be specific about why each judgment step needs a person.\"</em>",
+              "Compare the AI's map to how the process actually works in practice. Note where it's accurate and where it misses the informal steps, workarounds, or judgment calls only an insider would know.",
+              "Paste this follow-up: <em>\"Here's what your map missed: [list the informal steps or workarounds]. Redraft the workflow including these realities. Which steps are the best candidates for AI now, and which ones need a human even more than before?\"</em>",
+              "Share your process map with the group — the gap between how a process is designed and how it actually works is where the most valuable redesign insights live."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Build your perfect weekend movie marathon — without scrolling for an hour.",
+        body: "The irony of having every streaming service: you spend more time choosing than watching. Tonight, try something different — instead of telling AI a genre, describe the mood you're going for. Use any free AI tool (ChatGPT, Claude, Gemini, or Perplexity):",
+        prompt: "\"I want to set up a movie or TV marathon for this weekend. Instead of a genre, here's the mood I'm going for: [describe it — e.g., 'something that makes me feel like anything is possible,' 'cozy and low-stakes,' 'smart and gripping but not stressful,' 'nostalgic without being cheesy']. I have about [X] hours. Build me a marathon — 3 to 5 picks, in the order I should watch them, with a one-line reason each one fits the mood. Include at least one I probably haven't seen.\"<br><br>The technique — <em>describing the mood you want instead of naming a category</em> — works for more than movies. Try it next time you ask AI for music, books, recipes, or even meeting formats. 'I want to feel energized' gets sharper results than 'give me something upbeat.'"
+      }
+    },
+
+    "2026-08-05": {
+      intro: "Wednesday. Three patterns worth your attention: why middle managers may be your best untapped AI asset, a simple rule for how many AI tools actually help, and the one move that builds more AI trust than any training program.",
+      trends: [
+        {
+          title: "Middle managers see what executives and frontline workers can't — that makes them AI's best untapped asset",
+          source_url: "https://hbr.org/2026/06/ai-adoption-is-overloading-your-middle-managers",
+          body: "Harvard Business Review research highlights a pattern hiding in plain sight: middle managers are the only layer that sees both the strategic intent behind AI and the reality of how it lands in daily work. They're already validating outputs, coaching teams, and spotting where AI fits — and where it doesn't. An Infosys survey of 2,603 employees found that <em>only 22% of middle managers are actively involved with AI-based transformation</em>, compared to 49% of executives. That's not a skills gap — it's an untapped advantage. The organizations that give middle managers room to shape AI adoption are the ones whose rollouts will actually stick.",
+          slants: {
+            strategy:   "Your AI roadmap accounts for technology and training — but the people who know whether it's actually working are in the middle. Give them a seat at the planning table.",
+            leaders:    "Your managers are already doing the hard work of AI adoption — coaching, reviewing, translating strategy into practice. Name that role, resource it, and watch adoption accelerate.",
+            operations: "The people reviewing AI output for accuracy already understand your workflows better than anyone. That expertise is your quality assurance layer — invest in it.",
+            pm:         "Middle managers see where AI saves time and where it creates rework. Build a quick feedback loop with them and your project estimates will get sharper fast.",
+            admin:      "You're already editing and improving AI output before it goes out — that's a skill that's becoming more valuable by the month. Make sure it's visible."
+          },
+          challenge: {
+            steps: [
+              "Think about a time you or your manager caught something an AI tool got wrong — a bad summary, a misleading draft, a missed detail. What made you the right person to spot it?",
+              "Open your company-approved AI tool and paste: <em>\"I'm a middle manager responsible for [your area]. I've been informally coaching my team on AI and catching quality issues in AI output. Help me write a short summary of the value I'm adding in this role — framed as a contribution to our AI adoption strategy — that I can share with my leadership. Keep it concrete and confident.\"</em>",
+              "Edit the response to match your actual experience — the structure is a starting point, but your specific examples are what make it real.",
+              "Share the insight in the group: what's one thing middle managers are doing for AI adoption that deserves more recognition?"
+            ]
+          }
+        },
+        {
+          title: "Three AI tools is the sweet spot — here's how to find your best mix",
+          source_url: "https://fortune.com/2026/03/13/ai-isnt-reducing-workloads-its-straining-employees-time-spent-emailing-doubled-deep-focus-work-fell/",
+          body: "Boston Consulting Group's research surfaced a useful rule of thumb: <em>workers using three or fewer AI tools reported improved efficiency</em>, while those using more saw diminishing returns — more context-switching, more mental fatigue, less focus. ActivTrak's analysis of 443 million work hours across 1,100 organizations backs this up: the most effective AI users aren't the ones with the most tools — they're the ones who've found the right few. The practical move isn't to use less AI. It's to <em>pick the three that matter most and go deeper with them</em>.",
+          slants: {
+            strategy:   "More tools equals more noise. Pick the three that directly support your team's highest-value work and build real fluency there instead of spreading thin.",
+            leaders:    "A useful question for your next team check-in: 'Which AI tools are you actually getting value from, and which ones are just adding tabs?' The answers will sharpen your toolkit fast.",
+            operations: "Consolidating to your top three AI tools means fewer handoffs, fewer context switches, and faster workflows. Less surface area, more depth.",
+            pm:         "When your team masters a focused set of AI tools, estimates get more reliable and output quality goes up. Breadth is the enemy of consistency.",
+            admin:      "If you've found one or two AI tools that genuinely help your work, go deeper — learn the shortcuts, refine your prompts, build templates. Depth beats breadth every time."
+          },
+          challenge: {
+            steps: [
+              "Count how many AI tools you used for work in the last week — include built-in features like Copilot suggestions, Smart Compose, AI summaries, and any standalone tools.",
+              "Rank them by actual value: which ones saved you real time or improved your output, and which ones mostly added noise or extra steps?",
+              "Open your company-approved AI tool and paste: <em>\"I currently use [number] AI tools regularly at work. Here's what each one does: [list them]. Help me pick the top three to focus on based on impact and versatility, and suggest one way to get more value from each of those three.\"</em>",
+              "Try going deeper with your top three this week — explore a feature you haven't used, refine a prompt, or build a reusable template.",
+              "Share your top-three list in the group — seeing what others kept and what they dropped is one of the fastest ways to find your own best setup."
+            ]
+          }
+        },
+        {
+          title: "The fastest way to build AI trust on your team isn't training — it's using it where they can see you",
+          source_url: "https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization",
+          body: "Microsoft's 2026 Work Trend Index surveyed 20,000 workers across 10 countries and found that organizational culture accounts for <em>more than twice the impact on AI adoption as individual mindset</em> — 67% versus 32%. The most powerful single lever: when managers actively model AI use, their teams report a <em>30-point lift in trust toward AI</em>, a 22-point lift in critical thinking about their use, and a 17-point lift in recognizing AI's value. Only 16% of workers sit in what Microsoft calls the 'Frontier' zone — high personal capability and high organizational support. Most are stuck in the middle, waiting for a signal.",
+          slants: {
+            strategy:   "Culture beats curriculum. If your AI strategy depends on training programs but managers aren't using AI visibly, the training won't stick.",
+            leaders:    "The most effective thing you can do this week isn't approving another training budget — it's using AI in a meeting where your team can see you do it, and talking through your reasoning out loud.",
+            operations: "When a manager uses AI to solve an ops problem in front of the team, it normalizes experimentation more than any policy memo will.",
+            pm:         "Modeling AI use during standups or reviews — even on small tasks — signals to your team that it's not reserved for special occasions.",
+            admin:      "If your manager doesn't use AI, it's natural to feel uncertain about whether you should. If they do, and you can see how, that changes the calculation."
+          },
+          challenge: {
+            steps: [
+              "Think about the last time you used AI at work. Was anyone else present — a colleague, a direct report, a manager?",
+              "Pick one task you'll do this week that involves at least one other person — a meeting prep, a draft review, a brainstorm — and use your company-approved AI tool visibly during the process.",
+              "As you work, narrate briefly: <em>\"I'm going to ask AI to [task] — let's see what it comes back with and whether it's useful.\"</em> This modeling behavior is what Microsoft's research shows matters most.",
+              "Afterward, ask the other person: <em>\"Did watching me use AI change anything about how you think about trying it?\"</em>",
+              "Share what happened in the group — specifically, whether visible AI use shifted the conversation around it."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Got a big purchase you keep going back and forth on? Ask AI to argue against your favorite.",
+        body: "Most people compare options by listing features — but that doesn't solve the real problem, which is that you already have a preference and you're just looking for permission to pick it. Tonight, try a technique that cuts through that: tell AI which option you're leaning toward and ask it to make the strongest case against it. Use any free AI tool (ChatGPT, Claude, Gemini, or Perplexity):",
+        prompt: "\"I'm trying to decide between [option A] and [option B] for [what it's for]. I'm leaning toward [your favorite]. Make the strongest honest case for why I should pick the other one instead. Focus on what I'd regret about my current choice in six months, not just specs.\"<br><br>The technique — <em>asking AI to argue against your preference</em> — is a fast way to stress-test a decision. If the counter-argument doesn't change your mind, you'll feel more confident. If it does, you just saved yourself a bad purchase."
+      }
+    },
+
+    "2026-08-04": {
+      intro: "Tuesday. Three patterns worth noticing: the hidden cost of using AI on everything, what your team's tool choices are telling you, and the one question that separates useful AI from noise.",
+      trends: [
+        {
+          title: "The teams getting real value from AI are using it on fewer things, not more",
+          source_url: "https://www.gartner.com/en/newsroom/press-releases/2026-01-12-gartner-identifies-the-top-future-of-work-trends-for-chros-in-2026",
+          body: "Gartner's 2026 Future of Work Trends report found that the highest-performing teams aren't the ones using AI on everything — they're the ones being selective. When AI is applied broadly without quality checks, the result is what Gartner calls <em>workslop</em>: output that looks polished but needs fixing downstream. <em>40% of workers encountered it in a single month, with each case taking nearly two hours to sort out.</em> The teams pulling ahead are the ones choosing where AI adds real value — and skipping the rest.",
+          slants: {
+            strategy:   "The question isn't 'can AI do this?' — it's 'does the output need to be right on the first pass?' Treat quality gates as a planning input, not an afterthought.",
+            leaders:    "If your team is spending hours cleaning up AI output, the tool is creating work, not saving it. Ask where quality actually matters and protect those tasks from autopilot.",
+            operations: "Every AI draft that needs two hours of repair is a net loss. Keep a short list of tasks where AI's first pass is genuinely good enough — and use it there.",
+            pm:         "Add a quality-check step to any workflow where AI generates deliverables. The time saved on drafting disappears if nobody reviews before sending.",
+            admin:      "If you've been fixing AI-generated documents that landed on your desk half-done, you're not imagining the extra work. Name it and push back."
+          },
+          challenge: {
+            steps: [
+              "Think of one task where you or a teammate recently used AI to produce a deliverable — a draft, a summary, a report, a presentation.",
+              "Honestly assess: did the output go straight to its audience, or did someone have to rework it? Estimate how long the rework took.",
+              "Open your company-approved AI tool and paste: <em>\"Here is a task I regularly use AI for: [describe it]. What are the three most common quality problems AI output has for this kind of work, and how can I check for each one in under five minutes?\"</em>",
+              "Try the quality-check routine on your next AI-generated draft and note whether it catches anything.",
+              "Share your quick-check routine in the group — others are dealing with the same cleanup problem and will save time from your approach."
+            ]
+          }
+        },
+        {
+          title: "Your team already found their own AI tools — and that's a signal worth reading",
+          source_url: "https://www.gartner.com/en/newsroom/press-releases/2026-05-13-gartner-predicts-by-2027-50-percent-of-enterprises-without-a-people-centric-ai-strategy-will-lose-their-top-ai-talent",
+          body: "Gartner's 2026 Global Labor Market Survey, covering 12,004 employees across 40 countries, surfaced a number that should start a conversation: <em>88% of employees with access to enterprise AI tools are also using personal AI tools for business tasks</em>. These hybrid users are <em>1.7 times more likely to report significant time savings</em>. But 73% of the most productive AI users are managers and executives — individual contributors, the people doing the most automatable work, are the least supported.",
+          slants: {
+            strategy:   "If 88% of your workforce is supplementing enterprise AI with personal tools, that's a product-experience signal about your current tooling — not an employee behavior problem.",
+            leaders:    "Your team isn't going rogue — they're working around a gap. Ask what they're using and why. You'll learn more about your AI strategy's blind spots than any usage dashboard will show you.",
+            operations: "The people closest to the repetitive work are the ones finding their own tools. That's useful intelligence — capture what they've figured out and share it across the team.",
+            pm:         "If project team members are using personal AI tools to get work done faster, the risk isn't the tools — it's not knowing what data is flowing through them. A quick inventory closes that gap.",
+            admin:      "If you've found a personal AI tool that handles a task better than the approved one, you're not doing something wrong. Share what you've found with your team lead — it might improve the toolkit for everyone."
+          },
+          challenge: {
+            steps: [
+              "List the AI tools you currently use for work — both the ones your company provides and any personal ones you've tried on your own.",
+              "For each personal tool, note what it does that the enterprise tool doesn't — or doesn't do well enough.",
+              "Open your company-approved AI tool and paste: <em>\"I've been using [name the personal tool] for [task] because [reason the enterprise tool fell short]. What features or prompt techniques should I try in my enterprise AI tool to get the same result without using a personal tool?\"</em>",
+              "Try the suggestion on a real, non-confidential task and see if it closes the gap.",
+              "Share what you learned in the group — the pattern of what's missing from enterprise tools is useful for everyone, and your workaround might help someone else."
+            ]
+          }
+        },
+        {
+          title: "The best AI use cases aren't the fast ones — they're the painful ones",
+          source_url: "https://www.gartner.com/en/articles/future-of-work-trends",
+          body: "A finding from the same Gartner report that flips the usual productivity narrative: <em>optimizing individual employees' use of AI tools, on its own, does not lead to growth or cost reduction</em>. What does work is applying AI selectively to the tasks that create the most friction — the ones that drain energy, require excessive coordination, or demand tedious formatting with no judgment involved. Gartner's recommendation: <em>effort, not time saved, is the most reliable indicator of where AI should reshape work</em>.",
+          slants: {
+            strategy:   "Audit your team's work by effort, not hours. The tasks that drain the most energy for the least strategic value are where AI delivers the most meaningful return.",
+            leaders:    "Ask your team one question this week: 'What's the most draining part of your regular work?' The answer is where AI should go first — not the tasks that are merely slow.",
+            operations: "The biggest wins aren't shaving five minutes off an email. They're eliminating the 90-minute formatting exercise nobody wants to do.",
+            pm:         "When prioritizing AI use cases for a project, rank candidates by effort required, not time consumed. The tasks people avoid are the ones with the best adoption potential.",
+            admin:      "Think about the task you dread most each week. That's your best candidate for AI — not because it's the longest, but because it takes the most out of you."
+          },
+          challenge: {
+            steps: [
+              "Open a blank note and list your five most effort-intensive tasks from this past week — not the longest ones, but the most draining.",
+              "Rank them from most to least draining. Be honest about which ones you avoid or procrastinate on.",
+              "Pick the top one and open your company-approved AI tool. Paste: <em>\"This is a task I find very draining: [describe it in detail, without confidential info]. Show me how to use AI to handle the most tedious part of it, step by step. Focus on the piece that takes the most effort, not just the piece that takes the most time.\"</em>",
+              "Try the approach on a real, non-confidential version of the task this week.",
+              "Share your top effort-drainer and how you tackled it in the group — the most draining tasks tend to be the same across roles, and your solution will save someone else real energy."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Practice the conversation you've been putting off.",
+        body: "Everyone has one — a conversation you keep delaying because you're not sure how to start, what they'll say, or how you'll handle it. Tonight, try something that makes AI surprisingly useful: have it play the other person. Use any free AI tool (ChatGPT, Claude, Gemini, or Perplexity):",
+        prompt: "\"I need to have a conversation with [someone — a family member, friend, neighbor, partner] about [topic]. I'm nervous because [what worries you about it]. Play their role and respond the way they realistically would. I'll say my opening line and you react — then coach me on what landed well and what I could say differently.\"<br><br>The technique — <em>having AI simulate the other person's responses</em> — lets you rehearse without the stakes. You hear how your words might land, spot the weak points in your approach, and walk into the real conversation calmer. Try it on anything you've been avoiding — the practice round takes the edge off."
+      }
+    },
+    "2026-08-03": {
+      intro: "Monday. Three things that landed over the weekend: a big opportunity hiding inside AI budgets, the most fixable barrier to adoption, and a transparency milestone that just went live.",
+      trends: [
+        {
+          title: "The biggest unlock in most AI budgets isn't more tools — it's investing in the people using them",
+          source_url: "https://www.deloitte.com/us/en/insights/topics/talent/human-capital-trends.html",
+          body: "Deloitte's 2026 Global Human Capital Trends, surveying more than 9,000 business and HR leaders across 89 countries, surfaced a big opportunity: <em>93% of AI investment is going to technology, and just 7% to people</em>. That matters because <em>organizations that invest in both technology and people are 1.6x more likely to hit their AI return targets</em>. The tools are in place. The highest-leverage next move is helping people use them well.",
+          slants: {
+            strategy:   "Adding a training and enablement line to your AI budget is one of the fastest ways to turn existing tool spend into measurable results.",
+            leaders:    "Redirecting even 15% of AI spend toward enablement is the highest-leverage move available right now — and the orgs doing it are pulling ahead.",
+            operations: "The good news: the tools are already here. A structured onboarding push — even informal — can unlock value from what your team already has access to.",
+            pm:         "When scoping an AI rollout, budgeting explicitly for training and adoption is what separates projects that stick from projects that stall after launch.",
+            admin:      "If the tools feel like a lot, that's normal — training is still catching up to the pace of rollouts. Asking for a walkthrough is a smart move right now."
+          },
+          challenge: {
+            steps: [
+              "List every AI tool your team has access to right now — including anything built into existing apps like Copilot, Gemini, or embedded assistants.",
+              "For each one, note whether you received formal training, an informal walkthrough, or nothing at all.",
+              "Open your company-approved AI tool and paste: <em>\"Here are the AI tools my team can access and the training we received for each: [paste your list]. For the tool with the least training, give me a 3-step self-guided onboarding plan I could complete in under 30 minutes.\"</em>",
+              "Try the plan this week on one real, non-confidential task and note what you learned.",
+              "Share your training-gap list and onboarding plan in the group — others on your team are likely in the same spot."
+            ]
+          }
+        },
+        {
+          title: "The top reason teams aren't using AI isn't fear — it's not knowing what it does",
+          source_url: "https://www.shrm.org/topics-tools/research/state-of-ai-hr-2026/full-report",
+          body: "SHRM's 2026 State of AI in HR report, surveying 1,908 HR professionals, found that <em>67% of organizations not using AI cite lack of awareness of its capabilities as the top barrier</em> — ahead of privacy concerns, budget, and employee resistance. Meanwhile, <em>92% of CHROs say they expect more AI in their organizations</em>. The energy is there at every level. What's missing is simply showing people what's possible — and that's the most solvable gap there is.",
+          slants: {
+            strategy:   "If your team isn't adopting AI, the first question isn't 'which tool?' — it's 'does anyone know what's possible?' A use-case demo closes more of the gap than a rollout plan.",
+            leaders:    "A 20-minute live demo showing AI on a real team task closes more of the awareness gap than any rollout deck. People adopt what they've seen work.",
+            operations: "Ops teams sit on repetitive, structured work that AI handles well — and once someone connects those dots, adoption follows fast. A walkthrough is worth asking for.",
+            pm:         "Before adding AI to a project plan, run a quick awareness check with the team. If most people can't name one thing the tool does, training comes before implementation.",
+            admin:      "If you've been unsure where to start with AI, you're in the largest group — 67% of teams feel the same way. One small, familiar task is enough to close the gap."
+          },
+          challenge: {
+            steps: [
+              "Think of one repetitive task you do every week — formatting a document, compiling notes, summarizing emails, organizing a schedule.",
+              "Open your company-approved AI tool and describe that task in plain language.",
+              "Add this prompt: <em>\"I do this task every week: [describe it in detail]. Show me step by step how I could use AI to do the first draft. Assume I've never tried this before.\"</em>",
+              "Try the workflow on a real, non-confidential version of the task and note how long it takes versus doing it manually.",
+              "Share what you tried and whether it worked in the group — one working example teaches faster than any training deck."
+            ]
+          }
+        },
+        {
+          title: "AI transparency rules just went from guidance to enforceable law",
+          source_url: "https://commission.europa.eu/news-and-media/news/safer-and-more-transparent-ai-2026-08-02_en",
+          body: "As of yesterday, the EU AI Act's Article 50 transparency obligations are enforceable across Europe. Organizations using AI must now <em>disclose when people are interacting with an AI system, label AI-generated content, and identify deepfakes</em> — with penalties up to <em>EUR 15 million or 3% of global annual turnover</em>. The high-risk rules were pushed to late 2027, but the transparency baseline is live now. If your company operates globally, this is a current compliance requirement, not a future one.",
+          slants: {
+            strategy:   "If your planning process uses AI-drafted content for external stakeholders, a quick disclosure audit now puts you ahead of the curve.",
+            leaders:    "This is a good moment to get clear on what needs labeling and disclosure. Teams that set a simple standard early will have the smoothest path forward.",
+            operations: "Any automated workflow generating customer-facing text, images, or communications in EU markets now carries a transparency requirement. Check your outputs.",
+            pm:         "Add AI transparency compliance as a checklist item on any project delivering AI-generated content to external audiences — it's a legal requirement now, not a best practice.",
+            admin:      "If you use AI to draft emails, presentations, or documents that reach people outside your company, find out whether your organization's disclosure policy covers it."
+          },
+          challenge: {
+            steps: [
+              "Think about the last piece of content you helped create using AI — a draft, a summary, a set of talking points, a report.",
+              "Ask yourself: if the recipient asked, would it be clear that AI was involved in creating it?",
+              "Open your company-approved AI tool and paste: <em>\"Our team uses AI to help draft [type of content — e.g., summaries, reports, customer communications]. Write a short, practical disclosure statement we could add to AI-assisted content, and a one-paragraph internal guide explaining when disclosure is needed.\"</em>",
+              "Share the draft with your team lead or compliance contact and ask whether your organization already has a standard for this.",
+              "Post what you learned in the group — transparency standards are something every team benefits from getting right together."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Redesign your morning — without the 5am-cold-shower advice.",
+        body: "Most routine-improvement tips assume unlimited willpower and zero real-life constraints. Tonight, try a prompting technique that fixes that: tell AI what won't work for you before asking what might. Use ChatGPT, Claude, Gemini, or Perplexity:",
+        prompt: "\"I want to redesign my [morning / evening / weekend] routine, but here's what won't work for me: [list 3-4 real constraints — e.g., 'I'm not a morning person,' 'I have about 20 minutes before the house gets chaotic,' 'I hate rigid schedules']. Given those constraints, suggest 3 small, realistic changes I could try this week, ranked by how little willpower they require.\"<br><br>The technique — <em>telling AI what to eliminate before asking what to add</em> — is called negative-constraint prompting. It cuts through generic advice and builds around your actual life. Try adding 'here's what won't work' to any recommendation request and the answers get sharper fast."
+      }
+    },
+    "2026-08-02": {
+      intro: "Sunday. Three signals heading into next week: AI anxiety just showed up in the data, learners are outpacing their employers, and access without readiness is the gap most companies haven't closed.",
+      trends: [
+        {
+          title: "Employee wellbeing just dropped below pandemic levels — and AI anxiety is a driver most leaders aren't seeing",
+          source_url: "https://www.mercer.com/insights/people-strategy/future-of-work/global-talent-trends/",
+          body: "Mercer's Global Talent Trends 2026, surveying nearly 12,000 executives, HR leaders, and employees worldwide, found a number that should stop every strategy leader cold: <em>only 44% of employees report they are thriving at work — down from 66% in 2024, and below pandemic-era levels</em>. A significant driver is what Mercer calls \"FOBO\" — fear of becoming obsolete. Employee concern about AI-related job loss jumped from 28% to 40% in two years. And the disconnect runs deep: <em>62% of employees say their leaders underestimate AI's emotional impact, yet only 19% of HR leaders factor that into their digital rollout plans</em>.",
+          slants: {
+            strategy:   "If your AI roadmap doesn't have a line item for what this does to people's confidence, you're planning for deployment but not for adoption.",
+            leaders:    "Your team's silence on AI anxiety isn't agreement — it's avoidance. Ask the question directly and you'll learn more in five minutes than a dozen adoption dashboards will tell you.",
+            operations: "A team running on anxiety doesn't troubleshoot well, doesn't adopt new tools well, and doesn't flag problems early. Name the concern before it names itself.",
+            pm:         "Project adoption metrics miss the emotional layer entirely. Add a 'how confident are you with this tool?' check to your next retro — the honest answers will tell you more than login counts.",
+            admin:      "If you're feeling uneasy about AI, you're in the majority — 40% of the workforce shares that concern. Naming it is the first step to moving past it."
+          },
+          challenge: {
+            steps: [
+              "Think about your team's most recent AI tool rollout. Did anyone ask how people felt about it — not whether they logged in, but how they felt?",
+              "Open your company-approved AI tool and paste this prompt: <em>\"I manage a team that recently adopted new AI tools. Draft five specific, non-generic questions I could ask in a quick pulse check to understand how my team feels about AI — not just whether they're using it, but whether they're anxious, confident, or somewhere in between.\"</em>",
+              "Read the questions and pick the two that feel most honest and useful for your team.",
+              "Ask those two questions this week — in a 1:1, a team chat, or an anonymous form.",
+              "Share in the group what you learned. The answers will likely surprise you."
+            ]
+          }
+        },
+        {
+          title: "AI learners are surging at 14 enrollments per minute — and they're teaching themselves the hard skills too",
+          source_url: "https://www.coursera.org/skills-reports/job-skills",
+          body: "Coursera's 2026 Job Skills Report, drawn from over 6 million enterprise learners across nearly 7,000 organizations, shows AI learning isn't slowing down — it's accelerating. <em>GenAI enrollments rose 234% year-over-year, hitting 14 enrollments per minute — the most in-demand skill in Coursera's history</em>. But the surprise is what people are learning alongside it: <em>Critical Thinking enrollments surged 185% among GenAI learners</em>, suggesting the sharpest AI adopters already know that using the tool well means thinking well without it.",
+          slants: {
+            strategy:   "The demand signal is clear — people want to learn. If your org isn't offering structured AI learning paths, your most motivated people are building their own anyway.",
+            leaders:    "Your team is already investing personal time in AI skills — meet them halfway with structured learning time and they'll compound the investment for you.",
+            operations: "Ops teams that pair AI fluency with critical thinking will outperform those that just automate — because someone still has to catch what the automation misses.",
+            pm:         "When 234% more people are actively building AI skills, the talent bench for AI-enhanced projects is deeper than you think. Look for it.",
+            admin:      "If you've been learning AI on your own time, you're part of the fastest-growing skill movement in Coursera's history. That initiative is worth naming on your resume."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool and think of one skill you use daily that still feels manual — summarizing, analyzing, formatting, scheduling.",
+              "Paste this prompt: <em>\"I want to get better at using AI for [describe the skill]. Give me a 15-minute learning plan: what to try first, one technique to practice, and one common mistake to avoid. Keep it practical.\"</em>",
+              "Try the technique it suggests on a real, non-confidential task right now.",
+              "Paste this follow-up: <em>\"Now give me a short checklist I can use to critically evaluate the output — what should I look for before I trust it?\"</em>",
+              "Share your 15-minute learning plan with the group — someone else wants to learn the same thing."
+            ]
+          }
+        },
+        {
+          title: "Access to AI doubled in a year — readiness didn't follow",
+          source_url: "https://www.deloitte.com/global/en/issues/generative-ai/state-of-ai-in-enterprise.html",
+          body: "Deloitte's eighth annual State of AI in the Enterprise, surveying 3,235 senior leaders across 24 countries, shows a lopsided expansion: <em>workforce access to AI grew by 50% in a single year, reaching roughly 60% of workers equipped with sanctioned tools</em>. But the readiness scores tell a different story. <em>Talent readiness sits at just 20%, governance at 30%, and only one in four organizations has moved even 40% of its AI pilots into production</em>. Companies got the tools into people's hands. They didn't get the training, the guardrails, or the redesigned workflows into place alongside them.",
+          slants: {
+            strategy:   "Access without enablement is an unfunded promise. If your team has tools but no training plan, close that gap before the next budget review asks what the tools actually delivered.",
+            leaders:    "You expanded access — now fund the readiness. A 20% talent readiness score means 80% of your team is guessing, and that's a liability you can fix with intention.",
+            operations: "You're likely sitting on AI tools right now that nobody walked you through. Closing your own readiness gap — even informally — puts you ahead of most of the organization.",
+            pm:         "Add 'team AI readiness' as a real project dependency. A tool nobody knows how to use well is a risk, not an asset.",
+            admin:      "If you feel like you were handed a new tool with no instructions, you're in the majority. Ask for the training — or find it yourself and become the person who helps others."
+          },
+          challenge: {
+            steps: [
+              "List the AI tools your team currently has access to — including any built into apps like Copilot, Gemini, or embedded assistants.",
+              "For each tool, honestly rate your team's readiness on a 1–5 scale: 1 means 'we have it but nobody uses it,' 5 means 'we use it daily and trust the output.'",
+              "Open your company-approved AI tool and paste: <em>\"My team has access to these AI tools: [list them] with these readiness levels: [list your ratings]. For the lowest-rated tool, give me a 3-step onboarding plan I could run in a single team meeting.\"</em>",
+              "Pick the most practical suggestion and block 30 minutes on your calendar to try it.",
+              "Share your readiness ratings and your onboarding plan with the group — this is a problem that gets easier when teams compare notes."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Build a reading list that actually fits your life right now.",
+        body: "Sunday night is a good time to queue up something worth reading. But most book recommendations are generic because the request is generic. Tonight, try a technique that fixes that: tell AI to rank its picks by a criterion that matters to you. Use any free AI tool (ChatGPT, Claude, Gemini, or Perplexity):",
+        prompt: "\"I want to read more but I have about [X] minutes a day. Here's what I'm in the mood for: [describe it — e.g., 'something that changes how I think about work,' 'a novel I can't put down,' 'nonfiction that's practical, not preachy']. Give me 5 book recommendations, ranked by which one I'll actually finish given my time and mood. For each, tell me in one sentence why it fits and roughly how long it takes to read at my pace.\"<br><br>The technique — <em>asking AI to rank by a criterion that matters to you</em> — works far better than a plain 'recommend me books.' Try adding 'ranked by [what matters most to me]' to any recommendation request and you'll get answers shaped to your real life, not someone else's list."
+      }
+    },
+    "2026-08-01": {
+      intro: "Today's stories are about three different kinds of accounting: what your AI spend actually buys you, what AI quietly takes off your plate, and what you owe your future leaders if you skip the entry-level rungs on the way there.",
+      trends: [
+        {
+          title: "AI spend just became a forecasting problem, not a shopping list",
+          body: "As companies move from simple copilots to full agentic workflows, McKinsey finds that <em>organizations with high forecasting maturity save 10 percent more on AI spend than their peers on average</em>, yet most haven't built that muscle yet \u2014 <em>only 20\u201325 percent of companies have mature AI FinOps practices in place</em> (McKinsey, July 2026). Guessing at AI usage the way teams used to guess at cloud bills is starting to cost real money.",
+          source_url: "https://mckinsey.com/capabilities/quantumblack/our-insights/the-cost-of-intelligence-how-cios-can-manage-ai-demand-at-scale",
+          slants: {
+            strategy: "Build AI demand forecasting into your next planning cycle the same way you'd forecast headcount or capital spend \u2014 it's now a strategy input, not an IT afterthought.",
+            leaders: "Put AI spend on your leadership dashboard alongside headcount and infrastructure \u2014 the teams that treat it as a first-class budget line will make better investment decisions.",
+            operations: "Track which processes are actually driving AI usage and cost so you can flag runaway spend before finance does.",
+            pm: "Add a line for AI tool usage to your project budgets \u2014 assuming it's free or negligible is how projects quietly overrun.",
+            admin: "If you manage software licenses or expense approvals, expect more questions about which AI tools are actually earning their keep."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool and pull up your calendar or task list from the past week.",
+              "List every task where you used AI \u2014 drafting, summarizing, research, formatting, etc.",
+              "Ask it: <em>\"Here's a list of tasks I used AI for this week. Which ones likely delivered the most time savings, and which ones probably weren't worth the effort? Help me spot the pattern.\"</em>",
+              "Compare the answer to your own gut sense \u2014 does it match where you actually felt AI helped most?",
+              "Share in the group: one task where AI clearly paid off, and one where it didn't."
+            ]
+          }
+        },
+        {
+          title: "Your CRM notes just got an AI co-writer",
+          body: "Microsoft's Sales Agent and Service Agent are <em>now generally available inside Microsoft 365 Copilot, Outlook, Teams, and Dynamics 365</em> (CX Today, July 2026), letting sellers <em>capture key takeaways, objections, priorities, and follow-up commitments, then add those notes to CRM or update opportunity fields without breaking their flow</em>. It's a real signal of where enterprise tooling is headed: less switching between apps, more AI quietly doing the paperwork inside the tools you already use.",
+          source_url: "https://www.cxtoday.com/marketing-sales-technology/microsoft-sales-agent-service-agent-general-availability/",
+          slants: {
+            strategy: "Watch this as a preview of what 'AI embedded in the flow of work' will look like for planning and reporting tools, not just sales and service.",
+            leaders: "Embedded AI tools like these show where enterprise software is heading. Watch which busywork your team's tools start absorbing \u2014 and redirect that capacity toward judgment-heavy work.",
+            operations: "Service teams get automatic case context and history at the start of the day instead of digging for it \u2014 that's hours back for actual problem-solving.",
+            pm: "If your projects touch CRM data, expect status updates and stakeholder notes to arrive more current and less stale, since reps are logging them in real time.",
+            admin: "Some of the meeting-recap and data-entry work you currently own may start showing up pre-drafted \u2014 your value shifts to catching what the AI missed."
+          },
+          challenge: {
+            steps: [
+              "Pick one recurring task in your week that feels like pure busywork \u2014 updating a tracker, compiling a status recap, logging notes after a call.",
+              "Open your company-approved AI tool and describe the task in detail.",
+              "Ask: <em>\"Here's a recurring task I do every week: [describe it]. Draft a simple way I could hand the first pass of this to an AI assistant, and tell me exactly where a human still needs to check the work.\"</em>",
+              "Read the output and mark which steps you'd actually trust an AI tool with today versus which need your eyes.",
+              "Share your one biggest hand-off opportunity in the group."
+            ]
+          }
+        },
+        {
+          title: "Cutting entry-level jobs quietly borrows against your future leaders",
+          body: "A widely discussed HBR piece this summer names a cost most companies haven't put on a spreadsheet: <em>the entry-level job pipeline is thinning globally, and the consequences of eliminating these types of roles in favor of AI are compounding</em> (Harvard Business Review, June 2026). The logic is blunt \u2014 <em>eliminate entry-level roles, and you reduce the headcount that justifies mid-level managers; reduce mid-level managers, and you shrink the pool feeding director and VP pipelines</em>, a bill that <em>won't come due for years</em>.",
+          source_url: "https://hbr.org/2026/06/your-talent-strategy-has-to-keep-up-with-your-ai-transformation",
+          slants: {
+            strategy: "Factor 'leadership pipeline health' into any workforce plan that leans on automating junior work \u2014 it's a multi-year risk, not a quarterly savings line.",
+            leaders: "Protecting entry-level pathways isn't sentimentality \u2014 it's pipeline math. Every junior role automated away today is a director you won't have in five years.",
+            operations: "If AI is absorbing the routine tasks juniors used to learn on, build a deliberate way for them to still get hands-on reps \u2014 don't let training happen by accident.",
+            pm: "Look for ways to give junior team members real ownership on a project phase instead of only having them review AI-generated drafts.",
+            admin: "If you're early in your career, seek out stretch assignments now \u2014 the traditional 'learn by doing the grunt work' path is narrowing, so you'll need to ask for exposure directly."
+          },
+          challenge: {
+            steps: [
+              "Think of one junior colleague or new hire you currently work with.",
+              "Open your company-approved AI tool and ask: <em>\"I want to help a junior teammate build real judgment, not just review AI output. Give me three specific ways I could involve them in a project this month so they get hands-on experience.\"</em>",
+              "Pick the one idea that feels most realistic for you to actually do this month.",
+              "Share it in the group \u2014 and tag the colleague if it feels right."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Plan a weekend that isn't just another to-do list",
+        body: "Pick a trip, a day out, or even a big cook-off you've been putting off, and use ChatGPT, Claude, Gemini, or Perplexity to plan it \u2014 but this time, make the AI work for the details instead of just spitting out a generic itinerary.",
+        prompt: "\"I want to plan a [weekend trip / dinner party / day out] focused on [relaxation / adventure / trying something new]. Before you suggest anything, ask me questions about my budget, pace, and what I want to feel like by the end of it \u2014 then use my answers to build the plan.\""
+      }
+    },
+
+
+    "2026-07-31": {
+      intro: "Friday. Three patterns worth sitting with this weekend: the most AI-fluent workers are the most connected to their teams, the wage premium for AI skills keeps climbing, and most people using AI still don't feel ready.",
+      trends: [
+        {
+          title: "The heaviest AI users at work are also the most connected to their teams",
+          source_url: "https://www.gensler.com/press-releases/global-workplace-survey-2026",
+          body: "A survey of 16,400 office workers across 16 countries found something worth knowing: <em>AI power users spend less time working alone and report stronger team relationships than their peers</em> (Gensler, 2026). They devote 12% of their workweek to learning versus 8% for everyone else, and they report more meaningful friendships at work. AI isn't isolating people — it's freeing up time for the human parts.",
+          slants: {
+            strategy:   "If your planning team worries AI will erode collaboration, this data says the opposite — the people using it most are also investing the most in their teams.",
+            leaders:    "Encouraging AI adoption isn't a tradeoff against team culture — the data says the two actually grow together.",
+            operations: "The time AI saves on routine work isn't vanishing — power users are reinvesting it in learning and cross-team connection.",
+            pm:         "The team members who are strongest with AI are also spending more time learning and socializing — that's your bench for leading cross-functional work.",
+            admin:      "Using AI consistently doesn't mean working in a silo — it means having more room for the relationships that make your role essential."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool and pick one repetitive task you did this week — a status update, a summary, a scheduling thread.",
+              "Use this prompt: <em>\"Help me draft [describe the task] in half the time I usually spend on it. Keep it concise and ready to send.\"</em>",
+              "Time yourself and note how many minutes you saved compared to doing it from scratch.",
+              "Use that saved time today for one human interaction you've been putting off — a check-in, a quick coffee chat, a follow-up.",
+              "Share in the group what you reclaimed time for and whether the AI-drafted version was good enough to send."
+            ]
+          }
+        },
+        {
+          title: "AI skills now carry a 62% wage premium — and entry-level jobs are feeling it most",
+          source_url: "https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-jobs-barometer.html",
+          body: "PwC's 2026 Global AI Jobs Barometer analyzed over a billion job ads across 27 countries. The finding: <em>the average wage premium for AI skills has climbed to 62%, and entry-level roles in AI-exposed fields are now 7 times more likely to require traditionally senior-level skills like judgment and leadership</em>. The bar isn't rising for specialists alone — it's rising for everyone.",
+          slants: {
+            strategy:   "A 62% wage premium tells you where the market values investment — build AI fluency into your team's development plans now, not after the next reorg.",
+            leaders:    "The premium rewards judgment and leadership wrapped around AI, not just technical skill — exactly the combination you can model for your team.",
+            operations: "Entry-level roles now expect the kind of judgment you've built over years — your experience is becoming more valuable, not less, if you pair it with AI fluency.",
+            pm:         "If your junior team members are being asked for judgment-level skills at hire, make sure your own skill set is growing at least as fast.",
+            admin:      "The same report shows human skills like judgment and context are driving the premium — the things you do every day are worth more, not less."
+          },
+          challenge: {
+            steps: [
+              "Open a blank document or note and list the three skills you rely on most in your current role.",
+              "Open your company-approved AI tool and paste this prompt: <em>\"Here are three skills I use daily: [list them]. For each one, tell me how AI changes the way this skill is valued in the job market — is it more valuable, less valuable, or different? Be specific.\"</em>",
+              "Read the response and mark one skill where AI makes your existing experience more valuable.",
+              "Paste this follow-up: <em>\"For the skill you said is more valuable, give me one concrete way to demonstrate it in my current role this month.\"</em>",
+              "Share your top skill and the one action you're taking with the group."
+            ]
+          }
+        },
+        {
+          title: "86% of employees use AI at work — only 24% feel ready for it",
+          source_url: "https://www.skillsoft.com/press-releases/skillsoft-workforce-readiness-report-ai-edition",
+          body: "Skillsoft's 2026 Workforce Readiness Report found the gap everyone senses but nobody names: <em>86% of employees now use AI tools at work, but only 24% feel fully equipped to use them well</em>. Meanwhile, 77% of leaders believe they've set their teams up for success — a 53-point gap between what leadership sees and what employees experience.",
+          slants: {
+            strategy:   "That 53-point perception gap is a planning problem — if leadership thinks readiness is handled, no one is budgeting for the enablement work that actually closes it.",
+            leaders:    "Your team may be using AI without telling you they're struggling — close the gap by asking how confident they feel, not just whether they've logged in.",
+            operations: "Only 11% of employees get formal skills assessments, which means most ops teams are flying blind on who can actually use the tools they've been given.",
+            pm:         "Adoption metrics don't capture confidence. Add a 'how comfortable are you with this tool?' check to your next project retro.",
+            admin:      "If you feel like you're figuring out AI on your own, you're in the 76% majority. The gap is real, and naming it is the first step."
+          },
+          challenge: {
+            steps: [
+              "Open your company-approved AI tool and think about one AI feature you use regularly but don't feel fully confident with.",
+              "Paste this prompt: <em>\"I use [name the tool or feature] but I'm not fully confident with it yet. Give me a 10-minute tutorial: what it does, the three most useful things I can do with it, and one common mistake to avoid.\"</em>",
+              "Try the most useful thing it suggests right now — run through it once with a non-sensitive task.",
+              "Paste this follow-up: <em>\"Now give me a one-page cheat sheet I can keep open while I work — the key commands, shortcuts, or prompts I'll use most often.\"</em>",
+              "Share your cheat sheet with the group — odds are someone else uses the same tool and wants the same help."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Build yourself a Friday night playlist — and teach AI your taste along the way.",
+        body: "Most playlist generators give you generic results because you give them generic input. Tonight, try a technique that fixes that: seed examples. Instead of saying 'make me a playlist,' hand AI specific songs you love and let it find the thread. Use any free AI tool (ChatGPT, Claude, Gemini, or Perplexity):",
+        prompt: "\"Here are five songs I keep coming back to: [list them with artist names]. Figure out what connects them — not just genre, but mood, tempo, and energy. Then build me a 15-song playlist that fits the same pattern but introduces me to artists I haven't heard. For each pick, tell me in one line why it fits.\"<br><br>The technique — <em>giving AI concrete examples instead of abstract descriptions</em> — works for more than music. Try it next time you need recommendations for books, restaurants, or even project approaches. The more specific your seeds, the sharper the output."
+      }
+    },
+
     "2026-07-30": {
       intro: "Thursday. This week's throughline is momentum: AI is widening what any one person can do, while the money and tooling race to keep pace — every signal an opening you can step into.",
       trends: [

@@ -9,11 +9,11 @@
 
 <br>
 
-The Daily Drop is a short editorial briefing for Cisco employees in **traditional operations, strategy & planning, project management, and administrative roles** who are AI-curious but cautious. The community goal is to **remove the fear of AI** and help members use AI to advance — not be replaced by it.
+The Daily Drop is a short editorial briefing for Cisco employees in **leadership, traditional operations, strategy & planning, project management, and administrative roles** who are AI-curious but cautious. The community goal is to **remove the fear of AI** and help members use AI to advance — not be replaced by it.
 
 Every drop must leave the reader feeling **more capable, less afraid, and slightly more equipped** than when they opened the page.
 
-**Audience weighting (most → least):** Strategy & Planning → Operations → Project Management → Administrative.
+**Audience weighting (most → least):** Strategy & Planning → Leaders → Operations → Project Management → Administrative.
 
 </details>
 
@@ -31,8 +31,9 @@ The routine runs once per day on Anthropic’s cloud (no local machine required)
 1. **Research** today’s three trends using web search (see §5 for sources).
 1. **Draft** the day’s entry following the structure in §3 and the voice rules in §4.
 1. **Insert** the new entry into `index.html` per §6.
+1. **Sync `drops.json`** — run `python generate_drop.py --sync` so downstream consumers stay current.
 1. **Validate** the file per §7.
-1. **Commit** on a new branch: `claude/daily-drop-YYYY-MM-DD`
+1. **Commit** on a new branch: `claude/daily-drop-YYYY-MM-DD` (commit both `index.html` and `drops.json`).
 1. **Open a Pull Request** following the format in §9.
 1. **Exit.** A human reviews and merges the PR. Netlify/Vercel auto-deploys on merge.
 
@@ -59,6 +60,7 @@ Each daily entry is a JavaScript object keyed by ISO date (`"YYYY-MM-DD"`) insid
       body: "1–3 sentences. Use <em>...</em> to highlight a key phrase or statistic.",
       slants: {
         strategy:   "One line — how this lands for a strategy/planning person.",
+        leaders:    "One line — how this lands for a people leader or senior manager.",
         operations: "One line — how this lands for an ops person.",
         pm:         "One line — how this lands for a project manager.",
         admin:      "One line — how this lands for an administrative pro."
@@ -85,7 +87,7 @@ Each daily entry is a JavaScript object keyed by ISO date (`"YYYY-MM-DD"`) insid
 **Hard requirements:**
 
 - Exactly **3 trends** per day.
-- Every trend must have all **4 role slants** (`strategy`, `operations`, `pm`, `admin`).
+- Every trend must have all **5 role slants** (`strategy`, `leaders`, `operations`, `pm`, `admin`).
 - Every trend must have **one challenge** in the `{ steps: [...] }` shape.
 - Every trend must have a **`source_url`** — the URL of the primary source cited in the trend body. This renders as a "Source" button at the bottom of the trend card, opening in a new window.
 - Every drop must have **one homework block**.
@@ -117,8 +119,10 @@ Each daily entry is a JavaScript object keyed by ISO date (`"YYYY-MM-DD"`) insid
 
 ### Role slants
 
+- **Five slants per trend:** `strategy`, `leaders`, `operations`, `pm`, `admin`.
 - **One sentence each.** Don’t pad.
-- Slants should be **genuinely different** for each role — if the same line could apply to all four, the trend’s framing is too generic and needs reworking.
+- The **`leaders`** slant targets people managers and senior managers — those accountable for team performance, AI adoption decisions, and organizational change. Frame it around what they can do with their positional influence (set direction, fund enablement, model behavior, ask the hard question in the room).
+- Slants should be **genuinely different** for each role — if the same line could apply to all five, the trend’s framing is too generic and needs reworking.
 - If a trend honestly does not have a meaningful angle for one of the roles, write the most truthful version possible — don’t manufacture relevance.
 
 ### Challenges
@@ -218,6 +222,7 @@ const DROPS = {
         body: "Example body with <em>a highlighted phrase</em> for emphasis.",
         slants: {
           strategy:   "Strategy slant line.",
+          leaders:    "Leaders slant line.",
           operations: "Operations slant line.",
           pm:         "PM slant line.",
           admin:      "Admin slant line."
@@ -263,7 +268,7 @@ Before committing, verify:
 - [ ] The JSON-like object structure is valid JavaScript (no missing commas, no unescaped quotes, no trailing commas before `}`).
 - [ ] Date key is `"YYYY-MM-DD"` and matches today’s date in **Eastern Time**.
 - [ ] Exactly 3 trends.
-- [ ] Every trend has all 4 role slants and 1 challenge.
+- [ ] Every trend has all 5 role slants (`strategy`, `leaders`, `operations`, `pm`, `admin`) and 1 challenge.
 - [ ] Every challenge has 3–6 concrete steps and ends with a sharing action.
 - [ ] Every trend has a `source_url` pointing to the primary source.
 - [ ] Every stat or claim has a real source you could link to (URL captured for the PR body).
@@ -339,7 +344,7 @@ Example: `Daily Drop: Sunday, June 15`
 ### Pre-commit checklist
 - [x] Valid JS object structure
 - [x] Date matches today (ET)
-- [x] 3 trends, 4 role slants each
+- [x] 3 trends, 5 role slants each
 - [x] Each challenge is 3–6 concrete steps ending with a share action
 - [x] Every claim sourced
 - [x] No banned hype words
@@ -371,6 +376,7 @@ This is the seed entry already in the file. Use it as a reference for tone, leng
       body: "Microsoft's 2026 Work Trend Index just landed. <em>49% of Copilot conversations now support cognitive work</em> — analysis, problem-solving, strategic thinking — and 58% of AI users say they're producing work they couldn't have done a year ago. The work isn't disappearing. It's being promoted.",
       slants: {
         strategy:   "You're shifting from <em>writer</em> to <em>editor + pressure-tester</em>.",
+        leaders:    "Your team's strategic output can improve overnight — if you invest the time to show them how to pressure-test with AI.",
         operations: "Synthesis across systems is now a 30-min job, not a 3-day one.",
         pm:         "Status reports get auto-drafted; framing the right questions is the new value-add.",
         admin:      "Your judgment on tone, context, and 'what the exec actually meant' becomes the premium skill."
@@ -387,9 +393,11 @@ This is the seed entry already in the file. Use it as a reference for tone, leng
     },
     {
       title: "The Transformation Paradox",
+      source_url: "https://www.deloitte.com/global/en/issues/generative-ai/state-of-ai-in-enterprise.html",
       body: "Deloitte's 2026 enterprise report puts it plainly: <em>companies are layering AI onto legacy processes instead of redesigning work holistically</em>. The investment isn't compounding because the workflow underneath is still pre-AI.",
       slants: {
         strategy:   "The QBR was built for a pre-AI world. Rethink the inputs and outputs.",
+        leaders:    "Give one team permission to redesign a workflow from scratch — the results will make the case for doing it everywhere else.",
         operations: "Your SOPs probably encode 2019 assumptions.",
         pm:         "\"Weekly check-ins\" exist because info moved slowly. Does it still?",
         admin:      "Calendar-and-email triage workflows are ripe for a clean-slate redesign."
@@ -409,6 +417,7 @@ This is the seed entry already in the file. Use it as a reference for tone, leng
       body: "Stanford HAI's 2026 AI Index: AI-related skills now appear in <em>2.5% of all U.S. job postings — a 297% increase over a decade</em>. This isn't \"learn to code.\" It's <em>learn to direct, evaluate, and trust-but-verify</em> AI output.",
       slants: {
         strategy:   "Prompting is problem-framing. The clearer your ask, the sharper your strategy.",
+        leaders:    "The leaders who invest in AI fluency now are building the teams that will set the pace for everyone else.",
         operations: "Knowing when AI is wrong saves more time than AI being right.",
         pm:         "Agent orchestration is the next PM specialty.",
         admin:      "You already know how things actually work here. AI doesn't."
