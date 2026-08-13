@@ -969,10 +969,10 @@
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
     "2026-08-13": {
-      intro: "Thursday. Three things to sit with today: most companies are letting AI shape decisions without managing the process, your coworkers are using AI tools the company doesn't know about, and the governance gap for autonomous AI is wider than anyone wants to admit.",
+      intro: "Thursday. Three patterns worth naming: the teams getting the most from AI are deliberate about which decisions they delegate, the AI projects that pay off measure outcomes instead of adoption, and the fastest path to scaling AI agents turns out to be governance.",
       trends: [
         {
-          title: "Decision-making is becoming a discipline — and most companies aren't treating it like one",
+          title: "The teams getting the most from AI are treating decision-making as a skill, not a side effect",
           source_url: "https://www.deloitte.com/us/en/insights/topics/talent/human-capital-trends/2026/decision-making-with-ai.html",
           body: "Deloitte's 2026 Global Human Capital Trends surveyed over 9,000 leaders and surfaced a gap worth naming: <em>60% of executives use AI in decision-making, but only 5% say they manage it well</em>. The risk isn't that AI makes bad calls. It's that nobody defined which decisions AI should touch, what level of autonomy it gets, or who's accountable when it's wrong. The companies pulling ahead are treating decision-making like a discipline — mapping decisions by stakes and reversibility before handing any of them to a machine.",
           slants: {
@@ -993,28 +993,28 @@
           }
         },
         {
-          title: "Your coworkers are already using AI tools your company doesn't know about",
-          source_url: "https://www.salesforce.com/news/stories/ai-at-work-research/",
-          body: "Salesforce surveyed over 14,000 workers across 14 countries and found that <em>55% are using generative AI tools that haven't been approved by their employer</em>. Microsoft's Work Trend Index put it higher: 78% of AI users bring their own tools to work. This isn't just a compliance headache. It's a signal that official AI offerings aren't meeting real needs — and the fix is understanding what people actually need, not cracking down on what they found.",
+          title: "The AI projects that pay off all share one thing: they measured what matters",
+          source_url: "https://www.gartner.com/en/newsroom/press-releases/2026-04-07-gartner-says-artificial-intelligence-projects-in-infrastructure-and-operations-stall-ahead-of-meaningful-roi-returns",
+          body: "Gartner surveyed 782 I&O leaders and found that <em>only 28% of AI projects fully succeed and meet ROI expectations</em>, while 20% fail outright. The top reason for failure wasn't bad technology — it was expecting too much, too fast, and measuring activity instead of outcomes. The projects that pay off share a pattern: they connect AI to a business result during execution, not just in the pitch deck.",
           slants: {
-            strategy:   "If over half your workforce is finding their own AI tools, treat it as a gap analysis disguised as a policy violation — figure out what they need that you're not providing.",
-            leaders:    "Instead of policing unsanctioned tools, ask your team what they're actually using and why — the answers tell you more than any audit.",
-            operations: "Shadow AI means your workflows have unofficial steps that nobody documented and nobody governs — map them before they become a liability.",
-            pm:         "If team members are using tools you don't know about, your risk register is incomplete — ask the question before it becomes an incident.",
-            admin:      "If you've been using a free AI tool because the approved one is slow or limited, you're not alone — but knowing your company's policy protects you."
+            strategy:   "Shift your AI metrics from adoption rates to business outcomes — usage tells you people logged in, not whether anything improved.",
+            leaders:    "Before greenlighting the next AI initiative, ask: what specific outcome will we measure, and how will we know this worked in 90 days?",
+            operations: "If your AI project is tracking \"hours saved\" but nobody can point to what those hours went toward, the ROI is theoretical.",
+            pm:         "Build measurable success criteria into the project charter before the pilot starts — retrofitting ROI metrics after launch rarely works.",
+            admin:      "If an AI tool was rolled out to your team and nobody's checked whether it actually helped, you're in good company — but asking the question is worth doing."
           },
           challenge: {
             steps: [
-              "Think honestly: are there AI tools you use at work that your IT team probably doesn't know about? No judgment — over half of workers are in the same position.",
-              "Open your company-approved AI tool and paste: <em>\"I want to do a personal 'shadow AI audit.' What types of work tasks are people most likely to use unapproved AI tools for? Give me a checklist of 5 common categories — things like drafting emails, summarizing documents, generating ideas, analyzing data, and writing code.\"</em>",
-              "Go through the checklist and note which categories apply to you or people on your team.",
-              "For each one, write down WHY you or they reached for an outside tool — what was the approved option missing?",
-              "Share one pattern you noticed in the group — the reasons behind shadow AI are where the real conversation starts."
+              "Pick one AI tool or feature your team uses — Copilot, an AI assistant, a drafting tool, whatever's in your daily workflow.",
+              "Open your company-approved AI tool and paste: <em>\"My team uses [name the tool] for [describe the main use case]. Help me build a simple ROI check: What business outcome should this tool be improving? How would I measure it? What would 'success' look like after 90 days? Give me 3 specific, measurable indicators — not just 'productivity' or 'efficiency.'\"</em>",
+              "Compare the AI's suggested metrics to what your team is actually tracking (if anything).",
+              "Identify one metric you could start measuring this month without any new tools or processes.",
+              "Share your ROI check in the group — the gap between what teams measure and what matters is where the real conversation starts."
             ]
           }
         },
         {
-          title: "The governance gap for AI agents is wider than most teams realize",
+          title: "Good governance is turning out to be the fastest path to scaling AI agents",
           source_url: "https://mckinsey.com/capabilities/tech-and-ai/our-insights/tech-forward/state-of-ai-trust-in-2026-shifting-to-the-agentic-era",
           body: "McKinsey's 2026 AI Trust Maturity Survey assessed roughly 500 organizations on their readiness for agentic AI — systems that plan, decide, and act on their own. The finding: <em>only 30% of organizations have reached maturity level 3 or higher in AI governance</em>, with an average score of 2.3 out of 5. Two-thirds cite security as the top barrier to scaling agentic AI. The gap between \"we use AI tools\" and \"we can govern AI that acts autonomously\" is where the real risk lives.",
           slants: {
