@@ -1,4 +1,76 @@
 {
+  "2026-08-16": {
+    "intro": "Sunday. Three patterns that matter more than the headlines: a regulation that quietly expanded its reach two weeks ago, the most overhyped label in enterprise AI, and a thinking habit worth protecting.",
+    "trends": [
+      {
+        "title": "The EU's AI transparency rules just took effect — and the scope is wider than most teams expected",
+        "source_url": "https://artificialintelligenceact.eu/transparency-rules-article-50/",
+        "body": "The EU AI Act's Article 50 transparency obligations went live on August 2. The rules reach further than many teams expected: <em>any system that interacts with people using AI — chatbots, virtual assistants, agentic tools — must now disclose that fact to users</em>, and the requirement applies to any system reaching EU users, regardless of where the company is based. Fines run up to €15 million or 3% of global turnover, and according to Cloud Security Alliance research, 78% of organizations haven't taken meaningful compliance steps yet.",
+        "slants": {
+          "strategy": "If your team deploys any customer- or partner-facing AI tool, this belongs on your risk register now — not next quarter.",
+          "leaders": "Ask your team one question this week: 'Do our customer-facing AI tools clearly disclose that they're AI?' The answer determines your urgency.",
+          "operations": "Audit every chatbot, virtual assistant, and automated responder in your stack. If it talks to people and runs on AI, it needs a disclosure.",
+          "pm": "Add an AI transparency check to your project launch checklist — before go-live, not after the compliance team flags it.",
+          "admin": "If you manage tools that interact with external contacts — chatbots, auto-replies, scheduling assistants — flag them for review. You often know what's actually deployed before anyone else does."
+        },
+        "challenge": {
+          "steps": [
+            "List every tool in your workflow that interacts with people outside your immediate team — chatbots, scheduling assistants, automated emails, virtual agents.",
+            "Open your company-approved AI tool and paste this prompt: <em>\"Here are the tools I use or manage that interact with external contacts: [list them]. For each one, tell me: (1) Does it likely use AI? (2) Would it currently be obvious to the person on the other end that they're interacting with AI? (3) What would a simple, honest disclosure look like?\"</em>",
+            "Review the output. Count how many tools lack a clear AI disclosure.",
+            "Flag any gaps to the appropriate owner — your team lead, IT, or compliance.",
+            "Share your count in the group — how many tools needed a disclosure you hadn't considered?"
+          ]
+        }
+      },
+      {
+        "title": "Most 'AI agents' are last year's chatbots in new packaging",
+        "source_url": "https://www.gartner.com/en/newsroom/press-releases/2026-05-20-gartner-warns-of-agent-washing-risks-in-supply-chain-planning-technology-market",
+        "body": "Gartner is naming a problem the industry has danced around: \"agent washing.\" Of the thousands of vendors claiming agentic AI capabilities, <em>Gartner estimates only about 130 are building anything that deserves the label</em> — the rest are repackaging chatbots, RPA scripts, and assistants under new branding. Forrester's 2026 data backs this up: only 16% of enterprise AI deployments qualify as true agents rather than assisted workflows.",
+        "slants": {
+          "strategy": "Before approving an 'AI agent' investment, ask one question: 'What does this system do without a human prompt?' If the answer is nothing, it's an assistant — budget accordingly.",
+          "leaders": "If your team says an AI tool 'doesn't work as promised,' investigate the vendor's claims before assuming it's a training issue.",
+          "operations": "If a vendor pitches an 'autonomous agent' that still requires you to set up every workflow by hand, that's automation with a new name — not agency.",
+          "pm": "Add 'What does agent mean in this context?' to your vendor evaluation template. The answer separates the genuine from the rebrand.",
+          "admin": "When evaluating tools marketed as AI-powered, test whether the AI does something you couldn't do with a good template and a macro. That's the real bar."
+        },
+        "challenge": {
+          "steps": [
+            "Think of one AI tool or vendor your team has evaluated, adopted, or been pitched recently.",
+            "Open your company-approved AI tool and paste: <em>\"A vendor is pitching me an 'AI agent' for [describe the tool's purpose]. Help me evaluate whether this is a true autonomous agent or a rebranded assistant. Give me 5 questions I should ask the vendor — questions a rebranded chatbot couldn't answer convincingly.\"</em>",
+            "Review the questions and pick the two most incisive ones.",
+            "Save them for your next vendor conversation — or share them in the group to build a community vendor evaluation cheat sheet."
+          ]
+        }
+      },
+      {
+        "title": "AI-free thinking is becoming a testable skill",
+        "source_url": "https://www.gartner.com/en/articles/strategic-predictions-for-2026",
+        "body": "Gartner's 2026 strategic predictions include one that cuts close to home: <em>by the end of this year, half of global organizations will require \"AI-free\" skills assessments</em> — tests that verify employees can still think critically without AI assistance. The concern isn't hypothetical: as AI handles more drafting, analysis, and summarization, the muscles for doing that work independently can weaken. The fix isn't to use AI less. It's to be deliberate about which thinking you keep sharp.",
+        "slants": {
+          "strategy": "The most valuable strategic thinkers will be the ones who can do the analysis with or without AI — and know which mode fits the moment.",
+          "leaders": "If your team can't produce a coherent recommendation without AI, you have a dependency, not a productivity gain. Build both muscles.",
+          "operations": "AI-assisted processes still need manual fallback plans. If the tool goes down tomorrow, can your team run the operation?",
+          "pm": "Treat 'can your team do this without AI?' as a project resilience question — not an insult to their skills.",
+          "admin": "Your ability to draft, prioritize, and problem-solve without AI is becoming a differentiator, not a step backward."
+        },
+        "challenge": {
+          "steps": [
+            "Pick a task you've been using AI to help with regularly — a report, an analysis, a presentation, a communication.",
+            "Do it once without AI. Time yourself, and notice where you feel the pull to reach for the tool.",
+            "Compare the result: was the quality different? Were you slower on speed, or slower on substance?",
+            "Open your company-approved AI tool and paste: <em>\"I just completed [describe task] without AI. It took [time] versus my usual [estimated time with AI]. Here's what I noticed: [your observations]. Based on this, suggest which parts of this task I should keep doing manually to stay sharp, and which are genuinely better handled by AI.\"</em>",
+            "Share your split in the group — the pattern across the community will be revealing."
+          ]
+        }
+      }
+    ],
+    "homework": {
+      "title": "Write the thank-you note you've been meaning to send — and actually mean every word.",
+      "body": "Everyone has one: a person who did something kind or meaningful, and you never properly thanked them. A mentor who opened a door, a friend who showed up when it mattered, a neighbor who helped without being asked. Tonight, stop putting it off. Open any free AI tool (ChatGPT, Claude, Gemini, or Perplexity):",
+      "prompt": "\"I want to write a genuine thank-you to someone who [describe what they did — helped me through a tough time, wrote a recommendation that changed my path, watched my dog and refused to take money]. Before you draft anything, ask me 5 questions about this person and what their help meant to me — I want this to feel personal, not like a template. Then write it in my voice: [warm / understated / funny / sincere — pick your style].\"<br><br>The technique — <em>having AI interview you before it writes for you</em> — is the difference between a note that sounds generated and one that sounds like you. AI handles the structure; you supply what matters."
+    }
+  },
   "2026-08-15": {
     "intro": "Saturday. Three shifts happening under the surface: the org chart is compressing, the time AI saves is disappearing into noise, and what counts as 'qualified' is being rewritten.",
     "trends": [
