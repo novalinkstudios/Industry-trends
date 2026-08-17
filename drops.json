@@ -7,11 +7,11 @@
         "source_url": "https://www.workera.ai/guides-reports/the-5-5-trillion-skills-gap-what-idcs-new-report-reveals-about-ai-workforce-readiness",
         "body": "IDC projects that skills shortages will cost the global economy <em>up to $5.5 trillion by 2026</em> in product delays, quality issues, and missed revenue. The surprise: the gap isn't in technical skills. It spans <em>critical evaluation of AI outputs, governance, and workflow integration</em> — the judgment layer between pressing a button and making a sound decision. 94% of CEOs name AI as their top in-demand capability, yet only 35% feel they've actually prepared their employees for it.",
         "slants": {
-          "strategy": "You already do the hard part — framing problems, weighing trade-offs, reading between the lines. Those are the exact skills this research says are worth trillions. Lean into them.",
-          "leaders": "The team that learns to evaluate, challenge, and selectively trust AI output will outperform the one that just learns to use the tool. You're in the best position to build that culture.",
-          "operations": "Your instinct for when something is off — the output that looks clean but feels wrong, the process that needs a human override — is precisely the judgment the market is paying a premium for.",
-          "pm": "Adding 'team readiness' as a line item in your AI project plans puts you ahead of most organizations. It's a small move that signals real leadership.",
-          "admin": "Every time you catch a polished draft with the wrong tone or a clean report with a buried error, you're exercising the skill this $5.5 trillion gap is about. That eye is worth developing."
+          "strategy": "When you're building or reshaping a team, prioritize people who can evaluate AI outputs and redesign workflows — not just use the tools. That judgment layer is where the $5.5 trillion gap lives.",
+          "leaders": "The team that learns to evaluate, challenge, and selectively trust AI output will outperform the one that just learns to use the tool. Build that into how you hire, train, and promote.",
+          "operations": "When you're staffing or developing your ops team, look for the people who know when the output is wrong and when a process needs overriding — that judgment is harder to teach than any tool.",
+          "pm": "Adding 'team readiness' as a line item in your AI project plans puts you ahead of most organizations. Scope for judgment and governance skills, not just tool training.",
+          "admin": "When your team catches a polished draft with the wrong tone or a clean report with a buried error, that's the skill this research says is most in demand. Develop it deliberately."
         },
         "challenge": {
           "steps": [
@@ -51,7 +51,7 @@
           "leaders": "Try asking your team this week: 'When AI saves you an hour, what's the best use of that hour?' Naming it together turns invisible savings into visible progress.",
           "operations": "A day a week per person is real capacity waiting to be claimed. Choosing one high-value activity to redirect it toward — even just one — turns speed into outcomes.",
           "pm": "Build a simple checkpoint into your AI-accelerated projects: 'We saved time here — here's what we're investing it in.' That one habit turns efficiency into quality.",
-          "admin": "Track the time AI saves you this week, even roughly. Having that number — and a plan for where it goes — puts you in a stronger position than most people in any role."
+          "admin": "Track the time AI saves your team this week, even roughly. That number — and a plan for where it goes — is exactly the data leadership needs to make smarter resourcing decisions."
         },
         "challenge": {
           "steps": [
