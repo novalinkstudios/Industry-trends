@@ -968,6 +968,77 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-08-17": {
+      intro: "Monday. Three things worth knowing as the week starts: the most expensive skills gap isn't technical, AI adoption is pulling companies apart from the inside, and the hours AI saves are vanishing into the cracks.",
+      trends: [
+        {
+          title: "The skills gap costing $5.5 trillion isn't about learning to code",
+          source_url: "https://www.workera.ai/guides-reports/the-5-5-trillion-skills-gap-what-idcs-new-report-reveals-about-ai-workforce-readiness",
+          body: "IDC projects that skills shortages will cost the global economy <em>up to $5.5 trillion by 2026</em> in product delays, quality issues, and missed revenue. The surprise: the gap isn't in technical skills. It spans <em>critical evaluation of AI outputs, governance, and workflow integration</em> — the judgment layer between pressing a button and making a sound decision. 94% of CEOs name AI as their top in-demand capability, yet only 35% feel they've actually prepared their employees for it.",
+          slants: {
+            strategy:   "The next strategic hire on your team probably isn't an engineer — it's someone who can evaluate AI outputs, design governance around them, and redesign workflows to match.",
+            leaders:    "If your AI training program teaches tools but not judgment — how to evaluate, challenge, and decide what to trust — you're closing the wrong gap.",
+            operations: "The operational skills that matter most now are the ones AI can't do: knowing when the output is wrong, when the process needs overriding, and when the data underneath is unreliable.",
+            pm:         "When you scope an AI project, add 'team readiness' as a line item — not just tool training, but the judgment and governance skills the team needs to use it well.",
+            admin:      "Your ability to spot when something looks right but isn't — a polished email with the wrong tone, a clean report with a buried error — is exactly the gap this research describes."
+          },
+          challenge: {
+            steps: [
+              "Think about the last time you used AI at work and accepted its output without much scrutiny — a summary, a draft, an analysis.",
+              "Open your company-approved AI tool and paste: <em>\"I recently used AI to [describe the task]. Walk me through 5 specific things I should have checked before accepting the output — not generic advice, but checks specific to this type of work.\"</em>",
+              "Read the checklist. Were there checks you skipped — or hadn't thought of?",
+              "Pick one check you'll add to your routine going forward and share it in the group — the pattern across roles will reveal where the real gaps are."
+            ]
+          }
+        },
+        {
+          title: "AI adoption isn't dividing companies from each other — it's dividing them from within",
+          source_url: "https://writer.com/blog/enterprise-ai-adoption-2026/",
+          body: "Writer and Workplace Intelligence surveyed 2,400 global employees and C-suite leaders and found that AI adoption is creating internal fractures, not just competitive ones. <em>54% of the C-suite say adopting AI is tearing their company apart</em>, with 56% reporting power struggles around AI strategy. Meanwhile, <em>75% of executives admit their own AI strategy is more for show than for impact</em>. The gap between the AI conversation in the boardroom and the AI reality on the ground is widening — and both sides know it.",
+          slants: {
+            strategy:   "If three-quarters of executives admit their AI strategy is performative, the opportunity is in building the one that isn't. Start with one workflow that delivers measurable change, not a deck that describes it.",
+            leaders:    "The power struggles this survey describes aren't about technology — they're about influence, budget, and who gets to define the future of work. Name the tension before it names your team.",
+            operations: "If leadership is sending mixed signals about AI direction, your best move is to document what's actually working in your workflows — real results cut through internal politics.",
+            pm:         "When AI strategy is 'more for show,' projects get funded for optics, not outcomes. Push for clear success criteria before you build the plan.",
+            admin:      "If you're hearing different AI priorities from different leaders, you're not confused — the strategy may genuinely be unclear. Trust what you're seeing on the ground."
+          },
+          challenge: {
+            steps: [
+              "Think about the last AI initiative or tool rollout your organization announced. Write down in one sentence what outcome it was supposed to deliver — not the tool, the result.",
+              "Open your company-approved AI tool and paste: <em>\"My company recently launched [describe the AI initiative]. The stated goal was [your one sentence]. Help me pressure-test this: is this goal measurable? Would I know in 6 months whether it succeeded or failed? If not, rewrite it as a goal with a clear, measurable outcome.\"</em>",
+              "Compare the AI's version to the original. Is the gap between 'what we said' and 'what we'd actually measure' larger than you expected?",
+              "Share the before-and-after versions in the group — the pattern across organizations reveals where the 'for show' problem lives."
+            ]
+          }
+        },
+        {
+          title: "Workers are saving a full day a week with AI — and the time is vanishing",
+          source_url: "https://www.bcg.com/press/3june2026-ai-reshaping-jobs-faster-than-companies-reshaping-work",
+          body: "BCG surveyed 11,749 workers across 14 markets for its 2026 AI at Work report and found that <em>42% of regular AI users are saving at least a full workday per week</em>. The problem: <em>66% say they get limited or no guidance on what to do with the time</em>, and more than half aren't redirecting it toward strategic work. The hours don't disappear into rest — they get absorbed by expanded workloads, informal tasks, and busywork that fills the vacuum. The productivity is real. The plan for what comes after it isn't.",
+          slants: {
+            strategy:   "If your team is saving time with AI but the savings aren't visible in outcomes, the problem isn't the tool — it's the absence of a plan for the time it creates.",
+            leaders:    "Ask your team this week: 'When AI saves you an hour, what do you actually do with it?' If the answer is 'more of the same,' the productivity gain is an illusion.",
+            operations: "A day a week per person is substantial capacity. If it's being absorbed by unplanned work rather than redirected toward higher-value tasks, you're running faster on the same treadmill.",
+            pm:         "When AI accelerates a phase of your project, build in a checkpoint: 'What do we do with the time this freed up?' Otherwise the schedule compresses but the scope doesn't improve.",
+            admin:      "If AI saves you two hours on a report but you spend those hours on tasks that just appeared, flag the pattern. Saved time that gets silently refilled isn't saved — it's redistributed."
+          },
+          challenge: {
+            steps: [
+              "Estimate how much time AI saves you in a typical week — even a rough guess counts. Include drafting, research, formatting, summarizing, anything.",
+              "Look at your calendar and task list from the past week. Can you point to where that saved time went? Was it higher-value work, or did it get absorbed?",
+              "Open your company-approved AI tool and paste: <em>\"I estimate AI saves me about [X hours] per week. Here's how I currently spend the rest of my time: [describe your typical week]. Suggest three specific, high-value ways I could redirect that saved time — not 'be more strategic' generically, but concrete activities tied to my actual role.\"</em>",
+              "Pick one suggestion and try it this week — then share what changed in the group."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Become a coffee (or tea) snob for 10 minutes tonight — without spending a cent.",
+        body: "You don't need new equipment or a specialty shop. You just need 10 minutes, whatever you already drink in the morning, and one of these free AI tools — ChatGPT, Claude, Gemini, or Perplexity:",
+        prompt: "\"I drink [coffee/tea — describe how you currently make it: drip machine, instant, teabags, French press, whatever] and I'd rate my current setup a [1-10]. I'm not looking to buy expensive gear. Give me three small changes I could try this week — ranked from easiest to most effort — that would noticeably improve my cup. For each one, explain in one sentence why it works.\"<br><br>The technique — <em>asking AI to rank options by a specific criterion that matters to you</em> — is one of the most underused prompting habits. It works everywhere: rank solutions by effort, rank ideas by risk, rank purchases by value per dollar. When you give AI a ranking axis, it stops listing and starts thinking."
+      }
+    },
+
     "2026-08-16": {
       intro: "Sunday. Three patterns that matter more than the headlines: a regulation that quietly expanded its reach two weeks ago, the most overhyped label in enterprise AI, and a thinking habit worth protecting.",
       trends: [
