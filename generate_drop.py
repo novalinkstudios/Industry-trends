@@ -46,6 +46,9 @@ Audience weighting (most → least): Strategy & Planning → Leaders → Operati
 - Five slants per trend: strategy, leaders, operations, pm, admin.
 - The leaders slant targets people managers and senior managers — frame around what they can do with positional influence.
 - Slants must be genuinely different for each role — if the same line could apply to all five, rework the trend framing.
+- POSITIVE AND EMPOWERING TONE. Every slant should leave the reader feeling more capable, not more anxious. Frame around opportunity, action, and what's possible — never around gaps, threats, or what's going wrong.
+- FRAME FROM THE HIRING AND TEAM-BUILDING SIDE. The audience is building, managing, and developing teams — not marketing themselves to another employer. Write about how to hire for the right skills, develop people, structure teams, and make smarter org decisions. Never encourage the reader to leave or position for the job market.
+- POSITIVE-LEANING HEADLINES. Trend headlines should emphasize what's working, what's emerging, or what organizations can do — not what's broken or dividing.
 
 ## Challenges
 

@@ -969,79 +969,77 @@
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
     "2026-08-17": {
-      intro: "Today's stories share one thread: the tech side of AI is moving fast, but the human side \u2014 who validates it, who consents to it, who gets to benefit from it \u2014 is scrambling to catch up.",
+      intro: "Monday. Three things worth knowing as the week starts: the most expensive skills gap isn't technical, AI adoption is pulling companies apart from the inside, and the hours AI saves are vanishing into the cracks.",
       trends: [
         {
-          title: "Your middle managers are quietly becoming AI's bottleneck",
-          body: "New Harvard Business School research based on interviews at two major consulting firms found that <em>senior leaders are leaning into AI's strategic potential, expanding scope, accelerating delivery with leaner teams, and reimagining services</em> \u2014 while junior staff get more interesting work too. The layer in between is absorbing the cost: <em>middle managers were overloaded with new responsibilities\u2014validating AI outputs, identifying errors, coaching their teams in AI skills\u2014all while facing unchanged or even increased delivery pressure and lacking formal support structures</em> (Harvard Business Review, June 2026).",
-          source_url: "https://hbr.org/2026/06/ai-adoption-is-overloading-your-middle-managers",
+          title: "The skills gap costing $5.5 trillion isn't about learning to code",
+          source_url: "https://www.workera.ai/guides-reports/the-5-5-trillion-skills-gap-what-idcs-new-report-reveals-about-ai-workforce-readiness",
+          body: "IDC projects that skills shortages will cost the global economy <em>up to $5.5 trillion by 2026</em> in product delays, quality issues, and missed revenue. The surprise: the gap isn't in technical skills. It spans <em>critical evaluation of AI outputs, governance, and workflow integration</em> — the judgment layer between pressing a button and making a sound decision. 94% of CEOs name AI as their top in-demand capability, yet only 35% feel they've actually prepared their employees for it.",
           slants: {
-            strategy: "When you model AI rollout timelines, budget explicit hours for manager validation and coaching \u2014 treat it as a real line item, not free capacity.",
-            leaders: "Ask your own managers what new checking, coaching, or fixing work AI has added to their plate that nobody officially assigned them.",
-            operations: "Map which AI-output validation tasks are landing informally on frontline managers and build a real process around them instead of letting them stay invisible overhead.",
-            pm: "Add a review buffer to project plans specifically for manager sign-off on AI-assisted deliverables so it doesn't get squeezed out at crunch time.",
-            admin: "If you support a manager, watch for a growing backlog of items flagged 'needs review' \u2014 that's often the first visible sign of this overload."
+            strategy:   "When you're building or reshaping a team, prioritize people who can evaluate AI outputs and redesign workflows — not just use the tools. That judgment layer is where the $5.5 trillion gap lives.",
+            leaders:    "The team that learns to evaluate, challenge, and selectively trust AI output will outperform the one that just learns to use the tool. Build that into how you hire, train, and promote.",
+            operations: "When you're staffing or developing your ops team, look for the people who know when the output is wrong and when a process needs overriding — that judgment is harder to teach than any tool.",
+            pm:         "Adding 'team readiness' as a line item in your AI project plans puts you ahead of most organizations. Scope for judgment and governance skills, not just tool training.",
+            admin:      "When your team catches a polished draft with the wrong tone or a clean report with a buried error, that's the skill this research says is most in demand. Develop it deliberately."
           },
           challenge: {
             steps: [
-              "Pick one recurring task where you or your team already uses AI, like drafting reports or summarizing data.",
-              "Open your company-approved AI tool and describe that workflow in general terms, then ask: <em>\"Where in this process would a human need to double-check the AI's work, and how long would that realistically take?\"</em>",
-              "Compare that estimate to how much validation time is currently built into your schedule or plan.",
-              "Adjust one deadline or workload assumption based on what you learn.",
-              "Share your result in the group."
+              "Think about the last time you used AI at work and accepted its output without much scrutiny — a summary, a draft, an analysis.",
+              "Open your company-approved AI tool and paste: <em>\"I recently used AI to [describe the task]. Walk me through 5 specific things I should have checked before accepting the output — not generic advice, but checks specific to this type of work.\"</em>",
+              "Read the checklist. Were there checks you skipped — or hadn't thought of?",
+              "Pick one check you'll add to your routine going forward and share it in the group — the pattern across roles will reveal where the real gaps are."
             ]
           }
         },
         {
-          title: "AI notetakers are in a third of meetings, but nobody's asking first",
-          body: "A July 2026 survey found <em>one in 3 employed Americans (33.4%) say an AI notetaker or transcription bot...has been present in their work meetings</em>, yet the habit of announcing it hasn't kept pace. As the survey's authors put it, <em>the safest assumption is the one California law already makes: Nobody on the call has consented until they are asked</em> (Stacker/Kolmogorov Law survey, July 2026).",
-          source_url: "https://abc17news.com/stacker-business-economy/2026/07/17/ai-notetakers-have-sat-in-on-1-in-3-us-workers-meetings-but-only-a-third-say-they-were-asked-first/",
+          title: "The companies closing the AI alignment gap are pulling ahead",
+          source_url: "https://writer.com/blog/enterprise-ai-adoption-2026/",
+          body: "Writer and Workplace Intelligence surveyed 2,400 global employees and C-suite leaders and found that AI adoption is creating internal fractures, not just competitive ones. <em>54% of the C-suite say adopting AI is tearing their company apart</em>, with 56% reporting power struggles around AI strategy. Meanwhile, <em>75% of executives admit their own AI strategy is more for show than for impact</em>. The gap between the AI conversation in the boardroom and the AI reality on the ground is widening — and both sides know it.",
           slants: {
-            strategy: "If you're drafting or updating an AI usage policy, give meeting notetakers their own named section instead of burying them in general guidance.",
-            leaders: "Set the norm yourself \u2014 announce when a notetaker is running in your meetings and ask before turning one on for others.",
-            operations: "Standardize on one company-approved notetaker so people stop bringing in a patchwork of personal tools nobody's tracking.",
-            pm: "Build a 10-second consent check into your meeting agenda template so it becomes automatic instead of awkward.",
-            admin: "Add a simple 'notetaker: yes/no' field to your standard meeting invite so attendees know before they walk in."
+            strategy:   "When building your AI roadmap, anchor it to one measurable workflow outcome — not a vision slide. Organizations that close the say-do gap are the ones attracting and retaining the strongest talent.",
+            leaders:    "The teams that hold together through this transition are the ones with a leader who can say 'here's what we're changing, and here's how we'll know it worked.' Build that clarity before you build the plan.",
+            operations: "When you're evaluating AI initiatives for your team, prioritize the ones with documented workflow results over the ones with executive sponsorship alone — real traction is a better hiring signal than hype.",
+            pm:         "As you staff and scope AI projects, build in clear success criteria from day one. Teams that know what 'done' looks like attract better contributors and stay aligned longer.",
+            admin:      "When onboarding new team members or cross-training, share what's actually working with AI tools on the ground — that institutional knowledge bridges the gap between strategy and reality."
           },
           challenge: {
             steps: [
-              "Check your calendar for your next three meetings and note whether any of them use an AI notetaker.",
-              "Ask your company-approved AI tool: <em>\"Draft a one-sentence script I can say at the start of a meeting to let people know an AI notetaker is running and ask if anyone objects.\"</em>",
-              "Use that line out loud in your next meeting.",
-              "Notice how people react \u2014 surprised, indifferent, or relieved someone finally said it.",
-              "Share your result in the group."
+              "Think about the last AI initiative or tool rollout your organization announced. Write down in one sentence what outcome it was supposed to deliver — not the tool, the result.",
+              "Open your company-approved AI tool and paste: <em>\"My company recently launched [describe the AI initiative]. The stated goal was [your one sentence]. Help me pressure-test this: is this goal measurable? Would I know in 6 months whether it succeeded or failed? If not, rewrite it as a goal with a clear, measurable outcome.\"</em>",
+              "Compare the AI's version to the original. Is the gap between 'what we said' and 'what we'd actually measure' larger than you expected?",
+              "Share the before-and-after versions in the group — the pattern across organizations reveals where the 'for show' problem lives."
             ]
           }
         },
         {
-          title: "Finishing early with AI is starting to feel risky, not rewarding",
-          body: "A new Software Finder survey shows <em>66% of employees fake productivity, staying online or slowing down, with 73% of managers admitting similar behavior</em>, and <em>64% of respondents said they had deliberately slowed down their work to avoid finishing too early because completing tasks quickly created additional expectations</em>. The problem, as Forbes frames it: <em>companies face a paradox: they demand AI transformation but reward employees for appearing constantly busy</em> (Forbes, August 2026).",
-          source_url: "https://www.forbes.com/sites/niritcohen/2026/08/02/ai-saves-time-66-of-employees-stay-online-to-hide-it/",
+          title: "Workers are saving a full day a week with AI — and the time is vanishing",
+          source_url: "https://www.bcg.com/press/3june2026-ai-reshaping-jobs-faster-than-companies-reshaping-work",
+          body: "BCG surveyed 11,749 workers across 14 markets for its 2026 AI at Work report and found that <em>42% of regular AI users are saving at least a full workday per week</em>. The problem: <em>66% say they get limited or no guidance on what to do with the time</em>, and more than half aren't redirecting it toward strategic work. The hours don't disappear into rest — they get absorbed by expanded workloads, informal tasks, and busywork that fills the vacuum. The productivity is real. The plan for what comes after it isn't.",
           slants: {
-            strategy: "Build 'time reinvested,' not just 'time saved,' into your AI ROI models \u2014 freed hours only create value if someone decides where they go.",
-            leaders: "Say out loud that finishing early because of AI is good news, not a cue to pile on more work \u2014 your team is listening for exactly this signal.",
-            operations: "Redesign how you measure throughput so finishing ahead of schedule shows up as a win on the dashboard, not a red flag.",
-            pm: "When AI speeds up a task type, recalibrate your estimates instead of quietly padding the timeline with extra scope.",
-            admin: "If AI frees up time in your day, spend it on one thing that actually improves your work \u2014 you don't need to manufacture busyness to justify it."
+            strategy:   "A full day per person per week is a massive unlock. The teams that decide in advance where that time goes — deeper analysis, better planning, relationship-building — will see it in their results.",
+            leaders:    "Try asking your team this week: 'When AI saves you an hour, what's the best use of that hour?' Naming it together turns invisible savings into visible progress.",
+            operations: "A day a week per person is real capacity waiting to be claimed. Choosing one high-value activity to redirect it toward — even just one — turns speed into outcomes.",
+            pm:         "Build a simple checkpoint into your AI-accelerated projects: 'We saved time here — here's what we're investing it in.' That one habit turns efficiency into quality.",
+            admin:      "Track the time AI saves your team this week, even roughly. That number — and a plan for where it goes — is exactly the data leadership needs to make smarter resourcing decisions."
           },
           challenge: {
             steps: [
-              "Think of a task this week where AI genuinely saved you time.",
-              "Ask your company-approved AI tool: <em>\"I finished this task in half the usual time using AI. Give me three ways I could spend the extra time that would make my work better, not just busier.\"</em>",
-              "Pick one suggestion and actually do it today.",
-              "Notice how it feels to spend saved time on purpose instead of stretching a task to fill the hour.",
-              "Share your result in the group."
+              "Estimate how much time AI saves you in a typical week — even a rough guess counts. Include drafting, research, formatting, summarizing, anything.",
+              "Look at your calendar and task list from the past week. Can you point to where that saved time went? Was it higher-value work, or did it get absorbed?",
+              "Open your company-approved AI tool and paste: <em>\"I estimate AI saves me about [X hours] per week. Here's how I currently spend the rest of my time: [describe your typical week]. Suggest three specific, high-value ways I could redirect that saved time — not 'be more strategic' generically, but concrete activities tied to my actual role.\"</em>",
+              "Pick one suggestion and try it this week — then share what changed in the group."
             ]
           }
         }
       ],
       homework: {
-        title: "Let AI interview you before it plans your next weekend",
-        body: "Pick something personal \u2014 a low-key weekend trip, a dinner party menu, or a tricky text you need to send \u2014 and try this in ChatGPT, Claude, Gemini, or Perplexity.",
-        prompt: "I want to plan a weekend trip within driving distance. Before you suggest anything, ask me questions one at a time until you have enough to make a great recommendation. This teaches you a simple but powerful technique: letting AI ask clarifying questions first instead of guessing, which almost always produces a better, more personal answer."
+        title: "Become a coffee (or tea) snob for 10 minutes tonight — without spending a cent.",
+        body: "You don't need new equipment or a specialty shop. You just need 10 minutes, whatever you already drink in the morning, and one of these free AI tools — ChatGPT, Claude, Gemini, or Perplexity:",
+        prompt: "\"I drink [coffee/tea — describe how you currently make it: drip machine, instant, teabags, French press, whatever] and I'd rate my current setup a [1-10]. I'm not looking to buy expensive gear. Give me three small changes I could try this week — ranked from easiest to most effort — that would noticeably improve my cup. For each one, explain in one sentence why it works.\"<br><br>The technique — <em>asking AI to rank options by a specific criterion that matters to you</em> — is one of the most underused prompting habits. It works everywhere: rank solutions by effort, rank ideas by risk, rank purchases by value per dollar. When you give AI a ranking axis, it stops listing and starts thinking."
       }
     },
-  "2026-08-16": {
+
+    "2026-08-16": {
       intro: "Sunday. Three patterns that matter more than the headlines: a regulation that quietly expanded its reach two weeks ago, the most overhyped label in enterprise AI, and a thinking habit worth protecting.",
       trends: [
         {
