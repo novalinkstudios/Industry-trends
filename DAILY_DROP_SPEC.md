@@ -124,6 +124,9 @@ Each daily entry is a JavaScript object keyed by ISO date (`"YYYY-MM-DD"`) insid
 - The **`leaders`** slant targets people managers and senior managers — those accountable for team performance, AI adoption decisions, and organizational change. Frame it around what they can do with their positional influence (set direction, fund enablement, model behavior, ask the hard question in the room).
 - Slants should be **genuinely different** for each role — if the same line could apply to all five, the trend’s framing is too generic and needs reworking.
 - If a trend honestly does not have a meaningful angle for one of the roles, write the most truthful version possible — don’t manufacture relevance.
+- **Positive and empowering tone.** Every slant should leave the reader feeling more capable, not more anxious. Frame around opportunity, action, and what’s possible — not around gaps, threats, or what’s going wrong. Avoid language that warns, scolds, or highlights what someone is missing.
+- **Frame from the hiring and team-building side.** The audience is building, managing, and developing teams — not marketing themselves to another employer. Write slants about how to hire for the right skills, develop people, structure teams, and make smarter organizational decisions. Never frame a slant in a way that encourages the reader to leave their current role or position themselves for the job market.
+- **Positive-leaning headlines.** Trend headlines should emphasize what’s working, what’s emerging, or what organizations can do — not what’s broken, failing, or dividing. Reframe negative findings around the opportunity they reveal.
 
 ### Challenges
 
