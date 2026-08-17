@@ -1,4 +1,77 @@
 {
+  "2026-08-17": {
+    "intro": "Today's stories share one thread: the tech side of AI is moving fast, but the human side — who validates it, who consents to it, who gets to benefit from it — is scrambling to catch up.",
+    "trends": [
+      {
+        "title": "Your middle managers are quietly becoming AI's bottleneck",
+        "body": "New Harvard Business School research based on interviews at two major consulting firms found that <em>senior leaders are leaning into AI's strategic potential, expanding scope, accelerating delivery with leaner teams, and reimagining services</em> — while junior staff get more interesting work too. The layer in between is absorbing the cost: <em>middle managers were overloaded with new responsibilities—validating AI outputs, identifying errors, coaching their teams in AI skills—all while facing unchanged or even increased delivery pressure and lacking formal support structures</em> (Harvard Business Review, June 2026).",
+        "source_url": "https://hbr.org/2026/06/ai-adoption-is-overloading-your-middle-managers",
+        "slants": {
+          "strategy": "When you model AI rollout timelines, budget explicit hours for manager validation and coaching — treat it as a real line item, not free capacity.",
+          "leaders": "Ask your own managers what new checking, coaching, or fixing work AI has added to their plate that nobody officially assigned them.",
+          "operations": "Map which AI-output validation tasks are landing informally on frontline managers and build a real process around them instead of letting them stay invisible overhead.",
+          "pm": "Add a review buffer to project plans specifically for manager sign-off on AI-assisted deliverables so it doesn't get squeezed out at crunch time.",
+          "admin": "If you support a manager, watch for a growing backlog of items flagged 'needs review' — that's often the first visible sign of this overload."
+        },
+        "challenge": {
+          "steps": [
+            "Pick one recurring task where you or your team already uses AI, like drafting reports or summarizing data.",
+            "Open your company-approved AI tool and describe that workflow in general terms, then ask: <em>\"Where in this process would a human need to double-check the AI's work, and how long would that realistically take?\"</em>",
+            "Compare that estimate to how much validation time is currently built into your schedule or plan.",
+            "Adjust one deadline or workload assumption based on what you learn.",
+            "Share your result in the group."
+          ]
+        }
+      },
+      {
+        "title": "AI notetakers are in a third of meetings, but nobody's asking first",
+        "body": "A July 2026 survey found <em>one in 3 employed Americans (33.4%) say an AI notetaker or transcription bot...has been present in their work meetings</em>, yet the habit of announcing it hasn't kept pace. As the survey's authors put it, <em>the safest assumption is the one California law already makes: Nobody on the call has consented until they are asked</em> (Stacker/Kolmogorov Law survey, July 2026).",
+        "source_url": "https://abc17news.com/stacker-business-economy/2026/07/17/ai-notetakers-have-sat-in-on-1-in-3-us-workers-meetings-but-only-a-third-say-they-were-asked-first/",
+        "slants": {
+          "strategy": "If you're drafting or updating an AI usage policy, give meeting notetakers their own named section instead of burying them in general guidance.",
+          "leaders": "Set the norm yourself — announce when a notetaker is running in your meetings and ask before turning one on for others.",
+          "operations": "Standardize on one company-approved notetaker so people stop bringing in a patchwork of personal tools nobody's tracking.",
+          "pm": "Build a 10-second consent check into your meeting agenda template so it becomes automatic instead of awkward.",
+          "admin": "Add a simple 'notetaker: yes/no' field to your standard meeting invite so attendees know before they walk in."
+        },
+        "challenge": {
+          "steps": [
+            "Check your calendar for your next three meetings and note whether any of them use an AI notetaker.",
+            "Ask your company-approved AI tool: <em>\"Draft a one-sentence script I can say at the start of a meeting to let people know an AI notetaker is running and ask if anyone objects.\"</em>",
+            "Use that line out loud in your next meeting.",
+            "Notice how people react — surprised, indifferent, or relieved someone finally said it.",
+            "Share your result in the group."
+          ]
+        }
+      },
+      {
+        "title": "Finishing early with AI is starting to feel risky, not rewarding",
+        "body": "A new Software Finder survey shows <em>66% of employees fake productivity, staying online or slowing down, with 73% of managers admitting similar behavior</em>, and <em>64% of respondents said they had deliberately slowed down their work to avoid finishing too early because completing tasks quickly created additional expectations</em>. The problem, as Forbes frames it: <em>companies face a paradox: they demand AI transformation but reward employees for appearing constantly busy</em> (Forbes, August 2026).",
+        "source_url": "https://www.forbes.com/sites/niritcohen/2026/08/02/ai-saves-time-66-of-employees-stay-online-to-hide-it/",
+        "slants": {
+          "strategy": "Build 'time reinvested,' not just 'time saved,' into your AI ROI models — freed hours only create value if someone decides where they go.",
+          "leaders": "Say out loud that finishing early because of AI is good news, not a cue to pile on more work — your team is listening for exactly this signal.",
+          "operations": "Redesign how you measure throughput so finishing ahead of schedule shows up as a win on the dashboard, not a red flag.",
+          "pm": "When AI speeds up a task type, recalibrate your estimates instead of quietly padding the timeline with extra scope.",
+          "admin": "If AI frees up time in your day, spend it on one thing that actually improves your work — you don't need to manufacture busyness to justify it."
+        },
+        "challenge": {
+          "steps": [
+            "Think of a task this week where AI genuinely saved you time.",
+            "Ask your company-approved AI tool: <em>\"I finished this task in half the usual time using AI. Give me three ways I could spend the extra time that would make my work better, not just busier.\"</em>",
+            "Pick one suggestion and actually do it today.",
+            "Notice how it feels to spend saved time on purpose instead of stretching a task to fill the hour.",
+            "Share your result in the group."
+          ]
+        }
+      }
+    ],
+    "homework": {
+      "title": "Let AI interview you before it plans your next weekend",
+      "body": "Pick something personal — a low-key weekend trip, a dinner party menu, or a tricky text you need to send — and try this in ChatGPT, Claude, Gemini, or Perplexity.",
+      "prompt": "I want to plan a weekend trip within driving distance. Before you suggest anything, ask me questions one at a time until you have enough to make a great recommendation. This teaches you a simple but powerful technique: letting AI ask clarifying questions first instead of guessing, which almost always produces a better, more personal answer."
+    }
+  },
   "2026-08-16": {
     "intro": "Sunday. Three patterns that matter more than the headlines: a regulation that quietly expanded its reach two weeks ago, the most overhyped label in enterprise AI, and a thinking habit worth protecting.",
     "trends": [
