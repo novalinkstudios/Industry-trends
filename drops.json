@@ -7,11 +7,11 @@
         "source_url": "https://www.workera.ai/guides-reports/the-5-5-trillion-skills-gap-what-idcs-new-report-reveals-about-ai-workforce-readiness",
         "body": "IDC projects that skills shortages will cost the global economy <em>up to $5.5 trillion by 2026</em> in product delays, quality issues, and missed revenue. The surprise: the gap isn't in technical skills. It spans <em>critical evaluation of AI outputs, governance, and workflow integration</em> — the judgment layer between pressing a button and making a sound decision. 94% of CEOs name AI as their top in-demand capability, yet only 35% feel they've actually prepared their employees for it.",
         "slants": {
-          "strategy": "The next strategic hire on your team probably isn't an engineer — it's someone who can evaluate AI outputs, design governance around them, and redesign workflows to match.",
-          "leaders": "If your AI training program teaches tools but not judgment — how to evaluate, challenge, and decide what to trust — you're closing the wrong gap.",
-          "operations": "The operational skills that matter most now are the ones AI can't do: knowing when the output is wrong, when the process needs overriding, and when the data underneath is unreliable.",
-          "pm": "When you scope an AI project, add 'team readiness' as a line item — not just tool training, but the judgment and governance skills the team needs to use it well.",
-          "admin": "Your ability to spot when something looks right but isn't — a polished email with the wrong tone, a clean report with a buried error — is exactly the gap this research describes."
+          "strategy": "You already do the hard part — framing problems, weighing trade-offs, reading between the lines. Those are the exact skills this research says are worth trillions. Lean into them.",
+          "leaders": "The team that learns to evaluate, challenge, and selectively trust AI output will outperform the one that just learns to use the tool. You're in the best position to build that culture.",
+          "operations": "Your instinct for when something is off — the output that looks clean but feels wrong, the process that needs a human override — is precisely the judgment the market is paying a premium for.",
+          "pm": "Adding 'team readiness' as a line item in your AI project plans puts you ahead of most organizations. It's a small move that signals real leadership.",
+          "admin": "Every time you catch a polished draft with the wrong tone or a clean report with a buried error, you're exercising the skill this $5.5 trillion gap is about. That eye is worth developing."
         },
         "challenge": {
           "steps": [
@@ -27,11 +27,11 @@
         "source_url": "https://writer.com/blog/enterprise-ai-adoption-2026/",
         "body": "Writer and Workplace Intelligence surveyed 2,400 global employees and C-suite leaders and found that AI adoption is creating internal fractures, not just competitive ones. <em>54% of the C-suite say adopting AI is tearing their company apart</em>, with 56% reporting power struggles around AI strategy. Meanwhile, <em>75% of executives admit their own AI strategy is more for show than for impact</em>. The gap between the AI conversation in the boardroom and the AI reality on the ground is widening — and both sides know it.",
         "slants": {
-          "strategy": "If three-quarters of executives admit their AI strategy is performative, the opportunity is in building the one that isn't. Start with one workflow that delivers measurable change, not a deck that describes it.",
-          "leaders": "The power struggles this survey describes aren't about technology — they're about influence, budget, and who gets to define the future of work. Name the tension before it names your team.",
-          "operations": "If leadership is sending mixed signals about AI direction, your best move is to document what's actually working in your workflows — real results cut through internal politics.",
-          "pm": "When AI strategy is 'more for show,' projects get funded for optics, not outcomes. Push for clear success criteria before you build the plan.",
-          "admin": "If you're hearing different AI priorities from different leaders, you're not confused — the strategy may genuinely be unclear. Trust what you're seeing on the ground."
+          "strategy": "When three-quarters of companies are still figuring out their AI story, a strategy built around one real, measurable workflow win stands out. You don't need a grand plan — you need one honest result.",
+          "leaders": "Teams rally around clarity. The leader who can say 'here's what we're actually trying to change, and here's how we'll know it worked' earns trust that no strategy deck can buy.",
+          "operations": "You have something most AI conversations are missing: real data on what's actually working. Documenting your workflow results gives leadership the grounding they need.",
+          "pm": "This is where PMs shine — translating ambition into measurable outcomes. Defining clear success criteria before a project starts is the single highest-leverage move you can make.",
+          "admin": "Your ground-level view of what's actually happening with AI tools is more accurate than most strategy decks. Trust what you're seeing — that perspective has real value right now."
         },
         "challenge": {
           "steps": [
@@ -47,11 +47,11 @@
         "source_url": "https://www.bcg.com/press/3june2026-ai-reshaping-jobs-faster-than-companies-reshaping-work",
         "body": "BCG surveyed 11,749 workers across 14 markets for its 2026 AI at Work report and found that <em>42% of regular AI users are saving at least a full workday per week</em>. The problem: <em>66% say they get limited or no guidance on what to do with the time</em>, and more than half aren't redirecting it toward strategic work. The hours don't disappear into rest — they get absorbed by expanded workloads, informal tasks, and busywork that fills the vacuum. The productivity is real. The plan for what comes after it isn't.",
         "slants": {
-          "strategy": "If your team is saving time with AI but the savings aren't visible in outcomes, the problem isn't the tool — it's the absence of a plan for the time it creates.",
-          "leaders": "Ask your team this week: 'When AI saves you an hour, what do you actually do with it?' If the answer is 'more of the same,' the productivity gain is an illusion.",
-          "operations": "A day a week per person is substantial capacity. If it's being absorbed by unplanned work rather than redirected toward higher-value tasks, you're running faster on the same treadmill.",
-          "pm": "When AI accelerates a phase of your project, build in a checkpoint: 'What do we do with the time this freed up?' Otherwise the schedule compresses but the scope doesn't improve.",
-          "admin": "If AI saves you two hours on a report but you spend those hours on tasks that just appeared, flag the pattern. Saved time that gets silently refilled isn't saved — it's redistributed."
+          "strategy": "A full day per person per week is a massive unlock. The teams that decide in advance where that time goes — deeper analysis, better planning, relationship-building — will see it in their results.",
+          "leaders": "Try asking your team this week: 'When AI saves you an hour, what's the best use of that hour?' Naming it together turns invisible savings into visible progress.",
+          "operations": "A day a week per person is real capacity waiting to be claimed. Choosing one high-value activity to redirect it toward — even just one — turns speed into outcomes.",
+          "pm": "Build a simple checkpoint into your AI-accelerated projects: 'We saved time here — here's what we're investing it in.' That one habit turns efficiency into quality.",
+          "admin": "Track the time AI saves you this week, even roughly. Having that number — and a plan for where it goes — puts you in a stronger position than most people in any role."
         },
         "challenge": {
           "steps": [
