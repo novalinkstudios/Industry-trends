@@ -3,7 +3,7 @@
     "intro": "Wednesday. Three things worth knowing today: the people absorbing the most AI pressure aren't who you'd guess, a new word just landed for a problem everyone recognizes, and the most valuable AI skill just shifted under your feet.",
     "trends": [
       {
-        "title": "AI is elevating everyone except the people in the middle",
+        "title": "Middle managers are becoming AI's most important quality layer",
         "source_url": "https://hbr.org/2026/06/ai-adoption-is-overloading-your-middle-managers",
         "body": "Harvard Business Review studied AI adoption across organizational levels and found a pattern that should concern every org chart: <em>AI is elevating juniors and seniors while overloading middle managers</em>. Junior employees are seeing dramatic productivity gains. Senior leaders are expanding strategic scope. But middle managers are stuck in a new layer of invisible work — validating AI outputs, catching low-quality AI-generated content, coaching their teams on when and how to use AI — all while facing unchanged delivery pressure and no formal support.",
         "slants": {
@@ -23,7 +23,7 @@
         }
       },
       {
-        "title": "There's a word for that AI-generated work that wastes everyone's time",
+        "title": "Teams are raising the bar on AI output — and now there's a word for what falls short",
         "source_url": "https://www.betterup.com/workslop",
         "body": "Researchers at Stanford and BetterUp Labs coined a term for the polished-looking AI output that doesn't actually move work forward: <em>workslop</em>. Their survey of 1,150 U.S. desk workers found it everywhere: <em>40% had received workslop in just the past month</em>, and the average worker estimates 15% of all work they receive is AI-generated filler. The cost isn't just wasted time — 1.8 hours per instance on average — it's trust. Over half of recipients said they viewed the sender as less reliable afterward.",
         "slants": {
