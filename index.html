@@ -968,6 +968,79 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-08-20": {
+      intro: "Three patterns worth naming today: your AI agents are probably working alone, the tools meant to lighten your workload are actually making it denser, and the most useful AI habit turns out to be knowing when not to use it.",
+      trends: [
+        {
+          title: "Your AI agents are working alone — and that's where the value is leaking",
+          source_url: "https://www.salesforce.com/news/stories/connectivity-report-announcement-2026/",
+          body: "Salesforce's 2026 Connectivity Benchmark surveyed 1,050 IT leaders across nine countries and found a pattern hiding in plain sight: the average enterprise now runs <em>12 AI agents</em>, but <em>half of them operate in complete isolation</em> — no shared data, no coordination, no handoffs. The agents work. The problem is they work alone. And 86% of IT leaders say disconnected agents create more complexity than value.",
+          slants: {
+            strategy:   "Before investing in agent number 13, map the connections between the 12 you already have. The ROI lives in the handoffs, not the headcount.",
+            leaders:    "Ask your team which AI tools talk to each other — and which ones run in isolation. The answer tells you where integration effort will pay off most.",
+            operations: "If two agents touch the same process but can't share context, you're manually bridging a gap that should be automated. Name those bridges.",
+            pm:         "Add 'agent connectivity' to your project architecture reviews. A new agent that can't see existing systems adds complexity, not capability.",
+            admin:      "You're often the first to notice when two tools don't talk to each other — when you copy data between systems or reconcile conflicting outputs. That friction is worth flagging."
+          },
+          challenge: {
+            steps: [
+              "List every AI-powered tool your team uses regularly — assistants, copilots, automations, chatbots, anything with AI in the workflow.",
+              "Open your company-approved AI tool and paste: <em>\"Here are the AI tools my team currently uses: [list them]. For each pair of tools, tell me: do they likely share data or operate independently? Where would connecting two isolated tools create the most value — and what would that connection look like in practice?\"</em>",
+              "Review the output. Count how many of your tools are operating in isolation.",
+              "Share your count and your highest-value connection opportunity in the group."
+            ]
+          }
+        },
+        {
+          title: "AI doubled the emails and cut the focus time — the workload got denser, not lighter",
+          source_url: "https://www.activtrak.com/blog/443-million-hours-data-ai-adoption-impact/",
+          body: "ActivTrak analyzed <em>443 million hours of digital workplace activity</em> across 1,111 organizations and found something that contradicts the productivity narrative: since AI adoption, <em>time spent on email increased 104%</em>, messaging climbed 145%, and business management tools rose 94%. Focus time fell to a three-year low. Weekend work jumped 40%. AI made it easier to produce — so everyone produced more, and everyone received more. The workload didn't shrink. It compressed.",
+          slants: {
+            strategy:   "The next AI conversation on your team shouldn't be 'how do we produce more?' — it should be 'what should we stop producing?' Cutting low-value output is a strategy decision.",
+            leaders:    "If AI saved your team two hours but those hours filled with more messages and longer email threads, the gain is an illusion. Protect focus time as deliberately as you assign deadlines.",
+            operations: "Every AI-generated summary, update, and status message lands in someone else's inbox. Before automating an output, ask: does the recipient actually need this?",
+            pm:         "Faster drafting plus more review cycles can net out to zero time savings. Track not just how fast deliverables are produced, but how many rounds they go through.",
+            admin:      "If your inbox doubled this year and your focus time shrank, you're not alone — and it's not a you problem. The volume of AI-generated communication is growing faster than anyone's capacity to process it."
+          },
+          challenge: {
+            steps: [
+              "Open your email or messaging tool and estimate how many messages you received yesterday — including automated summaries, AI-generated updates, and bot notifications.",
+              "Now estimate how many of those messages actually required your attention or changed a decision you made.",
+              "Open your company-approved AI tool and paste: <em>\"I receive approximately [number] messages per day at work. About [number] of them actually require my attention or change a decision. Help me build a quick triage system: what categories of messages can I safely batch, filter, or eliminate? Give me three specific rules I can set up this week to protect at least 30 minutes of focus time per day.\"</em>",
+              "Try one rule tomorrow and see if it holds.",
+              "Share your triage rule in the group — the best systems come from people who tested them."
+            ]
+          }
+        },
+        {
+          title: "Half of workers know they lean on AI too much — and that self-awareness is the edge",
+          source_url: "https://workplaceintelligence.com/pulse-of-work-in-2026-study/",
+          body: "GoTo's Pulse of Work 2026, surveying 2,500 employees and IT leaders globally, surfaced a striking moment of self-awareness across the workforce: <em>50% of workers say they rely on AI too much</em>, and <em>39% say that reliance is making them less intelligent</em>. Among Gen Z, that number climbs to 46%. The positive read: workers who can name the dependency can manage it. The ones who deliberately choose when to think independently — and when to let AI handle the routine — are building the most durable professional advantage.",
+          slants: {
+            strategy:   "The strategist who uses AI for research but does the synthesis solo is building a different kind of muscle than the one who outsources both. Choose which thinking you keep sharp.",
+            leaders:    "Normalize this conversation on your team: 'Where does AI make your work better, and where does it make your thinking lazier?' The teams that answer honestly are the ones improving fastest.",
+            operations: "If you can troubleshoot a process failure without reaching for AI first, that's a skill worth maintaining — and it's one that fewer people will have next year.",
+            pm:         "Before defaulting to AI for your next project plan or risk assessment, try drafting the first version yourself. The gap between your instinct and AI's output teaches you where your judgment is strongest.",
+            admin:      "Your ability to read a situation, catch a tone problem, or know the right person to loop in — those are skills AI can't build for you. Keep exercising them."
+          },
+          challenge: {
+            steps: [
+              "Think about your last full workday. List the three tasks where you used AI the most — drafting, researching, analyzing, summarizing, anything.",
+              "For each task, honestly label it: <em>\"AI made this better\"</em>, <em>\"AI made this faster but not better\"</em>, or <em>\"I could have done this just as well without AI.\"</em>",
+              "Open your company-approved AI tool and paste: <em>\"Here are three tasks I used AI for recently: [list them with your labels]. Based on these, help me build a personal decision tree: when should I use AI, when should I use AI as a second opinion only, and when should I do the work independently? Make it specific to my role and these tasks.\"</em>",
+              "Save your decision tree somewhere visible — a sticky note, a pinned note, wherever you'll actually see it.",
+              "Share your split and one surprise in the group — the patterns across roles are worth comparing."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Got a bill you've been meaning to negotiate? Let AI coach you through the call.",
+        body: "Cable, internet, insurance, gym membership — there's almost always room to negotiate, and the hardest part is knowing what to say. Tonight, pick one recurring bill you suspect you're overpaying and use any free AI tool (ChatGPT, Claude, Gemini, or Perplexity) to prep the call:",
+        prompt: "\"I pay $[amount] per month for [service] with [provider]. I've been a customer for [how long]. Help me prepare to negotiate a lower rate: What's a realistic target price? What should I say when I call? What will they likely counter with, and how should I respond? Role-play the conversation with me — you be the retention agent, and I'll practice my side.\"<br><br>The technique — <em>having AI play the other side of a conversation before you have it for real</em> — is one of the most practical uses you'll find. It works for salary negotiations, tough conversations with a landlord, even preparing for a difficult talk with a family member. The rehearsal builds confidence, and the script gives you a starting point you can adapt in the moment."
+      }
+    },
+
     "2026-08-19": {
       intro: "Wednesday. Three things worth knowing today: the people absorbing the most AI pressure aren't who you'd guess, a new word just landed for a problem everyone recognizes, and the most valuable AI skill just shifted under your feet.",
       trends: [
