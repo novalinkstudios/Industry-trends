@@ -1,4 +1,74 @@
 {
+  "2026-08-20": {
+    "intro": "Thursday. Three patterns shaping how work gets organized: the AI labor market is growing in two directions at once, meetings are getting shorter for a reason that actually sticks, and the teams getting AI governance right aren't using one rulebook.",
+    "trends": [
+      {
+        "title": "The AI labor market is growing in two directions — and both paths pay",
+        "source_url": "https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-jobs-barometer.html",
+        "body": "PwC's 2026 Global AI Jobs Barometer analyzed over a billion job ads across 27 countries and found something that reframes the conversation: AI-exposed roles are growing <em>eight times faster</em> than the overall market, but they're splitting into two distinct tracks. Professionalised roles — where AI amplifies expert judgment — are seeing twice the job growth and <em>42% faster salary increases</em>. Democratised roles — where AI makes complex tasks accessible to non-specialists — are growing too, on a different curve. Both paths lead somewhere real.",
+        "slants": {
+          "strategy": "When planning team composition, think in tracks: which roles need deeper expertise that AI amplifies, and which benefit from AI making specialized tasks more accessible?",
+          "leaders": "Develop your people for the track that fits their strengths. The leaders matching talent to the right growth path — expert-led or access-led — are building the teams that outperform.",
+          "operations": "The ops tasks AI is simplifying aren't disappearing — they're becoming accessible to more people. Your edge is knowing which ones still need deep operational judgment.",
+          "pm": "Project roles are splitting too: AI handles coordination mechanics, but scoping, risk judgment, and stakeholder navigation are growing in value. Lean into the judgment work.",
+          "admin": "AI is making specialized tasks more accessible to generalists — and you've always been the person who figures out how things work across the organization. That skill is on the growth track."
+        },
+        "challenge": {
+          "steps": [
+            "Open your company-approved AI tool and list your top 5 weekly responsibilities.",
+            "Add this prompt: <em>\"For each responsibility, classify it: is this a 'professionalised' task (requires deep expertise and judgment that AI amplifies) or a 'democratised' task (AI could make this accessible to someone without my specific background)? Explain why for each one.\"</em>",
+            "Review the classification. Which tasks surprised you — either because AI could simplify them more than you expected, or because your expertise matters more than you realized?",
+            "Share your split in the group — the pattern across roles reveals where expertise is growing in value."
+          ]
+        }
+      },
+      {
+        "title": "Meetings are finally getting shorter — and AI made the difference",
+        "source_url": "https://www.supernormal.com/state-of-meetings",
+        "body": "Supernormal's State of Meetings 2026 analyzed <em>50.9 million hours of meeting data</em> and found something years of meeting-culture reform couldn't deliver: meetings are actually shrinking. Average duration dropped from 51 to 47 minutes. One-on-ones now represent 23% of all meetings — a shift toward focused, high-value conversations. The driver isn't willpower or policy. It's that <em>69% of AI-assisted meetings now generate actionable artifacts automatically</em>, with follow-through rates jumping from 50–60% to 85–95%. When the next steps happen by default, the meeting can end sooner.",
+        "slants": {
+          "strategy": "Shorter meetings with automatic artifacts means more time for the deep thinking that moves strategy forward. Check whether your team's meeting defaults still match the tools available.",
+          "leaders": "If your team still runs 60-minute defaults, ask whether AI summarization would let you cut to 45. Follow-through usually improves when capture is automatic, not manual.",
+          "operations": "AI-generated meeting notes with extracted action items aren't a convenience — they're an operational control. Completion rates nearly double when capture is automatic.",
+          "pm": "The status meeting exists because information moved slowly. AI summaries and auto-extracted action items make that rationale weaker by the quarter.",
+          "admin": "Meeting notes that once required real-time typing can now be AI-drafted and reviewed after the fact — freeing you to focus on what actually happened versus what was said."
+        },
+        "challenge": {
+          "steps": [
+            "Pick a recurring meeting you attend or run — ideally the one you'd most like to shorten.",
+            "Open your company-approved AI tool and paste: <em>\"I have a recurring [type of meeting] that runs [X minutes] with [Y people]. Walk me through how to restructure it to be 25% shorter using AI-assisted notes and action tracking. Give me a revised agenda template, what to move async, and how to handle follow-through without adding work.\"</em>",
+            "Compare the restructured version to your current format. Does the shorter version lose anything essential, or does it just cut what everyone's been tolerating?",
+            "Share your before-and-after meeting structure in the group — the patterns will reveal what's worth keeping and what's just habit."
+          ]
+        }
+      },
+      {
+        "title": "The best AI governance matches the rules to the risk",
+        "source_url": "https://www.gartner.com/en/newsroom/press-releases/2026-05-26-gartner-says-applying-uniform-governance-across-ai-agents-will-lead-to-enterprise-ai-agent-failure",
+        "body": "Gartner's latest research makes a practical point many organizations are learning the hard way: <em>applying the same governance rules to every AI tool leads to failure</em>. The problem is binary thinking — treating AI as either fully locked down or fully trusted. The organizations succeeding use proportional governance: classifying AI tools by autonomy level and scope, then matching oversight to the actual risk. Gartner projects that by 2027, <em>40% of enterprises will pull back on AI agents</em> due to governance gaps discovered only after something went wrong.",
+        "slants": {
+          "strategy": "Your AI governance framework should scale with risk — a summarization tool and an autonomous agent don't need the same controls. Map your tools by autonomy level before an incident maps them for you.",
+          "leaders": "Over-governing low-risk AI tools kills adoption. Under-governing high-risk ones creates liability. Your job is the calibration — and it's a judgment call, not a policy template.",
+          "operations": "You already know how to match controls to risk — tiered approvals, escalation paths, access levels. Apply that same instinct to AI tools and you're ahead of most governance frameworks.",
+          "pm": "When a new AI tool enters your project workflow, the right question isn't just 'is it approved?' — it's 'what can it do, what can it access, and what level of oversight fits that scope?'",
+          "admin": "The governance logic for AI tools works like document access controls: not everything needs the same restriction level, and blanket lockdowns slow everyone down without adding safety."
+        },
+        "challenge": {
+          "steps": [
+            "List the AI tools you or your team currently use at work — company-approved assistants, copilots, summarizers, anything that touches your workflow.",
+            "Open your company-approved AI tool and paste: <em>\"I use these AI tools at work: [list them]. For each one, classify it on a 3-tier scale: Tier 1 (low autonomy — I provide input, it returns output, no system access), Tier 2 (medium autonomy — it accesses some data or integrations on my behalf), Tier 3 (high autonomy — it can take actions or make changes without my approval each time). For each tier, suggest appropriate governance controls.\"</em>",
+            "Compare the suggested tiers to how your organization actually governs these tools. Where are the gaps — tools with more autonomy than their oversight accounts for, or useful tools locked down more than necessary?",
+            "Share your tier mapping in the group — a shared framework helps everyone make better decisions about what to adopt and how to oversee it."
+          ]
+        }
+      }
+    ],
+    "homework": {
+      "title": "Pick something you use every day and find out how it's actually made.",
+      "body": "Coffee, glass, a zipper, your phone's screen, a pencil — you use it constantly and have no idea what it takes to go from raw material to finished product. Tonight, try a technique that gives you control over how deep AI goes. Use any free AI tool (ChatGPT, Claude, Gemini, or Perplexity):",
+      "prompt": "\"I want to understand how [thing] is made — from raw materials to finished product. First, ask me 2 questions about what I already know and how deep I want to go. Then explain the process at three levels: a one-sentence version, a one-paragraph version, and a full step-by-step walkthrough with the most surprising part highlighted.\"<br><br>The technique — <em>asking for multiple levels of detail in one prompt</em> — gives you control over depth without guessing what to ask for. Use it anytime you're learning something new: start with the overview, dive into only the parts that grab you, and skip the rest."
+    }
+  },
   "2026-08-19": {
     "intro": "Wednesday. Three things worth knowing today: the people absorbing the most AI pressure aren't who you'd guess, a new word just landed for a problem everyone recognizes, and the most valuable AI skill just shifted under your feet.",
     "trends": [
