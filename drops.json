@@ -1,4 +1,75 @@
 {
+  "2026-08-20": {
+    "intro": "Three patterns worth naming today: people are producing work with AI they couldn't have made a year ago, the demand for learning is surging in ways nobody predicted, and the workers building the strongest habits are the ones who know when to think for themselves.",
+    "trends": [
+      {
+        "title": "Fifty-eight percent of AI users are producing work they couldn't have made a year ago",
+        "source_url": "https://news.microsoft.com/annual-work-trend-index-2026/",
+        "body": "Microsoft's 2026 Work Trend Index surveyed 31,000 workers across 31 countries and found a milestone worth pausing on: <em>58% of AI users say they are producing work they could not have produced a year ago</em>. The report identifies a new category — Frontier Professionals — who redesign workflows, orchestrate agents across multi-step tasks, and build repeatable practices others can follow. Only <em>16% of AI users have reached that tier so far</em>, which means the opportunity to grow into it is wide open. The organizational factor matters most: culture, manager support, and talent practices account for more than 2x the AI impact of individual mindset alone (Microsoft Work Trend Index, May 2026).",
+        "slants": {
+          "strategy": "The 58% number is your proof point: AI isn't just saving time, it's expanding what your team can deliver. Use it to frame your next capability-building investment.",
+          "leaders": "Organizational factors drive 2x the AI impact of individual effort. That means manager support and team culture are your highest-leverage moves — not another training module.",
+          "operations": "Frontier Professionals build repeatable workflows others can follow. Identify who on your team is already doing this informally and give them a way to share their patterns.",
+          "pm": "Only 16% of AI users are orchestrating multi-step agent workflows. If you're already sequencing tools across a project lifecycle, you're ahead — document what's working so your team can adopt it.",
+          "admin": "You're producing work now that wasn't possible a year ago — better research, sharper summaries, faster turnarounds. Name those wins so they're visible in your next review."
+        },
+        "challenge": {
+          "steps": [
+            "Think about your work over the past month. Name one deliverable you created with AI that you genuinely could not have produced — or produced as well — a year ago.",
+            "Open your company-approved AI tool and paste: <em>\"I'm a [your role] and I recently used AI to produce [describe the deliverable]. Help me break down exactly what AI made possible that wasn't before — was it speed, quality, scope, or a combination? Then suggest two adjacent tasks in my role where the same approach could unlock similar results.\"</em>",
+            "Review the suggestions. Pick the one that feels most immediately useful and try it this week.",
+            "Share your 'couldn't have made this a year ago' example in the group — the range of answers will surprise you."
+          ]
+        }
+      },
+      {
+        "title": "AI-related learning just surged fivefold — and the fastest-growing skill isn't technical",
+        "source_url": "https://business.udemy.com/2026-global-learning-skills-trends-report/",
+        "body": "Udemy's 2026 Global Learning & Skills Trends Report, drawn from data across <em>17,000+ enterprise customers</em>, shows AI-related enrollments surpassing 11 million globally — a <em>fivefold increase in one year</em>. The surprise is where the growth is landing. Technical AI courses are surging (Microsoft Copilot content up 3,400% year-over-year), but adaptive skills are keeping pace: critical thinking rose 37% and decision-making rose 38%. The companies getting it right are treating AI fluency as a company-wide operating system, not a technical silo (Udemy, 2026).",
+        "slants": {
+          "strategy": "The learning data says your people want to grow — and the fastest-rising skills are judgment and critical thinking, not just prompting. Build your upskilling plan around both.",
+          "leaders": "When 11 million people enroll voluntarily, the appetite is real. Your job is to channel it — connect the learning to actual workflows so the skills stick.",
+          "operations": "Decision-making skill demand is up 38%. That tracks: as AI handles more routine analysis, the human role shifts toward better judgment calls on messier problems.",
+          "pm": "Critical thinking is now a skill people are actively building, not just listing on resumes. Factor that into how you staff projects — the people investing in it are becoming your strongest contributors.",
+          "admin": "The learning surge includes you. If you've been building AI skills on your own time, you're part of the fastest-growing professional development wave in a decade — and it shows in your work."
+        },
+        "challenge": {
+          "steps": [
+            "Rate yourself honestly on two scales, 1–5: (a) your comfort using AI tools at work, and (b) your confidence making judgment calls when AI gives you conflicting or incomplete answers.",
+            "Open your company-approved AI tool and paste: <em>\"I rated my AI tool comfort at [a] out of 5 and my judgment confidence with AI at [b] out of 5. Based on these scores, suggest three specific learning priorities for me — one technical AI skill, one critical thinking exercise, and one decision-making practice. Keep each suggestion to something I can start this week in under 30 minutes.\"</em>",
+            "Pick one of the three suggestions and block 20 minutes on your calendar this week to try it.",
+            "Share your two ratings and your chosen learning priority in the group — the pattern across the team will show where to invest together."
+          ]
+        }
+      },
+      {
+        "title": "The workers building the strongest AI habits know exactly when to think for themselves",
+        "source_url": "https://workplaceintelligence.com/pulse-of-work-in-2026-study/",
+        "body": "GoTo's Pulse of Work 2026, surveying 2,500 employees and IT leaders globally, surfaced a striking moment of self-awareness across the workforce: <em>50% of workers say they rely on AI too much</em>, and <em>39% say that reliance is making them less intelligent</em>. Among Gen Z, that number climbs to 46%. The positive read: workers who can name the dependency can manage it. The ones who deliberately choose when to think independently — and when to let AI handle the routine — are building the most durable professional advantage.",
+        "slants": {
+          "strategy": "The strategist who uses AI for research but does the synthesis solo is building a different kind of muscle than the one who outsources both. Choose which thinking you keep sharp.",
+          "leaders": "Normalize this conversation on your team: 'Where does AI make your work better, and where does it make your thinking lazier?' The teams that answer honestly are the ones improving fastest.",
+          "operations": "If you can troubleshoot a process failure without reaching for AI first, that's a skill worth maintaining — and it's one that fewer people will have next year.",
+          "pm": "Before defaulting to AI for your next project plan or risk assessment, try drafting the first version yourself. The gap between your instinct and AI's output teaches you where your judgment is strongest.",
+          "admin": "Your ability to read a situation, catch a tone problem, or know the right person to loop in — those are skills AI can't build for you. Keep exercising them."
+        },
+        "challenge": {
+          "steps": [
+            "Think about your last full workday. List the three tasks where you used AI the most — drafting, researching, analyzing, summarizing, anything.",
+            "For each task, honestly label it: <em>\"AI made this better\"</em>, <em>\"AI made this faster but not better\"</em>, or <em>\"I could have done this just as well without AI.\"</em>",
+            "Open your company-approved AI tool and paste: <em>\"Here are three tasks I used AI for recently: [list them with your labels]. Based on these, help me build a personal decision tree: when should I use AI, when should I use AI as a second opinion only, and when should I do the work independently? Make it specific to my role and these tasks.\"</em>",
+            "Save your decision tree somewhere visible — a sticky note, a pinned note, wherever you'll actually see it.",
+            "Share your split and one surprise in the group — the patterns across roles are worth comparing."
+          ]
+        }
+      }
+    ],
+    "homework": {
+      "title": "Got a bill you've been meaning to negotiate? Let AI coach you through the call.",
+      "body": "Cable, internet, insurance, gym membership — there's almost always room to negotiate, and the hardest part is knowing what to say. Tonight, pick one recurring bill you suspect you're overpaying and use any free AI tool (ChatGPT, Claude, Gemini, or Perplexity) to prep the call:",
+      "prompt": "\"I pay $[amount] per month for [service] with [provider]. I've been a customer for [how long]. Help me prepare to negotiate a lower rate: What's a realistic target price? What should I say when I call? What will they likely counter with, and how should I respond? Role-play the conversation with me — you be the retention agent, and I'll practice my side.\"<br><br>The technique — <em>having AI play the other side of a conversation before you have it for real</em> — is one of the most practical uses you'll find. It works for salary negotiations, tough conversations with a landlord, even preparing for a difficult talk with a family member. The rehearsal builds confidence, and the script gives you a starting point you can adapt in the moment."
+    }
+  },
   "2026-08-19": {
     "intro": "Wednesday. Three things worth knowing today: the people absorbing the most AI pressure aren't who you'd guess, a new word just landed for a problem everyone recognizes, and the most valuable AI skill just shifted under your feet.",
     "trends": [
