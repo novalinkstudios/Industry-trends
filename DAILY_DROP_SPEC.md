@@ -114,7 +114,7 @@ Each daily entry is a JavaScript object keyed by ISO date (`"YYYY-MM-DD"`) insid
 
 - The three trends should **cover different angles** — e.g., one strategic shift, one workflow/tooling shift, one skills/cultural shift. Don’t run three “new AI tool launched” trends in one day.
 - Lean into trends that **most strongly affect strategy & planning roles** (the primary audience), then ops, then PM, then admin.
-- Prefer trends from the **last 2–4 weeks**. Avoid recycling stories the community has likely seen.
+- All sources **MUST be published within the last 72 hours** of the drop date. Freshness is non-negotiable — do not use older articles regardless of relevance.
 - **Every stat or claim must come from a real, citable source.** If you can’t link it, don’t quote it. Never fabricate numbers.
 
 ### Role slants

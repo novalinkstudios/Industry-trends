@@ -36,7 +36,7 @@ Audience weighting (most → least): Strategy & Planning → Leaders → Operati
 
 - The three trends MUST cover different angles — e.g., one strategic shift, one workflow/tooling shift, one skills/cultural shift. Do NOT run three "new AI tool launched" stories.
 - Lean into trends that most strongly affect strategy & planning roles.
-- Prefer trends from the last 2–4 weeks. Every stat or claim must come from a real, citable source.
+- All sources MUST be published within the last 72 hours. Every stat or claim must come from a real, citable source.
 - Acceptable sources: Stanford HAI, Microsoft Work Trend Index, Deloitte, PwC, McKinsey, Gartner, Forrester, MIT Sloan, HBR, The Information, The Verge, Axios, Anthropic/OpenAI/Google official blogs, credible Substacks.
 - Do NOT source from: LinkedIn influencer posts, vendor marketing pages, AI-generated SEO farms, anything without a clear author and date.
 
@@ -177,7 +177,7 @@ IMPORTANT — Do NOT repeat these recent topics. Choose genuinely different stor
 
     prompt = f"""Today is {TODAY}. Research and write The Daily Drop for this date.
 
-Use web search to find 3 real, diverse AI trends from the past 2-4 weeks.
+Use web search to find 3 real, diverse AI trends from the past 72 hours ONLY. Every source article must have been published within 72 hours of today's date.
 Each trend needs a different angle — e.g., one strategic shift, one workflow/tooling change, one skills/cultural shift. Do NOT pick three "new AI tool launched" stories.
 {dedup_block}
 For each trend provide: a sentence-case editorial headline, 1-3 sentence body with one highlighted stat in <em>, five genuinely different role slants (strategy/leaders/operations/pm/admin — one sentence each), and a challenge with 3-6 concrete steps ending with a sharing action. Wrap exact prompt text in <em>"..."</em>.
