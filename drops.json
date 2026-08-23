@@ -1,6 +1,6 @@
 {
   "2026-08-23": {
-    "intro": "Three signals heading into a new week: a model that maps where AI value is compounding, a pricing shift that changes the math on automation, and a shift in how leaders talk about AI and teams that tells you more than any forecast.",
+    "intro": "Three signals heading into a new week: a model that maps where AI value is compounding, a tooling shift that makes multi-model AI strategies practical, and a change in how leaders talk about AI and teams that tells you more than any forecast.",
     "trends": [
       {
         "title": "A new model shows which capabilities AI will grow — and which it will compress",
@@ -23,22 +23,22 @@
         }
       },
       {
-        "title": "AI costs are dropping faster than most planning cycles can keep up",
-        "source_url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
-        "body": "OpenAI cut its flagship Sol model's API price by more than 20% this week — <em>dropping input tokens to $4 per million and output to $20, a 33% reduction on the output side</em>. It's the second major cut in under a month, following late-July reductions to Luna and Terra. The pricing is promotional through November, but the signal is structural: AI providers are competing on cost as aggressively as capability. For planners and operators, budgets set even three months ago are built on outdated assumptions (OpenAI, August 2026).",
+        "title": "The case for using more than one AI model just got easier to make",
+        "source_url": "https://techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router/",
+        "body": "Ramp launched an AI model router this week that lets organizations switch between models from OpenAI, Anthropic, and others through a single API — optimizing for cost, speed, or quality per task. Companies already using it have <em>reduced AI inference costs by 40% on average</em> without changing output quality. The bigger signal: the tooling layer between your team and AI providers is maturing fast. Picking one AI vendor is becoming less important than knowing which tasks need which model tier (TechCrunch, August 2026).",
         "slants": {
-          "strategy": "If an AI business case was rejected on cost grounds earlier this year, the numbers have changed. Revisit it with current pricing.",
-          "leaders": "Falling costs mean more of your team's 'too expensive to automate' list just became affordable. Ask them what moved.",
-          "operations": "Workflows you ruled out for cost reasons six months ago are worth re-evaluating. The per-unit economics shifted under you.",
-          "pm": "Update your project cost models. AI vendor pricing current in Q1 is likely 40–60% too high now.",
-          "admin": "Lower costs mean the AI tools you're experimenting with today will be cheaper when it's time to scale. Early learning compounds."
+          "strategy": "A multi-model strategy reduces vendor lock-in and lets you optimize AI spending per use case. If your current approach is one vendor for everything, that's leaving money and capability on the table.",
+          "leaders": "Don't force your team to pick one AI tool. The routing layer means each workflow can use what works best — and switching costs just dropped to near zero.",
+          "operations": "Model routing turns AI vendor management from a procurement decision into an optimization problem. Match simple tasks to cheaper models and complex ones to frontier models.",
+          "pm": "A 40% cost reduction on AI inference means more projects clear the ROI threshold. Revisit any AI initiative that stalled on unit economics.",
+          "admin": "You don't need to become an expert in every AI tool. Routing services handle model selection automatically — your job is knowing which tasks to send through the system."
         },
         "challenge": {
           "steps": [
-            "Think of one workflow your team has discussed automating with AI but shelved because the cost at scale seemed too high.",
-            "Open your company-approved AI tool and paste this prompt: <em>\"Our team considered using AI to [describe the task] but decided the cost was too high at the volume we need. AI model prices have dropped 20–50% in the last three months. Walk me through how to re-evaluate this decision — what cost factors should I update, and what questions should I bring to our vendor?\"</em>",
-            "Review the response and identify one assumption from the original decision that no longer holds.",
-            "Share the shelved workflow and the changed assumption in the group."
+            "List three tasks your team currently uses AI for (or could). Categorize each as simple (summarizing, formatting), medium (drafting, analyzing), or complex (strategy, multi-step reasoning).",
+            "Open your company-approved AI tool and paste this prompt: <em>\"I have three AI tasks at different complexity levels: simple ([describe]), medium ([describe]), and complex ([describe]). For each, recommend whether I need a frontier model or whether a faster, cheaper model would produce the same quality. Explain what I'd gain and lose by matching model tier to task complexity.\"</em>",
+            "Look at the response — does it change your assumption about needing the most powerful model for everything?",
+            "Share your three tasks and which model tier AI recommended for each in the group."
           ]
         }
       },
