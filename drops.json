@@ -24,7 +24,7 @@
       },
       {
         "title": "AI costs are dropping faster than most planning cycles can keep up",
-        "source_url": "https://community.openai.com/t/20-price-reduction-for-gpt-5-6-sol-api-codex-credits-and-chatgpt-work/1391726",
+        "source_url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
         "body": "OpenAI cut its flagship Sol model's API price by more than 20% this week — <em>dropping input tokens to $4 per million and output to $20, a 33% reduction on the output side</em>. It's the second major cut in under a month, following late-July reductions to Luna and Terra. The pricing is promotional through November, but the signal is structural: AI providers are competing on cost as aggressively as capability. For planners and operators, budgets set even three months ago are built on outdated assumptions (OpenAI, August 2026).",
         "slants": {
           "strategy": "If an AI business case was rejected on cost grounds earlier this year, the numbers have changed. Revisit it with current pricing.",
