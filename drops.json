@@ -1,6 +1,6 @@
 {
   "2026-08-23": {
-    "intro": "Three signals heading into a new week: a model that maps where AI value is compounding, a pricing shift that changes the math on automation, and a move that makes AI training a scheduling decision — not a budget one.",
+    "intro": "Three signals heading into a new week: a model that maps where AI value is compounding, a pricing shift that changes the math on automation, and a shift in how leaders talk about AI and teams that tells you more than any forecast.",
     "trends": [
       {
         "title": "A new model shows which capabilities AI will grow — and which it will compress",
@@ -24,8 +24,8 @@
       },
       {
         "title": "AI costs are dropping faster than most planning cycles can keep up",
-        "source_url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
-        "body": "OpenAI cut its flagship Sol model's price by more than 20% this week — the third major reduction in recent weeks. Google followed with Gemini 3.7 Flash at half the cost of its predecessor. <em>The cost of running AI at enterprise scale is falling so fast that budgets set six months ago are built on outdated assumptions.</em> For planners and operators, this changes the math on which processes are worth automating — the list just got longer.",
+        "source_url": "https://community.openai.com/t/20-price-reduction-for-gpt-5-6-sol-api-codex-credits-and-chatgpt-work/1391726",
+        "body": "OpenAI cut its flagship Sol model's API price by more than 20% this week — <em>dropping input tokens to $4 per million and output to $20, a 33% reduction on the output side</em>. It's the second major cut in under a month, following late-July reductions to Luna and Terra. The pricing is promotional through November, but the signal is structural: AI providers are competing on cost as aggressively as capability. For planners and operators, budgets set even three months ago are built on outdated assumptions (OpenAI, August 2026).",
         "slants": {
           "strategy": "If an AI business case was rejected on cost grounds earlier this year, the numbers have changed. Revisit it with current pricing.",
           "leaders": "Falling costs mean more of your team's 'too expensive to automate' list just became affordable. Ask them what moved.",
@@ -43,23 +43,22 @@
         }
       },
       {
-        "title": "Structured AI training just became free — and it's built by the people making the tools",
-        "source_url": "https://www.anthropic.com/news/anthropic-higher-education-initiatives",
-        "body": "Anthropic opened Claude Academy this week — <em>26 free courses organized from absolute beginner to advanced</em>, built around how the company trains its own employees. It joins Google's AI Essentials, Microsoft's learning paths, and OpenAI's documentation in a growing library of free, structured AI education from the companies building the tools. When the training barrier shifts from budget to time, that's a leadership decision — not a procurement one.",
+        "title": "Leaders are learning a better way to talk about AI and teams",
+        "source_url": "https://www.axios.com/2026/08/20/ceos-shift-messaging-around-ai-and-layoffs",
+        "body": "Axios reports a notable shift in how executives frame AI and workforce decisions. Where early adopters led with replacement metrics — Klarna's CEO publicly boasted AI was doing the work of 700 agents — the new playbook separates AI adoption from headcount messaging. Patreon's CEO frames restructuring as strategic, not AI-driven; Microsoft's chief people officer states that eliminated roles are 'not being replaced by AI.' <em>The shift reflects a hard-won lesson: how you communicate AI's role in your organization shapes whether your team sees opportunity or threat</em> (Axios, August 2026).",
         "slants": {
-          "strategy": "Structured AI literacy is now a zero-cost input. The remaining barrier is time allocation — and that's a prioritization decision, not a budget one.",
-          "leaders": "Point your team toward a free, credible learning path this week. The signal — 'I want you to grow with this technology' — matters as much as the curriculum.",
-          "operations": "Start with courses on structured output and workflow integration. That's where ops skills compound fastest.",
-          "pm": "A team with shared AI vocabulary makes faster decisions. A free structured course is the lowest-friction way to build that vocabulary.",
-          "admin": "The beginner courses are designed for people with zero technical background. That's the on-ramp, not the consolation prize."
+          "strategy": "Your AI communication strategy is itself a strategic asset. How you frame AI internally determines whether your best people lean in or start updating their resumes.",
+          "leaders": "Separate the AI story from the headcount story — not because they're unrelated, but because combining them tells your team the wrong thing about their future.",
+          "operations": "When you communicate process changes involving AI, lead with what's expanding — scope, quality, speed — rather than what's shrinking. The framing shapes adoption.",
+          "pm": "How you introduce AI-augmented workflows to project teams sets the tone. Position the tool as a capability upgrade for the team, not a signal about future staffing.",
+          "admin": "When new AI tools arrive in your workflow, you're often the first to notice how they're described internally. If the messaging feels threatening rather than empowering, flag it — your perspective shapes how the rest of the team receives it."
         },
         "challenge": {
           "steps": [
-            "Open one free AI learning platform — Claude Academy, Google AI Essentials, Microsoft's AI learning paths, or OpenAI's documentation — and browse for two minutes.",
-            "Pick one course or module title that matches a skill you've been curious about.",
-            "Open your company-approved AI tool and paste this prompt: <em>\"I'm considering a free AI course called [course title]. In my role as a [your role], give me three specific ways this skill would change how I work day-to-day. Be concrete — name tasks, not categories.\"</em>",
-            "Decide: is this worth 60 minutes of your next week?",
-            "Share the course you picked and your top reason in the group."
+            "Think about how AI has been introduced or discussed in your organization — in emails, town halls, or team meetings. Was the framing positive, neutral, or anxiety-inducing?",
+            "Open your company-approved AI tool and paste this prompt: <em>\"I'm a [your role] and my organization is adopting AI tools for [describe one area]. Help me write a two-paragraph internal message to my team introducing this change. The message should: (1) be honest about what's changing, (2) emphasize how this makes their work better rather than smaller, and (3) invite questions instead of shutting them down.\"</em>",
+            "Review the draft. Does it sound like something your team would trust — or does it read like corporate spin?",
+            "Share your draft or key phrases in the group — seeing how different roles frame the same kind of change is the most useful part."
           ]
         }
       }
