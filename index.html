@@ -968,6 +968,77 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-08-24": {
+      intro: "Three patterns to start your week: strategy is becoming a system you design rather than a meeting you survive, your team's AI tools have outgrown your governance, and the training gap holding back AI adoption is simpler to fix than most leaders think.",
+      trends: [
+        {
+          title: "Strategy is becoming a system — and your role in it is shifting",
+          source_url: "https://hbr.org/2026/08/crafting-strategy-in-the-age-of-ai",
+          body: "HBR's August issue argues that AI isn't just a tool for executing strategy — it's reshaping how strategy gets made. The key insight: AI <em>expands the capacity of the strategy-making system itself</em> by widening the option set, stress-testing plans through structured debate free from internal politics, and maintaining richer competitive models than any planning team could build alone. The shift for strategists is clear: less time building baseline analyses, more time exercising the judgment that determines which options actually fit your organization (HBR, August 2026).",
+          slants: {
+            strategy:   "Your value is moving from building the strategic analysis to pressure-testing AI-generated options against organizational realities only you understand.",
+            leaders:    "Give your strategy team access to AI scenario-planning tools — the advantage isn't having better data, it's exploring more options before committing.",
+            operations: "AI can maintain continuously updated competitive and market models. The quarterly strategy refresh can become a living process instead of a last-minute scramble.",
+            pm:         "Strategic planning cycles are compressing. Projects that depend on annual planning approvals need a faster path as AI-assisted strategy becomes more iterative.",
+            admin:      "When strategy meetings shift from presenting analyses to debating AI-generated options, meeting prep changes too — framing the right questions matters more than formatting the right deck."
+          },
+          challenge: {
+            steps: [
+              "Think about one strategic decision your team is currently weighing or recently made — a resource allocation, a process change, a new initiative.",
+              "Open your company-approved AI tool and paste this prompt: <em>\"We're deciding whether to [describe the decision]. Generate five alternative approaches we haven't considered, then argue against the two strongest options from the perspective of a skeptical executive.\"</em>",
+              "Review the alternatives. Did AI surface an option your team hadn't discussed?",
+              "Share the most surprising alternative in the group — and whether the counterargument changed your thinking."
+            ]
+          }
+        },
+        {
+          title: "Your team already adopted AI — now you can turn that into a strategic advantage",
+          source_url: "https://zylo.com/blog/ai-in-workplace",
+          body: "Zylo's 2026 SaaS Management Index found that the average organization now spends <em>$1.2 million a year on AI-native applications — up 108% year over year</em>. But the real finding is what IT doesn't see: 77% of IT leaders discovered AI-powered tools and features they didn't know their teams were using, and 78% reported unexpected charges tied to AI consumption. The gap between AI adoption and AI governance isn't closing — it's widening (Zylo, 2026).",
+          slants: {
+            strategy:   "Untracked AI spending is a strategic blind spot. You can't optimize what you can't measure — and right now, most organizations can't see a third of their AI footprint.",
+            leaders:    "Your team is already using AI tools you haven't approved. The practical question isn't whether to allow it — it's whether to govern it before the next budget review surfaces surprises.",
+            operations: "Audit your team's actual AI tool usage before the next renewal cycle. Consumption-based AI pricing makes costs less predictable — knowing what's running is the first step to managing it.",
+            pm:         "If your project budget doesn't account for AI tool costs, you're likely undercounting. Build in a buffer for consumption-based AI features that charge by usage, not by seat.",
+            admin:      "You're often the first to notice when a new tool shows up in the workflow. That visibility is valuable — flagging unknown AI tools early helps the team avoid surprise costs and security gaps."
+          },
+          challenge: {
+            steps: [
+              "Open a blank note and list every AI tool you've personally used for work in the past month — including free tiers, browser extensions, and features built into tools you already use.",
+              "Mark each one: <em>\"Approved by IT\"</em>, <em>\"Not sure\"</em>, or <em>\"Definitely not approved.\"</em>",
+              "Open your company-approved AI tool and paste this prompt: <em>\"I use [number] AI tools at work, but only [number] are formally approved. What questions should I ask my IT or security team to understand which tools are safe to keep using and which I should stop?\"</em>",
+              "Share your count in the group — how many were approved versus not? The aggregate picture is usually eye-opening."
+            ]
+          }
+        },
+        {
+          title: "The AI training gap costs trillions — and the fix is simpler than most programs assume",
+          source_url: "https://www.workera.ai/guides-reports/the-5-5-trillion-skills-gap-what-idcs-new-report-reveals-about-ai-workforce-readiness",
+          body: "IDC's workforce readiness report puts a number on the AI skills gap: <em>$5.5 trillion in lost productivity, delayed products, and missed revenue globally</em>. Over 90% of enterprises expect critical skills shortages this year. But the biggest barrier to closing the gap isn't budget or access — it's time. 41% of employees say they can't find time to learn AI skills during the workday, even when training is available. Only a third of employees received any AI training in the past year (IDC via Workera, 2026).",
+          slants: {
+            strategy:   "If your AI strategy doesn't include protected learning time, you're planning around a workforce that doesn't exist yet. The readiness gap is a strategy gap.",
+            leaders:    "Carve out dedicated learning time for your team — even 30 minutes a week. The top barrier to AI upskilling isn't resistance or budget. It's that people literally can't find the hours.",
+            operations: "The fastest way to close the ops-side skills gap: pair one AI-fluent team member with one who isn't, on a real task. Learning by doing beats training modules every time.",
+            pm:         "Build AI learning into project timelines as part of the work, not as an add-on after delivery. Teams that learn the tool while doing the work retain more than those who take a course and forget.",
+            admin:      "You don't need a formal AI course to start building fluency. The 10-minute challenges in this group are exactly the kind of low-pressure practice that works — and you're already doing them."
+          },
+          challenge: {
+            steps: [
+              "Think about the last time you learned a new tool or skill at work. How did you actually learn it — a formal course, a colleague, trial and error, or something else?",
+              "Open your company-approved AI tool and paste this prompt: <em>\"I want to get better at using AI for [one task you do regularly]. Design a 5-day learning plan where I spend no more than 15 minutes per day. Each day should teach me one specific technique I can apply immediately to my real work.\"</em>",
+              "Pick Day 1 from the plan and try it right now.",
+              "Share your 5-day plan or Day 1's technique in the group — crowdsourcing learning plans is one of the fastest ways to find what actually works."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "It's Monday — let AI plan your dinners for the week in 10 minutes.",
+        body: "The hardest part of meal prep isn't the cooking — it's deciding what to make. Tonight, stop scrolling recipes and let AI do the thinking. Open any free AI tool (ChatGPT, Claude, Gemini, or Perplexity):",
+        prompt: "\"I need to plan dinners for this week. Here's what I'm working with: [list what's already in your fridge and pantry, your budget, how many people you're feeding, and any dietary restrictions]. Give me 5 dinner options ranked by how little grocery shopping I'd need to do. For the top pick, give me a step-by-step recipe.\"<br><br>That ranking instruction — <em>ranked by how little shopping I'd need</em> — teaches AI to optimize for your real constraint instead of giving you five equally impractical ideas. Try swapping in other ranking criteria next time: fastest prep time, fewest dishes to wash, most kid-friendly."
+      }
+    },
+
     "2026-08-23": {
       intro: "Three signals heading into a new week: a model that maps where AI value is compounding, a tooling shift that makes multi-model AI strategies practical, and a change in how leaders talk about AI and teams that tells you more than any forecast.",
       trends: [
