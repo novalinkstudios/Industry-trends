@@ -968,6 +968,77 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-08-25": {
+      intro: "Three signals from the AI economy this week: the cost of running models just hit a 2026 low, governing AI agents turns out to be harder than building them, and the productivity multiplier from daily AI practice now has a number behind it.",
+      trends: [
+        {
+          title: "AI model costs just hit their 2026 low — and the drop is accelerating",
+          source_url: "https://www.scmp.com/tech/tech-trends/article/3363549/enterprise-ai-costs-hit-2026-low-driven-price-wars-chinese-open-source-models-research",
+          body: "Jefferies research tracked average AI inference costs dropping to <em>$1.16–$1.18 per million tokens in early August — down 43% from $2.04 in late May</em>. OpenAI cut its flagship GPT-5.6 Sol prices by over 20% last week, and every major provider is following suit. The cost barrier that made AI experiments expensive six months ago is shrinking faster than most enterprise budgets anticipated (SCMP, August 2026).",
+          slants: {
+            strategy:   "Revisit AI business cases you shelved for cost reasons this spring. The economics have shifted enough that breakeven math may look very different now.",
+            leaders:    "The best time to expand AI pilots is when costs are falling and your team already knows how to use the tools. That window is open.",
+            operations: "Consumption-based AI pricing makes costs harder to predict, but also means you can test more workflows without committing to big upfront licenses.",
+            pm:         "If your project budgets were set before the latest price drops, you may have room to add AI-assisted steps without blowing the line item.",
+            admin:      "Falling AI costs mean more teams will start experimenting. Watch for new tool requests — you're often the first to see the wave coming."
+          },
+          challenge: {
+            steps: [
+              "Think of one task your team currently does manually that you've considered automating with AI but assumed would be too expensive or complex.",
+              "Open your company-approved AI tool and paste this prompt: <em>\"We spend approximately [X hours per week] on [describe the task]. If AI could handle the first draft or triage step, what's a realistic estimate of time saved? Walk me through the before-and-after workflow in 5 bullet points.\"</em>",
+              "Compare the AI's estimated time savings against the current cost of your team's time on that task.",
+              "Share your before-and-after comparison in the group — which tasks surprised you most?"
+            ]
+          }
+        },
+        {
+          title: "Gartner's first Hype Cycle for Agentic AI puts governance at the center",
+          source_url: "https://www.gartner.com/en/articles/hype-cycle-for-agentic-ai",
+          body: "Gartner published its first-ever Hype Cycle dedicated to agentic AI, mapping over 30 technologies — and the standout finding isn't about capability. It's about control. <em>Only 17% of organizations have deployed AI agents, but over 60% plan to within two years.</em> Gartner predicts more than 40% of those projects will be canceled by end of 2027, primarily because organizations deployed agents without a governance plan, not because the technology failed (Gartner, 2026).",
+          slants: {
+            strategy:   "Before your organization scales AI agents, someone needs to own the governance framework. If that person doesn't exist yet, that's a strategic gap worth raising now.",
+            leaders:    "Define the guardrails before the pilot ends. An agent that sends a client communication or writes to a production system without a human checkpoint is a different risk profile than a chatbot.",
+            operations: "Your SOPs for AI tools need a new chapter. An agent that executes tasks autonomously requires different controls than a tool that suggests answers for a human to review.",
+            pm:         "Agentic AI projects need a governance milestone before the deployment milestone. Building it into the plan early avoids the retrofit when compliance calls.",
+            admin:      "If your team is experimenting with AI agents, tracking which ones have access to which systems is already part of your coordination work — and it's becoming more valuable, not less."
+          },
+          challenge: {
+            steps: [
+              "List the AI tools your team currently uses that can take actions on their own — sending emails, updating records, scheduling meetings, or generating documents without a human clicking approve.",
+              "For each one, note whether there's a formal policy governing what it can and can't do.",
+              "Open your company-approved AI tool and paste this prompt: <em>\"I have [number] AI tools that can take autonomous actions in my workflow. Help me draft a simple one-page governance checklist: what should each tool be allowed to do, what requires human approval, and who owns the policy?\"</em>",
+              "Share your checklist draft or your count of ungoverned tools in the group — the total is usually higher than anyone expects."
+            ]
+          }
+        },
+        {
+          title: "AI super-users are 5x more productive — and the pattern behind it is surprisingly simple",
+          source_url: "https://writer.com/blog/enterprise-ai-adoption-2026/",
+          body: "Writer's 2026 enterprise survey of 2,400 workers and executives found that <em>AI super-users are 5x more productive than their peers</em>, and 92% of C-suites are actively investing in developing this group. But the gains aren't spreading evenly: only 29% of organizations see significant ROI from AI overall, because the productivity boost concentrates in the people who've built a daily habit — not those who tried it once and moved on (Writer, 2026).",
+          slants: {
+            strategy:   "The ROI gap isn't a technology problem — it's a practice problem. Organizations seeing returns are the ones where AI use became a daily habit, not a quarterly experiment.",
+            leaders:    "Identify your team's early AI adopters and give them a visible role: mentoring one colleague each. Peer learning scales the productivity gains faster than any formal training program.",
+            operations: "A small ops team using AI daily can outperform a larger team that isn't. That changes how you think about capacity planning and headcount requests.",
+            pm:         "If some team members are 5x more productive with AI than others, your resource estimates need to account for that variance — or you'll consistently mis-scope.",
+            admin:      "You don't need to become a power user overnight. The pattern in the data is clear: the people who got productive started with one task, got comfortable, then expanded. Start with one."
+          },
+          challenge: {
+            steps: [
+              "Rate your own AI fluency honestly: <em>\"Never used it\"</em>, <em>\"Tried it once or twice\"</em>, <em>\"Use it weekly\"</em>, or <em>\"Use it daily.\"</em>",
+              "Open your company-approved AI tool and paste this prompt: <em>\"I'm a [your role] who currently uses AI [your frequency]. Give me one specific task I do regularly that I could start doing with AI this week, and write me the exact prompt I'd use to get started.\"</em>",
+              "Try the AI-generated prompt on that one task before the end of the day.",
+              "Share your starting fluency level and the task you tried in the group — the mix of starting points is always wider than people expect."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Tonight, let AI play sleep coach — and find out what your evening routine is actually doing to your rest.",
+        body: "Most of us know we should sleep better but aren't sure which specific habits are helping and which are quietly working against us. Open any free AI tool (ChatGPT, Claude, Gemini, or Perplexity) and try this:",
+        prompt: "\"Act as a sleep scientist. Here's what my typical evening looks like from dinner to bedtime: [describe your routine — when you eat, screen time, caffeine cutoff, what you do in the last hour, when you go to bed, when you wake up]. Based on the research, tell me which two habits are working for me and which two are most likely hurting my sleep quality. Then give me one small change I can try tonight.\"<br><br>That opening line — <em>act as a sleep scientist</em> — is called a persona prompt. It focuses the AI's response through a specific lens of expertise, so you get targeted advice instead of generic tips. Try swapping in other roles: act as a nutritionist, act as a financial planner, act as a patient teacher."
+      }
+    },
+
     "2026-08-24": {
       intro: "Three patterns to start your week: strategy is becoming a system you design rather than a meeting you survive, your team's AI tools have outgrown your governance, and the training gap holding back AI adoption is simpler to fix than most leaders think.",
       trends: [
