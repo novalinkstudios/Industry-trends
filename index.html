@@ -969,79 +969,78 @@
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
     "2026-08-26": {
-      intro: "Today's throughline: the AI conversation is moving from 'are we using it' to 'can we prove it, speed it up, and teach it well' \u2014 three very different signals that all point to the same shift toward maturity.",
+      intro: "Three signals from midweek: the organizations seeing AI in their numbers are redesigning the work around it, agents are landing on ordinary desks faster than the habit of using them, and safe AI access is becoming a funded discipline.",
       trends: [
         {
-          title: "AI spending keeps climbing, but the earnings bump isn't moving yet \u2014 and that's useful information",
-          body: "McKinsey's newest State of AI survey found that more companies are deploying more AI than ever, betting the payoff is coming \u2014 but <em>37 percent of respondents attribute at least some EBIT impact to AI use, about the same share as in 2025</em>. In plain terms: adoption is way up, but the number of people who can point to a real earnings bump hasn't moved. That's not bad news \u2014 it's a clear signal for anyone in strategy or planning about where to focus next.",
-          source_url: "https://www.theregister.com/ai-and-ml/2026/08/25/mckinsey-says-enterprise-ai-is-finally-on-the-road-to-roi/5292388",
+          title: "The organizations seeing AI in their numbers are redesigning the work around it",
+          source_url: "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+          body: "McKinsey's new State of AI global survey landed this week: <em>62% of organizations are at least experimenting with AI agents</em>, and 23% are actively scaling one in at least one business function. The strongest predictor of enterprise-level impact isn't budget or model choice — it's whether the organization redesigned its workflows around AI rather than layering AI on top of them.",
           slants: {
-            strategy: "This is your cue to build a simple before/after measurement habit into every new AI initiative instead of waiting for a big annual review to ask if it worked.",
-            leaders: "Use this data to set honest expectations with your team and your boss \u2014 'we're still building the muscle to measure this' is a stronger message than overpromising a number you can't back up.",
-            operations: "Pick one workflow already running on AI and instrument it this week so you have real before/after numbers instead of a guess next time someone asks about ROI.",
-            pm: "Add a measurement checkpoint to your next AI-related project charter now, while it's cheap to add, rather than trying to reconstruct impact after the fact.",
-            admin: "Start logging how much time AI tools save you on recurring tasks \u2014 that small log becomes real evidence your team can point to."
+            strategy:   "Workflow redesign is the highest-leverage item on your planning list — map one process end to end before anyone adds a tool to it.",
+            leaders:    "You can fund the redesign, not just the license: pick one team, give them room to rebuild a process from scratch, and let their results make the case everywhere else.",
+            operations: "You know where the handoffs stall better than anyone, and that knowledge is the raw material for a redesign that holds.",
+            pm:         "Scope it as a process change with an AI component, not an AI rollout — the plan gets clearer and the benefits get measurable.",
+            admin:      "You see the real sequence of how work moves through a team, which is exactly what a redesign needs first."
           },
           challenge: {
             steps: [
-              "Pick one task you or your team does regularly with AI help.",
-              "Open your company-approved AI tool and ask: <em>\"Help me design a simple before/after way to measure the business impact of using AI for [describe the task]. Give me 3 metrics I could track, ranked by how easy they are to measure.\"</em>",
-              "Pick the easiest metric from the list and write down today's baseline number.",
-              "Put a reminder on your calendar 30 days out to check the number again.",
-              "Share the metric and baseline you picked in the group \u2014 someone else can probably reuse it."
+              "Pick one recurring process you know well — a monthly report, an approval chain, an onboarding sequence. Nothing confidential.",
+              "Open your company-approved AI tool and paste this: <em>\"I'm going to describe a recurring work process. Break it into individual steps, then tell me which steps exist only because information used to move slowly.\"</em>",
+              "Describe the process in a few sentences and read what comes back.",
+              "Follow up with: <em>\"Now redesign it assuming an AI teammate handles the drafting and the first-pass summary. What's the shortest version that still keeps a human decision at the end?\"</em>",
+              "Share the one step you'd cut first with the group."
             ]
           }
         },
         {
-          title: "One automaker cut AI delivery time from six months to four days",
-          body: "Toyota North America built an internal AI platform and now has <em>over 50 production-ready agents</em> running, using a system that shrank the typical build cycle from six months down to just four days. The team is also tracking the return on those agents directly, treating AI performance as a real line item rather than a side experiment.",
-          source_url: "https://aitoolly.com/ai-news/2026-08-25",
+          title: "Agents are landing on ordinary desks — and the habit of using them is the real head start",
+          source_url: "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them/",
+          body: "OpenAI is aiming agents at everyday office work: ChatGPT Work sits on its $20 tier and is built for accountants, analysts, and anyone whose day runs through a screen. Its own research shows how much room is left to run — <em>98% of OpenAI employees used its Codex agent in June, versus 17% of organizational subscribers</em>. Capability is shipping faster than the habit, which makes an early habit worth a lot.",
           slants: {
-            strategy: "This is the case for building one reusable agent platform instead of funding a dozen one-off pilots that never talk to each other.",
-            leaders: "When delivery cycles shrink this much, small teams can ship what used to take a full team \u2014 start thinking now about which people you can free up for higher-value work.",
-            operations: "Borrow the idea of an 'observability board' for your own AI workflows \u2014 visibility into what's working saves you from debugging in the dark.",
-            pm: "Recalculate your resourcing assumptions for AI-assisted projects \u2014 if delivery windows are shrinking industry-wide, your timeline estimates should shrink too.",
-            admin: "Ask your team if there's a reusable template or config for repeat requests instead of rebuilding the same thing from scratch every time."
+            strategy:   "Put agents inside this year's planning horizon, and start listing which decisions you'd still want a person to make.",
+            leaders:    "Fifteen minutes of practice a week beats another tool announcement — put agent practice on the team calendar and do it alongside them.",
+            operations: "Start with a task that has a clear finish line and an obvious wrong answer; that's where you learn fastest what's safe to delegate.",
+            pm:         "Handing work to an agent is a scoping exercise — clear inputs, defined output, a named checkpoint. You already do this with people.",
+            admin:      "You're the person who knows what \"done right\" looks like here, and that judgment is what turns an agent's output into usable work."
           },
           challenge: {
             steps: [
-              "Identify one task on your team that gets rebuilt from scratch every time \u2014 a report, a briefing doc, an intake form.",
-              "Ask your AI tool: <em>\"Turn this repeatable task into a reusable template I can fill in each time: [describe the task in general terms, no confidential details]. Give me a fill-in-the-blank version.\"</em>",
-              "Review the draft template and adjust the wording so it sounds like your team, not a generic bot.",
-              "Save the template somewhere your team can find and reuse it.",
-              "Share the template in the group so others can borrow it too."
+              "Pick one small, repetitive task from this week — reformatting a list, pulling dates out of a long email thread, drafting a routine reply.",
+              "Open your company-approved AI tool, describe the task in one sentence, then add: <em>\"Before you start, tell me what information you need from me to do this well.\"</em>",
+              "Give it what it asked for and let it finish the task.",
+              "Note how long the whole exchange took compared with doing it yourself, and share that number with the group."
             ]
           }
         },
         {
-          title: "Anthropic just made AI literacy free \u2014 and gave it a clear definition",
-          body: "Anthropic's new Claude Academy is <em>a free learning platform designed to help people understand AI, use Claude more effectively and build practical AI skills for work and everyday use</em>, live now with no sign-in required. The real insight underneath it: Anthropic frames good AI skill as knowing what to hand off to AI and what to keep for yourself \u2014 not just knowing more prompts.",
-          source_url: "https://www.edtechinnovationhub.com/news/anthropic-opens-claude-academy-with-free-ai-courses-and-workplace-rollout-guides",
+          title: "Safe AI access is becoming a funded discipline",
+          source_url: "https://www.gartner.com/en/newsroom/press-releases/2026-08-26-gartner-forecasts-the-market-for-securing-ai-will-reach-almost-5-billion-in-2027",
+          body: "Gartner forecasts that spending on securing AI will reach <em>almost $4.8 billion in 2027, a 68.7% increase over 2026</em>. The fastest-growing slice is AI usage control, up 73%. Read that as good news: companies are buying the ability to let more people use AI on real work, with a clear record of who did what.",
           slants: {
-            strategy: "Fold a free literacy resource like this into your workforce planning now \u2014 it's a zero-cost way to close the skills gap most teams assume needs a big budget.",
-            leaders: "Set a simple team standard \u2014 everyone completes one free module this quarter \u2014 and you've built a shared baseline without asking finance for anything.",
-            operations: "Use this as a chance to write down, as a team, which tasks you consistently hand to AI and which you keep \u2014 that shared list becomes your operating standard.",
-            pm: "Have new project team members complete a quick module before kickoff so everyone starts a project with the same AI ground rules.",
-            admin: "This is a fast, free way to become the go-to person on your team for AI questions \u2014 a few short courses can put you ahead of most colleagues."
+            strategy:   "Guardrails are an enabler you can plan around — safer access widens the set of use cases that belong on a roadmap.",
+            leaders:    "Ask your security partner what's already approved; the answer usually unlocks more than your team realizes it has.",
+            operations: "Sanctioned tools with logging mean AI can finally touch the processes that carry real records.",
+            pm:         "Add \"which tool is approved for this kind of data\" to your kickoff checklist and skip a whole class of late-stage surprises.",
+            admin:      "As access widens, being the person who knows the approved path for each kind of document is genuinely valuable."
           },
           challenge: {
             steps: [
-              "Think of one task you currently always do yourself, start to finish.",
-              "Ask your AI tool: <em>\"Ask me questions about this task, then tell me whether it's something AI could handle, something I should keep, or a hybrid. Task: [describe the task].\"</em>",
-              "Answer its questions honestly \u2014 don't skip ahead to the answer.",
-              "Read its recommendation and decide whether you agree with the split it suggests.",
-              "Share what you learned in the group, especially if the answer surprised you."
+              "Search your intranet for <em>\"AI policy\"</em> or <em>\"approved AI tools\"</em> and open what comes up.",
+              "Read it once and write down two things you're clearly allowed to do that you haven't tried yet.",
+              "Try one of them today, using a document that contains nothing confidential.",
+              "Share the one thing in the policy that surprised you with the group."
             ]
           }
         }
       ],
       homework: {
-        title: "let AI plan your next weekend with you, not for you",
-        body: "Pick a free tool \u2014 ChatGPT, Claude, Gemini, or Perplexity \u2014 and use it to plan a small trip or outing you've been meaning to take. The trick is to make it ask you questions before it gives you an answer, so you get options that actually fit you.",
-        prompt: "I want to plan a weekend trip within 3 hours of [your city] for under $400. Ask me clarifying questions first, then give me 3 ranked options with pros and cons for each."
+        title: "Late August is the cheapest time to get ahead of fall — let AI build the list.",
+        body: "Ten minutes tonight, nothing work-related. ChatGPT, Claude, Gemini, and Perplexity all handle this in their free web versions, and the technique here is one you'll reuse: ask for a ranked list and explicit permission to skip things.",
+        prompt: "\"I live in [your area] in a [house / apartment / condo] that's about [age]. Build me a fall-prep checklist — the things actually worth doing in the next six weeks. Rank them by cost-to-impact, and tell me which three I can honestly skip this year and why.\"<br><br>The useful half is that last line. <em>Asking what to skip</em> turns a generic list into a plan you'll finish."
       }
     },
-  "2026-08-25": {
+
+    "2026-08-25": {
       intro: "Three patterns worth watching this week: AI is saving workers a full day but most organizations have no plan for it, governing AI agents is harder than building them, and the productivity multiplier from daily AI practice now has a number behind it.",
       trends: [
         {
