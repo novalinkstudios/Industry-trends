@@ -1,28 +1,7 @@
 {
   "2026-09-01": {
-    "intro": "Three Tuesday reads: AI chatbots are outperforming search engines at catching misinformation, autonomous agents need identity before they need a gateway, and the world's most valuable company just made AI its new CEO's day-one priority.",
+    "intro": "Three Tuesday reads: autonomous AI agents need identity before they need a gateway, AI chatbots are proving to be powerful fact-checking partners, and the world's most valuable company just made AI its new CEO's day-one priority.",
     "trends": [
-      {
-        "title": "AI chatbots are better at spotting propaganda than search engines",
-        "source_url": "https://www.npr.org/2026/08/30/nx-s1-5876436/chatbots-search-propaganda",
-        "body": "NPR partnered with NewsGuard to test six major chatbots against 30 false narratives pushed by China, Iran, and Russia. The result: <em>chatbots debunked the falsehoods about three-quarters of the time, outperforming traditional search engines</em>. Search engines failed to challenge a false narrative 18 out of 120 queries; chatbots failed just 12 out of 180. The edge isn't speed — it's synthesis. AI tools are better at reading context, weighing sources, and flagging contradictions than a ranked list of links.",
-        "slants": {
-          "strategy": "When AI is better at separating signal from noise than search, your competitive intelligence workflow deserves a second look.",
-          "leaders": "Encourage your team to cross-check important claims with an AI tool — not as a replacement for judgment, but as a faster first filter.",
-          "operations": "Any process that depends on web research for verification now has a stronger alternative sitting unused on your desktop.",
-          "pm": "Add AI-assisted verification as a step in your research phase — especially when a project decision rests on external data or market claims.",
-          "admin": "Next time you're fact-checking details for a briefing or report, try running the claim through an AI tool alongside your usual search — the comparison is eye-opening."
-        },
-        "challenge": {
-          "steps": [
-            "Think of a claim, statistic, or piece of advice you've seen shared recently — something you weren't 100% sure about but didn't take time to verify.",
-            "Search for it in a traditional search engine and note what you find in the first few results.",
-            "Now open your company-approved AI tool and paste: <em>\"Is this claim accurate: [paste the claim]. Give me the evidence for and against, and cite your sources.\"</em>",
-            "Compare the two experiences — which gave you a clearer, more trustworthy answer?",
-            "Share your comparison in the group — and whether you'll change how you verify information going forward."
-          ]
-        }
-      },
       {
         "title": "Autonomous AI agents need identity, not just a gateway",
         "source_url": "https://venturebeat.com/security/ai-agents-need-their-own-identity-before-they-need-a-gateway",
@@ -40,6 +19,27 @@
             "For each one, ask yourself: if something went wrong, could I trace which tool did it and what permissions it had?",
             "Open your company-approved AI tool and paste: <em>\"I manage a team that uses AI tools which can [describe the actions]. Help me draft a simple tracking checklist: what identity should each tool have, what permissions does it need, and how do we audit what it does? Keep it to one page.\"</em>",
             "Share your checklist draft in the group — the conversation about agent accountability is one most teams haven't had yet."
+          ]
+        }
+      },
+      {
+        "title": "AI chatbots are proving to be powerful fact-checking partners",
+        "source_url": "https://www.npr.org/2026/08/30/nx-s1-5876436/chatbots-search-propaganda",
+        "body": "NPR partnered with NewsGuard to test six major chatbots against 30 false narratives pushed by China, Iran, and Russia. The result: <em>chatbots debunked the falsehoods about three-quarters of the time, outperforming traditional search engines</em>. Search engines failed to challenge a false narrative 18 out of 120 queries; chatbots failed just 12 out of 180. The edge isn't speed — it's synthesis. AI tools are better at reading context, weighing sources, and flagging contradictions than a ranked list of links.",
+        "slants": {
+          "strategy": "When AI is better at separating signal from noise than search, your competitive intelligence workflow deserves a second look.",
+          "leaders": "Encourage your team to cross-check important claims with an AI tool — not as a replacement for judgment, but as a faster first filter.",
+          "operations": "Any process that depends on web research for verification now has a stronger alternative sitting unused on your desktop.",
+          "pm": "Add AI-assisted verification as a step in your research phase — especially when a project decision rests on external data or market claims.",
+          "admin": "Next time you're fact-checking details for a briefing or report, try running the claim through an AI tool alongside your usual search — the comparison is eye-opening."
+        },
+        "challenge": {
+          "steps": [
+            "Think of a claim, statistic, or piece of advice you've seen shared recently — something you weren't 100% sure about but didn't take time to verify.",
+            "Search for it in a traditional search engine and note what you find in the first few results.",
+            "Now open your company-approved AI tool and paste: <em>\"Is this claim accurate: [paste the claim]. Give me the evidence for and against, and cite your sources.\"</em>",
+            "Compare the two experiences — which gave you a clearer, more trustworthy answer?",
+            "Share your comparison in the group — and whether you'll change how you verify information going forward."
           ]
         }
       },
