@@ -1,10 +1,10 @@
 {
   "2026-09-02": {
-    "intro": "Three things shaping the landscape today: AI pricing is shifting from tokens to outcomes, most organizations are still figuring out how to scale, and a 100-year-old manufacturer is betting $100 million on training its people.",
+    "intro": "Three things shaping the landscape today: AI pricing is shifting from tokens to outcomes, enterprise AI investment is accelerating across the board, and a 100-year-old manufacturer is betting $100 million on training its people.",
     "trends": [
       {
         "title": "AI pricing is moving from 'pay per word' to 'pay when it works'",
-        "source_url": "https://thenewstack.io/openai-outcome-based-pricing/",
+        "source_url": "https://finance.yahoo.com/technology/ai/articles/openai-reportedly-joins-salesforce-others-092042460.html",
         "body": "The Information reports that OpenAI is quietly testing outcome-based pricing with select enterprise customers — <em>charging only when an AI agent successfully completes a task end-to-end</em>, rather than billing per token consumed. Salesforce and Zendesk are piloting similar models. The vendor absorbs the cost of failed attempts, not the buyer — a meaningful transfer of risk that changes how enterprises evaluate AI investments.",
         "slants": {
           "strategy": "Outcome-based pricing changes the ROI conversation from 'what did we spend on AI?' to 'what did AI deliver?' — a much easier case to make.",
@@ -23,15 +23,15 @@
         }
       },
       {
-        "title": "Only 22% of organizations have scaled AI across business units — and that's the honest number",
+        "title": "85% of leaders are increasing AI investment — and the teams scaling fastest have a common thread",
         "source_url": "https://www.hpcwire.com/aiwire/2026/09/01/gartner-finds-just-22-of-organizations-have-scaled-ai-across-business-units/",
-        "body": "A Gartner survey of 1,303 leaders at organizations with over $50M in revenue found that <em>just 22% have scaled AI across multiple business units</em>. Yet 85% of functional leaders plan to increase AI spending this year, having already dedicated an average of 12% of their budgets to AI. The gap between investment and scale isn't failure — it's the normal cost of learning to do something genuinely new.",
+        "body": "A Gartner survey of 1,303 leaders at organizations with over $50M in revenue found that <em>85% of functional leaders plan to increase AI spending this year</em>, having already dedicated an average of 12% of their budgets to AI in 2025. The 22% of organizations that have scaled AI across multiple business units got there by focusing investment on proven use cases rather than spreading it thin across experiments.",
         "slants": {
-          "strategy": "If your organization hasn't scaled AI yet, you're in the 78% majority — the opportunity is in being deliberate about what scales next, not in rushing to catch up.",
-          "leaders": "Scaling AI isn't a technology problem — it's an organizational design problem, and that's exactly the kind of challenge people leaders are built to solve.",
-          "operations": "Knowing that 11% of organizations can't even track what they spent on AI last year tells you where the ops value is: visibility, measurement, and structured rollouts.",
-          "pm": "Pilot-to-scale is the hardest transition in any AI project — build the business case for scaling before the pilot ends, not after.",
-          "admin": "You probably know where AI is already working in your workflows and where it's stalling. That practical insight is exactly what leadership needs to hear right now."
+          "strategy": "With 85% of peers increasing AI budgets, the competitive edge goes to whoever scales the right use cases first — focus beats breadth.",
+          "leaders": "Functional AI budgets are already at 12% and climbing. The leaders pulling ahead are the ones concentrating that investment on what's already working, then expanding from there.",
+          "operations": "Real budget is flowing into AI across the organization. Your role is to connect that investment to measurable workflow improvements — that's what turns spending into results.",
+          "pm": "With AI budgets growing this fast, the project management opportunity is clear: build the bridge from successful pilots to cross-team rollouts before the next budget cycle.",
+          "admin": "AI investment is growing across the organization. The people who can show where AI is already saving time — with real examples — are the ones shaping where the next dollar goes."
         },
         "challenge": {
           "steps": [
