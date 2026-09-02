@@ -1,6 +1,6 @@
 {
   "2026-09-02": {
-    "intro": "Three things shaping the landscape today: AI pricing is shifting from tokens to outcomes, enterprise AI investment is accelerating across the board, and a 100-year-old manufacturer is betting $100 million on training its people.",
+    "intro": "Three things shaping the landscape today: AI pricing is shifting from tokens to outcomes, the organizations seeing real AI impact are the ones redesigning workflows, and a 100-year-old manufacturer is betting $100 million on training its people.",
     "trends": [
       {
         "title": "AI pricing is moving from 'pay per word' to 'pay when it works'",
@@ -23,15 +23,15 @@
         }
       },
       {
-        "title": "85% of leaders are increasing AI investment — and the teams scaling fastest have a common thread",
-        "source_url": "https://www.hpcwire.com/aiwire/2026/09/01/gartner-finds-just-22-of-organizations-have-scaled-ai-across-business-units/",
-        "body": "A Gartner survey of 1,303 leaders at organizations with over $50M in revenue found that <em>85% of functional leaders plan to increase AI spending this year</em>, having already dedicated an average of 12% of their budgets to AI in 2025. The 22% of organizations that have scaled AI across multiple business units got there by focusing investment on proven use cases rather than spreading it thin across experiments.",
+        "title": "88% of organizations now use AI regularly — and the ones seeing bottom-line impact share one practice",
+        "source_url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value",
+        "body": "McKinsey's 2026 State of AI survey finds that <em>88% of organizations now report regular AI use and 62% are experimenting with AI agents</em>. But meaningful bottom-line impact remains rare — only organizations that fundamentally redesign workflows around AI, rather than layering it on top of existing processes, are seeing real EBIT gains. The takeaway: adoption isn't the hard part anymore. Rewiring how work actually gets done is.",
         "slants": {
-          "strategy": "With 85% of peers increasing AI budgets, the competitive edge goes to whoever scales the right use cases first — focus beats breadth.",
-          "leaders": "Functional AI budgets are already at 12% and climbing. The leaders pulling ahead are the ones concentrating that investment on what's already working, then expanding from there.",
-          "operations": "Real budget is flowing into AI across the organization. Your role is to connect that investment to measurable workflow improvements — that's what turns spending into results.",
-          "pm": "With AI budgets growing this fast, the project management opportunity is clear: build the bridge from successful pilots to cross-team rollouts before the next budget cycle.",
-          "admin": "AI investment is growing across the organization. The people who can show where AI is already saving time — with real examples — are the ones shaping where the next dollar goes."
+          "strategy": "With 88% of organizations using AI, adoption alone is no longer a differentiator — the competitive edge belongs to teams that redesign workflows around it.",
+          "leaders": "The McKinsey data is clear: impact comes from rethinking how work gets done, not just buying tools. Champion one workflow redesign in your team this quarter and measure the before and after.",
+          "operations": "Most AI impact comes from process redesign, not tool selection. Look at your highest-volume workflows and ask where AI could change the sequence of steps, not just speed up one of them.",
+          "pm": "The projects delivering real AI value aren't 'add AI to step 4' — they're 'redesign the whole process with AI as a core input.' Scope your next initiative that way.",
+          "admin": "You know better than anyone how processes actually run day to day. That knowledge is exactly what makes workflow redesign work — you're the person who spots what AI should replace, and what it shouldn't."
         },
         "challenge": {
           "steps": [
