@@ -3,15 +3,15 @@
     "intro": "Three things worth sitting with this Friday — and one reason to stop scrolling tonight.",
     "trends": [
       {
-        "title": "AI just connected to 325 million patient records — and every industry should notice",
+        "title": "Healthcare just proved AI can earn trust with the most sensitive data — and cleared the path for everyone",
         "source_url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",
-        "body": "OpenAI announced this week that healthcare organizations can now connect their Epic electronic health records to ChatGPT Health — giving clinicians <em>read-only AI access to appointment notes, lab results, medications, and specialist documentation across 325 million patients</em>. Physicians rated 99.1% of responses as safe across over 4,000 evaluations. The bigger signal isn't healthcare-specific: if AI can pass the trust test in the most regulated data environment in any industry, the integration barrier for everyone else just dropped.",
+        "body": "OpenAI announced this week that healthcare organizations can now connect their Epic electronic health records to ChatGPT Health — giving clinicians <em>read-only AI access to appointment notes, lab results, medications, and specialist documentation across 325 million patients</em>. Physicians rated 99.1% of responses as safe across over 4,000 evaluations. Healthcare is the industry with the highest data-sensitivity bar in any sector, and it just said yes. That opens the door for every other industry wondering whether AI can be trusted with real enterprise data.",
         "slants": {
-          "strategy": "If healthcare — the industry with the strictest data rules — found a path to integrating AI into live systems, revisit your own industry's objections.",
-          "leaders": "Ask your team this week: what data systems have we kept off-limits for AI, and has the reason actually changed?",
-          "operations": "Read-only AI access to enterprise systems is the pattern to watch — you get insights without the risk of AI changing anything in your source of record.",
-          "pm": "Scope your next AI pilot around read-only integration with an existing system. It's the lowest-risk way to prove value fast.",
-          "admin": "When AI connects to the systems you manage, \"read-only\" is the key detail — it looks things up but doesn't change records. That's a safety boundary worth understanding early."
+          "strategy": "Healthcare solved the \"can we trust AI with sensitive data?\" question — your industry can follow the same playbook of read-only access and clinician-in-the-loop design.",
+          "leaders": "This is a great moment to ask your team: what data systems could benefit from AI-assisted lookups, now that the safety model is proven?",
+          "operations": "Read-only AI access to enterprise systems is the winning pattern — you get instant insights without the risk of AI changing anything in your source of record.",
+          "pm": "Scope your next AI pilot around read-only integration with an existing system. It's the lowest-risk, highest-learning way to prove value fast.",
+          "admin": "When AI connects to the systems you manage, \"read-only\" is the key detail — it looks things up but doesn't change records. That's a safety model you can feel confident explaining."
         },
         "challenge": {
           "steps": [
