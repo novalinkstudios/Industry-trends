@@ -1,4 +1,77 @@
 {
+  "2026-09-05": {
+    "intro": "AI is showing up in new places this week — as a teammate, as a policy question, and as a line in the law.",
+    "trends": [
+      {
+        "title": "Your AI teammate has a name — and 800 subagents behind it",
+        "source_url": "https://blogs.cisco.com/news/my-agent-and-the-rise-of-ambient-intelligence-ciscos-next-step-in-enterprise-ai",
+        "body": "Cisco launched MyAgent across all 90,000 employees last week. The agent sits on Circuit, Cisco's multi-model AI platform, and <em>connects across Outlook, Webex, Jira, and SharePoint to handle supervised autonomous workflows</em>. Behind each personal agent sit 800+ specialized subagents — and for cost control, 50–60% of requests run on open-weight models, not frontier ones. Every action that touches something outside the system still requires your explicit approval.",
+        "slants": {
+          "strategy": "Map which of your planning workflows could feed into MyAgent — the synthesis step you do manually may be one it already handles.",
+          "leaders": "Your team's first question won't be 'what can it do?' — it'll be 'is it safe to use?' Have that answer ready before they ask.",
+          "operations": "The value isn't in one tool — it's in the connections between your tools finally talking to each other across 800 subagents.",
+          "pm": "Supervised autonomous workflows mean your status updates and cross-system syncs just got faster to produce.",
+          "admin": "Every action outside the system still requires your approval — you're the quality gate, not a bystander."
+        },
+        "challenge": {
+          "steps": [
+            "Open MyAgent (or your company-approved AI tool if you don't have access yet).",
+            "Pick one task you did this week that required pulling information from more than one system — a report, a meeting prep, a status update.",
+            "Describe the task to the tool with this prompt: <em>\"I need to [describe the task]. Walk me through the steps you'd take to complete it, including which systems you'd need access to.\"</em>",
+            "Compare its proposed workflow to yours. Where does it save time? Where would you still need to step in?",
+            "Share your comparison in the group — what surprised you about where AI could (or couldn't) help?"
+          ]
+        }
+      },
+      {
+        "title": "Performative AI adoption just got a reality check",
+        "source_url": "https://www.theinformation.com/briefings/exclusive-meta-tells-engineers-ai-token-usage-part-performance-reviews",
+        "body": "Meta told employees this week that it <em>will not use AI adoption dashboards or token counts to evaluate performance</em>. The reversal comes after the company tied reviews to \"AI-driven impact\" and employees challenged the practice in court, arguing that automated productivity metrics penalized workers on protected leave. The lesson: measuring how much AI people use is not the same as measuring whether it helps.",
+        "slants": {
+          "strategy": "If your AI adoption KPIs measure activity instead of outcomes, you're incentivizing busy work with a new tool.",
+          "leaders": "The fastest path to real adoption isn't a dashboard — it's showing your team one workflow where AI saves them 20 minutes.",
+          "operations": "Process metrics should capture what got better — fewer errors, faster turnaround — not which tool was used.",
+          "pm": "Track whether the project shipped faster or smoother, not whether every team member logged into the AI tool.",
+          "admin": "Your value was never in how many tools you use. It's in the judgment you bring to every task — AI-assisted or not."
+        },
+        "challenge": {
+          "steps": [
+            "Think about one AI tool you've tried at work — even briefly.",
+            "Open a blank note and write two columns: <em>\"What it actually helped with\"</em> and <em>\"What I used it for just to try it.\"</em>",
+            "Be honest about which column has more entries.",
+            "Now write one sentence finishing this thought: <em>\"The most useful thing AI has done for me at work so far is ___.\"</em>",
+            "Share that sentence in the group — no pressure to be impressive, just honest."
+          ]
+        }
+      },
+      {
+        "title": "The first AI emotion surveillance ban just cleared California's legislature",
+        "source_url": "https://www.hrdive.com/news/california-ban-on-workplace-ai-emotion-surveillance-heads-to-newsom/829207/",
+        "body": "California's AB 1883 passed the legislature on August 30 and now sits on Governor Newsom's desk. If signed, it would <em>prohibit employers from using AI tools to infer or predict an employee's emotional state, or to collect neural data</em>. The bill doesn't ban workplace monitoring entirely — it draws a specific line at AI reading your feelings. It's the first law of its kind in the U.S. and signals where the boundary is heading: AI can assist your work, but it shouldn't assess your mood.",
+        "slants": {
+          "strategy": "Whether or not this bill applies to your state, it sets the expectation: AI that monitors outputs is accepted, AI that monitors emotions is not.",
+          "leaders": "This draws a useful line for any AI policy you're shaping — tool assistance yes, sentiment surveillance no.",
+          "operations": "If you're evaluating new AI tools, add one question to your checklist: does this collect any biometric or sentiment data?",
+          "pm": "Compliance teams should watch this closely — similar bills are likely coming in other states and could affect tool choices.",
+          "admin": "You have the right to use AI as a tool without it studying how you feel about using it."
+        },
+        "challenge": {
+          "steps": [
+            "Open your company-approved AI tool.",
+            "Paste this prompt: <em>\"List 5 types of data that AI workplace tools commonly collect about employees. For each, explain whether it measures work output or personal behavior.\"</em>",
+            "Read the list and identify which types you'd be comfortable with and which cross a line for you.",
+            "Write one sentence about where you'd draw the boundary between helpful AI monitoring and uncomfortable surveillance.",
+            "Share your boundary line in the group — this is a conversation worth having out loud."
+          ]
+        }
+      }
+    ],
+    "homework": {
+      "title": "September's electric bill just arrived — let AI find the savings hiding in your routine.",
+      "body": "Pull up your latest electric or gas bill (or estimate your monthly amount) and open your free AI tool of choice (ChatGPT, Claude, Gemini, or Perplexity).",
+      "prompt": "\"My electric bill was about $[amount] last month. I live in a [house/apartment] in [climate]. Give me 3 specific things I can change this month to lower it, ranked by how much each one would save. For each, estimate the monthly savings in dollars.\"<br><br>Ranking by a specific criterion — <em>estimated dollar savings</em> — forces the AI to prioritize instead of giving you a generic list. That's a technique worth using everywhere: 'rank by impact,' 'rank by effort,' 'rank by cost.'"
+    }
+  },
   "2026-08-28": {
     "intro": "Three signals heading into the weekend: the talent pipeline is reshaping around AI in ways that favor organizations investing in their people, the era of faking AI skills is ending, and the value of your judgment has never been more visible.",
     "trends": [
