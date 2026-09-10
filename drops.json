@@ -43,22 +43,22 @@
         }
       },
       {
-        "title": "AI career pathways exist — the next step is making sure employees can find them",
+        "title": "Most companies built AI reskilling programs — the next step is making sure people actually use them",
         "source_url": "https://gloat.com/blog/workforce-redeployment-gap/",
         "body": "Gloat's latest analysis of AI workforce restructuring surfaces a striking number: <em>77% of HR leaders say they offer targeted AI career mobility programs, but only 19% of employees have experienced or even recognized one</em>. The 58-point gap isn't about bad intentions — it's about visibility. Programs buried in HR portals that employees rarely visit are programs that aren't running.",
         "slants": {
-          "strategy": "If your AI workforce plan includes reskilling and redeployment, audit whether employees can actually find those programs — the 58-point gap between intent and experience is a planning risk.",
-          "leaders": "Ask your team directly whether they know what AI training or mobility programs are available to them — the answer will tell you more than any HR dashboard.",
-          "operations": "The best redeployment programs are embedded in the workflows people already use, not buried in a portal they visit once a year during performance reviews.",
-          "pm": "When AI projects change team structures, add employee communication and pathway visibility to the project plan — it's a deliverable, not an afterthought.",
-          "admin": "If you can't easily describe the growth paths available in your organization, neither can the people those paths were built for — advocating for clarity helps everyone."
+          "strategy": "If your AI workforce plan includes reskilling and redeployment, audit whether your team can actually find those programs — a 58-point visibility gap means the investment isn't landing.",
+          "leaders": "The fastest way to close the visibility gap is to talk about development paths in your regular one-on-ones — don't wait for HR to surface them.",
+          "operations": "Embed reskilling touchpoints in the workflows your team already uses — a program people discover during their normal workday gets adopted; a portal they visit once a year doesn't.",
+          "pm": "When AI projects reshape team structures, build internal communication and pathway visibility into the project plan — it's a deliverable, not an afterthought.",
+          "admin": "You see which programs people actually engage with and which ones gather dust — that perspective makes you the right person to flag what's working and what needs a better rollout."
         },
         "challenge": {
           "steps": [
             "Open your company's intranet or HR portal and search for terms like 'AI training,' 'reskilling,' or 'career mobility.' Note how long it takes to find something useful.",
-            "Open your company-approved AI tool and paste: <em>\"I searched my company's HR resources for AI training or career mobility programs. Here's what I found: [describe what you found or didn't find]. Based on this, what are three specific ways an organization could make reskilling programs more visible and accessible to employees — without building a new system?\"</em>",
-            "Pick the suggestion that seems most realistic for your workplace.",
-            "Share what you found — or didn't find — in the group. The visibility gap is something most teams haven't talked about openly."
+            "Open your company-approved AI tool and paste: <em>\"I manage a team and want to make sure they know about the AI training and career development programs our organization offers. The challenge is that most employees can't find these programs. Give me three specific ways I could surface reskilling opportunities to my team — using channels and touchpoints they already engage with, not a new system.\"</em>",
+            "Pick the suggestion that seems most realistic for your team.",
+            "Share what you tried — or what you discovered was missing — in the group. Most teams haven't talked about this gap openly."
           ]
         }
       }
