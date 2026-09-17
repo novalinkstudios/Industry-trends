@@ -64,9 +64,9 @@
       }
     ],
     "homework": {
-      "title": "Thursday night, chef mode — let AI help you reverse-engineer your favorite restaurant dish.",
-      "body": "You know that one dish you always order? The one where you think 'I wish I could make this at home' but it feels too complicated? Tonight, stop guessing and let AI break it down for you. Open your free AI tool of choice (ChatGPT, Claude, Gemini, or Perplexity):",
-      "prompt": "\"I want to recreate [dish name] from [restaurant or cuisine type]. Here's what I know about it: [describe the flavors, textures, and ingredients you can identify]. Break this dish into 3-5 techniques I'd need to learn, ranked from easiest to hardest. For the easiest one, give me a simplified version I can try tonight with grocery-store ingredients.\"<br><br>The technique here is <em>decomposition prompting</em> — instead of asking for a full recipe, you ask AI to break a complex outcome into learnable building blocks and start with the simplest one. It works for cooking, but it's the same pattern for any skill that feels intimidatingly big: break it down, start small, build up."
+      "title": "Tonight, let your phone teach you to see like a photographer — no fancy gear required.",
+      "body": "You take dozens of photos a week, but how many of them actually look the way the moment felt? Tonight, let AI turn your phone camera into a mini photography class. Open your free AI tool of choice (ChatGPT, Claude, Gemini, or Perplexity):",
+      "prompt": "\"I want to take better photos with my phone. Before you give me tips, ask me 5 questions first — about what I usually photograph, what frustrates me about my photos, what kind of shots I admire, what lighting I typically shoot in, and what I've already tried. Then give me 3 personalized composition tips I can practice tonight with whatever's in front of me.\"<br><br>The technique here is <em>ask-me-first prompting</em> — instead of accepting generic advice, you tell AI to interview you before answering. The result is advice shaped to your actual situation, not a one-size-fits-all listicle. Try it anytime you're tempted to ask a broad question — make AI ask first, then answer."
     }
   },
   "2026-09-16": {
