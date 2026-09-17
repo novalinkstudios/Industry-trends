@@ -969,6 +969,76 @@
      Key format: "YYYY-MM-DD"
      ════════════════════════════════════════════════════════════════ */
   const DROPS = {
+    "2026-09-17": {
+      intro: "Thursday briefing — three signs the AI landscape is consolidating fast, and one personal prompt for tonight.",
+      trends: [
+        {
+          title: "Your CRM just learned 37 new skills — and they live inside your AI tool",
+          source_url: "https://www.salesforce.com/claudeforce/",
+          body: "Salesforce and Anthropic launched the Claudeforce beta this week — a plugin that brings <em>37 prebuilt sales workflows directly inside Claude</em>, from account research and call prep to pipeline review and CRM updates. Sellers can prep for meetings, review deal health, draft outreach, and update Salesforce records without switching tools. The permissions and governance layer runs through existing Salesforce controls, so nothing changes about who can see what.",
+          slants: {
+            strategy:   "This is the shift from 'AI as a separate tool' to 'AI as a layer inside the tools you already use.' Plan for that pattern — it's coming to every enterprise platform.",
+            leaders:    "The integration removes the 'one more tool to learn' objection. Pilot it with a willing team and let the workflow improvement make the case for broader adoption.",
+            operations: "Fewer context switches between CRM and AI means cleaner data and less manual reconciliation across systems.",
+            pm:         "The pattern of AI embedded inside your existing tools will spread beyond sales — project management platforms are next. Watch for it.",
+            admin:      "If your team uses Salesforce, this means less copying and pasting between systems — and your knowledge of how CRM data actually flows becomes the quality check."
+          },
+          challenge: {
+            steps: [
+              "Pick one recurring task you do that involves pulling information from one system to prepare something in another — a meeting prep, a status update, a report.",
+              "Open your company-approved AI tool and paste: <em>\"I regularly need to [describe the task]. Right now I pull data from [system A], summarize it, and use it in [system B]. Walk me through how this workflow could be simplified if AI were embedded directly in one of those tools. Be specific about what steps would disappear.\"</em>",
+              "Review the response and identify which manual step would save you the most time if it disappeared.",
+              "Share that one step in the group — you'll find many people have the same friction point."
+            ]
+          }
+        },
+        {
+          title: "Two enterprise AI companies just merged into a $20 billion challenger",
+          source_url: "https://www.prnewswire.com/news-releases/cohere-and-aleph-alpha-sign-agreement-to-become-the-first-transatlantic-sovereign-ai-solution-302880758.html",
+          body: "Cohere and Aleph Alpha signed their definitive merger agreement on Tuesday, creating the first transatlantic sovereign AI company at a <em>$20 billion valuation</em> — with dual headquarters in Toronto and Berlin, over 1,000 employees, and a $600 million investment from Germany's Schwarz Group. The combined company positions itself as the enterprise AI alternative to U.S.-only hyperscalers. The AI vendor landscape just got one player fewer and one player much bigger.",
+          slants: {
+            strategy:   "Fewer, larger AI vendors means your evaluation criteria need updating — sovereign AI capability and data residency are now competitive differentiators, not extras.",
+            leaders:    "When AI vendors consolidate, review which platforms your teams depend on and whether your vendor agreements still reflect the new landscape.",
+            operations: "Vendor consolidation typically brings integration changes — flag any Cohere or Aleph Alpha dependencies in your stack now, before transition timelines are set.",
+            pm:         "If your project roadmap includes AI vendor selection, the shortlist looks different than it did six months ago. Update it.",
+            admin:      "Enterprise AI is becoming a smaller field of bigger players — which actually makes comparing options simpler when your team is ready to choose."
+          },
+          challenge: {
+            steps: [
+              "List the AI tools your team currently uses or has access to — include company-approved tools, free tools team members experiment with, and anything on your evaluation list.",
+              "Open your company-approved AI tool and paste: <em>\"Here are the AI tools my team uses or is evaluating: [your list]. The enterprise AI vendor landscape is consolidating — companies are merging and growing. Give me three questions I should ask in our next vendor review to make sure we're not caught off guard by a merger, acquisition, or pricing change.\"</em>",
+              "Pick the one question that feels most urgent for your team right now.",
+              "Share that question in the group — building a collective vendor review checklist helps everyone make better decisions."
+            ]
+          }
+        },
+        {
+          title: "Two governments just invested $300 million in AI that watches over AI",
+          source_url: "https://www.canada.ca/en/innovation-science-economic-development/news/2026/09/canada-and-germany-invest-in-lawzero-to-build-a-new-approach-to-safe-sovereign-ai.html",
+          body: "Canada and Germany jointly committed <em>up to $300 million in grant funding to LawZero</em>, the nonprofit founded by Turing Award winner Yoshua Bengio to build AI systems designed to monitor and verify other AI systems. It's the largest public grant yet for an organization whose stated purpose is making powerful AI trustworthy at scale — not by slowing it down, but by building the technical infrastructure to keep it honest.",
+          slants: {
+            strategy:   "When governments fund AI verification infrastructure at this scale, trust and oversight frameworks are becoming standard. Build them into your AI strategy now rather than retrofitting later.",
+            leaders:    "Your team's confidence in AI tools matters. Investments like this give you a concrete answer when someone asks 'who's watching the AI?' — an entire field is being built around it.",
+            operations: "AI verification and monitoring tools are coming — the same way compliance and audit tools emerged for earlier technology waves. Start thinking about where they'll fit in your workflows.",
+            pm:         "Add 'AI output verification' to your project risk register for any initiative that depends on AI-generated outputs. The tooling is catching up to the need.",
+            admin:      "Your instinct to double-check AI output is exactly right — and better tools to help you do it efficiently are on the way."
+          },
+          challenge: {
+            steps: [
+              "Think about the last time you used an AI tool and weren't sure if the output was fully accurate — a summary, a recommendation, a drafted document.",
+              "Open your company-approved AI tool and paste: <em>\"I used AI to [describe what you did]. The output looked plausible but I wasn't confident it was accurate. Give me a practical 3-step verification checklist I can use any time I need to fact-check AI output in my role as a [your role]. Keep each step concrete and doable in under 2 minutes.\"</em>",
+              "Try the checklist on your next AI-generated output and note whether it catches anything you would have missed.",
+              "Share your verification checklist in the group — a practical 'trust but verify' habit is one of the most valuable AI skills you can build."
+            ]
+          }
+        }
+      ],
+      homework: {
+        title: "Thursday evening, old memories — let AI help you write the message you've been meaning to send.",
+        body: "There's probably someone you haven't talked to in a while — a college friend, a former colleague, a cousin you lost touch with. The hard part isn't wanting to reach out. It's figuring out what to say after all this time. Tonight, open your free AI tool of choice (ChatGPT, Claude, Gemini, or Perplexity):",
+        prompt: "\"I want to reconnect with [relationship — old friend, former colleague, cousin, etc.]. We last talked [timeframe]. Here's what I remember about them: [2-3 details — their job, interests, something you bonded over]. Help me think about what their life might look like now and what they might appreciate hearing from me. Then draft a short, warm message I can send — keep it under 4 sentences and make it sound like me, not a template.\"<br><br>The technique here is <em>perspective-taking before drafting</em> — instead of jumping straight to 'write me a message,' you ask AI to consider how the other person might feel and what they'd want to hear. The result is something thoughtful, not just grammatically correct. Works any time you're writing something where the recipient's feelings matter more than the words."
+      }
+    },
     "2026-09-16": {
       intro: "Wednesday briefing — three signs the AI skills race is reshaping who leads, who learns, and who gets hired.",
       trends: [
