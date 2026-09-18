@@ -1,6 +1,6 @@
 {
   "2026-09-18": {
-    "intro": "Friday briefing — three reasons the AI shift is landing more gently than the headlines suggest, and one for the shaker tonight.",
+    "intro": "Friday briefing — three reasons the AI shift is landing more gently than the headlines suggest, and one creative dare for tonight.",
     "trends": [
       {
         "title": "The Fed checked the data — AI is reshaping work, not eliminating it",
@@ -64,9 +64,9 @@
       }
     ],
     "homework": {
-      "title": "Friday night, feet up — let AI play bartender with whatever's already in your kitchen.",
-      "body": "You don't need a stocked bar or a cocktail book. Whatever you've got — a half bottle of something, some juice, a few spices, or nothing alcoholic at all — is enough to start. Tonight, open your free AI tool of choice (ChatGPT, Claude, Gemini, or Perplexity):",
-      "prompt": "\"Here's what I've got to work with tonight: [list 3–5 things — spirits, juices, sodas, fruits, herbs, spices, whatever's in the kitchen]. I want something [pick one: refreshing / cozy / bold and interesting / crowd-friendly]. Make me 3 drink options — one dead-simple, one that takes a little effort, and one that'll genuinely impress — and rate each on a 1–5 difficulty scale. For the one you'd recommend, walk me through it step by step like I've never made a drink before.\"<br><br>The technique here is <em>tiered-output prompting</em> — instead of asking for one answer, you ask AI to give you options at different levels of effort. It's a great habit for any decision: 'give me a quick option, a solid option, and an ambitious option.' You stay in control of how much energy to invest."
+      "title": "Friday night, nothing at stake — write something short and let AI coach you through one real edit.",
+      "body": "You don't need to be a writer. You just need 10 minutes and a willingness to put a few sentences on a page. The magic here isn't what AI writes — it's what it teaches you about your own writing. Open your free AI tool of choice (ChatGPT, Claude, Gemini, or Perplexity):",
+      "prompt": "\"I just wrote a short piece — [paste your 3–8 sentences: a micro-story, a poem, a personal reflection, a letter you'd never send, whatever came out]. Don't rewrite it. Instead, give me exactly one piece of specific feedback — not 'good job' or 'nice imagery,' but one concrete thing I could change that would make the biggest difference. Show me the before and after of just that one change so I can see why it works.\"<br><br>The technique here is <em>single-edit feedback</em> — instead of asking AI to rewrite your work or shower you with generic praise, you ask for one targeted fix. You learn more from one specific change than from a full rewrite, because you see exactly what shifted and why. Try this with any draft — an email, a proposal, a personal note: 'don't rewrite it, just tell me the one thing that would improve it most.'"
     }
   },
   "2026-09-17": {
