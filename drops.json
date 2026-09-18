@@ -1,4 +1,74 @@
 {
+  "2026-09-18": {
+    "intro": "Friday briefing — three reasons the AI shift is landing more gently than the headlines suggest, and one for the shaker tonight.",
+    "trends": [
+      {
+        "title": "The Fed checked the data — AI is reshaping work, not eliminating it",
+        "source_url": "https://libertystreeteconomics.newyorkfed.org/2026/09/businesses-are-using-ai-to-transform-work-not-cut-jobs/",
+        "body": "The New York Federal Reserve's latest regional business surveys paint a clearer picture than the headlines: among firms that use AI, <em>only 4% of service firms reported laying off workers due to AI — while more than a third are actively retraining people</em>. AI adoption is rising sharply (over 60% of service firms, roughly half of manufacturers), but most firms describe their investment as modest. The story isn't mass replacement — it's gradual transformation, and businesses are choosing to bring their people along.",
+        "slants": {
+          "strategy": "When the Federal Reserve's own data says AI adoption is driving retraining over layoffs, that's a planning input you can bring to your next budget conversation.",
+          "leaders": "Share this data with your team — it's concrete evidence that investing in people's AI skills is what organizations are actually choosing, not just talking about.",
+          "operations": "More than 60% of service firms now use AI, but most describe their investments as modest — you don't need a massive rollout to get started.",
+          "pm": "If your project plans assume AI adoption requires headcount reductions, the Fed's data says most firms are choosing upskilling instead. Adjust your assumptions.",
+          "admin": "The data confirms what matters most: businesses are investing in helping people grow with AI, not replacing them. Your institutional knowledge is part of what makes that work."
+        },
+        "challenge": {
+          "steps": [
+            "Open a blank document or note and list the top 3 tasks in your role that feel most repetitive or time-consuming this week.",
+            "Open your company-approved AI tool and paste: <em>\"I'm a [your role] at a large enterprise. Here are my 3 most repetitive weekly tasks: [list them]. For each one, tell me whether it's a strong candidate for AI assistance, a partial candidate, or something that genuinely requires human judgment — and explain why in one sentence.\"</em>",
+            "Review the split — did AI flag something you could hand off that you hadn't considered?",
+            "Share your three-task split in the group and call out the one that surprised you."
+          ]
+        }
+      },
+      {
+        "title": "Workers are quietly stretching past their job titles — and AI is how",
+        "source_url": "https://openai.com/index/unlocking-new-ways-of-working/",
+        "body": "OpenAI's research team analyzed <em>over 1.5 million work-related ChatGPT conversations</em> from April through July 2026 and found something the org chart won't show you yet: workers are regularly using AI to take on tasks associated with other occupations — and some are making those tasks a recurring part of their workflow. Jobs may be reshaping from the inside well before titles or headcounts change.",
+        "slants": {
+          "strategy": "If your workforce planning is built around static job descriptions, these findings suggest the real work has already drifted — strategy needs to track how roles are actually evolving, not just how they're titled.",
+          "leaders": "Your people are already using AI to stretch into cross-functional work. The opportunity is to recognize it, develop it, and build teams that can flex across traditional boundaries.",
+          "operations": "When someone in ops uses AI to handle a task that used to require a data analyst, the process gets faster — recognizing those shifts helps you staff and plan more effectively.",
+          "pm": "If team members are quietly picking up cross-functional tasks with AI, your project staffing assumptions may already be outdated — in a good way.",
+          "admin": "Every time you use AI to handle something beyond your official responsibilities — a data pull, a first-draft analysis, a process map — you're expanding what your role can deliver."
+        },
+        "challenge": {
+          "steps": [
+            "Think about the last month — did you use AI to help with a task that isn't technically in your job description?",
+            "Open your company-approved AI tool and paste: <em>\"I'm a [your role]. Recently I used AI to help me [describe the cross-functional task]. What adjacent skills would make me even more versatile in this direction? Give me 3 specific, concrete suggestions I could act on this quarter.\"</em>",
+            "Pick the suggestion that feels most natural to your current work and note one small step you could take this week.",
+            "Share your cross-functional AI win in the group — what task outside your job description did AI help you tackle?"
+          ]
+        }
+      },
+      {
+        "title": "Your business software is building its own AI — and that changes the adoption math",
+        "source_url": "https://www.salesforce.com/news/press-releases/2026/09/15/koa-reasoning-model/",
+        "body": "At Dreamforce this week, Salesforce announced Koa — a purpose-built AI reasoning model trained on <em>nearly three decades of CRM data that matches general-purpose models on business tasks with three times fewer errors</em>. It's part of a broader pattern: enterprise software vendors are building specialized AI directly into the platforms teams already use, rather than asking people to learn a separate tool.",
+        "slants": {
+          "strategy": "Purpose-built AI for specific business functions means your AI strategy should start with what your existing software stack is already shipping — before evaluating new standalone tools.",
+          "leaders": "When AI shows up inside the tools your team already uses, the adoption conversation shifts from 'learn this new thing' to 'use what you know differently' — a much easier ask.",
+          "operations": "An AI model that already understands your business rules, permissions, and data governance means less integration work and fewer surprises when you move from pilot to production.",
+          "pm": "AI capabilities arriving inside your existing project tools mean shorter procurement cycles and faster time to value on AI-related initiatives.",
+          "admin": "When the software you use every day adds an AI assistant, you don't need to learn a new platform — you just need to explore a new feature in a familiar one."
+        },
+        "challenge": {
+          "steps": [
+            "Pick one business tool you use daily — your CRM, project management platform, email client, or document editor.",
+            "Spend five minutes exploring whether it has AI features you haven't tried yet — look for labels like 'AI,' 'Copilot,' 'Assistant,' 'Smart,' or a sparkle icon.",
+            "Try one AI feature on a real, non-confidential task and note what it did well and where it fell short.",
+            "Share what you found in the group — which tool surprised you with AI features you didn't know it had?"
+          ]
+        }
+      }
+    ],
+    "homework": {
+      "title": "Friday night, feet up — let AI play bartender with whatever's already in your kitchen.",
+      "body": "You don't need a stocked bar or a cocktail book. Whatever you've got — a half bottle of something, some juice, a few spices, or nothing alcoholic at all — is enough to start. Tonight, open your free AI tool of choice (ChatGPT, Claude, Gemini, or Perplexity):",
+      "prompt": "\"Here's what I've got to work with tonight: [list 3–5 things — spirits, juices, sodas, fruits, herbs, spices, whatever's in the kitchen]. I want something [pick one: refreshing / cozy / bold and interesting / crowd-friendly]. Make me 3 drink options — one dead-simple, one that takes a little effort, and one that'll genuinely impress — and rate each on a 1–5 difficulty scale. For the one you'd recommend, walk me through it step by step like I've never made a drink before.\"<br><br>The technique here is <em>tiered-output prompting</em> — instead of asking for one answer, you ask AI to give you options at different levels of effort. It's a great habit for any decision: 'give me a quick option, a solid option, and an ambitious option.' You stay in control of how much energy to invest."
+    }
+  },
   "2026-09-17": {
     "intro": "Thursday briefing — three signs AI is growing up fast, and one for the camera roll tonight.",
     "trends": [
