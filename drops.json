@@ -43,22 +43,22 @@
         }
       },
       {
-        "title": "Your business software is building its own AI — and that changes the adoption math",
-        "source_url": "https://www.salesforce.com/news/press-releases/2026/09/15/koa-reasoning-model/",
-        "body": "At Dreamforce this week, Salesforce announced Koa — a purpose-built AI reasoning model trained on <em>nearly three decades of CRM data that matches general-purpose models on business tasks with three times fewer errors</em>. It's part of a broader pattern: enterprise software vendors are building specialized AI directly into the platforms teams already use, rather than asking people to learn a separate tool.",
+        "title": "Your AI assistant is becoming a workspace — and your next first draft starts there",
+        "source_url": "https://claude.com/blog/cowork-is-now-claude",
+        "body": "Anthropic merged its separate AI tools into a single platform this week — Claude now handles conversations, document drafting, slide creation, and visual design <em>all in one window, without switching between apps</em> (Anthropic, September 2026). It's the latest signal in a broader pattern: AI platforms are evolving from chatbots you consult into workspaces where actual deliverables get built. When your AI assistant can produce the memo, the deck, and the mockup inside the same conversation, the practical question shifts from 'how do I use AI?' to 'where do I start my work?'",
         "slants": {
-          "strategy": "Purpose-built AI for specific business functions means your AI strategy should start with what your existing software stack is already shipping — before evaluating new standalone tools.",
-          "leaders": "When AI shows up inside the tools your team already uses, the adoption conversation shifts from 'learn this new thing' to 'use what you know differently' — a much easier ask.",
-          "operations": "An AI model that already understands your business rules, permissions, and data governance means less integration work and fewer surprises when you move from pilot to production.",
-          "pm": "AI capabilities arriving inside your existing project tools mean shorter procurement cycles and faster time to value on AI-related initiatives.",
-          "admin": "When the software you use every day adds an AI assistant, you don't need to learn a new platform — you just need to explore a new feature in a familiar one."
+          "strategy": "When AI platforms become full work environments, your AI strategy should account for the workflow shift — teams will start building deliverables inside AI, not just asking it questions.",
+          "leaders": "'Try it for your next first draft' is a simpler ask than 'learn a new AI tool' — a unified AI workspace lowers the adoption barrier for hesitant team members.",
+          "operations": "A single AI workspace that handles documents, slides, and visuals means fewer tool handoffs — one place to draft process documentation, training materials, and workflow diagrams.",
+          "pm": "When your AI assistant can produce the project brief, the stakeholder deck, and the status update in one session, prep time drops and you spend more time on actual decisions.",
+          "admin": "The next time you need a document, a quick slide deck, or a layout, start inside your AI assistant — one tool, one conversation, multiple outputs."
         },
         "challenge": {
           "steps": [
-            "Pick one business tool you use daily — your CRM, project management platform, email client, or document editor.",
-            "Spend five minutes exploring whether it has AI features you haven't tried yet — look for labels like 'AI,' 'Copilot,' 'Assistant,' 'Smart,' or a sparkle icon.",
-            "Try one AI feature on a real, non-confidential task and note what it did well and where it fell short.",
-            "Share what you found in the group — which tool surprised you with AI features you didn't know it had?"
+            "Pick a real but low-stakes deliverable you have coming up — a meeting summary, a project update, or a brief for your team.",
+            "Open your company-approved AI tool and paste: <em>\"I need to create [describe your deliverable — e.g., a one-page project update for my team]. Walk me through it: first draft the content, then suggest how to organize it as a clean document, then recommend which points deserve a visual or a slide. Let's build the whole thing in this conversation.\"</em>",
+            "Review what came back — did the AI produce something you'd normally need two or three separate tools to create?",
+            "Share your experience in the group — what deliverable did you build entirely inside your AI assistant, and how did it compare to your usual multi-tool workflow?"
           ]
         }
       }
