@@ -1,4 +1,75 @@
 {
+  "2026-09-20": {
+    "intro": "Sunday briefing — three things that shifted in AI this week, and one kitchen experiment for tonight.",
+    "trends": [
+      {
+        "title": "The world spent $2.7 trillion on AI this year — the edge is in picking it up",
+        "source_url": "https://www.ciodive.com/news/global-ai-spend-nearly-double-2026-infrastructure-demand/830592/",
+        "body": "Gartner's latest forecast, released this week, puts global AI spending at <em>$2.7 trillion in 2026 — up 49.5% from last year</em>. But the largest slice goes to tech providers buying AI-optimized servers, cloud capacity, and chips. The infrastructure is being built at historic scale. For most teams, the bottleneck isn't access to AI — it's whether anyone has picked up what's already available and put it to work.",
+        "slants": {
+          "strategy": "The infrastructure investment has been made. Your strategic edge now is deploying what's already available, not waiting for the next platform.",
+          "leaders": "Your team likely has access to more AI capability than they're using. The highest-ROI move right now is adoption support, not more procurement.",
+          "operations": "AI infrastructure is scaling up fast, which means the tools your workflows depend on will get faster and cheaper, not more expensive.",
+          "pm": "If your project plans assume AI tools aren't ready yet, check again — the infrastructure buildout suggests the tools are ahead of most teams' readiness.",
+          "admin": "The technology is already there. The advantage goes to whoever starts using it consistently — and that can be you, with your current tools, this week."
+        },
+        "challenge": {
+          "steps": [
+            "Open your company-approved AI tool — whatever's already available to you at work.",
+            "Think of one task you did manually last week that took more than 30 minutes — a summary, a comparison, a first draft, a batch of emails.",
+            "Paste this prompt: <em>\"I spent about [time] on [describe the task] last week. Walk me through how I could use AI to cut that time in half. Be specific about what I'd paste in, what I'd ask for, and what I'd need to verify in the output.\"</em>",
+            "Try the suggestion on a low-stakes version of the task this week.",
+            "Share your result in the group — what task did you speed up, and by how much?"
+          ]
+        }
+      },
+      {
+        "title": "California is writing the rules of the road for AI — and that makes adoption easier",
+        "source_url": "https://www.cnbc.com/2026/09/18/california-newsom-executive-order-ai.html",
+        "body": "Governor Newsom signed an executive order on Friday directing AI companies in California to develop <em>independent safety plans, shutdown capabilities, and whistleblower protections</em>. It builds on the state's Transparency Act, which already requires frontier AI developers to publish safety frameworks and report critical incidents. For enterprise teams, clearer rules reduce guesswork about which AI tools meet the bar — and give you a concrete standard to point to when someone asks whether it's safe to adopt one.",
+        "slants": {
+          "strategy": "Regulatory clarity is a planning input, not a roadblock. Use California's framework to benchmark which AI vendors in your portfolio meet the highest standard.",
+          "leaders": "When your team asks whether an AI tool is safe to use, you now have a growing regulatory framework to reference. That makes the adoption conversation easier.",
+          "operations": "Standardized safety requirements mean you can build one evaluation process for AI tools instead of reinventing it for each new vendor.",
+          "pm": "Add regulatory compliance to your AI vendor evaluation checklist — California's standards are becoming a de facto national benchmark.",
+          "admin": "Stronger rules for AI companies mean the tools you're being asked to use have been held to a higher bar. That's a good thing for you."
+        },
+        "challenge": {
+          "steps": [
+            "Think about one AI tool your team uses or is evaluating right now.",
+            "Open your company-approved AI tool and paste: <em>\"Help me build a 5-question trust checklist for evaluating an AI tool at work. I want questions about: whether the vendor discloses how the model works, what data it uses, how it handles errors, whether there's independent oversight, and what happens if something goes wrong. Keep each question simple and non-technical.\"</em>",
+            "Answer the five questions for the AI tool you had in mind.",
+            "Share your checklist in the group — a simple, shareable trust rubric helps the whole team adopt AI with more confidence."
+          ]
+        }
+      },
+      {
+        "title": "Evaluating AI just became a billion-dollar discipline",
+        "source_url": "https://www.cnbc.com/2026/09/18/anthropic-accenture-ai-safety.html",
+        "body": "Anthropic announced this week that it's embedding independent evaluators from Accenture inside the company, with <em>a joint $1 billion commitment over five years</em> to build AI testing and verification capacity. OpenAI and Google are setting up their own third-party evaluation programs. A new professional discipline is taking shape: people whose job is to stress-test AI systems, verify their outputs, and hold them accountable. The core skill isn't technical — it's judgment.",
+        "slants": {
+          "strategy": "AI evaluation is becoming a formal function, not a side task. The organizations that build internal verification capability early will move faster with less risk.",
+          "leaders": "The team members who are best at spotting what doesn't look right — the ones who ask hard questions and catch gaps — are building the most in-demand AI-era skill.",
+          "operations": "If you already run quality checks, compliance reviews, or process audits, you're closer to the AI evaluation skill set than you think.",
+          "pm": "Build an AI output review step into your project workflows now — it's becoming standard practice, and early adopters will set the norms.",
+          "admin": "Your eye for detail and instinct for spotting when something is off is exactly what billion-dollar AI evaluation programs need. That skill has real market value."
+        },
+        "challenge": {
+          "steps": [
+            "Pick something an AI tool generated for you recently — a draft, a summary, a recommendation, a data pull.",
+            "Before you re-read it, write down two questions: <em>\"What would be the most damaging mistake in this output?\"</em> and <em>\"What would I need to check to catch it?\"</em>",
+            "Now re-read the AI output with those two questions in mind. Note anything you catch — or confirm is solid.",
+            "Share your two evaluation questions and what you found in the group — building a shared verification habit is one of the most useful things this community can do together."
+          ]
+        }
+      }
+    ],
+    "homework": {
+      "title": "Sunday night kitchen project — let AI reverse-engineer the restaurant dish you can't stop thinking about.",
+      "body": "Everyone has that one dish from a restaurant that they wish they could make at home. Tonight, stop wishing and let AI be your sous-chef. Open your free tool of choice (ChatGPT, Claude, Gemini, or Perplexity):",
+      "prompt": "\"I had an incredible [describe the dish — e.g., 'spicy miso ramen with crispy garlic' or 'lemon ricotta pancakes with blueberry compote'] at a restaurant and I want to recreate it at home. Before you give me a recipe, ask me 5 questions: what specific flavors stood out, what the texture was like, what I think the seasoning or sauce contained, what cooking equipment I have, and how experienced I am in the kitchen. Then give me a simplified version I can actually pull off tonight with what I probably already have.\"<br><br>The technique here is <em>reverse-engineering prompting</em> — instead of searching for a generic recipe, you describe a specific experience and let AI reconstruct it from your sensory memory. It works because your details about flavor, texture, and appearance give AI much better inputs than a dish name alone. Try this anytime you want to recreate something: a cocktail you loved, a hotel breakfast, a friend's signature dish."
+    }
+  },
   "2026-09-19": {
     "intro": "Today's threads all point the same direction: the tools are outrunning the rulebooks, the smart move is managing AI systems rather than just picking one, and getting better at AI no longer requires a training budget.",
     "trends": [
