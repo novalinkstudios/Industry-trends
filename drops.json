@@ -64,9 +64,9 @@
       }
     ],
     "homework": {
-      "title": "Craving a restaurant dish you can't stop thinking about? Let AI reverse-engineer the recipe tonight.",
-      "body": "There's always that one dish — the pasta from that place downtown, the sauce your friend made last summer, the thing you had on vacation. Tonight, open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
-      "prompt": "\"I had a dish at a restaurant that I want to recreate at home. Here's what I remember: [describe the dish — the main ingredients you could identify, the flavors, the texture, anything you noticed]. Based on my description, reverse-engineer the most likely recipe. Tell me what technique probably made it taste that way, not just the ingredients. Then give me a simplified version I can make tonight with what's in a typical kitchen.\"<br><br>That technique — <em>describe the result and ask AI to work backward to the process</em> — is reverse-engineering prompting. It works beyond cooking: describe a presentation that landed well and ask AI to reconstruct the structure, or describe a meeting that went sideways and ask it to identify what drove the outcome."
+      "title": "Pick a moment in history that's always intrigued you — and let AI connect it to something happening right now.",
+      "body": "You don't need a history degree to enjoy a good deep dive. Pick any event, era, or figure you've been curious about — the space race, the fall of Rome, the invention of the printing press, anything — and open ChatGPT, Claude, Gemini, or Perplexity (all free):",
+      "prompt": "\"Tell me the story of [historical event, era, or figure] in a way that would surprise someone who thinks they already know the basics. Focus on one detail or decision that changed how things played out. Then connect that detail to something happening in the world right now — what's the parallel, and what can we learn from how it played out last time?\"<br><br>That technique — <em>connect this to something happening now</em> — is relevance bridging. It turns any topic from trivia into insight. Works for history, science, economics — anything you want to understand more deeply without just memorizing facts."
     }
   },
   "2026-09-22": {
