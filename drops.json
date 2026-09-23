@@ -64,9 +64,9 @@
       }
     ],
     "homework": {
-      "title": "Got a big purchase on the horizon? Let AI build you a decision matrix before you spend a dime.",
-      "body": "A new appliance, a laptop, a piece of furniture — whatever it is, your brain wants to compare options but struggles to weigh what actually matters. Tonight, open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
-      "prompt": "\"I'm deciding between [option A] and [option B] for [what it's for]. Before you compare them, ask me what matters most — budget, durability, features, aesthetics, whatever applies. Then build me a weighted decision matrix that scores each option on each criterion I gave you, and tell me which one wins and by how much.\"<br><br>That technique — <em>ask me what matters before you answer</em> — is structured decision prompting. Instead of a generic pros-and-cons list, you get a framework built around what you actually care about. Works for purchases, apartment hunting, even picking a vacation destination."
+      "title": "Craving a restaurant dish you can't stop thinking about? Let AI reverse-engineer the recipe tonight.",
+      "body": "There's always that one dish — the pasta from that place downtown, the sauce your friend made last summer, the thing you had on vacation. Tonight, open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
+      "prompt": "\"I had a dish at a restaurant that I want to recreate at home. Here's what I remember: [describe the dish — the main ingredients you could identify, the flavors, the texture, anything you noticed]. Based on my description, reverse-engineer the most likely recipe. Tell me what technique probably made it taste that way, not just the ingredients. Then give me a simplified version I can make tonight with what's in a typical kitchen.\"<br><br>That technique — <em>describe the result and ask AI to work backward to the process</em> — is reverse-engineering prompting. It works beyond cooking: describe a presentation that landed well and ask AI to reconstruct the structure, or describe a meeting that went sideways and ask it to identify what drove the outcome."
     }
   },
   "2026-09-22": {
