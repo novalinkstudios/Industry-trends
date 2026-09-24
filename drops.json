@@ -65,9 +65,9 @@
       }
     ],
     "homework": {
-      "title": "Thursday night, think of that one restaurant dish you love — and let AI reverse-engineer it for your kitchen.",
-      "body": "Everyone has a dish they love ordering but can never quite pull off at home. Tonight, grab your phone and open ChatGPT, Claude, Gemini, or Perplexity (all free):",
-      "prompt": "\"There's a dish I love from [name the restaurant or type of cuisine]: [describe it — what it's called, what it tastes like, the key flavors and textures you remember]. I want to recreate it at home using ingredients from a regular grocery store and equipment I already own. Walk me through it step by step, and at the end, tell me the single technique that makes the biggest difference between the restaurant version and a typical home attempt.\"<br><br>That last line — <em>tell me the one technique that matters most</em> — is a move called prioritization prompting. Whenever AI gives you a long answer, ask it to highlight the single most important thing. You cut through information overload and land on the insight that actually changes your result."
+      "title": "Thursday night, think of someone who made a difference for you — and let AI help you say it right.",
+      "body": "Gratitude is one of those things we feel often but express rarely — usually because we can't find the right words. Tonight, open ChatGPT, Claude, Gemini, or Perplexity (all free):",
+      "prompt": "\"There's someone I want to thank: [describe who they are — a friend, a family member, a neighbor, a former teacher]. Here's what they did: [describe the specific thing, in as much detail as you can remember]. Here's why it mattered to me: [say what changed for you because of it]. Help me write a short, genuine message to them — not formal, not over-the-top, just honest. Then give me a version that's half the length, in case I want to send it as a text.\"<br><br>That structure — <em>who, what they did, why it mattered</em> — is a technique called layered context. The more specific detail you give AI before asking it to write, the more personal and genuine the result. Vague input gets generic output. Specific input gets something that sounds like you."
     }
   },
   "2026-09-23": {
