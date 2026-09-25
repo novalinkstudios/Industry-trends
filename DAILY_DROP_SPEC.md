@@ -549,13 +549,13 @@ The host `index.html` uses Cisco’s brand system. The routine does NOT need to 
 -----
 
 <details>
-<summary>❯&nbsp;&nbsp;<strong>14. Homework Category Rotation (100 categories)</strong></summary>
+<summary>❯&nbsp;&nbsp;<strong>14. Homework Category Rotation (200 categories)</strong></summary>
 
 <br>
 
 ### Rule
 
-**Do not repeat the same category within 250 days.** Track which categories have been used and when. Each category below includes 2–3 example prompt angles — vary the specific prompt each time the category comes back into rotation. When all 100 have been used, restart from the least recently used.
+**Do not repeat the same category within 250 days.** Track which categories have been used and when. Each category below includes 2–3 example prompt angles — vary the specific prompt each time the category comes back into rotation. When all 200 have been used, restart from the least recently used.
 
 ### Categories
 
@@ -698,6 +698,146 @@ The host `index.html` uses Cisco’s brand system. The routine does NOT need to 
 | 98 | Tax preparation checklist | Deductions to look for, documents to gather, timeline |
 | 99 | Understanding retirement basics | 401k, IRA, employer match — what to do first |
 | 100 | Decoding a confusing bill or statement | Medical bill, utility bill, insurance EOB — line by line |
+
+**Technology & Digital Life (101–115)**
+
+| # | Category | Example prompt angles |
+|---|----------|----------------------|
+| 101 | Phone cleanup & optimization | Delete unused apps, organize home screen, free up storage |
+| 102 | Password & account security audit | Set up a password manager, enable 2FA, review saved passwords |
+| 103 | Smart home setup or troubleshooting | Compare smart speakers, automate lighting, fix connectivity issues |
+| 104 | Digital decluttering | Inbox zero strategy, clean up cloud storage, unsubscribe from email lists |
+| 105 | Screen time audit & reduction plan | Review usage stats, set app limits, design phone-free windows |
+| 106 | Backup & data protection strategy | Set up automatic backups, 3-2-1 rule, test a restore |
+| 107 | Understanding privacy settings | Social media privacy walkthrough, app permissions review, location sharing audit |
+| 108 | Comparing streaming & digital services | Music, video, news — feature/price matrix for your household |
+| 109 | Building a personal website or portfolio | Platform comparison, domain selection, content planning |
+| 110 | Digital legacy & end-of-life planning | Password inheritance, account memorialization, digital executor setup |
+| 111 | Home Wi-Fi optimization | Dead-zone diagnosis, router placement, mesh network comparison |
+| 112 | Learning a new app or tool | Master keyboard shortcuts, hidden features, workflow templates |
+| 113 | Online reputation & search results | Google yourself, clean up old profiles, manage what others see |
+| 114 | AI tool exploration for personal use | Compare chatbots for a task, try image generation, automate a chore |
+| 115 | E-waste & old device disposition | Trade-in value check, secure data wipe, responsible recycling options |
+
+**Career & Professional Development (116–130)**
+
+| # | Category | Example prompt angles |
+|---|----------|----------------------|
+| 116 | Interview preparation & practice | Behavioral question rehearsal, STAR method practice, company research |
+| 117 | Salary & compensation research | Market rate lookup, total comp calculation, cost-of-living comparison |
+| 118 | LinkedIn profile refresh | Headline rewrite, summary overhaul, featured section strategy |
+| 119 | Building a professional portfolio | Select your best work, write case study narratives, choose a format |
+| 120 | Negotiating a raise or promotion | Build your case with evidence, script the conversation, anticipate objections |
+| 121 | Writing a professional bio | Conference bio, website about page, 50-word vs. 200-word versions |
+| 122 | Exploring a career pivot | Transferable skills inventory, informational interview questions, 90-day plan |
+| 123 | Understanding your benefits package | HSA vs. FSA, equity vesting, disability insurance — decode what you have |
+| 124 | Professional development plan | Skill gap analysis, course selection, quarterly learning goals |
+| 125 | Networking without awkwardness | Craft a warm intro, follow up after an event, maintain dormant ties |
+| 126 | Personal SWOT analysis | Identify strengths, weaknesses, opportunities, and threats in your career |
+| 127 | Side hustle feasibility study | Time audit, market sizing, revenue model, minimum viable test |
+| 128 | Public speaking improvement | Structure a talk, manage nerves, practice with AI feedback |
+| 129 | Professional email & writing polish | Rewrite a wordy email, format a proposal, tone-check a sensitive message |
+| 130 | Freelance or consulting basics | Rate setting, contract essentials, finding first clients |
+
+**Parenting & Family (131–145)**
+
+| # | Category | Example prompt angles |
+|---|----------|----------------------|
+| 131 | Age-appropriate chore chart design | Toddler tasks, tween responsibilities, reward system structure |
+| 132 | Explaining complex topics to kids | Where babies come from, why people die, how money works — age-calibrated |
+| 133 | Family activity & game night planning | Rainy day ideas, multi-age games, outdoor adventure list by season |
+| 134 | Homework help strategies | Math approaches, research skills, teaching without doing it for them |
+| 135 | Screen time rules & digital parenting | Age-based guidelines, content filters, contract template for teens |
+| 136 | College savings & education planning | 529 overview, savings timeline, financial aid basics |
+| 137 | Teaching kids about money | Allowance structure, savings jars, first bank account, investing for teens |
+| 138 | Family meeting framework | Agenda template, conflict resolution rules, shared decision-making |
+| 139 | Babysitter or childcare search | Interview questions, emergency info sheet, trial run checklist |
+| 140 | Multigenerational household planning | Shared space design, caregiving schedules, boundary setting |
+| 141 | Kids' birthday party on a budget | Theme ideas, DIY decorations, activity timeline, allergy-safe treats |
+| 142 | Building family traditions | Weekly rituals, holiday customs, milestone celebrations to start now |
+| 143 | School communication & advocacy | Email the teacher, request accommodations, navigate a report card |
+| 144 | Sibling conflict mediation | Fair-fighting rules, sharing frameworks, when to intervene |
+| 145 | Summer or school break planning | Camp research, at-home schedule, skill-building projects, boredom jar |
+
+**Travel & Adventure (146–160)**
+
+| # | Category | Example prompt angles |
+|---|----------|----------------------|
+| 146 | Packing optimization | Capsule packing list, carry-on only strategy, packing cube system |
+| 147 | Travel hacking & points strategy | Credit card comparison, loyalty program basics, award booking walkthrough |
+| 148 | Learning local customs & etiquette | Tipping norms, greeting styles, taboos to avoid at your destination |
+| 149 | Road trip route building | Scenic detours, kid-friendly stops, EV charging plan, overnight pacing |
+| 150 | Destination comparison & decision | Beach vs. mountain, two cities head-to-head, off-season value analysis |
+| 151 | Solo travel planning | Safety checklist, meeting people on the road, itinerary for one |
+| 152 | Day trip discovery | Hidden gems within 2 hours, themed day trips, seasonal picks |
+| 153 | Travel journal & memory capture | Prompts for each day, photo organization plan, scrapbook layout |
+| 154 | Budget travel planning | Hostel vs. hotel, free walking tours, eat-like-a-local strategy |
+| 155 | International travel logistics | Visa requirements, phone plan options, currency exchange tips |
+| 156 | Camping & outdoor adventure prep | Gear checklist, campsite comparison, beginner backpacking plan |
+| 157 | Travel safety & health prep | Vaccination checklist, travel insurance comparison, embassy registration |
+| 158 | Foodie travel itinerary | Build a trip around restaurants, markets, and food tours |
+| 159 | Accessible travel planning | Wheelchair-friendly destinations, sensory considerations, accommodation requests |
+| 160 | Post-trip organization | Photo culling workflow, expense reconciliation, trip review for next time |
+
+**Arts & Culture (161–175)**
+
+| # | Category | Example prompt angles |
+|---|----------|----------------------|
+| 161 | Museum or gallery visit prep | Research the collection, plan a route, build a discussion guide |
+| 162 | Understanding an art movement | Impressionism, Bauhaus, Afrofuturism — key works, context, why it matters |
+| 163 | Local events & hidden culture | Find what's happening this weekend, explore a neighborhood, cultural calendar |
+| 164 | Songwriting or lyric drafting | Write a verse, study song structure, remix a genre |
+| 165 | Logo or personal brand design for fun | Design principles, color psychology, sketch a concept |
+| 166 | Theater & live show discovery | What to see, how to get cheap tickets, pre-show context |
+| 167 | Art journaling & visual expression | Prompt-a-day ideas, supply list for beginners, mixed media techniques |
+| 168 | Film appreciation deep dive | Analyze a scene, explore a director's filmography, compare adaptations |
+| 169 | Creative writing workshop | Character development, dialogue practice, world-building exercises |
+| 170 | Learning a musical instrument | Practice routine, free resources, 30-day beginner plan |
+| 171 | Crafting & maker project planning | Knitting, woodworking, pottery — pick a first project, source materials |
+| 172 | Podcast or video creation basics | Topic selection, episode structure, recording setup on a budget |
+| 173 | Dance or movement exploration | Learn a style's basics, find local classes, practice routine at home |
+| 174 | Understanding architecture around you | Identify building styles, take a self-guided walking tour, learn the history |
+| 175 | Book club hosting & facilitation | Pick a book, write discussion questions, plan snacks and logistics |
+
+**Community & Civic (176–185)**
+
+| # | Category | Example prompt angles |
+|---|----------|----------------------|
+| 176 | Understanding local government | Who represents you, how decisions get made, where to show up |
+| 177 | Volunteering match & planning | Find opportunities by interest, time commitment, and skill set |
+| 178 | HOA or condo board participation | Understand governing docs, prepare for a meeting, run for the board |
+| 179 | Understanding ballot measures & elections | Break down propositions, research candidates, build a voter guide |
+| 180 | Community garden participation | Plot planning, shared rules, what to grow in your zone and season |
+| 181 | Block party or neighborhood event planning | Permits, logistics, activities, invite template, potluck coordination |
+| 182 | Local school board & education advocacy | Understand the budget, attend a meeting, advocate for a policy |
+| 183 | Charitable giving strategy | Evaluate nonprofits, donor-advised fund basics, giving budget allocation |
+| 184 | Neighborhood safety & mutual aid | Start a communication network, emergency contact list, resource sharing |
+| 185 | Civic skill building | Write a letter to an elected official, public comment prep, petition basics |
+
+**Seasonal & Holiday (186–195)**
+
+| # | Category | Example prompt angles |
+|---|----------|----------------------|
+| 186 | Holiday gift strategy & budgeting | Gift list organizer, price tracking, handmade vs. bought decision tree |
+| 187 | New Year goal setting & reflection | Year-in-review framework, SMART goal drafting, theme-of-the-year |
+| 188 | Spring garden & outdoor kickoff | Planting calendar, garden bed prep, seed starting schedule |
+| 189 | Summer reading challenge | Build a list by genre or goal, tracking method, discussion prompts |
+| 190 | Fall bucket list creation | Seasonal activities by region, weekend planning, cozy home prep |
+| 191 | Winter comfort & hygge planning | Indoor projects, comfort food rotation, self-care during dark months |
+| 192 | Holiday card & letter writing | Annual family update draft, card list management, design ideas |
+| 193 | Back-to-school preparation | Supply list optimization, routine reset, teacher communication setup |
+| 194 | Tax season organization sprint | Document gathering checklist, deduction tracker, deadline calendar |
+| 195 | End-of-year financial review | Net worth snapshot, goal check-in, next-year budget draft |
+
+**Miscellaneous & Quirky (196–200)**
+
+| # | Category | Example prompt angles |
+|---|----------|----------------------|
+| 196 | AI debate partner | Pick a controversial opinion, argue both sides, stress-test your reasoning |
+| 197 | Dream house or space design | Floor plan wishlist, style inspiration, feature priority ranking |
+| 198 | Explain your job to a 10-year-old | Simplify what you do, why it matters, what a day looks like |
+| 199 | Time capsule list creation | What to include, letter to future self, predictions for 10 years out |
+| 200 | Personal motto or mission statement | Draft it, test it against your values, refine it to one sentence |
 
 ### Usage notes
 
