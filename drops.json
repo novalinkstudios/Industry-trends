@@ -64,9 +64,9 @@
       }
     ],
     "homework": {
-      "title": "Friday night — let AI build you a playlist that actually fits your mood, not an algorithm's guess.",
-      "body": "Streaming algorithms know what you've played before. They don't know what you need tonight. Open ChatGPT, Claude, Gemini, or Perplexity and try this:",
-      "prompt": "\"Build me a playlist for [describe what you're doing tonight — unwinding after a long week, hosting friends, a solo drive, reading, cleaning the house]. Here are my constraints: [pick 2–3, like a decade, a genre, a vibe, a tempo, a must-include artist, or a 'nothing by' rule]. Give me exactly 12 songs, and for each one, tell me in one sentence why it fits.\"<br><br>That technique — <em>giving the AI specific constraints instead of an open-ended ask</em> — is one of the most useful prompting habits you can build. Constraints don't limit the output — they sharpen it. An AI with no boundaries gives you generic answers. An AI with clear guardrails gives you something that actually feels like yours."
+      "title": "Friday night — pick a language you've always wanted to try and let AI give you a 10-minute crash course.",
+      "body": "You don't need an app subscription or a semester abroad. Open ChatGPT, Claude, Gemini, or Perplexity and try this:",
+      "prompt": "\"I want to learn the basics of [language]. Pretend you're a patient tutor sitting across from me at a café in [country]. Start by teaching me 5 phrases I'd actually use if I landed there tomorrow — a greeting, ordering food, asking for directions, saying thank you, and one local slang phrase that would make a native smile. For each phrase, give me: the phrase, a pronunciation guide in English sounds, the literal translation, and when I'd use it. Then quiz me — ask me 3 of them back and correct my answers.\"<br><br>That technique — <em>asking AI to role-play as a specific character in a specific setting</em> — completely changes the quality of the response. A generic 'teach me Spanish' gets a textbook. A tutor at a café gives you a conversation."
     }
   },
   "2026-09-24": {
