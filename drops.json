@@ -5,7 +5,7 @@
       {
         "title": "California is writing the rules for AI at work — and the deadline is tomorrow",
         "source_url": "https://natlawreview.com/article/californias-ai-workplace-legislative-blitz-california-legislature-passes-four-new",
-        "body": "Four AI workplace bills now sit on Governor Newsom's desk, and he has until tomorrow to sign or veto. The headliner is SB 947, the \"No Robo Bosses Act,\" which would <em>bar employers from relying solely on automated systems for termination or disciplinary decisions</em> and require human verification plus post-use notice to workers. Companion bills address AI-driven emotional surveillance (AB 1883) and AI-related mass layoff notices (SB 951). Whether Newsom signs or not, the direction is clear: workplace AI governance is becoming a legal standard, not just a corporate preference.",
+        "body": "Four AI workplace bills now sit on Governor Newsom's desk, and he has until tomorrow to sign or veto. The headliner is SB 947, the \"No Robo Bosses Act,\" which would <em>bar employers from relying solely on automated systems for termination or disciplinary decisions</em> and require human verification plus post-use notice to workers. Companion bills address AI-driven emotional surveillance (AB 1883) and advance-notice requirements when AI displaces roles (SB 951). Whether Newsom signs or not, the direction is clear: workplace AI governance is becoming a legal standard, not just a corporate preference.",
         "slants": {
           "strategy": "Whether this particular bill passes or not, the legislative trend is set. Now is the time to audit your AI decision-making workflows for documented human oversight — before the requirement arrives.",
           "leaders": "If any of your hiring, performance, or termination processes use automated scoring, this week is a good time to understand exactly what those tools do and where a human reviews the output.",
@@ -43,9 +43,9 @@
         }
       },
       {
-        "title": "AI adoption is surging — but the layoffs aren't following",
+        "title": "Companies adopting AI are investing in their people, not replacing them",
         "source_url": "https://libertystreeteconomics.newyorkfed.org/2026/09/businesses-are-using-ai-to-transform-work-not-cut-jobs/",
-        "body": "The New York Fed's latest regional business surveys show AI adoption has surged: <em>61% of service firms now use AI, up from 40% in 2025 and 25% in 2024</em>. But the finding that matters most is what isn't happening. Only 4% of service firms reported AI-related layoffs in the past six months, and no manufacturers reported any. Instead, 10% of AI-using companies are hiring more workers — especially those with AI skills — and a third are investing in retraining. Most firms describe their AI investments as \"modest,\" which means the biggest gains are still ahead.",
+        "body": "The New York Fed's latest regional business surveys show AI adoption has surged: <em>61% of service firms now use AI, up from 40% in 2025 and 25% in 2024</em>. But the most important finding is what companies are doing with it. <em>10% of AI-using firms are actively hiring more workers</em> — especially those with AI skills — and a third are investing in retraining existing staff. The dominant pattern is augmentation: helping people do their current jobs more effectively. Most firms still describe their AI investments as \"modest,\" which means the biggest gains are ahead for teams that start now.",
         "slants": {
           "strategy": "The data says the organizations investing in AI are investing in their people at the same time. That's not a contradiction — it's the pattern that works.",
           "leaders": "If your team is anxious about AI and job security, this data is worth sharing directly. The evidence from real businesses says augmentation, not replacement, is the dominant story.",
@@ -64,9 +64,9 @@
       }
     ],
     "homework": {
-      "title": "Tuesday night — pick a restaurant dish you love and let AI help you make it at home.",
-      "body": "Everyone has that one dish they always order out. Tonight, open ChatGPT, Claude, Gemini, or Perplexity (all free) and see how close you can get without leaving your kitchen:",
-      "prompt": "\"I love the [dish name] from [restaurant name or type of restaurant]. I want to try making it at home tonight. I'm a [beginner/intermediate/confident] cook with a [basic/well-stocked] kitchen. Give me a version I can actually pull off — simplified if needed — and tell me the one technique that makes the biggest difference in getting it right. If I'm probably missing a key ingredient, suggest a substitute.\"<br><br>That last move — <em>telling AI your real constraints before asking for a recommendation</em> — is called constraint-first prompting. It's the difference between advice you'll bookmark and forget and advice you'll actually use tonight."
+      "title": "Tuesday night — finally make that decision you've been going back and forth on.",
+      "body": "Got a purchase you've been overthinking? A new laptop vs. fixing the old one, two appliances, that piece of furniture you can't pick between? Open ChatGPT, Claude, Gemini, or Perplexity (all free) and let AI break the tie:",
+      "prompt": "\"I'm trying to decide between [option A] and [option B]. Here's what matters to me, in rough order: [list 3-5 things like budget, durability, size, looks, or ease of use]. Build me a weighted decision matrix that scores each option against my priorities, then tell me which one wins and why. If I'm missing a factor I should care about, add it.\"<br><br>That technique — <em>asking AI to weight your criteria before comparing options</em> — is called structured decision analysis. It works for purchases, but also for choosing a school, picking a vacation spot, or any decision where your gut says \"both\" and you need a tiebreaker."
     }
   },
   "2026-09-28": {
