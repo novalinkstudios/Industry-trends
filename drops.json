@@ -64,9 +64,9 @@
       }
     ],
     "homework": {
-      "title": "Tuesday night — finally make that decision you've been going back and forth on.",
-      "body": "Got a purchase you've been overthinking? A new laptop vs. fixing the old one, two appliances, that piece of furniture you can't pick between? Open ChatGPT, Claude, Gemini, or Perplexity (all free) and let AI break the tie:",
-      "prompt": "\"I'm trying to decide between [option A] and [option B]. Here's what matters to me, in rough order: [list 3-5 things like budget, durability, size, looks, or ease of use]. Build me a weighted decision matrix that scores each option against my priorities, then tell me which one wins and why. If I'm missing a factor I should care about, add it.\"<br><br>That technique — <em>asking AI to weight your criteria before comparing options</em> — is called structured decision analysis. It works for purchases, but also for choosing a school, picking a vacation spot, or any decision where your gut says \"both\" and you need a tiebreaker."
+      "title": "Tuesday night — pick something you've always believed and let AI fact-check you.",
+      "body": "We all carry a few \"facts\" we picked up somewhere and never questioned — about health, history, money, or how things work. Tonight, open ChatGPT, Claude, Gemini, or Perplexity (all free) and put one to the test:",
+      "prompt": "\"I've always believed that [something you've heard or assumed — e.g., 'you lose most of your body heat through your head' or 'cracking your knuckles causes arthritis' or 'we only use 10% of our brains']. Tell me whether this is true, partly true, or a myth — and cite the strongest evidence either way. If it's more complicated than true-or-false, explain why.\"<br><br>That technique — <em>asking AI to evaluate a claim instead of just confirm it</em> — is called skeptical inquiry prompting. It trains you to use AI as a fact-checker, not a yes-machine, and it's one of the most transferable AI skills you can build."
     }
   },
   "2026-09-28": {
