@@ -65,9 +65,9 @@
       }
     ],
     "homework": {
-      "title": "Wednesday evening — let AI help you rehearse a conversation you've been putting off.",
-      "body": "Everyone has one: a talk with a family member, a friend, a neighbor, a partner — something you know you need to say but haven't figured out how to start. Tonight, let AI help you practice. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
-      "prompt": "\"I need to have a conversation with [someone — a friend, family member, partner, neighbor] about [the topic — keep it general, no private details needed]. I want to be honest but kind. First, play the other person and give me their three most likely reactions — including the one I'm most afraid of. Then help me draft an opening line that's direct without being aggressive.\"<br><br>That move — <em>play the other person and give me their likely reactions</em> — is perspective simulation. Instead of rehearsing only your side, you get to practice responding to theirs. It works for tough talks, negotiations, or any conversation where the other person's reaction matters as much as what you say."
+      "title": "October is ticking — let AI build you a holiday gift strategy before the rush hits.",
+      "body": "The holidays are closer than they feel, and the best gift-givers aren't the ones who spend the most — they're the ones who plan early. Tonight, open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
+      "prompt": "\"I need to buy gifts for [number] people this holiday season. My total budget is around $[amount]. Here's who's on my list: [e.g., 'my partner, two kids ages 8 and 12, my parents, and three friends']. For each person, suggest two gift ideas — one thoughtful and one practical — and keep a running total so I stay on budget. If I'm over, tell me where to cut.\"<br><br>That move — <em>giving AI your constraints up front and asking it to track them</em> — is constraint-based planning. Instead of a generic gift list, you get a plan that fits your actual life. It works for any planning task where budget, time, or headcount matters."
     }
   },
   "2026-10-06": {
