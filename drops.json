@@ -65,9 +65,9 @@
       }
     ],
     "homework": {
-      "title": "Tonight's low-stakes practice: let AI help you negotiate a bill you've been overpaying.",
-      "body": "Most of us have at least one recurring bill we've never tried to negotiate — cable, insurance, a subscription that crept up in price. Tonight, let AI help you prepare. Use any free tool: ChatGPT, Claude, Gemini, or Perplexity.",
-      "prompt": "\"I pay $[amount] per month for [service]. I've been a customer for [X years]. Help me prepare for a 5-minute phone call to negotiate a lower rate. First, role-play as the retention agent — what will they say to keep me at the current price? Then coach me on the three strongest responses I can use.\"<br><br>That technique — <em>asking AI to argue the other side first</em> — is one of the most useful moves for any negotiation, personal or professional."
+      "title": "Fall break or holiday trip coming up? Let AI settle the 'where should we go' debate tonight.",
+      "body": "Every trip starts with the same stalemate — too many options, everyone has a different priority. Tonight, hand the decision to AI and learn a prompting technique that works for any tough comparison. Use any free tool: ChatGPT, Claude, Gemini, or Perplexity.",
+      "prompt": "\"I'm choosing between [Destination A] and [Destination B] for a [trip length] trip in [month]. My priorities in order: 1) [e.g., food scene], 2) [e.g., budget under $X/day], 3) [e.g., walkability]. Compare them head-to-head on each priority, score each destination 1–5, then give me a final recommendation with one thing I'd miss by not choosing the other.\"<br><br>The technique here: <em>giving AI ranked criteria and asking for a structured head-to-head</em>. It works for any decision — vacations, software tools, even which neighborhood to move to."
     }
   },
   "2026-10-12": {
