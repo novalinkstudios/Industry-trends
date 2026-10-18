@@ -1,4 +1,74 @@
 {
+  "2026-10-18": {
+    "intro": "Sunday briefing — three signals that the era of ungoverned AI is ending, plus a fun one for tonight.",
+    "trends": [
+      {
+        "title": "AI agents are getting ID badges — and that’s exactly the right direction",
+        "source_url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-advances-its-operational-harness-for-enterprise-AI-with-AI-Passport-and-expanded-governance-capabilities/default.aspx",
+        "body": "ServiceNow launched AI Passport this week — <em>a cryptographically signed credential that defines an AI agent’s identity, permitted actions, accessible systems, and accountable owner</em>. Unlike audit logs that review what happened after the fact, AI Passport checks at runtime, before the agent acts. If an agent strays outside its scope, the system can redirect, restrict, or shut it down. NVIDIA is a launch partner. The signal: governance is becoming something you build into AI infrastructure, not something you bolt on later.",
+        "slants": {
+          "strategy": "If your AI roadmap doesn’t include an agent governance framework, it’s incomplete. The organizations building identity and permission layers now will scale AI faster — because they can trust what they’ve deployed.",
+          "leaders": "Set the expectation now: every AI agent in your organization should have a defined scope, an owner, and a clear boundary. That’s not bureaucracy — it’s how you build confidence to do more with AI.",
+          "operations": "Think of AI Passport the way you think about service accounts in your infrastructure — identity, permissions, and audit trails. If your AI agents don’t have that structure today, start mapping it.",
+          "pm": "Add agent governance to your project risk register the same way you add data security and access controls. The earlier you define what an AI agent can and can’t do, the fewer surprises in production.",
+          "admin": "You already manage access, permissions, and exceptions for people and systems. AI agents are joining that list — and your understanding of how access controls actually work day to day makes you essential to getting it right."
+        },
+        "challenge": {
+          "steps": [
+            "Think about one AI tool or feature your team uses regularly — a chatbot, an automation, an AI assistant built into your workflow software.",
+            "Ask yourself three questions: Who owns it? What can it access? What happens if it makes a mistake? Write down your honest answers.",
+            "If any answer is ‘I don’t know,’ open your company-approved AI tool and paste this prompt: <em>\"I manage a team that uses [describe the AI tool]. Help me create a one-page AI agent profile: who owns it, what data it can access, what actions it can take on its own, and who to contact if something goes wrong. Keep it simple enough to pin on a shared team page.\"</em>",
+            "Share your agent profile template in the group — the gaps people find are usually the same ones across organizations."
+          ]
+        }
+      },
+      {
+        "title": "Enterprise AI just graduated from experiment mode to risk mode",
+        "source_url": "https://darkreading.com/cyber-risk/enterprise-ai-risk-management-phase-security-concerns-rise",
+        "body": "CompTIA’s latest research finds that <em>six in ten organizations are now moving from experimentation toward enterprise-wide AI implementation</em> — and the conversation has shifted with them. The biggest concern is no longer adoption speed. It’s execution risk: governance, cybersecurity, and workforce readiness. Among surveyed companies, <em>98% say risk management is important to their AI strategy</em>, and 48% identify cybersecurity as a key focus of their AI spending. The experiment phase is over. The operations phase has started.",
+        "slants": {
+          "strategy": "Your AI roadmap needs a risk management chapter that sits alongside — not behind — your adoption plan. The organizations treating risk as a parallel workstream are the ones moving fastest into production.",
+          "leaders": "Shift the team conversation from ‘explore AI’ to ‘use AI responsibly and measure what happens.’ That framing gives people both permission and guardrails.",
+          "operations": "Apply the same rigor to AI that you apply to any production system: uptime expectations, incident response plans, and regular reviews of what’s working and what isn’t.",
+          "pm": "Add a risk review milestone to every AI-related project. The projects that surface risks early keep their timelines; the ones that discover risks in production don’t.",
+          "admin": "Your instinct for noticing when a process breaks or a tool behaves unexpectedly is a risk management skill. As AI becomes part of daily operations, that instinct becomes more valuable, not less."
+        },
+        "challenge": {
+          "steps": [
+            "Pick one AI tool your team uses in its daily workflow — not a pilot, but something people depend on.",
+            "Open your company-approved AI tool and paste this prompt: <em>\"My team relies on [name the AI tool] for [describe how you use it]. Create a lightweight risk checklist for this tool: three things that could go wrong, how we’d know it happened, and what we’d do about it. Keep it practical — something a team lead could review in five minutes.\"</em>",
+            "Review the checklist and adjust it based on what you actually worry about. One honest risk you add from experience is worth more than three generic ones.",
+            "Share your checklist in the group — the risk patterns across teams reveal where organizations need the most attention."
+          ]
+        }
+      },
+      {
+        "title": "Your next AI teammate will have its own email address",
+        "source_url": "https://learn.microsoft.com/microsoft-agent-365/builder/identity",
+        "body": "Microsoft’s Copilot Studio now lets organizations give AI agents <em>their own Microsoft Entra identity, mailbox, and Teams presence</em> — the same infrastructure real employees use. The agent shows up in your directory, receives and sends email, and joins meetings. Admins control what it can access, and it can’t read confidential-labeled documents or reach outside the tenant. The shift is worth noticing: AI is moving from a tool inside your apps to a named entity in your organizational directory. That changes how work gets delegated, tracked, and governed.",
+        "slants": {
+          "strategy": "When AI agents become visible entities in your org directory, workforce planning needs to account for them. Start thinking about agent capacity the way you think about headcount — with defined roles, boundaries, and oversight.",
+          "leaders": "An AI agent with its own email and calendar is a new kind of delegation. Define what it handles, what it escalates, and who reviews its work — the same way you’d onboard any new team member.",
+          "operations": "Agents in your directory means agents in your workflows. Review how your processes handle requests from non-human entities: routing rules, approval chains, and escalation paths all need to account for AI participants.",
+          "pm": "When an AI agent can receive tasks via email and join meetings, your project communication plans need to include how the agent fits. Define its role in the project the way you’d define any contributor’s.",
+          "admin": "You manage calendars, coordinate across teams, and route requests to the right people. When AI agents join that ecosystem with their own email and presence, your coordination skills become the bridge between human and AI workflows."
+        },
+        "challenge": {
+          "steps": [
+            "Think about one recurring task that currently gets handed off between people via email — a weekly update request, a scheduling coordination, or a document routing workflow.",
+            "Imagine that task had a dedicated AI agent with its own email address, handling the routine parts. Write down what it would do and what a human would still need to review.",
+            "Open your company-approved AI tool and paste this prompt: <em>\"A recurring task on my team involves [describe the task and the email/communication flow]. If an AI agent had its own email address and could handle the routine parts, write a short ‘agent job description’: what it sends, what it receives, what it does on its own, and what it flags for a human. Keep it to one paragraph.\"</em>",
+            "Share your agent job description in the group — the tasks people choose reveal where email-based coordination wastes the most time."
+          ]
+        }
+      }
+    ],
+    "homework": {
+      "title": "Sunday evening, October air — build a fall bucket list you’ll actually do.",
+      "body": "Most bucket lists die because they’re either too ambitious or too vague. The trick: ask AI to think about it from three different versions of you — the adventurous one, the cozy one, and the realistic one. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
+      "prompt": "\"I want a fall bucket list for the next six weeks, but I need it to be realistic. Give me suggestions from three perspectives: (1) the adventurous version of me who has energy and a free weekend, (2) the cozy-at-home version of me who wants something satisfying but low-effort, and (3) the budget-conscious version of me who wants to enjoy the season without spending much. Give me 4 ideas from each perspective, ranked by how memorable they’d be. Then pick the single best one from each list and tell me exactly what I’d need to do this week to make it happen.\"<br><br>That technique — <em>persona stacking, asking AI to respond from multiple perspectives in one prompt</em> — gives you a wider range of ideas than asking a single open-ended question. It works for any decision where your mood, energy, or budget might vary: meal planning, weekend activities, gift ideas, or even how to spend a free evening. The more specific the personas, the more useful the output."
+    }
+  },
   "2026-10-17": {
     "intro": "Saturday briefing — three signals about what actually moves AI forward in organizations, and a fun one for tonight.",
     "trends": [
