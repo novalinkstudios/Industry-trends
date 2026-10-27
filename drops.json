@@ -1,6 +1,6 @@
 {
   "2026-10-27": {
-    "intro": "Tuesday's three: the security gap hiding in AI agents nobody's using, why 'agent operations' is becoming a real career path, and the one factor that predicts whether your team actually adopts AI. Plus a reading list prompt that actually matches how you read.",
+    "intro": "Tuesday's three: the security gap hiding in AI agents nobody's using, why 'agent operations' is becoming a real career path, and the one factor that predicts whether your team actually adopts AI. Plus tonight's homework: let AI be your museum curator.",
     "trends": [
       {
         "title": "Most enterprise AI agents are idle, and still holding the keys",
@@ -65,9 +65,9 @@
       }
     ],
     "homework": {
-      "title": "Tonight, let AI build you a reading list that actually fits how you read.",
-      "body": "Most recommendation lists are generic because they don't know you. The trick is teaching AI about your actual taste before asking what to read next. Open any free AI tool (ChatGPT, Claude, Gemini, or Perplexity) and try this:",
-      "prompt": "\"Here are the last 3 books (or articles, or podcasts) I finished and enjoyed: [list them]. Here's what I liked about each one: [a sentence per item]. I have about [20 minutes a night / a long flight coming up / weekend mornings] to read. Recommend 5 books I'd actually finish, ranked by how well they match my taste. For each one, tell me in one sentence why it fits me specifically, not why it's generally good.\"<br><br>The technique: <em>preference profiling</em>. By telling AI what you've liked and why before asking for suggestions, you skip the generic bestseller lists and get recommendations tuned to your actual patterns. This works for anything: restaurants, movies, travel destinations, even career moves. Context in, quality out."
+      "title": "Tonight, pick an art movement you've always heard of but never really understood, and let AI walk you through it.",
+      "body": "Impressionism, Bauhaus, Surrealism, Art Deco, Afrofuturism: you've seen the words on museum walls and in design articles, but could you explain what actually made the movement matter? Tonight, find out. Open any free AI tool (ChatGPT, Claude, Gemini, or Perplexity) and try this:",
+      "prompt": "\"You are a museum curator who specializes in [pick an art movement, e.g., Impressionism]. I know almost nothing about it. In plain language, walk me through: what was the world like when this started, what were these artists reacting against, show me 3 specific works that capture the core idea (with the artist's name and year), and tell me one way this movement still shapes things I see today. Keep it conversational, like we're standing in front of the paintings.\"<br><br>The technique: <em>expert persona</em>. By asking AI to adopt a specific role (curator, coach, historian), you get answers shaped by that perspective's depth and vocabulary instead of generic encyclopedia summaries. Try it with any subject: ask a nutritionist about your groceries, a mechanic about that dashboard light, or an architect about buildings on your block."
     }
   },
   "2026-10-26": {
