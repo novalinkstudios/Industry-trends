@@ -1,6 +1,6 @@
 {
   "2026-10-30": {
-    "intro": "Friday's three: more companies are turning AI spending into real revenue, AI time savings are creating new capacity smart teams can claim, and AI infrastructure investment just topped $170 billion. Plus tonight's homework: let AI build you a custom trivia night.",
+    "intro": "Friday's three: more companies are turning AI spending into real revenue, AI time savings are creating new capacity smart teams can claim, and AI infrastructure investment just topped $170 billion. Plus tonight's homework: let AI design a scavenger hunt for your Halloween weekend.",
     "trends": [
       {
         "title": "More companies are turning AI spending into actual revenue",
@@ -64,9 +64,9 @@
       }
     ],
     "homework": {
-      "title": "Friday night, people coming over? Let AI build a trivia game that actually fits your crowd.",
-      "body": "Generic trivia is fine, but trivia designed for your specific group is way more fun. The secret: tell AI who's playing and what they're into, and it builds rounds that give everyone a shot at winning. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
-      "prompt": "\"I'm hosting trivia for [number] people. Here's what I know about them: [e.g., 'two sports fans, one history buff, a couple who watches every reality show, and my aunt who knows every song from the '80s']. Build me 3 rounds of 5 questions each. Each round should include at least one question that plays to each person's strengths, so everyone gets a moment. Mix the difficulty so nobody runs away with it. Format it so I can read the questions aloud, with answers on a separate line I can reveal.\"<br><br>The technique: <em>audience specification</em>. Instead of asking for generic output ('give me trivia questions'), you described the specific people who'll use it. AI went from writing for nobody in particular to writing for your actual group. You can apply this everywhere: need a presentation? Describe the audience's background. Writing talking points? Describe who you're talking to. The more AI knows about who's on the receiving end, the more useful the result."
+      "title": "Tomorrow's Halloween. Let AI design a scavenger hunt you can actually run this weekend.",
+      "body": "Whether it's for kids trick-or-treating the neighborhood, friends at a party, or just you on a fall walk, a scavenger hunt is more fun when someone else designs it. Tell AI who's playing and where, and specify a format you can print and go. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
+      "prompt": "\"I want to run a scavenger hunt this weekend. Here's the setup: [who's playing, e.g., 'three kids ages 6-10' or 'a group of adults at a Halloween party' or 'just me on a fall walk through my neighborhood']. The setting is [where, e.g., 'our backyard,' 'a local park,' 'inside our apartment']. Time available: about [X] minutes. Give me 12-15 items or challenges to find or complete, as a numbered list I can print. Include a mix of easy finds, tricky ones, and one bonus challenge at the end that's harder than the rest. Format each item as a one-line clue, not just a plain item name.\"<br><br>The technique: <em>output formatting</em>. Instead of letting AI decide how to present the result, you told it exactly what you need: a numbered, printable list with clue-style descriptions and a difficulty mix. This works for any task: ask for a meeting agenda 'as a table with time, topic, and owner columns,' or a comparison 'as a pros-and-cons list with one sentence each.' When you specify the format up front, the result is ready to use without editing."
     }
   },
   "2026-10-29": {
