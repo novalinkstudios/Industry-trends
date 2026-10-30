@@ -1,72 +1,72 @@
 {
   "2026-10-30": {
-    "intro": "Friday's three: enterprise AI adoption keeps growing but value is spreading unevenly, the time AI saves at work is being consumed by rising expectations, and the biggest AI infrastructure bets just hit a supply wall. Plus a Friday evening homework: let AI play bartender.",
+    "intro": "Friday's three: more companies are turning AI spending into real revenue, AI time savings are creating new capacity smart teams can claim, and AI infrastructure investment just topped $170 billion. Plus tonight's homework: let AI build you a custom trivia night.",
     "trends": [
       {
-        "title": "Enterprise AI use is up — but value still isn't spreading evenly",
+        "title": "More companies are turning AI spending into actual revenue",
         "source_url": "https://www.deloitte.com/us/en/about/press-room/enterprise-ai-enters-an-roi-reckoning.html",
-        "body": "Deloitte's latest State of AI in the Enterprise report, surveying 3,500 leaders across 25 countries, puts numbers on a gap many teams feel. <em>28% of companies now report revenue gains from AI, up from 20% in January</em> — real progress. But only 25% say they're deeply transforming business operations with AI. The rest are deploying more, spending more, and still waiting for compounding returns. Use is widespread. Uneven value is the new challenge.",
+        "body": "Deloitte's latest State of AI in the Enterprise report, surveying 3,500 leaders across 25 countries, shows real momentum. <em>28% of companies now report revenue gains from AI, up from 20% in January</em>, and 25% are deeply transforming business operations. The organizations pulling ahead share a pattern: they concentrated AI investment where it connects directly to outcomes, then scaled what worked.",
         "slants": {
-          "strategy": "The next planning cycle's question isn't 'are we using AI?' — it's 'is our AI spending concentrated where it actually drives revenue?'",
+          "strategy": "The next planning cycle's question isn't 'are we using AI?' It's 'is our spending concentrated where it actually drives revenue?'",
           "leaders": "When your team reports 'we're using AI,' ask the follow-up: 'and what measurable value did it produce this quarter?' That one question reframes the entire conversation.",
           "operations": "The 25% deeply transforming operations tied AI to specific process outcomes, not general productivity hopes. Look for that specificity in your own deployments.",
           "pm": "The gap between 'deployed' and 'delivering value' is a project scoping problem. Track value metrics from day one, not just adoption counts.",
-          "admin": "You see where processes actually run smoothly and where they don't. When someone asks why AI isn't delivering expected results, the answer usually lives in the workflow details you manage every day."
+          "admin": "You see where processes actually run smoothly and where they don't. When someone asks which AI investments are paying off, the answer usually lives in the workflow details you manage every day."
         },
         "challenge": {
           "steps": [
-            "Open a blank note and list 3 AI tools or features your team uses today — include anything from Copilot suggestions to automated reports.",
-            "For each one, write down: what it's supposed to improve, and whether anyone has measured the actual result.",
-            "Open your company-approved AI tool and paste this prompt: <em>\"I use these AI tools at work: [list your 3 tools and what each is supposed to do]. For each one, help me write a simple 'value check' — one specific, measurable question I could answer in 15 minutes to find out if the tool is actually delivering what we expected. No complicated metrics — just one honest question per tool.\"</em>",
-            "Share your favorite value-check question in the group — which one surprised you?"
+            "Open a blank note and list 3 AI tools or features your team uses today, including anything from Copilot suggestions to automated reports.",
+            "For each one, write down what it's supposed to improve, and whether anyone has measured the actual result.",
+            "Open your company-approved AI tool and paste this prompt: <em>\"I use these AI tools at work: [list your 3 tools and what each is supposed to do]. For each one, help me write a simple 'value check': one specific, measurable question I could answer in 15 minutes to find out if the tool is actually delivering what we expected. No complicated metrics, just one honest question per tool.\"</em>",
+            "Share your favorite value-check question in the group: which one surprised you?"
           ]
         }
       },
       {
-        "title": "AI is saving people time — but the time isn't turning into relief",
+        "title": "AI is giving workers real hours back every week, and that's new capacity to claim",
         "source_url": "https://finance.yahoo.com/technology/ai/articles/ai-saving-employees-time-employers-153100877.html",
-        "body": "Hubstaff's State of the Workweek report surveyed 1,068 full-time US employees and found a paradox: <em>76% of AI users save at least an hour a week — but 46% say their workload expectations have gone up since they started using AI.</em> Only 26% report taking on more work with the time they save. Where's the rest going? Largely invisible — absorbed into rising standards, more tasks, and what the researchers call the capacity gap. AI is delivering the hours. Organizations haven't figured out what to do with them.",
+        "body": "Hubstaff's State of the Workweek report surveyed 1,068 full-time US employees and found something worth noticing: <em>76% of AI users save at least an hour a week.</em> That's real, measurable capacity showing up across teams. Only 26% report deliberately taking on more work with that time, which means most of it is available to redirect. The organizations that name this capacity and plan where it goes will compound the gains fastest.",
         "slants": {
-          "strategy": "Time saved without a plan for how it's redeployed is just faster busywork. Build the capacity strategy before the AI rollout, not after.",
-          "leaders": "Ask your team where their saved time is going — not as an audit, but as a genuine design question. The answer tells you whether AI is working for them or just raising the bar.",
-          "operations": "If your team's AI tools save an hour a week per person, that's real capacity. Map it. Protect it. Decide deliberately where it goes before rising expectations absorb it.",
-          "pm": "Track 'time freed by AI' as a project resource, the same way you'd track budget. If nobody claims it, it disappears into scope creep.",
-          "admin": "When the pace picks up and nobody acknowledges why, it's easy to feel behind. This data says the pace is rising precisely because AI made things faster — and recognizing that is the first step to managing it."
+          "strategy": "Time saved by AI is new capacity. Build the plan for where it goes before the rollout, not after, and the investment pays off twice.",
+          "leaders": "Ask your team where their saved time is going, not as an audit, but as a genuine design question. The answer tells you where to direct the next round of investment.",
+          "operations": "If your team's AI tools save an hour a week per person, that's real capacity. Map it. Protect it. Decide deliberately where it goes so it compounds.",
+          "pm": "Track 'time freed by AI' as a project resource, the same way you'd track budget. Claiming it early keeps it from disappearing into scope creep.",
+          "admin": "The pace at work is picking up because AI is making things faster. Recognizing that pattern gives you the language to advocate for how the freed-up time should be invested."
         },
         "challenge": {
           "steps": [
-            "Think about the AI tools you use at work. Estimate how much time they save you in a typical week — be honest, even if it's just 30 minutes.",
-            "Now think about what happens to that time. Did you take on new tasks? Get more done? Or did expectations just quietly rise?",
-            "Open your company-approved AI tool and paste this prompt: <em>\"I estimate AI saves me about [X] minutes per week at work. Right now, that time is mostly going to [describe: more tasks, higher quality work, catching up, unclear]. Help me write a brief 'time savings plan' — a one-paragraph statement I could share with my manager about how I'd like to reinvest that time for the highest impact. Keep it professional and specific.\"</em>",
-            "Share your time savings plan in the group — did writing it change how you think about the time AI frees up?"
+            "Think about the AI tools you use at work. Estimate how much time they save you in a typical week, even if it's just 30 minutes.",
+            "Now think about what happens to that time. Did you take on new tasks? Produce higher quality work? Or is it still unclaimed?",
+            "Open your company-approved AI tool and paste this prompt: <em>\"I estimate AI saves me about [X] minutes per week at work. Right now, that time is mostly going to [describe: more tasks, higher quality work, catching up, unclear]. Help me write a brief 'time savings plan': a one-paragraph statement I could share with my manager about how I'd like to reinvest that time for the highest impact. Keep it professional and specific.\"</em>",
+            "Share your time savings plan in the group: did writing it change how you think about the time AI frees up?"
           ]
         }
       },
       {
-        "title": "The AI infrastructure build-out just hit a supply constraint — and that changes timelines",
+        "title": "AI infrastructure investment just passed $170 billion as the supply chain scales up",
         "source_url": "https://www.cnbc.com/2026/10/29/microsoft-google-ai-capex-estimates.html",
-        "body": "Microsoft and Google both reported AI infrastructure spending below analyst expectations this week. Microsoft trimmed its annual forecast from $175 billion to $170 billion, with CFO Amy Hood pointing to <em>delays from third-party GPU suppliers that push available capacity into the first half of 2027</em>. Google held its spending range steady but also came in under estimates. The AI build-out isn't slowing down — it's running into the physical reality that chips, power, and data centers take time to arrive.",
+        "body": "Microsoft and Google both reported AI infrastructure spending this week at historic levels. Microsoft's full-year investment stands at $170 billion; Google held its range at $195 to $205 billion. Microsoft CFO Amy Hood noted that <em>additional GPU capacity from suppliers will come online in the first half of 2027</em>, extending the build-out timeline. At a combined $365+ billion, the infrastructure behind every enterprise AI tool is being built at a scale that signals long-term commitment.",
         "slants": {
-          "strategy": "If your AI roadmap depends on new cloud capabilities, factor in supply-side timing. The tools are coming — but 'when' matters as much as 'what' for planning purposes.",
-          "leaders": "When your team says an AI capability 'should be available soon,' ask what's behind that timeline. Supply constraints at the infrastructure layer ripple into every product roadmap that depends on it.",
-          "operations": "Capacity planning for AI workloads now includes a new variable: whether the infrastructure exists when you need it. Plan for delays the same way you plan for any supply chain uncertainty.",
-          "pm": "AI project timelines that depend on new platform features should include a buffer for infrastructure delays. A $5 billion trim at Microsoft's level shows these aren't small adjustments.",
-          "admin": "When AI rollout timelines shift and nobody explains why, the answer is increasingly upstream: physical infrastructure is catching up to ambition. Understanding that context helps you communicate timeline changes clearly."
+          "strategy": "If your AI roadmap depends on new cloud capabilities, factor in supply-side timing. The tools are coming, and 'when' matters as much as 'what' for planning purposes.",
+          "leaders": "When your team says an AI capability 'should be available soon,' ask what's behind that timeline. Understanding the infrastructure build-out helps you set realistic expectations and plan around them.",
+          "operations": "Capacity planning for AI workloads now includes a new factor: the pace of infrastructure scaling. The good news is the investment signals strong commitment from the platforms your team relies on.",
+          "pm": "AI project timelines that depend on new platform features benefit from a buffer for infrastructure scaling. A $170 billion annual commitment shows the investment is real and growing.",
+          "admin": "When AI rollout timelines shift, the reason is often upstream: physical infrastructure is scaling to match demand. Understanding that context helps you communicate timeline updates clearly."
         },
         "challenge": {
           "steps": [
-            "Think about one AI tool or capability your team is waiting for — or one that's been slower to roll out than expected.",
-            "Open your company-approved AI tool and paste this prompt: <em>\"My team is planning to use [AI tool or capability] by [target date]. Help me identify 3 things outside our control that could delay this — think about platform availability, infrastructure readiness, vendor timelines, and integration dependencies. For each risk, suggest one practical thing we can do now to reduce the impact if it happens.\"</em>",
-            "Review the risks and check: does your current project plan account for any of them?",
-            "Share in the group: what's one AI-related delay risk your team hasn't planned for yet?"
+            "Think about one AI tool or capability your team is looking forward to, or one that's been slower to arrive than expected.",
+            "Open your company-approved AI tool and paste this prompt: <em>\"My team is planning to use [AI tool or capability] by [target date]. Help me identify 3 things outside our control that could affect the timeline, such as platform availability, infrastructure readiness, vendor schedules, and integration dependencies. For each one, suggest a practical step we can take now to stay on track regardless.\"</em>",
+            "Review the suggestions and check: does your current project plan already account for any of them?",
+            "Share in the group: what's one practical step you can take now to keep your AI timeline on track?"
           ]
         }
       }
     ],
     "homework": {
-      "title": "Friday evening, easy mode — let AI build you the perfect drink from what's already in your kitchen.",
-      "body": "No recipe book, no bar cart inventory required. Just tell AI what you have — the lonely bottle of bourbon, the sparkling water, the citrus in the fruit bowl, the random liqueur from two holidays ago — and let it work backward to something worth sipping. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
-      "prompt": "\"Here's what I have to work with: [list what's in your kitchen — spirits, mixers, juices, herbs, fruit, sparkling water, anything]. I'm in the mood for something [sweet / tart / refreshing / warming / adventurous — pick one]. Give me 3 drink options ranked by how good they'll taste with what I actually have on hand. For each one, give me the recipe, a name you made up for it, and a one-sentence reason it works. If I'm missing one ingredient that would make a big difference, tell me — but only one.\"<br><br>The technique: <em>ranked options with a constraint</em>. Instead of asking AI for a single recommendation (which gives you no comparison), you asked for multiple options ranked by a specific criterion — in this case, taste quality given your actual ingredients. You can use this pattern anywhere: 'give me 3 meal options ranked by prep time,' '3 weekend trip ideas ranked by driving distance,' or '3 ways to reorganize this room ranked by cost.' Ranking forces the AI to evaluate trade-offs, not just list ideas."
+      "title": "Friday night, people coming over? Let AI build a trivia game that actually fits your crowd.",
+      "body": "Generic trivia is fine, but trivia designed for your specific group is way more fun. The secret: tell AI who's playing and what they're into, and it builds rounds that give everyone a shot at winning. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
+      "prompt": "\"I'm hosting trivia for [number] people. Here's what I know about them: [e.g., 'two sports fans, one history buff, a couple who watches every reality show, and my aunt who knows every song from the '80s']. Build me 3 rounds of 5 questions each. Each round should include at least one question that plays to each person's strengths, so everyone gets a moment. Mix the difficulty so nobody runs away with it. Format it so I can read the questions aloud, with answers on a separate line I can reveal.\"<br><br>The technique: <em>audience specification</em>. Instead of asking for generic output ('give me trivia questions'), you described the specific people who'll use it. AI went from writing for nobody in particular to writing for your actual group. You can apply this everywhere: need a presentation? Describe the audience's background. Writing talking points? Describe who you're talking to. The more AI knows about who's on the receiving end, the more useful the result."
     }
   },
   "2026-10-29": {
