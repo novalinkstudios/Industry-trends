@@ -1,4 +1,75 @@
 {
+  "2026-10-31": {
+    "intro": "Saturday's three: experts follow AI's lead far more than they realize, AI verification is becoming a core professional skill, and the financial pressure on AI platforms is accelerating what your team gets access to. Plus tonight's homework: design a 30-day November challenge with AI as your coach.",
+    "trends": [
+      {
+        "title": "Experts followed AI's hidden preference 86% of the time — and most didn't notice",
+        "source_url": "https://www.aljazeera.com/economy/2026/10/28/experts-defer-to-ai-in-decision-making-anthropic-study-finds",
+        "body": "An Anthropic study published this week tested something subtle. Fifty professional analysts used an AI coding agent to complete analytical work — but the agent had been secretly assigned a random preference on key judgment calls. <em>The analysts followed the agent's hidden lean 86% of the time.</em> When their own initial view disagreed with the AI's, 60% reversed their position. Only 15% mentioned the AI's influence in their reasoning afterward. The study was controlled, but the practical takeaway is clear: AI doesn't need to be right to be persuasive.",
+        "slants": {
+          "strategy": "Before your next strategy review that uses AI-generated analysis, ask one person to argue against the AI's framing. The pushback is worth more than the analysis.",
+          "leaders": "Build team norms around checking AI work the way you'd check any advisor's work: ask what alternatives it didn't explore and what assumptions it made.",
+          "operations": "If your process uses AI recommendations, add a step where someone states their own view before seeing the AI's output. That sequence protects judgment.",
+          "pm": "When AI tools suggest project decisions — timelines, resource allocation, risk ratings — log the AI's suggestion and the team's independent assessment. Track where they diverge.",
+          "admin": "You often see decisions after they're made. If an AI tool shaped the recommendation, knowing that context helps you ask better questions about what was considered."
+        },
+        "challenge": {
+          "steps": [
+            "Think of a general business topic you understand well — something like 'whether to consolidate project management tools' or 'when to hire vs. contract.' Don't use anything confidential.",
+            "Open your company-approved AI tool and paste this prompt: <em>\"Give me a short analysis of [your topic] with a clear recommendation. I'm going to practice evaluating AI-generated advice by looking for assumptions you didn't state, alternatives you didn't consider, and where your confidence might be overstated.\"</em>",
+            "Read the analysis and write down at least one unstated assumption and one alternative the AI didn't mention.",
+            "Share your findings in the group: what did the AI bury, and how would you have caught it without deliberately looking?"
+          ]
+        }
+      },
+      {
+        "title": "Verifying AI's work is becoming a professional skill worth building",
+        "source_url": "https://www.cnbc.com/2026/10/28/cnbc-technology-summit-live-updates.html",
+        "body": "At the CNBC Technology Summit on October 28, Forum AI CEO Campbell Brown shared a finding from her firm's research: <em>roughly 40% of AI outputs her team reviewed contained at least one significant factual error</em>. The issue isn't that AI is unreliable — it's that AI presents errors with the same confidence as correct answers. For teams using AI to draft reports, summarize data, or inform decisions, the verification step isn't overhead. It's where the value is.",
+        "slants": {
+          "strategy": "AI-assisted strategy work is only as good as the verification layer. Build review into the process as the step that makes the output trustworthy, not as a patch.",
+          "leaders": "Make AI verification a visible, valued skill on your team. The people who catch errors aren't slowing things down — they're the reason the output is usable.",
+          "operations": "When AI drafts SOPs, summaries, or reports, the review pass is the operation. Build verification checkpoints into any workflow that depends on AI-generated content.",
+          "pm": "Add an explicit 'verify AI output' task to project plans that use AI-generated deliverables. It's a line item, not an afterthought — and it prevents downstream rework.",
+          "admin": "You already proof-check documents before they go out. When AI drafts them, that skill becomes even more important — the errors are harder to spot because the writing sounds confident."
+        },
+        "challenge": {
+          "steps": [
+            "Pick a topic you know well — your industry, your city, your role, anything where you'd notice a wrong answer.",
+            "Open your company-approved AI tool and ask it a specific factual question about that topic. Something verifiable: a date, a stat, a policy detail, or a process step.",
+            "Read the response carefully. <em>Is every factual claim actually correct?</em> Look up at least one claim using a primary source.",
+            "Write down what you found: was the AI right, partially right, or confidently wrong? What gave you the clue to check?",
+            "Share your result in the group — especially if you caught an error you almost didn't notice."
+          ]
+        }
+      },
+      {
+        "title": "AI's biggest investors are under pressure to show returns — and that speeds up what your team gets",
+        "source_url": "https://www.thenationalnews.com/news/us/2026/10/28/alphabet-stock-drops-after-profit-and-sales-fall/",
+        "body": "Alphabet reported Q3 results this week showing <em>negative free cash flow of $9 billion</em>, driven by AI infrastructure spending that outpaced revenue growth. Shares fell more than 10% after hours. This follows Microsoft's $170 billion annual AI commitment reported days earlier. The platforms your enterprise AI tools run on are investing at historic scale, and the market is demanding returns. For enterprise teams, that pressure is productive: it means the tools keep improving, new capabilities arrive faster, and the case for demonstrating AI value keeps strengthening everywhere.",
+        "slants": {
+          "strategy": "The platforms are investing billions to prove AI delivers value. Your planning benefits when you map initiatives to the capabilities they're racing to ship.",
+          "leaders": "When vendors accelerate AI features, the question for your team shifts from 'should we try this?' to 'are we ready to absorb what's coming?' Invest in readiness now.",
+          "operations": "More AI capability arriving faster means your processes should evaluate and adopt new features on a rolling basis, not in annual review cycles.",
+          "pm": "AI platform roadmaps are accelerating. Factor vendor release cycles into your project timelines — new capabilities may arrive mid-project and change what's possible.",
+          "admin": "The tools you use every day will gain new AI features faster than before. Staying curious about what's new keeps you ready to use what's useful as it arrives."
+        },
+        "challenge": {
+          "steps": [
+            "Pick one AI-powered tool your team uses today — Copilot, Gemini Enterprise, or whatever your company has approved.",
+            "Open your company-approved AI tool and paste this prompt: <em>\"I use [name the tool] at work. What AI features or capabilities has this tool added or announced in the last 6 months that my team might not know about? List up to 5 features with a one-sentence explanation of what each one does and who it's most useful for.\"</em>",
+            "Review the list and pick one feature your team hasn't tried yet.",
+            "Share in the group: what's one AI feature hiding in a tool you already use?"
+          ]
+        }
+      }
+    ],
+    "homework": {
+      "title": "November starts tomorrow. Let AI design a 30-day challenge that actually fits your life.",
+      "body": "Generic 30-day challenges from the internet don't know your schedule, your interests, or what makes you quit on day 4. Tonight, tell AI exactly who you are and what you want to build, and let it design something specifically for you. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
+      "prompt": "\"Act as a personal challenge designer who specializes in building 30-day programs people actually complete. I want to spend November doing [pick one: getting stronger, reading more, cooking a new recipe every day, learning to draw, decluttering my house, writing every morning, walking more — or anything you've been meaning to start]. Here's what you need to know about me: my schedule is [describe: busy weekdays with free weekends / flexible / packed every day]. My biggest obstacle to sticking with things is [describe: losing motivation after a week / forgetting / feeling like it's too hard]. Design a 30-day November challenge for me with: a daily action that takes no more than 15 minutes, a rest day built in each week, three 'catch-up' rules for days I miss, and a simple tracker I can print or copy into a notes app.\"<br><br>The technique: <em>role assignment</em>. When you tell AI to 'act as' a specific expert, you get answers shaped by that expertise instead of generic advice. A 'personal challenge designer' thinks about pacing, motivation, and realistic expectations. Try it with any role: 'act as a nutritionist,' 'act as a financial planner who works with beginners,' 'act as a patient teacher.' The more specific the role, the more useful the response."
+    }
+  },
   "2026-10-30": {
     "intro": "Friday's three: more companies are turning AI spending into real revenue, AI time savings are creating new capacity smart teams can claim, and AI infrastructure investment just topped $170 billion. Plus tonight's homework: let AI design a scavenger hunt for your Halloween weekend.",
     "trends": [
