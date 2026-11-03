@@ -1,6 +1,6 @@
 {
   "2026-11-03": {
-    "intro": "Tuesday's three: Gartner says AI strategy miscalculation just became a top-five enterprise risk, Cisco is testing whether a tiny team with unlimited AI tokens can rewrite 98% of its legacy code, and enterprise leaders are still spending on AI — but now they want proof it works. Plus tonight's homework: build a winter reading list with AI as your librarian.",
+    "intro": "Tuesday's three: Gartner says AI strategy miscalculation just became a top-five enterprise risk, Cisco is testing whether a tiny team with unlimited AI tokens can rewrite 98% of its legacy code, and enterprise leaders are still spending on AI — but now they want proof it works. Plus tonight's homework: Thanksgiving is three weeks out — let AI help you write a toast you'll actually want to give.",
     "trends": [
       {
         "title": "AI strategy miscalculation just entered Gartner's top-five enterprise risks",
@@ -64,9 +64,9 @@
       }
     ],
     "homework": {
-      "title": "Winter's coming. Tonight, let AI build you a reading list that actually fits your life.",
-      "body": "Most reading lists are built by someone who doesn't know you — your schedule, your mood, what you're dealing with right now. Tonight, give AI the real context and let it curate something personal. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
-      "prompt": "\"I want to read more this winter but I'm realistic about my time. Here's what I've got: I can read about [estimated minutes] per day, usually [when — before bed, on the train, during lunch]. I tend to enjoy [genres, topics, or vibes — e.g., 'nonfiction that reads like a story,' 'thrillers that move fast,' 'something that makes me think without being heavy']. The last book I really loved was [title or description]. Build me a 5-book winter reading list. For each book, tell me: the title and author, one sentence on why it fits what I described, roughly how long it takes to read at my pace, and whether it's available as an audiobook. Then rank them by which one I should start with and explain your reasoning.\"<br><br>The technique: <em>reasoned recommendations</em>. Instead of just asking for a list, you asked AI to explain <em>why</em> it picked each item and <em>why</em> it ranked them in that order. When AI has to justify its choices, you can evaluate the reasoning — not just the output. This works any time you ask for recommendations: restaurants, tools, approaches. Always ask for the why."
+      "title": "Thanksgiving is three weeks out. Tonight, let AI help you write a toast you'll actually want to give.",
+      "body": "Most toasts fall flat because they're generic. The fix is telling AI exactly who's in the room and what you want them to feel. Tonight, get ahead of the holiday and draft something real. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
+      "prompt": "\"I'm giving a short toast at [Thanksgiving dinner / a family gathering / a friendsgiving / a work holiday lunch]. The group is [describe who — e.g., 'my partner's family, about 12 people, I don't know everyone well' or 'close friends, 6 of us, we've done this every year']. The vibe I want is [warm and sincere / funny but heartfelt / short and simple / a little emotional]. One thing that happened this year that I'd like to acknowledge: [a milestone, a loss, a shared experience, or just 'it's been a tough year and we made it']. Write me a toast that's 60–90 seconds when spoken aloud. Make it sound like me, not like a greeting card. Flag any line that might not land with this specific group and suggest a swap.\"<br><br>The technique: <em>audience-aware framing</em>. Instead of asking for a generic toast, you described your specific audience — who they are, how well you know them, what the room feels like. When AI knows who's listening, it adjusts the tone, the references, and the risk level of every line. This works any time you're writing for a specific group: a presentation, a thank-you note, a team announcement. Always tell AI who's in the room."
     }
   },
   "2026-11-02": {
