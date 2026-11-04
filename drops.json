@@ -1,9 +1,9 @@
 {
   "2026-11-04": {
-    "intro": "Wednesday's three: data platforms are building the control plane for AI agents, AI-generated political ads just topped $137 million with most carrying no label, and the EU AI Act is turning content provenance into a shipping deadline starting this week. Plus tonight's homework: let AI decode a confusing bill you've been ignoring.",
+    "intro": "Wednesday's three: data platforms are building the trust layer that makes AI agents safe to deploy, organizations labeling AI-assisted work early are earning a lasting credibility edge, and AI watermarking is becoming built-in infrastructure with early adopters already ahead. Plus tonight's homework: let AI help you build a custom trivia game for your next gathering.",
     "trends": [
       {
-        "title": "Data platforms are racing to become the command center for enterprise AI agents",
+        "title": "Enterprise data platforms are building the trust layer that makes AI agents safe to scale",
         "source_url": "https://www.hpcwire.com/bigdatawire/2026/11/03/who-controls-enterprise-ai-agents-data-platform-vendors-race-to-provide-the-answer/",
         "body": "BigDATAwire reports that Snowflake, Databricks, and SAP are all building agent control planes into their existing data governance catalogs. The question driving enterprise AI strategy has shifted: it's no longer <em>\"what data can AI access?\"</em> but <em>\"what actions can AI agents take on their own?\"</em> The companies that already own your data layer want to own your agent layer too, with identity, permissions, and audit trails that give leadership a clear line of sight into what agents are doing.",
         "slants": {
@@ -23,7 +23,7 @@
         }
       },
       {
-        "title": "AI content reached $137 million in political ads, and content verification just became everyone's business",
+        "title": "Organizations labeling AI-assisted work now are building the credibility edge that lasts",
         "source_url": "https://www.cnbc.com/2026/11/03/ai-generated-slopaganda-in-political-ads-puts-platforms-on-alert.html",
         "body": "CNBC reports that researchers tracked more than 220 AI-generated or AI-enhanced political ads in the 2026 midterms, with total spending topping <em>$137 million, up from under $50,000 in 2024</em>. Roughly 73% carried no AI disclosure label, and there's still no federal law requiring one. The lesson extends well past politics: when AI-generated content scales faster than the systems meant to verify it, <em>the ability to evaluate what you're reading becomes a core professional skill</em>.",
         "slants": {
@@ -43,7 +43,7 @@
         }
       },
       {
-        "title": "Content provenance is becoming standard infrastructure, and the first watermarking deadlines land this week",
+        "title": "AI watermarking is becoming built-in infrastructure, giving early adopters a compliance head start",
         "source_url": "https://runtimewire.com/article/spacexsi-grok-api-text-watermarking-november-7",
         "body": "Starting November 7, xAI will add invisible statistical watermarks to all Grok API text output by default, a move driven by the <em>EU AI Act's December 2 compliance deadline</em> for generative AI systems. xAI had previously declined to watermark text; Anthropic already watermarks Claude output globally. The pattern is clear: tracking whether AI produced something is moving from optional to <em>standard infrastructure</em>. Organizations thinking about internal content provenance now, even informally, will be better positioned when their industry's version of this requirement arrives.",
         "slants": {
@@ -65,9 +65,9 @@
       }
     ],
     "homework": {
-      "title": "Got a confusing bill sitting in your inbox? Tonight, let AI decode it line by line.",
-      "body": "Medical bills, insurance explanations, utility breakdowns, phone plans with mystery charges. We all have at least one bill we've glanced at and thought <em>I'll figure that out later</em>. Tonight, grab one. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
-      "prompt": "\"I'm going to paste a bill (or a summary of it). Go through it line by line and explain each charge in plain language. Flag anything that looks unusual, duplicated, or higher than typical. Then give me a numbered list of questions I should call and ask about, starting with the one most likely to save me money. If anything is missing from the bill that should be there, tell me that too.\"<br><br>The technique: <em>line-by-line breakdown prompting</em>. Instead of asking for a general summary, you're telling the AI exactly how to walk through the document: one item at a time, with a specific action (flag and question) for each. This works for any dense document you need to decode: lease agreements, insurance policies, tax notices, subscription invoices. Redact any account numbers or personal info before pasting."
+      "title": "Tonight, let AI help you build a custom trivia game you can actually play this weekend.",
+      "body": "Everyone loves trivia, but generic questions get stale fast. The secret is making it personal: questions about topics your group actually cares about, at difficulty levels that keep everyone in the game. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
+      "prompt": "\"I'm hosting a trivia night for [describe your group: e.g., 'my family including kids ages 8-14,' 'my college friends who love 90s pop culture,' 'my neighbors who are big foodies']. Build me a 3-round trivia game with 5 questions per round. For each question, give me three versions: easy (anyone could guess), medium (you'd know it if you're paying attention), and hard (only a real fan would get this). Make Round 1 about [topic they love], Round 2 about [another topic], and Round 3 a lightning round mixing both. Include the answers separately at the end so I can print them on a different page.\"<br><br>The technique: <em>tiered difficulty prompting</em>. Instead of asking for one flat list, you're telling the AI to generate each item at multiple difficulty levels. This gives you options: you can pick the version that fits your crowd, mix levels to keep things fair, or use the tiers as hints. This works for any content where one size doesn't fit all: study guides, workout progressions, recipe variations, conversation starters by comfort level."
     }
   },
   "2026-11-03": {
