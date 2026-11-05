@@ -1,9 +1,9 @@
 {
   "2026-11-05": {
-    "intro": "Thursday's three: AI agents now consume 80% of enterprise tokens and most budgets didn't see it coming, OpenAI's security agents found 948 Linux kernel vulnerabilities in 10 days, and Meta's latest acquisition signals that orchestrating teams of AI agents is becoming standard workflow. Plus tonight's homework: build a winter reading list that actually matches how you read.",
+    "intro": "Thursday's three: AI agents are now doing 80% of enterprise AI work and the investment is following, AI-powered security scanning just made the Linux kernel measurably safer in 10 days, and multi-agent orchestration is going mainstream with Meta's latest acquisition. Plus tonight's homework: build a winter reading list that actually matches how you read.",
     "trends": [
       {
-        "title": "AI agents are consuming 80% of enterprise tokens, and most budgets didn't see it coming",
+        "title": "AI agents are now doing 80% of enterprise AI work, and the investment data shows why",
         "source_url": "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/",
         "body": "Menlo Ventures' 2026 State of Enterprise AI report, released this week from a survey of nearly 400 U.S. enterprise decision-makers, found a shift most planning teams missed: <em>autonomous AI agents now consume 80% of token usage</em> on platforms built for model interaction, and enterprises are spending roughly 2.5 times their planned AI budgets as a result. Total enterprise AI spending hit $176.8 billion by September — up 5.4x from last year. The overruns aren't waste. They're a signal that agents are doing more work than anyone forecasted.",
         "slants": {
@@ -23,7 +23,7 @@
         }
       },
       {
-        "title": "OpenAI's security agents found 948 Linux kernel vulnerabilities in 10 days",
+        "title": "AI-powered security scanning just made the Linux kernel measurably safer in 10 days",
         "source_url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
         "body": "OpenAI published results this week from an autonomous security pipeline that analyzed the Linux kernel. In a single run, the agents identified 2,308 candidates, reproduced 1,724 vulnerabilities, and produced <em>948 working privilege-escalation exploits — including 10 attack techniques kernel experts hadn't seen before</em>. The cost: $1.2 million in API credits, about $1,279 per exploit. Hundreds of patches have already been sent to Linux maintainers. AI isn't replacing security teams. It's giving defenders a tool that works at a scale no human team could match.",
         "slants": {
@@ -43,7 +43,7 @@
         }
       },
       {
-        "title": "Meta's Conductor acquisition signals that orchestrating teams of AI agents is becoming standard workflow",
+        "title": "Multi-agent orchestration is going mainstream — Meta just acquired the startup leading it",
         "source_url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
         "body": "Meta acquired Conductor on Tuesday, a Y Combinator-backed startup whose platform lets engineers <em>run multiple AI agents in parallel, each in its own isolated workspace</em>, then review and merge their output. The same day, OpenAI announced plans to acquire Pierre Computer, another developer tools startup. The pattern matters beyond engineering: the next wave of AI productivity isn't one chatbot doing one task. It's coordinated teams of agents working simultaneously on different pieces of the same problem — with a human reviewing the results.",
         "slants": {
