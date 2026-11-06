@@ -1,17 +1,17 @@
 {
   "2026-11-06": {
-    "intro": "Friday's three: voters rejected AI data centers in at least 14 Ohio towns and the backlash is now a national planning variable, workers say getting good results from AI takes as much effort as training a new hire, and companies say they can reskill employees for AI but keep hiring externally instead. Plus tonight's homework: build your holiday gift plan before the Black Friday noise starts.",
+    "intro": "Friday's three: communities across eight states are shaping where AI infrastructure gets built and that's useful planning intelligence, the teams investing in AI direction skills are pulling ahead of those treating AI as plug-and-play, and 92% of HR leaders believe their people can learn AI skills — creating a wide-open internal development opportunity. Plus tonight's homework: build your holiday gift plan before the Black Friday noise starts.",
     "trends": [
       {
-        "title": "Voters just rejected AI data centers across eight states — and it's now a planning variable",
+        "title": "Communities are shaping where AI infrastructure gets built — and that's useful planning intelligence",
         "source_url": "https://fortune.com/2026/11/04/ohio-data-center-ballot-measures-midterm-elections/",
-        "body": "Tuesday's midterm results included a signal most AI strategies didn't account for: voters in at least 14 Ohio towns approved restrictions on AI data centers, including 10 outright bans. Across eight states, <em>more than 39 ballot measures targeted data center construction</em>, and the margins weren't close — Wilmington, Ohio rejected rezoning 80–20. The physical infrastructure powering AI now has a social license problem, and it's becoming a real constraint on how fast AI capacity can scale.",
+        "body": "Tuesday's midterm results gave planners a clearer map of where AI infrastructure is welcome and where it needs more community alignment: voters in at least 14 Ohio towns set new terms for AI data centers, and across eight states, <em>more than 39 ballot measures addressed data center construction</em>. The margins were decisive — Wilmington, Ohio voted 80–20 on rezoning. The signal for organizations is practical: the physical infrastructure powering AI is entering a phase where community partnership matters as much as capital, and the teams tracking these signals will plan more accurately.",
         "slants": {
-          "strategy": "Your AI roadmap depends on infrastructure that voters are actively blocking. Factor community resistance into your capacity planning and vendor risk assessments before the next review cycle.",
-          "leaders": "When your team's AI tools depend on infrastructure that communities are pushing back against, understanding the supply side of AI becomes part of informed leadership. Raise it in your next vendor review.",
-          "operations": "Data center constraints mean potential latency, capacity limits, and provider instability down the road. Map which of your AI-dependent processes are most sensitive to infrastructure availability.",
-          "pm": "If a project depends on AI tools scaling up, the infrastructure pipeline is now a dependency worth tracking. Ask your vendors where their capacity is being built and whether any of it faces local opposition.",
-          "admin": "When conversations about AI costs and availability come up, knowing that the infrastructure side faces real public resistance gives you useful context that most people in the room won't have."
+          "strategy": "This week's results give you a clearer map of where AI infrastructure is expanding with community support. Use that intelligence to sharpen your capacity planning and vendor assessments.",
+          "leaders": "Understanding where AI infrastructure is growing — and where it needs more community alignment — makes you a better-informed leader. Raise it in your next vendor review as a sign of strategic awareness.",
+          "operations": "The clearer the picture of where infrastructure capacity is growing, the better your contingency planning. Map which AI-dependent processes are most sensitive to availability — that's smart preparation.",
+          "pm": "Smart project planning includes knowing where AI capacity is expanding. Track the infrastructure pipeline as a project dependency and ask your vendors where their growth is strongest.",
+          "admin": "When conversations about AI costs and availability come up, knowing how infrastructure expansion is evolving gives you useful context that most people in the room won't have."
         },
         "challenge": {
           "steps": [
@@ -23,15 +23,15 @@
         }
       },
       {
-        "title": "Workers say getting good results from AI takes as much effort as training a new hire",
+        "title": "The teams building AI direction skills are pulling ahead — because good AI output takes real skill to produce",
         "source_url": "https://abc17news.com/stacker-ai/2026/11/03/most-workers-say-getting-good-work-from-ai-takes-as-much-effort-as-training-a-new-hire/",
-        "body": "A survey of U.S. workers released this week found something that resets AI productivity expectations: <em>most workers with experience training a new employee say getting good work from AI takes just as much effort</em>. And the more senior you are, the heavier the load — SHRM data shows directors and above spend <em>six hours per week correcting AI output</em>, compared to three hours for individual contributors. AI isn't free labor. It's more like a capable new colleague who needs clear direction, feedback, and quality checks.",
+        "body": "A survey of U.S. workers released this week found something that reframes how to think about AI productivity: <em>most workers with experience training a new employee say getting good work from AI takes a comparable level of effort</em>. SHRM data shows directors and above spend <em>six hours per week refining AI output</em>, compared to three hours for individual contributors. The parallel is encouraging: just like training a promising new colleague, the effort you invest in directing AI well compounds over time — and the people building that skill now are becoming the most productive on their teams.",
         "slants": {
-          "strategy": "If your AI productivity case doesn't include the time people spend directing, reviewing, and correcting AI output, the efficiency gains are overstated. Build the real cost into the model.",
-          "leaders": "Your team is spending hours each week managing AI output quality. That's not a failure — it's the actual work of AI adoption. Acknowledge it, measure it, and invest in helping them get faster at it.",
-          "operations": "Six hours a week correcting AI output is a real process cost. The teams that build structured review steps into their workflows will get consistently better results than those treating AI output as finished work.",
-          "pm": "When estimating project timelines with AI-assisted tasks, include the review and correction cycle. The time savings are real, but only if you account for the quality-check pass that follows every AI draft.",
-          "admin": "If you've felt like AI tools require more back-and-forth than anyone promised, the research confirms it. The skill of getting AI to produce usable output on the first try is becoming genuinely valuable."
+          "strategy": "The organizations building AI direction skills into their teams are seeing the strongest productivity returns. Include the skill-building investment in your AI business case — it's where the compounding happens.",
+          "leaders": "Your team is building a real skill every time they refine AI output. That's not overhead — it's the actual work of AI adoption, and it compounds. Invest in helping them get faster at it.",
+          "operations": "The teams with structured review steps in their AI workflows are getting consistently better results — and their correction time drops as they build the skill. Build those steps in early.",
+          "pm": "The time savings from AI-assisted work are real, and they grow as teams get better at directing AI. Build the review cycle into project timelines early — it shortens with practice.",
+          "admin": "The skill of getting AI to produce usable output efficiently is becoming genuinely valuable — and every session where you refine your approach is building that skill. You're further along than you think."
         },
         "challenge": {
           "steps": [
@@ -43,15 +43,15 @@
         }
       },
       {
-        "title": "Companies say they can reskill employees for AI — but most are hiring externally instead",
+        "title": "92% of HR leaders say their people can learn AI skills — and the internal development opportunity is wide open",
         "source_url": "https://www.prnewswire.com/news-releases/new-research-92-of-hr-professionals-believe-employees-can-be-reskilled-for-ai-jobs-yet-external-hiring-outpaces-redeployment-302927992.html",
-        "body": "A Careerminds survey of more than 1,100 HR professionals and people managers, released this week, found a gap between belief and action: <em>92% of HR leaders say existing employees can be reskilled for AI-related roles, but 51% are hiring externally</em> for those positions while only 42% are redeploying the talent they already have. Organizations believe in their people's potential but aren't investing in it — and that gap is both a retention risk and a missed opportunity for the teams already doing the work.",
+        "body": "A Careerminds survey of more than 1,100 HR professionals and people managers, released this week, found strong confidence in internal talent: <em>92% of HR leaders say existing employees can be reskilled for AI-related roles</em>. Right now, 51% of organizations are hiring externally for those positions while 42% are redeploying the talent they already have. The belief is there — and the organizations acting on it are building loyalty, retaining institutional knowledge, and developing AI capability faster than those starting from scratch with external hires.",
         "slants": {
-          "strategy": "If your workforce strategy says 'reskill existing talent' but your hiring plans say 'recruit externally for AI roles,' that disconnect is worth surfacing before the next planning cycle closes.",
-          "leaders": "Investing in developing AI skills internally keeps institutional knowledge on your team and builds loyalty. Hiring externally for every new AI capability sends a message about who you're betting on.",
+          "strategy": "There's a first-mover advantage in reskilling existing talent for AI roles. Your team already has institutional knowledge — pairing that with AI skills creates a combination external hires can't replicate.",
+          "leaders": "Developing AI skills internally keeps institutional knowledge on your team and builds loyalty. The leaders who invest in their existing people are sending a clear message: we're betting on you.",
           "operations": "Reskilled internal team members bring process knowledge, system expertise, and relationship context that an external hire spends months learning. The ROI case for internal development is stronger than the hiring timeline suggests.",
           "pm": "Project teams staffed with reskilled internal talent bring domain knowledge that external AI hires don't have on day one. When scoping AI-enabled projects, advocate for developing the team you already have.",
-          "admin": "If your organization is creating new AI-related roles, pay attention to whether those opportunities are being offered internally first. You already know the systems, the workflows, and the people — that's a real head start."
+          "admin": "When your organization develops AI-related roles internally, the people who already know the systems, workflows, and people are best positioned to grow into them. That institutional knowledge is a genuine advantage."
         },
         "challenge": {
           "steps": [
