@@ -1,4 +1,74 @@
 {
+  "2026-11-06": {
+    "intro": "Friday's three: voters rejected AI data centers in at least 14 Ohio towns and the backlash is now a national planning variable, workers say getting good results from AI takes as much effort as training a new hire, and companies say they can reskill employees for AI but keep hiring externally instead. Plus tonight's homework: build your holiday gift plan before the Black Friday noise starts.",
+    "trends": [
+      {
+        "title": "Voters just rejected AI data centers across eight states — and it's now a planning variable",
+        "source_url": "https://fortune.com/2026/11/04/ohio-data-center-ballot-measures-midterm-elections/",
+        "body": "Tuesday's midterm results included a signal most AI strategies didn't account for: voters in at least 14 Ohio towns approved restrictions on AI data centers, including 10 outright bans. Across eight states, <em>more than 39 ballot measures targeted data center construction</em>, and the margins weren't close — Wilmington, Ohio rejected rezoning 80–20. The physical infrastructure powering AI now has a social license problem, and it's becoming a real constraint on how fast AI capacity can scale.",
+        "slants": {
+          "strategy": "Your AI roadmap depends on infrastructure that voters are actively blocking. Factor community resistance into your capacity planning and vendor risk assessments before the next review cycle.",
+          "leaders": "When your team's AI tools depend on infrastructure that communities are pushing back against, understanding the supply side of AI becomes part of informed leadership. Raise it in your next vendor review.",
+          "operations": "Data center constraints mean potential latency, capacity limits, and provider instability down the road. Map which of your AI-dependent processes are most sensitive to infrastructure availability.",
+          "pm": "If a project depends on AI tools scaling up, the infrastructure pipeline is now a dependency worth tracking. Ask your vendors where their capacity is being built and whether any of it faces local opposition.",
+          "admin": "When conversations about AI costs and availability come up, knowing that the infrastructure side faces real public resistance gives you useful context that most people in the room won't have."
+        },
+        "challenge": {
+          "steps": [
+            "Think about the AI tools and cloud services your team relies on daily. You don't need to know the technical details — just which tools your team uses and how often.",
+            "Open your company-approved AI tool and paste this prompt: <em>\"My team uses AI tools for [describe 2–3 use cases]. Help me understand our dependency on AI infrastructure. Create a simple checklist: what questions should I ask our IT team or vendor about where our AI processing happens, what happens to our workflow if that capacity gets constrained or more expensive, whether we have flexibility in provider or region, and what early warning signs would tell us capacity is tightening. Keep it practical — assume I'm not an engineer.\"</em>",
+            "Review the checklist and identify the one question you've never thought to ask your IT team or vendor.",
+            "Share in the group: what did you learn about your team's infrastructure dependency, and which question would you ask first?"
+          ]
+        }
+      },
+      {
+        "title": "Workers say getting good results from AI takes as much effort as training a new hire",
+        "source_url": "https://abc17news.com/stacker-ai/2026/11/03/most-workers-say-getting-good-work-from-ai-takes-as-much-effort-as-training-a-new-hire/",
+        "body": "A survey of U.S. workers released this week found something that resets AI productivity expectations: <em>most workers with experience training a new employee say getting good work from AI takes just as much effort</em>. And the more senior you are, the heavier the load — SHRM data shows directors and above spend <em>six hours per week correcting AI output</em>, compared to three hours for individual contributors. AI isn't free labor. It's more like a capable new colleague who needs clear direction, feedback, and quality checks.",
+        "slants": {
+          "strategy": "If your AI productivity case doesn't include the time people spend directing, reviewing, and correcting AI output, the efficiency gains are overstated. Build the real cost into the model.",
+          "leaders": "Your team is spending hours each week managing AI output quality. That's not a failure — it's the actual work of AI adoption. Acknowledge it, measure it, and invest in helping them get faster at it.",
+          "operations": "Six hours a week correcting AI output is a real process cost. The teams that build structured review steps into their workflows will get consistently better results than those treating AI output as finished work.",
+          "pm": "When estimating project timelines with AI-assisted tasks, include the review and correction cycle. The time savings are real, but only if you account for the quality-check pass that follows every AI draft.",
+          "admin": "If you've felt like AI tools require more back-and-forth than anyone promised, the research confirms it. The skill of getting AI to produce usable output on the first try is becoming genuinely valuable."
+        },
+        "challenge": {
+          "steps": [
+            "Think about one task where you regularly use AI — drafting, summarizing, analyzing, or organizing. Roughly estimate how much time you spend reviewing or correcting the output each time. Don't share anything confidential.",
+            "Open your company-approved AI tool and paste this prompt: <em>\"I use AI to help with [describe your task]. I typically spend about [time estimate] reviewing and fixing the output. Help me build a 'quality briefing' I can give AI at the start of each session to reduce corrections. Include: the specific quality standards my output needs to meet, common mistakes AI makes on this kind of task, and one example of what 'good' looks like versus what I usually have to fix. Format it as a reusable prompt I can paste at the beginning of each session.\"</em>",
+            "Test the quality briefing on your next AI task and compare the correction time to your usual experience.",
+            "Share in the group: how much correction time did the quality briefing save, and what would you add to it?"
+          ]
+        }
+      },
+      {
+        "title": "Companies say they can reskill employees for AI — but most are hiring externally instead",
+        "source_url": "https://www.prnewswire.com/news-releases/new-research-92-of-hr-professionals-believe-employees-can-be-reskilled-for-ai-jobs-yet-external-hiring-outpaces-redeployment-302927992.html",
+        "body": "A Careerminds survey of more than 1,100 HR professionals and people managers, released this week, found a gap between belief and action: <em>92% of HR leaders say existing employees can be reskilled for AI-related roles, but 51% are hiring externally</em> for those positions while only 42% are redeploying the talent they already have. Organizations believe in their people's potential but aren't investing in it — and that gap is both a retention risk and a missed opportunity for the teams already doing the work.",
+        "slants": {
+          "strategy": "If your workforce strategy says 'reskill existing talent' but your hiring plans say 'recruit externally for AI roles,' that disconnect is worth surfacing before the next planning cycle closes.",
+          "leaders": "Investing in developing AI skills internally keeps institutional knowledge on your team and builds loyalty. Hiring externally for every new AI capability sends a message about who you're betting on.",
+          "operations": "Reskilled internal team members bring process knowledge, system expertise, and relationship context that an external hire spends months learning. The ROI case for internal development is stronger than the hiring timeline suggests.",
+          "pm": "Project teams staffed with reskilled internal talent bring domain knowledge that external AI hires don't have on day one. When scoping AI-enabled projects, advocate for developing the team you already have.",
+          "admin": "If your organization is creating new AI-related roles, pay attention to whether those opportunities are being offered internally first. You already know the systems, the workflows, and the people — that's a real head start."
+        },
+        "challenge": {
+          "steps": [
+            "Think about one skill or tool in your current work that didn't exist three years ago — AI-related or not. The point is that you've already adapted and learned something new on the job.",
+            "Open your company-approved AI tool and paste this prompt: <em>\"I work in [your role] and over the past few years I've learned [describe the new skill or tool]. Now I want to identify the next AI-adjacent skill that would make me more valuable in my current role — not a career change, just a practical addition. Suggest 3 skills I could develop, ranked by how directly they'd improve my daily work. For each, give me: the skill name, why it matters for someone in my role, and one free resource I could start in under 30 minutes.\"</em>",
+            "Pick one skill from the list and try the suggested resource this weekend.",
+            "Share in the group: what AI-adjacent skill are you starting with, and why did it rank highest for your role?"
+          ]
+        }
+      }
+    ],
+    "homework": {
+      "title": "Black Friday is three weeks out. Tonight, build a gift plan before the sales pressure starts.",
+      "body": "Holiday shopping goes sideways when discounts decide what you buy instead of the other way around. Tonight, get ahead of the noise: map out who you're buying for, what they'd actually want, and what you can spend — before a single sale email lands. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
+      "prompt": "\"I want to plan my holiday gifts before Black Friday so I'm shopping with a plan, not impulse-buying. Here are the people I'm buying for: [list first names and your relationship — e.g., 'Mom, sister, best friend, partner, two coworkers']. My total budget is around $[amount]. For each person, ask me one question that would help you suggest something they'd actually enjoy — their hobbies, something they've mentioned wanting, a problem they complain about, or a recent life change. After I answer all the questions, suggest two gift options per person: one that fits within budget and one creative alternative under $20. Rank each option by how personal it feels versus how practical it is. At the end, show me a budget breakdown so I can see if I'm on track before any sale starts.\"<br><br>The technique: <em>criteria-based ranking</em>. Instead of asking AI for generic gift ideas, you gave it your actual constraints and told it how to rank the options — personal versus practical, within budget versus creative alternative. When you tell AI what criteria to rank by, you make decisions faster because the structure is already there. This works for any choice with too many options: comparing apartments, picking a vacation, choosing a service provider, selecting a course. Always tell AI what to rank by, not just what to suggest."
+    }
+  },
   "2026-11-05": {
     "intro": "Thursday's three: AI agents are now doing 80% of enterprise AI work and the investment is following, AI-powered security scanning just made the Linux kernel measurably safer in 10 days, and multi-agent orchestration is going mainstream with Meta's latest acquisition. Plus tonight's homework: build a winter reading list that actually matches how you read.",
     "trends": [
