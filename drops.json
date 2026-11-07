@@ -1,4 +1,74 @@
 {
+  "2026-11-07": {
+    "intro": "Saturday's three: voters across the country rejected AI data centers in nearly 50 ballot measures this week — a signal that community trust now shapes AI infrastructure as much as engineering does, the Justice Department stood up its first dedicated AI enforcement unit, and Goldman Sachs and Apple are tightening who gets access to AI tools internally — less about restriction, more about building structure that works. Plus tonight's homework: let AI play bartender for your Saturday evening.",
+    "trends": [
+      {
+        "title": "Voters rejected AI data centers in nearly 50 ballot measures this week",
+        "source_url": "https://www.washingtonpost.com/technology/2026/11/04/voters-pass-over-20-ballot-measures-ban-or-restrict-data-centers/",
+        "body": "On Tuesday, voters across at least <em>10 states rejected or restricted data center developments in nearly 50 local ballot measures</em>. From Ohio to Florida, communities said no to facilities they see as noisy, water-hungry, and harmful to local quality of life — even when developers promised jobs and tax revenue. An NBC exit poll found 56% of voters called AI and data centers a major factor in their vote.",
+        "slants": {
+          "strategy": "Any AI roadmap that assumes infrastructure is a given now needs a community engagement chapter — the physical footprint of your strategy has a political cost.",
+          "leaders": "If your organization is planning AI infrastructure investments, make sure the teams behind them understand that community trust is now a prerequisite, not a nice-to-have.",
+          "operations": "Cloud and colocation planning just got more complicated — watch for capacity constraints and pricing shifts as available data center sites narrow.",
+          "pm": "Projects with data center dependencies need a regulatory and community risk line in the plan — approval timelines just became less predictable.",
+          "admin": "When leadership asks about AI infrastructure timelines, knowing that community pushback is reshaping the landscape gives you context most people in the room won't have."
+        },
+        "challenge": {
+          "steps": [
+            "Open your company-approved AI tool.",
+            "Paste this prompt: <em>\"I'm helping plan a project that depends on cloud computing resources. What are the top 5 risks I should flag for stakeholders — especially community, regulatory, and infrastructure risks? Give me one sentence per risk and one question I should ask our vendor about each.\"</em>",
+            "Read the response. Pick the one risk your current planning process doesn't account for.",
+            "Share that blind-spot risk in the group — what surprised you?"
+          ]
+        }
+      },
+      {
+        "title": "The Justice Department now has a dedicated AI enforcement unit",
+        "source_url": "https://www.govexec.com/technology/2026/11/department-justice-forms-ai-task-force/417075/",
+        "body": "On Wednesday, the DOJ announced its <em>Super Intelligence Task Force</em> — a unit dedicated to coordinating prosecution of AI misuse by state actors, criminal organizations, and corporations. Federal prosecutors must now notify the task force before initiating AI-related investigations. For any organization deploying AI, the message is clear: the governance gap between what AI can do and what the law enforces is closing faster than most planning cycles assume.",
+        "slants": {
+          "strategy": "AI governance just moved from a compliance checkbox to a strategic risk — if your AI roadmap doesn't include a legal review cadence, this week's announcement is your prompt to add one.",
+          "leaders": "Ask your legal and compliance teams one direct question this week: do we have a clear internal policy for how our teams use AI, and has it been reviewed in the last six months?",
+          "operations": "If your team uses AI in any workflow that touches customer data or automated decisions, make sure there's a documented audit trail — the enforcement infrastructure now exists to ask for one.",
+          "pm": "Add a compliance checkpoint to any AI-enabled project plan — the DOJ task force means 'we didn't know' is no longer a credible response if something goes wrong.",
+          "admin": "Knowing that a federal AI enforcement unit now exists gives you real context when leadership discusses AI risk — you can point to a specific, recent development most people haven't caught yet."
+        },
+        "challenge": {
+          "steps": [
+            "Think about one AI tool or workflow your team uses regularly.",
+            "Open your company-approved AI tool and paste this prompt: <em>\"My team uses an AI tool for [describe your use case]. What are three governance questions we should be able to answer about how we use it — covering data handling, decision auditing, and compliance? Keep each question to one sentence.\"</em>",
+            "Read the three questions. Honestly assess: could your team answer all three today?",
+            "Share the one question your team can't yet answer in the group — and what you'll do about it."
+          ]
+        }
+      },
+      {
+        "title": "Goldman Sachs and Apple are scoping AI tool access — and it's the smart move",
+        "source_url": "https://www.pymnts.com/news/artificial-intelligence/2026/goldman-sachs-bars-bankers-from-employing-some-ai-tools/",
+        "body": "Goldman Sachs limited advanced AI coding tools like Claude Code and GitHub Copilot to its engineering teams only — bankers and traders no longer have access. Apple, separately, <em>cut daily AI spending caps for some employees from $300 to $200</em>, with further reductions under discussion. These aren't anti-AI moves. They're organizations learning that <em>structured access produces better results than open access</em>.",
+        "slants": {
+          "strategy": "Unlimited AI access sounds progressive, but Goldman and Apple are showing that matching tools to roles is where the real value compounds — build that into your rollout plan.",
+          "leaders": "Instead of blanket AI rollouts, consider which tools fit which teams — and invest in the training that makes the match work. Goldman's approach is a practical model to study.",
+          "operations": "Structured AI access means fewer shadow-IT risks and more predictable costs — if your team doesn't have clear tool guidelines yet, these moves give you a template to start the conversation.",
+          "pm": "When planning an AI rollout, scope the tools to the roles. Goldman's approach — engineers get coding tools, others get different capabilities — is a practical framework for your own access plan.",
+          "admin": "If you're fielding questions about who gets access to what AI tools, Goldman and Apple just gave you a precedent: structured access isn't restriction — it's good organizational design."
+        },
+        "challenge": {
+          "steps": [
+            "Make a quick list of the AI tools available to your team right now — company-approved or otherwise.",
+            "Open your company-approved AI tool and paste this prompt: <em>\"Here are the AI tools my team currently has access to: [list them]. For a team that does [describe your function], which tools are the best fit for our actual work, which are overkill, and where are the gaps? Give me a one-line recommendation for each.\"</em>",
+            "Review the recommendations. Identify one tool that's underused or one gap you hadn't noticed.",
+            "Share your finding in the group — what's the one AI tool insight your team is missing?"
+          ]
+        }
+      }
+    ],
+    "homework": {
+      "title": "Saturday evening, no agenda. Let AI be your bartender tonight.",
+      "body": "Open your free tool of choice (ChatGPT, Claude, Gemini, or Perplexity) and try this prompt. It teaches you to ask AI to rank options by a criterion you care about — one of the most useful prompting habits for any decision:",
+      "prompt": "\"I want to make a drink tonight — could be a cocktail or a mocktail. I have [list what's in your fridge and cabinet, or say 'just common pantry stuff']. Give me 3 options ranked by how impressive they'd look to a guest, and for each one, tell me what makes it special and how long it takes.\"<br><br>The trick here: <em>ranked by [criterion]</em> forces AI to compare options against a standard you care about, instead of giving you a random list. Try swapping the criterion — ranked by easiest, by most unusual, by fewest ingredients — and watch how the recommendations shift."
+    }
+  },
   "2026-11-06": {
     "intro": "Friday's three: enterprise AI governance tools just attracted nearly $500 million in investment — a signal for planners that the trust infrastructure is catching up to the technology, the teams building AI direction skills are pulling ahead because good output takes real skill to produce, and 92% of HR leaders say their people can learn AI skills — and the internal development opportunity is wide open. Plus tonight's homework: build your holiday gift plan before the Black Friday noise starts.",
     "trends": [
