@@ -1,9 +1,9 @@
 {
   "2026-11-13": {
-    "intro": "Friday's three: a survey of 2,000 executives puts a number on the gap between deploying AI agents and proving they pay off — and it's bigger than most expect. United Airlines just drew the first major boundary around AI agent access, and every organization will face this question soon. And the world's largest chipmaker made a billion-dollar bet that AI is permanent infrastructure. Tonight's homework: let AI take the stress out of holiday gift planning.",
+    "intro": "Friday's three: the organizations redesigning work around AI agents are seeing results the rest are still waiting for — new data shows exactly what separates them. United Airlines just showed what proactive AI agent governance looks like in practice. And the world's largest chipmaker made a billion-dollar vote of confidence in AI's long-term future. Tonight's homework: let AI help you plan the perfect game night.",
     "trends": [
       {
-        "title": "AI agents are everywhere — but operating models haven't caught up",
+        "title": "The organizations redesigning work around AI agents are pulling ahead",
         "source_url": "https://www.prnewswire.com/news-releases/79-of-enterprises-report-ai-agents-in-production-but-only-15-have-fully-tied-ai-investment-to-pl-outcomes-302937385.html",
         "body": "Genpact's <em>Autonomy in Practice</em> survey of more than 2,000 executives across 17 industries found that <em>79% of enterprises now have AI agents in production</em> — but only 15% have fully connected that investment to profit-and-loss outcomes. The pattern: organizations are deploying agents faster than they're redesigning the operations those agents work inside. The 17% Genpact calls \"AI Leaders\" aren't just running more agents — they've rebuilt their operating model so humans and agents work as a coordinated team.",
         "slants": {
@@ -23,7 +23,7 @@
         }
       },
       {
-        "title": "The first boundary lines for AI agents are being drawn — and they're a sign of maturity",
+        "title": "United Airlines shows what proactive AI agent governance looks like",
         "source_url": "https://www.cnbc.com/2026/11/11/united-airlines-ai-agents.html",
         "body": "United Airlines announced this week that it will block unauthorized third-party AI agents from booking flights and managing reservations. The airline cited real concerns: <em>sharing account credentials with AI assistants could expose sensitive information and lead to unintended purchases</em>, and automated check-in processes bypass safety acknowledgments that regulations require from humans. It's an early example of what every organization will navigate — deciding where AI agents are welcome and where they need human-only gates.",
         "slants": {
@@ -43,7 +43,7 @@
         }
       },
       {
-        "title": "AI's supply chain just signaled: this is permanent infrastructure",
+        "title": "AI's infrastructure just got a billion-dollar vote of confidence",
         "source_url": "https://www.investing.com/news/stock-market-news/tsmc-to-invest-up-to-1-billion-in-anthropic-openai-5015908",
         "body": "TSMC — the company that manufactures the chips powering most of the world's AI systems — approved up to <em>$1 billion in direct investments in OpenAI and Anthropic</em>, two of the leading AI model companies. When the hardware layer and the model layer are investing in each other, it tells us something important: <em>AI infrastructure is being built for long-term demand, not a short-term cycle</em>. For anyone still wondering whether AI is here to stay, the supply chain is answering with capital.",
         "slants": {
@@ -65,9 +65,9 @@
       }
     ],
     "homework": {
-      "title": "This weekend, let AI take the stress out of holiday gift planning.",
-      "body": "The holidays are coming fast, and the gift list hasn't written itself. Instead of doom-scrolling retail sites hoping for inspiration, try giving AI your real constraints — budget, personality, relationship — and let it brainstorm within those boundaries. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
-      "prompt": "\"I need to plan holiday gifts for [number] people. Here's what I know about each: [for each person, give a relationship, one interest or personality trait, and your budget — e.g., 'sister, loves cooking, $40' or 'team lead, into running, $25']. For each person, give me three creative gift ideas ranked by how personal they feel. If any idea is over my budget, suggest a DIY or experience-based alternative that keeps the thoughtfulness but fits the number.\"<br><br>The technique here is <em>constraint-based brainstorming</em>. Instead of asking AI for open-ended 'gift ideas,' you gave it specific boundaries — budget, personality, relationship — and asked it to be creative within them. This works for any decision with constraints: 'plan a dinner party for 8 on $50 in ingredients,' 'suggest weekend activities for a family with a toddler and a teenager,' or 'find a birthday restaurant that's quiet, walkable, and under $30 a plate.' Constraints don't limit AI — they focus it."
+      "title": "This weekend, let AI plan a game night your friends will actually enjoy.",
+      "body": "A great game night isn't about owning the right games — it's about matching the games to the people in the room. Tonight, instead of guessing, tell AI who's coming and let it build a lineup that actually works for your group. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
+      "prompt": "\"I'm planning a game night for [number] people. Here's what I know about the group: [describe them — e.g., 'two couples, one competitive, one laid-back, nobody's a big board game person' or '4 friends, all sharp, love strategy, will play till midnight']. We have about [X hours]. Recommend a lineup of 3 games in the order we should play them — start light, build energy, end on a high note. For each game, tell me why it fits THIS group, how long it takes, and whether we need to buy it or can play with things we already have.\"<br><br>The technique here is <em>audience profiling</em>. Instead of asking AI for generic 'game recommendations,' you described who's actually in the room — their energy, their patience, their competitive streak — and let AI tailor its answer to them. This works anytime you're planning for a specific group: 'plan a dinner menu for guests where one is vegan and one hates spicy food' or 'suggest a weekend activity for a group of six where half want adventure and half want to relax.' The better you describe the audience, the sharper the recommendation."
     }
   },
   "2026-11-12": {
