@@ -1,64 +1,64 @@
 {
   "2026-11-15": {
-    "intro": "Sunday's three: new research across 500 AI leaders shows only a third of enterprises with AI in production have hit their business case — the gap is organizational, not technical. Autonomous AI agents are outpacing the governance structures meant to oversee them. And a striking finding: when HR teams use AI to review promotion decisions, they're rediscovering talent they missed the first time. Tonight's homework: let AI fact-check something you've always believed.",
+    "intro": "Sunday's three: the US midterm results are about to reshape the AI regulation landscape for every enterprise. A Stanford review of classroom AI reveals a pattern that applies well beyond schools — AI augments experienced professionals more than novices. And AT&T just showed what full-scale agentic AI deployment actually looks like: 500 production workflows and counting. Tonight's homework: let AI fact-check something you've always believed.",
     "trends": [
       {
-        "title": "The companies getting real value from AI aren't spending more — they're organizing differently",
-        "source_url": "https://manilatimes.net/2026/11/12/tmt-newswire/globenewswire/new-hfs-research-and-rackspace-study-finds-only-one-third-of-enterprises-realize-expected-ai-value/2468583",
-        "body": "An HFS Research study of <em>502 senior AI decision-makers</em> — all with AI running in production — found that only a third have met or exceeded their AI business case. The gap isn't technology: <em>96% report significant governance gaps</em> between where their AI deployment is and where their organizational structures are. The enterprises delivering value aren't the ones with the most tools. They're the ones that built the structures — clear ownership, defined metrics, accountability — before they tried to scale.",
+        "title": "The midterm results are about to reshape the AI regulation landscape for every enterprise",
+        "source_url": "https://www.foley.com/insights/publications/2026/11/blue-wave-new-ai-rules-what-democratic-control-of-congress-means-for-ai-regulation/",
+        "body": "With Democrats set to control both chambers of Congress in January, the federal AI policy environment is shifting. Foley & Lardner's post-election analysis notes that <em>House Democratic committee leaders have already asked five frontier AI companies to report safety incidents to Congress within 48 hours</em>. Polling shows <em>66% of registered voters want more AI regulation</em> (Foley & Lardner, November 2026). Federal preemption of state AI laws is expected to stall, leaving the growing patchwork of state requirements — including New York's RAISE Act, which takes effect this month — firmly in place.",
         "slants": {
-          "strategy": "When two-thirds of AI-active enterprises aren't hitting their business case, the differentiator isn't which tools they picked. Tighten the connection between AI investment and measurable outcomes — that's where the returns are hiding.",
-          "leaders": "Your team's AI results depend less on which tool you buy and more on how clearly roles, metrics, and ownership are defined around it. That's a leadership move, not a technology purchase.",
-          "operations": "You see exactly where AI meets the real work — and where the gaps are. Documenting those gaps and sharing them upward gives the organization the signal it needs to close them.",
-          "pm": "Track the organizational readiness milestones alongside the technical ones. Projects that scale AI without governance structures in place are the ones that stall at the pilot stage.",
-          "admin": "The processes you manage are where AI adoption lives or dies. When you flag that a rollout is missing clear ownership or feedback loops, you're doing governance work — even if nobody calls it that."
+          "strategy": "Map your AI initiatives against the regulatory landscape now — state-level requirements are staying, and federal oversight is arriving. The organizations that treat compliance as a strategic input, not a last-minute scramble, will move faster.",
+          "leaders": "Brief your teams on what's coming. The shift from voluntary guidelines to mandatory reporting changes what documentation and oversight you need in place — and your people need lead time to build it.",
+          "operations": "Incident reporting requirements mean your AI monitoring and logging processes need to be audit-ready. Start documenting how your team tracks AI outputs and escalates issues now.",
+          "pm": "Add a regulatory checkpoint to every AI project plan. Timelines that don't account for compliance requirements are going to slip — and the requirements are arriving faster than most teams expect.",
+          "admin": "You manage the records and processes that regulators will ask to see. Organizing AI-related documentation now — vendor agreements, usage policies, incident logs — puts your organization ahead of the curve."
         },
         "challenge": {
           "steps": [
-            "Think about one AI tool or process your team has adopted in the last six months. Ask yourself: who owns the outcomes it's supposed to deliver?",
-            "Open your company-approved AI tool and paste: <em>\"My team uses AI for [describe the task]. Help me build a simple governance checklist for this use case with five questions: Who owns the outcomes? How do we measure success? Who reviews the AI's output? What happens when something goes wrong? How often do we check whether it's still delivering value? Keep each answer to one sentence.\"</em>",
-            "Review the checklist and identify the biggest gap — the question your team hasn't answered yet.",
-            "Share your biggest gap in the group — most teams have the same blind spots, and naming them is how we start closing them."
+            "Think about one AI tool or process your organization uses today. Ask yourself: if a regulator asked you to explain how it works and what safeguards are in place, could you answer clearly?",
+            "Open your company-approved AI tool and paste: <em>\"I work in [your role] at a large organization. We use AI for [describe the use case]. Help me build a one-page regulatory readiness summary with five sections: 1) What the tool does and what data it accesses, 2) How outputs are reviewed before action, 3) How incidents or errors are logged, 4) Who owns the tool's compliance, 5) What documentation exists today vs. what's missing. Keep each section to two sentences.\"</em>",
+            "Review the summary and note the biggest documentation gap.",
+            "Share your biggest gap in the group — most teams have the same blind spots, and naming them now beats scrambling later."
           ]
         }
       },
       {
-        "title": "The organizations mapping their AI agents now are building the foundation everyone else will need",
-        "source_url": "https://www.forbes.com/councils/forbesbusinesscouncil/2026/11/13/governance-is-the-foundation-agentic-ai-cant-afford-to-skip/",
-        "body": "A Forbes analysis published this week makes the case plainly: <em>governance is the foundation that agentic AI can't afford to skip</em>. As AI agents move from answering questions to taking autonomous actions — booking, processing, drafting, deciding — the oversight gap is widening. McKinsey's 2026 AI Trust Maturity Survey found that <em>agentic AI governance lags behind every other governance dimension, with only 30% of organizations reaching meaningful maturity</em>. The organizations getting ahead aren't waiting for regulation. They're inventorying their agents, assigning ownership, and defining scope now.",
+        "title": "A Stanford review of AI in classrooms reveals a lesson that reaches well beyond schools",
+        "source_url": "https://www.chalkbeat.org/2026/11/13/ai-research-review-shows-tools-help-teachers-more-than-students/",
+        "body": "A Stanford SCALE review of <em>roughly 20 rigorous causal studies</em> on AI in K-12 education found a striking pattern: AI tools consistently help experienced teachers save time and produce higher-quality work, but the evidence for student learning gains is thin and sometimes negative. Students <em>reported feeling they learned more with AI support, even when they hadn't</em> (Chalkbeat, November 2026). The finding mirrors what enterprises are seeing: AI amplifies existing expertise rather than replacing the need to build it.",
         "slants": {
-          "strategy": "Map every AI agent, automation, and integration that touches your organization's data. You can't govern what you can't see — and right now, most organizations can't see the full picture.",
-          "leaders": "Set the expectation that every AI agent has a named owner and a defined scope. The teams building this discipline now won't have to scramble when oversight requirements arrive.",
-          "operations": "You manage the systems these agents act on. Start a simple registry: which agents access what data, what actions can they take, and who reviews the results?",
-          "pm": "Add agent governance to your project documentation. As AI agents become part of more workflows, knowing what they're authorized to do is a planning requirement, not an afterthought.",
-          "admin": "The workflows you manage — scheduling, approvals, communications — are exactly the ones AI agents are learning to handle. Knowing which processes have agent access and which don't puts you ahead of the policy curve."
+          "strategy": "The pattern is clear across education and enterprise: AI multiplies what skilled professionals already know. Your AI strategy should invest in expertise development alongside tool deployment — one without the other underperforms.",
+          "leaders": "When you roll out AI tools, pair them with skill-building. The research shows that experienced practitioners benefit most while novices can actually perform worse. Structure your team's AI adoption around competency levels.",
+          "operations": "AI works best as a force multiplier for people who already understand the work. Document the expertise your team has and design AI workflows that leverage it, not bypass it.",
+          "pm": "Factor learning curves into your AI rollout plans. The research says less experienced users need more structured onboarding — a phased rollout by skill level will deliver better results than a one-size-fits-all launch.",
+          "admin": "Your deep knowledge of how processes actually work is exactly what makes AI tools effective in your hands. The research confirms that domain expertise plus AI outperforms AI alone — that's your advantage."
         },
         "challenge": {
           "steps": [
-            "Pick one workflow your team runs regularly — a reporting process, an approval chain, a status update, a data entry task.",
-            "Open your company-approved AI tool and paste: <em>\"My team manages [describe the workflow]. Help me evaluate whether an AI agent could play a role in this process. For each of these four questions, give me a one-sentence answer: 1) What data would the agent need access to? 2) What actions could it take without human approval? 3) What could go wrong without oversight? 4) What guardrails would I want in place before giving an agent access?\"</em>",
-            "Review the answers and note any risk you hadn't considered before.",
-            "Share your most surprising risk in the group — building governance awareness together makes all of us sharper."
+            "Think about one AI tool you use at work. Consider: does it work better because of what you already know about the task, or would a complete newcomer get the same results?",
+            "Open your company-approved AI tool and paste: <em>\"I'm experienced in [describe your area of expertise]. Help me identify three specific ways my existing knowledge makes AI outputs better in my work — for example, knowing which questions to ask, recognizing when an output is wrong, or knowing what context to provide. For each one, suggest how I could teach this to someone newer on my team so they get better results too.\"</em>",
+            "Review the three areas and pick one where you could mentor a colleague this week.",
+            "Share your best 'expertise plus AI' tip in the group — the knowledge that makes AI work better is worth passing along."
           ]
         }
       },
       {
-        "title": "AI is helping organizations find the talent their own reviews overlooked",
-        "source_url": "https://globenewswire.com/news-release/2026/11/12/3402059/0/en/study-suggests-overlooked-talent-reconsidered-for-promotion-after-ai-review.html",
-        "body": "A study released this week found that <em>57% of HR professionals using AI to review workforce decisions reconsidered employees who were initially passed over for promotion</em>. The finding points to something important: AI's highest-value contribution might not be doing work faster. It might be seeing what humans miss — patterns in performance data, contributions that don't show up in self-advocacy, skills that traditional review processes weren't designed to measure.",
+        "title": "AT&T just showed what full-scale agentic AI deployment looks like — 500 workflows and counting",
+        "source_url": "https://siliconangle.com/2026/11/14/att-uses-agentic-ai-to-reinvent-business-processes-from-the-ground-up/",
+        "body": "AT&T reported this week that it has <em>nearly 500 agentic AI workflows running in production, processing over 1 million transactions per month</em> across customer provisioning, network operations, sales, and knowledge retrieval. The company's approach to scaling is deliberate: agents start under full human oversight and earn autonomy only after accuracy reaches the mid-to-high 90% range — a model the company calls a <em>\"learner's permit\"</em> for AI (SiliconANGLE, November 2026). AT&T plans to triple its production workflow count in 2027.",
         "slants": {
-          "strategy": "AI-augmented talent reviews can surface capability gaps and hidden strengths you'd miss in a spreadsheet. That's strategic intelligence for workforce planning, not just an HR experiment.",
-          "leaders": "If AI can surface people your review process missed, it's worth asking what else your current processes aren't seeing. Use it to audit your team's development decisions — not to replace your judgment, but to expand what you're looking at.",
-          "operations": "Your ability to describe what good performance looks like in a role is the input AI needs to find it. Process documentation skills translate directly into better talent insights.",
-          "pm": "Skills mapping is a project management challenge as much as an HR one. AI can help you build a clearer picture of who on your team has capabilities you haven't been leveraging.",
-          "admin": "The detail-oriented, organizational work you do every day is a talent signal that traditional reviews often undercount. AI-assisted reviews are more likely to see it — and value it."
+          "strategy": "AT&T's playbook is a blueprint: start with high-volume, rule-based tasks, measure accuracy rigorously, and expand scope only after the numbers prove the agent is ready. That's a scaling strategy your organization can model.",
+          "leaders": "The 'learner's permit' concept gives your team a concrete framework: AI earns autonomy by demonstrating competence, just like a new hire would. Set clear accuracy thresholds before expanding any agent's authority.",
+          "operations": "AT&T started with the workflows ops teams know best — provisioning, routing, status checks. Identify your highest-volume, most repetitive processes first. Those are where agentic AI earns its keep.",
+          "pm": "500 workflows didn't ship overnight. Build your AI deployment roadmap in tiers: supervised pilot, accuracy validation, graduated autonomy. Each tier has its own success criteria before moving to the next.",
+          "admin": "The workflows AT&T automated first — provisioning, knowledge retrieval, routing — are the same kinds of structured, repetitive tasks you manage daily. Your understanding of how these processes actually work is what makes the automation accurate."
         },
         "challenge": {
           "steps": [
-            "Think about someone on your team — or yourself — whose contributions don't always show up in formal reviews.",
-            "Open your company-approved AI tool and paste: <em>\"Help me build a list of 10 contribution types that are valuable in a workplace but often invisible in traditional performance reviews — things like cross-team coordination, institutional knowledge, process improvement, mentoring, or crisis management. For each one, suggest one practical way a manager could start recognizing and measuring it.\"</em>",
-            "Review the list and identify one contribution type that your team does well but rarely gets credited for.",
-            "Share that invisible contribution type in the group — naming what's valuable but unseen helps everyone advocate better."
+            "Pick one repetitive task your team handles at high volume — something that follows a consistent pattern and eats up a lot of time.",
+            "Open your company-approved AI tool and paste: <em>\"My team handles [describe the repetitive task] at high volume. Help me design a 'learner's permit' evaluation plan for an AI agent that could help with this task. Include: 1) What accuracy metric would I track? 2) What's a reasonable threshold before the agent works unsupervised? 3) What are three specific failure modes I should watch for? 4) How would I set up a human review process during the learning phase? Keep each answer to two sentences.\"</em>",
+            "Review the plan and assess whether your team has the data to measure that accuracy metric today.",
+            "Share your chosen task and accuracy metric in the group — comparing notes helps everyone design better pilot programs."
           ]
         }
       }
