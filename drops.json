@@ -1,6 +1,6 @@
 {
   "2026-11-26": {
-    "intro": "Happy Thanksgiving. Today's three: new data shows small businesses are nearly eight times more likely to report that AI is creating jobs than cutting them — the narrative is shifting. Anthropic just shipped a way for enterprises to monitor AI safety without sending sensitive data to anyone outside their own environment. And Workday's completed acquisition signals that managing AI agent identities is becoming as formal a discipline as managing employee access. Tonight's homework: the family's together — let AI help you start a tradition worth repeating.",
+    "intro": "Today's three: new data shows small businesses are nearly eight times more likely to report that AI is creating jobs than cutting them — the narrative is shifting. Anthropic just shipped a way for enterprises to monitor AI safety without sending sensitive data to anyone outside their own environment. And Workday's completed acquisition signals that managing AI agent identities is becoming as formal a discipline as managing employee access. Tonight's homework: the family's together — let AI help you start a tradition worth repeating.",
     "trends": [
       {
         "title": "Small businesses are nearly eight times more likely to say AI creates jobs than cuts them",
@@ -64,9 +64,9 @@
       }
     ],
     "homework": {
-      "title": "Thanksgiving evening, everyone's together. Let AI help you design one new family tradition worth repeating every year.",
+      "title": "Tonight, everyone's together. Let AI help you design one new family tradition worth repeating every year.",
       "body": "The best traditions didn't start with a plan — they started with one good evening that everyone wanted to do again. Tonight, while the family's already in the same room, let AI help you create something new that fits the people you're actually with. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
-      "prompt": "\"My family is together for Thanksgiving and I want to start a new tradition. Here's who's here: [list the people and their ages, roughly]. Here are traditions we already love: [list 2-3 things your family does that everyone enjoys]. And here's one thing I wish we did more of together: [describe it — laughing more, storytelling, being outside, playing games, making something creative, etc.]. Based on who we are, what we already love, and what I wish we had more of — suggest three new traditions we could try tonight with zero preparation and no supplies. For each one: describe what it is in 2-3 sentences, explain why it fits our specific family, and give us one tip for making it stick next year.\"<br><br>The technique here is <em>pattern matching from examples</em>. Instead of asking AI to brainstorm from scratch, you gave it concrete examples of what already works for your family and asked it to find the pattern — then generate new ideas that match it. This works for any creative task: 'here are three meals my family loved — what do they have in common, and what else would we like?' or 'here are my three best vacations — what ties them together, and where should I go next?' When you give AI your real preferences as examples first, it stops guessing and starts designing around what you actually enjoy."
+      "prompt": "\"My family is together tonight and I want to start a new tradition. Here's who's here: [list the people and their ages, roughly]. Here are traditions we already love: [list 2-3 things your family does that everyone enjoys]. And here's one thing I wish we did more of together: [describe it — laughing more, storytelling, being outside, playing games, making something creative, etc.]. Based on who we are, what we already love, and what I wish we had more of — suggest three new traditions we could try tonight with zero preparation and no supplies. For each one: describe what it is in 2-3 sentences, explain why it fits our specific family, and give us one tip for making it stick next year.\"<br><br>The technique here is <em>pattern matching from examples</em>. Instead of asking AI to brainstorm from scratch, you gave it concrete examples of what already works for your family and asked it to find the pattern — then generate new ideas that match it. This works for any creative task: 'here are three meals my family loved — what do they have in common, and what else would we like?' or 'here are my three best vacations — what ties them together, and where should I go next?' When you give AI your real preferences as examples first, it stops guessing and starts designing around what you actually enjoy."
     }
   },
   "2026-11-25": {
@@ -140,7 +140,7 @@
     }
   },
   "2026-11-24": {
-    "intro": "Tuesday's three: the biggest AI funding round of the year signals a shift in how enterprises pay for AI. The organizations documenting their business knowledge are the ones scaling AI agents with confidence. And Microsoft's new Copilot Credits system is turning AI capacity into something teams can manage intentionally. Tonight's homework: Thanksgiving is two days away, so let AI build you a cooking timeline that gets everything to the table at the same time.",
+    "intro": "Tuesday's three: the biggest AI funding round of the year signals a shift in how enterprises pay for AI. The organizations documenting their business knowledge are the ones scaling AI agents with confidence. And Microsoft's new Copilot Credits system is turning AI capacity into something teams can manage intentionally. Tonight's homework: hosting a big dinner soon? Let AI build you a cooking timeline that gets everything to the table at the same time.",
     "trends": [
       {
         "title": "Enterprises are starting to pay for AI outcomes, not AI seats, and the economics are real",
@@ -204,9 +204,9 @@
       }
     ],
     "homework": {
-      "title": "Thanksgiving is two days away. Tonight, let AI build you a cooking timeline so everything hits the table at the same time.",
-      "body": "The hardest part of Thanksgiving dinner isn't any single dish. It's getting them all done simultaneously. Oven conflicts, cooling times, last-minute tasks that pile up at 3:45 PM: it's a logistics puzzle. Tonight, let AI work backward from your serving time and build a step-by-step schedule. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
-      "prompt": "\"I'm cooking Thanksgiving dinner for [number] people. Here's my menu: [list your dishes, be as specific as you can]. I want everything ready to serve at [time, e.g., 4:00 PM]. I have [describe your setup, e.g., one oven, four burners, one slow cooker]. Work backward from serving time and build me a step-by-step cooking schedule. For each dish, include when to start prep, when to start cooking, and when it comes out. Flag any oven conflicts and suggest solutions. At the top, tell me what I can do tonight or tomorrow to get ahead.\"<br><br>The technique here is <em>reverse timeline planning</em>: giving AI a fixed deadline and your real constraints, then letting it work backward to build the schedule. This works for any event with a hard end time: a product launch, a move-in day, a party, or a presentation. The key is being specific about your constraints. AI can only plan around limitations it knows about."
+      "title": "Hosting a big dinner? Tonight, let AI build you a cooking timeline so everything hits the table at the same time.",
+      "body": "The hardest part of a big holiday dinner isn't any single dish. It's getting them all done simultaneously. Oven conflicts, cooling times, last-minute tasks that pile up at 3:45 PM: it's a logistics puzzle. Tonight, let AI work backward from your serving time and build a step-by-step schedule. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
+      "prompt": "\"I'm cooking a holiday dinner for [number] people. Here's my menu: [list your dishes, be as specific as you can]. I want everything ready to serve at [time, e.g., 4:00 PM]. I have [describe your setup, e.g., one oven, four burners, one slow cooker]. Work backward from serving time and build me a step-by-step cooking schedule. For each dish, include when to start prep, when to start cooking, and when it comes out. Flag any oven conflicts and suggest solutions. At the top, tell me what I can do tonight or tomorrow to get ahead.\"<br><br>The technique here is <em>reverse timeline planning</em>: giving AI a fixed deadline and your real constraints, then letting it work backward to build the schedule. This works for any event with a hard end time: a product launch, a move-in day, a party, or a presentation. The key is being specific about your constraints. AI can only plan around limitations it knows about."
     }
   },
   "2026-11-23": {
@@ -280,7 +280,7 @@
     }
   },
   "2026-11-22": {
-    "intro": "Sunday's three: five major banks just redrew the line on who's responsible when AI agents act on your behalf — and the pattern matters well beyond banking. New research shows the real AI skills gap isn't about training access, it's about the distance between feeling ready and being ready. And AI tools are starting to specialize by business function, changing how organizations evaluate them. Tonight's homework: Thanksgiving is this week — let AI help you put what you're genuinely grateful for into words.",
+    "intro": "Sunday's three: five major banks just redrew the line on who's responsible when AI agents act on your behalf — and the pattern matters well beyond banking. New research shows the real AI skills gap isn't about training access, it's about the distance between feeling ready and being ready. And AI tools are starting to specialize by business function, changing how organizations evaluate them. Tonight's homework: let AI help you put what you're genuinely grateful for into words.",
     "trends": [
       {
         "title": "Who's responsible when AI agents act on your behalf? Banks just answered — and every organization should pay attention",
@@ -344,9 +344,9 @@
       }
     ],
     "homework": {
-      "title": "Thanksgiving is this week. Tonight, let AI help you say what you're genuinely grateful for — not just the easy answers.",
+      "title": "Tonight, let AI help you say what you're genuinely grateful for — not just the easy answers.",
       "body": "Everyone knows they're grateful for family, health, and friends. But the gratitude that actually lands — the kind that makes someone's day — is specific. Tonight, let AI push past the obvious and help you name what you're really thankful for this year. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
-      "prompt": "\"I want to express real gratitude this Thanksgiving, but I want to go deeper than the usual list. Start by asking me three questions: what was the hardest moment of my year, who showed up for me when it mattered, and what's one small thing I started taking for granted. Then, based on my answers, help me write three specific thank-you messages — one to a person who helped me through something difficult, one to someone whose everyday presence I've been overlooking, and one to myself for something I handled well this year. Keep each message to 3–4 sentences and make them sound like me, not like a greeting card.\"<br><br>The technique here is <em>progressive disclosure</em>. Instead of asking AI for the finished product up front, you asked it to draw out details first — getting progressively deeper before generating the output. This works whenever the best answer depends on information you haven't thought to share yet: 'ask me three questions about my situation before recommending a solution' or 'help me think through the variables before we build the plan.' When AI uncovers the right details first, the output fits your real life instead of guessing at it."
+      "prompt": "\"I want to express real gratitude, but I want to go deeper than the usual list. Start by asking me three questions: what was the hardest moment of my year, who showed up for me when it mattered, and what's one small thing I started taking for granted. Then, based on my answers, help me write three specific thank-you messages — one to a person who helped me through something difficult, one to someone whose everyday presence I've been overlooking, and one to myself for something I handled well this year. Keep each message to 3–4 sentences and make them sound like me, not like a greeting card.\"<br><br>The technique here is <em>progressive disclosure</em>. Instead of asking AI for the finished product up front, you asked it to draw out details first — getting progressively deeper before generating the output. This works whenever the best answer depends on information you haven't thought to share yet: 'ask me three questions about my situation before recommending a solution' or 'help me think through the variables before we build the plan.' When AI uncovers the right details first, the output fits your real life instead of guessing at it."
     }
   },
   "2026-11-21": {
@@ -490,7 +490,7 @@
     }
   },
   "2026-11-19": {
-    "intro": "Thursday's three: 70% of organizations now say redesigning roles is their most impactful AI workforce move — and the playbook for acting on that is taking shape. More than 40 organizations just committed to building open standards for AI transparency, signaling that accountability is becoming an industry norm. And the clearest signal yet from Ignite 2026: managing AI agents is becoming an operational discipline, not an IT experiment. Tonight's homework: Thanksgiving is almost here — let AI build you a custom trivia game your group will actually enjoy.",
+    "intro": "Thursday's three: 70% of organizations now say redesigning roles is their most impactful AI workforce move — and the playbook for acting on that is taking shape. More than 40 organizations just committed to building open standards for AI transparency, signaling that accountability is becoming an industry norm. And the clearest signal yet from Ignite 2026: managing AI agents is becoming an operational discipline, not an IT experiment. Tonight's homework: let AI build you a custom trivia game your group will actually enjoy.",
     "trends": [
       {
         "title": "70% of organizations say redesigning roles is their most impactful AI move — and the playbook is taking shape",
@@ -554,7 +554,7 @@
       }
     ],
     "homework": {
-      "title": "Thanksgiving is almost here. Tonight, let AI help you create a trivia game your friends or family will actually enjoy.",
+      "title": "Tonight, let AI help you create a trivia game your friends or family will actually enjoy.",
       "body": "Generic trivia is fine. Trivia built around the people playing it is better — inside jokes land harder, niche interests make better categories, and the right difficulty keeps everyone in the game. Tonight, let AI build you a custom trivia round for your next gathering. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
       "prompt": "\"I want to create a fun trivia game for a gathering with [describe the group — family holiday dinner, friendsgiving, game night, etc.]. The players are [list a few names or descriptions and one thing each person is into — e.g., 'my brother who's obsessed with 90s hip-hop, my mom who watches every true crime documentary, my friend who knows every national park']. Before you write any questions, ask me: what's the age range, what topics should I avoid, and do I want it competitive or casual? Then create 15 trivia questions in 3 themed rounds of 5 — make sure each round has at least one question that plays to a specific player's strengths so everyone gets a moment. Include answers on a separate list I can keep on my phone.\"<br><br>The technique here is <em>audience calibration</em>. Instead of asking for generic trivia, you gave AI the specific people who'll be playing and asked it to tailor the content to them. This works for any group activity: 'plan a playlist for these specific friends' or 'suggest conversation starters for this mix of people.' When AI knows who it's designing for, the output goes from serviceable to personal."
     }
@@ -1618,7 +1618,7 @@
     }
   },
   "2026-11-03": {
-    "intro": "Tuesday's three: Gartner says AI strategy miscalculation just became a top-five enterprise risk, Cisco is testing whether a tiny team with unlimited AI tokens can rewrite 98% of its legacy code, and enterprise leaders are still spending on AI — but now they want proof it works. Plus tonight's homework: Thanksgiving is three weeks out — let AI help you write a toast you'll actually want to give.",
+    "intro": "Tuesday's three: Gartner says AI strategy miscalculation just became a top-five enterprise risk, Cisco is testing whether a tiny team with unlimited AI tokens can rewrite 98% of its legacy code, and enterprise leaders are still spending on AI — but now they want proof it works. Plus tonight's homework: let AI help you write a toast you'll actually want to give.",
     "trends": [
       {
         "title": "AI strategy miscalculation just entered Gartner's top-five enterprise risks",
@@ -1682,9 +1682,9 @@
       }
     ],
     "homework": {
-      "title": "Thanksgiving is three weeks out. Tonight, let AI help you write a toast you'll actually want to give.",
+      "title": "Tonight, let AI help you write a toast you'll actually want to give.",
       "body": "Most toasts fall flat because they're generic. The fix is telling AI exactly who's in the room and what you want them to feel. Tonight, get ahead of the holiday and draft something real. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
-      "prompt": "\"I'm giving a short toast at [Thanksgiving dinner / a family gathering / a friendsgiving / a work holiday lunch]. The group is [describe who — e.g., 'my partner's family, about 12 people, I don't know everyone well' or 'close friends, 6 of us, we've done this every year']. The vibe I want is [warm and sincere / funny but heartfelt / short and simple / a little emotional]. One thing that happened this year that I'd like to acknowledge: [a milestone, a loss, a shared experience, or just 'it's been a tough year and we made it']. Write me a toast that's 60–90 seconds when spoken aloud. Make it sound like me, not like a greeting card. Flag any line that might not land with this specific group and suggest a swap.\"<br><br>The technique: <em>audience-aware framing</em>. Instead of asking for a generic toast, you described your specific audience — who they are, how well you know them, what the room feels like. When AI knows who's listening, it adjusts the tone, the references, and the risk level of every line. This works any time you're writing for a specific group: a presentation, a thank-you note, a team announcement. Always tell AI who's in the room."
+      "prompt": "\"I'm giving a short toast at [a family gathering / a holiday dinner / a friendsgiving / a work holiday lunch]. The group is [describe who — e.g., 'my partner's family, about 12 people, I don't know everyone well' or 'close friends, 6 of us, we've done this every year']. The vibe I want is [warm and sincere / funny but heartfelt / short and simple / a little emotional]. One thing that happened this year that I'd like to acknowledge: [a milestone, a loss, a shared experience, or just 'it's been a tough year and we made it']. Write me a toast that's 60–90 seconds when spoken aloud. Make it sound like me, not like a greeting card. Flag any line that might not land with this specific group and suggest a swap.\"<br><br>The technique: <em>audience-aware framing</em>. Instead of asking for a generic toast, you described your specific audience — who they are, how well you know them, what the room feels like. When AI knows who's listening, it adjusts the tone, the references, and the risk level of every line. This works any time you're writing for a specific group: a presentation, a thank-you note, a team announcement. Always tell AI who's in the room."
     }
   },
   "2026-11-02": {
@@ -1758,7 +1758,7 @@
     }
   },
   "2026-11-01": {
-    "intro": "Sunday's three: there's a 53-point gap between how leaders and employees see AI readiness, workers are quietly finding their own AI tools when the approved ones don't fit, and AI skills now carry a 62% wage premium that has nothing to do with coding. Plus tonight's homework: plan your Thanksgiving potluck dish with AI as your sous chef.",
+    "intro": "Sunday's three: there's a 53-point gap between how leaders and employees see AI readiness, workers are quietly finding their own AI tools when the approved ones don't fit, and AI skills now carry a 62% wage premium that has nothing to do with coding. Plus tonight's homework: plan your holiday potluck dish with AI as your sous chef.",
     "trends": [
       {
         "title": "Leaders think their teams are AI-ready, but the teams disagree by 53 points",
@@ -1822,9 +1822,9 @@
       }
     ],
     "homework": {
-      "title": "Thanksgiving is coming. Tonight, let AI help you plan a potluck dish that fits your actual kitchen, skill level, and crowd.",
+      "title": "Tonight, let AI help you plan a potluck dish that fits your actual kitchen, skill level, and crowd.",
       "body": "Potluck stress usually comes from picking the wrong dish for your situation: too ambitious for your skill level, needs equipment you don't have, or doesn't travel well. Tonight, give AI your real constraints and let it narrow the options before you commit. Open ChatGPT, Claude, Gemini, or Perplexity (all free) and try this:",
-      "prompt": "\"I'm bringing a dish to a Thanksgiving potluck and I need help choosing. Here are my real constraints: my cooking skill level is [beginner / comfortable / experienced], I have [describe your kitchen setup: full kitchen, small apartment kitchen, just a microwave and stovetop, etc.], I need to transport it [describe: 10-minute drive, hour-long commute, walking, etc.], and I'll be serving roughly [number] people. I'd like to bring a [side dish / dessert / appetizer / main contribution]. Suggest 3 options ranked by how well they fit ALL of my constraints. For each one, tell me: the dish name, why it works for my specific situation, what I'd need to buy, total active cooking time, and one make-ahead tip so I'm not stressed the morning of. Then pick the one you'd recommend most and explain why.\"<br><br>The technique: <em>constraint stacking</em>. Instead of asking AI for 'a good potluck dish,' you loaded it with every real constraint at once. AI performs better when it can weigh multiple factors simultaneously rather than generating a generic answer you then have to filter yourself. This works for any decision: stack your actual constraints upfront and let AI do the narrowing."
+      "prompt": "\"I'm bringing a dish to a holiday potluck and I need help choosing. Here are my real constraints: my cooking skill level is [beginner / comfortable / experienced], I have [describe your kitchen setup: full kitchen, small apartment kitchen, just a microwave and stovetop, etc.], I need to transport it [describe: 10-minute drive, hour-long commute, walking, etc.], and I'll be serving roughly [number] people. I'd like to bring a [side dish / dessert / appetizer / main contribution]. Suggest 3 options ranked by how well they fit ALL of my constraints. For each one, tell me: the dish name, why it works for my specific situation, what I'd need to buy, total active cooking time, and one make-ahead tip so I'm not stressed the morning of. Then pick the one you'd recommend most and explain why.\"<br><br>The technique: <em>constraint stacking</em>. Instead of asking AI for 'a good potluck dish,' you loaded it with every real constraint at once. AI performs better when it can weigh multiple factors simultaneously rather than generating a generic answer you then have to filter yourself. This works for any decision: stack your actual constraints upfront and let AI do the narrowing."
     }
   },
   "2026-10-31": {
